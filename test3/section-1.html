@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-06-06T10:09:41-05:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Recognizing an Integrand as the Derivative of a Product</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><link href="https://webwork.math.arizona.edu/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://webwork.math.arizona.edu/webwork2_files/js/vendor/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.11;
+</script>
+</head>
+<body class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\doubler}[1]{2#1}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Concept-Building Activity: Integration by Parts</span></a></h1>
+<p class="byline">Calculus: Single Variable, Hughes-Hallett, Gleason, et al.</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="frontmatter-1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="index.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-2.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="frontmatter-1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="index.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-2.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Introduction</span></a></li>
+<li class="link active"><a href="section-1.html" data-scroll="section-1"><span class="codenumber">1</span> <span class="title">Recognizing an Integrand as the Derivative of a Product</span></a></li>
+<li class="link"><a href="section-2.html" data-scroll="section-2"><span class="codenumber">2</span> <span class="title">Using the Product Rule to Evaluate a Less Familiar Integral from a Known Integral</span></a></li>
+<li class="link"><a href="section-3.html" data-scroll="section-3"><span class="codenumber">3</span> <span class="title">Integration by Parts</span></a></li>
+<li class="link"><a href="section-4.html" data-scroll="section-4"><span class="codenumber">4</span> <span class="title">Reflection</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-1"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1</span> <span class="title">Recognizing an Integrand as the Derivative of a Product</span>
+</h2>
+<p id="p-3">We can use the product rule to find certain integrals. For instance, according to the product rule,</p>
+<div class="displaymath">
+\begin{equation*}
+e^x+xe^x=\frac{d}{dx}(xe^x).
+\end{equation*}
+</div>
+<p>By the Fundamental Theorem, this means that \(e^x+xe^x\) can be integrated:</p>
+<div class="displaymath">
+\begin{equation*}
+\int(e^x+xe^x)\,dx=xe^x+C.
+\end{equation*}
+</div>
+<article class="exercise-like" id="cba-7-2edc001"><h6 class="heading">
+<span class="type">Problem</span> <span class="codenumber">1.1</span>.</h6>
+<iframe width="100%" src="https://webwork.math.arizona.edu/webwork2/html2xml?courseID=Precalculus_Activities&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=1&amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJQb3BVcC5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpO2xvYWRNYWNyb3MoIlBDQ21hY3Jvcy5wbCIpOwpURVhUKE1PREVTKFBUWD0%2BJycsSFRNTD0%2BcUA8ZGl2IHN0eWxlPSJkaXNwbGF5Om5vbmU7Ij5cKFxuZXdjb21tYW5ke1xhbXB9eyZ9XCk8L2Rpdj5AKSk7CkNvbnRleHQoJ051bWVyaWMnKTskREQxPSBQb3BVcCgKICAgIFsiPyIsImkiLCJpaSIsImlpaSIsIml2Il0sCiAgICAiaXYiICMgY29ycmVjdCBhbnN3ZXIKICAgICk7CiRERDI9IFBvcFVwKAogICAgWyI%2FIiwiaSIsImlpIiwiaWlpIiwiaXYiXSwKICAgICJpaSIgIyBjb3JyZWN0IGFuc3dlcgogICAgKTsKJEREMz0gUG9wVXAoCiAgICBbIj8iLCJpIiwiaWkiLCJpaWkiLCJpdiJdLAogICAgImkiICMgY29ycmVjdCBhbnN3ZXIKICAgICk7CiRERDQ9IFBvcFVwKAogICAgWyI%2FIiwiaSIsImlpIiwiaWlpIiwiaXYiXSwKICAgICJpaWkiICMgY29ycmVjdCBhbnN3ZXIKICAgICk7CgpCRUdJTl9QR01MClVzZSB0aGUgcHJvZHVjdCBydWxlIHRvIGRldGVybWluZSB3aGljaCBleHByZXNzaW9uIChpKVskTURBU0hdKihpdikgaXMgZXF1YWwgdG8gdGhlIGdpdmVuIGludGVncmFsLgoKaS4gIFtgeFxzaW4geCtDIGBdCmkuICBbYHhlXnsteH0rQyBgXQppLiAgW2AyeFxzaW4geCtDIGBdCmkuICBbYHhcc2luMngrQyBgXQoKCmEuICBbYCBcZGlzcGxheXN0eWxlXGludFxsZWZ0KFxzaW4yeCsyeFxjb3MyeFxyaWdodClcLGR4IGBdIGlzIGVxdWFsIHRvIFtfXXskREQxfXs1fS4KYS4gIFtgIFxkaXNwbGF5c3R5bGVcaW50XGxlZnQoZV57LXh9LXhlXnsteH1ccmlnaHQpXCxkeCBgXSBpcyBlcXVhbCB0byBbX117JEREMn17NX0uCmEuICBbYCBcZGlzcGxheXN0eWxlXGludFxsZWZ0KFxzaW4geCt4XGNvcyB4XHJpZ2h0KVwsZHggYF0gaXMgZXF1YWwgdG8gW19deyRERDN9ezV9LgphLiAgW2AgXGRpc3BsYXlzdHlsZVxpbnRcbGVmdCgyXHNpbiB4KzJ4XGNvcyB4XHJpZ2h0KVwsZHggYF0gaXMgZXF1YWwgdG8gW19deyRERDR9ezV9LiAgIAoKCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9ISU5UClRha2UgdGhlIGRlcml2YXRpdmUgb2YgKGkpIHVzaW5nIHRoZSBwcm9kdWN0IHJ1bGUgYW5kIGNvbXBhcmUgd2l0aCAoYSlbJE1EQVNIXSooZCkuIFdoYXQgaXMgdGhlIGRlcml2YXRpdmUgdGVsbGluZyB5b3UgaW4gdGVybXMgb2YgaW50ZWdyYWxzPwpFTkRfUEdNTF9ISU5UCgpCRUdJTl9QR01MX1NPTFVUSU9OCmEuICB0aGlzIG1hdGNoZXMgZXhwcmVzc2lvbiAoaSk6CgogICAgW2BgYFxiZWdpbnthbGlnbmVkfQogICAgIFxpbnRcc2luMnhcLGR4K1xpbnQgMnhcY29zMnhcLGR4XGFtcCA9eFxzaW4yeCtDIFxcCiAgICAgXHRleHR7YmVjYXVzZX1ccXVhZCBcaW50XGxlZnQoXHNpbjJ4KzJ4XGNvczJ4XHJpZ2h0KVwsZHhcYW1wID14XHNpbjJ4K0MgXFwKICAgICBcdGV4dHtiZWNhdXNlfVxxdWFkIFxzaW4yeCsyeFxjb3MyeCBcYW1wID1cZnJhYyBke2R4fVxsZWZ0KHhcc2luMnhccmlnaHQpLiBcYW1wIFx0ZXh0eyhwcm9kdWN0IHJ1bGUpfQpcZW5ke2FsaWduZWR9YGBgXQoKCgoKYS4gIHRoaXMgbWF0Y2hlcyBleHByZXNzaW9uIChpaWkpOgoKICAgIFtgYGBcYmVnaW57YWxpZ25lZH0KICAgICBcaW50NVxsbiB4XCxkeCtcaW50NVwsZHhcYW1wID01eFxsbiB4K0MrQyBcXAogICAgIFx0ZXh0e2JlY2F1c2V9XHF1YWQgXGludFxsZWZ0KDVcbG4geCs1XHJpZ2h0KVwsZHhcYW1wID01eFxsbiB4K0MrQyBcXAogICAgIFx0ZXh0e2JlY2F1c2V9XHF1YWQgNVxsbiB4KzVcYW1wID1cZnJhYyBke2R4fVxsZWZ0KDV4XGxuIHgrQ1xyaWdodCkuIFxhbXAgXHRleHR7KHByb2R1Y3QgcnVsZSl9ClxlbmR7YWxpZ25lZH1gYGBdCgoKCgphLiAgdGhpcyBtYXRjaGVzIGV4cHJlc3Npb24gKGl2KS4KCiAgICBbYGBgXGJlZ2lue2FsaWduZWR9CiAgICAgXGludDJcc2luIHhcLGR4K1xpbnQyeFxjb3MgeFwsZHhcYW1wID0yeFxzaW4geCtDIFxcCiAgICAgXHRleHR7YmVjYXVzZX1ccXVhZCBcaW50XGxlZnQoMlxzaW4geCsyeFxjb3MgeFxyaWdodClcLGR4XGFtcCA9Mnhcc2luIHgrQyBcXAogICAgIFx0ZXh0e2JlY2F1c2V9XHF1YWQgMlxzaW4geCsyeFxjb3MgeFxhbXAgPVxmcmFjIGR7ZHh9XGxlZnQoMnhcc2luIHhccmlnaHQpLiBcYW1wIFx0ZXh0eyhwcm9kdWN0IHJ1bGUpfQpcZW5ke2FsaWduZWR9YGBgXQoKCgoKYS4gIHRoaXMgbWF0Y2hlcyBleHByZXNzaW9uIChpaSk6CgogICAgW2BgYFxiZWdpbnthbGlnbmVkfQogICAgIFxpbnQgZV57M3h9XCxkeCtcaW50IDN4ZV57M3h9XCxkeFxhbXAgPXhlXnszeH0rQyBcXAogICAgIFx0ZXh0e2JlY2F1c2V9XHF1YWQgXGludFxsZWZ0KGVeezN4fSszeGVeezN4fVxyaWdodClcLGR4XGFtcCA9eGVeezN4fStDIFxcCiAgICAgXHRleHR7YmVjYXVzZX1ccXVhZCBlXnszeH0rM3hlXnszeH1cYW1wID1cZnJhYyBke2R4fVxsZWZ0KHhlXnszeH1ccmlnaHQpLiBcYW1wIFx0ZXh0eyhwcm9kdWN0IHJ1bGUpfQpcZW5ke2FsaWduZWR9YGBgXQoKCgoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw%3D%3D" base64="1" uri="1"></iframe><script>iFrameResize({log:true,inPageLinks:true,resizeFrom:'child',checkOrigin:["https://webwork.math.arizona.edu"]})</script></article><article class="assemblage-like" id="assemblage-1"><h6 class="heading"><span class="title">EDICOMMENT.</span></h6>
+<p id="p-53">EAJ - an alternate version is below. There is a unique answer for each response field.</p></article><article class="exercise-like" id="cba-7-2edc001-v2"><h6 class="heading">
+<span class="type">Problem</span> <span class="codenumber">1.2</span>.</h6>
+<iframe width="100%" src="https://webwork.math.arizona.edu/webwork2/html2xml?courseID=Precalculus_Activities&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=2&amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTtsb2FkTWFjcm9zKCJQQ0NtYWNyb3MucGwiKTsKVEVYVChNT0RFUyhQVFg9PicnLEhUTUw9PnFAPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI%2BXChcbmV3Y29tbWFuZHtcYW1wfXsmfVwpPC9kaXY%2BQCkpOwpDb250ZXh0KCdOdW1lcmljJyk7JGFuczE9Q29tcHV0ZSgic2luKHgpK3gqY29zKHgpIik7CiRhbnMyPUNvbXB1dGUoImVeKC14KS14KmVeKC14KSIpOwokYW5zMz1Db21wdXRlKCIyKnNpbih4KSsyKngqY29zKHgpIik7CiRhbnM0PUNvbXB1dGUoInNpbigyKngpKzJ4KmNvcygyKngpIik7CgpCRUdJTl9QR01MClVzZSB0aGUgcHJvZHVjdCBydWxlIHRvIGRldGVybWluZSB3aGF0IG11c3QgZ28gaW5zaWRlIHRoZSBpbnRlZ3JhbC4KCmEuICBbYFxkaXNwbGF5c3R5bGVcaW50YF1bX117JGFuczF9ezI1fSBbYGR4ID0geFxzaW4geCtDIGBdCmEuICBbYFxkaXNwbGF5c3R5bGVcaW50YF1bX117JGFuczJ9ezI1fSAgW2BkeCA9IHhlXnsteH0rQyBgXQphLiAgW2BcZGlzcGxheXN0eWxlXGludGBdW19deyRhbnMzfXsyNX0gIFtgZHggPSAyeFxzaW4geCtDIGBdCmEuICBbYFxkaXNwbGF5c3R5bGVcaW50YF1bX117JGFuczR9ezI1fSAgW2BkeCA9IHhcc2luMngrQyBgXQoKCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9ISU5UCkZvciAoYSksIHRha2UgdGhlIGRlcml2YXRpdmUgb2YgW2B4XHNpbiB4YF0gdXNpbmcgdGhlIHByb2R1Y3QgcnVsZS4gV2hhdCBkb2VzIHRoaXMgdGVsbCB5b3UgYWJvdXQgd2hhdCBzaG91bGQgZ28gaW5zaWRlIHRoZSBpbnRlZ3JhbD8gUmVtZW1iZXIgdGhlIEZ1bmRhbWVudGFsIFRoZW9yZW0uCgpVc2UgdGhlIHNhbWUgaWRlYSBmb3IgdGhlIG90aGVyIG9uZXMuCgoKRU5EX1BHTUxfSElOVAoKQkVHSU5fUEdNTF9TT0xVVElPTgphLiAgWyROQlNQXSoKCgogICAgW2BgYFxiZWdpbnthbGlnbmVkfQogICAgIFxzaW4yeCsyeFxjb3MyeCBcYW1wID1cZnJhYyBke2R4fVxsZWZ0KHhcc2luMnhccmlnaHQpLiBcYW1wIFx0ZXh0eyhwcm9kdWN0IHJ1bGUpfSBcYW1wXFwKICAgICBcaW50XGxlZnQoXHNpbjJ4KzJ4XGNvczJ4XHJpZ2h0KVwsZHhcYW1wID14XHNpbjJ4K0MgXGFtcCBcdGV4dHsoRnVuZGFtZW50YWwgVGhlb3JlbSl9IFxhbXAKXGVuZHthbGlnbmVkfWBgYF0KCgoKCmEuICBbJE5CU1BdKgoKCiAgICBbYGBgXGJlZ2lue2FsaWduZWR9CiAgICAgNVxsbiB4KzVcYW1wID1cZnJhYyBke2R4fVxsZWZ0KDV4XGxuIHhccmlnaHQpLiBcYW1wIFx0ZXh0eyhwcm9kdWN0IHJ1bGUpfSBcYW1wXFwKICAgICBcaW50XGxlZnQoNVxsbiB4KzVccmlnaHQpXCxkeFxhbXAgPTV4XGxuIHgrQyBcYW1wIFx0ZXh0eyhGdW5kYW1lbnRhbCBUaGVvcmVtKX0gXGFtcApcZW5ke2FsaWduZWR9YGBgXQoKCgoKYS4gIFskTkJTUF0qCgoKICAgIFtgYGBcYmVnaW57YWxpZ25lZH0KICAgICAyXHNpbiB4KzJ4XGNvcyB4XGFtcCA9XGZyYWMgZHtkeH1cbGVmdCgyeFxzaW4geFxyaWdodCkuIFxhbXAgXHRleHR7KHByb2R1Y3QgcnVsZSl9IFxhbXBcXAogICAgIFxpbnRcbGVmdCgyXHNpbiB4KzJ4XGNvcyB4XHJpZ2h0KVwsZHhcYW1wID0yeFxzaW4geCtDIFxhbXAgXHRleHR7KEZ1bmRhbWVudGFsIFRoZW9yZW0pfSBcYW1wClxlbmR7YWxpZ25lZH1gYGBdCgoKCgphLiAgWyROQlNQXSoKCgogICAgW2BgYFxiZWdpbnthbGlnbmVkfQogICAgIGVeezN4fSszeGVeezN4fVxhbXAgPVxmcmFjIGR7ZHh9XGxlZnQoeGVeezN4fVxyaWdodCkuIFxhbXAgXHRleHR7KHByb2R1Y3QgcnVsZSl9IFxhbXBcXAogICAgIFxpbnRcbGVmdChlXnszeH0rM3hlXnszeH1ccmlnaHQpXCxkeFxhbXAgPXhlXnszeH0rQyBcYW1wIFx0ZXh0eyhGdW5kYW1lbnRhbCBUaGVvcmVtKX0gXGFtcApcZW5ke2FsaWduZWR9YGBgXQoKCgoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw%3D%3D" base64="1" uri="1"></iframe><script>iFrameResize({log:true,inPageLinks:true,resizeFrom:'child',checkOrigin:["https://webwork.math.arizona.edu"]})</script></article><p id="p-80">Sometimes the product rule lets us find a sum of integrals. For instance,</p>
+<div class="displaymath">
+\begin{align*}
+\int e^x\,dx+\int xe^x\,dx\amp = xe^x+C \\
+\int\left(e^x+xe^x\right)\,dx\amp = xe^x+C \amp  \text{(combining the sum)} \\
+e^x+xe^x\amp = \frac d{dx}\left(xe^x\right) \amp  \text{(by the product rule)}
+\end{align*}
+</div>
+<article class="exercise-like" id="cba-7-2edc002"><h6 class="heading">
+<span class="type">Problem</span> <span class="codenumber">1.3</span>.</h6>
+<iframe width="100%" src="https://webwork.math.arizona.edu/webwork2/html2xml?courseID=Precalculus_Activities&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=3&amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJQb3BVcC5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpO2xvYWRNYWNyb3MoIlBDQ21hY3Jvcy5wbCIpOwpURVhUKE1PREVTKFBUWD0%2BJycsSFRNTD0%2BcUA8ZGl2IHN0eWxlPSJkaXNwbGF5Om5vbmU7Ij5cKFxuZXdjb21tYW5ke1xhbXB9eyZ9XCk8L2Rpdj5AKSk7CkNvbnRleHQoJ051bWVyaWMnKTskREQxPSBQb3BVcCgKICAgIFsiPyIsImkiLCJpaSIsImlpaSIsIml2Il0sCiAgICAiaSIgIyBjb3JyZWN0IGFuc3dlcgogICAgKTsKJEREMj0gUG9wVXAoCiAgICBbIj8iLCJpIiwiaWkiLCJpaWkiLCJpdiJdLAogICAgImlpaSIgIyBjb3JyZWN0IGFuc3dlcgogICAgKTsKJEREMz0gUG9wVXAoCiAgICBbIj8iLCJpIiwiaWkiLCJpaWkiLCJpdiJdLAogICAgIml2IiAjIGNvcnJlY3QgYW5zd2VyCiAgICApOwokREQ0PSBQb3BVcCgKICAgIFsiPyIsImkiLCJpaSIsImlpaSIsIml2Il0sCiAgICAiaWkiICMgY29ycmVjdCBhbnN3ZXIKICAgICk7CgpCRUdJTl9QR01MClVzZSB0aGUgcHJvZHVjdCBydWxlIHRvIGRldGVybWluZSB3aGljaCBleHByZXNzaW9uIChpKVskTURBU0hdKihpdikgaXMgZXF1YWwgdG8gdGhlIGdpdmVuIHN1bSBvZiBpbnRlZ3JhbHMuCgppLiAgW2AgeFxzaW4yeCtDIGBdCmkuICBbYCB4ZV57M3h9K0MgYF0KaS4gIFtgIDV4XGxuIHgrQyBgXQppLiAgW2AgMnhcc2luIHgrQyBgXQoKCmEuICBbYCBcZGlzcGxheXN0eWxlXGludFxzaW4yeFwsZHgrXGludCAyeFxjb3MyeFwsZHggYF0gaXMgZXF1YWwgdG8gW19deyRERDF9ezV9LgphLiAgW2AgXGRpc3BsYXlzdHlsZVxpbnQ1XGxuIHhcLGR4K1xpbnQ1XCxkeCBgXSBpcyBlcXVhbCB0byBbX117JEREMn17NX0uCmEuICBbYCBcZGlzcGxheXN0eWxlXGludDJcc2luIHhcLGR4K1xpbnQyeFxjb3MgeFwsZHggYF0gaXMgZXF1YWwgdG8gW19deyRERDN9ezV9LgphLiAgW2AgXGRpc3BsYXlzdHlsZVxpbnQgZV57M3h9XCxkeCtcaW50IDN4ZV57M3h9XCxkeCBgXSBpcyBlcXVhbCB0byBbX117JERENH17NX0uICAgCgoKCkVORF9QR01MCgpCRUdJTl9QR01MX0hJTlQKVGFrZSB0aGUgZGVyaXZhdGl2ZSBvZiAoaSkgdXNpbmcgdGhlIHByb2R1Y3QgcnVsZSBhbmQgY29tcGFyZSB3aXRoIChhKVskTURBU0hdKihkKS4gV2hhdCBpcyB0aGUgZGVyaXZhdGl2ZSB0ZWxsaW5nIHlvdSBpbiB0ZXJtcyBvZiBpbnRlZ3JhbHM%2FCkVORF9QR01MX0hJTlQKCkJFR0lOX1BHTUxfU09MVVRJT04KYS4gIFRoaXMgbWF0Y2hlcyBleHByZXNzaW9uIChpdikuIEJ5IHRoZSBwcm9kdWN0IHJ1bGUsCgogICAgW2BgYFxiZWdpbnthbGlnbmVkfQogICAgIFxzaW4yeCsyeFxjb3MyeFxhbXA9XGZyYWMgZHtkeH1cbGVmdCh4XHNpbjJ4XHJpZ2h0KVxcCiAgICAgXHRleHR7c299XHF1YWQgXGludFxsZWZ0KFxzaW4yeCsyeFxjb3MyeFxyaWdodClcLGR4XGFtcD14XHNpbjJ4K0MuClxlbmR7YWxpZ25lZH1gYGBdCgoKCgphLiAgVGhpcyBtYXRjaGVzIGV4cHJlc3Npb24gKGlpKS4gQnkgdGhlIHByb2R1Y3QgcnVsZSwKCiAgICBbYGBgXGJlZ2lue2FsaWduZWR9CiAgICAgZV57LXh9LXhlXnsteH1cYW1wPVxmcmFjIGR7ZHh9XGxlZnQoeGVeey14fVxyaWdodClcXAogICAgIFx0ZXh0e3NvfVxxdWFkIFxpbnRcbGVmdChlXnsteH0teGVeey14fVxyaWdodClcLGR4XGFtcD14ZV57LXh9K0MuClxlbmR7YWxpZ25lZH1gYGBdCgoKCgphLiAgVGhpcyBtYXRjaGVzIGV4cHJlc3Npb24gKGkpLiBCeSB0aGUgcHJvZHVjdCBydWxlLAoKICAgIFtgYGBcYmVnaW57YWxpZ25lZH0KICAgICAyXHNpbiB4KzJ4XGNvcyB4XGFtcD1cZnJhYyBke2R4fVxsZWZ0KDJ4XHNpbiB4XHJpZ2h0KVxcCiAgICAgXHRleHR7c299XHF1YWQgXGludFxsZWZ0KDJcc2luIHgrMnhcY29zIHhccmlnaHQpXCxkeFxhbXA9Mnhcc2luIHgrQy4KXGVuZHthbGlnbmVkfWBgYF0KCgoKCmEuICBUaGlzIG1hdGNoZXMgZXhwcmVzc2lvbiAoaWlpKS4gQnkgdGhlIHByb2R1Y3QgcnVsZSwKCiAgICBbYGBgXGJlZ2lue2FsaWduZWR9CiAgICAgXHNpbiB4K3hcY29zIHhcYW1wPVxmcmFjIGR7ZHh9XGxlZnQoeFxjb3MgeFxyaWdodClcXAogICAgIFx0ZXh0e3NvfVxxdWFkIFxpbnRcbGVmdChcc2luIHgreFxjb3MgeFxyaWdodClcLGR4XGFtcD14XGNvcyB4K0MuClxlbmR7YWxpZ25lZH1gYGBdCgoKCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" base64="1" uri="1"></iframe><script>iFrameResize({log:true,inPageLinks:true,resizeFrom:'child',checkOrigin:["https://webwork.math.arizona.edu"]})</script></article><article class="assemblage-like" id="assemblage-2"><h6 class="heading"><span class="title">EDITCOMMENT.</span></h6>
+<p id="p-130">EAJ - Below are two alternate versions for the above problem.</p>
+<ul id="p-131" class="disc">
+<li id="li-105">
+<p id="p-132">The first asks for mathematical expressions.</p>
+<ul class="circle">
+<li id="li-106">It will mark as correct any student answers that add up to the derivative of the expression on the right as long as neither of them is zero (if we ask for expressions, we should accept any way that is correct!).</li>
+<li id="li-107">If it seems unfortunate to mark as correct answers that are not what we expect and want them to do, a way to fix it would be to add details for the instructions in which we say in words what we actually expect. These may look artificial, but we would verbalize what we actually expect!</li>
+</ul>
+</li>
+<li id="li-108">
+<p id="p-133">The second one is about matching. The distractors are the integrals of the expression (in case they decide to integrate with wolfram alpha), and about splitting as as sum or not.</p>
+<ul class="circle">
+<li id="li-109">It helps direct them to what we are actually expecting them to do!</li>
+<li id="li-110">Several versions of these would need to be made (for each form). The good thing is that we could save some for the online assessment versions</li>
+</ul>
+</li>
+</ul></article><article class="exercise-like" id="cba-7-2edc002-v2"><h6 class="heading">
+<span class="type">Problem</span> <span class="codenumber">1.4</span>.</h6>
+<iframe width="100%" src="https://webwork.math.arizona.edu/webwork2/html2xml?courseID=Precalculus_Activities&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=4&amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJNdWx0aUFuc3dlci5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpO0NvbnRleHQoJ051bWVyaWMnKTskbXVsdGlhbnMxID0gTXVsdGlBbnN3ZXIoQ29tcHV0ZSgic2luKDIqeCkiKSxDb21wdXRlKCIyKngqY29zKDIqeCkiKSktPndpdGgoCiAgICBzaW5nbGVSZXN1bHQgPT4gMCwKICAgIGNoZWNrZXIgPT4gc3ViIHsKICAgICAgICBteSAoJGNvcnJlY3QsJHN0dWRlbnQsJHNlbGYpID0gQF87CiAgICAgICAgbXkgKCRzMSwgJHMyKSA9IEB7JHN0dWRlbnR9OwogICAgICAgIG15ICgkYzEsICRjMikgPSBAeyRjb3JyZWN0fTsKICAgICAgICBpZiAoKCRjMSArICRjMiA9PSAkczEgKyAkczIpIGFuZCAoJHMxICE9IDApIGFuZCAoJHMyICE9IDApKQogICAgICAgIHsKICAgICAgICAgIHJldHVybiBbMSwxXTsKICAgICAgICB9IAoKICAgICAgICBlbHNlIHsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgIHJldHVybiBbMCwwXTsKICAgICAgICB9CiAgICB9Cik7CiRtdWx0aWFuczIgPSBNdWx0aUFuc3dlcihDb21wdXRlKCJlXigzKngpIiksQ29tcHV0ZSgiMyp4KmVeKDMqeCkiKSktPndpdGgoCiAgICBzaW5nbGVSZXN1bHQgPT4gMCwKICAgIGNoZWNrZXIgPT4gc3ViIHsKICAgICAgICBteSAoJGNvcnJlY3QsJHN0dWRlbnQsJHNlbGYpID0gQF87CiAgICAgICAgbXkgKCRzMSwgJHMyKSA9IEB7JHN0dWRlbnR9OwogICAgICAgIG15ICgkYzEsICRjMikgPSBAeyRjb3JyZWN0fTsKICAgICAgICBpZiAoKCRjMSArICRjMiA9PSAkczEgKyAkczIpIGFuZCAoJHMxICE9IDApIGFuZCAoJHMyICE9IDApKQogICAgICAgIHsKICAgICAgICAgIHJldHVybiBbMSwxXTsKICAgICAgICB9IAoKICAgICAgICBlbHNlIHsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgIHJldHVybiBbMCwwXTsKICAgICAgICB9CiAgICB9Cik7CiRtdWx0aWFuczMgPSBNdWx0aUFuc3dlcihDb21wdXRlKCI1KmxuKHgpIiksQ29tcHV0ZSgiNSIpKS0%2Bd2l0aCgKICAgIHNpbmdsZVJlc3VsdCA9PiAwLAogICAgY2hlY2tlciA9PiBzdWIgewogICAgICAgIG15ICgkY29ycmVjdCwkc3R1ZGVudCwkc2VsZikgPSBAXzsKICAgICAgICBteSAoJHMxLCAkczIpID0gQHskc3R1ZGVudH07CiAgICAgICAgbXkgKCRjMSwgJGMyKSA9IEB7JGNvcnJlY3R9OwogICAgICAgIGlmICgoJGMxICsgJGMyID09ICRzMSArICRzMikgYW5kICgkczEgIT0gMCkgYW5kICgkczIgIT0gMCkpCiAgICAgICAgewogICAgICAgICAgcmV0dXJuIFsxLDFdOwogICAgICAgIH0gCgogICAgICAgIGVsc2UgeyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgcmV0dXJuIFswLDBdOwogICAgICAgIH0KICAgIH0KKTsKJG11bHRpYW5zNCA9IE11bHRpQW5zd2VyKENvbXB1dGUoIjIqc2luKHgpIiksQ29tcHV0ZSgiMip4KmNvcyh4KSIpKS0%2Bd2l0aCgKICAgIHNpbmdsZVJlc3VsdCA9PiAwLAogICAgY2hlY2tlciA9PiBzdWIgewogICAgICAgIG15ICgkY29ycmVjdCwkc3R1ZGVudCwkc2VsZikgPSBAXzsKICAgICAgICBteSAoJHMxLCAkczIpID0gQHskc3R1ZGVudH07CiAgICAgICAgbXkgKCRjMSwgJGMyKSA9IEB7JGNvcnJlY3R9OwogICAgICAgIGlmICgoJGMxICsgJGMyID09ICRzMSArICRzMikgYW5kICgkczEgIT0gMCkgYW5kICgkczIgIT0gMCkpCiAgICAgICAgewogICAgICAgICAgcmV0dXJuIFsxLDFdOwogICAgICAgIH0gCgogICAgICAgIGVsc2UgeyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgcmV0dXJuIFswLDBdOwogICAgICAgIH0KICAgIH0KKTsKCkJFR0lOX1BHTUwKVXNlIHRoZSBwcm9kdWN0IHJ1bGUgdG8gZGV0ZXJtaW5lIHdoYXQgbXVzdCBnbyBpbnNpZGUgdGhlIGludGVncmFscy4gTWFrZSBzdXJlIG5vbmUgb2YgeW91ciBpbnRlZ3JhbmRzIGlzIGVxdWFsIHRvIHplcm8uCgphLiAgW2BcZGlzcGxheXN0eWxlXGludGBdIFtfXXskbXVsdGlhbnMxfXsxMH1bYGR4K1xkaXNwbGF5c3R5bGVcaW50YF0gW19deyRtdWx0aWFuczF9ezEwfSBbYGR4ID0geFxzaW4yeCtDIGBdCmEuICBbYFxkaXNwbGF5c3R5bGVcaW50YF0gW19deyRtdWx0aWFuczJ9ezEwfVtgZHgrXGRpc3BsYXlzdHlsZVxpbnRgXSBbX117JG11bHRpYW5zMn17MTB9ICAgW2BkeCA9IHhlXnszeH0rQyBgXQphLiAgW2BcZGlzcGxheXN0eWxlXGludGBdIFtfXXskbXVsdGlhbnMzfXsxMH1bYGR4K1xkaXNwbGF5c3R5bGVcaW50YF0gW19deyRtdWx0aWFuczN9ezEwfSAgIFtgZHggPSA1eFxsbiB4K0MgIGBdCmEuICBbYFxkaXNwbGF5c3R5bGVcaW50YF0gW19deyRtdWx0aWFuczR9ezEwfVtgZHgrXGRpc3BsYXlzdHlsZVxpbnRgXSBbX117JG11bHRpYW5zNH17MTB9ICAgW2BkeCA9IDJ4XHNpbiB4K0NgXQoKCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9ISU5UCkFERAoKCkVORF9QR01MX0hJTlQKCkJFR0lOX1BHTUxfU09MVVRJT04KQURECgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" base64="1" uri="1"></iframe><script>iFrameResize({log:true,inPageLinks:true,resizeFrom:'child',checkOrigin:["https://webwork.math.arizona.edu"]})</script></article><article class="exercise-like" id="cba-7-2edc002-v3"><h6 class="heading">
+<span class="type">Problem</span> <span class="codenumber">1.5</span>.</h6>
+<iframe width="100%" src="https://webwork.math.arizona.edu/webwork2/html2xml?courseID=Precalculus_Activities&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=5&amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTtDb250ZXh0KCdOdW1lcmljJyk7JE1DPSBSYWRpb0J1dHRvbnMoCiAgICBbIlwoXGRpc3BsYXlzdHlsZVxpbnQgZV57LXh9XCxkeCtcaW50IC14ZV57LXh9XCxkeCBcKSIsCiAgICAiXCggXGRpc3BsYXlzdHlsZVxpbnQgZV57LXh9XCxkeC1caW50IHhlXnsteH1cLGR4IFwpIiwKICAgICJcKFxkaXNwbGF5c3R5bGVcaW50IChlXnsteH1cLGR4LXhlXnsteH0pXCxkeCBcKSIsCiAgICAiXChcZGlzcGxheXN0eWxlXGludCAoLWVeey14fSAteGVeey14fSlcLGR4IFwpIiwKICAgICJcKC1cZGlzcGxheXN0eWxlXGludCBlXnsteH1cLGR4LVxpbnQgeGVeey14fVwsZHggXCkiCiAgICBdLAogICAgMCwgIyBjb3JyZWN0IGFuc3dlcgogICAgcmFuZG9taXplID0%2BIDEKICAgICk7CgpCRUdJTl9QR01MClVzZSB0aGUgcHJvZHVjdCBydWxlIHRvIGRldGVybWluZSB3aGljaCBzdW0gb2YgaW50ZWdyYWxzIGlzIGVxdWFsIHRvCgpbYGBgIHhlXnsteH0rQyBcdGV4dHsufWBgYF0KCgoKV2UgaGF2ZSBbYCB4ZV57LXh9K0MgPSBgXQoKW19deyRNQ317NX0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9ISU5UCkFERApFTkRfUEdNTF9ISU5UCgpCRUdJTl9QR01MX1NPTFVUSU9OCkFERAoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw%3D%3D" base64="1" uri="1"></iframe><script>iFrameResize({log:true,inPageLinks:true,resizeFrom:'child',checkOrigin:["https://webwork.math.arizona.edu"]})</script></article><article class="exercise-like" id="cba-7-2edc002-v4"><h6 class="heading">
+<span class="type">Problem</span> <span class="codenumber">1.6</span>.</h6>
+<iframe width="100%" src="https://webwork.math.arizona.edu/webwork2/html2xml?courseID=Precalculus_Activities&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=6&amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTtDb250ZXh0KCdOdW1lcmljJyk7JGV4cDE9Rm9ybXVsYSgieCpzaW4oMip4KSIpOwokZXhwMj1Gb3JtdWxhKCI1KmxuKHgpIik7CiRleHAzPUZvcm11bGEoIjIqeCpzaW4oeCkiKTsKJGV4cDQ9Rm9ybXVsYSgieCplXigzeCkiKTsKCkJFR0lOX1BHTUwKRWFjaCBvZiB0aGUgZm9sbG93aW5nIHN1bXMgb2YgaW50ZWdyYWxzIGlzIGVxdWFsIHRvIHRoZSBwcm9kdWN0IG9mIHR3byBmdW5jdGlvbnMuIEZpbmQgZWFjaCBvbmUgYnkgdXNpbmcgdGhlIHByb2R1Y3QgcnVsZSAoYmFja3dhcmRzKS4KCkRvIG5vdCBpbmNsdWRlIFtgK0NgXSBpbiB5b3VyIGFuc3dlci4KCmEuICBbYCBcZGlzcGxheXN0eWxlXGludFxzaW4yeFwsZHgrXGludCAyeFxjb3MyeFwsZHggPSBgXSBbX117JGV4cDF9ezE1fSBbYCtDXHRleHR7Ln1gXQphLiAgW2AgXGRpc3BsYXlzdHlsZVxpbnQ1XGxuIHhcLGR4K1xpbnQ1XCxkeCA9IGBdIFtfXXskZXhwMn17MTV9IFtgK0NcdGV4dHsufWBdCmEuICBbYCBcZGlzcGxheXN0eWxlXGludDJcc2luIHhcLGR4K1xpbnQyeFxjb3MgeFwsZHggPSBgXSBbX117JGV4cDN9ezE1fSBbYCtDXHRleHR7Ln1gXQphLiAgW2AgXGRpc3BsYXlzdHlsZVxpbnQgZV57M3h9XCxkeCtcaW50IDN4ZV57M3h9XCxkeCA9IGBdIFtfXXskZXhwNH17MTV9IFtgK0NcdGV4dHsufWBdICAgCgoKCkVORF9QR01MCgpCRUdJTl9QR01MX0hJTlQKQURECkVORF9QR01MX0hJTlQKCkJFR0lOX1BHTUxfU09MVVRJT04KQURECgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" base64="1" uri="1"></iframe><script>iFrameResize({log:true,inPageLinks:true,resizeFrom:'child',checkOrigin:["https://webwork.math.arizona.edu"]})</script></article><article class="exercise-like" id="cba-7-2edc002-v5"><h6 class="heading">
+<span class="type">Problem</span> <span class="codenumber">1.7</span>.</h6>
+<iframe width="100%" src="https://webwork.math.arizona.edu/webwork2/html2xml?courseID=Precalculus_Activities&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=7&amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJQb3BVcC5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpO0NvbnRleHQoJ051bWVyaWMnKTskREQxPSBQb3BVcCgKICAgIFsiPyIsIlByb2R1Y3QgcnVsZSIsIkNoYWluIHJ1bGUiLCJOZWl0aGVyIl0sCiAgICAxICMgY29ycmVjdCBhbnN3ZXIKICAgICk7CiRERDI9IFBvcFVwKAogICAgWyI%2FIiwiUHJvZHVjdCBydWxlIiwiQ2hhaW4gcnVsZSIsIk5laXRoZXIiXSwKICAgIDMgIyBjb3JyZWN0IGFuc3dlcgogICAgKTsKCkJFR0lOX1BHTUwKU2F5IHdoZXRoZXIgZWFjaCBvZiB0aGUgZm9sbG93aW5nIHN0YXRlbWVudHMgYXJlIGEgY29uc2VxdWVuY2Ugb2YgdGhlIHByb2R1Y3QgcnVsZSwgdGhlIGNoYWluIHJ1bGUsIG9yIG5laXRoZXI6CgphLiAgW2AgXGRpc3BsYXlzdHlsZVxpbnRcbGVmdChlXnstMnh9LTJ4ZV57LTJ4fVxyaWdodClcLGR4ICA9IHhlXnstMnh9ICsgQ1x0ZXh0ey59YF0gW19deyRERDF9ezV9LgphLiAgW2AgXGludFxsZWZ0KGVeey0yeH0rMmVeezJ4fVxyaWdodClcLGR4ICA9IC0wLjVlXnstMnh9KzJlXnsyeH0gKyBDIFx0ZXh0ey59YF0gW19deyRERDJ9ezV9LiAgIAoKCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9ISU5UCkFERApFTkRfUEdNTF9ISU5UCgpCRUdJTl9QR01MX1NPTFVUSU9OCkFERAoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw%3D%3D" base64="1" uri="1"></iframe><script>iFrameResize({log:true,inPageLinks:true,resizeFrom:'child',checkOrigin:["https://webwork.math.arizona.edu"]})</script></article></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.11/login.js"></script>
+</body>
+</html>

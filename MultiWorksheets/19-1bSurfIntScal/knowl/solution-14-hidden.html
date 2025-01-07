@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-10-07T10:12:26-05:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><div class="solution">
+<p>First, \(S\) can be parameterized by \(\vec{r}(u,v)=u\vec{i} +v\vec{j} +(5-u-v)\vec{k}\text{.}\) Since we want to restrict to the first octant, we need \(x=u\geq 0\text{,}\) \(y=v\geq 0\text{,}\) \(z=5-u-v\geq 0\) which gives the bounds \(0\leq u\leq 5\) and \(0\leq v\leq 5-u\text{.}\) The normal vector is \(\vec{N} =\vec{i} +\vec{j} +\vec{k}\) and so \(||N||=\sqrt{3}\text{.}\) Thus we have</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}
+\int \int_{S} xz \, dS \amp =\int_{0}^{5} \int_{0}^{5-u} u(5-u-v) \sqrt{3} \,dv\,du\\
+\amp =\sqrt{3} \int_{0}^{5} \int_{0}^{5-u} (5u-u^2-uv) \,dv\,du \\
+\amp =\sqrt{3} \int_{0}^{5} \left( 5uv-u^2v-u\frac{v^2}{2} \right)\bigg|_{0}^{5-u} \,du \\
+\amp =\sqrt{3} \int_{0}^{5} \left( \frac{u^3}{2} -5u^2+\frac{25}{2}u \right) \,du \\
+\amp =\sqrt{3}  \left( \frac{u^4}{8} -\frac{5 u^3}{3} +\frac{25}{4}u^2 \right)\bigg|_{0}^{5} \\
+\amp =\sqrt{3}  \left( \frac{5^4}{8} -\frac{5(5)^3}{3} +\frac{25}{4}\cdot 5^2 \right) \\
+\amp = \frac{625 \sqrt{3}}{24}.
+\end{aligned}
+\end{equation*}
+</div>
+</div></body>
+</html>

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-11-29T15:40:14-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Supertex is giving me an error message related to cabin fonts <code class="code-inline tex2jax_ignore">I can't find file `CabinCondensed-Regular-tlf-t1'.</code>
+</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="MCWG TeX Frequently Asked Questions">
+<meta property="book:author" content="">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\doubler}[1]{2#1}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="MCWG-FAQ.html"><span class="title">MCWG TeX Frequently Asked Questions</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="GhostcriptConflitingVersions.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="InstallationBasicSetup.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="SupertexAndMacOSMonterrey.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="GhostcriptConflitingVersions.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="InstallationBasicSetup.html" title="Up">Up</a><a class="next-button button toolbar-item" href="SupertexAndMacOSMonterrey.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter-1.html" data-scroll="frontmatter-1" class="internal"><span class="title">(**) Introduction</span></a><ul><li><a href="subsection-1.html" data-scroll="subsection-1" class="internal">Consortium members' contact info</a></li></ul>
+</li>
+<li class="link">
+<a href="InstallationBasicSetup.html" data-scroll="InstallationBasicSetup" class="internal"><span class="codenumber">1</span> <span class="title">Installation: Setup of your system</span></a><ul>
+<li><a href="BasicSetup.html" data-scroll="BasicSetup" class="internal">Getting things running</a></li>
+<li><a href="GhostcriptConflitingVersions.html" data-scroll="GhostcriptConflitingVersions" class="internal">Supertex is giving me an error message regarding Ghostscript <code class="code-inline tex2jax_ignore">Can't find initialization file gs_init.ps</code></a></li>
+<li><a href="FontsAndMactex2021.html" data-scroll="FontsAndMactex2021" class="active">Supertex is giving me an error message related to cabin fonts <code class="code-inline tex2jax_ignore">I can't find file `CabinCondensed-Regular-tlf-t1'.</code></a></li>
+<li><a href="SupertexAndMacOSMonterrey.html" data-scroll="SupertexAndMacOSMonterrey" class="internal">Supertex is not working after I updated to MacOS Monterrey (October 2021)</a></li>
+</ul>
+</li>
+<li class="link"><a href="chapter-2.html" data-scroll="chapter-2" class="internal"><span class="codenumber">2</span> <span class="title">Using git</span></a></li>
+<li class="link">
+<a href="Abbreviations.html" data-scroll="Abbreviations" class="internal"><span class="codenumber">3</span> <span class="title">Abbreviations</span></a><ul>
+<li><a href="abbreviationStandarUnits01.html" data-scroll="abbreviationStandarUnits01" class="internal">What are the abbreviations and conventions that we use for standard units like grams and miles per hour?</a></li>
+<li><a href="latinAbbreviations01.html" data-scroll="latinAbbreviations01" class="internal">Do we italicize Latin abbreviations such as e.g. and i.e.?</a></li>
+<li><a href="texCommandsAbbreviation01.html" data-scroll="texCommandsAbbreviation01" class="internal">Which TeX commands can I abbreviate?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Books.html" data-scroll="Books" class="internal"><span class="codenumber">4</span> <span class="title">Books</span></a><ul>
+<li><a href="latestEditions.html" data-scroll="latestEditions" class="internal">What are the latest editions of our books?</a></li>
+<li><a href="rewriteVsCheckMaterials01.html" data-scroll="rewriteVsCheckMaterials01" class="internal">Sometimes I'm asked to rewrite materials, and sometimes I'm asked to check them.  What is the difference?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Captions.html" data-scroll="Captions" class="internal"><span class="codenumber">5</span> <span class="title">Captions</span></a><ul>
+<li><a href="captionsOnATable02.html" data-scroll="captionsOnATable02" class="internal">Should I put a caption on a table?</a></li>
+<li><a href="tableLabels04.html" data-scroll="tableLabels04" class="internal">When do I put labels (numbers) and captions on tables?</a></li>
+<li><a href="CaptionOrNoCaption03.html" data-scroll="CaptionOrNoCaption03" class="internal">Sometimes I want a figure with a number and a caption, sometimes with only a number, and sometimes with neither a number nor a caption. How do I do that?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Chapters.html" data-scroll="Chapters" class="internal"><span class="codenumber">6</span> <span class="title">Chapters</span></a><ul>
+<li><a href="creatingChapter03.html" data-scroll="creatingChapter03" class="internal">How do I create a Chapter?</a></li>
+<li><a href="exampleInChapter02.html" data-scroll="exampleInChapter02" class="internal">How do I put an Example in a Chapter?</a></li>
+<li><a href="capitalizingHeadings04.html" data-scroll="capitalizingHeadings04" class="internal">What is the convention for capitalizing headings of chapters, sections, and subsections?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Characters.html" data-scroll="Characters" class="internal"><span class="codenumber">7</span> <span class="title">Characters</span></a><ul>
+<li><a href="mathematicalSymbolsInHeadings03.html" data-scroll="mathematicalSymbolsInHeadings03" class="internal">I am trying to create tables where the headings are mathematical symbols, e.g. <code class="code-inline tex2jax_ignore">$\times 2$ &amp; $+4$ &amp; $\div 2$</code>.  The times and the plus are replaced by the correct symbols, but the div just prints the word "div" instead of the division symbol.  Any suggestions?</a></li>
+<li><a href="printSpecialCharacters03.html" data-scroll="printSpecialCharacters03" class="internal">How do I print the TeX special characters: <code class="code-inline tex2jax_ignore">$, &amp;, %, #, _,{, and }</code>?</a></li>
+<li><a href="commandsToGetDivGradCurl03.html" data-scroll="commandsToGetDivGradCurl03" class="internal">What commands do I use to get <em class="emphasis">div</em>, <em class="emphasis">grad</em>, and <em class="emphasis">curl</em>?</a></li>
+<li><a href="poundSymbol03.html" data-scroll="poundSymbol03" class="internal">How do I enter the UK counterpart of $, namely the UK pound symbol, £?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="CheckingText.html" data-scroll="CheckingText" class="internal"><span class="codenumber">8</span> <span class="title">Checking Text</span></a><ul>
+<li><a href="rewriteVsCheckMaterials02.html" data-scroll="rewriteVsCheckMaterials02" class="internal">Sometimes I'm asked to rewrite materials, and sometimes I'm asked to check them.  What is the difference?</a></li>
+<li><a href="answersOrShortAnswersMissing03.html" data-scroll="answersOrShortAnswersMissing03" class="internal">When checking exercises, what do I do if an Answer or ShortAnswer is missing?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ConcepTests.html" data-scroll="ConcepTests" class="internal"><span class="codenumber">9</span> <span class="title">ConcepTests</span></a><ul>
+<li><a href="ConcepTestFiles.html" data-scroll="ConcepTestFiles" class="internal">What is the correct naming convention for ConcepTest files?</a></li>
+<li><a href="commentAfterSolution.html" data-scroll="commentAfterSolution" class="internal">How do I insert the Comment that often goes after the solution of a ConcepTest in place of the short answer?</a></li>
+</ul>
+</li>
+<li class="link"><a href="Conventions.html" data-scroll="Conventions" class="internal"><span class="codenumber">10</span> <span class="title">Conventions</span></a></li>
+<li class="link">
+<a href="CrossReferences.html" data-scroll="CrossReferences" class="internal"><span class="codenumber">11</span> <span class="title">Cross References</span></a><ul>
+<li><a href="figuresAndTablesLabel04.html" data-scroll="figuresAndTablesLabel04" class="internal">What is the preferred convention for labelling figures and tables in Exercises?</a></li>
+<li><a href="tableLabels05.html" data-scroll="tableLabels05" class="internal">When do I put labels (numbers) and captions on tables?</a></li>
+<li><a href="hardCodingReference03.html" data-scroll="hardCodingReference03" class="internal">May I reference an example, figure, or table, by hard coding the reference (e.g., <code class="code-inline tex2jax_ignore">Example 5</code> instead of <code class="code-inline tex2jax_ignore">Example~\ref{blahblah}</code>)?</a></li>
+<li><a href="ReferenceAllFigs02.html" data-scroll="ReferenceAllFigs02" class="internal">Do all figures have to be referenced?</a></li>
+<li><a href="CaptionOrNoCaption02.html" data-scroll="CaptionOrNoCaption02" class="internal">Sometimes I want a figure with a number and a caption, sometimes with only a number, and sometimes with neither a number nor a caption. How do I do that?</a></li>
+<li><a href="referencesPrintedText02.html" data-scroll="referencesPrintedText02" class="internal">How do I reference existing theorems, chapters, sections, examples, exercises, and problems, in the printed calculus text that we are editing?</a></li>
+<li><a href="referPartFromAnother02.html" data-scroll="referPartFromAnother02" class="internal">I am creating an exercise that has parts (a), (b), (c), etc., and in part (c) I want to refer to part (a). How do I do that?</a></li>
+<li><a href="CrossReferencePageNumber03.html" data-scroll="CrossReferencePageNumber03" class="internal">How do I cross reference an object using a page number?</a></li>
+<li><a href="referExerciseFromAnother02.html" data-scroll="referExerciseFromAnother02" class="internal">How do I cross reference one exercise from another?</a></li>
+</ul>
+</li>
+<li class="link"><a href="DosAndDonts.html" data-scroll="DosAndDonts" class="internal"><span class="codenumber">12</span> <span class="title">Do's and Don'ts</span></a></li>
+<li class="link">
+<a href="Equations.html" data-scroll="Equations" class="internal"><span class="codenumber">13</span> <span class="title">Equations</span></a><ul>
+<li><a href="sequenceOfEquations03.html" data-scroll="sequenceOfEquations03" class="internal">I want to create a sequence of equations, one below the other, with the equal signs lined up. How do I do that?</a></li>
+<li><a href="piecewiseFunction03.html" data-scroll="piecewiseFunction03" class="internal">What command do I use in TeX to construct a piecewise defined function?</a></li>
+<li><a href="displaystyle04.html" data-scroll="displaystyle04" class="internal">Can I use <code class="code-inline tex2jax_ignore">\displaystyle</code> in display math style or in <code class="code-inline tex2jax_ignore">eqnarray*</code>?</a></li>
+<li><a href="shouldKnowDisplayStyle04.html" data-scroll="shouldKnowDisplayStyle04" class="internal">Is there anything I should know if I use display math style (that is, when an expression is on its own line)?</a></li>
+<li><a href="equationsDisplayInLines.html" data-scroll="equationsDisplayInLines" class="internal">What is the difference between <code class="code-inline tex2jax_ignore">\hbox</code>, <code class="code-inline tex2jax_ignore">\mbox</code>, and <code class="code-inline tex2jax_ignore">\wordeq</code>?</a></li>
+<li><a href="differencesDollarSign02.html" data-scroll="differencesDollarSign02" class="internal">What is the difference between <code class="code-inline tex2jax_ignore">$blah$</code>, <code class="code-inline tex2jax_ignore">$$blah$$</code>, and <code class="code-inline tex2jax_ignore">$\dsty blah$</code>?</a></li>
+<li><a href="equationsDisplayStyle02.html" data-scroll="equationsDisplayStyle02" class="internal">In display style math (when an equation is on its own line) are both <code class="code-inline tex2jax_ignore">$$equation$$</code> and<pre class="code-block tex2jax_ignore">$$ 
+equation 
+$$
+</pre>correct?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Errors.html" data-scroll="Errors" class="internal"><span class="codenumber">14</span> <span class="title">Errors</span></a><ul>
+<li><a href="doesntTex01.html" data-scroll="doesntTex01" class="internal">The TeX file I created does not TeX. What do I do?</a></li>
+<li><a href="dontEnoughTex01.html" data-scroll="dontEnoughTex01" class="internal">I know what I want to say, but I don't know enough TeX to express it.  What do I do?</a></li>
+<li><a href="commonTexMistakes01.html" data-scroll="commonTexMistakes01" class="internal">Is there a list of common TeX mistakes?</a></li>
+<li><a href="missingDollarSign01.html" data-scroll="missingDollarSign01" class="internal">Why do I get an error message concerning missing $ when I try to TeX "\footnote{http://dr.pierce1.net/PDF/half_life.pdf, accessed on May 10, 2003.}"?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ExercisesAndProblems.html" data-scroll="ExercisesAndProblems" class="internal"><span class="codenumber">15</span> <span class="title">Exercises and Problems</span></a><ul>
+<li><a href="formatExercisesFiles01.html" data-scroll="formatExercisesFiles01" class="internal">What is the correct format and naming convention for exercise files?</a></li>
+<li><a href="reuseFilenames01.html" data-scroll="reuseFilenames01" class="internal">I wrote an exercise file "1-2dslgnp001.tex" which is now being used in Section 6.2. Can I reuse the filename "1-2dslgnp001.tex" to create a new problem for Section 1.2?</a></li>
+<li><a href="exerciseOrProblem01.html" data-scroll="exerciseOrProblem01" class="internal">How do I specify that a problem that I am submitting is intended to be a "Problem" rather than an "Exercise"?</a></li>
+<li><a href="figuresAndTablesLabel01.html" data-scroll="figuresAndTablesLabel01" class="internal">What is the preferred convention for labelling figures and tables in Exercises?</a></li>
+<li><a href="tableLabels01.html" data-scroll="tableLabels01" class="internal">When do I put labels (numbers) and captions on tables?</a></li>
+<li><a href="answersAndShortAnswers01.html" data-scroll="answersAndShortAnswers01" class="internal">Is it OK to submit exercises without Answers or ShortAnswers?</a></li>
+<li><a href="answersOrShortAnswersMissing01.html" data-scroll="answersOrShortAnswersMissing01" class="internal">When checking exercises, what do I do if an Answer or ShortAnswer is missing?</a></li>
+<li><a href="collectionOfExercises01.html" data-scroll="collectionOfExercises01" class="internal">How do I put together a collection of exercises?</a></li>
+<li><a href="qset01.html" data-scroll="qset01" class="internal">In a collection of exercises, how do I give a subset of the exercises the same set of instructions, called a QSET?</a></li>
+<li><a href="dollarSign01.html" data-scroll="dollarSign01" class="internal">In Exercises, when do we use <code class="code-inline tex2jax_ignore">$blah$</code>, <code class="code-inline tex2jax_ignore">$$blah$$</code>, and <code class="code-inline tex2jax_ignore">$\dsty blah$</code>?</a></li>
+<li><a href="filenamesBoxes01.html" data-scroll="filenamesBoxes01" class="internal">How do I turn off the little rectangular boxes that give the filenames of the exercise files alongside the exercises?</a></li>
+<li><a href="printEverything01.html" data-scroll="printEverything01" class="internal">How do I print the questions, the answers, and the short answers for the exercises?</a></li>
+<li><a href="printOnlyExerciseQuestion01.html" data-scroll="printOnlyExerciseQuestion01" class="internal">How do I print only the questions (without the answers or short answers) for the exercises?</a></li>
+<li><a href="oneColumnPrint01.html" data-scroll="oneColumnPrint01" class="internal">How do I print the exercises in one column instead of the default of two columns?</a></li>
+<li><a href="unitsOnFigures01.html" data-scroll="unitsOnFigures01" class="internal">Do I need to put the units (of the variables) in the text of an exercise and also in the figure of the exercise?</a></li>
+<li><a href="conciseVsWording01.html" data-scroll="conciseVsWording01" class="internal">If I have the choice between wording an exercise in a concise style or in a verbose style, which is preferable?</a></li>
+<li><a href="shortAnswers01.html" data-scroll="shortAnswers01" class="internal">What do I need to know about short answers?</a></li>
+<li><a href="figureInShortAnswer02.html" data-scroll="figureInShortAnswer02" class="internal">How do I put a figure into the short answer of an exercise or problem?</a></li>
+<li><a href="unitsInShortAnswer01.html" data-scroll="unitsInShortAnswer01" class="internal">If in the short answers I have the choice between including or omitting units, what should I do?  (For example, if a  problem asks "How many ships are left?", should the short answer be "32" or "32 ships"?</a></li>
+<li><a href="manyPossibleAnswersInShortAnswer.html" data-scroll="manyPossibleAnswersInShortAnswer" class="internal">If there are many possible answers to an exercise/problem, what is the correct way to write a short answer?</a></li>
+<li><a href="whenDoIUseQSET01.html" data-scroll="whenDoIUseQSET01" class="internal">When do I use a QSET?</a></li>
+<li><a href="exactAnswer01.html" data-scroll="exactAnswer01" class="internal">The exact answer to one of my exercises is <code class="code-inline tex2jax_ignore">$5/\pi$</code> inches. Should I also give the calculator value of 1.592?</a></li>
+<li><a href="decimalPlacesInAnswer01.html" data-scroll="decimalPlacesInAnswer01" class="internal">How many decimal places should I keep in a numerical answer?</a></li>
+<li><a href="exerciseFilenameForDifferentBooks01.html" data-scroll="exerciseFilenameForDifferentBooks01" class="internal">The suggested way of naming exercise files is not unique if I am creating exercises for two different books. What do I do?</a></li>
+<li><a href="codeForBooksAndEditions01.html" data-scroll="codeForBooksAndEditions01" class="internal">(**) Is there any pattern to the way we identify books and editions?</a></li>
+<li><a href="referPartFromAnother01.html" data-scroll="referPartFromAnother01" class="internal">I am creating an exercise that has parts (a), (b), (c), etc., and in part (c) I want to refer to part (a). How do I do that?</a></li>
+<li><a href="referExerciseFromAnother01.html" data-scroll="referExerciseFromAnother01" class="internal">How do I cross reference one exercise from another?</a></li>
+<li><a href="hint.html" data-scroll="hint" class="internal">I want to put a hint in an exercise. How do I do that?</a></li>
+<li><a href="filenamesFormat01.html" data-scroll="filenamesFormat01" class="internal">I'm told that I can construct the filename of any of the exercises just by looking at one of published books. How do I do that?</a></li>
+<li><a href="orVsAndInSolutions01.html" data-scroll="orVsAndInSolutions01" class="internal">Do we say "The solutions are $x = 1$ and $x = 2$," or "The solutions are $x = 1$ or $x =2$"?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ExponentsSuperSubscripts.html" data-scroll="ExponentsSuperSubscripts" class="internal"><span class="codenumber">16</span> <span class="title">Exponents/Super/Subscripts</span></a><ul>
+<li><a href="ordinalNumbersExpressionsTeX01.html" data-scroll="ordinalNumbersExpressionsTeX01" class="internal">How do I TeX expressions like "1^{st}" and "n^{th}"?</a></li>
+<li><a href="subscripts01.html" data-scroll="subscripts01" class="internal">When I use  word subscripts (e.g. $r_{in}$ or $r_{\hbox{in}}$) the word "in" is either in italics or too large.  What should I be using?</a></li>
+<li><a href="vectorSubscript01.html" data-scroll="vectorSubscript01" class="internal">If I use <code class="code-inline tex2jax_ignore">$\vec F_{M}$</code> or <code class="code-inline tex2jax_ignore">$\overrightarrow{F}_M$</code> a huge gap is left between the bottom of the F and the M, which looks wrong. What should I do?</a></li>
+<li><a href="shilling01.html" data-scroll="shilling01" class="internal">What is shilling?</a></li>
+<li><a href="shillVsFrac01.html" data-scroll="shillVsFrac01" class="internal">When do I shill and when do I use <code class="code-inline tex2jax_ignore">$\frac{}{}$</code>?</a></li>
+<li><a href="degreeSymbol01.html" data-scroll="degreeSymbol01" class="internal">How do I enter the degree symbol, for example 76 degrees Fahrenheit?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Figures.html" data-scroll="Figures" class="internal"><span class="codenumber">17</span> <span class="title">Figures</span></a><ul>
+<li><a href="LabelFigsExer.html" data-scroll="LabelFigsExer" class="internal">What is the preferred convention for labeling figures and tables in Exercises?</a></li>
+<li><a href="hardCodingReference01.html" data-scroll="hardCodingReference01" class="internal">May I reference an example, figure, or table, by hard coding the reference (e.g., <code class="code-inline tex2jax_ignore">Example 5</code> instead of <code class="code-inline tex2jax_ignore">Example~\ref{blahblah}</code>)?</a></li>
+<li><a href="figureInShortAnswer01.html" data-scroll="figureInShortAnswer01" class="internal">How do I put a figure into the short answer of an exercise or problem?</a></li>
+<li><a href="figInDiffEquations.html" data-scroll="figInDiffEquations" class="internal">I want to use the same figure in two different questions. Can I use exactly the same file?</a></li>
+<li><a href="ReferenceAllFigs01.html" data-scroll="ReferenceAllFigs01" class="internal">Do all figures have to be referenced?</a></li>
+<li><a href="CaptionOrNoCaption01.html" data-scroll="CaptionOrNoCaption01" class="internal">Sometimes I want a figure with a number and a caption, sometimes with only a number, and sometimes with neither a number nor a caption. How do I do that?</a></li>
+<li><a href="StayfigOrFakefig01.html" data-scroll="StayfigOrFakefig01" class="internal">What is the difference between <code class="code-inline tex2jax_ignore">stayfig</code> and <code class="code-inline tex2jax_ignore">fakefig</code>?</a></li>
+<li><a href="CollectionOfFigsTogether.html" data-scroll="CollectionOfFigsTogether" class="internal">I want to put a collection of figures together on a page. How do I do that?</a></li>
+<li><a href="PlaceRomanNumeralOnFigCollection.html" data-scroll="PlaceRomanNumeralOnFigCollection" class="internal">How can I place a Roman numeral, like "(IV)", at the upper left-hand corner of a figure as is sometimes needed in a collection of figures?</a></li>
+<li><a href="UnitsInTextOrFigure.html" data-scroll="UnitsInTextOrFigure" class="internal">Do I need to put the units (of the variables) in the text of an exercise and also in the figure of the exercise?</a></li>
+<li><a href="CrossReferencePageNumber02.html" data-scroll="CrossReferencePageNumber02" class="internal">How do I cross reference an object using a page number?</a></li>
+<li><a href="FigureAxisLabels.html" data-scroll="FigureAxisLabels" class="internal">What do I need to know when text is used to label the axes in a figure?</a></li>
+<li><a href="UndefinedHollowPointInfFigure.html" data-scroll="UndefinedHollowPointInfFigure" class="internal">(**) How do I put a little circle on a graph indicating that a function is undefined at that point?</a></li>
+<li><a href="ManyFiguresInProblem.html" data-scroll="ManyFiguresInProblem" class="internal">How do I put many figures into a problem?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Filenames.html" data-scroll="Filenames" class="internal"><span class="codenumber">18</span> <span class="title">Filenames</span></a><ul>
+<li><a href="exerciseFilenameForDifferentBooks02.html" data-scroll="exerciseFilenameForDifferentBooks02" class="internal">The suggested way of naming exercise files is not unique if I am creating exercises for two different books. What do I do?</a></li>
+<li><a href="filenamesFormat02.html" data-scroll="filenamesFormat02" class="internal">I'm told that I can construct the filename of any of the exercises just by looking at one of published books. How do I do that?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="FontsAndTypefaces.html" data-scroll="FontsAndTypefaces" class="internal"><span class="codenumber">19</span> <span class="title">Fonts and Typefaces</span></a><ul>
+<li><a href="specialReference01.html" data-scroll="specialReference01" class="internal">I want to refer to something like City A and City B.  Do I just type it that way, or are the A and B put into a special font, say $A$ and $B$?</a></li>
+<li><a href="ordinalNumbersExpressionsTeX02.html" data-scroll="ordinalNumbersExpressionsTeX02" class="internal">How do I TeX expressions like "1^{st}" and "n^{th}"?</a></li>
+<li><a href="subscripts02.html" data-scroll="subscripts02" class="internal">When I use  word subscripts (e.g. $r_{in}$ or $r_{\hbox{in}}$) the word "in" is either in italics or too large.  What should I be using?</a></li>
+<li><a href="boldface01.html" data-scroll="boldface01" class="internal">How can I change the typeface to boldface?</a></li>
+<li><a href="typeSize01.html" data-scroll="typeSize01" class="internal">How can I change the type size?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Footnotes.html" data-scroll="Footnotes" class="internal"><span class="codenumber">20</span> <span class="title">Footnotes</span></a><ul>
+<li><a href="footnote01.html" data-scroll="footnote01" class="internal">How do I insert a footnote?</a></li>
+<li><a href="footnotePosition01.html" data-scroll="footnotePosition01" class="internal">Do I put a footnote before or after a punctuation mark?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="FormattingMath.html" data-scroll="FormattingMath" class="internal"><span class="codenumber">21</span> <span class="title">Formatting: Math</span></a><ul>
+<li><a href="displayMathStyle01.html" data-scroll="displayMathStyle01" class="internal">How can I use the display math style without putting the expression on a new line?</a></li>
+<li><a href="differencesDollarSign01.html" data-scroll="differencesDollarSign01" class="internal">What is the difference between <code class="code-inline tex2jax_ignore">$blah$</code>, <code class="code-inline tex2jax_ignore">$$blah$$</code>, and <code class="code-inline tex2jax_ignore">$\dsty blah$</code>?</a></li>
+<li><a href="displaystyle01.html" data-scroll="displaystyle01" class="internal">Can I use <code class="code-inline tex2jax_ignore">\displaystyle</code> in display math style or in <code class="code-inline tex2jax_ignore">eqnarray*</code>?</a></li>
+<li><a href="shouldKnowDisplayStyle01.html" data-scroll="shouldKnowDisplayStyle01" class="internal">Is there anything I should know if I use display math style (that is, when an expression is on its own line)?</a></li>
+<li><a href="integrals01.html" data-scroll="integrals01" class="internal">If I use <code class="code-inline tex2jax_ignore">$\int f(x) dx$</code>, to construct the integral of f(x), the f(x) and dx are too close. What should I do?</a></li>
+<li><a href="vectorsArrow01.html" data-scroll="vectorsArrow01" class="internal">Do I use <code class="code-inline tex2jax_ignore">$\vec F$</code> or <code class="code-inline tex2jax_ignore">$\overrightarrow{F}$</code> to put an arrow on top of the vector F?</a></li>
+<li><a href="vectorSubscript02.html" data-scroll="vectorSubscript02" class="internal">If I use <code class="code-inline tex2jax_ignore">$\vec F_{M}$</code> or <code class="code-inline tex2jax_ignore">$\overrightarrow{F}_M$</code> a huge gap is left between the bottom of the F and the M, which looks wrong. What should I do?</a></li>
+<li><a href="shilling02.html" data-scroll="shilling02" class="internal">What is shilling?</a></li>
+<li><a href="shillVsFrac02.html" data-scroll="shillVsFrac02" class="internal">When do I shill and when do I use <code class="code-inline tex2jax_ignore">$\frac{}{}$</code>?</a></li>
+<li><a href="range01.html" data-scroll="range01" class="internal">The three expressions <code class="code-inline tex2jax_ignore">$x &gt; 1$</code>, <code class="code-inline tex2jax_ignore">$1 &lt; x &lt; \infty$</code>, and <code class="code-inline tex2jax_ignore">$(1, \infty)$</code> are mathematically equivalent.  Which one do we use?</a></li>
+<li><a href="rightArrow01.html" data-scroll="rightArrow01" class="internal">May I use the implies symbol ==&gt; (<code class="code-inline tex2jax_ignore">$\Rightarrow$</code>)?</a></li>
+<li><a href="sinNotation01.html" data-scroll="sinNotation01" class="internal">Do I use <code class="code-inline tex2jax_ignore">$\sin x$</code> or <code class="code-inline tex2jax_ignore">$\sin (x)$</code>?</a></li>
+<li><a href="rootVsZero01.html" data-scroll="rootVsZero01" class="internal">When do I use root and when do I use zero?</a></li>
+<li><a href="equalVsApproEqual01.html" data-scroll="equalVsApproEqual01" class="internal">When do I use = and when do I use approximately equal (<code class="code-inline tex2jax_ignore">\approx</code>)?</a></li>
+<li><a href="multipliedTogetherRepeatedly01.html" data-scroll="multipliedTogetherRepeatedly01" class="internal">To display <code class="code-inline tex2jax_ignore">$a$</code> multiplied together repeatedly, do I use <code class="code-inline tex2jax_ignore">$a\cdot a\cdot a\cdot\cdots\cdot a$</code> or <code class="code-inline tex2jax_ignore">$a\cdot a\cdot a\cdots a$</code>?</a></li>
+<li><a href="subscripts03.html" data-scroll="subscripts03" class="internal">When I use  word subscripts (e.g. <code class="code-inline tex2jax_ignore">$r_{in}$</code> or <code class="code-inline tex2jax_ignore">$r_{\hbox{in}}$</code>) the word "in" is either in italics or too large.  What should I be using?</a></li>
+<li><a href="verticalBar01.html" data-scroll="verticalBar01" class="internal">When I TeX <code class="code-inline tex2jax_ignore">\dsty \left.\arctan(x)\right|_0^b</code> the vertical bar isn't long enough.  How can I get it taller?</a></li>
+<li><a href="textIntoEquation01.html" data-scroll="textIntoEquation01" class="internal">How do I put text into an equation?</a></li>
+<li><a href="equationsDisplayStyle01.html" data-scroll="equationsDisplayStyle01" class="internal">In display style math (when an equation is on its own line) are both <code class="code-inline tex2jax_ignore">$$equation$$</code> and<pre class="code-block tex2jax_ignore">$$
+equation
+$$
+</pre>correct?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="FormattingText.html" data-scroll="FormattingText" class="internal"><span class="codenumber">22</span> <span class="title">Formatting: Text</span></a><ul>
+<li><a href="formatExercisesFiles02.html" data-scroll="formatExercisesFiles02" class="internal">What is the correct format and naming convention for exercise files?</a></li>
+<li><a href="tableFormat01.html" data-scroll="tableFormat01" class="internal">What is the preferred formatting for a table?</a></li>
+<li><a href="figuresCollection.html" data-scroll="figuresCollection" class="internal">I want to put a collection of figures together on a page. How do I do that?</a></li>
+<li><a href="somethingInBox01.html" data-scroll="somethingInBox01" class="internal">What command do I use in TeX to place something in a box, similar to page 2 in Calculus, 3rd Edition?</a></li>
+<li><a href="boldface02.html" data-scroll="boldface02" class="internal">How can I change the typeface to boldface?</a></li>
+<li><a href="typeSize02.html" data-scroll="typeSize02" class="internal">How can I change the type size?</a></li>
+<li><a href="spaceBetweenTwoLines01.html" data-scroll="spaceBetweenTwoLines01" class="internal">How can I increase space between two lines?</a></li>
+<li><a href="spaceBeforeAfterDashes01.html" data-scroll="spaceBeforeAfterDashes01" class="internal">Sometimes there is a space before or after my dashes (-), en-dashes (--), and em-dashes (---), and I don't want that. What do I do?</a></li>
+<li><a href="periodBetween01.html" data-scroll="periodBetween01" class="internal">When I TeX "The difference is <code class="code-inline tex2jax_ignore">\$0.01.</code>" there is a spacing problem involving the period between the two zeros. What do I do?</a></li>
+<li><a href="ordinalNumbersExpressionsTeX03.html" data-scroll="ordinalNumbersExpressionsTeX03" class="internal">How do I TeX expressions like "1^{st}" and "n^{th}"?</a></li>
+<li><a href="thousandNotation01.html" data-scroll="thousandNotation01" class="internal">Do we use 1000 or 1,000?</a></li>
+<li><a href="decimalsNotation01.html" data-scroll="decimalsNotation01" class="internal">Do we use 0.5 or .5?</a></li>
+<li><a href="shilling03.html" data-scroll="shilling03" class="internal">What is shilling?</a></li>
+<li><a href="shillVsFrac03.html" data-scroll="shillVsFrac03" class="internal">When do I shill and when do I use <code class="code-inline tex2jax_ignore">$\frac{}{}$</code>?</a></li>
+<li><a href="sentenceStart01.html" data-scroll="sentenceStart01" class="internal">May I start a sentence with a variable or a number?</a></li>
+<li><a href="variablesSeparetedByText01.html" data-scroll="variablesSeparetedByText01" class="internal">The authorities get upset if I write something like: Since the leading term of the polynomial is $x^4$, $y$ goes to infinity. What should I have written?</a></li>
+<li><a href="specialReference02.html" data-scroll="specialReference02" class="internal">I want to refer to something like City A and City B.  Do I just type it that way, or are the A and B put into a special font, say $A$ and $B$?</a></li>
+<li><a href="rightArrow02.html" data-scroll="rightArrow02" class="internal">May I use the implies symbol ==&gt; (<code class="code-inline tex2jax_ignore">$\Rightarrow$</code>)?</a></li>
+<li><a href="rootVsZero02.html" data-scroll="rootVsZero02" class="internal">When do I use root and when do I use zero?</a></li>
+<li><a href="symmetricAcrossVsAbout01.html" data-scroll="symmetricAcrossVsAbout01" class="internal">Do I use symmetric across the <em class="emphasis">x</em>-axis, or symmetric about the <em class="emphasis">x</em>-axis?</a></li>
+<li><a href="latinAbbreviations02.html" data-scroll="latinAbbreviations02" class="internal">Do we italicize Latin abbreviations such as e.g. and i.e.?</a></li>
+<li><a href="capitalizingHeadings01.html" data-scroll="capitalizingHeadings01" class="internal">What is the convention for capitalizing headings of chapters, sections, and subsections?</a></li>
+<li><a href="formattingCommands01.html" data-scroll="formattingCommands01" class="internal">May I use formatting commands (like  \vspace, \hspace, \smallskip, \\, etc.) in the text portion of my file?</a></li>
+<li><a href="unitsOnFigures02.html" data-scroll="unitsOnFigures02" class="internal">Do I need to put the units (of the variables) in the text of an exercise and also in the figure of the exercise?</a></li>
+<li><a href="conciseVsWording02.html" data-scroll="conciseVsWording02" class="internal">If I have the choice between wording an exercise in a concise style or in a verbose style, which is preferable?</a></li>
+<li><a href="exactAnswer02.html" data-scroll="exactAnswer02" class="internal">The exact answer to one of my exercises is <code class="code-inline tex2jax_ignore">$5/\pi$</code> inches. Should I also give the calculator value of 1.592?</a></li>
+<li><a href="subscripts04.html" data-scroll="subscripts04" class="internal">When I use  word subscripts (e.g. <code class="code-inline tex2jax_ignore">$r_{in}$</code> or <code class="code-inline tex2jax_ignore">$r_{\hbox{in}}$</code>) the word "in" is either in italics or too large.  What should I be using?</a></li>
+<li><a href="generateTildeBlah01.html" data-scroll="generateTildeBlah01" class="internal">How do I get TeX to generate <code class="code-inline tex2jax_ignore">~blah</code>?</a></li>
+<li><a href="textIntoEquation02.html" data-scroll="textIntoEquation02" class="internal">How do I put text into an equation?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Fractions.html" data-scroll="Fractions" class="internal"><span class="codenumber">23</span> <span class="title">Fractions</span></a><ul>
+<li><a href="shilling04.html" data-scroll="shilling04" class="internal">What is shilling?</a></li>
+<li><a href="shillVsFrac04.html" data-scroll="shillVsFrac04" class="internal">When do I shill and when do I use <code class="code-inline tex2jax_ignore">$\frac{}{}$</code>?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Functions.html" data-scroll="Functions" class="internal"><span class="codenumber">24</span> <span class="title">Functions</span></a><ul>
+<li><a href="sequenceOfEquations01.html" data-scroll="sequenceOfEquations01" class="internal">I want to create a sequence of equations, one below the other, with the equal signs lined up.  How do I do that?</a></li>
+<li><a href="piecewiseFunction01.html" data-scroll="piecewiseFunction01" class="internal">What command do I use in TeX to construct a piecewise defined function?</a></li>
+<li><a href="displaystyle02.html" data-scroll="displaystyle02" class="internal">Can I use <code class="code-inline tex2jax_ignore">\displaystyle</code> in display math style or in <code class="code-inline tex2jax_ignore">eqnarray*</code>?</a></li>
+<li><a href="shouldKnowDisplayStyle02.html" data-scroll="shouldKnowDisplayStyle02" class="internal">Is there anything I should know if I use display math style (that is, when an expression is on its own line)?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Guidelines.html" data-scroll="Guidelines" class="internal"><span class="codenumber">25</span> <span class="title">Guidelines</span></a><ul><li><a href="summaryGuidelines.html" data-scroll="summaryGuidelines" class="internal">=Is there a summary of CCHE Guidelines?</a></li></ul>
+</li>
+<li class="link">
+<a href="ListsAndParts.html" data-scroll="ListsAndParts" class="internal"><span class="codenumber">26</span> <span class="title">Lists and Parts</span></a><ul>
+<li><a href="listDownThePage.html" data-scroll="listDownThePage" class="internal">How do I construct a list, (a), (b), etc., that goes down the page?</a></li>
+<li><a href="listAcrossThePage.html" data-scroll="listAcrossThePage" class="internal">How do I construct a list, (a), (b), etc., that goes across the page?</a></li>
+<li><a href="bulletedList.html" data-scroll="bulletedList" class="internal">How do I construct a bulleted list?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="PrintingAndOutput.html" data-scroll="PrintingAndOutput" class="internal"><span class="codenumber">27</span> <span class="title">Printing and Output</span></a><ul>
+<li><a href="filenamesBoxes02.html" data-scroll="filenamesBoxes02" class="internal">How do I turn off the little rectangular boxes that give the filenames of the exercise files alongside the exercises?</a></li>
+<li><a href="printingInColor.html" data-scroll="printingInColor" class="internal">How do I stop printing in color?</a></li>
+<li><a href="printingJobNumberDate.html" data-scroll="printingJobNumberDate" class="internal">How do I stop printing the header with the job number and date in it?</a></li>
+<li><a href="printEverything02.html" data-scroll="printEverything02" class="internal">How do I print the questions, the answers, and the short answers for the exercises?</a></li>
+<li><a href="printOnlyExerciseQuestion02.html" data-scroll="printOnlyExerciseQuestion02" class="internal">How do I print only the questions (without the answers or short answers) for the exercises?</a></li>
+<li><a href="oneColumnPrint02.html" data-scroll="oneColumnPrint02" class="internal">How do I print the exercises in one column instead of the default of two columns?</a></li>
+<li><a href="pageNumbering.html" data-scroll="pageNumbering" class="internal">How do I turn on page numbering?</a></li>
+<li><a href="printFAQ.html" data-scroll="printFAQ" class="internal">Should I print these FAQs?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Problems.html" data-scroll="Problems" class="internal"><span class="codenumber">28</span> <span class="title">Problems (not Exercises)</span></a><ul>
+<li><a href="dontEnoughTex02.html" data-scroll="dontEnoughTex02" class="internal">I know what I want to say, but I don't know enough TeX to express it.  What do I do?</a></li>
+<li><a href="submitTroubles01.html" data-scroll="submitTroubles01" class="internal">What are the things people seem have trouble with when they submit?</a></li>
+<li><a href="spaceBeforeAfterDashes02.html" data-scroll="spaceBeforeAfterDashes02" class="internal">Sometimes there is a space before or after my dashes (-), en-dashes (--), and em-dashes (---), and I don't want that. What do I do?</a></li>
+<li><a href="integrals02.html" data-scroll="integrals02" class="internal">If I use <code class="code-inline tex2jax_ignore">$\int f(x) dx$</code>, to construct the integral of f(x), the f(x) and dx are too close. What should I do?</a></li>
+<li><a href="commonTexMistakes02.html" data-scroll="commonTexMistakes02" class="internal">Is there a list of common TeX mistakes?</a></li>
+<li><a href="periodBetween02.html" data-scroll="periodBetween02" class="internal">When I TeX "The difference is <code class="code-inline tex2jax_ignore">\$0.01.</code>" there is a spacing problem involving the period between the two zeros. What do I do?</a></li>
+<li><a href="commentChunkTex01.html" data-scroll="commentChunkTex01" class="internal">I want to comment out a large chunk of TeX, without deleting it.  Do I have to put % at the beginning of every line?</a></li>
+<li><a href="missingDollarSign02.html" data-scroll="missingDollarSign02" class="internal">Why do I get an error message concerning missing $ when I try to TeX "\footnote{http://dr.pierce1.net/PDF/half_life.pdf, accessed on May 10, 2003.}"?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Qsets.html" data-scroll="Qsets" class="internal"><span class="codenumber">29</span> <span class="title">Qsets</span></a><ul>
+<li><a href="qset02.html" data-scroll="qset02" class="internal">In a collection of exercises, how do I give a subset of the exercises the same set of instructions, called a QSET?</a></li>
+<li><a href="whenDoIUseQSET02.html" data-scroll="whenDoIUseQSET02" class="internal">When do I use a QSET?</a></li>
+<li><a href="ReferenceAllFigs03.html" data-scroll="ReferenceAllFigs03" class="internal">Do all figures have to be referenced?</a></li>
+<li><a href="dollarSign02.html" data-scroll="dollarSign02" class="internal">In Exercises, when do we use <code class="code-inline tex2jax_ignore">$blah$</code>, <code class="code-inline tex2jax_ignore">$$blah$$</code>, and <code class="code-inline tex2jax_ignore">$\dsty blah$</code>?</a></li>
+<li><a href="exerciseOrProblem02.html" data-scroll="exerciseOrProblem02" class="internal">How do I specify that a problem that I am submitting is intended to be a "Problem" rather than an "Exercise"?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="References.html" data-scroll="References" class="internal"><span class="codenumber">30</span> <span class="title">References</span></a><ul>
+<li><a href="footnote02.html" data-scroll="footnote02" class="internal">How do I insert a footnote?</a></li>
+<li><a href="referenceStyle01.html" data-scroll="referenceStyle01" class="internal">What style should we use when citing references to books, articles, or web sites?</a></li>
+<li><a href="generateTildeBlah02.html" data-scroll="generateTildeBlah02" class="internal">How do I get TeX to generate <code class="code-inline tex2jax_ignore">~blah</code>?</a></li>
+</ul>
+</li>
+<li class="link"><a href="RightsAndWrongs.html" data-scroll="RightsAndWrongs" class="internal"><span class="codenumber">31</span> <span class="title">(**) Rights and Wrongs</span></a></li>
+<li class="link">
+<a href="Sections.html" data-scroll="Sections" class="internal"><span class="codenumber">32</span> <span class="title">Sections</span></a><ul>
+<li><a href="creatingChapter01.html" data-scroll="creatingChapter01" class="internal">How do I create a Chapter?</a></li>
+<li><a href="capitalizingHeadings02.html" data-scroll="capitalizingHeadings02" class="internal">What is the convention for capitalizing headings of chapters, sections, and subsections?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ShortAnswers.html" data-scroll="ShortAnswers" class="internal"><span class="codenumber">33</span> <span class="title">Short Answers</span></a><ul>
+<li><a href="shortAnswers02.html" data-scroll="shortAnswers02" class="internal">What do I need to know about short answers?</a></li>
+<li><a href="dollarSign03.html" data-scroll="dollarSign03" class="internal">In Exercises, when do we use <code class="code-inline tex2jax_ignore">$blah$</code>, <code class="code-inline tex2jax_ignore">$$blah$$</code>, and <code class="code-inline tex2jax_ignore">$\dsty blah$</code>?</a></li>
+<li><a href="exactAnswer03.html" data-scroll="exactAnswer03" class="internal">The exact answer to one of my exercises is <code class="code-inline tex2jax_ignore">$5/\pi$</code> inches. Should I also give the calculator value of 1.592?</a></li>
+<li><a href="answersAndShortAnswers02.html" data-scroll="answersAndShortAnswers02" class="internal">Is it OK to submit exercises without Answers or ShortAnswers?</a></li>
+<li><a href="answersOrShortAnswersMissing02.html" data-scroll="answersOrShortAnswersMissing02" class="internal">When checking exercises, what do I do if an Answer or ShortAnswer is missing?</a></li>
+<li><a href="figureInShortAnswer03.html" data-scroll="figureInShortAnswer03" class="internal">How do I put a figure into the short answer of an exercise or problem?</a></li>
+<li><a href="unitsInShortAnswer02.html" data-scroll="unitsInShortAnswer02" class="internal">If in the short answers I have the choice between including or omitting units, what should I do?  (For example, if a  problem ask "How many ships are left?", should the short answer be "32" or "32 ships"?)</a></li>
+<li><a href="printEverything03.html" data-scroll="printEverything03" class="internal">How do I print the questions, the answers, and the short answers for the exercises?</a></li>
+<li><a href="printOnlyExerciseQuestion03.html" data-scroll="printOnlyExerciseQuestion03" class="internal">How do I print only the questions (without the answers or short answers) for the exercises?</a></li>
+<li><a href="figuresAndTablesLabel02.html" data-scroll="figuresAndTablesLabel02" class="internal">What is the preferred convention for labelling figures and tables in Exercises?</a></li>
+<li><a href="tableLabels02.html" data-scroll="tableLabels02" class="internal">When do I put labels (numbers) and captions on tables?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="StyleAndConventions.html" data-scroll="StyleAndConventions" class="internal"><span class="codenumber">34</span> <span class="title">Style and Conventions</span></a><ul>
+<li><a href="useCalculatorOrSoftware.html" data-scroll="useCalculatorOrSoftware" class="internal">What words should we use if we want students to use a calculator or software to do an exercise?</a></li>
+<li><a href="thousandNotation02.html" data-scroll="thousandNotation02" class="internal">Do we use 1000 or 1,000?</a></li>
+<li><a href="decimalsNotation02.html" data-scroll="decimalsNotation02" class="internal">Do we use 0.5 or .5?</a></li>
+<li><a href="exactAnswer04.html" data-scroll="exactAnswer04" class="internal">The exact answer to one of my exercises is <code class="code-inline tex2jax_ignore">$5/\pi$</code> inches. Should I also give the calculator value of 1.592?</a></li>
+<li><a href="decimalPlacesInAnswer02.html" data-scroll="decimalPlacesInAnswer02" class="internal">How many decimal places should I keep in a numerical answer?</a></li>
+<li><a href="footnotePosition02.html" data-scroll="footnotePosition02" class="internal">Do I put a footnote before or after a punctuation mark?</a></li>
+<li><a href="referenceStyle02.html" data-scroll="referenceStyle02" class="internal">What style should we use when citing references to books, articles, or web sites?</a></li>
+<li><a href="horizontalLineAfterExample.html" data-scroll="horizontalLineAfterExample" class="internal">Sometimes there is a horizontal line after an example, and sometimes there is not. What is the convention?</a></li>
+<li><a href="shilling05.html" data-scroll="shilling05" class="internal">What is shilling?</a></li>
+<li><a href="shillVsFrac05.html" data-scroll="shillVsFrac05" class="internal">When do I shill and when do I use <code class="code-inline tex2jax_ignore">$\frac{}{}$</code>?</a></li>
+<li><a href="sentenceStart02.html" data-scroll="sentenceStart02" class="internal">May I start a sentence with a variable or a number?</a></li>
+<li><a href="angleInRadians01.html" data-scroll="angleInRadians01" class="internal">Do I need to specify that the units of an angle are in radians?</a></li>
+<li><a href="variablesSeparetedByText02.html" data-scroll="variablesSeparetedByText02" class="internal">The authorities get upset if I write something like: Since the leading term of the polynomial is $x^4$, $y$ goes to infinity. What should I have written?</a></li>
+<li><a href="futureTense.html" data-scroll="futureTense" class="internal">May I use the future tense?</a></li>
+<li><a href="abbreviationStandarUnits02.html" data-scroll="abbreviationStandarUnits02" class="internal">What are the abbreviations and conventions that we use for standard units like grams and miles per hour?</a></li>
+<li><a href="commonConstants01.html" data-scroll="commonConstants01" class="internal">What are the values that we use for common constants like <em class="emphasis">g</em>, the half-life of carbon-14, and the radius of the earth?</a></li>
+<li><a href="specialReference03.html" data-scroll="specialReference03" class="internal">I want to refer to something like City A and City B.  Do I just type it that way, or are the A and B put into a special font, say $A$ and $B$?</a></li>
+<li><a href="range02.html" data-scroll="range02" class="internal">The three expressions <code class="code-inline tex2jax_ignore">$x &gt; 1$</code>, <code class="code-inline tex2jax_ignore">$1 &lt; x &lt; \infty$</code>, and <code class="code-inline tex2jax_ignore">$(1, \infty)$</code> are mathematically equivalent.  Which one do we use?</a></li>
+<li><a href="degreeSymbol02.html" data-scroll="degreeSymbol02" class="internal">How do I enter the degree symbol, for example 76 degrees Fahrenheit?</a></li>
+<li><a href="rightArrow03.html" data-scroll="rightArrow03" class="internal">May I use the implies symbol ==&gt; (<code class="code-inline tex2jax_ignore">$\Rightarrow$</code>)?</a></li>
+<li><a href="sinNotation02.html" data-scroll="sinNotation02" class="internal">Do I use <code class="code-inline tex2jax_ignore">$\sin x$</code> or <code class="code-inline tex2jax_ignore">$\sin (x)$</code>?</a></li>
+<li><a href="rootVsZero03.html" data-scroll="rootVsZero03" class="internal">When do I use root and when do I use zero?</a></li>
+<li><a href="symmetricAcrossVsAbout02.html" data-scroll="symmetricAcrossVsAbout02" class="internal">Do I use symmetric across the <em class="emphasis">x</em>-axis, or symmetric about the <em class="emphasis">x</em>-axis?</a></li>
+<li><a href="equalVsApproEqual02.html" data-scroll="equalVsApproEqual02" class="internal">When do I use = and when do I use approximately equal (<code class="code-inline tex2jax_ignore">\approx</code>)?</a></li>
+<li><a href="units01.html" data-scroll="units01" class="internal">I'm confused about units. Are the units of <em class="emphasis">g</em> acceleration or ft/sec^2?</a></li>
+<li><a href="multipliedTogetherRepeatedly02.html" data-scroll="multipliedTogetherRepeatedly02" class="internal">To display <code class="code-inline tex2jax_ignore">$a$</code> multiplied together repeatedly, do I use <code class="code-inline tex2jax_ignore">$a\cdot a\cdot a\cdot\cdots\cdot a$</code> or <code class="code-inline tex2jax_ignore">$a\cdot a\cdot a\cdots a$</code>?</a></li>
+<li><a href="latinAbbreviations03.html" data-scroll="latinAbbreviations03" class="internal">Do we italicize Latin abbreviations such as e.g. and i.e.?</a></li>
+<li><a href="capitalizingHeadings03.html" data-scroll="capitalizingHeadings03" class="internal">What is the convention for capitalizing headings of chapters, sections, and subsections?</a></li>
+<li><a href="formattingCommands02.html" data-scroll="formattingCommands02" class="internal">May I use formatting commands (like  \vspace, \hspace, \smallskip, \\, etc.) in the text portion of my file?</a></li>
+<li><a href="submitTroubles02.html" data-scroll="submitTroubles02" class="internal">What are the things people seem have trouble with when they submit?</a></li>
+<li><a href="referencesPrintedText01.html" data-scroll="referencesPrintedText01" class="internal">How do I reference existing theorems, chapters, sections, examples, exercises, and problems, in the printed calculus text that we are editing?</a></li>
+<li><a href="conciseVsWording03.html" data-scroll="conciseVsWording03" class="internal">If I have the choice between wording an exercise in a concise style or in a verbose style, which is preferable?</a></li>
+<li><a href="theoremsName.html" data-scroll="theoremsName" class="internal">Do I write Stokes' Theorem or Stokes's Theorem?</a></li>
+<li><a href="variableOrFunction.html" data-scroll="variableOrFunction" class="internal">When should I write <code class="code-inline tex2jax_ignore">V'(t)</code> and when should I write <code class="code-inline tex2jax_ignore">dV/dt</code>?</a></li>
+<li><a href="timesVsDot.html" data-scroll="timesVsDot" class="internal">When should I use <code class="code-inline tex2jax_ignore">\times</code> and when should I use <code class="code-inline tex2jax_ignore">\cdot</code>?</a></li>
+<li><a href="periods.html" data-scroll="periods" class="internal">Do I have to end a sentence with a period, even if an equation ends the sentence?</a></li>
+<li><a href="xasis.html" data-scroll="xasis" class="internal">Do we use <code class="code-inline tex2jax_ignore">$x-$axis</code> or <code class="code-inline tex2jax_ignore">$x$-axis</code>?</a></li>
+<li><a href="orVsAndInSolutions02.html" data-scroll="orVsAndInSolutions02" class="internal">Do we say "The solutions are $x = 1$ and $x = 2$," or "The solutions are $x = 1$ or $x =2$"?</a></li>
+<li><a href="dollarsNotation.html" data-scroll="dollarsNotation" class="internal">Do I use "$P" or "P dollars"?</a></li>
+<li><a href="commentForOtherAuthor.html" data-scroll="commentForOtherAuthor" class="internal">How can I include a comment about a topic for other authors to read?</a></li>
+<li><a href="fontForNames.html" data-scroll="fontForNames" class="internal">What font do I use for A when I write "Matrix A"?</a></li>
+<li><a href="contractions.html" data-scroll="contractions" class="internal">Should I use contractions, such as "didn't"?</a></li>
+<li><a href="capitalLetters.html" data-scroll="capitalLetters" class="internal">If we ask a question like: "Is Rx linear in R? In x?" should the second "in" start with a capital letter?</a></li>
+<li><a href="punctuationInlineMath.html" data-scroll="punctuationInlineMath" class="internal">For inline mathematics, should punctuation go inside or outside the dollar signs, e.g. "$a$." or "$a.$"?</a></li>
+<li><a href="tilde.html" data-scroll="tilde" class="internal">When I use a tilde, "~", for example in "part~(a)" or "Example<code class="code-inline tex2jax_ignore">~\ref{ex:blah}</code>", why don't I need to precede it by a space?</a></li>
+<li><a href="functionFromAGraph.html" data-scroll="functionFromAGraph" class="internal">Some of the problems ask for a function to be estimated from a graph. I get the answer $y=4x+3$, but other answers close to this are equally correct. How do I write the short answer for this?</a></li>
+<li><a href="quantitiesFromAGraph.html" data-scroll="quantitiesFromAGraph" class="internal">Some of the problems ask for the value of quantities to be estimated from a graph.  I get the answer 4, but other answers close to 4 are equally correct.  How do I write the short answer for this?</a></li>
+<li><a href="hintWileyPlus.html" data-scroll="hintWileyPlus" class="internal">How do I add a hint to a problem for WileyPLUS?</a></li>
+<li><a href="newProblemsInApplied.html" data-scroll="newProblemsInApplied" class="internal">In Applied, there is a new method to save and commit New Problems. What is it?</a></li>
+<li><a href="partOfExerciseInAppliedFromSingle.html" data-scroll="partOfExerciseInAppliedFromSingle" class="internal">In Applied, I want to use part of an Exercise/Problem that is in Single. How do I do that?</a></li>
+<li><a href="exerciseInAppliedFromSingle.html" data-scroll="exerciseInAppliedFromSingle" class="internal">In Applied, I want to use an Exercise/Problem that is in Single. Do I just copy it to Applied?</a></li>
+<li><a href="exerciseOrProblem03.html" data-scroll="exerciseOrProblem03" class="internal">How do I specify that a problem that I am submitting is intended to be a "Problem" rather than an "Exercise"?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Symbols.html" data-scroll="Symbols" class="internal"><span class="codenumber">35</span> <span class="title">Symbols</span></a><ul>
+<li><a href="mathematicalSymbolsInHeadings01.html" data-scroll="mathematicalSymbolsInHeadings01" class="internal">I am trying to create tables where the headings are mathematical symbols, e.g. <code class="code-inline tex2jax_ignore">$\times 2$ &amp; $+4$ &amp; $\div 2$</code>.  The times and the plus are replaced by the correct symbols, but the div just prints the word "div" instead of the division symbol.  Any suggestions?</a></li>
+<li><a href="printSpecialCharacters01.html" data-scroll="printSpecialCharacters01" class="internal">How do I print the TeX special characters: <code class="code-inline tex2jax_ignore">$, &amp;, %, #, _,{, and }</code>?</a></li>
+<li><a href="commandsToGetDivGradCurl01.html" data-scroll="commandsToGetDivGradCurl01" class="internal">What commands do I use to get <em class="emphasis">div</em>, <em class="emphasis">grad</em>, and <em class="emphasis">curl</em>?</a></li>
+<li><a href="degreeSymbol03.html" data-scroll="degreeSymbol03" class="internal">How do I enter the degree symbol, for example 76 degrees Fahrenheit?</a></li>
+<li><a href="Kelvin.html" data-scroll="Kelvin" class="internal">Do I use degrees Kelvin, or just Kelvin?</a></li>
+<li><a href="poundSymbol01.html" data-scroll="poundSymbol01" class="internal">How do I enter the UK counterpart of $, namely the UK pound symbol, £?</a></li>
+<li><a href="equalsSymbol.html" data-scroll="equalsSymbol" class="internal">How do I enter the equals symbol with a question mark over it?</a></li>
+<li><a href="rightArrow04.html" data-scroll="rightArrow04" class="internal">May I use the implies symbol ==&gt; (<code class="code-inline tex2jax_ignore">$\Rightarrow$</code>)?</a></li>
+<li><a href="subscripts05.html" data-scroll="subscripts05" class="internal">When I use  word subscripts (e.g. $r_{in}$ or $r_{\hbox{in}}$) the word "in" is either in italics or too large.  What should I be using?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Tables.html" data-scroll="Tables" class="internal"><span class="codenumber">36</span> <span class="title">Tables</span></a><ul>
+<li><a href="tableFormat02.html" data-scroll="tableFormat02" class="internal">What is the preferred formatting for a table?</a></li>
+<li><a href="figuresAndTablesLabel03.html" data-scroll="figuresAndTablesLabel03" class="internal">What is the preferred convention for labelling figures and tables in Exercises?</a></li>
+<li><a href="tableLabels03.html" data-scroll="tableLabels03" class="internal">When do I put labels (numbers) and captions on tables?</a></li>
+<li><a href="insertEntriesIntoTable.html" data-scroll="insertEntriesIntoTable" class="internal">Is there an easier way to insert entries into a table?</a></li>
+<li><a href="captionsOnATable01.html" data-scroll="captionsOnATable01" class="internal">Should I put a caption on a table?</a></li>
+<li><a href="tableWidth.html" data-scroll="tableWidth" class="internal">How wide can I make a table?</a></li>
+<li><a href="hardCodingReference04.html" data-scroll="hardCodingReference04" class="internal">May I reference an example, figure, or table, by hard coding the reference (e.g., <code class="code-inline tex2jax_ignore">Example 5</code> instead of <code class="code-inline tex2jax_ignore">Example~\ref{blahblah}</code>)?</a></li>
+<li><a href="CrossReferencePageNumber01.html" data-scroll="CrossReferencePageNumber01" class="internal">How do I cross reference an object using a page number?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="texCommands.html" data-scroll="texCommands" class="internal"><span class="codenumber">37</span> <span class="title">TeX: Commands</span></a><ul>
+<li><a href="asFormat01.html" data-scroll="asFormat01" class="internal">What argument should I use in <code class="code-inline tex2jax_ignore">\asformat{}</code>?</a></li>
+<li><a href="StayfigOrFakefig03.html" data-scroll="StayfigOrFakefig03" class="internal">What is the difference between <code class="code-inline tex2jax_ignore">stayfig</code> and <code class="code-inline tex2jax_ignore">fakefig</code>?</a></li>
+<li><a href="texCommandsAbbreviation02.html" data-scroll="texCommandsAbbreviation02" class="internal">Which TeX commands can I abbreviate?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="TeXGettingStarted.html" data-scroll="TeXGettingStarted" class="internal"><span class="codenumber">38</span> <span class="title">TeX: Getting Started</span></a><ul>
+<li><a href="formatExercisesFiles03.html" data-scroll="formatExercisesFiles03" class="internal">What is the correct format and naming convention for exercise files?</a></li>
+<li><a href="collectionOfExercises02.html" data-scroll="collectionOfExercises02" class="internal">How do I put together a collection of exercises?</a></li>
+<li><a href="qset03.html" data-scroll="qset03" class="internal">In a collection of exercises, how do I give a subset of the exercises the same set of instructions, called a QSET?</a></li>
+<li><a href="creatingChapter02.html" data-scroll="creatingChapter02" class="internal">How do I create a Chapter?</a></li>
+<li><a href="exampleInChapter01.html" data-scroll="exampleInChapter01" class="internal">How do I put an Example in a Chapter?</a></li>
+<li><a href="quickPointersOnTeX01.html" data-scroll="quickPointersOnTeX01" class="internal">What are some quick pointers on TeX?</a></li>
+<li><a href="TeXmathFormulas01.html" data-scroll="TeXmathFormulas01" class="internal">What do a few simple math formulas look like in TeX?</a></li>
+<li><a href="dontEnoughTex03.html" data-scroll="dontEnoughTex03" class="internal">I know what I want to say, but I don't know enough TeX to express it. What do I do?</a></li>
+<li><a href="doesntTex02.html" data-scroll="doesntTex02" class="internal">The TeX file I created does not TeX. What do I do?</a></li>
+<li><a href="hardCodingReference02.html" data-scroll="hardCodingReference02" class="internal">May I reference an example, figure, or table, by hard coding the reference (e.g., <code class="code-inline tex2jax_ignore">Example 5</code> instead of <code class="code-inline tex2jax_ignore">Example~\ref{blahblah}</code>)?</a></li>
+<li><a href="algebraMacros.html" data-scroll="algebraMacros" class="internal">I've installed and tested the algebra macros. Is there anything else I should do?</a></li>
+<li><a href="asFormat02.html" data-scroll="asFormat02" class="internal">What argument should I use in \asformat{}?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="TeXMath.html" data-scroll="TeXMath" class="internal"><span class="codenumber">39</span> <span class="title">TeX: Math</span></a><ul>
+<li><a href="quickPointersOnTeX02.html" data-scroll="quickPointersOnTeX02" class="internal">What are some quick pointers on TeX?</a></li>
+<li><a href="TeXmathFormulas02.html" data-scroll="TeXmathFormulas02" class="internal">What do a few simple math formulas look like in TeX?</a></li>
+<li><a href="sequenceOfEquations02.html" data-scroll="sequenceOfEquations02" class="internal">I want to create a sequence of equations, one below the other, with the equal signs lined up.  How do I do that?</a></li>
+<li><a href="piecewiseFunction02.html" data-scroll="piecewiseFunction02" class="internal">What command do I use in TeX to construct a piecewise defined function?</a></li>
+<li><a href="displayMathStyle02.html" data-scroll="displayMathStyle02" class="internal">How can I use the display math style without putting the expression on a new line?</a></li>
+<li><a href="displaystyle03.html" data-scroll="displaystyle03" class="internal">Can I use <code class="code-inline tex2jax_ignore">\displaystyle</code> in display math style or in <code class="code-inline tex2jax_ignore">eqnarray*</code>?</a></li>
+<li><a href="shouldKnowDisplayStyle03.html" data-scroll="shouldKnowDisplayStyle03" class="internal">Is there anything I should know if I use display math style (that is, when an expression is on its own line)?</a></li>
+<li><a href="integrals03.html" data-scroll="integrals03" class="internal">If I use <code class="code-inline tex2jax_ignore">$\int f(x) dx$</code>, to construct the integral of f(x), the f(x) and dx are too close. What should I do?</a></li>
+<li><a href="vectorsArrow02.html" data-scroll="vectorsArrow02" class="internal">Do I use <code class="code-inline tex2jax_ignore">$\vec F$</code> or <code class="code-inline tex2jax_ignore">$\overrightarrow{F}$</code> to put an arrow on top of the vector F?</a></li>
+<li><a href="vectorSubscript03.html" data-scroll="vectorSubscript03" class="internal">If I use <code class="code-inline tex2jax_ignore">$\vec F_{M}$</code> or <code class="code-inline tex2jax_ignore">$\overrightarrow{F}_M$</code> a huge gap is left between the bottom of the F and the M, which looks wrong. What should I do?</a></li>
+<li><a href="commonTexMistakes03.html" data-scroll="commonTexMistakes03" class="internal">Is there a list of common TeX mistakes?</a></li>
+<li><a href="verticalBar02.html" data-scroll="verticalBar02" class="internal">When I TeX <code class="code-inline tex2jax_ignore">\dsty \left.\arctan(x)\right|_0^b</code> the vertical bar isn't long enough.  How can I get it taller?</a></li>
+<li><a href="textIntoEquation03.html" data-scroll="textIntoEquation03" class="internal">How do I put text into an equation?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="TeXText.html" data-scroll="TeXText" class="internal"><span class="codenumber">40</span> <span class="title">TeX: Text</span></a><ul>
+<li><a href="quickPointersOnTeX03.html" data-scroll="quickPointersOnTeX03" class="internal">What are some quick pointers on TeX?</a></li>
+<li><a href="StayfigOrFakefig02.html" data-scroll="StayfigOrFakefig02" class="internal">What is the difference between <code class="code-inline tex2jax_ignore">stayfig</code> and <code class="code-inline tex2jax_ignore">fakefig</code>?</a></li>
+<li><a href="commonTexMistakes04.html" data-scroll="commonTexMistakes04" class="internal">Is there a list of common TeX mistakes?</a></li>
+<li><a href="mathematicalSymbolsInHeadings02.html" data-scroll="mathematicalSymbolsInHeadings02" class="internal">I am trying to create tables where the headings are mathematical symbols, e.g. <code class="code-inline tex2jax_ignore">$\times 2$ &amp; $+4$ &amp; $\div 2$</code>.  The times and the plus are replaced by the correct symbols, but the div just prints the word "div" instead of the division symbol.  Any suggestions?</a></li>
+<li><a href="somethingInBox02.html" data-scroll="somethingInBox02" class="internal">What command do I use in TeX to place something in a box, similar to page 2 in Calculus, 3rd Edition?</a></li>
+<li><a href="printSpecialCharacters02.html" data-scroll="printSpecialCharacters02" class="internal">How do I print the TeX special characters: <code class="code-inline tex2jax_ignore">$, &amp;, %, #, _,{, and }</code>?</a></li>
+<li><a href="texCommandsAbbreviation03.html" data-scroll="texCommandsAbbreviation03" class="internal">Which TeX commands can I abbreviate?</a></li>
+<li><a href="insertEntryForTheIndex.html" data-scroll="insertEntryForTheIndex" class="internal">How do I insert an entry for the index?</a></li>
+<li><a href="footnote03.html" data-scroll="footnote03" class="internal">How do I insert a footnote?</a></li>
+<li><a href="boldface03.html" data-scroll="boldface03" class="internal">How can I change the typeface to boldface?</a></li>
+<li><a href="typeSize03.html" data-scroll="typeSize03" class="internal">How can I change the type size?</a></li>
+<li><a href="spaceBetweenTwoLines02.html" data-scroll="spaceBetweenTwoLines02" class="internal">How can I increase space between two lines?</a></li>
+<li><a href="spaceBeforeAfterDashes03.html" data-scroll="spaceBeforeAfterDashes03" class="internal">Sometimes there is a space before or after my dashes (-), en-dashes (--), and em-dashes (---), and I don't want that. What do I do?</a></li>
+<li><a href="commandsToGetDivGradCurl02.html" data-scroll="commandsToGetDivGradCurl02" class="internal">What commands do I use to get <em class="emphasis">div</em>, <em class="emphasis">grad</em>, and <em class="emphasis">curl</em>?</a></li>
+<li><a href="periodBetween03.html" data-scroll="periodBetween03" class="internal">When I TeX "The difference is <code class="code-inline tex2jax_ignore">\$0.01.</code>" there is a spacing problem involving the period between the two zeros. What do I do?</a></li>
+<li><a href="commentChunkTex02.html" data-scroll="commentChunkTex02" class="internal">I want to comment out a large chunk of TeX, without deleting it.  Do I have to put % at the beginning of every line?</a></li>
+<li><a href="missingDollarSign03.html" data-scroll="missingDollarSign03" class="internal">Why do I get an error message concerning missing $ when I try to TeX "\footnote{http://dr.pierce1.net/PDF/half_life.pdf, accessed on May 10, 2003.}"?</a></li>
+<li><a href="ordinalNumbersExpressionsTeX04.html" data-scroll="ordinalNumbersExpressionsTeX04" class="internal">How do I TeX expressions like "1^{st}" and "n^{th}"?</a></li>
+<li><a href="poundSymbol02.html" data-scroll="poundSymbol02" class="internal">How do I enter the UK counterpart of $, namely the UK pound symbol, £?</a></li>
+<li><a href="subscripts06.html" data-scroll="subscripts06" class="internal">When I use  word subscripts (e.g. $r_{in}$ or $r_{\hbox{in}}$) the word "in" is either in italics or too large.  What should I be using?</a></li>
+<li><a href="generateTildeBlah03.html" data-scroll="generateTildeBlah03" class="internal">How do I get TeX to generate <code class="code-inline tex2jax_ignore">~blah</code>?</a></li>
+<li><a href="textIntoEquation04.html" data-scroll="textIntoEquation04" class="internal">How do I put text into an equation?</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="UnitsAndConstants.html" data-scroll="UnitsAndConstants" class="internal"><span class="codenumber">41</span> <span class="title">Units and Constants</span></a><ul>
+<li><a href="angleInRadians02.html" data-scroll="angleInRadians02" class="internal">Do I need to specify that the units of an angle are in radians?</a></li>
+<li><a href="abbreviationStandarUnits03.html" data-scroll="abbreviationStandarUnits03" class="internal">What are the abbreviations and conventions that we use for standard units like grams and miles per hour?</a></li>
+<li><a href="commonConstants02.html" data-scroll="commonConstants02" class="internal">What are the values that we use for common constants like <em class="emphasis">g</em>, the half-life of carbon-14, and the radius of the earth?</a></li>
+<li><a href="units02.html" data-scroll="units02" class="internal">I'm confused about units. Are the units of <em class="emphasis">g</em> acceleration or ft/sec^2?</a></li>
+<li><a href="unitsOnFigures03.html" data-scroll="unitsOnFigures03" class="internal">Do I need to put the units (of the variables) in the text of an exercise and also in the figure of the exercise?</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content">
+<section class="section" id="FontsAndMactex2021"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.3</span> <span class="title">Supertex is giving me an error message related to cabin fonts <code class="code-inline tex2jax_ignore">I can't find file `CabinCondensed-Regular-tlf-t1'.</code></span>
+</h2>
+<p id="p-21">This error seems to come up on new Mac computers with Apple ARM chips (new M1 chipset) if the MacTeX installation is 2021.</p>
+<p id="p-22">The current fix is to downgrade to MacTeX 2020 by downloading the installer from the older 2020 version from <a class="external" href="http://ftp.math.utah.edu/pub/tex/historic/systems/mactex/" target="_blank">this site</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-3" id="fn-3"><sup> 1 </sup></a> (download the <code class="code-inline tex2jax_ignore">MacTeX.pkg</code> installer package in the <code class="code-inline tex2jax_ignore">2020</code> folder).</p>
+<p id="p-23">After you download the MacTeX 2020 installer, just run it to overwrite the 2021 installation.</p></section><div class="hidden-content tex2jax_ignore" id="hk-fn-3"><div class="fn"><code class="code-inline tex2jax_ignore">http://ftp.math.utah.edu/pub/tex/historic/systems/mactex/</code></div></div>
+</div></main>
+</div>
+</body>
+</html>

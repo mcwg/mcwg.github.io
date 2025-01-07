@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-05-24T15:05:10-04:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Numerical Interpretation</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><link href="https://webwork.math.arizona.edu/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://webwork.math.arizona.edu/webwork2_files/js/vendor/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.11;
+</script>
+</head>
+<body class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\doubler}[1]{2#1}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Concept Building Activity: The First Derivative Test for Critical Points</span></a></h1>
+<p class="byline">Calculus: Single Variable, Hughes-Hallett, Gleason, et al.</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="problem-4-1CBA-cpnp01.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="index.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="problem-4-1CBA-cpnp03.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="problem-4-1CBA-cpnp01.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="index.html" title="Up">Up</a><a class="next-button button toolbar-item" href="problem-4-1CBA-cpnp03.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link"><a href="section-textual.html" data-scroll="section-textual"><span class="codenumber">1</span> <span class="title">Introduction</span></a></li>
+<li class="link"><a href="problem-4-1CBA-cpnp01.html" data-scroll="problem-4-1CBA-cpnp01"><span class="codenumber">2</span> <span class="title">Graphical Interpretation</span></a></li>
+<li class="link active"><a href="problem-4-1CBA-cpnp02.html" data-scroll="problem-4-1CBA-cpnp02"><span class="codenumber">3</span> <span class="title">Numerical Interpretation</span></a></li>
+<li class="link"><a href="problem-4-1CBA-cpnp03.html" data-scroll="problem-4-1CBA-cpnp03"><span class="codenumber">4</span> <span class="title">Algebraic Interpretation</span></a></li>
+<li class="link"><a href="problem-4-1CBA-cpnp04.html" data-scroll="problem-4-1CBA-cpnp04"><span class="codenumber">5</span> <span class="title">Other Interpretations</span></a></li>
+<li class="link"><a href="problem-4-1CBA-cpnp05.html" data-scroll="problem-4-1CBA-cpnp05"><span class="codenumber">6</span> <span class="title">Reflection</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="problem-4-1CBA-cpnp02"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3</span> <span class="title">Numerical Interpretation</span>
+</h2>
+<a href="problem-4-1CBA-cpnp02.html" class="permalink">¶</a><article class="exercise-like" id="exercise-2"><h6 class="heading">
+<span class="type">Problem</span> <span class="codenumber">3.1</span>.</h6>
+<div class="introduction" id="introduction-3">
+<p id="p-67">The table shows values of the first derivative of \(g \text{,}\) a function that is differentiable everywhere and has exactly three critical points.</p>
+<p id="p-68"><figure class="figure-like" id="table-1"><table>
+<tr>
+<td class="l m b2 r2 l0 t2 lines">\(x \)</td>
+<td class="l m b2 r1 l0 t2 lines">14</td>
+<td class="l m b2 r1 l0 t2 lines">15</td>
+<td class="l m b2 r1 l0 t2 lines">16</td>
+<td class="l m b2 r1 l0 t2 lines">17</td>
+<td class="l m b2 r1 l0 t2 lines">18</td>
+<td class="l m b2 r1 l0 t2 lines">19</td>
+<td class="l m b2 r1 l0 t2 lines">20</td>
+<td class="l m b2 r1 l0 t2 lines">21</td>
+<td class="l m b2 r0 l0 t2 lines">22</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">\(g'(x)\)</td>
+<td class="l m b2 r1 l0 t0 lines">2</td>
+<td class="l m b2 r1 l0 t0 lines">0</td>
+<td class="l m b2 r1 l0 t0 lines">3</td>
+<td class="l m b2 r1 l0 t0 lines">0</td>
+<td class="l m b2 r1 l0 t0 lines">-1</td>
+<td class="l m b2 r1 l0 t0 lines">-3</td>
+<td class="l m b2 r1 l0 t0 lines">-4</td>
+<td class="l m b2 r1 l0 t0 lines">0</td>
+<td class="l m b2 r0 l0 t0 lines">1</td>
+</tr>
+</table></figure></p>
+</div>
+<iframe width="100%" src="https://webwork.math.arizona.edu/webwork2/html2xml?courseID=Precalculus_Activities&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=1234&amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsInNjYWZmb2xkLnBsIiwiQW5zd2VyRm9ybWF0SGVscC5wbCIsInBhcnNlclBvcFVwLnBsIiwicGFyc2VyUmFkaW9CdXR0b25zLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7bG9hZE1hY3JvcygiUENDbWFjcm9zLnBsIik7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT5xQDxkaXYgc3R5bGU9ImRpc3BsYXk6bm9uZTsiPlwoXG5ld2NvbW1hbmR7XGx0fXs8fVxuZXdjb21tYW5ke1xndH17Pn1cKTwvZGl2PkApKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhbnMxPUxpc3QoIjE1LDE3LDIxIik7CiRldmFsZm9yYW5zMT0kYW5zMS0%2BY21wKHNob3dMZW5ndGhIaW50cyA9PiAxKTsKCiRkZDI9IFBvcFVwKAogICAgWyI%2FIiwiYSBsb2NhbCBtaW5pbXVtIiwgImEgbG9jYWwgbWF4aW11bSIsICJuZWl0aGVyIl0sCiAgICAiYSBsb2NhbCBtYXhpbXVtIiAjIGNvcnJlY3QgYW5zd2VyCiAgICApOwokZGQxPSBQb3BVcCgKICAgIFsiPyIsImEgbG9jYWwgbWluaW11bSIsICJhIGxvY2FsIG1heGltdW0iLCAibmVpdGhlciJdLAogICAgIm5laXRoZXIiICMgY29ycmVjdCBhbnN3ZXIKICAgICk7CiRkZDM9IFBvcFVwKAogICAgWyI%2FIiwiYSBsb2NhbCBtaW5pbXVtIiwgImEgbG9jYWwgbWF4aW11bSIsICJuZWl0aGVyIl0sCiAgICAiYSBsb2NhbCBtaW5pbXVtIiAjIGNvcnJlY3QgYW5zd2VyCiAgICApOwokZGQ0PSBQb3BVcCgKICAgIFsiPyIsImluY3JlYXNpbmciLCAiZGVjcmVhc2luZyIsICJuZWl0aGVyIl0sCiAgICAiaW5jcmVhc2luZyIgIyBjb3JyZWN0IGFuc3dlcgogICAgKTsKJGRkNT0gUG9wVXAoCiAgICBbIj8iLCJpbmNyZWFzaW5nIiwgImRlY3JlYXNpbmciLCAibmVpdGhlciJdLAogICAgImluY3JlYXNpbmciICMgY29ycmVjdCBhbnN3ZXIKICAgICk7CiRkZDY9IFBvcFVwKAogICAgWyI%2FIiwiaW5jcmVhc2luZyIsICJkZWNyZWFzaW5nIiwgIm5laXRoZXIiXSwKICAgICJkZWNyZWFzaW5nIiAjIGNvcnJlY3QgYW5zd2VyCiAgICApOwokZGQ3PSBQb3BVcCgKICAgIFsiPyIsImluY3JlYXNpbmciLCAiZGVjcmVhc2luZyIsICJuZWl0aGVyIl0sCiAgICAiaW5jcmVhc2luZyIgIyBjb3JyZWN0IGFuc3dlcgogICAgKTsKJGFuczQ9UmVhbCgxNSk7CiRhbnM1PVJlYWwoMTcpOwokYW5zNj1SZWFsKDIxKTsKJE1DPSBSYWRpb0J1dHRvbnMoCiAgICBbIkEgZnVuY3Rpb24gY2FuIG9ubHkgY2hhbmdlIGRpcmVjdGlvbiBhdCBhIGNyaXRpY2FsIHBvaW50LCBhbmQgdGhlcmUgYXJlIG5vIGNyaXRpY2FsIHBvaW50cyBiZXR3ZWVuIFwoeCA9IDE3XCkgYW5kIFwoeCA9IDIxXCkuIiwKICAgICJUaGUgZnVuY3Rpb24gXChnXCkgaXMgaW5jcmVhc2luZyBvbiBcKCgxNSwgMTcpXCkgYW5kIG9uIFwoKDIxLCBcaW5mdHkpXCksIHNvIGl0IG11c3QgYmUgZGVjcmVhc2luZyBvbiBcKCgxNywgMjEpXCkuIiwKICAgICJUaGUgdmFsdWUgb2YgXChnJyh4KVwpIGlzIG5lZ2F0aXZlIGF0IGVhY2ggb2YgdGhlIHBvaW50cyBcKHggPSAxOFwpLCBcKHggPSAxOVwpLCBhbmQgXCh4ID0gMjBcKS4iLAogICAgIlRoZSB2YWx1ZSBvZiBcKGdcKSBnb2VzIGZyb20gXCgtMVwpIGRvd24gdG8gXCgtM1wpIGRvd24gdG8gXCgtNFwpIG9uIHRoZSBpbnRlcnZhbCBcKCgxNywgMjEpXCkuIgogICAgXSwKICAgICJBIGZ1bmN0aW9uIGNhbiBvbmx5IGNoYW5nZSBkaXJlY3Rpb24gYXQgYSBjcml0aWNhbCBwb2ludCwgYW5kIHRoZXJlIGFyZSBubyBjcml0aWNhbCBwb2ludHMgYmV0d2VlbiBcKHggPSAxN1wpIGFuZCBcKHggPSAyMVwpLiIsICMgY29ycmVjdCBhbnN3ZXIKICAgIHJhbmRvbWl6ZSA9PiAxCiAgICApOwpTY2FmZm9sZDo6QmVnaW4oKTtTZWN0aW9uOjpCZWdpbigiIik7CkJFR0lOX1BHTUwKSWRlbnRpZnkgdGhlIGxvY2F0aW9ucyBvZiB0aGUgdGhyZWUgY3JpdGljYWwgcG9pbnRzIG9mIFtgIGdcdGV4dHsufWBdIFNlcGFyYXRlIHlvdXIgYW5zd2VycyB1c2luZyBjb21tYXMuCgpbYHg9YF0gW19deyRldmFsZm9yYW5zMX17MTB9IFtAQW5zd2VyRm9ybWF0SGVscCgnbnVtYmVycycpQF0qCgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfSElOVApBREQ%2FCkVORF9QR01MX0hJTlQKCkJFR0lOX1BHTUxfU09MVVRJT04KVGhlIGNyaXRpY2FsIHBvaW50cyBvZiBbYGZgXSBvY2N1ciB3aGVyZSBbYGcnPTBgXSBvciBbYGcnYF0gaXMgdW5kZWZpbmVkLiAgRnJvbSB0aGUgdGFibGUsIHdlIHNlZSB0aGF0IHRoZXNlIG9jY3VyIHdoZW4gW2B4PTE1XHRleHR7LH1gXSBbYHg9MTdgXSBhbmQgW2B4PTIxXHRleHR7Ln1gXQoKCkVORF9QR01MX1NPTFVUSU9OClNlY3Rpb246OkVuZCgpO1NlY3Rpb246OkJlZ2luKCIiKTsKQkVHSU5fUEdNTApXaGljaCBvZiB0aGUgZm9sbG93aW5nIGJlc3QgZXhwbGFpbnMgaG93IHdlIGtub3cgdGhhdCBbYGdgXSBpcyBkZWNyZWFzaW5nIG9uIHRoZSBlbnRpcmUgaW50ZXJ2YWwgW2AoMTcsIDIxKVx0ZXh0ez99YF0gW19deyRNQ317NX0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9ISU5UCkFERD8KRU5EX1BHTUxfSElOVAoKQkVHSU5fUEdNTF9TT0xVVElPTgpBIGZ1bmN0aW9uIGNhbiBvbmx5IGNoYW5nZSBkaXJlY3Rpb24gYXQgYSBjcml0aWNhbCBwb2ludCwgYW5kIHRoZXJlIGFyZSBubyBjcml0aWNhbCBwb2ludHMgYmV0d2VlbiBbYHggPSAxN2BdIGFuZCBbYHggPSAyMVx0ZXh0ey59YF0KRU5EX1BHTUxfU09MVVRJT04KU2VjdGlvbjo6RW5kKCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MClRoZSB0aHJlZSBjcml0aWNhbCBwb2ludHMgb2YgW2BnYF0gZGl2aWRlIHRoZSBbYHhgXS1heGlzIGludG8gZm91ciBpbnRlcnZhbHMuIERldGVybWluZSB0aGVzZSBpbnRlcnZhbHMsIGluIG9yZGVyIGZyb20gbGVmdCB0byByaWdodCwgYW5kIHN0YXRlIHdoZXRoZXIgW2BnYF0gaXMgaW5jcmVhc2luZyBvciBkZWNyZWFzaW5nIG9uIGVhY2ggb2YgdGhlbS4KCgppLiAgT24gdGhlIGludGVydmFsIFtgKC1caW5mdHksIGBdIFtfXXskYW5zNH17MTB9IFtAQW5zd2VyRm9ybWF0SGVscCgnbnVtYmVycycpQF0qIFtgIClcdGV4dHssfWBdIFtgZ2BdIGlzIFtfXXskZGQ0fXs1fS4KCgppLiAgT24gdGhlIGludGVydmFsIFtgKGBdIFtfXXskYW5zNH17MTB9IFtAQW5zd2VyRm9ybWF0SGVscCgnbnVtYmVycycpQF0qLFtfXXskYW5zNX17MTB9IFtAQW5zd2VyRm9ybWF0SGVscCgnbnVtYmVycycpQF0qIFtgKVx0ZXh0eyx9YF0gW2BnYF0gaXMgW19deyRkZDV9ezV9LgoKCmkuICBPbiB0aGUgaW50ZXJ2YWwgW2AoYF1bX117JGFuczV9ezEwfSBbQEFuc3dlckZvcm1hdEhlbHAoJ251bWJlcnMnKUBdKiAsW19deyRhbnM2fXsxMH0gW0BBbnN3ZXJGb3JtYXRIZWxwKCdudW1iZXJzJylAXSogW2ApXHRleHR7LH1gXSBbYGdgXSBpcyBbX117JGRkNn17NX0uCgoKaS4gIE9uIHRoZSBpbnRlcnZhbCAgW2AoYF1bX117JGFuczZ9ezEwfSBbQEFuc3dlckZvcm1hdEhlbHAoJ251bWJlcnMnKUBdKiAgW2AsIFxpbmZ0eSlcdGV4dHssfWBdIFtgZ2BdIGlzIFtfXXskZGQ3fXs1fS4KCkVORF9QR01MCgpCRUdJTl9QR01MX0hJTlQKQUREPwpFTkRfUEdNTF9ISU5UCgpCRUdJTl9QR01MX1NPTFVUSU9OClRoZSBjcml0aWNhbCBwb2ludHMgYnJlYWsgdXAgdGhlIFtgeGBdLWF4aXMgaW50byB0aGUgZm91ciBpbnRlcnZhbHMgW2AoLVxpbmZ0eSwgMTUpXHRleHR7LH1gXSBbYCgxNSwgMTcpXHRleHR7LH1gXSAgW2AoMTcsIDIxKWBdIGFuZCAgW2AoMjEsIFxpbmZ0eSlcdGV4dHsufWBdIFNpbmNlIGEgZnVuY3Rpb24gY2FuIG9ubHkgY2hhbmdlIGRpcmVjdGlvbiBhdCBhIGNyaXRpY2FsIHBvaW50LCB0byBkZXRlcm1pbmUgd2hldGhlciBbYGdgXSBpcyBpbmNyZWFzaW5nIG9yIGRlY3JlYXNpbmcgb24gZWFjaCBvZiB0aGVzZSBpbnRlcnZhbHMsIHdlIG9ubHkgbmVlZCBjaGVjayB3aGV0aGVyIFtgZydgXSBpcyBwb3NpdGl2ZSBvciBuZWdhdGl2ZSBhdCBvbmUgcG9pbnQgaW4gZWFjaCBpbnRlcnZhbC4gV2UgaGF2ZTogCmkuICBbYGcnKDE0KVxndDBcdGV4dHssfWBdIHNvIFtgZ2BdIG11c3QgYmUgaW5jcmVhc2luZyBvbiBbYCgtXGluZnR5ICwgMTUpXHRleHR7Ln1gXQppLiAgW2BnJygxNilcZ3QwXHRleHR7LH1gXSBzbyBbYGdgXSBtdXN0IGJlIGluY3JlYXNpbmcgb24gW2AoMTUgLCAxNylcdGV4dHsufWBdCmkuICBbYGcnKDE4KVxsdDBcdGV4dHssfWBdIHNvIFtgZ2BdIG11c3QgYmUgZGVjcmVhc2luZyBvbiBbYCgxNyAsIDIxKVx0ZXh0ey59YF0KaS4gIFtgZycoMjIpXGd0MFx0ZXh0eyx9YF0gc28gW2BnYF0gbXVzdCBiZSBpbmNyZWFzaW5nIG9uIFtgKDIxICwgXGluZnR5KVx0ZXh0ey59YF0gICAKCkVORF9QR01MX1NPTFVUSU9OClNlY3Rpb246OkVuZCgpO1NlY3Rpb246OkJlZ2luKCIiKTsKQkVHSU5fUEdNTApGb3IgZWFjaCBjcml0aWNhbCBwb2ludCBvZiBbYGdcdGV4dHssfWBdIHN0YXRlIHdoZXRoZXIgaXQgaXMgYSBsb2NhbCBtYXhpbXVtLCBsb2NhbCBtaW5pbXVtLCBvciBuZWl0aGVyLgoqIFRoZSBjcml0aWNhbCBwb2ludCBhdCBbYHggPSAxNWBdIGlzIFtfXXskZGQxfXs1fQoqIFRoZSBjcml0aWNhbCBwb2ludCBhdCBbYHggPSAxN2BdIGlzIFtfXXskZGQyfXs1fQoqIFRoZSBjcml0aWNhbCBwb2ludCBhdCBbYHggPSAyMWBdIGlzIFtfXXskZGQzfXs1fSAgIAoKCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9ISU5UCkFERD8KRU5EX1BHTUxfSElOVAoKQkVHSU5fUEdNTF9TT0xVVElPTgpXZSBjYW4gZGV0ZXJtaW5lIHRoZSBuYXR1cmUgb2YgYSBjcml0aWNhbCBwb2ludCBieSB0aGUgYmVoYXZpb3Igb2YgYSBmdW5jdGlvbiBqdXN0IGJlZm9yZSBhbmQganVzdCBhZnRlciB0aGF0IHBvaW50LiBGb3IgZXhhbXBsZSwgYXQgYSBtaW5pbXVtLCBhIGZ1bmN0aW9uIGRlY3JlYXNlcyBpbnRvIHRoZSBwb2ludCwgYW5kIGluY3JlYXNlcyBhd2F5IGZyb20gdGhlIHBvaW50LgoqIFRoZSBmdW5jdGlvbiBbYGdgXSBpcyBpbmNyZWFzaW5nIG9uIGJvdGggdGhlIGludGVydmFsICBbYCgtXGluZnR5LCAxNSlgXSBhbmQgW2AoMTUsIDE3KVx0ZXh0ey59YF0gVGhpcyBtZWFucyB0aGF0IHRoZSBjcml0aWNhbCBwb2ludCBbYHg9MTVgXSBpcyBuZWl0aGVyIGEgbWluaW11bSBvciBtYXhpbXVtLgoqIFRoZSBmdW5jdGlvbiBbYGdgXSBpcyBpbmNyZWFzaW5nIG9uIHRoZSBpbnRlcnZhbCAgW2AoMTUsMTcpYF0gYW5kIGRlY3JlYXNpbmcgb24gW2AoMTcsIDIxKVx0ZXh0ey59YF0gVGhpcyBtZWFucyAgW2BnYF0gZGVjcmVhc2VzIGludG8gdGhlIHBvaW50IFtgeD0xN2BdIGFuZCB0aGVuIGluY3JlYXNlcyBhd2F5IGZyb20gdGhlIHBvaW50IFtgeD0xN2BdIGFuZCBzbyBbYHg9MTdgXSBpcyBhIG1pbmltdW0uCiogVGhlIGZ1bmN0aW9uIFtgZ2BdIGlzIGRlY3JlYXNpbmcgb24gdGhlIGludGVydmFsICBbYCgxNywyMSlgXSBhbmQgaW5jcmVhc2luZyBvbiBbYCgyMSwgXGluZnR5KVx0ZXh0ey59YF0gVGhpcyBtZWFucyBbYGdgXSBpbmNyZWFzZXMgaW50byB0aGUgcG9pbnQgW2B4PTIxYF0gYW5kIHRoZW4gZGVjcmVhc2VzIGF3YXkgZnJvbSB0aGUgcG9pbnQgW2B4PTIxYF0gYW5kIHNvIFtgeD0yMWBdIGlzIGEgbWF4aW11bS4gICAKCgoKRU5EX1BHTUxfU09MVVRJT04KU2VjdGlvbjo6RW5kKCk7U2NhZmZvbGQ6OkVuZCgpOwpFTkRET0NVTUVOVCgpOw%3D%3D" base64="1" uri="1"></iframe><script>iFrameResize({log:true,inPageLinks:true,resizeFrom:'child',checkOrigin:["https://webwork.math.arizona.edu"]})</script></article></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.11/login.js"></script>
+</body>
+</html>

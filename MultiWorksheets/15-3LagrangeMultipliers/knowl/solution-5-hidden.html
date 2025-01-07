@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-09-26T12:40:08-05:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><div class="solution">
+<p>We use Lagrange multipliers with constraint functions \(g(x,y,z)=x^2+y^2\) and \(h(x,y,z)=x+y+z\text{.}\) Note that the restriction \(g(x,y,z)={25}\) defines a cylinder centered along the \(z\)-axis and the restriction \(h(x,y,z)={5}\) defines a plane. The restrictions \(g(x,y,z)={25}\) and \(h(x,y,z)={5}\) together define the intersection of these two surfaces, which will be an ellipse. Thus, the restriction is closed and bounded, and so we know that \(f(x,y,z)\) will have a global maximum and minimum subject to these restrictions which we can find with the method of Lagrange Multipliers.</p>
+<p>We have \(\nabla f=2x\vec{i} +2y\vec{j} -2z\vec{k}\text{,}\) \(\nabla g=2x\vec{i} +2y\vec{j}\text{,}\) \(\nabla h =\vec{i}+\vec{j} +\vec{k}\) and we are trying to solve \(\nabla f=\lambda \nabla g +\mu \nabla h\text{.}\) Resolving components, this means we are trying  to solve the equations</p>
+<div class="displaymath">
+\begin{equation*}
+2x=\lambda 2x +\mu,
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+2y=\lambda 2y +\mu,
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+-2z=0 +\mu
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+x^2+y^2={25}
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+x+y+z={5}
+\end{equation*}
+</div>
+<p>Subtracting the first two equations we find \(2(x-y)=\lambda\cdot 2(x-y)\text{,}\) and so we must have \(\lambda =1\) or \(x=y\text{.}\)</p>
+<p>If \(\lambda=1\text{,}\) then the first equation tells us that \(2x=2x+\mu\text{,}\) so \(\mu=0\text{.}\) Then, the fact that \(-2z=\mu\) gives \(z=0\text{.}\) Thus, by the last equation we know that \(x+y={5}\text{,}\) which together with \(x^2+y^2={25}\) implies that either \(x=0\) and \(y={5}\) or \(y=0\) and \(x={5}\text{.}\) Thus, the solutions to the system of equations when \(\lambda=1\) are \(({5},0,0)\text{,}\) \((0,{5},0)\text{.}\)</p>
+<p>If instead of \(\lambda=1\) we have \(x =  y\text{,}\) then \(x^2+y^2={25}\) implies that \(2x^2={25}\text{,}\) so \(x=y=\pm{5}/\sqrt{2}\text{.}\) Using \(x+y+z={5}\) to find the value of \(z\text{,}\) we find that the solutions to the system when \(x=y\) are \(\left({5}/\sqrt{2},{5}/\sqrt{2},{5}-{5}\sqrt{2}\right)\) and \(\left(-{5}/\sqrt{2},-{5}/\sqrt{2},{5}+{5}\sqrt{2}\right)\text{.}\)</p>
+<p>Plugging all these points into \(f(x,y,z)\text{,}\) we have</p>
+<div class="displaymath">
+\begin{equation*}
+f({5},0,0) ={25},
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+f(0,{5},0) ={25}
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+f\left({5}/\sqrt{2},{5}/\sqrt{2},{5}-{5}\sqrt{2}\right) ={50\sqrt{2}-50}
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+f\left(-{5}/\sqrt{2},-{5}/\sqrt{2},{5}+{5}\sqrt{2}\right) = {-50-50\sqrt{2}}
+\end{equation*}
+</div>
+<p>Thus, the minimum value of \(f\) subject to the restriction is \({-50-50\sqrt{2}}\text{,}\) and the maximum is \({25}\text{.}\)</p>
+</div></body>
+</html>

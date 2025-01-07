@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-06-06T10:09:44-05:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><div class="solution">
+<p>False.</p>
+<p>In addition to needing to find \(v\) from \(v'\text{,}\) we need to be able to find \(\int u'v\,dx\text{.}\) For instance, using integration by parts to find \(\displaystyle
+\int e^{-x^2}\cos x\,dx,\) we can let \(\displaystyle
+u=e^{-x^2}\) and \(\displaystyle
+v'=\cos x.\)</p>
+<p>This gives</p>
+<div class="displaymath">
+\begin{align*}
+u'\amp =-2xe^{-x^{2}}\\\
+v\amp =\sin x\\\
+\mbox{so}\quad \int \underbrace{e^{-x^2}}_{u} \cdot \underbrace{\cos x}_{v'}\,dx \amp = \underbrace{e^{-x^2}\cos x}_{uv} -\int \underbrace{-2xe^{-x^{2}}\sin x }_{u'v}\,dx.
+\end{align*}
+</div>
+<p>But since we are unable to find \(\displaystyle
+\int2xe^{-x^{2}}\sin x,\) we see that knowing \(v\) alone is not sufficient. We must also be able to find \(\displaystyle
+\int u'v\,dx.\)</p>
+</div></body>
+</html>

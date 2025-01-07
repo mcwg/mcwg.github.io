@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-09-26T12:40:08-05:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<h6 class="heading"><span class="type">Paragraph</span></h6>
+<ol class="lower-alpha">
+<li>
+<p>We use Lagrange multipliers with constraint function \(g(x,y)=x^2+y^2\text{.}\)  We know that \(f(x,y)\) has a global maximum and minimum subject to the constraint because the constraint is closed and bounded. We have \(\nabla f={5}y\vec{i} +{5}x\vec{j}\text{,}\) \(\nabla g=2x\vec{i} +2y\vec{j}\text{,}\) and we are trying to solve \(\nabla f=\lambda \nabla g\text{.}\) Resolving components, this means we are trying to solve the equations</p>
+<div class="displaymath">
+\begin{equation*}
+{5}y=\lambda (2x),
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+{5}x=\lambda (2y)
+\end{equation*}
+</div>
+<p>and</p>
+<div class="displaymath">
+\begin{equation*}
+x^2+y^2=1.
+\end{equation*}
+</div>
+<p>For the first equation, since \({5}y=\lambda (2x)\text{,}\) we have \(y=\lambda (2x/{5})\text{.}\) Substituting into the second equation, we get \({5}x=\lambda (2 \lambda (2x/{5}))\) or \({25}x=\lambda^2 (4x)\text{.}\) This means either \(x=0\) or \(\lambda^2={25}/4\text{.}\) We look at these two cases individually.</p>
+<p>If \(x=0\text{,}\) then since \(y=\lambda (2x/{5})\text{,}\) we also have \(y=0\) giving the point \((0,0)\) However, this point does not satisfy the constraint \(x^2+y^2=1\text{.}\)</p>
+<p>If \(\lambda^2={25}/4\text{,}\) then \(\lambda =\pm {5}/2\text{.}\) If \(\lambda ={5}/2\text{,}\) then since \({5}y=\lambda (2x)\) we have \({5}y={5}x\) or \(x=y\text{.}\) Substituting \(y=x\) into the constraint, we get \(2x^2=1\text{,}\) or \(x=\pm 1/\sqrt{2}\text{.}\) This gives two points, \((1/\sqrt{2}, 1/\sqrt{2})\) and \((-1/\sqrt{2}, -1/\sqrt{2})\text{.}\) If instead \(\lambda =-{5}/2\text{,}\) using similar reasoning, we get the points \((-1/\sqrt{2}, 1/\sqrt{2})\) and \((1/\sqrt{2}, -1/\sqrt{2})\text{.}\)</p>
+<p>Thus there are four points where the minimum and maximum can occur. Plugging each point into \(f(x,y)\text{,}\) we get</p>
+<div class="displaymath">
+\begin{equation*}
+f(1/\sqrt{2}, 1/\sqrt{2})={5}\left(\frac{1}{\sqrt{2}}\right) \left(\frac{1}{\sqrt{2}}\right) +{6}={17}/2
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+f(-1/\sqrt{2}, -1/\sqrt{2})={5}\left(-\frac{1}{\sqrt{2}}\right) \left(-\frac{1}{\sqrt{2}}\right) +{6}={17}/2
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+f(-1/\sqrt{2}, 1/\sqrt{2})={5}\left(-\frac{1}{\sqrt{2}}\right) \left(\frac{1}{\sqrt{2}}\right) +{6}={7}/2
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+f(1/\sqrt{2}, -1/\sqrt{2})={5}\left(\frac{1}{\sqrt{2}}\right) \left(-\frac{1}{\sqrt{2}}\right) +{6}={7}/2.
+\end{equation*}
+</div>
+<p>Therefore both \((1/\sqrt{2}, 1/\sqrt{2})\) and \((-1/\sqrt{2}, -1/\sqrt{2})\) are maxima with a value of \({17}/2\) and both \((-1/\sqrt{2}, 1/\sqrt{2})\) and \((1/\sqrt{2}, -1/\sqrt{2})\) are minima with a value of \({7}/2\text{.}\)</p>
+</li>
+<li><p>The critical points of \(f\) occur where \(\nabla f =\vec{0}\) or is undefined. Since \(\nabla f={5}y\vec{i} +{5}x\vec{j}\) it is never undefined, and is equal to \(\vec{0}\) only at the point \((0,0)\text{.}\)</p></li>
+<li>
+<p>We know that \(f(x,y)\) has a global maximum and minimum subject to the constraint because the constraint is closed and bounded. A global minimum or maximum of \(f\) subject to the constraint \(x^2+y^2\leq 1\) will either be a minimum or maximum on the boundary \(x^2+y^2=1\) and can therefore be found using Lagrange multipliers, or will occur at a critical point on the inside \(\newcommand{\lt}{\lt }x^2+y^2\lt 1\text{.}\) We already found the global minimum and maximum on the boundary in (a), so we just need to compare to the value at the critical points.</p>
+<p>From (b), the only critical point is \((0,0)\text{,}\) which does occur inside the boundary. However, since \(f(0,0)={6}\) is not bigger than the global maximum on the boundary and not smaller than the global minimum on the boundary, the maximum and minimum values subject to the constraint \(x^2+y^2\le 1\) are the same as the ones subject to the constaint \(x^2+y^2=1\text{.}\)</p>
+</li>
+</ol>
+<span class="incontext"><a href="section-5.html#p-46">in-context</a></span>
+</body>
+</html>

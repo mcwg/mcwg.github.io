@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="li"><h3 class="heading">
+<span class="type">Item</span><span class="period">.</span>
+</h3>
+<div class="para">One caption for all the figures. First create a file (say "manyfig.tex") containing</div>
+<pre class="code-block tex2jax_ignore">\valign[b]
+{
+{\input{figa}}*
+{\input{figb}}/
+{\input{figc}}
+}
+</pre>
+<div class="para">Here</div>
+<ul class="circle">
+<li><div class="para">
+<code class="code-inline tex2jax_ignore">\valign</code> aligns the figures.</div></li>
+<li><div class="para">[b] makes them bottom-aligned.  You can use [c] (centered) and [t] (top-aligned) also.</div></li>
+<li><div class="para">* means put in some space.  You can use ** (which means put in lots of space) also.</div></li>
+<li><div class="para">/ means make a new line of figures.</div></li>
+</ul>
+<div class="para">Then use</div>
+<pre class="code-block tex2jax_ignore">\begin{fakefig}
+\finput{manyfig}{Caption}
+\end{fakefig}
+</pre></article><span class="incontext"><a href="figuresCollection.html#li-134" class="internal">in-context</a></span>
+</body>
+</html>

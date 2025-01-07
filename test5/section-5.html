@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-09-04T09:51:24-05:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Second Set: Three Dimensional Vector Fields</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><link href="https://webwork.up.edu/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://webwork.up.edu/webwork2_files/js/vendor/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\doubler}[1]{2#1}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="DivAndCurl.html"><span class="title">Divergence and Curl</span></a></h1>
+<p class="byline">Calculus: Multivariable, McCallum, Hughes-Hallett, et al.</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-4.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="DivAndCurl.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-6.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-4.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="DivAndCurl.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-6.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Introduction</span></a></li>
+<li class="link"><a href="section-1.html" data-scroll="section-1"><span class="codenumber">1</span> <span class="title">Goals</span></a></li>
+<li class="link"><a href="section-2.html" data-scroll="section-2"><span class="codenumber">2</span> <span class="title">Prerequisites</span></a></li>
+<li class="link"><a href="section-3.html" data-scroll="section-3"><span class="codenumber">3</span> <span class="title">Key Concepts</span></a></li>
+<li class="link"><a href="section-4.html" data-scroll="section-4"><span class="codenumber">4</span> <span class="title">First Set: Two Dimensional Vectors Fields</span></a></li>
+<li class="link active"><a href="section-5.html" data-scroll="section-5"><span class="codenumber">5</span> <span class="title">Second Set: Three Dimensional Vector Fields</span></a></li>
+<li class="link"><a href="section-6.html" data-scroll="section-6"><span class="codenumber">6</span> <span class="title">Wrap Up Questions</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-5"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5</span> <span class="title">Second Set: Three Dimensional Vector Fields</span>
+</h2>
+<article class="exercise-like" id="exercise-4"><h6 class="heading">
+<span class="type">Problem</span> <span class="codenumber">5.1</span>.</h6>
+<div class="introduction" id="introduction-1">
+<p id="p-119">Use the following interactive version of the vector field if you have trouble answering the questions using the figure.</p>
+<p id="p-120"><iframe src="https://www.monroecc.edu/faculty/paulseeburger/CalcPlot3D/dynamicFigure/?type=vectorfield;vectorfield=vf;m=x;n=y;p=z;visible=true;scale=4;nx=7;ny=7;nz=7;mode=0;twod=false;constcol=true;color=rgb(0,0,255);norm=false;desystem=false&amp;type=slider;slider=t;value=0;steps=30;pmin=0;pmax=10;repeat=true;bounce=false;waittime=1;careful=false;noanimate=false;name=-1&amp;type=window;hsrmode=0;nomidpts=true;anaglyph=-1;center=-6.847798406258113,-3.7958230487504556,-6.220882925262342,1;focus=0,0,0,1;up=0.17168550295142515,-0.9136397331019204,0.36849223353249677,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=false;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-2;xmax=2;ymin=-2;ymax=2;zmin=-2;zmax=2;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=0.8;xscalefactor=1;yscalefactor=1;zscalefactor=1" id="calcplot3d-4" width="360" height="360"></iframe></p>
+</div>
+<iframe width="100%" src="https://webwork.up.edu/webwork2/html2xml?courseID=anonymous&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=4&amp;sourceFilePath=local/19-3-20-1DivCurl/19-3-20-1CBAawynp04/19-3-20-1CBAawynp04.pg" base64="1" uri="1"></iframe><script>iFrameResize({log:true,inPageLinks:true,resizeFrom:'child',checkOrigin:["https://webwork.up.edu"]})</script></article><article class="exercise-like" id="exercise-5"><h6 class="heading">
+<span class="type">Problem</span> <span class="codenumber">5.2</span>.</h6>
+<div class="introduction" id="introduction-2">
+<p id="p-152">Use the following interactive version of the vector field if you have trouble answering the questions using the figure.</p>
+<p id="p-153"><iframe src="https://www.monroecc.edu/faculty/paulseeburger/CalcPlot3D/dynamicFigure/?type=vectorfield;vectorfield=vf;m=0;n=-x+1;p=0;visible=true;scale=2;nx=9;ny=9;nz=3;mode=0;twod=false;constcol=true;color=rgb(0,0,255);norm=false;desystem=false&amp;type=slider;slider=t;value=0;steps=30;pmin=0;pmax=10;repeat=true;bounce=false;waittime=1;careful=false;noanimate=false;name=-1&amp;type=window;hsrmode=0;nomidpts=true;anaglyph=-1;center=3.744186793635316,8.479811322484514,3.7515150525374277,1;focus=0,0,0,1;up=-0.08770573748610279,-0.4725095186652353,0.8769506590354821,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=false;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-2;xmax=2;ymin=-2;ymax=2;zmin=-2;zmax=2;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=0.8;xscalefactor=1;yscalefactor=1;zscalefactor=1" id="calcplot3d-5" width="360" height="360"></iframe></p>
+</div>
+<iframe width="100%" src="https://webwork.up.edu/webwork2/html2xml?courseID=anonymous&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=5&amp;sourceFilePath=local/19-3-20-1DivCurl/19-3-20-1CBAawynp05/19-3-20-1CBAawynp05.pg" base64="1" uri="1"></iframe><script>iFrameResize({log:true,inPageLinks:true,resizeFrom:'child',checkOrigin:["https://webwork.up.edu"]})</script></article><article class="exercise-like" id="exercise-6"><h6 class="heading">
+<span class="type">Problem</span> <span class="codenumber">5.3</span>.</h6>
+<div class="introduction" id="introduction-3">
+<p id="p-185">Use the following interactive version of the vector field if you have trouble answering the questions using the figure.</p>
+<p id="p-186"><iframe src="https://www.monroecc.edu/faculty/paulseeburger/CalcPlot3D/dynamicFigure/?type=vectorfield;vectorfield=vf;m=y;n=-x;p=0;visible=true;scale=3;nx=15;ny=5;nz=3;mode=2;twod=false;constcol=true;color=rgb(0,0,255);norm=false;desystem=false&amp;type=slider;slider=t;value=0;steps=30;pmin=0;pmax=10;repeat=true;bounce=false;waittime=1;careful=false;noanimate=false;name=-1&amp;type=window;hsrmode=0;nomidpts=true;anaglyph=-1;center=7.004063059606921,5.091313585257234,5.002162195851606,1;focus=0,0,0,1;up=-0.41762719978987084,-0.421582923389329,0.8048946270799542,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=false;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-2;xmax=2;ymin=-2;ymax=2;zmin=-2;zmax=2;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=0.8;xscalefactor=1;yscalefactor=1;zscalefactor=1" id="calcplot3d-6" width="360" height="360"></iframe></p>
+</div>
+<iframe width="100%" src="https://webwork.up.edu/webwork2/html2xml?courseID=anonymous&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=6&amp;sourceFilePath=local/19-3-20-1DivCurl/19-3-20-1CBAawynp06/19-3-20-1CBAawynp06.pg" base64="1" uri="1"></iframe><script>iFrameResize({log:true,inPageLinks:true,resizeFrom:'child',checkOrigin:["https://webwork.up.edu"]})</script></article><article class="exercise-like" id="exercise-7"><h6 class="heading">
+<span class="type">Problem</span> <span class="codenumber">5.4</span>.</h6>
+<div class="introduction" id="introduction-4">
+<p id="p-218">Use the following interactive version of the vector field if you have trouble answering the questions using the figure.</p>
+<p id="p-219"><iframe src="https://www.monroecc.edu/faculty/paulseeburger/CalcPlot3D/dynamicFigure/?type=vectorfield;vectorfield=vf;m=z;n=0;p=-x;visible=true;scale=4;nx=9;ny=5;nz=9;mode=0;twod=false;constcol=true;color=rgb(0,0,255);norm=false;desystem=false&amp;type=slider;slider=t;value=0;steps=30;pmin=0;pmax=10;repeat=true;bounce=false;waittime=1;careful=false;noanimate=false;name=-1&amp;type=window;hsrmode=0;nomidpts=true;anaglyph=-1;center=4.94862976149849,7.557076085768813,4.289716134838493,1;focus=0,0,0,1;up=-0.37018038863026714,-0.37768073288772797,0.8487188838943864,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=false;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-2;xmax=2;ymin=-2;ymax=2;zmin=-2;zmax=2;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=0.5;xscalefactor=1;yscalefactor=1;zscalefactor=1" id="calcplot3d-7" width="360" height="360"></iframe></p>
+</div>
+<iframe width="100%" src="https://webwork.up.edu/webwork2/html2xml?courseID=anonymous&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=7&amp;sourceFilePath=local/19-3-20-1DivCurl/19-3-20-1CBAawynp07/19-3-20-1CBAawynp07.pg" base64="1" uri="1"></iframe><script>iFrameResize({log:true,inPageLinks:true,resizeFrom:'child',checkOrigin:["https://webwork.up.edu"]})</script></article><article class="exercise-like" id="exercise-8"><h6 class="heading">
+<span class="type">Problem</span> <span class="codenumber">5.5</span>.</h6>
+<div class="introduction" id="introduction-5">
+<p id="p-251">Use the following interactive version of the vector field if you have trouble answering the questions using the figure.</p>
+<p id="p-252"><iframe src="https://www.monroecc.edu/faculty/paulseeburger/CalcPlot3D/dynamicFigure/?type=vectorfield;vectorfield=vf;m=0;n=-z;p=y;visible=true;scale=4;nx=9;ny=5;nz=9;mode=0;twod=false;constcol=true;color=rgb(0,0,255);norm=false;desystem=false&amp;type=slider;slider=t;value=0;steps=30;pmin=0;pmax=10;repeat=true;bounce=false;waittime=1;careful=false;noanimate=false;name=-1&amp;type=window;hsrmode=0;nomidpts=true;anaglyph=-1;center=6.411694794760301,6.363057860913346,4.289716134838493,1;focus=0,0,0,1;up=-0.44061529874138156,-0.2924626722098223,0.8487188838943864,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=false;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-2;xmax=2;ymin=-2;ymax=2;zmin=-2;zmax=2;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=0.5;xscalefactor=1;yscalefactor=1;zscalefactor=1" id="calcplot3d-8" width="360" height="360"></iframe></p>
+</div>
+<iframe width="100%" src="https://webwork.up.edu/webwork2/html2xml?courseID=anonymous&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=8&amp;sourceFilePath=local/19-3-20-1DivCurl/19-3-20-1CBAawynp08/19-3-20-1CBAawynp08.pg" base64="1" uri="1"></iframe><script>iFrameResize({log:true,inPageLinks:true,resizeFrom:'child',checkOrigin:["https://webwork.up.edu"]})</script></article><article class="exercise-like" id="exercise-9"><h6 class="heading">
+<span class="type">Problem</span> <span class="codenumber">5.6</span>.</h6>
+<div class="introduction" id="introduction-6">
+<p id="p-284">Use the following interactive version of the vector field if you have trouble answering the questions using the figure.</p>
+<p id="p-285"><iframe src="https://www.monroecc.edu/faculty/paulseeburger/CalcPlot3D/dynamicFigure/?type=vectorfield;vectorfield=vf;m=x;n=0;p=0;visible=true;scale=3;nx=9;ny=9;nz=3;mode=0;twod=false;constcol=true;color=rgb(0,0,255);norm=false;desystem=false&amp;type=slider;slider=t;value=0;steps=30;pmin=0;pmax=10;repeat=true;bounce=false;waittime=1;careful=false;noanimate=false;name=-1&amp;type=window;hsrmode=0;nomidpts=true;anaglyph=-1;center=5.200058257218476,7.956878073753676,3.1060401544299734,1;focus=0,0,0,1;up=-0.03678738646694578,-0.22469574969724787,0.973734310921066,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=false;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-2;xmax=2;ymin=-2;ymax=2;zmin=-2;zmax=2;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=0.8;xscalefactor=1;yscalefactor=1;zscalefactor=1" id="calcplot3d-9" width="360" height="360"></iframe></p>
+</div>
+<iframe width="100%" src="https://webwork.up.edu/webwork2/html2xml?courseID=anonymous&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=9&amp;sourceFilePath=local/19-3-20-1DivCurl/19-3-20-1CBAawynp09/19-3-20-1CBAawynp09.pg" base64="1" uri="1"></iframe><script>iFrameResize({log:true,inPageLinks:true,resizeFrom:'child',checkOrigin:["https://webwork.up.edu"]})</script></article></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>

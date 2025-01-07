@@ -1,0 +1,6 @@
+climate/index.html
+climate/mauna-loa.html
+*.DS_Store
+**.DS_Store
+.DS_Store
+**/.DS_Store

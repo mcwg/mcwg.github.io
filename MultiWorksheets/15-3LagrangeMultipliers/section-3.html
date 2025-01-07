@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-09-26T12:40:07-05:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Key Concepts</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><link href="https://webwork.up.edu/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://webwork.up.edu/webwork2_files/js/vendor/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\doubler}[1]{2#1}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="Lagrange.html"><span class="title">Constrained Optimization: Lagrange Multipliers</span></a></h1>
+<p class="byline">Calculus: Multivariable, McCallum, Hughes-Hallett, et al.</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-2.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Lagrange.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-4.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-2.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Lagrange.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-4.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Introduction</span></a></li>
+<li class="link"><a href="section-1.html" data-scroll="section-1"><span class="codenumber">1</span> <span class="title">Goals</span></a></li>
+<li class="link"><a href="section-2.html" data-scroll="section-2"><span class="codenumber">2</span> <span class="title">Prerequisites</span></a></li>
+<li class="link active"><a href="section-3.html" data-scroll="section-3"><span class="codenumber">3</span> <span class="title">Key Concepts</span></a></li>
+<li class="link"><a href="section-4.html" data-scroll="section-4"><span class="codenumber">4</span> <span class="title">First Set: Finding Global Minima and Maxima Geometrically</span></a></li>
+<li class="link"><a href="section-5.html" data-scroll="section-5"><span class="codenumber">5</span> <span class="title">Second Set: Finding Global Minima and Maxima Algebraically Using Lagrange Multipliers</span></a></li>
+<li class="link"><a href="section-6.html" data-scroll="section-6"><span class="codenumber">6</span> <span class="title">Wrap Up Questions</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-3"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3</span> <span class="title">Key Concepts</span>
+</h2>
+<article class="paragraphs" id="paragraphs-1"><h5 class="heading"><span class="title">Maxima and minima of function subject to a constraint.</span></h5>
+<ul class="disc">
+<li id="li-7">A <em class="alert">constraint</em> on a function \(f\) is a restriction to a specific domain.</li>
+<li id="li-8">For a function of two variables, constraints are often given as a level curve of a <em class="alert">constraint function</em>  \(g(x,y)\text{,}\) i.e. \(g(x,y)=c\) for some fixed constant \(c\text{.}\) Constraints can also be given via inequalities of a constraint function, like \(g(x,y)\leq c\text{.}\)</li>
+<li id="li-9">
+<p id="p-3">Finding the global minimum and maximum of a function \(f(x,y)\) subject to a constraint \(g(x,y)=c\) means finding the largest and smallest values that \(f(x,y)\) takes over all points that satisfy this constraint. More specifically:</p>
+<ul class="circle">
+<li id="li-10">Finding the global maximum of \(f(x,y)\) subject to the constraint \(g(x,y)=c\) means finding the point \(P_0\) (if it exists) such that\(f(P_{0})\geq f(P)\) for all other points \(P\) satisfying \(g(P)=c\text{.}\)</li>
+<li id="li-11">Finding the global minimum of \(f(x,y)\) subject to the constraint \(g(x,y)=c\) means finding the point \(P_0\) (if it exists) such that\(f(P_{0})\leq f(P)\) for all other points \(P\) satisfying \(g(P)=c\text{.}\)</li>
+</ul>
+</li>
+</ul></article><article class="paragraphs" id="paragraphs-2"><h5 class="heading"><span class="title">How to find maxima and minima using Lagrange Multipliers.</span></h5>
+<ul class="disc">
+<li id="li-12"><p id="p-4">Note that minimum and maximum values take place where the contours of \(f(x,y)\) and the constraint \(g(x,y)=c\) are parallel or at the endpoints of the constraint. This is because at interior points on the constraint where the contour of \(f\) is not parallel to the constraint, the value of \(f\) can be increased or decreased by moving along the constraint. Note also that the contours of \(f(x,y)\) are parallel to the constraint \(g(x,y)=c\) only if \(\nabla f(x,y)\) and \(\nabla g(x,y)\) are parallel.</p></li>
+<li id="li-13">
+<p id="p-5">The above observations suggests the following method (called the <em class="alert">method of Lagrange Multipliers</em>) for finding global minimal and maxima:</p>
+<ol class="decimal">
+<li id="li-14">Assume the constraint \(g(x,y)=c\) is bounded and \(g\) is continuous (see 4 below for what to do when it is not).</li>
+<li id="li-15">
+<p id="p-6">Find each point \(P_0\) that satisfies both</p>
+<div class="displaymath">
+\begin{align*}
+\nabla f(x,y)\amp =\lambda \nabla g (x,y), \text{ and}\\
+g(x,y)\amp=c.
+\end{align*}
+</div>
+<p>The first of these ensures the two gradient vectors are parallel at that point, and the second that the point satisfies the constraint. The number \(\lambda\) is called a Lagrange Multiplier.</p>
+</li>
+<li id="li-16">Evaluate \(f(x,y)\) at each of these points and at the endpoints of the constraint: the largest will be the maximum and the smallest will be the minimum.</li>
+<li id="li-17">If the constraint \(g(x,y)=c\) is not bounded (for example \(xy=1\)), then the end behavior of the values of \(f(x,y)\) along the constraint needs to be analyzed and compared with the values of \(f(x,y)\) at the points that were found before.</li>
+</ol>
+</li>
+<li id="li-18">
+<p id="p-7">For a constraint given via an inequality \(g(x,y)\leq c\text{,}\) we also need to consider the critical points inside the constraint, so the solution requires additional steps. Specifically:</p>
+<ol class="decimal">
+<li id="li-19">Assume the region \(g(x,y)\leq c\) is bounded is continuous (see 4 below for what to do when it is not).</li>
+<li id="li-20">Find each point \(P_0\) that satisfies both \(\nabla f(x,y)=\lambda \nabla g (x,y)\) and \(g(x,y)=c\text{.}\)</li>
+<li id="li-21">Find all points strictly inside the region \(g(x,y)\leq c\)  where \(\nabla f\) is undefined or \(0\) (the critical points).</li>
+<li id="li-22">Evaluate \(f(x,y)\) at each of the points in the previous two steps: the largest will be the maximum and the smallest will be the minimum.</li>
+<li id="li-23">If the region \(g(x,y)\leq c\) is not bounded, (for example \(xy\leq 1\)), then the end behavior of the values of \(f(x,y)\) in the region needs to be analyzed and compared with the values of \(f(x,y)\) at the points that were found before.</li>
+</ol>
+</li>
+<li id="li-24">For a function \(f(x,y,z)\) of three variables, constraints are usually given using two constraint functions \(g(x,y,z)=c\) and \(h(x,y,z)=k\text{.}\) In this case, we use the same basic method but instead solve \(\nabla f(x,y,z)=\lambda \nabla g (x,y,z) +\mu h(x,y,z)\text{,}\) \(g(x,y,z)=c\) and \(h(x,y,z)=k\text{.}\)</li>
+</ul></article></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>

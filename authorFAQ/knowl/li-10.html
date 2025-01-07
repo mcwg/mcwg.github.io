@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="li"><h3 class="heading">
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">10</span><span class="period">.</span>
+</h3>
+<div class="para">Install Python using homebrew with <code class="code-inline tex2jax_ignore">pyenv</code> from the terminal run (hit enter between lines)<pre class="code-block tex2jax_ignore">brew install pyenv
+pyenv install 3.10
+pyenv global 3.10
+</pre>
+</div>
+<div class="para">Then add the following lines to your <code class="code-inline tex2jax_ignore">.bash_profile</code> file:<pre class="code-block tex2jax_ignore"># pyenv setup
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv &gt;/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+</pre>
+</div>
+<div class="para">Close the Terminal window and reopen it for all changes to have effect.</div></article><span class="incontext"><a href="BasicSetup.html#li-10" class="internal">in-context</a></span>
+</body>
+</html>

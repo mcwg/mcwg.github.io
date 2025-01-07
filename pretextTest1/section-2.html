@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WWSC Initial Exploration: where does the method come from?</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="article">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://pretextbook.org/js/0.13/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-article ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="webwork-mini.html"><span class="title">Worksheet: Integration by Substitution</span></a></h1>
+<p class="byline">MCWG</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="webwork-mini.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-3.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="webwork-mini.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-3.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1" class="internal"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="section-1.html" data-scroll="section-1" class="internal"><span class="codenumber">1</span> <span class="title">Summary</span></a><ul>
+<li><a href="section-1.html#subsection-1" data-scroll="subsection-1" class="internal">The "typical" example</a></li>
+<li><a href="section-1.html#subsection-2" data-scroll="subsection-2" class="internal">(**) The method does not always work</a></li>
+</ul>
+</li>
+<li class="link active">
+<a href="section-2.html" data-scroll="section-2" class="internal"><span class="codenumber">2</span> <span class="title">Initial Exploration: where does the method come from?</span></a><ul><li><a href="section-2.html#subsection-3" data-scroll="subsection-3" class="internal">(**) PENDING</a></li></ul>
+</li>
+<li class="link">
+<a href="section-3.html" data-scroll="section-3" class="internal"><span class="codenumber">3</span> <span class="title">The method of substitution: first examples</span></a><ul><li><a href="section-3.html#subsection-4" data-scroll="subsection-4" class="internal">(**) PENDING</a></li></ul>
+</li>
+<li class="link">
+<a href="section-4.html" data-scroll="section-4" class="internal"><span class="codenumber">4</span> <span class="title">Substitution with endpoints</span></a><ul><li><a href="section-4.html#subsection-5" data-scroll="subsection-5" class="internal">(**) PENDING</a></li></ul>
+</li>
+<li class="link">
+<a href="section-5.html" data-scroll="section-5" class="internal"><span class="codenumber">5</span> <span class="title">More abstract implications</span></a><ul><li><a href="section-5.html#subsection-6" data-scroll="subsection-6" class="internal">(**) PENDING</a></li></ul>
+</li>
+<li class="link">
+<a href="section-6.html" data-scroll="section-6" class="internal"><span class="codenumber">6</span> <span class="title">wrap-up for the worksheet</span></a><ul><li><a href="section-6.html#subsection-7" data-scroll="subsection-7" class="internal">(**) PENDING</a></li></ul>
+</li>
+<li class="link"><a href="section-7.html" data-scroll="section-7" class="internal"><span class="codenumber">7</span> <span class="title">WeBWorK with TikZ Examples</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-2"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2</span> <span class="title">Initial Exploration: where does the method come from?</span>
+</h2>
+<section class="subsection" id="subsection-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.1</span> <span class="title">(**) PENDING</span>
+</h3>
+<article class="assemblage assemblage-like" id="assemblage-2"><p id="p-5">NOTE: Have students do several examples of differentiation using the chain rule, and then write the corresponding antidifferentiation formulas. <span class="process-math">\(e^{3x}\)</span></p></article><article class="assemblage assemblage-like" id="assemblage-3"><p id="p-6">NOTE: Emphasize that integration by substitution is just the reversal of the chain rule; the hard part is learning to recognize to which integrals we can apply this “reverse chain rule.”</p></article><article class="assemblage assemblage-like" id="assemblage-4"><p id="p-7">NOTE: Possibly introduce the integral <span class="process-math">\(\int e^{x^2}dx\)</span> and have students try to find the antiderivative using the guess-and-check method. Show how the obvious guess <span class="process-math">\(e^{x^2}\)</span> does not work because of the extra term <span class="process-math">\(2x\)</span> that appears when we apply the chain rule. Then point out if the <span class="process-math">\(2x\)</span> from the chain rule had been under the integral sign in the first place, we could have easily done this integral. This gets the point across that integrands have to be in a special form to be integrated using substitution---a point you will need to come back to again and again.</p></article><article class="assemblage assemblage-like" id="assemblage-5"><p id="p-8">NOTE: Then go on to do several more examples like <span class="process-math">\(\int t^2e^{t^3}dt\)</span> and <span class="process-math">\(\int x^4\sqrt{x^5-4}\,dx\)</span> by the guess-and-check method. Working through several examples this way leads naturally to the quest for a more systematic method, namely <span class="process-math">\(w\)</span>-substitution.</p></article><article class="assemblage assemblage-like" id="assemblage-6"><p id="p-9">Close with <span class="process-math">\(w\)</span>-substitution</p></article><article class="assemblage assemblage-like" id="assemblage-7"><p id="p-10">WRAP-UP for this piece --- simple straightforward activity.</p></article></section></section></div></main>
+</div>
+</body>
+</html>

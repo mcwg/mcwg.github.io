@@ -1,0 +1,723 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-representations>
+  <webwork-reps version="2" xml:id="extracted-webwork-2" ww-id="webwork-2">
+    <static seed="2">
+      <statement><p>What are the roots of this polynomial? Here</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="80%" pi:generated="webwork/images/webwork-2-image-1"><description>qthe graph of a polynomial that crosses the x-axis at -9, -7, and -6.</description></image>
+<p><fillin name="AnSwEr0001" characters="20"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-9, -7, -6</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHdGlrei5wbCIsIldXU0MucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpO0Byb290cyA9ICgtMTAuLjEwKVtOY2hvb3NlSyg3LDMpXTsKQHJvb3RzID0gbnVtX3NvcnQoQHJvb3RzKTsKJGFuc3dlciA9IExpc3QoQHJvb3RzKTsKJHhtaW4gPSBtaW4oLTEsQHJvb3RzKS0xOwokeG1heCA9IG1heCgxLEByb290cykrMTsKJHJlZnJlc2hDYWNoZWRJbWFnZXM9MTsKJGltYWdlXzEgPSBjcmVhdGVUaWtaSW1hZ2UoKTsKJGltYWdlXzEtPmFkZFRvUHJlYW1ibGUobGF0ZXhJbWFnZVByZWFtYmxlKCkpOwokaW1hZ2VfMS0+QkVHSU5fVElLWgpcYmVnaW57YXhpc30KICAgIFxhZGRwbG90W2RvbWFpbj0keG1pbjokeG1heCxzbW9vdGhdIHsoeC0kcm9vdHNbMF0pKih4LSRyb290c1sxXSkqKHgtJHJvb3RzWzJdKX07ClxlbmR7YXhpc30KCkVORF9USUtaCgpCRUdJTl9QR01MCldoYXQgYXJlIHRoZSByb290cyBvZiB0aGlzIHBvbHlub21pYWw/IEhlcmUKCj4+IFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGltYWdlXzEpLCB3aWR0aD0+NDgwLCBhbHQ9PnFxInF0aGUgZ3JhcGggb2YgYSBwb2x5bm9taWFsIHRoYXQgY3Jvc3NlcyB0aGUgeC1heGlzIGF0ICRyb290c1swXSwgJHJvb3RzWzFdLCBhbmQgJHJvb3RzWzJdLiIpQF0qICA8PAoKW19deyRhbnN3ZXJ9ezIwfQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-04-05T11:47:07-05:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGchoicemacros.pl",
+  "PGtikz.pl",
+  "WWSC.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+@roots = (-10..10)[NchooseK(7,3)];
+@roots = num_sort(@roots);
+$answer = List(@roots);
+$xmin = min(-1,@roots)-1;
+$xmax = max(1,@roots)+1;
+$refreshCachedImages=1;
+$image_1 = createTikZImage();
+$image_1->addToPreamble(latexImagePreamble());
+$image_1->BEGIN_TIKZ
+\begin{axis}
+    \addplot[domain=$xmin:$xmax,smooth] {(x-$roots[0])*(x-$roots[1])*(x-$roots[2])};
+\end{axis}
+
+END_TIKZ
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+What are the roots of this polynomial? Here
+
+>> [@image(insertGraph($image_1), width=>480, alt=>qq"qthe graph of a polynomial that crosses the x-axis at $roots[0], $roots[1], and $roots[2].")@]*  <<
+
+[_]{$answer}{20}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-3" ww-id="webwork-3">
+    <static seed="3">
+      <statement><p>Compute the sum of <m>{3}</m> and <m>{1}\text{:}</m></p>
+<p><m>{3} + {1} =</m> <fillin name="AnSwEr0001" characters="5"/></p>
+</statement>
+      <hint><p>Add <m>{3}</m> and <m>{1}</m> together.</p>
+</hint>
+      <answer>
+        <p>
+          <m>4</m>
+        </p>
+      </answer>
+      <solution><p><m>{3} + {1} = {4}\text{.}</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhID0gQ29tcHV0ZShyYW5kb20oMSwgOSwgMSkpOwokYiA9IENvbXB1dGUocmFuZG9tKDEsIDksIDEpKTsKJGMgPSAkYSArICRiOwokcmVmcmVzaENhY2hlZEltYWdlcz0xOwoKQkVHSU5fUEdNTApDb21wdXRlIHRoZSBzdW0gb2YgW2BbJGFdYF0gYW5kIFtgWyRiXVx0ZXh0ezp9YF0KCltgWyRhXSArIFskYl0gPWBdIFtfXXskY317NX0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9ISU5UCkFkZCBbYFskYV1gXSBhbmQgW2BbJGJdYF0gdG9nZXRoZXIuCgoKRU5EX1BHTUxfSElOVAoKQkVHSU5fUEdNTF9TT0xVVElPTgpbYFskYV0gKyBbJGJdID0gWyRjXVx0ZXh0ey59YF0KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-04-05T11:47:07-05:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.2)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$a = Compute(random(1, 9, 1));
+$b = Compute(random(1, 9, 1));
+$c = $a + $b;
+$refreshCachedImages=1;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Compute the sum of [`[$a]`] and [`[$b]\text{:}`]
+
+[`[$a] + [$b] =`] [_]{$c}{5}
+
+END_PGML
+
+############################################################
+# Hint
+############################################################
+#Set value of $showHint in PGcourse.pl for course-wide attempt threshhold for revealing hints
+
+BEGIN_PGML_HINT
+Add [`[$a]`] and [`[$b]`] together.
+
+END_PGML_HINT
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`[$a] + [$b] = [$c]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-5" ww-id="webwork-5">
+    <static seed="5">
+      <statement><p>Use the properties of exponents to simplify <m>{x^{5}x^{4}}\text{.}</m></p>
+<p><m>{x^{5}x^{4}}=</m> <fillin name="AnSwEr0001" characters="8"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>x^{9}</m>
+        </p>
+      </answer>
+      <solution><p>We <em>add</em> the exponents as follows, while including a gratuitous reference to the quadratic formula:</p>
+<p><me>\begin{aligned}
+{x^{5}x^{4}}\amp =x^{5+4}\amp \\
+\amp =x^{9}
+\end{aligned}</me></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJhbnN3ZXJIaW50cy5wbCIsIlBDQ21hY3Jvcy5wbCIsImNvbnRleHRMaW1pdGVkUG9seW5vbWlhbC5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwokYSA9IHJhbmRvbSgxLCA5LCAxKTsKJGIgPSByYW5kb20oMSwgOSwgMSk7CiRjID0gJGEgKyAkYjsKJGV4cHJlc3Npb24gPSBGb3JtdWxhKCJ4XigkYSkqeF4oJGIpIik7CiRyZWZyZXNoQ2FjaGVkSW1hZ2VzPTE7CgpDb250ZXh0KCJMaW1pdGVkUG9seW5vbWlhbC1TdHJpY3QiKTsKIyBjdXN0b20gZXJyb3IgbWVzc2FnZQpDb250ZXh0KCktPntlcnJvcn17bXNnfXsiQSB2YXJpYWJsZSBjYW4gYXBwZWFyIG9ubHkgb25jZSBpbiBlYWNoIHRlcm0gb2YgYSBwb2x5bm9taWFsIn0KICAgID0gIllvdXIgYW5zd2VyIG11c3QgYmUgZnVsbHkgc2ltcGxpZmllZCI7CgokYW5zd2VyID0gRm9ybXVsYSgieF4oJGMpIik7CiRwcm9kdWN0ID0gJGEqJGI7CiRldmFsdWF0b3IgPSAkYW5zd2VyLT5jbXAoKS0+d2l0aFBvc3RGaWx0ZXIoQW5zd2VySGludHMoCiAgICBbQ29tcHV0ZSgieF4oJHByb2R1Y3QpIildID0+CiAgICAiV2hlbiBtdWx0aXBseWluZyB0ZXJtcyB3aXRoIHRoZSBzYW1lIGJhc2UsIHlvdSBkbyBub3QgbXVsdGlwbHkgdGhlIGV4cG9uZW50cy4iKSk7CgpCRUdJTl9QR01MClVzZSB0aGUgcHJvcGVydGllcyBvZiBleHBvbmVudHMgdG8gc2ltcGxpZnkgW2BbJGV4cHJlc3Npb25dXHRleHR7Ln1gXQoKW0BLZXlib2FyZEluc3RydWN0aW9ucygnVG8gZW50ZXIgYSBwb3dlciwgdXNlIGEgW3xefF0qLCBhcyBpbiBbfHheMnxdKiBmb3IgW2B4XjJcdGV4dHsufWBdJylAXSoqCgpbYFskZXhwcmVzc2lvbl09YF0gW19deyRldmFsdWF0b3J9ezh9IFtAQW5zd2VyRm9ybWF0SGVscCgnZm9ybXVsYXMnKUBdKgoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCldlIF9hZGRfIHRoZSBleHBvbmVudHMgYXMgZm9sbG93cywgd2hpbGUgaW5jbHVkaW5nIGEgZ3JhdHVpdG91cyByZWZlcmVuY2UgdG8gdGhlIHF1YWRyYXRpYyBmb3JtdWxhOgoKW2BgYFxiZWdpbnthbGlnbmVkfQpbJGV4cHJlc3Npb25dJj14XntbJGFdK1skYl19JlxcCiY9eF57WyRjXX0KXGVuZHthbGlnbmVkfQpgYGBdCgoKCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-04-05T11:47:07-05:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "answerHints.pl",
+  "PCCmacros.pl",
+  "contextLimitedPolynomial.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$a = random(1, 9, 1);
+$b = random(1, 9, 1);
+$c = $a + $b;
+$expression = Formula("x^($a)*x^($b)");
+$refreshCachedImages=1;
+
+Context("LimitedPolynomial-Strict");
+# custom error message
+Context()->{error}{msg}{"A variable can appear only once in each term of a polynomial"}
+    = "Your answer must be fully simplified";
+
+$answer = Formula("x^($c)");
+$product = $a*$b;
+$evaluator = $answer->cmp()->withPostFilter(AnswerHints(
+    [Compute("x^($product)")] =>
+    "When multiplying terms with the same base, you do not multiply the exponents."));
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use the properties of exponents to simplify [`[$expression]\text{.}`]
+
+[@KeyboardInstructions('To enter a power, use a [|^|]*, as in [|x^2|]* for [`x^2\text{.}`]')@]**
+
+[`[$expression]=`] [_]{$evaluator}{8} [@AnswerFormatHelp('formulas')@]*
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+We _add_ the exponents as follows, while including a gratuitous reference to the quadratic formula:
+
+[```
+\begin{aligned}
+[$expression]&=x^{[$a]+[$b]}&\\
+&=x^{[$c]}
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-6" ww-id="webwork-6">
+    <static seed="6">
+      <statement><p>What are the roots of this polynomial? Here</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="80%" pi:generated="webwork/images/webwork-6-image-1"><description>qthe graph of a polynomial that crosses the x-axis at -3, -1, and 1.</description></image>
+<p><fillin name="AnSwEr0001" characters="20"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-3, -1, 1</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHdGlrei5wbCIsIldXU0MucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpO0Byb290cyA9ICgtMy4uMylbTmNob29zZUsoNywzKV07CkByb290cyA9IG51bV9zb3J0KEByb290cyk7CiRhbnN3ZXIgPSBMaXN0KEByb290cyk7CiR4bWluID0gbWluKC0xLEByb290cyktMTsKJHhtYXggPSBtYXgoMSxAcm9vdHMpKzE7CiRyZWZyZXNoQ2FjaGVkSW1hZ2VzPTE7CiRpbWFnZV8yID0gY3JlYXRlVGlrWkltYWdlKCk7CiRpbWFnZV8yLT5hZGRUb1ByZWFtYmxlKGxhdGV4SW1hZ2VQcmVhbWJsZSgpKTsKJGltYWdlXzItPkJFR0lOX1RJS1oKXGJlZ2lue2F4aXN9CiAgICBcYWRkcGxvdFtkb21haW49JHhtaW46JHhtYXgsc21vb3RoXSB7KHgtJHJvb3RzWzBdKSooeC0kcm9vdHNbMV0pKih4LSRyb290c1syXSl9OwpcZW5ke2F4aXN9CgpFTkRfVElLWgoKQkVHSU5fUEdNTApXaGF0IGFyZSB0aGUgcm9vdHMgb2YgdGhpcyBwb2x5bm9taWFsPyBIZXJlCgo+PiBbQGltYWdlKGluc2VydEdyYXBoKCRpbWFnZV8yKSwgd2lkdGg9PjQ4MCwgYWx0PT5xcSJxdGhlIGdyYXBoIG9mIGEgcG9seW5vbWlhbCB0aGF0IGNyb3NzZXMgdGhlIHgtYXhpcyBhdCAkcm9vdHNbMF0sICRyb290c1sxXSwgYW5kICRyb290c1syXS4iKUBdKiAgPDwKCltfXXskYW5zd2VyfXsyMH0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-04-05T11:47:07-05:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.4)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGchoicemacros.pl",
+  "PGtikz.pl",
+  "WWSC.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+@roots = (-3..3)[NchooseK(7,3)];
+@roots = num_sort(@roots);
+$answer = List(@roots);
+$xmin = min(-1,@roots)-1;
+$xmax = max(1,@roots)+1;
+$refreshCachedImages=1;
+$image_2 = createTikZImage();
+$image_2->addToPreamble(latexImagePreamble());
+$image_2->BEGIN_TIKZ
+\begin{axis}
+    \addplot[domain=$xmin:$xmax,smooth] {(x-$roots[0])*(x-$roots[1])*(x-$roots[2])};
+\end{axis}
+
+END_TIKZ
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+What are the roots of this polynomial? Here
+
+>> [@image(insertGraph($image_2), width=>480, alt=>qq"qthe graph of a polynomial that crosses the x-axis at $roots[0], $roots[1], and $roots[2].")@]*  <<
+
+[_]{$answer}{20}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-7" ww-id="webwork-7">
+    <static seed="7">
+      <statement><p>What are the roots of this polynomial? Here</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="80%" pi:generated="webwork/images/webwork-7-image-1"><description>qthe graph of a polynomial that crosses the x-axis at 0, 1, and 2.</description></image>
+<p><fillin name="AnSwEr0001" characters="20"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>0, 1, 2</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHdGlrei5wbCIsIldXU0MucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpO0Byb290cyA9ICgtMy4uMylbTmNob29zZUsoNywzKV07CkByb290cyA9IG51bV9zb3J0KEByb290cyk7CiRhbnN3ZXIgPSBMaXN0KEByb290cyk7CiR4bWluID0gbWluKC0xLEByb290cyktMTsKJHhtYXggPSBtYXgoMSxAcm9vdHMpKzE7CiRyZWZyZXNoQ2FjaGVkSW1hZ2VzPTE7CiRpbWFnZV8zID0gY3JlYXRlVGlrWkltYWdlKCk7CiRpbWFnZV8zLT5hZGRUb1ByZWFtYmxlKGxhdGV4SW1hZ2VQcmVhbWJsZSgpKTsKJGltYWdlXzMtPkJFR0lOX1RJS1oKXGJlZ2lue2F4aXN9CiAgICBcYWRkcGxvdFtkb21haW49JHhtaW46JHhtYXgsc21vb3RoXSB7KHgtJHJvb3RzWzBdKSooeC0kcm9vdHNbMV0pKih4LSRyb290c1syXSl9OwpcZW5ke2F4aXN9CgpFTkRfVElLWgoKQkVHSU5fUEdNTApXaGF0IGFyZSB0aGUgcm9vdHMgb2YgdGhpcyBwb2x5bm9taWFsPyBIZXJlCgo+PiBbQGltYWdlKGluc2VydEdyYXBoKCRpbWFnZV8zKSwgd2lkdGg9PjQ4MCwgYWx0PT5xcSJxdGhlIGdyYXBoIG9mIGEgcG9seW5vbWlhbCB0aGF0IGNyb3NzZXMgdGhlIHgtYXhpcyBhdCAkcm9vdHNbMF0sICRyb290c1sxXSwgYW5kICRyb290c1syXS4iKUBdKiAgPDwKCltfXXskYW5zd2VyfXsyMH0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-04-05T11:47:07-05:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.5)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGchoicemacros.pl",
+  "PGtikz.pl",
+  "WWSC.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+@roots = (-3..3)[NchooseK(7,3)];
+@roots = num_sort(@roots);
+$answer = List(@roots);
+$xmin = min(-1,@roots)-1;
+$xmax = max(1,@roots)+1;
+$refreshCachedImages=1;
+$image_3 = createTikZImage();
+$image_3->addToPreamble(latexImagePreamble());
+$image_3->BEGIN_TIKZ
+\begin{axis}
+    \addplot[domain=$xmin:$xmax,smooth] {(x-$roots[0])*(x-$roots[1])*(x-$roots[2])};
+\end{axis}
+
+END_TIKZ
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+What are the roots of this polynomial? Here
+
+>> [@image(insertGraph($image_3), width=>480, alt=>qq"qthe graph of a polynomial that crosses the x-axis at $roots[0], $roots[1], and $roots[2].")@]*  <<
+
+[_]{$answer}{20}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-8" ww-id="webwork-8">
+    <static seed="8">
+      <statement><p>What are the roots of this polynomial? Here</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="80%" pi:generated="webwork/images/webwork-8-image-1"><description>qthe graph of a polynomial that crosses the x-axis at -3, -2, and 3.</description></image>
+<p><fillin name="AnSwEr0001" characters="20"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-3, -2, 3</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHdGlrei5wbCIsIldXU0MucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpO0Byb290cyA9ICgtMy4uMylbTmNob29zZUsoNywzKV07CkByb290cyA9IG51bV9zb3J0KEByb290cyk7CiRhbnN3ZXIgPSBMaXN0KEByb290cyk7CiR4bWluID0gbWluKC0xLEByb290cyktMTsKJHhtYXggPSBtYXgoMSxAcm9vdHMpKzE7CiRyZWZyZXNoQ2FjaGVkSW1hZ2VzPTE7CiRpbWFnZV80ID0gY3JlYXRlVGlrWkltYWdlKCk7CiRpbWFnZV80LT5hZGRUb1ByZWFtYmxlKGxhdGV4SW1hZ2VQcmVhbWJsZSgpKTsKJGltYWdlXzQtPkJFR0lOX1RJS1oKXGJlZ2lue2F4aXN9CiAgICBcYWRkcGxvdFtkb21haW49JHhtaW46JHhtYXgsc21vb3RoXSB7KHgtJHJvb3RzWzBdKSooeC0kcm9vdHNbMV0pKih4LSRyb290c1syXSl9OwpcZW5ke2F4aXN9CgpFTkRfVElLWgoKQkVHSU5fUEdNTApXaGF0IGFyZSB0aGUgcm9vdHMgb2YgdGhpcyBwb2x5bm9taWFsPyBIZXJlCgo+PiBbQGltYWdlKGluc2VydEdyYXBoKCRpbWFnZV80KSwgd2lkdGg9PjQ4MCwgYWx0PT5xcSJxdGhlIGdyYXBoIG9mIGEgcG9seW5vbWlhbCB0aGF0IGNyb3NzZXMgdGhlIHgtYXhpcyBhdCAkcm9vdHNbMF0sICRyb290c1sxXSwgYW5kICRyb290c1syXS4iKUBdKiAgPDwKCltfXXskYW5zd2VyfXsyMH0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-04-05T11:47:07-05:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.6)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGchoicemacros.pl",
+  "PGtikz.pl",
+  "WWSC.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+@roots = (-3..3)[NchooseK(7,3)];
+@roots = num_sort(@roots);
+$answer = List(@roots);
+$xmin = min(-1,@roots)-1;
+$xmax = max(1,@roots)+1;
+$refreshCachedImages=1;
+$image_4 = createTikZImage();
+$image_4->addToPreamble(latexImagePreamble());
+$image_4->BEGIN_TIKZ
+\begin{axis}
+    \addplot[domain=$xmin:$xmax,smooth] {(x-$roots[0])*(x-$roots[1])*(x-$roots[2])};
+\end{axis}
+
+END_TIKZ
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+What are the roots of this polynomial? Here
+
+>> [@image(insertGraph($image_4), width=>480, alt=>qq"qthe graph of a polynomial that crosses the x-axis at $roots[0], $roots[1], and $roots[2].")@]*  <<
+
+[_]{$answer}{20}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-9" ww-id="webwork-9">
+    <static seed="9">
+      <statement><p>What are the roots of this polynomial? Here</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="80%" pi:generated="webwork/images/webwork-9-image-1"><description>qthe graph of a polynomial that crosses the x-axis at -1, 2, and 3.</description></image>
+<p><fillin name="AnSwEr0001" characters="20"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-1, 2, 3</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHdGlrei5wbCIsIldXU0MucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpO0Byb290cyA9ICgtMy4uMylbTmNob29zZUsoNywzKV07CkByb290cyA9IG51bV9zb3J0KEByb290cyk7CiRhbnN3ZXIgPSBMaXN0KEByb290cyk7CiR4bWluID0gbWluKC0xLEByb290cyktMTsKJHhtYXggPSBtYXgoMSxAcm9vdHMpKzE7CiRyZWZyZXNoQ2FjaGVkSW1hZ2VzPTE7CiRpbWFnZV81ID0gY3JlYXRlVGlrWkltYWdlKCk7CiRpbWFnZV81LT5hZGRUb1ByZWFtYmxlKGxhdGV4SW1hZ2VQcmVhbWJsZSgpKTsKJGltYWdlXzUtPkJFR0lOX1RJS1oKXGJlZ2lue2F4aXN9CiAgICBcYWRkcGxvdFtkb21haW49JHhtaW46JHhtYXgsc21vb3RoXSB7KHgtJHJvb3RzWzBdKSooeC0kcm9vdHNbMV0pKih4LSRyb290c1syXSl9OwpcZW5ke2F4aXN9CgpFTkRfVElLWgoKQkVHSU5fUEdNTApXaGF0IGFyZSB0aGUgcm9vdHMgb2YgdGhpcyBwb2x5bm9taWFsPyBIZXJlCgo+PiBbQGltYWdlKGluc2VydEdyYXBoKCRpbWFnZV81KSwgd2lkdGg9PjQ4MCwgYWx0PT5xcSJxdGhlIGdyYXBoIG9mIGEgcG9seW5vbWlhbCB0aGF0IGNyb3NzZXMgdGhlIHgtYXhpcyBhdCAkcm9vdHNbMF0sICRyb290c1sxXSwgYW5kICRyb290c1syXS4iKUBdKiAgPDwKCltfXXskYW5zd2VyfXsyMH0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-04-05T11:47:07-05:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.7)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGchoicemacros.pl",
+  "PGtikz.pl",
+  "WWSC.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+@roots = (-3..3)[NchooseK(7,3)];
+@roots = num_sort(@roots);
+$answer = List(@roots);
+$xmin = min(-1,@roots)-1;
+$xmax = max(1,@roots)+1;
+$refreshCachedImages=1;
+$image_5 = createTikZImage();
+$image_5->addToPreamble(latexImagePreamble());
+$image_5->BEGIN_TIKZ
+\begin{axis}
+    \addplot[domain=$xmin:$xmax,smooth] {(x-$roots[0])*(x-$roots[1])*(x-$roots[2])};
+\end{axis}
+
+END_TIKZ
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+What are the roots of this polynomial? Here
+
+>> [@image(insertGraph($image_5), width=>480, alt=>qq"qthe graph of a polynomial that crosses the x-axis at $roots[0], $roots[1], and $roots[2].")@]*  <<
+
+[_]{$answer}{20}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+</webwork-representations>

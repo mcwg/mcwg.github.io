@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-09-26T12:40:07-05:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="paragraphs"><h5 class="heading"><span class="title">How to find maxima and minima using Lagrange Multipliers.</span></h5>
+<ul class="disc">
+<li><p>Note that minimum and maximum values take place where the contours of \(f(x,y)\) and the constraint \(g(x,y)=c\) are parallel or at the endpoints of the constraint. This is because at interior points on the constraint where the contour of \(f\) is not parallel to the constraint, the value of \(f\) can be increased or decreased by moving along the constraint. Note also that the contours of \(f(x,y)\) are parallel to the constraint \(g(x,y)=c\) only if \(\nabla f(x,y)\) and \(\nabla g(x,y)\) are parallel.</p></li>
+<li>
+<p>The above observations suggests the following method (called the <em class="alert">method of Lagrange Multipliers</em>) for finding global minimal and maxima:</p>
+<ol class="decimal">
+<li>Assume the constraint \(g(x,y)=c\) is bounded and \(g\) is continuous (see 4 below for what to do when it is not).</li>
+<li>
+<p>Find each point \(P_0\) that satisfies both</p>
+<div class="displaymath">
+\begin{align*}
+\nabla f(x,y)\amp =\lambda \nabla g (x,y), \text{ and}\\
+g(x,y)\amp=c.
+\end{align*}
+</div>
+<p>The first of these ensures the two gradient vectors are parallel at that point, and the second that the point satisfies the constraint. The number \(\lambda\) is called a Lagrange Multiplier.</p>
+</li>
+<li>Evaluate \(f(x,y)\) at each of these points and at the endpoints of the constraint: the largest will be the maximum and the smallest will be the minimum.</li>
+<li>If the constraint \(g(x,y)=c\) is not bounded (for example \(xy=1\)), then the end behavior of the values of \(f(x,y)\) along the constraint needs to be analyzed and compared with the values of \(f(x,y)\) at the points that were found before.</li>
+</ol>
+</li>
+<li>
+<p>For a constraint given via an inequality \(g(x,y)\leq c\text{,}\) we also need to consider the critical points inside the constraint, so the solution requires additional steps. Specifically:</p>
+<ol class="decimal">
+<li>Assume the region \(g(x,y)\leq c\) is bounded is continuous (see 4 below for what to do when it is not).</li>
+<li>Find each point \(P_0\) that satisfies both \(\nabla f(x,y)=\lambda \nabla g (x,y)\) and \(g(x,y)=c\text{.}\)</li>
+<li>Find all points strictly inside the region \(g(x,y)\leq c\)  where \(\nabla f\) is undefined or \(0\) (the critical points).</li>
+<li>Evaluate \(f(x,y)\) at each of the points in the previous two steps: the largest will be the maximum and the smallest will be the minimum.</li>
+<li>If the region \(g(x,y)\leq c\) is not bounded, (for example \(xy\leq 1\)), then the end behavior of the values of \(f(x,y)\) in the region needs to be analyzed and compared with the values of \(f(x,y)\) at the points that were found before.</li>
+</ol>
+</li>
+<li>For a function \(f(x,y,z)\) of three variables, constraints are usually given using two constraint functions \(g(x,y,z)=c\) and \(h(x,y,z)=k\text{.}\) In this case, we use the same basic method but instead solve \(\nabla f(x,y,z)=\lambda \nabla g (x,y,z) +\mu h(x,y,z)\text{,}\) \(g(x,y,z)=c\) and \(h(x,y,z)=k\text{.}\)</li>
+</ul></article><span class="incontext"><a href="section-3.html#paragraphs-2">in-context</a></span>
+</body>
+</html>

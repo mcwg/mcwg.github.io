@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-10-21T09:47:31-05:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><div class="solution">
+<p>The component functions of \(\vec{F} =(1/(x+y+{4}))\vec{i} +(1/(x+y+{4})+y))\vec{j}\) are defined everywhere except \(y=-x-{4}\text{.}\) The curve \(y=e^x\) from \(x=0\) to \(x={3}\) appears entirely in the first quadrant, which is a simply connected region where \(\vec{F}\) is defined. It follows that we can test whether \(\vec{F}\) is conservative in the first quadrant by applying the curl test. We have</p>
+<div class="displaymath">
+\begin{equation*}
+\text{scalar curl of }\vec{F} =-\frac{1}{(x+y+{4})^2} -\left(-\frac{1}{(x+y+{4})^2}\right) =0
+\end{equation*}
+</div>
+<p>so \(\vec{F}\) is conservative in the first quadrant. Integrating and combining, we get \(f(x,y)=\ln{(x+y+{4})} +y^2/2\) as a potential function. Since the curve is \(y=e^x\) from \(x=0\) to \(x={3}\text{,}\) the endpoints of \(C\) are \((0,1)\) and \(({3},e^{3})\text{,}\) so applying the Fundamental Theorem of Calculus, we get</p>
+<div class="displaymath">
+\begin{equation*}
+\newcommand{\amp}{\amp }\begin{aligned}
+\amp \int_{C} \left( \frac{1}{x+y+{4}} \vec{i} +\left( \frac{1}{x+y+{4}} +y\right)\vec{j} \right) \cdot d\vec{r} \\
+\amp =f({3},e^{3})-f(0,1) \\
+\amp =\left(\ln{({7}+e^{3})} +\frac{e^{6}}{2} \right) -\ln 2- \frac{1}{2} \\
+\amp=\ln{({7}+e^{3})} +\frac{e^{6}-1}{2} -\ln 2
+\end{aligned}
+\end{equation*}
+</div>
+</div></body>
+</html>

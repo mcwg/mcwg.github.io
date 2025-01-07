@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-10-30T13:30:14-05:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><div class="solution">
+<p>First, \(S\) can be parameterized by</p>
+<div class="displaymath">
+\begin{equation*}
+\vec{r}(u,v)=\sqrt{{7}-v}\cos{(u)} \vec{i} +\sqrt{{7}-v} \sin{(u)} \vec{j} +v\vec{k}\text{,}
+\end{equation*}
+</div>
+<p>where \(0\leq u\leq 2\pi\) and \(0\leq v\leq {7}\text{,}\) the upper bound coming from the fact that \(z\leq {7}\text{.}\) The normal vector is</p>
+<div class="displaymath">
+\begin{equation*}
+\vec{N} =\sqrt{{7}-v}\cos{(u)} \vec{i} +\sqrt{{7}-v} \sin{(u)} \vec{j} +\frac{1}{2}\vec{k}.
+\end{equation*}
+</div>
+<p>Since the \(\vec{k}\) component of \(\vec{N}\) is positive, this parameterization is orientation-preserving. Thus, we have</p>
+<div class="displaymath">
+\begin{equation*}
+\newcommand{\amp}{\amp }\begin{aligned}
+\int \int_{S} \amp \left( x\vec{i}+y\vec{j} +{9}\vec{k} \right) \cdot \, d\vec{S} =\\
+\amp =\int_{0}^{2\pi} \int_{0}^{{7}} \left( \sqrt{{7}-v}\cos{(u)} \vec{i} +\sqrt{{7}-v} \sin{(u)} \vec{j} +{9}\vec{k} \right)\\
+\amp \qquad\quad  \cdot  \left( \sqrt{{7}-v}\cos{(u)} \vec{i} +\sqrt{{7}-v} \sin{(u)} \vec{j} +\frac{1}{2}\vec{k}\right) \,dv\,du\\
+\amp =\int_{0}^{2\pi} \int_{0}^{{7}} \left( ({7}-v)\cos^2{(u)} +({7}-v) \sin^2{(u)} +\frac{{9}}{2} \right) \,dv\,du\\
+\amp =\int_{0}^{2\pi} \int_{0}^{{7}} \left(\frac{{23}}{2}-v\right) \,dv\,du\\
+\amp =2\pi \left( \frac{{23}v}{2} -\frac{v^2}{2} \right)\Bigg|_{0}^{{7}}\\
+\amp = {112}\pi
+\end{aligned}
+\end{equation*}
+</div>
+</div></body>
+</html>

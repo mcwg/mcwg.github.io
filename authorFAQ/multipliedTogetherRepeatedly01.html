@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>To display $a$ multiplied together repeatedly, do I use $a\cdot a\cdot a\cdot\cdots\cdot a$ or $a\cdot a\cdot a\cdots a$?</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="MCWG TeX Frequently Asked Questions">
+<meta property="book:author" content="">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.31/pretext_search.js"></script><link href="https://pretextbook.org/css/0.81/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.31</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.31/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.31/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.31/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="https://pretextbook.org/css/0.81/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.81/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.81/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.81/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.81/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.81/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.81/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.81/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.81/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.81/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
+<h1 class="heading"><a href="MCWG-FAQ.html"><span class="title">MCWG TeX Frequently Asked Questions</span></a></h1>
+<p class="byline"> </p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="equalVsApproEqual01.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="FormattingMath.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="subscripts03.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\doubler}[1]{2#1}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter-1.html" class="internal"><span class="title">(**) Introduction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-abstract"><div class="toc-title-box"><a href="frontmatter-1.html#abstract-1" class="internal"><span class="title">Abstract</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsection-1.html" class="internal"><span class="codenumber">1</span> <span class="title">Consortium members’ contact info</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="InstallationBasicSetup.html" class="internal"><span class="codenumber">1</span> <span class="title">Installation: Setup of your system</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="BasicSetup.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Getting things running</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="GhostcriptConflitingVersions.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Supertex is giving me an error message regarding Ghostscript <code class="code-inline tex2jax_ignore">Can't find initialization file gs_init.ps</code></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="SupertexAndMacOSMonterrey.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Supertex is not working after I updated to MacOS Monterrey (October 2021)</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="chapter-2.html" class="internal"><span class="codenumber">2</span> <span class="title">Using git</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Abbreviations.html" class="internal"><span class="codenumber">3</span> <span class="title">Abbreviations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="abbreviationStandarUnits01.html" class="internal"><span class="codenumber">3.1</span> <span class="title">What are the abbreviations and conventions that we use for standard units like grams and miles per hour?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="latinAbbreviations01.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Do we italicize Latin abbreviations such as e.g. and i.e.?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="texCommandsAbbreviation01.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Which TeX commands can I abbreviate?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Books.html" class="internal"><span class="codenumber">4</span> <span class="title">Books</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="latestEditions.html" class="internal"><span class="codenumber">4.1</span> <span class="title">What are the latest editions of our books?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="rewriteVsCheckMaterials01.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Sometimes I’m asked to rewrite materials, and sometimes I’m asked to check them.  What is the difference?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Captions.html" class="internal"><span class="codenumber">5</span> <span class="title">Captions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="captionsOnATable02.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Should I put a caption on a table?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="tableLabels04.html" class="internal"><span class="codenumber">5.2</span> <span class="title">When do I put labels (numbers) and captions on tables?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="CaptionOrNoCaption03.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Sometimes I want a figure with a number and a caption, sometimes with only a number, and sometimes with neither a number nor a caption. How do I do that?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Chapters.html" class="internal"><span class="codenumber">6</span> <span class="title">Chapters</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="creatingChapter03.html" class="internal"><span class="codenumber">6.1</span> <span class="title">How do I create a Chapter?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="exampleInChapter02.html" class="internal"><span class="codenumber">6.2</span> <span class="title">How do I put an Example in a Chapter?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="capitalizingHeadings04.html" class="internal"><span class="codenumber">6.3</span> <span class="title">What is the convention for capitalizing headings of chapters, sections, and subsections?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Characters.html" class="internal"><span class="codenumber">7</span> <span class="title">Characters</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="mathematicalSymbolsInHeadings03.html" class="internal"><span class="codenumber">7.1</span> <span class="title">I am trying to create tables where the headings are mathematical symbols, e.g. <code class="code-inline tex2jax_ignore">$\times 2$ &amp; $+4$ &amp; $\div 2$</code>.  The times and the plus are replaced by the correct symbols, but the div just prints the word "div" instead of the division symbol.  Any suggestions?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="printSpecialCharacters03.html" class="internal"><span class="codenumber">7.2</span> <span class="title">How do I print the TeX special characters: <code class="code-inline tex2jax_ignore">$, &amp;, %, #, _,{, and }</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="commandsToGetDivGradCurl03.html" class="internal"><span class="codenumber">7.3</span> <span class="title">What commands do I use to get <em class="emphasis">div</em>, <em class="emphasis">grad</em>, and <em class="emphasis">curl</em>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="poundSymbol03.html" class="internal"><span class="codenumber">7.4</span> <span class="title">How do I enter the UK counterpart of $, namely the UK pound symbol, £?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="CheckingText.html" class="internal"><span class="codenumber">8</span> <span class="title">Checking Text</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="rewriteVsCheckMaterials02.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Sometimes I’m asked to rewrite materials, and sometimes I’m asked to check them.  What is the difference?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="answersOrShortAnswersMissing03.html" class="internal"><span class="codenumber">8.2</span> <span class="title">When checking exercises, what do I do if an Answer or ShortAnswer is missing?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ConcepTests.html" class="internal"><span class="codenumber">9</span> <span class="title">ConcepTests</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ConcepTestFiles.html" class="internal"><span class="codenumber">9.1</span> <span class="title">What is the correct naming convention for ConcepTest files?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="commentAfterSolution.html" class="internal"><span class="codenumber">9.2</span> <span class="title">How do I insert the Comment that often goes after the solution of a ConcepTest in place of the short answer?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="Conventions.html" class="internal"><span class="codenumber">10</span> <span class="title">Conventions</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="CrossReferences.html" class="internal"><span class="codenumber">11</span> <span class="title">Cross References</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="figuresAndTablesLabel04.html" class="internal"><span class="codenumber">11.1</span> <span class="title">What is the preferred convention for labelling figures and tables in Exercises?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="tableLabels05.html" class="internal"><span class="codenumber">11.2</span> <span class="title">When do I put labels (numbers) and captions on tables?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="hardCodingReference03.html" class="internal"><span class="codenumber">11.3</span> <span class="title">May I reference an example, figure, or table, by hard coding the reference (e.g., <code class="code-inline tex2jax_ignore">Example 5</code> instead of <code class="code-inline tex2jax_ignore">Example~\ref{blahblah}</code>)?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ReferenceAllFigs02.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Do all figures have to be referenced?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="CaptionOrNoCaption02.html" class="internal"><span class="codenumber">11.5</span> <span class="title">Sometimes I want a figure with a number and a caption, sometimes with only a number, and sometimes with neither a number nor a caption. How do I do that?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="referencesPrintedText02.html" class="internal"><span class="codenumber">11.6</span> <span class="title">How do I reference existing theorems, chapters, sections, examples, exercises, and problems, in the printed calculus text that we are editing?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="referPartFromAnother02.html" class="internal"><span class="codenumber">11.7</span> <span class="title">I am creating an exercise that has parts (a), (b), (c), etc., and in part (c) I want to refer to part (a). How do I do that?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="CrossReferencePageNumber03.html" class="internal"><span class="codenumber">11.8</span> <span class="title">How do I cross reference an object using a page number?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="referExerciseFromAnother02.html" class="internal"><span class="codenumber">11.9</span> <span class="title">How do I cross reference one exercise from another?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="DosAndDonts.html" class="internal"><span class="codenumber">12</span> <span class="title">Do’s and Don’ts</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Equations.html" class="internal"><span class="codenumber">13</span> <span class="title">Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sequenceOfEquations03.html" class="internal"><span class="codenumber">13.1</span> <span class="title">I want to create a sequence of equations, one below the other, with the equal signs lined up. How do I do that?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="piecewiseFunction03.html" class="internal"><span class="codenumber">13.2</span> <span class="title">What command do I use in TeX to construct a piecewise defined function?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="displaystyle04.html" class="internal"><span class="codenumber">13.3</span> <span class="title">Can I use <code class="code-inline tex2jax_ignore">\displaystyle</code> in display math style or in <code class="code-inline tex2jax_ignore">eqnarray*</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="shouldKnowDisplayStyle04.html" class="internal"><span class="codenumber">13.4</span> <span class="title">Is there anything I should know if I use display math style (that is, when an expression is on its own line)?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="equationsDisplayInLines.html" class="internal"><span class="codenumber">13.5</span> <span class="title">What is the difference between <code class="code-inline tex2jax_ignore">\hbox</code>, <code class="code-inline tex2jax_ignore">\mbox</code>, and <code class="code-inline tex2jax_ignore">\wordeq</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="differencesDollarSign02.html" class="internal"><span class="codenumber">13.6</span> <span class="title">What is the difference between <code class="code-inline tex2jax_ignore">$blah$</code>, <code class="code-inline tex2jax_ignore">$$blah$$</code>, and <code class="code-inline tex2jax_ignore">$\dsty blah$</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="equationsDisplayStyle02.html" class="internal"><span class="codenumber">13.7</span> <span class="title">In display style math (when an equation is on its own line) are both <code class="code-inline tex2jax_ignore">$$equation$$</code> and<pre class="code-block tex2jax_ignore">$$ 
+equation 
+$$
+</pre>correct?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Errors.html" class="internal"><span class="codenumber">14</span> <span class="title">Errors</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="doesntTex01.html" class="internal"><span class="codenumber">14.1</span> <span class="title">The TeX file I created does not TeX. What do I do?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="dontEnoughTex01.html" class="internal"><span class="codenumber">14.2</span> <span class="title">I know what I want to say, but I don’t know enough TeX to express it.  What do I do?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="commonTexMistakes01.html" class="internal"><span class="codenumber">14.3</span> <span class="title">Is there a list of common TeX mistakes?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="missingDollarSign01.html" class="internal"><span class="codenumber">14.4</span> <span class="title">Why do I get an error message concerning missing $ when I try to TeX "\footnote{http://dr.pierce1.net/PDF/half_life.pdf, accessed on May 10, 2003.}"?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ExercisesAndProblems.html" class="internal"><span class="codenumber">15</span> <span class="title">Exercises and Problems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="formatExercisesFiles01.html" class="internal"><span class="codenumber">15.1</span> <span class="title">What is the correct format and naming convention for exercise files?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="reuseFilenames01.html" class="internal"><span class="codenumber">15.2</span> <span class="title">I wrote an exercise file "1-2dslgnp001.tex" which is now being used in Section 6.2. Can I reuse the filename "1-2dslgnp001.tex" to create a new problem for Section 1.2?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="exerciseOrProblem01.html" class="internal"><span class="codenumber">15.3</span> <span class="title">How do I specify that a problem that I am submitting is intended to be a "Problem" rather than an "Exercise"?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="figuresAndTablesLabel01.html" class="internal"><span class="codenumber">15.4</span> <span class="title">What is the preferred convention for labelling figures and tables in Exercises?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="tableLabels01.html" class="internal"><span class="codenumber">15.5</span> <span class="title">When do I put labels (numbers) and captions on tables?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="answersAndShortAnswers01.html" class="internal"><span class="codenumber">15.6</span> <span class="title">Is it OK to submit exercises without Answers or ShortAnswers?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="answersOrShortAnswersMissing01.html" class="internal"><span class="codenumber">15.7</span> <span class="title">When checking exercises, what do I do if an Answer or ShortAnswer is missing?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="collectionOfExercises01.html" class="internal"><span class="codenumber">15.8</span> <span class="title">How do I put together a collection of exercises?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="qset01.html" class="internal"><span class="codenumber">15.9</span> <span class="title">In a collection of exercises, how do I give a subset of the exercises the same set of instructions, called a QSET?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="dollarSign01.html" class="internal"><span class="codenumber">15.10</span> <span class="title">In Exercises, when do we use <code class="code-inline tex2jax_ignore">$blah$</code>, <code class="code-inline tex2jax_ignore">$$blah$$</code>, and <code class="code-inline tex2jax_ignore">$\dsty blah$</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="filenamesBoxes01.html" class="internal"><span class="codenumber">15.11</span> <span class="title">How do I turn off the little rectangular boxes that give the filenames of the exercise files alongside the exercises?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="printEverything01.html" class="internal"><span class="codenumber">15.12</span> <span class="title">How do I print the questions, the answers, and the short answers for the exercises?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="printOnlyExerciseQuestion01.html" class="internal"><span class="codenumber">15.13</span> <span class="title">How do I print only the questions (without the answers or short answers) for the exercises?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="oneColumnPrint01.html" class="internal"><span class="codenumber">15.14</span> <span class="title">How do I print the exercises in one column instead of the default of two columns?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="unitsOnFigures01.html" class="internal"><span class="codenumber">15.15</span> <span class="title">Do I need to put the units (of the variables) in the text of an exercise and also in the figure of the exercise?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="conciseVsWording01.html" class="internal"><span class="codenumber">15.16</span> <span class="title">If I have the choice between wording an exercise in a concise style or in a verbose style, which is preferable?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="shortAnswers01.html" class="internal"><span class="codenumber">15.17</span> <span class="title">What do I need to know about short answers?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="figureInShortAnswer02.html" class="internal"><span class="codenumber">15.18</span> <span class="title">How do I put a figure into the short answer of an exercise or problem?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="unitsInShortAnswer01.html" class="internal"><span class="codenumber">15.19</span> <span class="title">If in the short answers I have the choice between including or omitting units, what should I do?  (For example, if a  problem asks "How many ships are left?", should the short answer be "32" or "32 ships"?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="manyPossibleAnswersInShortAnswer.html" class="internal"><span class="codenumber">15.20</span> <span class="title">If there are many possible answers to an exercise/problem, what is the correct way to write a short answer?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="whenDoIUseQSET01.html" class="internal"><span class="codenumber">15.21</span> <span class="title">When do I use a QSET?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="exactAnswer01.html" class="internal"><span class="codenumber">15.22</span> <span class="title">The exact answer to one of my exercises is <code class="code-inline tex2jax_ignore">$5/\pi$</code> inches. Should I also give the calculator value of 1.592?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="decimalPlacesInAnswer01.html" class="internal"><span class="codenumber">15.23</span> <span class="title">How many decimal places should I keep in a numerical answer?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="exerciseFilenameForDifferentBooks01.html" class="internal"><span class="codenumber">15.24</span> <span class="title">The suggested way of naming exercise files is not unique if I am creating exercises for two different books. What do I do?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="codeForBooksAndEditions01.html" class="internal"><span class="codenumber">15.25</span> <span class="title">(**) Is there any pattern to the way we identify books and editions?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="referPartFromAnother01.html" class="internal"><span class="codenumber">15.26</span> <span class="title">I am creating an exercise that has parts (a), (b), (c), etc., and in part (c) I want to refer to part (a). How do I do that?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="referExerciseFromAnother01.html" class="internal"><span class="codenumber">15.27</span> <span class="title">How do I cross reference one exercise from another?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="hint.html" class="internal"><span class="codenumber">15.28</span> <span class="title">I want to put a hint in an exercise. How do I do that?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="filenamesFormat01.html" class="internal"><span class="codenumber">15.29</span> <span class="title">I’m told that I can construct the filename of any of the exercises just by looking at one of published books. How do I do that?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="orVsAndInSolutions01.html" class="internal"><span class="codenumber">15.30</span> <span class="title">Do we say "The solutions are $x = 1$ and $x = 2$," or "The solutions are $x = 1$ or $x =2$"?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ExponentsSuperSubscripts.html" class="internal"><span class="codenumber">16</span> <span class="title">Exponents/Super/Subscripts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ordinalNumbersExpressionsTeX01.html" class="internal"><span class="codenumber">16.1</span> <span class="title">How do I TeX expressions like "1^{st}" and "n^{th}"?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="subscripts01.html" class="internal"><span class="codenumber">16.2</span> <span class="title">When I use  word subscripts (e.g. $r_{in}$ or $r_{\hbox{in}}$) the word "in" is either in italics or too large.  What should I be using?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="vectorSubscript01.html" class="internal"><span class="codenumber">16.3</span> <span class="title">If I use <code class="code-inline tex2jax_ignore">$\vec F_{M}$</code> or <code class="code-inline tex2jax_ignore">$\overrightarrow{F}_M$</code> a huge gap is left between the bottom of the F and the M, which looks wrong. What should I do?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="shilling01.html" class="internal"><span class="codenumber">16.4</span> <span class="title">What is shilling?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="shillVsFrac01.html" class="internal"><span class="codenumber">16.5</span> <span class="title">When do I shill and when do I use <code class="code-inline tex2jax_ignore">$\frac{}{}$</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="degreeSymbol01.html" class="internal"><span class="codenumber">16.6</span> <span class="title">How do I enter the degree symbol, for example 76 degrees Fahrenheit?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Figures.html" class="internal"><span class="codenumber">17</span> <span class="title">Figures</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="LabelFigsExer.html" class="internal"><span class="codenumber">17.1</span> <span class="title">What is the preferred convention for labeling figures and tables in Exercises?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="hardCodingReference01.html" class="internal"><span class="codenumber">17.2</span> <span class="title">May I reference an example, figure, or table, by hard coding the reference (e.g., <code class="code-inline tex2jax_ignore">Example 5</code> instead of <code class="code-inline tex2jax_ignore">Example~\ref{blahblah}</code>)?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="figureInShortAnswer01.html" class="internal"><span class="codenumber">17.3</span> <span class="title">How do I put a figure into the short answer of an exercise or problem?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="figInDiffEquations.html" class="internal"><span class="codenumber">17.4</span> <span class="title">I want to use the same figure in two different questions. Can I use exactly the same file?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ReferenceAllFigs01.html" class="internal"><span class="codenumber">17.5</span> <span class="title">Do all figures have to be referenced?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="CaptionOrNoCaption01.html" class="internal"><span class="codenumber">17.6</span> <span class="title">Sometimes I want a figure with a number and a caption, sometimes with only a number, and sometimes with neither a number nor a caption. How do I do that?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="StayfigOrFakefig01.html" class="internal"><span class="codenumber">17.7</span> <span class="title">What is the difference between <code class="code-inline tex2jax_ignore">stayfig</code> and <code class="code-inline tex2jax_ignore">fakefig</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="CollectionOfFigsTogether.html" class="internal"><span class="codenumber">17.8</span> <span class="title">I want to put a collection of figures together on a page. How do I do that?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="PlaceRomanNumeralOnFigCollection.html" class="internal"><span class="codenumber">17.9</span> <span class="title">How can I place a Roman numeral, like "(IV)", at the upper left-hand corner of a figure as is sometimes needed in a collection of figures?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="UnitsInTextOrFigure.html" class="internal"><span class="codenumber">17.10</span> <span class="title">Do I need to put the units (of the variables) in the text of an exercise and also in the figure of the exercise?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="CrossReferencePageNumber02.html" class="internal"><span class="codenumber">17.11</span> <span class="title">How do I cross reference an object using a page number?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="FigureAxisLabels.html" class="internal"><span class="codenumber">17.12</span> <span class="title">What do I need to know when text is used to label the axes in a figure?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="UndefinedHollowPointInfFigure.html" class="internal"><span class="codenumber">17.13</span> <span class="title">(**) How do I put a little circle on a graph indicating that a function is undefined at that point?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ManyFiguresInProblem.html" class="internal"><span class="codenumber">17.14</span> <span class="title">How do I put many figures into a problem?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Filenames.html" class="internal"><span class="codenumber">18</span> <span class="title">Filenames</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="exerciseFilenameForDifferentBooks02.html" class="internal"><span class="codenumber">18.1</span> <span class="title">The suggested way of naming exercise files is not unique if I am creating exercises for two different books. What do I do?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="filenamesFormat02.html" class="internal"><span class="codenumber">18.2</span> <span class="title">I’m told that I can construct the filename of any of the exercises just by looking at one of published books. How do I do that?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="FontsAndTypefaces.html" class="internal"><span class="codenumber">19</span> <span class="title">Fonts and Typefaces</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="specialReference01.html" class="internal"><span class="codenumber">19.1</span> <span class="title">I want to refer to something like City A and City B.  Do I just type it that way, or are the A and B put into a special font, say $A$ and $B$?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ordinalNumbersExpressionsTeX02.html" class="internal"><span class="codenumber">19.2</span> <span class="title">How do I TeX expressions like "1^{st}" and "n^{th}"?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="subscripts02.html" class="internal"><span class="codenumber">19.3</span> <span class="title">When I use  word subscripts (e.g. $r_{in}$ or $r_{\hbox{in}}$) the word "in" is either in italics or too large.  What should I be using?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="boldface01.html" class="internal"><span class="codenumber">19.4</span> <span class="title">How can I change the typeface to boldface?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="typeSize01.html" class="internal"><span class="codenumber">19.5</span> <span class="title">How can I change the type size?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Footnotes.html" class="internal"><span class="codenumber">20</span> <span class="title">Footnotes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="footnote01.html" class="internal"><span class="codenumber">20.1</span> <span class="title">How do I insert a footnote?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="footnotePosition01.html" class="internal"><span class="codenumber">20.2</span> <span class="title">Do I put a footnote before or after a punctuation mark?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="FormattingMath.html" class="internal"><span class="codenumber">21</span> <span class="title">Formatting: Math</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="displayMathStyle01.html" class="internal"><span class="codenumber">21.1</span> <span class="title">How can I use the display math style without putting the expression on a new line?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="differencesDollarSign01.html" class="internal"><span class="codenumber">21.2</span> <span class="title">What is the difference between <code class="code-inline tex2jax_ignore">$blah$</code>, <code class="code-inline tex2jax_ignore">$$blah$$</code>, and <code class="code-inline tex2jax_ignore">$\dsty blah$</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="displaystyle01.html" class="internal"><span class="codenumber">21.3</span> <span class="title">Can I use <code class="code-inline tex2jax_ignore">\displaystyle</code> in display math style or in <code class="code-inline tex2jax_ignore">eqnarray*</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="shouldKnowDisplayStyle01.html" class="internal"><span class="codenumber">21.4</span> <span class="title">Is there anything I should know if I use display math style (that is, when an expression is on its own line)?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="integrals01.html" class="internal"><span class="codenumber">21.5</span> <span class="title">If I use <code class="code-inline tex2jax_ignore">$\int f(x) dx$</code>, to construct the integral of f(x), the f(x) and dx are too close. What should I do?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="vectorsArrow01.html" class="internal"><span class="codenumber">21.6</span> <span class="title">Do I use <code class="code-inline tex2jax_ignore">$\vec F$</code> or <code class="code-inline tex2jax_ignore">$\overrightarrow{F}$</code> to put an arrow on top of the vector F?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="vectorSubscript02.html" class="internal"><span class="codenumber">21.7</span> <span class="title">If I use <code class="code-inline tex2jax_ignore">$\vec F_{M}$</code> or <code class="code-inline tex2jax_ignore">$\overrightarrow{F}_M$</code> a huge gap is left between the bottom of the F and the M, which looks wrong. What should I do?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="shilling02.html" class="internal"><span class="codenumber">21.8</span> <span class="title">What is shilling?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="shillVsFrac02.html" class="internal"><span class="codenumber">21.9</span> <span class="title">When do I shill and when do I use <code class="code-inline tex2jax_ignore">$\frac{}{}$</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="range01.html" class="internal"><span class="codenumber">21.10</span> <span class="title">The three expressions <code class="code-inline tex2jax_ignore">$x &gt; 1$</code>, <code class="code-inline tex2jax_ignore">$1 &lt; x &lt; \infty$</code>, and <code class="code-inline tex2jax_ignore">$(1, \infty)$</code> are mathematically equivalent.  Which one do we use?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="rightArrow01.html" class="internal"><span class="codenumber">21.11</span> <span class="title">May I use the implies symbol ==&gt; (<code class="code-inline tex2jax_ignore">$\Rightarrow$</code>)?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sinNotation01.html" class="internal"><span class="codenumber">21.12</span> <span class="title">Do I use <code class="code-inline tex2jax_ignore">$\sin x$</code> or <code class="code-inline tex2jax_ignore">$\sin (x)$</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="rootVsZero01.html" class="internal"><span class="codenumber">21.13</span> <span class="title">When do I use root and when do I use zero?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="equalVsApproEqual01.html" class="internal"><span class="codenumber">21.14</span> <span class="title">When do I use = and when do I use approximately equal (<code class="code-inline tex2jax_ignore">\approx</code>)?</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="multipliedTogetherRepeatedly01.html" class="internal"><span class="codenumber">21.15</span> <span class="title">To display <code class="code-inline tex2jax_ignore">$a$</code> multiplied together repeatedly, do I use <code class="code-inline tex2jax_ignore">$a\cdot a\cdot a\cdot\cdots\cdot a$</code> or <code class="code-inline tex2jax_ignore">$a\cdot a\cdot a\cdots a$</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="subscripts03.html" class="internal"><span class="codenumber">21.16</span> <span class="title">When I use  word subscripts (e.g. <code class="code-inline tex2jax_ignore">$r_{in}$</code> or <code class="code-inline tex2jax_ignore">$r_{\hbox{in}}$</code>) the word "in" is either in italics or too large.  What should I be using?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="verticalBar01.html" class="internal"><span class="codenumber">21.17</span> <span class="title">When I TeX <code class="code-inline tex2jax_ignore">\dsty \left.\arctan(x)\right|_0^b</code> the vertical bar isn’t long enough.  How can I get it taller?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="textIntoEquation01.html" class="internal"><span class="codenumber">21.18</span> <span class="title">How do I put text into an equation?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="equationsDisplayStyle01.html" class="internal"><span class="codenumber">21.19</span> <span class="title">In display style math (when an equation is on its own line) are both <code class="code-inline tex2jax_ignore">$$equation$$</code> and<pre class="code-block tex2jax_ignore">$$
+equation
+$$
+</pre>correct?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="FormattingText.html" class="internal"><span class="codenumber">22</span> <span class="title">Formatting: Text</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="formatExercisesFiles02.html" class="internal"><span class="codenumber">22.1</span> <span class="title">What is the correct format and naming convention for exercise files?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="tableFormat01.html" class="internal"><span class="codenumber">22.2</span> <span class="title">What is the preferred formatting for a table?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="figuresCollection.html" class="internal"><span class="codenumber">22.3</span> <span class="title">I want to put a collection of figures together on a page. How do I do that?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="somethingInBox01.html" class="internal"><span class="codenumber">22.4</span> <span class="title">What command do I use in TeX to place something in a box, similar to page 2 in Calculus, 3rd Edition?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="boldface02.html" class="internal"><span class="codenumber">22.5</span> <span class="title">How can I change the typeface to boldface?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="typeSize02.html" class="internal"><span class="codenumber">22.6</span> <span class="title">How can I change the type size?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="spaceBetweenTwoLines01.html" class="internal"><span class="codenumber">22.7</span> <span class="title">How can I increase space between two lines?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="spaceBeforeAfterDashes01.html" class="internal"><span class="codenumber">22.8</span> <span class="title">Sometimes there is a space before or after my dashes (-), en-dashes (--), and em-dashes (---), and I don’t want that. What do I do?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="periodBetween01.html" class="internal"><span class="codenumber">22.9</span> <span class="title">When I TeX "The difference is <code class="code-inline tex2jax_ignore">\$0.01.</code>" there is a spacing problem involving the period between the two zeros. What do I do?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ordinalNumbersExpressionsTeX03.html" class="internal"><span class="codenumber">22.10</span> <span class="title">How do I TeX expressions like "1^{st}" and "n^{th}"?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="thousandNotation01.html" class="internal"><span class="codenumber">22.11</span> <span class="title">Do we use 1000 or 1,000?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="decimalsNotation01.html" class="internal"><span class="codenumber">22.12</span> <span class="title">Do we use 0.5 or .5?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="shilling03.html" class="internal"><span class="codenumber">22.13</span> <span class="title">What is shilling?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="shillVsFrac03.html" class="internal"><span class="codenumber">22.14</span> <span class="title">When do I shill and when do I use <code class="code-inline tex2jax_ignore">$\frac{}{}$</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sentenceStart01.html" class="internal"><span class="codenumber">22.15</span> <span class="title">May I start a sentence with a variable or a number?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="variablesSeparetedByText01.html" class="internal"><span class="codenumber">22.16</span> <span class="title">The authorities get upset if I write something like: Since the leading term of the polynomial is $x^4$, $y$ goes to infinity. What should I have written?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="specialReference02.html" class="internal"><span class="codenumber">22.17</span> <span class="title">I want to refer to something like City A and City B.  Do I just type it that way, or are the A and B put into a special font, say $A$ and $B$?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="rightArrow02.html" class="internal"><span class="codenumber">22.18</span> <span class="title">May I use the implies symbol ==&gt; (<code class="code-inline tex2jax_ignore">$\Rightarrow$</code>)?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="rootVsZero02.html" class="internal"><span class="codenumber">22.19</span> <span class="title">When do I use root and when do I use zero?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="symmetricAcrossVsAbout01.html" class="internal"><span class="codenumber">22.20</span> <span class="title">Do I use symmetric across the <em class="emphasis">x</em>-axis, or symmetric about the <em class="emphasis">x</em>-axis?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="latinAbbreviations02.html" class="internal"><span class="codenumber">22.21</span> <span class="title">Do we italicize Latin abbreviations such as e.g. and i.e.?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="capitalizingHeadings01.html" class="internal"><span class="codenumber">22.22</span> <span class="title">What is the convention for capitalizing headings of chapters, sections, and subsections?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="formattingCommands01.html" class="internal"><span class="codenumber">22.23</span> <span class="title">May I use formatting commands (like  \vspace, \hspace, \smallskip, \\, etc.) in the text portion of my file?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="unitsOnFigures02.html" class="internal"><span class="codenumber">22.24</span> <span class="title">Do I need to put the units (of the variables) in the text of an exercise and also in the figure of the exercise?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="conciseVsWording02.html" class="internal"><span class="codenumber">22.25</span> <span class="title">If I have the choice between wording an exercise in a concise style or in a verbose style, which is preferable?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="exactAnswer02.html" class="internal"><span class="codenumber">22.26</span> <span class="title">The exact answer to one of my exercises is <code class="code-inline tex2jax_ignore">$5/\pi$</code> inches. Should I also give the calculator value of 1.592?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="subscripts04.html" class="internal"><span class="codenumber">22.27</span> <span class="title">When I use  word subscripts (e.g. <code class="code-inline tex2jax_ignore">$r_{in}$</code> or <code class="code-inline tex2jax_ignore">$r_{\hbox{in}}$</code>) the word "in" is either in italics or too large.  What should I be using?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="generateTildeBlah01.html" class="internal"><span class="codenumber">22.28</span> <span class="title">How do I get TeX to generate <code class="code-inline tex2jax_ignore">~blah</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="textIntoEquation02.html" class="internal"><span class="codenumber">22.29</span> <span class="title">How do I put text into an equation?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Fractions.html" class="internal"><span class="codenumber">23</span> <span class="title">Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="shilling04.html" class="internal"><span class="codenumber">23.1</span> <span class="title">What is shilling?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="shillVsFrac04.html" class="internal"><span class="codenumber">23.2</span> <span class="title">When do I shill and when do I use <code class="code-inline tex2jax_ignore">$\frac{}{}$</code>?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Functions.html" class="internal"><span class="codenumber">24</span> <span class="title">Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sequenceOfEquations01.html" class="internal"><span class="codenumber">24.1</span> <span class="title">I want to create a sequence of equations, one below the other, with the equal signs lined up.  How do I do that?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="piecewiseFunction01.html" class="internal"><span class="codenumber">24.2</span> <span class="title">What command do I use in TeX to construct a piecewise defined function?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="displaystyle02.html" class="internal"><span class="codenumber">24.3</span> <span class="title">Can I use <code class="code-inline tex2jax_ignore">\displaystyle</code> in display math style or in <code class="code-inline tex2jax_ignore">eqnarray*</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="shouldKnowDisplayStyle02.html" class="internal"><span class="codenumber">24.4</span> <span class="title">Is there anything I should know if I use display math style (that is, when an expression is on its own line)?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Guidelines.html" class="internal"><span class="codenumber">25</span> <span class="title">Guidelines</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="summaryGuidelines.html" class="internal"><span class="codenumber">25.1</span> <span class="title">=Is there a summary of CCHE Guidelines?</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ListsAndParts.html" class="internal"><span class="codenumber">26</span> <span class="title">Lists and Parts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="listDownThePage.html" class="internal"><span class="codenumber">26.1</span> <span class="title">How do I construct a list, (a), (b), etc., that goes down the page?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="listAcrossThePage.html" class="internal"><span class="codenumber">26.2</span> <span class="title">How do I construct a list, (a), (b), etc., that goes across the page?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="bulletedList.html" class="internal"><span class="codenumber">26.3</span> <span class="title">How do I construct a bulleted list?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="PrintingAndOutput.html" class="internal"><span class="codenumber">27</span> <span class="title">Printing and Output</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="filenamesBoxes02.html" class="internal"><span class="codenumber">27.1</span> <span class="title">How do I turn off the little rectangular boxes that give the filenames of the exercise files alongside the exercises?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="printingInColor.html" class="internal"><span class="codenumber">27.2</span> <span class="title">How do I stop printing in color?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="printingJobNumberDate.html" class="internal"><span class="codenumber">27.3</span> <span class="title">How do I stop printing the header with the job number and date in it?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="printEverything02.html" class="internal"><span class="codenumber">27.4</span> <span class="title">How do I print the questions, the answers, and the short answers for the exercises?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="printOnlyExerciseQuestion02.html" class="internal"><span class="codenumber">27.5</span> <span class="title">How do I print only the questions (without the answers or short answers) for the exercises?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="oneColumnPrint02.html" class="internal"><span class="codenumber">27.6</span> <span class="title">How do I print the exercises in one column instead of the default of two columns?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="pageNumbering.html" class="internal"><span class="codenumber">27.7</span> <span class="title">How do I turn on page numbering?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="printFAQ.html" class="internal"><span class="codenumber">27.8</span> <span class="title">Should I print these FAQs?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Problems.html" class="internal"><span class="codenumber">28</span> <span class="title">Problems (not Exercises)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="dontEnoughTex02.html" class="internal"><span class="codenumber">28.1</span> <span class="title">I know what I want to say, but I don’t know enough TeX to express it.  What do I do?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="submitTroubles01.html" class="internal"><span class="codenumber">28.2</span> <span class="title">What are the things people seem have trouble with when they submit?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="spaceBeforeAfterDashes02.html" class="internal"><span class="codenumber">28.3</span> <span class="title">Sometimes there is a space before or after my dashes (-), en-dashes (--), and em-dashes (---), and I don’t want that. What do I do?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="integrals02.html" class="internal"><span class="codenumber">28.4</span> <span class="title">If I use <code class="code-inline tex2jax_ignore">$\int f(x) dx$</code>, to construct the integral of f(x), the f(x) and dx are too close. What should I do?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="commonTexMistakes02.html" class="internal"><span class="codenumber">28.5</span> <span class="title">Is there a list of common TeX mistakes?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="periodBetween02.html" class="internal"><span class="codenumber">28.6</span> <span class="title">When I TeX "The difference is <code class="code-inline tex2jax_ignore">\$0.01.</code>" there is a spacing problem involving the period between the two zeros. What do I do?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="commentChunkTex01.html" class="internal"><span class="codenumber">28.7</span> <span class="title">I want to comment out a large chunk of TeX, without deleting it.  Do I have to put % at the beginning of every line?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="missingDollarSign02.html" class="internal"><span class="codenumber">28.8</span> <span class="title">Why do I get an error message concerning missing $ when I try to TeX "\footnote{http://dr.pierce1.net/PDF/half_life.pdf, accessed on May 10, 2003.}"?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Qsets.html" class="internal"><span class="codenumber">29</span> <span class="title">Qsets</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="qset02.html" class="internal"><span class="codenumber">29.1</span> <span class="title">In a collection of exercises, how do I give a subset of the exercises the same set of instructions, called a QSET?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="whenDoIUseQSET02.html" class="internal"><span class="codenumber">29.2</span> <span class="title">When do I use a QSET?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ReferenceAllFigs03.html" class="internal"><span class="codenumber">29.3</span> <span class="title">Do all figures have to be referenced?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="dollarSign02.html" class="internal"><span class="codenumber">29.4</span> <span class="title">In Exercises, when do we use <code class="code-inline tex2jax_ignore">$blah$</code>, <code class="code-inline tex2jax_ignore">$$blah$$</code>, and <code class="code-inline tex2jax_ignore">$\dsty blah$</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="exerciseOrProblem02.html" class="internal"><span class="codenumber">29.5</span> <span class="title">How do I specify that a problem that I am submitting is intended to be a "Problem" rather than an "Exercise"?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="References.html" class="internal"><span class="codenumber">30</span> <span class="title">References</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="footnote02.html" class="internal"><span class="codenumber">30.1</span> <span class="title">How do I insert a footnote?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="referenceStyle01.html" class="internal"><span class="codenumber">30.2</span> <span class="title">What style should we use when citing references to books, articles, or web sites?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="generateTildeBlah02.html" class="internal"><span class="codenumber">30.3</span> <span class="title">How do I get TeX to generate <code class="code-inline tex2jax_ignore">~blah</code>?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="RightsAndWrongs.html" class="internal"><span class="codenumber">31</span> <span class="title">(**) Rights and Wrongs</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Sections.html" class="internal"><span class="codenumber">32</span> <span class="title">Sections</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="creatingChapter01.html" class="internal"><span class="codenumber">32.1</span> <span class="title">How do I create a Chapter?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="capitalizingHeadings02.html" class="internal"><span class="codenumber">32.2</span> <span class="title">What is the convention for capitalizing headings of chapters, sections, and subsections?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ShortAnswers.html" class="internal"><span class="codenumber">33</span> <span class="title">Short Answers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="shortAnswers02.html" class="internal"><span class="codenumber">33.1</span> <span class="title">What do I need to know about short answers?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="dollarSign03.html" class="internal"><span class="codenumber">33.2</span> <span class="title">In Exercises, when do we use <code class="code-inline tex2jax_ignore">$blah$</code>, <code class="code-inline tex2jax_ignore">$$blah$$</code>, and <code class="code-inline tex2jax_ignore">$\dsty blah$</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="exactAnswer03.html" class="internal"><span class="codenumber">33.3</span> <span class="title">The exact answer to one of my exercises is <code class="code-inline tex2jax_ignore">$5/\pi$</code> inches. Should I also give the calculator value of 1.592?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="answersAndShortAnswers02.html" class="internal"><span class="codenumber">33.4</span> <span class="title">Is it OK to submit exercises without Answers or ShortAnswers?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="answersOrShortAnswersMissing02.html" class="internal"><span class="codenumber">33.5</span> <span class="title">When checking exercises, what do I do if an Answer or ShortAnswer is missing?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="figureInShortAnswer03.html" class="internal"><span class="codenumber">33.6</span> <span class="title">How do I put a figure into the short answer of an exercise or problem?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="unitsInShortAnswer02.html" class="internal"><span class="codenumber">33.7</span> <span class="title">If in the short answers I have the choice between including or omitting units, what should I do?  (For example, if a  problem ask "How many ships are left?", should the short answer be "32" or "32 ships"?)</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="printEverything03.html" class="internal"><span class="codenumber">33.8</span> <span class="title">How do I print the questions, the answers, and the short answers for the exercises?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="printOnlyExerciseQuestion03.html" class="internal"><span class="codenumber">33.9</span> <span class="title">How do I print only the questions (without the answers or short answers) for the exercises?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="figuresAndTablesLabel02.html" class="internal"><span class="codenumber">33.10</span> <span class="title">What is the preferred convention for labelling figures and tables in Exercises?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="tableLabels02.html" class="internal"><span class="codenumber">33.11</span> <span class="title">When do I put labels (numbers) and captions on tables?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="StyleAndConventions.html" class="internal"><span class="codenumber">34</span> <span class="title">Style and Conventions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="useCalculatorOrSoftware.html" class="internal"><span class="codenumber">34.1</span> <span class="title">What words should we use if we want students to use a calculator or software to do an exercise?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="thousandNotation02.html" class="internal"><span class="codenumber">34.2</span> <span class="title">Do we use 1000 or 1,000?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="decimalsNotation02.html" class="internal"><span class="codenumber">34.3</span> <span class="title">Do we use 0.5 or .5?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="exactAnswer04.html" class="internal"><span class="codenumber">34.4</span> <span class="title">The exact answer to one of my exercises is <code class="code-inline tex2jax_ignore">$5/\pi$</code> inches. Should I also give the calculator value of 1.592?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="decimalPlacesInAnswer02.html" class="internal"><span class="codenumber">34.5</span> <span class="title">How many decimal places should I keep in a numerical answer?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="footnotePosition02.html" class="internal"><span class="codenumber">34.6</span> <span class="title">Do I put a footnote before or after a punctuation mark?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="referenceStyle02.html" class="internal"><span class="codenumber">34.7</span> <span class="title">What style should we use when citing references to books, articles, or web sites?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="horizontalLineAfterExample.html" class="internal"><span class="codenumber">34.8</span> <span class="title">Sometimes there is a horizontal line after an example, and sometimes there is not. What is the convention?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="shilling05.html" class="internal"><span class="codenumber">34.9</span> <span class="title">What is shilling?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="shillVsFrac05.html" class="internal"><span class="codenumber">34.10</span> <span class="title">When do I shill and when do I use <code class="code-inline tex2jax_ignore">$\frac{}{}$</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sentenceStart02.html" class="internal"><span class="codenumber">34.11</span> <span class="title">May I start a sentence with a variable or a number?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="angleInRadians01.html" class="internal"><span class="codenumber">34.12</span> <span class="title">Do I need to specify that the units of an angle are in radians?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="variablesSeparetedByText02.html" class="internal"><span class="codenumber">34.13</span> <span class="title">The authorities get upset if I write something like: Since the leading term of the polynomial is $x^4$, $y$ goes to infinity. What should I have written?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="futureTense.html" class="internal"><span class="codenumber">34.14</span> <span class="title">May I use the future tense?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="abbreviationStandarUnits02.html" class="internal"><span class="codenumber">34.15</span> <span class="title">What are the abbreviations and conventions that we use for standard units like grams and miles per hour?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="commonConstants01.html" class="internal"><span class="codenumber">34.16</span> <span class="title">What are the values that we use for common constants like <em class="emphasis">g</em>, the half-life of carbon-14, and the radius of the earth?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="specialReference03.html" class="internal"><span class="codenumber">34.17</span> <span class="title">I want to refer to something like City A and City B.  Do I just type it that way, or are the A and B put into a special font, say $A$ and $B$?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="range02.html" class="internal"><span class="codenumber">34.18</span> <span class="title">The three expressions <code class="code-inline tex2jax_ignore">$x &gt; 1$</code>, <code class="code-inline tex2jax_ignore">$1 &lt; x &lt; \infty$</code>, and <code class="code-inline tex2jax_ignore">$(1, \infty)$</code> are mathematically equivalent.  Which one do we use?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="degreeSymbol02.html" class="internal"><span class="codenumber">34.19</span> <span class="title">How do I enter the degree symbol, for example 76 degrees Fahrenheit?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="rightArrow03.html" class="internal"><span class="codenumber">34.20</span> <span class="title">May I use the implies symbol ==&gt; (<code class="code-inline tex2jax_ignore">$\Rightarrow$</code>)?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sinNotation02.html" class="internal"><span class="codenumber">34.21</span> <span class="title">Do I use <code class="code-inline tex2jax_ignore">$\sin x$</code> or <code class="code-inline tex2jax_ignore">$\sin (x)$</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="rootVsZero03.html" class="internal"><span class="codenumber">34.22</span> <span class="title">When do I use root and when do I use zero?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="symmetricAcrossVsAbout02.html" class="internal"><span class="codenumber">34.23</span> <span class="title">Do I use symmetric across the <em class="emphasis">x</em>-axis, or symmetric about the <em class="emphasis">x</em>-axis?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="equalVsApproEqual02.html" class="internal"><span class="codenumber">34.24</span> <span class="title">When do I use = and when do I use approximately equal (<code class="code-inline tex2jax_ignore">\approx</code>)?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="units01.html" class="internal"><span class="codenumber">34.25</span> <span class="title">I’m confused about units. Are the units of <em class="emphasis">g</em> acceleration or ft/sec^2?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="multipliedTogetherRepeatedly02.html" class="internal"><span class="codenumber">34.26</span> <span class="title">To display <code class="code-inline tex2jax_ignore">$a$</code> multiplied together repeatedly, do I use <code class="code-inline tex2jax_ignore">$a\cdot a\cdot a\cdot\cdots\cdot a$</code> or <code class="code-inline tex2jax_ignore">$a\cdot a\cdot a\cdots a$</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="latinAbbreviations03.html" class="internal"><span class="codenumber">34.27</span> <span class="title">Do we italicize Latin abbreviations such as e.g. and i.e.?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="capitalizingHeadings03.html" class="internal"><span class="codenumber">34.28</span> <span class="title">What is the convention for capitalizing headings of chapters, sections, and subsections?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="formattingCommands02.html" class="internal"><span class="codenumber">34.29</span> <span class="title">May I use formatting commands (like  \vspace, \hspace, \smallskip, \\, etc.) in the text portion of my file?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="submitTroubles02.html" class="internal"><span class="codenumber">34.30</span> <span class="title">What are the things people seem have trouble with when they submit?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="referencesPrintedText01.html" class="internal"><span class="codenumber">34.31</span> <span class="title">How do I reference existing theorems, chapters, sections, examples, exercises, and problems, in the printed calculus text that we are editing?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="conciseVsWording03.html" class="internal"><span class="codenumber">34.32</span> <span class="title">If I have the choice between wording an exercise in a concise style or in a verbose style, which is preferable?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="theoremsName.html" class="internal"><span class="codenumber">34.33</span> <span class="title">Do I write Stokes’ Theorem or Stokes’s Theorem?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="variableOrFunction.html" class="internal"><span class="codenumber">34.34</span> <span class="title">When should I write <code class="code-inline tex2jax_ignore">V'(t)</code> and when should I write <code class="code-inline tex2jax_ignore">dV/dt</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="timesVsDot.html" class="internal"><span class="codenumber">34.35</span> <span class="title">When should I use <code class="code-inline tex2jax_ignore">\times</code> and when should I use <code class="code-inline tex2jax_ignore">\cdot</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="periods.html" class="internal"><span class="codenumber">34.36</span> <span class="title">Do I have to end a sentence with a period, even if an equation ends the sentence?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="xasis.html" class="internal"><span class="codenumber">34.37</span> <span class="title">Do we use <code class="code-inline tex2jax_ignore">$x-$axis</code> or <code class="code-inline tex2jax_ignore">$x$-axis</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="orVsAndInSolutions02.html" class="internal"><span class="codenumber">34.38</span> <span class="title">Do we say "The solutions are $x = 1$ and $x = 2$," or "The solutions are $x = 1$ or $x =2$"?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="dollarsNotation.html" class="internal"><span class="codenumber">34.39</span> <span class="title">Do I use "$P" or "P dollars"?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="commentForOtherAuthor.html" class="internal"><span class="codenumber">34.40</span> <span class="title">How can I include a comment about a topic for other authors to read?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="fontForNames.html" class="internal"><span class="codenumber">34.41</span> <span class="title">What font do I use for A when I write "Matrix A"?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="contractions.html" class="internal"><span class="codenumber">34.42</span> <span class="title">Should I use contractions, such as "didn’t"?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="capitalLetters.html" class="internal"><span class="codenumber">34.43</span> <span class="title">If we ask a question like: "Is Rx linear in R? In x?" should the second "in" start with a capital letter?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="punctuationInlineMath.html" class="internal"><span class="codenumber">34.44</span> <span class="title">For inline mathematics, should punctuation go inside or outside the dollar signs, e.g. "$a$." or "$a.$"?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="tilde.html" class="internal"><span class="codenumber">34.45</span> <span class="title">When I use a tilde, "~", for example in "part~(a)" or "Example<code class="code-inline tex2jax_ignore">~\ref{ex:blah}</code>", why don’t I need to precede it by a space?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="functionFromAGraph.html" class="internal"><span class="codenumber">34.46</span> <span class="title">Some of the problems ask for a function to be estimated from a graph. I get the answer $y=4x+3$, but other answers close to this are equally correct. How do I write the short answer for this?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="quantitiesFromAGraph.html" class="internal"><span class="codenumber">34.47</span> <span class="title">Some of the problems ask for the value of quantities to be estimated from a graph.  I get the answer 4, but other answers close to 4 are equally correct.  How do I write the short answer for this?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="hintWileyPlus.html" class="internal"><span class="codenumber">34.48</span> <span class="title">How do I add a hint to a problem for WileyPLUS?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="newProblemsInApplied.html" class="internal"><span class="codenumber">34.49</span> <span class="title">In Applied, there is a new method to save and commit New Problems. What is it?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="partOfExerciseInAppliedFromSingle.html" class="internal"><span class="codenumber">34.50</span> <span class="title">In Applied, I want to use part of an Exercise/Problem that is in Single. How do I do that?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="exerciseInAppliedFromSingle.html" class="internal"><span class="codenumber">34.51</span> <span class="title">In Applied, I want to use an Exercise/Problem that is in Single. Do I just copy it to Applied?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="exerciseOrProblem03.html" class="internal"><span class="codenumber">34.52</span> <span class="title">How do I specify that a problem that I am submitting is intended to be a "Problem" rather than an "Exercise"?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Symbols.html" class="internal"><span class="codenumber">35</span> <span class="title">Symbols</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="mathematicalSymbolsInHeadings01.html" class="internal"><span class="codenumber">35.1</span> <span class="title">I am trying to create tables where the headings are mathematical symbols, e.g. <code class="code-inline tex2jax_ignore">$\times 2$ &amp; $+4$ &amp; $\div 2$</code>.  The times and the plus are replaced by the correct symbols, but the div just prints the word "div" instead of the division symbol.  Any suggestions?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="printSpecialCharacters01.html" class="internal"><span class="codenumber">35.2</span> <span class="title">How do I print the TeX special characters: <code class="code-inline tex2jax_ignore">$, &amp;, %, #, _,{, and }</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="commandsToGetDivGradCurl01.html" class="internal"><span class="codenumber">35.3</span> <span class="title">What commands do I use to get <em class="emphasis">div</em>, <em class="emphasis">grad</em>, and <em class="emphasis">curl</em>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="degreeSymbol03.html" class="internal"><span class="codenumber">35.4</span> <span class="title">How do I enter the degree symbol, for example 76 degrees Fahrenheit?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="Kelvin.html" class="internal"><span class="codenumber">35.5</span> <span class="title">Do I use degrees Kelvin, or just Kelvin?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="poundSymbol01.html" class="internal"><span class="codenumber">35.6</span> <span class="title">How do I enter the UK counterpart of $, namely the UK pound symbol, £?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="equalsSymbol.html" class="internal"><span class="codenumber">35.7</span> <span class="title">How do I enter the equals symbol with a question mark over it?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="rightArrow04.html" class="internal"><span class="codenumber">35.8</span> <span class="title">May I use the implies symbol ==&gt; (<code class="code-inline tex2jax_ignore">$\Rightarrow$</code>)?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="subscripts05.html" class="internal"><span class="codenumber">35.9</span> <span class="title">When I use  word subscripts (e.g. $r_{in}$ or $r_{\hbox{in}}$) the word "in" is either in italics or too large.  What should I be using?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Tables.html" class="internal"><span class="codenumber">36</span> <span class="title">Tables</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="tableFormat02.html" class="internal"><span class="codenumber">36.1</span> <span class="title">What is the preferred formatting for a table?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="figuresAndTablesLabel03.html" class="internal"><span class="codenumber">36.2</span> <span class="title">What is the preferred convention for labelling figures and tables in Exercises?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="tableLabels03.html" class="internal"><span class="codenumber">36.3</span> <span class="title">When do I put labels (numbers) and captions on tables?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="insertEntriesIntoTable.html" class="internal"><span class="codenumber">36.4</span> <span class="title">Is there an easier way to insert entries into a table?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="captionsOnATable01.html" class="internal"><span class="codenumber">36.5</span> <span class="title">Should I put a caption on a table?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="tableWidth.html" class="internal"><span class="codenumber">36.6</span> <span class="title">How wide can I make a table?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="hardCodingReference04.html" class="internal"><span class="codenumber">36.7</span> <span class="title">May I reference an example, figure, or table, by hard coding the reference (e.g., <code class="code-inline tex2jax_ignore">Example 5</code> instead of <code class="code-inline tex2jax_ignore">Example~\ref{blahblah}</code>)?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="CrossReferencePageNumber01.html" class="internal"><span class="codenumber">36.8</span> <span class="title">How do I cross reference an object using a page number?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="texCommands.html" class="internal"><span class="codenumber">37</span> <span class="title">TeX: Commands</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="asFormat01.html" class="internal"><span class="codenumber">37.1</span> <span class="title">What argument should I use in <code class="code-inline tex2jax_ignore">\asformat{}</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="StayfigOrFakefig03.html" class="internal"><span class="codenumber">37.2</span> <span class="title">What is the difference between <code class="code-inline tex2jax_ignore">stayfig</code> and <code class="code-inline tex2jax_ignore">fakefig</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="texCommandsAbbreviation02.html" class="internal"><span class="codenumber">37.3</span> <span class="title">Which TeX commands can I abbreviate?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="TeXGettingStarted.html" class="internal"><span class="codenumber">38</span> <span class="title">TeX: Getting Started</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="formatExercisesFiles03.html" class="internal"><span class="codenumber">38.1</span> <span class="title">What is the correct format and naming convention for exercise files?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="collectionOfExercises02.html" class="internal"><span class="codenumber">38.2</span> <span class="title">How do I put together a collection of exercises?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="qset03.html" class="internal"><span class="codenumber">38.3</span> <span class="title">In a collection of exercises, how do I give a subset of the exercises the same set of instructions, called a QSET?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="creatingChapter02.html" class="internal"><span class="codenumber">38.4</span> <span class="title">How do I create a Chapter?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="exampleInChapter01.html" class="internal"><span class="codenumber">38.5</span> <span class="title">How do I put an Example in a Chapter?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="quickPointersOnTeX01.html" class="internal"><span class="codenumber">38.6</span> <span class="title">What are some quick pointers on TeX?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="TeXmathFormulas01.html" class="internal"><span class="codenumber">38.7</span> <span class="title">What do a few simple math formulas look like in TeX?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="dontEnoughTex03.html" class="internal"><span class="codenumber">38.8</span> <span class="title">I know what I want to say, but I don’t know enough TeX to express it. What do I do?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="doesntTex02.html" class="internal"><span class="codenumber">38.9</span> <span class="title">The TeX file I created does not TeX. What do I do?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="hardCodingReference02.html" class="internal"><span class="codenumber">38.10</span> <span class="title">May I reference an example, figure, or table, by hard coding the reference (e.g., <code class="code-inline tex2jax_ignore">Example 5</code> instead of <code class="code-inline tex2jax_ignore">Example~\ref{blahblah}</code>)?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="algebraMacros.html" class="internal"><span class="codenumber">38.11</span> <span class="title">I’ve installed and tested the algebra macros. Is there anything else I should do?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="asFormat02.html" class="internal"><span class="codenumber">38.12</span> <span class="title">What argument should I use in \asformat{}?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="TeXMath.html" class="internal"><span class="codenumber">39</span> <span class="title">TeX: Math</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="quickPointersOnTeX02.html" class="internal"><span class="codenumber">39.1</span> <span class="title">What are some quick pointers on TeX?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="TeXmathFormulas02.html" class="internal"><span class="codenumber">39.2</span> <span class="title">What do a few simple math formulas look like in TeX?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sequenceOfEquations02.html" class="internal"><span class="codenumber">39.3</span> <span class="title">I want to create a sequence of equations, one below the other, with the equal signs lined up.  How do I do that?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="piecewiseFunction02.html" class="internal"><span class="codenumber">39.4</span> <span class="title">What command do I use in TeX to construct a piecewise defined function?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="displayMathStyle02.html" class="internal"><span class="codenumber">39.5</span> <span class="title">How can I use the display math style without putting the expression on a new line?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="displaystyle03.html" class="internal"><span class="codenumber">39.6</span> <span class="title">Can I use <code class="code-inline tex2jax_ignore">\displaystyle</code> in display math style or in <code class="code-inline tex2jax_ignore">eqnarray*</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="shouldKnowDisplayStyle03.html" class="internal"><span class="codenumber">39.7</span> <span class="title">Is there anything I should know if I use display math style (that is, when an expression is on its own line)?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="integrals03.html" class="internal"><span class="codenumber">39.8</span> <span class="title">If I use <code class="code-inline tex2jax_ignore">$\int f(x) dx$</code>, to construct the integral of f(x), the f(x) and dx are too close. What should I do?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="vectorsArrow02.html" class="internal"><span class="codenumber">39.9</span> <span class="title">Do I use <code class="code-inline tex2jax_ignore">$\vec F$</code> or <code class="code-inline tex2jax_ignore">$\overrightarrow{F}$</code> to put an arrow on top of the vector F?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="vectorSubscript03.html" class="internal"><span class="codenumber">39.10</span> <span class="title">If I use <code class="code-inline tex2jax_ignore">$\vec F_{M}$</code> or <code class="code-inline tex2jax_ignore">$\overrightarrow{F}_M$</code> a huge gap is left between the bottom of the F and the M, which looks wrong. What should I do?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="commonTexMistakes03.html" class="internal"><span class="codenumber">39.11</span> <span class="title">Is there a list of common TeX mistakes?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="verticalBar02.html" class="internal"><span class="codenumber">39.12</span> <span class="title">When I TeX <code class="code-inline tex2jax_ignore">\dsty \left.\arctan(x)\right|_0^b</code> the vertical bar isn’t long enough.  How can I get it taller?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="textIntoEquation03.html" class="internal"><span class="codenumber">39.13</span> <span class="title">How do I put text into an equation?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="TeXText.html" class="internal"><span class="codenumber">40</span> <span class="title">TeX: Text</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="quickPointersOnTeX03.html" class="internal"><span class="codenumber">40.1</span> <span class="title">What are some quick pointers on TeX?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="StayfigOrFakefig02.html" class="internal"><span class="codenumber">40.2</span> <span class="title">What is the difference between <code class="code-inline tex2jax_ignore">stayfig</code> and <code class="code-inline tex2jax_ignore">fakefig</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="commonTexMistakes04.html" class="internal"><span class="codenumber">40.3</span> <span class="title">Is there a list of common TeX mistakes?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="mathematicalSymbolsInHeadings02.html" class="internal"><span class="codenumber">40.4</span> <span class="title">I am trying to create tables where the headings are mathematical symbols, e.g. <code class="code-inline tex2jax_ignore">$\times 2$ &amp; $+4$ &amp; $\div 2$</code>.  The times and the plus are replaced by the correct symbols, but the div just prints the word "div" instead of the division symbol.  Any suggestions?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="somethingInBox02.html" class="internal"><span class="codenumber">40.5</span> <span class="title">What command do I use in TeX to place something in a box, similar to page 2 in Calculus, 3rd Edition?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="printSpecialCharacters02.html" class="internal"><span class="codenumber">40.6</span> <span class="title">How do I print the TeX special characters: <code class="code-inline tex2jax_ignore">$, &amp;, %, #, _,{, and }</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="texCommandsAbbreviation03.html" class="internal"><span class="codenumber">40.7</span> <span class="title">Which TeX commands can I abbreviate?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="insertEntryForTheIndex.html" class="internal"><span class="codenumber">40.8</span> <span class="title">How do I insert an entry for the index?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="footnote03.html" class="internal"><span class="codenumber">40.9</span> <span class="title">How do I insert a footnote?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="boldface03.html" class="internal"><span class="codenumber">40.10</span> <span class="title">How can I change the typeface to boldface?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="typeSize03.html" class="internal"><span class="codenumber">40.11</span> <span class="title">How can I change the type size?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="spaceBetweenTwoLines02.html" class="internal"><span class="codenumber">40.12</span> <span class="title">How can I increase space between two lines?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="spaceBeforeAfterDashes03.html" class="internal"><span class="codenumber">40.13</span> <span class="title">Sometimes there is a space before or after my dashes (-), en-dashes (--), and em-dashes (---), and I don’t want that. What do I do?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="commandsToGetDivGradCurl02.html" class="internal"><span class="codenumber">40.14</span> <span class="title">What commands do I use to get <em class="emphasis">div</em>, <em class="emphasis">grad</em>, and <em class="emphasis">curl</em>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="periodBetween03.html" class="internal"><span class="codenumber">40.15</span> <span class="title">When I TeX "The difference is <code class="code-inline tex2jax_ignore">\$0.01.</code>" there is a spacing problem involving the period between the two zeros. What do I do?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="commentChunkTex02.html" class="internal"><span class="codenumber">40.16</span> <span class="title">I want to comment out a large chunk of TeX, without deleting it.  Do I have to put % at the beginning of every line?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="missingDollarSign03.html" class="internal"><span class="codenumber">40.17</span> <span class="title">Why do I get an error message concerning missing $ when I try to TeX "\footnote{http://dr.pierce1.net/PDF/half_life.pdf, accessed on May 10, 2003.}"?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ordinalNumbersExpressionsTeX04.html" class="internal"><span class="codenumber">40.18</span> <span class="title">How do I TeX expressions like "1^{st}" and "n^{th}"?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="poundSymbol02.html" class="internal"><span class="codenumber">40.19</span> <span class="title">How do I enter the UK counterpart of $, namely the UK pound symbol, £?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="subscripts06.html" class="internal"><span class="codenumber">40.20</span> <span class="title">When I use  word subscripts (e.g. $r_{in}$ or $r_{\hbox{in}}$) the word "in" is either in italics or too large.  What should I be using?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="generateTildeBlah03.html" class="internal"><span class="codenumber">40.21</span> <span class="title">How do I get TeX to generate <code class="code-inline tex2jax_ignore">~blah</code>?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="textIntoEquation04.html" class="internal"><span class="codenumber">40.22</span> <span class="title">How do I put text into an equation?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="UnitsAndConstants.html" class="internal"><span class="codenumber">41</span> <span class="title">Units and Constants</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="angleInRadians02.html" class="internal"><span class="codenumber">41.1</span> <span class="title">Do I need to specify that the units of an angle are in radians?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="abbreviationStandarUnits03.html" class="internal"><span class="codenumber">41.2</span> <span class="title">What are the abbreviations and conventions that we use for standard units like grams and miles per hour?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="commonConstants02.html" class="internal"><span class="codenumber">41.3</span> <span class="title">What are the values that we use for common constants like <em class="emphasis">g</em>, the half-life of carbon-14, and the radius of the earth?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="units02.html" class="internal"><span class="codenumber">41.4</span> <span class="title">I’m confused about units. Are the units of <em class="emphasis">g</em> acceleration or ft/sec^2?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="unitsOnFigures03.html" class="internal"><span class="codenumber">41.5</span> <span class="title">Do I need to put the units (of the variables) in the text of an exercise and also in the figure of the exercise?</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="multipliedTogetherRepeatedly01"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">21.15</span><span class="space"> </span><span class="title">To display <code class="code-inline tex2jax_ignore">$a$</code> multiplied together repeatedly, do I use <code class="code-inline tex2jax_ignore">$a\cdot a\cdot a\cdot\cdots\cdot a$</code> or <code class="code-inline tex2jax_ignore">$a\cdot a\cdot a\cdots a$</code>?</span>
+</h2>
+<div class="para" id="p-337">
+<code class="code-inline tex2jax_ignore">$a\cdot a\cdot a\cdots a$</code>.</div></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="equalVsApproEqual01.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="subscripts03.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>

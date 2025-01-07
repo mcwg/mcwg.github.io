@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-09-17T15:35:00-05:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MCWG Worksheet 10 Prerequisites</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><link href="https://webwork.up.edu/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://webwork.up.edu/webwork2_files/js/vendor/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\definiteintegral}[4]{\int_{#1}^{#2}\,#3\,d#4}
+\newcommand{\indefiniteintegral}[2]{\int#1\,d#2} 
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="http://www.google.com" target="_blank"><img src="images/Logo.svg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="DerivativeTest.html"><span class="title">Optimization: The Derivative Test</span></a></h1>
+<p class="byline">Calculus: Multivariable, McCallum, Hughes-Hallett, et al.</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="DerivativeTest.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-3.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="DerivativeTest.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-3.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Introduction</span></a></li>
+<li class="link"><a href="section-1.html" data-scroll="section-1"><span class="codenumber">1</span> <span class="title">Goals</span></a></li>
+<li class="link active">
+<a href="section-2.html" data-scroll="section-2"><span class="codenumber">2</span> <span class="title">Prerequisites</span></a><ul>
+<li><a href="section-2.html#subsection-1" data-scroll="subsection-1">Prerequisite Topics and Skills</a></li>
+<li><a href="section-2.html#exercises-1" data-scroll="exercises-1">Exercises</a></li>
+</ul>
+</li>
+<li class="link"><a href="section-3.html" data-scroll="section-3"><span class="codenumber">3</span> <span class="title">Key Concepts</span></a></li>
+<li class="link"><a href="section-4.html" data-scroll="section-4"><span class="codenumber">4</span> <span class="title">First Set</span></a></li>
+<li class="link"><a href="section-5.html" data-scroll="section-5"><span class="codenumber">5</span> <span class="title">Second Set</span></a></li>
+<li class="link"><a href="section-6.html" data-scroll="section-6"><span class="codenumber">6</span> <span class="title">Third set</span></a></li>
+<li class="link"><a href="section-7.html" data-scroll="section-7"><span class="codenumber">7</span> <span class="title">Wrap Up Questions</span></a></li>
+</ul></nav><div class="extras"><nav><a class="feedback-link" href="https://goo.gl/forms/weAIuVKWR8Zzhmct2" target="_blank">Feedback</a><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-2"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2</span> <span class="title">Prerequisites</span>
+</h2>
+<section class="subsection" id="subsection-1"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.1</span> <span class="title">Prerequisite Topics and Skills</span>
+</h3>
+<ul class="disc">
+<li id="li-6">Solving systems of equations in two variables</li>
+<li id="li-7">Using partial derivatives</li>
+<li id="li-8">Understanding gradient vectors</li>
+<li id="li-9">Finding determinants of matrices</li>
+</ul></section><section class="exercises" id="exercises-1"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">2.2</span> <span class="title">Exercises</span>
+</h3>
+<p id="p-5">The following exercises test your knowledge of the prerequisites for this section.</p>
+<article class="exercise-like" id="exercise-1"><h6 class="heading"><span class="codenumber">1.</span></h6>
+<p id="p-6">Solve the system of equations</p>
+<div class="displaymath" id="p-7">
+\begin{equation*}
+\begin{cases} -{2} -{2}x=0\\ {8} - {16} y=0 \end{cases}
+\end{equation*}
+</div>
+<p id="p-8">\(x=\)<span class="fillin" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span></p>
+<p id="p-9">\(y=\)<span class="fillin" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-hint-1" id="hint-1"><span class="type">Hint</span></a><div id="hk-hint-1" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-10">Can you solve each equation separately? If so, then this is a simple system to solve!</p></div></div>
+<a data-knowl="" class="id-ref" data-refid="hk-solution-1" id="solution-1"><span class="type">Solution</span></a><div id="hk-solution-1" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-11">The first equation gives \(-{2}={2}x\text{,}\) so \(x=-1\text{.}\) The second one is equivalent to \({8}={16}y\text{,}\) so \(y={{\textstyle\frac{1}{2}}}\text{.}\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-2"><h6 class="heading"><span class="codenumber">2.</span></h6>
+<p id="p-12">Solve the system of equations</p>
+<div class="displaymath" id="p-13">
+\begin{equation*}
+\begin{cases} {3} + {9} x + {6} y=0\\ -{3}+{7}x-{6}y=0 \end{cases}
+\end{equation*}
+</div>
+<p id="p-14">\(x=\)<span class="fillin" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span></p>
+<p id="p-15">\(y=\)<span class="fillin" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-hint-2" id="hint-2"><span class="type">Hint</span></a><div id="hk-hint-2" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-16">Try adding or subtracting the two equations to find an equation with only one variable.</p></div></div>
+<a data-knowl="" class="id-ref" data-refid="hk-solution-2" id="solution-2"><span class="type">Solution</span></a><div id="hk-solution-2" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-17">If we add these two equations together, the 3 and the \({6}y\) cancel giving \({16}x=0\text{,}\) so \(x=0\text{.}\) Setting \(x=0\) in either of the two equations gives \(y={-{\textstyle\frac{1}{2}}}\text{.}\) Thus, the only solution is \(x=0\) and \(y={-{\textstyle\frac{1}{2}}}\text{.}\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-3"><h6 class="heading"><span class="codenumber">3.</span></h6>
+<p id="p-18">Solve the system of equations</p>
+<div class="displaymath" id="p-19">
+\begin{equation*}
+\begin{cases} y=x^2+{5}x-{2}\\ y=x+3 \end{cases}
+\end{equation*}
+</div>
+<p id="p-20">There may be multiple answers. Make sure you input all of them.</p>
+<p id="p-21">\((x,y)=\)<span class="fillin" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-hint-3" id="hint-3"><span class="type">Hint</span></a><div id="hk-hint-3" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-22">Any pair of values \((x,y)\) which is a solution to the system must satisfy both equations. In particular, the \(y\)-coordinates have to equal at the same time \(x^2+{5}x-{2}\) and \(x+3\text{.}\) Use this to find the only possible values for \(x\) for which \((x,y)\) could be a solution.</p></div></div>
+<a data-knowl="" class="id-ref" data-refid="hk-solution-3" id="solution-3"><span class="type">Solution</span></a><div id="hk-solution-3" class="hidden-content tex2jax_ignore"><div class="solution">
+<p id="p-23">Any pair of values \((x,y)\) which is a solution must satisfy both equations. In particular, the \(y\)-coordinates of any solution have to both equal \(x^2+{5}x-{2}\) and \(x+3\text{.}\) Thus, we have</p>
+<div class="displaymath" id="p-24">
+\begin{equation*}
+x^2+{5}x-{2}=x+3,
+\end{equation*}
+</div>
+<p id="p-25">which has solutions \(x=-{5}\) and \(x={1}\text{.}\) These are the only values of \(x\) for which \((x,y)\) can satisfy both equations in the system of equations. Setting \(x=-{5}\) in either of the two equations we find \(y=-{2}\text{,}\) so \((x,y)=(-{5},-{2})\) is a solution (the only one with \(x=-{5}\)). Setting \(x={1}\) in either of the two equations we find \(y={4}\text{,}\) so \((x,y)=({1},{4})\) is the only other solution.</p>
+<p id="p-26">Thus, the only solutions are \((x,y)=(-{5},-{2})\) and \((x,y)=({1},{4})\text{.}\)</p>
+</div></div>
+</div></article><article class="exercise-like" id="exercise-4"><h6 class="heading"><span class="codenumber">4.</span></h6>
+<p id="p-27">Solve the system of equations</p>
+<div class="displaymath" id="p-28">
+\begin{equation*}
+\begin{cases} x^2-y-{24}=0\\ y-x+{12} = 0 \end{cases}
+\end{equation*}
+</div>
+<p id="p-29">There may be multiple answers. Make sure you input all of them.</p>
+<p id="p-30">\((x,y)=\)<span class="fillin" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-hint-4" id="hint-4"><span class="type">Hint</span></a><div id="hk-hint-4" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-31">Note that you can isolate \(y\) in both equations. Note that any pair of values \((x,y)\) which is a solution to the system must satisfy both equations. Use this to find the only possible values for \(x\) for which \((x,y)\) could be a solution.</p></div></div>
+<a data-knowl="" class="id-ref" data-refid="hk-solution-4" id="solution-4"><span class="type">Solution</span></a><div id="hk-solution-4" class="hidden-content tex2jax_ignore"><div class="solution">
+<p id="p-32">Solving for \(y\) in both equations we find that</p>
+<div class="displaymath" id="p-33">
+\begin{equation*}
+\begin{cases}y=x^2-{24}\\ y=x-{12}\end{cases}
+\end{equation*}
+</div>
+<p id="p-34">Any pair of values \((x,y)\) which is a solution must satisfy both of these equations. In particular, the \(y\)-coordinates of any solution have to both equal  \(x^2-{24}\) and \(x-{12}\text{.}\)</p>
+<p id="p-35">Thus, we must have</p>
+<div class="displaymath" id="p-36">
+\begin{equation*}
+x^2-{24}=x-{12},
+\end{equation*}
+</div>
+<p id="p-37">which has solutions \(x=-{3}\) and \(x={4}\text{.}\) These are the only values of \(x\) for which \((x,y)\) can satisfy both equations in the system of equations. Setting \(x=-{3}\) in either of the two equations we find \(y=-{15}\text{,}\) so \((x,y)=(-{3},-{15})\) is a solution (the only one with \(x=-{3}\)). Setting \(x={4}\) in either of the two equations we find \(y=-{8}\text{,}\) so \((x,y)=({4},-{8})\) is the only other solution.</p>
+</div></div>
+</div></article><article class="exercise-like" id="exercise-5"><h6 class="heading"><span class="codenumber">5.</span></h6>
+<p id="p-38">Solve the system of equations</p>
+<div class="displaymath" id="p-39">
+\begin{equation*}
+\begin{cases} {4}xy+y=0\\ x^2+{4}y = 0 \end{cases}
+\end{equation*}
+</div>
+<p id="p-40">There may be multiple answers. Make sure you input all of them.</p>
+<p id="p-41">\((x,y)=\)<span class="fillin" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-hint-5" id="hint-5"><span class="type">Hint</span></a><div id="hk-hint-5" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-42">Note that you can solve for \(y\) in the second equation. Since any pair of values \((x,y)\) which is a solution to the system must satisfy both equations, then the \(y\)-value of any solution must be what the second equation tells you it should be. Plug this into the first equation to find the only possible values for \(x\) for which \((x,y)\) is a solution.</p></div></div>
+<a data-knowl="" class="id-ref" data-refid="hk-solution-5" id="solution-5"><span class="type">Solution</span></a><div id="hk-solution-5" class="hidden-content tex2jax_ignore"><div class="solution">
+<p id="p-43">Solving for \(y\) in the second equation gives \(y=-x^2/{4}\text{.}\) Any pair of values \((x,y)\) which is a solution to the system must satisfy \(y=-x^2/{4}\text{,}\) and so we can plug this into the first equation, giving</p>
+<div class="displaymath" id="p-44">
+\begin{equation*}
+\newcommand{\amp}{\amp }\begin{aligned}
+{4}x\left(-\frac{x^2}{{4}} \right)+\left(-\frac{x^2}{{4}} \right)\amp =\amp 0 \\
+-x^3-\frac{x^2}{{4}}\amp =\amp 0\\
+-x^2 \left(x + \frac{1}{{4}}\right)\amp =\amp 0
+\end{aligned}
+\end{equation*}
+</div>
+<p id="p-45">so \(x=0\) or \(x=-1/{4}\text{.}\) These are the only two possible values of \(x\) for which \((x,y)\) may be a solution of the system (for some \(y\)). Setting \(x=0\) in the second equation of the system we find \(y=0\text{,}\) so \((x,y)=(0,0)\) is a solution (the only one with \(x=0\)). Setting \(x=-1/{4}\) in the second equation of the system we find \(y=-1/{64}\text{,}\) so \((x,y)=(-1/{4},-1/{64})\) is the only other solution.</p>
+</div></div>
+</div></article><article class="exercise-like" id="exercise-6"><h6 class="heading"><span class="codenumber">6.</span></h6>
+<p id="p-46">Solve the system of equations</p>
+<div class="displaymath" id="p-47">
+\begin{equation*}
+\begin{cases} {7}x + {3}x^2 + y^2=0\\ {5}y+{5}xy=0 \end{cases}
+\end{equation*}
+</div>
+<p id="p-48">There may be multiple answers. Make sure you input all of them.</p>
+<p id="p-49">\((x,y)=\)<span class="fillin" role="img" aria-label="35-character blank" style="width: 15.9090909090909em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-hint-6" id="hint-6"><span class="type">Hint</span></a><div id="hk-hint-6" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-50">A solution to the system is a pair of values \((x,y)\) which makes both equations true. Note that you can factor out a \(y\) in the second equation. What does the factored form tell you about the solutions to the second equation?</p></div></div>
+<a data-knowl="" class="id-ref" data-refid="hk-solution-6" id="solution-6"><span class="type">Solution</span></a><div id="hk-solution-6" class="hidden-content tex2jax_ignore"><div class="solution">
+<p id="p-51">Factoring out a \({5}y\) in the second equation gives \({5}y(1+x)=0\text{,}\) so either \({5}y=0\) or \(1+x=0\) (or both). This shows that any solution \((x,y)\) to the system must have \(y=0\) or \(x=-1\text{.}\) Setting \(y=0\) in the first equation gives \[7x+3x^2=0,\] which has solutions \(x=0\) or \(x=-{{\textstyle\frac{7}{3}}}\text{.}\) Thus, \((x,y)=(0,0)\) and \((x,y)=(-{{\textstyle\frac{7}{3}}},0)\) are two solutions (the only solutions with \(y=0\)). Setting \(x=-1\) in the first equation gives \(-{4}+y^2=0\text{,}\) so \(y=\pm 2\text{.}\) Thus, \((x,y)=(-1,-2)\) and \((x,y)=(-1,2)\) are two more solutions (the only solutions with \(x=-1\)).</p>
+<p id="p-52">The solutions to the system are \((0,0)\text{,}\) \((-{{\textstyle\frac{7}{3}}},0)\text{,}\) \((-1,-2)\text{,}\) and \((-1,2)\text{.}\)</p>
+</div></div>
+</div></article><article class="exercise-like" id="exercise-7"><h6 class="heading"><span class="codenumber">7.</span></h6>
+<p id="p-53">Find the partial derivative \(f_x\) for</p>
+<div class="displaymath" id="p-54">
+\begin{equation*}
+f(x,y)=x^2y-{6}x^2+{12}xy^2
+\end{equation*}
+</div>
+<p id="p-55">\(f_x(x,y)=\) <span class="fillin" role="img" aria-label="25-character blank" style="width: 11.3636363636364em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-hint-7" id="hint-7"><span class="type">Hint</span></a><div id="hk-hint-7" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-56">When finding a partial derivative all other variables are treated as constants.</p></div></div>
+<a data-knowl="" class="id-ref" data-refid="hk-solution-7" id="solution-7"><span class="type">Solution</span></a><div id="hk-solution-7" class="hidden-content tex2jax_ignore"><div class="solution">
+<p id="p-57">When we differentiate with respect to \(x\text{,}\) we think of \(y\) as a constant. Thus,</p>
+<div class="displaymath" id="p-58">
+\begin{equation*}
+\newcommand{\amp}{\amp }\begin{aligned}
+f_x(x,y)\amp= \frac{\partial}{\partial x}\left(x^2y-{6}x^2+{12}xy^2\right) \\
+\amp= \frac{\partial}{\partial x}\left(x^2y\right)-\frac{\partial}{\partial x}\left({6}x^2\right)+\frac{\partial}{\partial x}\left({12}xy^2\right)\\
+\amp = 2xy - {12}x + {12}y^2
+\end{aligned}
+\end{equation*}
+</div>
+</div></div>
+</div></article><article class="exercise-like" id="exercise-8"><h6 class="heading"><span class="codenumber">8.</span></h6>
+<p id="p-59">Find the partial derivative \(g_y(x,y)\) for</p>
+<div class="displaymath" id="p-60">
+\begin{equation*}
+g(x,y)={6}y-{3}x^2y+{2}xy^2+{6}
+\end{equation*}
+</div>
+<p id="p-61">\(g_y=\)<span class="fillin" role="img" aria-label="25-character blank" style="width: 11.3636363636364em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-hint-8" id="hint-8"><span class="type">Hint</span></a><div id="hk-hint-8" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-62">When finding a partial derivative all other variables are treated as constants.</p></div></div>
+<a data-knowl="" class="id-ref" data-refid="hk-solution-8" id="solution-8"><span class="type">Solution</span></a><div id="hk-solution-8" class="hidden-content tex2jax_ignore"><div class="solution">
+<p id="p-63">When we differentiate with respect to \(y\text{,}\) we think of \(x\) as a constant. Thus,</p>
+<div class="displaymath" id="p-64">
+\begin{equation*}
+\newcommand{\amp}{\amp }\begin{aligned}
+g_y(x,y)\amp =\frac{\partial}{\partial y}\left({6}y-{3}x^2y+{2}xy^2+{6}\right)\\
+\amp = \frac{\partial}{\partial y}\left({6}y\right)-\frac{\partial}{\partial y}\left({3}x^2y\right)+\frac{\partial}{\partial y} \left({2}xy^2\right)+\frac{\partial}{\partial y}\left({6}\right)\\
+\amp = {6}-{3}x^2+{4}xy
+\end{aligned}
+\end{equation*}
+</div>
+</div></div>
+</div></article><article class="exercise-like" id="exercise-9"><h6 class="heading"><span class="codenumber">9.</span></h6>
+<p id="p-65">Find the gradient vector for</p>
+<div class="displaymath" id="p-66">
+\begin{equation*}
+f(x,y)=x^2y-{6}x^2+{6}xy^2
+\end{equation*}
+</div>
+<p id="p-67">\(\nabla f (x,y)=\) <span class="fillin" role="img" aria-label="25-character blank" style="width: 11.3636363636364em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-hint-9" id="hint-9"><span class="type">Hint</span></a><div id="hk-hint-9" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-68">What is the relationship between the components of the gradient vector and the partial derivatives of the function?</p></div></div>
+<a data-knowl="" class="id-ref" data-refid="hk-solution-9" id="solution-9"><span class="type">Solution</span></a><div id="hk-solution-9" class="hidden-content tex2jax_ignore"><div class="solution">
+<p id="p-69">We have \(\nabla f(x,y)=f_x(x,y)\vec{i}+f_y(x,y)\vec{j}\text{,}\) so</p>
+<div class="displaymath" id="p-70">
+\begin{equation*}
+\nabla f(x,y)=(2xy-{12}x+{6}y^2)\vec{i}+(x^2+{12}xy)\vec{j}.
+\end{equation*}
+</div>
+</div></div>
+</div></article><article class="exercise-like" id="exercise-10"><h6 class="heading"><span class="codenumber">10.</span></h6>
+<p id="p-71">Find the gradient vector for</p>
+<div class="displaymath" id="p-72">
+\begin{equation*}
+g(x,y)={2}y-{5}x^2y+{6}xy^2+{4}
+\end{equation*}
+</div>
+<p id="p-73">\(\nabla g (x,y)=\) <span class="fillin" role="img" aria-label="25-character blank" style="width: 11.3636363636364em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-hint-10" id="hint-10"><span class="type">Hint</span></a><div id="hk-hint-10" class="hidden-content tex2jax_ignore"><div class="solution"><p id="p-74">What is the relationship between the components of the gradient vector and the partial derivatives of the function?</p></div></div>
+<a data-knowl="" class="id-ref" data-refid="hk-solution-10" id="solution-10"><span class="type">Solution</span></a><div id="hk-solution-10" class="hidden-content tex2jax_ignore"><div class="solution">
+<p id="p-75">We have \(\nabla g(x,y)=g_x(x,y)\vec{i}+g_y(x,y)\vec{j}\text{,}\) so</p>
+<div class="displaymath" id="p-76">
+\begin{equation*}
+\nabla g(x,y)=(-{10}xy+{6}y^2)\vec{i}+({2}-{5}x^2+{12}xy)\vec{j}.
+\end{equation*}
+</div>
+</div></div>
+</div></article><article class="exercise-like" id="exercise-11"><h6 class="heading"><span class="codenumber">11.</span></h6>
+<p id="p-77">Find the determinant of</p>
+<div class="displaymath" id="p-78">
+\begin{equation*}
+{\left[\begin{array}{cc}
+1 \amp -3\cr
+-1 \amp 3
+\end{array}\right]}
+\end{equation*}
+</div>
+<p id="p-79">determinant \(=\) <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-hint-11" id="hint-11"><span class="type">Hint</span></a><div id="hk-hint-11" class="hidden-content tex2jax_ignore"><div class="solution">
+<p id="p-80">The determinant of</p>
+<div class="displaymath" id="p-81">
+\begin{equation*}
+\newcommand{\amp}{\amp }\pmatrix{a \amp b \\ c \amp d }
+\end{equation*}
+</div>
+<p id="p-82">is \(ad-bc\text{.}\)</p>
+</div></div>
+<a data-knowl="" class="id-ref" data-refid="hk-solution-11" id="solution-11"><span class="type">Solution</span></a><div id="hk-solution-11" class="hidden-content tex2jax_ignore"><div class="solution"><div class="displaymath" id="p-83">
+\begin{equation*}
+\newcommand{\amp}{\amp }\det \pmatrix{1 \amp -{3} \\ -1 \amp {3}} = (1)({3})-(-1)(-{3})={3}-{3}={0}.
+\end{equation*}
+</div></div></div>
+</div></article><article class="exercise-like" id="exercise-12"><h6 class="heading"><span class="codenumber">12.</span></h6>
+<p id="p-84">Find the determinant for</p>
+<div class="displaymath" id="p-85">
+\begin{equation*}
+{\left[\begin{array}{cc}
+3x \amp xy^{2}\cr
+-6 \amp 5x+y\cr
+\end{array}\right]}
+\end{equation*}
+</div>
+<p id="p-86">determinant \(=\) <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-hint-12" id="hint-12"><span class="type">Hint</span></a><div id="hk-hint-12" class="hidden-content tex2jax_ignore"><div class="solution">
+<p id="p-87">The determinant of</p>
+<div class="displaymath" id="p-88">
+\begin{equation*}
+\newcommand{\amp}{\amp }\pmatrix{a \amp b \\ c \amp d }
+\end{equation*}
+</div>
+<p id="p-89">is \(ad-bc\text{.}\)</p>
+</div></div>
+<a data-knowl="" class="id-ref" data-refid="hk-solution-12" id="solution-12"><span class="type">Solution</span></a><div id="hk-solution-12" class="hidden-content tex2jax_ignore"><div class="solution"><div class="displaymath" id="p-90">
+\begin{equation*}
+\newcommand{\amp}{\amp }\begin{aligned}
+\det\pmatrix{{3}x \amp xy^2 \\ -{6} \amp {5}x+y} \amp =  ({3}x)({5}x+y)-(-{6})(xy^2)\\
+\amp = ({15}x^2+{3}xy)-(-{6}xy^2)\\
+\amp = {15}x^2 + {3}xy + {6}xy^2.
+\end{aligned}
+\end{equation*}
+</div></div></div>
+</div></article></section></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>

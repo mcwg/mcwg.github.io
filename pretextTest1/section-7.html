@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WWSC WeBWorK with TikZ Examples</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="article">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://pretextbook.org/js/0.13/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-article ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="webwork-mini.html"><span class="title">Worksheet: Integration by Substitution</span></a></h1>
+<p class="byline">MCWG</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-6.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="webwork-mini.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-6.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="webwork-mini.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1" class="internal"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="section-1.html" data-scroll="section-1" class="internal"><span class="codenumber">1</span> <span class="title">Summary</span></a><ul>
+<li><a href="section-1.html#subsection-1" data-scroll="subsection-1" class="internal">The "typical" example</a></li>
+<li><a href="section-1.html#subsection-2" data-scroll="subsection-2" class="internal">(**) The method does not always work</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="section-2.html" data-scroll="section-2" class="internal"><span class="codenumber">2</span> <span class="title">Initial Exploration: where does the method come from?</span></a><ul><li><a href="section-2.html#subsection-3" data-scroll="subsection-3" class="internal">(**) PENDING</a></li></ul>
+</li>
+<li class="link">
+<a href="section-3.html" data-scroll="section-3" class="internal"><span class="codenumber">3</span> <span class="title">The method of substitution: first examples</span></a><ul><li><a href="section-3.html#subsection-4" data-scroll="subsection-4" class="internal">(**) PENDING</a></li></ul>
+</li>
+<li class="link">
+<a href="section-4.html" data-scroll="section-4" class="internal"><span class="codenumber">4</span> <span class="title">Substitution with endpoints</span></a><ul><li><a href="section-4.html#subsection-5" data-scroll="subsection-5" class="internal">(**) PENDING</a></li></ul>
+</li>
+<li class="link">
+<a href="section-5.html" data-scroll="section-5" class="internal"><span class="codenumber">5</span> <span class="title">More abstract implications</span></a><ul><li><a href="section-5.html#subsection-6" data-scroll="subsection-6" class="internal">(**) PENDING</a></li></ul>
+</li>
+<li class="link">
+<a href="section-6.html" data-scroll="section-6" class="internal"><span class="codenumber">6</span> <span class="title">wrap-up for the worksheet</span></a><ul><li><a href="section-6.html#subsection-7" data-scroll="subsection-7" class="internal">(**) PENDING</a></li></ul>
+</li>
+<li class="link active"><a href="section-7.html" data-scroll="section-7" class="internal"><span class="codenumber">7</span> <span class="title">WeBWorK with TikZ Examples</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-7"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">7</span> <span class="title">WeBWorK with TikZ Examples</span>
+</h2>
+<article class="exercise exercise-like" id="exercise-1"><h3 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">7.1</span><span class="period">.</span><span class="space"> </span><span class="title">A new TikZ graph affected by <code class="code-inline tex2jax_ignore">&lt;latex-image-preamble&gt;</code>.</span>
+</h3>
+<div class="introduction" id="introduction-2"><p id="p-22">This sample chapter's <code class="code-inline tex2jax_ignore">&lt;docinfo&gt;</code> has a <code class="code-inline tex2jax_ignore">&lt;latex-image-preamble&gt;</code> with <code class="code-inline tex2jax_ignore">@syntax</code> set to <code class="code-inline tex2jax_ignore">PGtikz</code>. This exercise has graph styling that is affected by that.</p></div>
+<div id="webwork-2" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="2" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHdGlrei5wbCIsIldXU0MucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpO0Byb290cyA9ICgtMTAuLjEwKVtOY2hvb3NlSyg3LDMpXTsKQHJvb3RzID0gbnVtX3NvcnQoQHJvb3RzKTsKJGFuc3dlciA9IExpc3QoQHJvb3RzKTsKJHhtaW4gPSBtaW4oLTEsQHJvb3RzKS0xOwokeG1heCA9IG1heCgxLEByb290cykrMTsKJHJlZnJlc2hDYWNoZWRJbWFnZXM9MTsKJGltYWdlXzEgPSBjcmVhdGVUaWtaSW1hZ2UoKTsKJGltYWdlXzEtPmFkZFRvUHJlYW1ibGUobGF0ZXhJbWFnZVByZWFtYmxlKCkpOwokaW1hZ2VfMS0+QkVHSU5fVElLWgpcYmVnaW57YXhpc30KICAgIFxhZGRwbG90W2RvbWFpbj0keG1pbjokeG1heCxzbW9vdGhdIHsoeC0kcm9vdHNbMF0pKih4LSRyb290c1sxXSkqKHgtJHJvb3RzWzJdKX07ClxlbmR7YXhpc30KCkVORF9USUtaCgpCRUdJTl9QR01MCldoYXQgYXJlIHRoZSByb290cyBvZiB0aGlzIHBvbHlub21pYWw/IEhlcmUKCj4+IFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGltYWdlXzEpLCB3aWR0aD0+NDgwLCBhbHQ9PnFxInF0aGUgZ3JhcGggb2YgYSBwb2x5bm9taWFsIHRoYXQgY3Jvc3NlcyB0aGUgeC1heGlzIGF0ICRyb290c1swXSwgJHJvb3RzWzFdLCBhbmQgJHJvb3RzWzJdLiIpQF0qICA8PAoKW19deyRhbnN3ZXJ9ezIwfQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-23">What are the roots of this polynomial? Here</p>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/webwork/images/webwork-2-image-1.svg" role="img" class="contained" alt="qthe graph of a polynomial that crosses the x-axis at -9, -7, and -6."></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-1" id="answer-1"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1"><div class="answer solution-like"><p id="p-25"><span class="process-math">\(-9, -7, -6\)</span></p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-2')">Make Interactive</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-2"><h3 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">7.2</span><span class="period">.</span>
+</h3>
+<div id="webwork-3" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="3" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhID0gQ29tcHV0ZShyYW5kb20oMSwgOSwgMSkpOwokYiA9IENvbXB1dGUocmFuZG9tKDEsIDksIDEpKTsKJGMgPSAkYSArICRiOwokcmVmcmVzaENhY2hlZEltYWdlcz0xOwoKQkVHSU5fUEdNTApDb21wdXRlIHRoZSBzdW0gb2YgW2BbJGFdYF0gYW5kIFtgWyRiXVx0ZXh0ezp9YF0KCltgWyRhXSArIFskYl0gPWBdIFtfXXskY317NX0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9ISU5UCkFkZCBbYFskYV1gXSBhbmQgW2BbJGJdYF0gdG9nZXRoZXIuCgoKRU5EX1BHTUxfSElOVAoKQkVHSU5fUEdNTF9TT0xVVElPTgpbYFskYV0gKyBbJGJdID0gWyRjXVx0ZXh0ey59YF0KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-26">Compute the sum of <span class="process-math">\({3}\)</span> and <span class="process-math">\({1}\text{:}\)</span></p>
+<p id="p-27"><span class="process-math">\({3} + {1} =\)</span> <span class="fillin" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-1" id="hint-1"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-1"><div class="hint solution-like"><p id="p-28">Add <span class="process-math">\({3}\)</span> and <span class="process-math">\({1}\)</span> together.</p></div></div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-2" id="answer-2"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-2"><div class="answer solution-like"><p id="p-29"><span class="process-math">\(4\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-1" id="solution-1"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-1"><div class="solution solution-like"><p id="p-30"><span class="process-math">\({3} + {1} = {4}\text{.}\)</span></p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-3')">Make Interactive</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-3"><h3 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">7.3</span><span class="period">.</span><span class="space"> </span><span class="title">Special Answer Checking.</span>
+</h3>
+<div class="introduction" id="introduction-3">
+<p id="p-31">One of the strengths of WeBWorK is its ability to give intelligent feedback for incorrect answers.</p>
+<ul class="disc">
+<li id="li-6"><p id="p-32">There is general feedback for when the student's answer is in an entirely different ballpark from the correct answer. Try entering something like “<code class="code-inline tex2jax_ignore">y</code>”.</p></li>
+<li id="li-7"><p id="p-33">There is general feedback for when the student's answer is not in the right form. Try entering “<code class="code-inline tex2jax_ignore">x^2*x^3</code>”, which, right or wrong, is unsimplified.</p></li>
+<li id="li-8"><p id="p-34">And problems can be written to detect and respond to common mistakes. Try entering an answer where you multiply the two exponents (instead of adding them, which would be correct.)</p></li>
+</ul>
+</div>
+<div id="webwork-5" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="5" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJhbnN3ZXJIaW50cy5wbCIsIlBDQ21hY3Jvcy5wbCIsImNvbnRleHRMaW1pdGVkUG9seW5vbWlhbC5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwokYSA9IHJhbmRvbSgxLCA5LCAxKTsKJGIgPSByYW5kb20oMSwgOSwgMSk7CiRjID0gJGEgKyAkYjsKJGV4cHJlc3Npb24gPSBGb3JtdWxhKCJ4XigkYSkqeF4oJGIpIik7CiRyZWZyZXNoQ2FjaGVkSW1hZ2VzPTE7CgpDb250ZXh0KCJMaW1pdGVkUG9seW5vbWlhbC1TdHJpY3QiKTsKIyBjdXN0b20gZXJyb3IgbWVzc2FnZQpDb250ZXh0KCktPntlcnJvcn17bXNnfXsiQSB2YXJpYWJsZSBjYW4gYXBwZWFyIG9ubHkgb25jZSBpbiBlYWNoIHRlcm0gb2YgYSBwb2x5bm9taWFsIn0KICAgID0gIllvdXIgYW5zd2VyIG11c3QgYmUgZnVsbHkgc2ltcGxpZmllZCI7CgokYW5zd2VyID0gRm9ybXVsYSgieF4oJGMpIik7CiRwcm9kdWN0ID0gJGEqJGI7CiRldmFsdWF0b3IgPSAkYW5zd2VyLT5jbXAoKS0+d2l0aFBvc3RGaWx0ZXIoQW5zd2VySGludHMoCiAgICBbQ29tcHV0ZSgieF4oJHByb2R1Y3QpIildID0+CiAgICAiV2hlbiBtdWx0aXBseWluZyB0ZXJtcyB3aXRoIHRoZSBzYW1lIGJhc2UsIHlvdSBkbyBub3QgbXVsdGlwbHkgdGhlIGV4cG9uZW50cy4iKSk7CgpCRUdJTl9QR01MClVzZSB0aGUgcHJvcGVydGllcyBvZiBleHBvbmVudHMgdG8gc2ltcGxpZnkgW2BbJGV4cHJlc3Npb25dXHRleHR7Ln1gXQoKW0BLZXlib2FyZEluc3RydWN0aW9ucygnVG8gZW50ZXIgYSBwb3dlciwgdXNlIGEgW3xefF0qLCBhcyBpbiBbfHheMnxdKiBmb3IgW2B4XjJcdGV4dHsufWBdJylAXSoqCgpbYFskZXhwcmVzc2lvbl09YF0gW19deyRldmFsdWF0b3J9ezh9IFtAQW5zd2VyRm9ybWF0SGVscCgnZm9ybXVsYXMnKUBdKgoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCldlIF9hZGRfIHRoZSBleHBvbmVudHMgYXMgZm9sbG93cywgd2hpbGUgaW5jbHVkaW5nIGEgZ3JhdHVpdG91cyByZWZlcmVuY2UgdG8gdGhlIHF1YWRyYXRpYyBmb3JtdWxhOgoKW2BgYFxiZWdpbnthbGlnbmVkfQpbJGV4cHJlc3Npb25dJj14XntbJGFdK1skYl19JlxcCiY9eF57WyRjXX0KXGVuZHthbGlnbmVkfQpgYGBdCgoKCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-35">Use the properties of exponents to simplify <span class="process-math">\({x^{5}x^{4}}\text{.}\)</span></p>
+<p id="p-36"><span class="process-math">\({x^{5}x^{4}}=\)</span> <span class="fillin" role="img" aria-label="8-character blank" style="width: 3.636363636363636em;"></span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-3" id="answer-3"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-3"><div class="answer solution-like"><p id="p-37"><span class="process-math">\(x^{9}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-2" id="solution-2"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-2"><div class="solution solution-like">
+<p id="p-38">We <em class="emphasis">add</em> the exponents as follows, while including a gratuitous reference to the quadratic formula:</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-39">
+\begin{equation*}
+\begin{aligned}
+{x^{5}x^{4}}\amp =x^{5+4}\amp \\
+\amp =x^{9}
+\end{aligned}
+\end{equation*}
+</div>
+</div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-5')">Make Interactive</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-4"><h3 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">7.4</span><span class="period">.</span><span class="space"> </span><span class="title">A new TikZ graph affected by <code class="code-inline tex2jax_ignore">&lt;latex-image-preamble&gt;</code>.</span>
+</h3>
+<div class="introduction" id="introduction-4"><p id="p-40">This sample chapter's <code class="code-inline tex2jax_ignore">&lt;docinfo&gt;</code> has a <code class="code-inline tex2jax_ignore">&lt;latex-image-preamble&gt;</code> with <code class="code-inline tex2jax_ignore">@syntax</code> set to <code class="code-inline tex2jax_ignore">PGtikz</code>. This exercise has graph styling that is affected by that.</p></div>
+<div id="webwork-6" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="6" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHdGlrei5wbCIsIldXU0MucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpO0Byb290cyA9ICgtMy4uMylbTmNob29zZUsoNywzKV07CkByb290cyA9IG51bV9zb3J0KEByb290cyk7CiRhbnN3ZXIgPSBMaXN0KEByb290cyk7CiR4bWluID0gbWluKC0xLEByb290cyktMTsKJHhtYXggPSBtYXgoMSxAcm9vdHMpKzE7CiRyZWZyZXNoQ2FjaGVkSW1hZ2VzPTE7CiRpbWFnZV8yID0gY3JlYXRlVGlrWkltYWdlKCk7CiRpbWFnZV8yLT5hZGRUb1ByZWFtYmxlKGxhdGV4SW1hZ2VQcmVhbWJsZSgpKTsKJGltYWdlXzItPkJFR0lOX1RJS1oKXGJlZ2lue2F4aXN9CiAgICBcYWRkcGxvdFtkb21haW49JHhtaW46JHhtYXgsc21vb3RoXSB7KHgtJHJvb3RzWzBdKSooeC0kcm9vdHNbMV0pKih4LSRyb290c1syXSl9OwpcZW5ke2F4aXN9CgpFTkRfVElLWgoKQkVHSU5fUEdNTApXaGF0IGFyZSB0aGUgcm9vdHMgb2YgdGhpcyBwb2x5bm9taWFsPyBIZXJlCgo+PiBbQGltYWdlKGluc2VydEdyYXBoKCRpbWFnZV8yKSwgd2lkdGg9PjQ4MCwgYWx0PT5xcSJxdGhlIGdyYXBoIG9mIGEgcG9seW5vbWlhbCB0aGF0IGNyb3NzZXMgdGhlIHgtYXhpcyBhdCAkcm9vdHNbMF0sICRyb290c1sxXSwgYW5kICRyb290c1syXS4iKUBdKiAgPDwKCltfXXskYW5zd2VyfXsyMH0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-41">What are the roots of this polynomial? Here</p>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/webwork/images/webwork-6-image-1.svg" role="img" class="contained" alt="qthe graph of a polynomial that crosses the x-axis at -3, -1, and 1."></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-4" id="answer-4"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-4"><div class="answer solution-like"><p id="p-43"><span class="process-math">\(-3, -1, 1\)</span></p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-6')">Make Interactive</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-5"><h3 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">7.5</span><span class="period">.</span><span class="space"> </span><span class="title">A new TikZ graph affected by <code class="code-inline tex2jax_ignore">&lt;latex-image-preamble&gt;</code>.</span>
+</h3>
+<div class="introduction" id="introduction-5"><p id="p-44">This sample chapter's <code class="code-inline tex2jax_ignore">&lt;docinfo&gt;</code> has a <code class="code-inline tex2jax_ignore">&lt;latex-image-preamble&gt;</code> with <code class="code-inline tex2jax_ignore">@syntax</code> set to <code class="code-inline tex2jax_ignore">PGtikz</code>. This exercise has graph styling that is affected by that.</p></div>
+<div id="webwork-7" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="7" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHdGlrei5wbCIsIldXU0MucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpO0Byb290cyA9ICgtMy4uMylbTmNob29zZUsoNywzKV07CkByb290cyA9IG51bV9zb3J0KEByb290cyk7CiRhbnN3ZXIgPSBMaXN0KEByb290cyk7CiR4bWluID0gbWluKC0xLEByb290cyktMTsKJHhtYXggPSBtYXgoMSxAcm9vdHMpKzE7CiRyZWZyZXNoQ2FjaGVkSW1hZ2VzPTE7CiRpbWFnZV8zID0gY3JlYXRlVGlrWkltYWdlKCk7CiRpbWFnZV8zLT5hZGRUb1ByZWFtYmxlKGxhdGV4SW1hZ2VQcmVhbWJsZSgpKTsKJGltYWdlXzMtPkJFR0lOX1RJS1oKXGJlZ2lue2F4aXN9CiAgICBcYWRkcGxvdFtkb21haW49JHhtaW46JHhtYXgsc21vb3RoXSB7KHgtJHJvb3RzWzBdKSooeC0kcm9vdHNbMV0pKih4LSRyb290c1syXSl9OwpcZW5ke2F4aXN9CgpFTkRfVElLWgoKQkVHSU5fUEdNTApXaGF0IGFyZSB0aGUgcm9vdHMgb2YgdGhpcyBwb2x5bm9taWFsPyBIZXJlCgo+PiBbQGltYWdlKGluc2VydEdyYXBoKCRpbWFnZV8zKSwgd2lkdGg9PjQ4MCwgYWx0PT5xcSJxdGhlIGdyYXBoIG9mIGEgcG9seW5vbWlhbCB0aGF0IGNyb3NzZXMgdGhlIHgtYXhpcyBhdCAkcm9vdHNbMF0sICRyb290c1sxXSwgYW5kICRyb290c1syXS4iKUBdKiAgPDwKCltfXXskYW5zd2VyfXsyMH0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-45">What are the roots of this polynomial? Here</p>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/webwork/images/webwork-7-image-1.svg" role="img" class="contained" alt="qthe graph of a polynomial that crosses the x-axis at 0, 1, and 2."></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-5" id="answer-5"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-5"><div class="answer solution-like"><p id="p-47"><span class="process-math">\(0, 1, 2\)</span></p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-7')">Make Interactive</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-6"><h3 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">7.6</span><span class="period">.</span><span class="space"> </span><span class="title">A new TikZ graph affected by <code class="code-inline tex2jax_ignore">&lt;latex-image-preamble&gt;</code>.</span>
+</h3>
+<div class="introduction" id="introduction-6"><p id="p-48">This sample chapter's <code class="code-inline tex2jax_ignore">&lt;docinfo&gt;</code> has a <code class="code-inline tex2jax_ignore">&lt;latex-image-preamble&gt;</code> with <code class="code-inline tex2jax_ignore">@syntax</code> set to <code class="code-inline tex2jax_ignore">PGtikz</code>. This exercise has graph styling that is affected by that.</p></div>
+<div id="webwork-8" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="8" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHdGlrei5wbCIsIldXU0MucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpO0Byb290cyA9ICgtMy4uMylbTmNob29zZUsoNywzKV07CkByb290cyA9IG51bV9zb3J0KEByb290cyk7CiRhbnN3ZXIgPSBMaXN0KEByb290cyk7CiR4bWluID0gbWluKC0xLEByb290cyktMTsKJHhtYXggPSBtYXgoMSxAcm9vdHMpKzE7CiRyZWZyZXNoQ2FjaGVkSW1hZ2VzPTE7CiRpbWFnZV80ID0gY3JlYXRlVGlrWkltYWdlKCk7CiRpbWFnZV80LT5hZGRUb1ByZWFtYmxlKGxhdGV4SW1hZ2VQcmVhbWJsZSgpKTsKJGltYWdlXzQtPkJFR0lOX1RJS1oKXGJlZ2lue2F4aXN9CiAgICBcYWRkcGxvdFtkb21haW49JHhtaW46JHhtYXgsc21vb3RoXSB7KHgtJHJvb3RzWzBdKSooeC0kcm9vdHNbMV0pKih4LSRyb290c1syXSl9OwpcZW5ke2F4aXN9CgpFTkRfVElLWgoKQkVHSU5fUEdNTApXaGF0IGFyZSB0aGUgcm9vdHMgb2YgdGhpcyBwb2x5bm9taWFsPyBIZXJlCgo+PiBbQGltYWdlKGluc2VydEdyYXBoKCRpbWFnZV80KSwgd2lkdGg9PjQ4MCwgYWx0PT5xcSJxdGhlIGdyYXBoIG9mIGEgcG9seW5vbWlhbCB0aGF0IGNyb3NzZXMgdGhlIHgtYXhpcyBhdCAkcm9vdHNbMF0sICRyb290c1sxXSwgYW5kICRyb290c1syXS4iKUBdKiAgPDwKCltfXXskYW5zd2VyfXsyMH0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-49">What are the roots of this polynomial? Here</p>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/webwork/images/webwork-8-image-1.svg" role="img" class="contained" alt="qthe graph of a polynomial that crosses the x-axis at -3, -2, and 3."></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-6" id="answer-6"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-6"><div class="answer solution-like"><p id="p-51"><span class="process-math">\(-3, -2, 3\)</span></p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-8')">Make Interactive</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-7"><h3 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">7.7</span><span class="period">.</span><span class="space"> </span><span class="title">A new TikZ graph affected by <code class="code-inline tex2jax_ignore">&lt;latex-image-preamble&gt;</code>.</span>
+</h3>
+<div class="introduction" id="introduction-7"><p id="p-52">This sample chapter's <code class="code-inline tex2jax_ignore">&lt;docinfo&gt;</code> has a <code class="code-inline tex2jax_ignore">&lt;latex-image-preamble&gt;</code> with <code class="code-inline tex2jax_ignore">@syntax</code> set to <code class="code-inline tex2jax_ignore">PGtikz</code>. This exercise has graph styling that is affected by that.</p></div>
+<div id="webwork-9" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="9" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHdGlrei5wbCIsIldXU0MucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpO0Byb290cyA9ICgtMy4uMylbTmNob29zZUsoNywzKV07CkByb290cyA9IG51bV9zb3J0KEByb290cyk7CiRhbnN3ZXIgPSBMaXN0KEByb290cyk7CiR4bWluID0gbWluKC0xLEByb290cyktMTsKJHhtYXggPSBtYXgoMSxAcm9vdHMpKzE7CiRyZWZyZXNoQ2FjaGVkSW1hZ2VzPTE7CiRpbWFnZV81ID0gY3JlYXRlVGlrWkltYWdlKCk7CiRpbWFnZV81LT5hZGRUb1ByZWFtYmxlKGxhdGV4SW1hZ2VQcmVhbWJsZSgpKTsKJGltYWdlXzUtPkJFR0lOX1RJS1oKXGJlZ2lue2F4aXN9CiAgICBcYWRkcGxvdFtkb21haW49JHhtaW46JHhtYXgsc21vb3RoXSB7KHgtJHJvb3RzWzBdKSooeC0kcm9vdHNbMV0pKih4LSRyb290c1syXSl9OwpcZW5ke2F4aXN9CgpFTkRfVElLWgoKQkVHSU5fUEdNTApXaGF0IGFyZSB0aGUgcm9vdHMgb2YgdGhpcyBwb2x5bm9taWFsPyBIZXJlCgo+PiBbQGltYWdlKGluc2VydEdyYXBoKCRpbWFnZV81KSwgd2lkdGg9PjQ4MCwgYWx0PT5xcSJxdGhlIGdyYXBoIG9mIGEgcG9seW5vbWlhbCB0aGF0IGNyb3NzZXMgdGhlIHgtYXhpcyBhdCAkcm9vdHNbMF0sICRyb290c1sxXSwgYW5kICRyb290c1syXS4iKUBdKiAgPDwKCltfXXskYW5zd2VyfXsyMH0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-53">What are the roots of this polynomial? Here</p>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/webwork/images/webwork-9-image-1.svg" role="img" class="contained" alt="qthe graph of a polynomial that crosses the x-axis at -1, 2, and 3."></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-7" id="answer-7"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-7"><div class="answer solution-like"><p id="p-55"><span class="process-math">\(-1, 2, 3\)</span></p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-9')">Make Interactive</button></div>
+</div></article></section></div></main>
+</div>
+</body>
+</html>

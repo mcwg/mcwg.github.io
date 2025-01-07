@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-08-20T15:13:11-05:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>First Set: Rectangular Coordinates</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><link href="https://webwork.up.edu/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://webwork.up.edu/webwork2_files/js/vendor/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\doubler}[1]{2#1}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="CoordinateSystems.html"><span class="title">Coordinate Systems and a Tour of  \(\displaystyle
+3\)-Space</span></a></h1>
+<p class="byline">Calculus: Multivariable, McCallum, Hughes-Hallett, et al.</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-3.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="CoordinateSystems.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-5.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-3.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="CoordinateSystems.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-5.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Introduction</span></a></li>
+<li class="link"><a href="section-1.html" data-scroll="section-1"><span class="codenumber">1</span> <span class="title">Goals</span></a></li>
+<li class="link"><a href="section-2.html" data-scroll="section-2"><span class="codenumber">2</span> <span class="title">Prerequisites</span></a></li>
+<li class="link">
+<a href="section-3.html" data-scroll="section-3"><span class="codenumber">3</span> <span class="title">Key Concepts</span></a><ul>
+<li><a href="section-3.html#subsection-1" data-scroll="subsection-1">The Standard Three-Dimensional Coordinate System—Rectangular Coordinates</a></li>
+<li><a href="section-3.html#subsection-2" data-scroll="subsection-2">Other coordinate systems</a></li>
+</ul>
+</li>
+<li class="link active"><a href="section-4.html" data-scroll="section-4"><span class="codenumber">4</span> <span class="title">First Set: Rectangular Coordinates</span></a></li>
+<li class="link"><a href="section-5.html" data-scroll="section-5"><span class="codenumber">5</span> <span class="title">Second Set: Other Coordinate Systems</span></a></li>
+<li class="link"><a href="section-6.html" data-scroll="section-6"><span class="codenumber">6</span> <span class="title">Wrap Up Questions</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-4"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4</span> <span class="title">First Set: Rectangular Coordinates</span>
+</h2>
+<article class="exercise-like" id="exercise-1"><h6 class="heading">
+<span class="type">Problem</span> <span class="codenumber">4.1</span>.</h6>
+<iframe width="100%" src="https://webwork.up.edu/webwork2/html2xml?courseID=anonymous&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=1&amp;sourceFilePath=local/12-1SpaceandCoordinateSystems/12-1CBA-awynp01/12-1CBA-awynp01.pg" base64="1" uri="1"></iframe><script>iFrameResize({log:true,inPageLinks:true,resizeFrom:'child',checkOrigin:["https://webwork.up.edu"]})</script></article><article class="exercise-like" id="exercise-2"><h6 class="heading">
+<span class="type">Problem</span> <span class="codenumber">4.2</span>.</h6>
+<iframe width="100%" src="https://webwork.up.edu/webwork2/html2xml?courseID=anonymous&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=2&amp;sourceFilePath=local/12-1SpaceandCoordinateSystems/12-1CBA-awynp02/12-1CBA-awynp02.pg" base64="1" uri="1"></iframe><script>iFrameResize({log:true,inPageLinks:true,resizeFrom:'child',checkOrigin:["https://webwork.up.edu"]})</script></article><article class="exercise-like" id="exercise-3"><h6 class="heading">
+<span class="type">Problem</span> <span class="codenumber">4.3</span>.</h6>
+<iframe width="100%" src="https://webwork.up.edu/webwork2/html2xml?courseID=anonymous&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=3&amp;sourceFilePath=local/12-1SpaceandCoordinateSystems/12-1CBA-awynp03/12-1CBA-awynp03.pg" base64="1" uri="1"></iframe><script>iFrameResize({log:true,inPageLinks:true,resizeFrom:'child',checkOrigin:["https://webwork.up.edu"]})</script></article><article class="exercise-like" id="exercise-4"><h6 class="heading">
+<span class="type">Problem</span> <span class="codenumber">4.4</span>.</h6>
+<iframe width="100%" src="https://webwork.up.edu/webwork2/html2xml?courseID=anonymous&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=4&amp;sourceFilePath=local/12-1SpaceandCoordinateSystems/12-1CBA-awynp13/12-1CBA-awynp13.pg" base64="1" uri="1"></iframe><script>iFrameResize({log:true,inPageLinks:true,resizeFrom:'child',checkOrigin:["https://webwork.up.edu"]})</script></article><article class="exercise-like" id="exercise-5"><h6 class="heading">
+<span class="type">Problem</span> <span class="codenumber">4.5</span>.</h6>
+<div class="introduction" id="introduction-1">
+<p id="p-61">Match each graph to its corresponding equation.</p>
+<p id="p-62"><div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p id="p-63">A. <img src="images/12-1CBA-awynp04fig1.svg" style="width: 100%; height: auto;" alt=""></p></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p id="p-64">B. <img src="images/12-1CBA-awynp04fig2.svg" style="width: 100%; height: auto;" alt=""></p></div>
+</div></div><div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p id="p-65">C. <img src="images/12-1CBA-awynp04fig3.svg" style="width: 100%; height: auto;" alt=""></p></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p id="p-66">D. <img src="images/12-1CBA-awynp04fig4.svg" style="width: 100%; height: auto;" alt=""></p></div>
+</div></div></p>
+</div>
+<iframe width="100%" src="https://webwork.up.edu/webwork2/html2xml?courseID=anonymous&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=5&amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJQb3BVcC5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpO0NvbnRleHQoJ051bWVyaWMnKTskeiA9IENvbXB1dGUocmFuZG9tKDEsNSwxKSk7CiRERDE9IFBvcFVwKApbIj8iLCJBIiwiQiIsIkMiLCJEIl0sCiJBIiAjIGNvcnJlY3QgYW5zd2VyCik7CiRERDI9IFBvcFVwKApbIj8iLCJBIiwiQiIsIkMiLCJEIl0sCiJCIiAjIGNvcnJlY3QgYW5zd2VyCik7ICAKJEREMz0gUG9wVXAoClsiPyIsIkEiLCJCIiwiQyIsIkQiXSwKIkMiICMgY29ycmVjdCBhbnN3ZXIKKTsgIAokREQ0PSBQb3BVcCgKWyI%2FIiwiQSIsIkIiLCJDIiwiRCJdLAoiRCIgIyBjb3JyZWN0IGFuc3dlcgopOwoKQkVHSU5fUEdNTAphLiAgW2B6PXlgXSBjb3JyZXNwb25kcyB0byBmaWd1cmUgW19deyRERDR9ezV9CmEuICBbYHk9XHNxcnR7eH1gXSBjb3JyZXNwb25kcyB0byBmaWd1cmUgW19deyRERDJ9ezV9CmEuICBbYHo9WyR6XWBdIGNvcnJlc3BvbmRzIHRvIGZpZ3VyZSBbX117JEREMX17NX0KYS4gIFtgeF4yK3leMj0zIGBdIGNvcnJlc3BvbmRzIHRvIGZpZ3VyZSBbX117JEREM317NX0gICAKCkVORF9QR01MCgpCRUdJTl9QR01MX0hJTlQKTm90aWNlIHRoYXQgZm9yIGVhY2ggZXF1YXRpb24gb25lIG9mIHRoZSB2YXJpYWJsZXMgaXMgbWlzc2luZy4gVGhpbmsgYWJvdXQgd2hhdCB0aGUgZ3JhcGggbG9va3MgbGlrZSBpbiBbYDJgXS1zcGFjZSBhbmQgdGhlbiBleHRlbmQgb3V0IGluIHRoZSBkaXJlY3Rpb24gb2YgdGhlIG1pc3NpbmcgdmFyaWFibGUuCgoKRU5EX1BHTUxfSElOVAoKQkVHSU5fUEdNTF9TT0xVVElPTgphLiAgVGhlIGdyYXBoIG9mIFtgej15YF0gaW4gdGhlIFtgMmBdLWRpbWVuc2lvbmFsIFtgeXpgXS1wbGFuZSBpcyBhIGxpbmUuIFRoZSBjb3JyZXNwb25kaW5nIGdyYXBoIGluIFtgM2BdLXNwYWNlIGlzIHRoZSBsaW5lIGV4dGVuZGVkIG91dHdhcmQgaW4gdGhlIHBvc2l0aXZlIGFuZCBuZWdhdGl2ZSBbYHhgXS1kaXJlY3Rpb25zIHNpbmNlIHRoZXJlIGFyZSBubyByZXF1aXJlbWVudHMgb24gW2B4XHRleHR7Ln1gXSBJbiBwYXJ0aWN1bGFyIGl0IGlzIGEgc2xhbnRlZCBwbGFuZS4gVGhpcyBtYXRjaGVzIEZpZ3VyZSBELgphLiAgVGhlIGdyYXBoIG9mIFtgeT1cc3FydHt4fWBdIGluIHRoZSBbYDJgXS1kaW1lbnNpb25hbCBwbGFuZSBpcyB0aGUgc3RhbmRhcmQgc3F1YXJlIHJvb3QgZnVuY3Rpb24uIFRoZSBjb3JyZXNwb25kaW5nIGdyYXBoIGluIFtgM2BdLXNwYWNlIGlzIHRoZSBzcXVhcmUgcm9vdCBncmFwaCBleHRlbmRlZCB2ZXJ0aWNhbGx5IHVwIGFuZCBkb3duIHNpbmNlIHRoZXJlIGFyZSBubyByZXF1aXJlbWVudHMgb24gW2B6XHRleHR7Ln1gXSAgVGhpcyBtYXRjaGVzIEZpZ3VyZSBCLgphLiAgU2luY2UgW2B6PVskel1gXSBhbmQgdGhlcmUgYXJlIG5vIHJlcXVpcmVtZW50cyBvbiBbYHhgXSBhbmQgW2B5XHRleHR7LH1gXSB0aGlzIGdpdmVzIGFsbCBwb2ludHMgd2hvc2UgW2B6YF0tY29vcmRpbmF0ZSBpcyBlcXVhbCB0byBbYFskel1gXSB3aGljaCBpcyBhIGhvcml6b250YWwgcGxhbmUuICBUaGlzIG1hdGNoZXMgRmlndXJlIEEuCmEuICBUaGUgZ3JhcGggb2YgW2B4XjIreV4yPTFgXSBpbiB0aGUgW2AyYF0tZCBwbGFuZSBpcyB0aGUgdW5pdCBjaXJjbGUuIFRoZSBjb3JyZXNwb25kaW5nIGdyYXBoIGluIFtgM2BdLXNwYWNlIGlzIHRoZSB1bml0IGNpcmNsZSBleHRlbmRlZCB2ZXJ0aWNhbGx5IHVwIGFuZCBkb3duIHNpbmNlIHRoZXJlIGFyZSBubyByZXF1aXJlbWVudHMgb24gW2B6XHRleHR7Ln1gXSBJbiBwYXJ0aWN1bGFyIGlzIGEgdmVydGljYWwgY3lsaW5kZXIuICBUaGlzIG1hdGNoZXMgRmlndXJlIEMuICAgCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs%3D" base64="1" uri="1"></iframe><script>iFrameResize({log:true,inPageLinks:true,resizeFrom:'child',checkOrigin:["https://webwork.up.edu"]})</script></article><article class="exercise-like" id="exercise-6"><h6 class="heading">
+<span class="type">Problem</span> <span class="codenumber">4.6</span>.</h6>
+<div class="introduction" id="introduction-2">
+<p id="p-99">Match each graph to the bounds describing it.</p>
+<p id="p-100"><div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p id="p-101">A. <img src="images/12-1CBA-awynp07fig1.svg" style="width: 100%; height: auto;" alt=""></p></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p id="p-102">B. <img src="images/12-1CBA-awynp07fig2.svg" style="width: 100%; height: auto;" alt=""></p></div>
+</div></div><div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p id="p-103">C. <img src="images/12-1CBA-awynp07fig3.svg" style="width: 100%; height: auto;" alt=""></p></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p id="p-104">D. <img src="images/12-1CBA-awynp07fig4.svg" style="width: 100%; height: auto;" alt=""></p></div>
+</div></div></p>
+</div>
+<iframe width="100%" src="https://webwork.up.edu/webwork2/html2xml?courseID=anonymous&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=6&amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJQb3BVcC5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpO0NvbnRleHQoJ051bWVyaWMnKTskYTEgPSBDb21wdXRlKHJhbmRvbSgyLDQsMSkpOwokYTIgPSBDb21wdXRlKCRhMS0xKTsKJGEzID0gQ29tcHV0ZSgkYTErMSk7CiRiMSA9IENvbXB1dGUocmFuZG9tKDEsMywxKSk7CiRiMiA9ICRiMTsKJGMyID0gQ29tcHV0ZShyYW5kb20oMSwzLDEpKTsKJGMzID0gJGMyOwokZDEgPSBDb21wdXRlKHJhbmRvbSgxLDMsMSkpOwokZDMgPSAkZDE7CiRERDE9IFBvcFVwKApbIj8iLCJBIiwiQiIsIkMiLCJEIl0sCiJBIiAjIGNvcnJlY3QgYW5zd2VyCik7CiRERDI9IFBvcFVwKApbIj8iLCJBIiwiQiIsIkMiLCJEIl0sCiJCIiAjIGNvcnJlY3QgYW5zd2VyCik7ICAKJEREMz0gUG9wVXAoClsiPyIsIkEiLCJCIiwiQyIsIkQiXSwKIkMiICMgY29ycmVjdCBhbnN3ZXIKKTsgIAokREQ0PSBQb3BVcCgKWyI%2FIiwiQSIsIkIiLCJDIiwiRCJdLAoiRCIgIyBjb3JyZWN0IGFuc3dlcgopOwoKQkVHSU5fUEdNTAphLiAgW2AwXGxlcSB4XGxlcSBbJGIxXSwgMFxsZXEgeVxsZXEgWyRiMl0sIDBcbGVxIHpcbGVxIHgreWBdIGNvcnJlc3BvbmQgdG8gZmlndXJlIFtfXXskREQyfXs1fQphLiAgW2AwXGxlcSB4XGxlcSB5LCAwXGxlcSB5XGxlcSBbJGMyXSwgMFxsZXEgelxsZXEgWyRjM11gXSBjb3JyZXNwb25kIHRvIGZpZ3VyZSBbX117JEREM317NX0KYS4gIFtgMFxsZXEgeFxsZXEgWyRhMV0sIC1bJGEyXVxsZXEgeVxsZXEgWyRhMl0sIFskYTFdXGxlcSB6XGxlcSBbJGEzXWBdIGNvcnJlc3BvbmQgdG8gZmlndXJlIFtfXXskREQxfXs1fQphLiAgW2AwXGxlcSB4XGxlcSBbJGQxXSwgMFxsZXEgeVxsZXEgeiwgMFxsZXEgelxsZXEgWyRkM11gXSBjb3JyZXNwb25kIHRvIGZpZ3VyZSBbX117JERENH17NX0gICAKCkVORF9QR01MCgpCRUdJTl9QR01MX0hJTlQKWW91IG1pZ2h0IGZpbmQgaXQgaGVscGZ1bCB0byByZXBsYWNlIHRoZSBpbmVxdWFsaXRpZXMgYnkgW2A9YF0gc2lnbnMgdG8gZmluZCB0aGUgYm91bmRzIG9mIHRoZSBzb2xpZC4KCgpFTkRfUEdNTF9ISU5UCgpCRUdJTl9QR01MX1NPTFVUSU9OCkluIG9yZGVyIHRvIHNrZXRjaCBhIHNvbGlkIHJlZ2lvbiwgaXQgaXMgZmlyc3QgZWFzaWVzdCB0byBza2V0Y2ggdGhlIGdyYXBocyBib3VuZGluZyBpdC4KCgphLiAgRm9yIFtgIHg9MGBdIGFuZCBbYCB4PVskYjFdXHRleHR7LH1gXSB3ZSBnZXQgdHdvIHZlcnRpY2FsIHBsYW5lcyBwYXJhbGxlbCB0byB0aGUgW2AgeXpgXS1wbGFuZSwgZm9yIFtgIHk9MGBdIGFuZCBbYCB5PVskYjJdXHRleHR7LH1gXSB3ZSBnZXQgdHdvIHZlcnRpY2FsIHBsYW5lcyBwYXJhbGxlbCB0byB0aGUgW2AgeHpgXS1wbGFuZSwgYW5kIGZvciBbYCB6PTBgXSB3ZSBnZXQgYSBob3Jpem9udGFsIHBsYW5lLiBUaGUgbGFzdCBncmFwaCBbYCB6PXgreWBdIGlzIGEgc2xhbnRlZCBwbGFuZSB3aG9zZSBbYCB6YF0gLXZhbHVlcyBpbmNyZWFzZSBhcyBbYCB4YF0gYW5kIFtgIHlgXSBpbmNyZWFzZS4gSXQgZm9sbG93cyB0aGF0IHRoZSBzb2xpZCByZWdpb24gW2AgMFxsZXEgeFxsZXEgWyRiMV1cdGV4dHssfWBdIFtgIDBcbGVxIHlcbGVxIFskYjJdXHRleHR7LH1gXSBbYCAwXGxlcSB6XGxlcSB4K3lgXSBpcyBpbiB0aGUgc2hhcGUgb2YgYSBib3ggd2l0aCBhIHNsYW50ZWQgbGlkIGFuZCBhbGwgb3RoZXIgc2lkZXMgcGFyYWxsZWwgdG8gdGhlIHRocmVlIGNvb3JkaW5hdGUgcGxhbmVzLiBUaGlzIG1hdGNoZXMgRmlndXJlIEIuCmEuICBGb3IgW2AgeD0wXHRleHR7LH1gXSB3ZSBnZXQgYSB2ZXJ0aWNhbCBwbGFuZSBwYXJhbGxlbCB0byB0aGUgW2AgeXpgXS1wbGFuZSwgZm9yIFtgIHk9MGBdIGFuZCBbYCB5PVskYzJdXHRleHR7LH1gXSB3ZSBnZXQgdHdvIHZlcnRpY2FsIHBsYW5lcyBwYXJhbGxlbCB0byB0aGUgW2AgeHpgXS1wbGFuZSwgYW5kIGZvciBbYCB6PTBgXSBhbmQgW2Agej1bJGMzXWBdIHdlIGdldCB0d28gaG9yaXpvbnRhbCBwbGFuZXMuIFRoZSBsYXN0IGdyYXBoIFtgIHg9eWBdIGlzIGEgc2xhbnRlZCBwbGFuZSB3aG9zZSBbYCB5YF0gLXZhbHVlcyBpbmNyZWFzZSBhcyBbYCB4YF0gaW5jcmVhc2VzLiBJdCBmb2xsb3dzIHRoYXQgdGhlIHNvbGlkIHJlZ2lvbiBbYCAwXGxlcSB4XGxlcSB5XHRleHR7LH1gXSBbYCAwXGxlcSB5XGxlcSBbJGMyXVx0ZXh0eyx9YF0gW2AgMFxsZXEgelxsZXEgWyRjM11gXSBpcyBpbiB0aGUgc2hhcGUgb2YgYSBib3ggd2l0aCBhIHNsYW50ZWQgdmVydGljYWwgc2lkZSBhbmQgYWxsIG90aGVyIHNpZGVzIHBhcmFsbGVsIHRvIHRoZSB0aHJlZSBjb29yZGluYXRlIHBsYW5lcy4gVGhpcyBtYXRjaGVzIEZpZ3VyZSBDLgphLiAgRm9yIFtgIHg9MGBdIGFuZCBbYCB4PVskYTFdXHRleHR7LH1gXSB3ZSBnZXQgdHdvIHZlcnRpY2FsIHBsYW5lcyBwYXJhbGxlbCB0byB0aGUgW2AgeXpgXS1wbGFuZSwgZm9yIFtgIHk9LVskYTJdYF0gYW5kIFtgIHk9WyRhMl1cdGV4dHssfWBdIHdlIGdldCB0d28gdmVydGljYWwgcGxhbmVzIHBhcmFsbGVsIHRvIHRoZSBbYCB4emBdLXBsYW5lLCBhbmQgZm9yIFtgIHo9WyRhMV1gXSBhbmQgW2Agej1bJGEzXVx0ZXh0eyx9YF0gd2UgZ2V0IHR3byBob3Jpem9udGFsIHBsYW5lcy4gSXQgZm9sbG93cyB0aGF0IHRoZSBzb2xpZCByZWdpb24gW2AgMFxsZXEgeFxsZXEgWyRhMV1cdGV4dHssfWBdIFtgIC1bJGEyXVxsZXEgeVxsZXEgWyRhMl1cdGV4dHssfWBdIFtgIFskYTFdXGxlcSB6XGxlcSBbJGEzXWBdIGlzIGluIHRoZSBzaGFwZSBvZiBhIGJveCB3aXRoIHNpZGVzIHBhcmFsbGVsIHRvIHRoZSB0aHJlZSBjb29yZGluYXRlIHBsYW5lcy4gICBUaGlzIG1hdGNoZXMgRmlndXJlIEEuCmEuICBGb3IgW2AgeD0wYF0gYW5kIFtgIHg9WyRkMV1cdGV4dHssfWBdIHdlIGdldCB0d28gdmVydGljYWwgcGxhbmVzIHBhcmFsbGVsIHRvIHRoZSBbYCB5emBdLXBsYW5lLCBmb3IgW2AgeT0wXHRleHR7LH1gXSB3ZSBnZXQgYSB2ZXJ0aWNhbCBwbGFuZSBwYXJhbGxlbCB0byB0aGUgW2AgeHpgXS1wbGFuZSwgYW5kIGZvciBbYCB6PTBgXSBhbmQgW2Agej1bJGQzXWBdIHdlIGdldCB0d28gaG9yaXpvbnRhbCBwbGFuZXMuIFRoZSBsYXN0IGdyYXBoIFtgIHk9emBdIGlzIGEgc2xhbnRlZCBwbGFuZSB3aG9zZSBbYCB6YF0gLXZhbHVlcyBpbmNyZWFzZSBhcyBbYCB5YF0gaW5jcmVhc2VzLiBJdCBmb2xsb3dzIHRoYXQgdGhlIHNvbGlkIHJlZ2lvbiBbYCAwXGxlcSB4XGxlcSBbJGQxXVx0ZXh0eyx9YF0gW2AgMFxsZXEgeVxsZXEgelx0ZXh0eyx9YF0gW2AgMFxsZXEgelxsZXEgWyRkM11gXSBpcyBpbiB0aGUgc2hhcGUgb2YgYSBib3ggd2l0aCBhIHNsYW50ZWQgdmVydGljYWwgc2lkZSBhbmQgYWxsIG90aGVyIHNpZGVzIHBhcmFsbGVsIHRvIHRoZSB0aHJlZSBjb29yZGluYXRlIHBsYW5lcy4gVGhpcyBtYXRjaGVzIEZpZ3VyZSBELiAgIAoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" base64="1" uri="1"></iframe><script>iFrameResize({log:true,inPageLinks:true,resizeFrom:'child',checkOrigin:["https://webwork.up.edu"]})</script></article><article class="exercise-like" id="exercise-7"><h6 class="heading">
+<span class="type">Problem</span> <span class="codenumber">4.7</span>.</h6>
+<iframe width="100%" src="https://webwork.up.edu/webwork2/html2xml?courseID=anonymous&amp;userID=anonymous&amp;password=anonymous&amp;course_password=anonymous&amp;answersSubmitted=0&amp;displayMode=MathJax&amp;outputformat=simple&amp;problemSeed=7&amp;sourceFilePath=local/12-1SpaceandCoordinateSystems/12-1CBA-awynp05/12-1CBA-awynp05.pg" base64="1" uri="1"></iframe><script>iFrameResize({log:true,inPageLinks:true,resizeFrom:'child',checkOrigin:["https://webwork.up.edu"]})</script></article></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>
