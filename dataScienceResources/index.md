@@ -1,6 +1,6 @@
 #  Data Science Resources
 
-*  [Aspiegler-JMM-Jan2025](Aspiegler-JMM-Jan2025)
+*  [Aspiegler-JMM-Jan2025](Aspiegler-JMM-Jan2025.pptx)
 *  [CalPolyHumboldtDSFlowChart.pdf](CalPolyHumboldtDSFlowChart.pdf)
 *  [climate_justice_presentation.pdf](climate_justice_presentation.pdf)
 *  [Data 111_Fall 2024 Syllabus_Johnson.pdf](Data 111_Fall 2024 Syllabus_Johnson.pdf)
