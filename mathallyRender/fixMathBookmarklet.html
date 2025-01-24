@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix-Math Bookmarklet</title>
+</head>
+<body>
+    <h1>Fix-Math Bookmarklet</h1>
+    <p>
+        Drag the link below to your bookmarks bar (enable it in the "view" menu if not visible) to save the Fix-Math bookmarklet:
+    </p>
+    <p>
+        <a href="javascript:(function(){var script=document.createElement('script');script.type='text/javascript';script.src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML';document.getElementsByTagName('head')[0].appendChild(script);})();">
+            Fix-Math!
+        </a>
+    </p>
+    <p>
+        Once saved, you can use this bookmarklet on any website to render LaTeX math enclosed in 
+        <code>\(...\)</code> or <code>\[...\]</code>.
+    </p>
+    <h2>How to Use</h2>
+    <ol>
+        <li>Save the bookmarklet as described above.</li>
+        <li>Visit a website with LaTeX math (e.g., <code>\(E=mc^2\)</code> or <code>\[\int_0^\infty e^{-x^2} dx\]</code>).</li>
+        <li>Click the Fix-Math! bookmarklet in your bookmarks bar to render the math.</li>
+    </ol>
+</body>
+</html>
