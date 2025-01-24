@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown with Math Renderer</title>
+  <!-- showdown.js for Markdown parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+  <!-- KaTeX for math rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    .rendered-output {
+      border: 1px solid #ddd;
+      padding: 10px;
+      min-height: 100px;
+      background: #f9f9f9;
+      overflow-x: auto;
+    }
+    .katex {
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>MathAlly Renderer</h1>
+  <textarea id="markdownInput" placeholder="Enter the full MathAlly output here..."></textarea>
+  <h2>Rendered Output</h2>
+  <div id="renderedOutput" class="rendered-output"></div>
+
+  <script>
+    // Initialize showdown converter with options to handle underscores
+    const converter = new showdown.Converter({
+      literalMidWordUnderscores: true, // Prevent underscores from being treated as emphasis
+    });
+
+    // DOM elements
+    const markdownInput = document.getElementById("markdownInput");
+    const renderedOutput = document.getElementById("renderedOutput");
+
+    // Preprocess function to replace single backslashes with double backslashes
+    function preprocessInput(input) {
+      return input
+        .replace(/\\\(/g, '\\\\(') // Replace \( with \\(
+        .replace(/\\\)/g, '\\\\)') // Replace \) with \\)
+        .replace(/\\\[/g, '\\\\[') // Replace \[ with \\[
+        .replace(/\\\]/g, '\\\\]'); // Replace \] with \\]
+    }
+
+    // Function to render Markdown and apply KaTeX
+    function renderMarkdown() {
+      const rawMarkdown = markdownInput.value; // Get the raw Markdown input
+      const preprocessedMarkdown = preprocessInput(rawMarkdown); // Preprocess backslashes
+      const htmlContent = converter.makeHtml(preprocessedMarkdown); // Convert Markdown to HTML
+      renderedOutput.innerHTML = htmlContent; // Display converted HTML
+
+      // Apply KaTeX to render math expressions
+      renderMathInElement(renderedOutput, {
+        delimiters: [
+          { left: "\\(", right: "\\)", display: false }, // Inline math
+          { left: "\\[", right: "\\]", display: true },  // Block math
+        ],
+        throwOnError: false, // Don't crash on errors
+      });
+    }
+
+    // Listen for input changes and render dynamically
+    markdownInput.addEventListener("input", renderMarkdown);
+
+    // Preload example Markdown
+    //     markdownInput.value = `
+    // # Markdown with Math
+
+    // This is **bold text**.
+
+    // Inline math examples:
+
+    // - \\(a + b = c\\) (works)
+    // - \\(a_n + b_n = c\\) (fixed)
+    // - \\(a_n + b = c\\) (works)
+    // - \\(a + b_n = c\\) (fixed)
+
+    // Block math:
+
+    // \\[
+    // E = mc^2
+    // \\]
+
+    // - List item 1
+    // - List item 2
+    //     `;
+    //     renderMarkdown(); // Trigger initial render
+  </script>
+</body>
+</html>
