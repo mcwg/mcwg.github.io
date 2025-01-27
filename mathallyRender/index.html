@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>mathally Render</title>
+  <title>MathAlly Render</title>
   <!-- showdown.js for Markdown parsing -->
   <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
   <!-- KaTeX for math rendering -->
@@ -22,6 +22,20 @@
       margin-bottom: 10px;
       font-size: 16px;
     }
+    button {
+      display: block;
+      margin-top: 0px;
+      padding: 10px 15px;
+      font-size: 16px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
     .rendered-output {
       border: 1px solid #ddd;
       padding: 10px;
@@ -39,6 +53,7 @@
 <body>
   <h1>MathAlly Renderer</h1>
   <textarea id="markdownInput" placeholder="Paste the full MathAlly reply here. It will show up with rendered math below."></textarea>
+  <button id="resetButton">Reset</button>
   <h2>Rendered Output</h2>
   <div id="renderedOutput" class="rendered-output"></div>
 
@@ -51,6 +66,7 @@
     // DOM elements
     const markdownInput = document.getElementById("markdownInput");
     const renderedOutput = document.getElementById("renderedOutput");
+    const resetButton = document.getElementById("resetButton");
 
     // Preprocess function to replace single backslashes with double backslashes
     function preprocessInput(input) {
@@ -81,29 +97,11 @@
     // Listen for input changes and render dynamically
     markdownInput.addEventListener("input", renderMarkdown);
 
-    // Preload example Markdown
-    //     markdownInput.value = `
-    // # Markdown with Math
-
-    // This is **bold text**.
-
-    // Inline math examples:
-
-    // - \\(a + b = c\\) (works)
-    // - \\(a_n + b_n = c\\) (fixed)
-    // - \\(a_n + b = c\\) (works)
-    // - \\(a + b_n = c\\) (fixed)
-
-    // Block math:
-
-    // \\[
-    // E = mc^2
-    // \\]
-
-    // - List item 1
-    // - List item 2
-    //     `;
-    //     renderMarkdown(); // Trigger initial render
+    // Reset button functionality
+    resetButton.addEventListener("click", () => {
+      markdownInput.value = ""; // Clear the text area
+      renderedOutput.innerHTML = ""; // Clear the rendered output
+    });
   </script>
 </body>
 </html>
