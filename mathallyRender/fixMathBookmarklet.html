@@ -11,7 +11,7 @@
         Drag the link below to your bookmarks bar (enable it in the "view" menu if not visible) to save the Fix-Math bookmarklet:
     </p>
     <p>
-        <a href="javascript:(function(){var script=document.createElement('script');script.type='text/javascript';script.src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML';document.getElementsByTagName('head')[0].appendChild(script);})();">
+        <a href="javascript:(function () { var script = document.createElement('script'); script.type = 'text/javascript'; script.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML'; script.onload = function () { MathJax.Hub.Config({ tex2jax: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']], processEscapes: true, skipTags: ['script','noscript','style','textarea'] } }); MathJax.Hub.Queue(['Typeset', MathJax.Hub]); }; document.getElementsByTagName('head')[0].appendChild(script); })();">
             Fix-Math!
         </a>
     </p>
