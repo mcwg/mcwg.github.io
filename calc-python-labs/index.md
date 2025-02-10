@@ -35,7 +35,7 @@ PENDING
 
 Which illustrate how Calculus-related conversations can look like when the LLM can run Python code by itself.
 
-*  [Lake Mead water volume by water level height](https://chatgpt.com/share/67a39359-654c-800d-82dc-9a36fca26556) using contour areas by height. 
+*  [Lake Mead water volume](https://chatgpt.com/share/67a39359-654c-800d-82dc-9a36fca26556) using contour areas by height. 
     -  DATA [here](2001-LakeMeadContourAreas.csv)
 *  [Fitting functions to Glucose data](https://chatgpt.com/share/67a61eae-8a28-800d-8781-ae4515934743)
 *  [Integration of lake mead flow rates and the FTC](https://chatgpt.com/share/67a619d4-cdec-800d-933d-0f7b56a10533)
