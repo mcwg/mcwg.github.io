@@ -6,6 +6,7 @@ We design materials that accommodate teaching in all environments, providing act
 Contact us at mcwg.contact@gmail.com, or [subscribe below](#subscribe-for-news) if you would like to hear of any updates to this page or resources we add. We appreciate any feedback and would love to hear about your experiences using them.
 
 ## Resources
+* [Calc Python Labs](https://mcwg.github.io/calc-python-labs/)
 * [Data Science Resources](https://mcwg.github.io/dataScienceResources)
 * [Covid-19](https://mcwg.github.io/covid/) teaching resources created by MCWG members.
 * [Climate Change](https://mcwg.github.io/climate/) teaching resources created by MCWG members.
