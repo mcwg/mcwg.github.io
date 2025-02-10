@@ -26,7 +26,7 @@ Pre-built Python notebooks that allow students to further explore Calculus conce
 
 * [Quick Reference Guide for Python](https://colab.research.google.com/github/mcwg/calc-python-labs/blob/main/Python-Quick-Reference.ipynb)
 
-All the labs and more info available at [github.com/mcwg/calc-python-labs](https://github.com/mcwg/calc-python-labs)
+All the labs and more info available at [https://github.com/mcwg/calc-python-labs](https://github.com/mcwg/calc-python-labs)
 
 #### How to use them
 
