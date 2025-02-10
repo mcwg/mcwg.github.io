@@ -27,7 +27,7 @@ Labs in which students are instructed to prompt an LLM to produce code and then 
 
 #### Samples
 
-PENDING
+******  PENDING *******
 
 <!-- *  [Riemann sums to approximate a definite integral](Lab-RiemannSumsLeft.pdf)
     - Sample [LLM generated code](https://drive.google.com/file/d/1X6BBo_qZ7Cr-XCIsVlHoymoHsRWud6hz/view?usp=sharing)
