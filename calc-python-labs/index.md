@@ -13,11 +13,12 @@ Available at [https://github.com/mcwg/calc-python-labs](github.com/mcwg/calc-pyt
 
 
 #### How to use them
+
 (Requires a Google account)
 
 *  Open one of the labs and press the `open in colab` button at the top. 
-*  Once in Colab, you will be able to run all the code and save your own copy (using the file menu).
-*  Students should save their own copy (once in colab) to be able to save their work and share it with their instructor.
+*  Once in Colab, you will be able to edit and run all the code.
+*  Students should save their own copy (using the file menu) to be able to save their work and share it with their instructor.
 
 
 
