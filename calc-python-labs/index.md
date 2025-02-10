@@ -4,7 +4,7 @@ February 2025
 
 ##  Calculus Python Notebook Labs
 
-Pre-built Jupyter notebooks that allow students to further explore Calculus concepts with Python and real data.
+Pre-built Python notebooks that allow students to further explore Calculus concepts with Python and real data.
 <!-- Labs to help students further explore calculus with Python and integrate data science into the calculus course. They are interactive Jupyter notebooks that allow students experiment, explore concepts, and summarize results. -->
 <!-- These labs use Python as an additional tool for integrating data science into calculus and further exploring calculus. They are a collection of interactive Jupyter notebooks intended as a set of labs to accompany a calculus course. Each interactive Jupyter notebook is a "virtual laboratory" where students experiment and explore concepts from calculus and summarize their results.  -->
 
@@ -39,7 +39,7 @@ Labs in which students are instructed to prompt an LLM to produce Python code re
 
 ##  Some interesting sample chatGPT conversations
 
-They illustrate how Calculus-related conversations can look like when the LLM can run Python code by itself (no Google Colab or Jupyter notebooks involved).
+They illustrate how Calculus-related conversations can look like when the LLM can run Python code by itself (no Google Colab or Python notebooks involved).
 
 *  [Lake Mead water volume](https://chatgpt.com/share/67a39359-654c-800d-82dc-9a36fca26556) using contour areas by height. Data that was used available [here](2001-LakeMeadContourAreas.csv).
 *  [Fitting functions to Glucose data](https://chatgpt.com/share/67a61eae-8a28-800d-8781-ae4515934743)
