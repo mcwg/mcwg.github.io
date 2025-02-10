@@ -4,15 +4,15 @@ February 2025
 
 ##  Calculus Python Notebook Labs
 
-[https://github.com/mcwg/calc-python-labs](github.com/mcwg/calc-python-labs)
+Available at [https://github.com/mcwg/calc-python-labs](github.com/mcwg/calc-python-labs)
 
-These labs use Python to help students further explore calculus with technology and integrate data science into the calculus course. They are interactive Jupyter notebooks where students experiment, explore concepts, and summarize results.
+These labs use Python to help students further explore calculus with technology and integrate data science into the calculus course. They are interactive Jupyter notebooks that allow students experiment, explore concepts, and summarize results.
 <!-- These labs use Python as an additional tool for integrating data science into calculus and further exploring calculus. They are a collection of interactive Jupyter notebooks intended as a set of labs to accompany a calculus course. Each interactive Jupyter notebook is a "virtual laboratory" where students experiment and explore concepts from calculus and summarize their results.  -->
 
 
 #### How to use them
-*  Just open one of the labs in the link and follow the `open in colab` button at the top.
-*  Students can save their own copy once in colab to be able to save their work.
+*  Just follow the link and open one of the labs and then press the `open in colab` button at the top.
+*  Students can save their own copy (once in colab) to be able to save their work.
 
 
 
@@ -35,8 +35,8 @@ PENDING
 
 Which illustrate how Calculus-related conversations can look like when the LLM can run Python code by itself.
 
-*  [Integration of lake mead flow rates and the FTC](https://chatgpt.com/share/67a619d4-cdec-800d-933d-0f7b56a10533)
-    -  DATA [here](lake-mead-rate.csv)
-*  [Lake Mead water volume by water level height](https://chatgpt.com/share/67a39359-654c-800d-82dc-9a36fca26556) using contour areas by height.
+*  [Lake Mead water volume by water level height](https://chatgpt.com/share/67a39359-654c-800d-82dc-9a36fca26556) using contour areas by height. 
     -  DATA [here](2001-LakeMeadContourAreas.csv)
 *  [Fitting functions to Glucose data](https://chatgpt.com/share/67a61eae-8a28-800d-8781-ae4515934743)
+*  [Integration of lake mead flow rates and the FTC](https://chatgpt.com/share/67a619d4-cdec-800d-933d-0f7b56a10533)
+    -  DATA [here](lake-mead-rate.csv)
