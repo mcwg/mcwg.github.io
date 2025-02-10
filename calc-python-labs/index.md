@@ -17,7 +17,7 @@ Available at [https://github.com/mcwg/calc-python-labs](github.com/mcwg/calc-pyt
 (Requires a Google account)
 
 *  Open one of the labs and press the `open in colab` button at the top. 
-*  Once in Colab, you will be able to edit and run all the code.
+*  Once in Colab, you will be able to edit and run all the Python code.
 *  Students should save their own copy (using the file menu) to be able to save their work and share it with their instructor.
 
 
@@ -39,10 +39,8 @@ Labs in which students are instructed to prompt an LLM to produce code and then 
 
 ##  Some interesting sample chatGPT conversations
 
-Which illustrate how Calculus-related conversations can look like when the LLM can run Python code by itself (no Jupyter notebooks involved).
+They illustrate how Calculus-related conversations can look like when the LLM can run Python code by itself (no Google Colab or Jupyter notebooks involved).
 
-*  [Lake Mead water volume](https://chatgpt.com/share/67a39359-654c-800d-82dc-9a36fca26556) using contour areas by height. 
-    -  DATA [here](2001-LakeMeadContourAreas.csv)
+*  [Lake Mead water volume](https://chatgpt.com/share/67a39359-654c-800d-82dc-9a36fca26556) using contour areas by height. Data that was used available [here](2001-LakeMeadContourAreas.csv).
 *  [Fitting functions to Glucose data](https://chatgpt.com/share/67a61eae-8a28-800d-8781-ae4515934743)
-*  [Integration of lake mead flow rates and the FTC](https://chatgpt.com/share/67a619d4-cdec-800d-933d-0f7b56a10533)
-    -  DATA [here](lake-mead-rate.csv)
+*  [Integration of lake mead flow rates and the FTC](https://chatgpt.com/share/67a619d4-cdec-800d-933d-0f7b56a10533). Data that was used available [here](lake-mead-rate.csv).
