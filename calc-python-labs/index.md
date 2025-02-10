@@ -6,7 +6,7 @@ February 2025
 
 Available at [https://github.com/mcwg/calc-python-labs](github.com/mcwg/calc-python-labs)
 
-These labs use Python to help students further explore calculus with technology and integrate data science into the calculus course. They are interactive Jupyter notebooks that allow students experiment, explore concepts, and summarize results.
+Labs to help students further explore calculus with Python and integrate data science into the calculus course. They are interactive Jupyter notebooks that allow students experiment, explore concepts, and summarize results.
 <!-- These labs use Python as an additional tool for integrating data science into calculus and further exploring calculus. They are a collection of interactive Jupyter notebooks intended as a set of labs to accompany a calculus course. Each interactive Jupyter notebook is a "virtual laboratory" where students experiment and explore concepts from calculus and summarize their results.  -->
 
 
