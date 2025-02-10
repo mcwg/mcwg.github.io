@@ -24,7 +24,7 @@ Available at [github.com/mcwg/calc-python-labs](https://github.com/mcwg/calc-pyt
 
 ## LLM + Colab labs
 
-Labs in which students are instructed to prompt an LLM to produce code and then run it and tweak it in Colab.
+Labs in which students are instructed to prompt an LLM to produce Python code related to Calculus concepts and then run it and tweak it in Colab.
 
 #### Samples
 
