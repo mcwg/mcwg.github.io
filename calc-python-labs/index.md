@@ -39,7 +39,7 @@ Labs in which students are instructed to prompt an LLM to produce code and then 
 
 ##  Some interesting sample chatGPT conversations
 
-Which illustrate how Calculus-related conversations can look like when the LLM can run Python code by itself.
+Which illustrate how Calculus-related conversations can look like when the LLM can run Python code by itself (no Jupyter notebooks involved).
 
 *  [Lake Mead water volume](https://chatgpt.com/share/67a39359-654c-800d-82dc-9a36fca26556) using contour areas by height. 
     -  DATA [here](2001-LakeMeadContourAreas.csv)
