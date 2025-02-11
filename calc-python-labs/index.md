@@ -42,15 +42,15 @@ All the labs and more info available at [https://github.com/mcwg/calc-python-lab
 
 Labs in which students are instructed to prompt an LLM to produce Python code related to Calculus concepts and then run it and tweak it in Colab.
 
-#### Samples
+*  [Instructions for students](InstructionsColab-LLM-Labs.pdf) about creating Python notebooks in Colab and asking an LLM to produce Python code to run in them.
 
-**\#\#\#\#\#\#  PENDING \#\#\#\#\#\#**
-
-<!-- *  [Riemann sums to approximate a definite integral](Lab-RiemannSumsLeft.pdf)
-    - Sample [LLM generated code](https://drive.google.com/file/d/1X6BBo_qZ7Cr-XCIsVlHoymoHsRWud6hz/view?usp=sharing)
-*  [Lake Mead volume integrating contour areas by height](Lab-LakeMeadVolume1.pdf)
-    - Sample [LLM generated code](https://colab.research.google.com/drive/1cwhIjRmjjlCMvQP04uL4WMR-jq-Lb31-?usp=sharing) -->
-
+#### Sample labs
+*  [1st Lab](LabAsst1.pdf) where students learn to ask chatGPT for some simple code.
+*  [Riemann sums to approximate a definite integral](RiemannSumsLeft.pdf)
+    - Sample [LLM-generated code](https://drive.google.com/file/d/1X6BBo_qZ7Cr-XCIsVlHoymoHsRWud6hz/view?usp=sharing)
+*  [Lake Mead volume by integrating cross dection areas by altitude](LakeMeadVolume1.pdf)
+    - Follow-up lab about [FTC part 2 and total volume at each altitude](LakeMeadVolume2.pdf)
+    - Sample [LLM generated code](https://colab.research.google.com/drive/1cwhIjRmjjlCMvQP04uL4WMR-jq-Lb31-?usp=sharing)
 
 
 ##  Some interesting sample chatGPT conversations
