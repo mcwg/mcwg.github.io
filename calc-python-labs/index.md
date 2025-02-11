@@ -40,6 +40,28 @@ All the labs and more info available at [https://github.com/mcwg/calc-python-lab
 
 ## LLM + Colab labs
 
+## LLM + Colab Labs  
+
+These labs guide students in using an LLM to generate Python code related to Calculus concepts, which they then execute and modify in Google Colab.
+
+### 📌 Instructions  
+Before starting, students should read the [Instructions for students](InstructionsColab-LLM-Labs.pdf) on creating Python notebooks in Colab and using an LLM to generate and execute code.
+
+### 🧪 Sample Labs  
+
+1. **[Intro to LLM + Colab](LabAsst1.pdf)**  
+   Students prompt an LLM to generate simple Python code, run it in Colab, and tweak it.
+
+2. **[Riemann Sums: Approximating Definite Integrals](RiemannSumsLeft.pdf)**  
+   - Students use Riemann sums to approximate integrals.  
+   - Sample Colab notebook: [LLM-generated code](https://colab.research.google.com/drive/1X6BBo_qZ7Cr-XCIsVlHoymoHsRWud6hz).
+
+3. **[Lake Mead Volume Calculation](LakeMeadVolume1.pdf)**  
+   - Computes lake volume by integrating cross-sectional areas at different altitudes.  
+   - **Follow-up lab**: [FTC Part 2 & Total Volume](LakeMeadVolume2.pdf).  
+   - Sample Colab notebook: [LLM-generated code](https://colab.research.google.com/drive/1cwhIjRmjjlCMvQP04uL4WMR-jq-Lb31-?usp=sharing).
+
+<!-- 
 Labs in which students are instructed to prompt an LLM to produce Python code related to Calculus concepts and then run it and tweak it in Colab.
 
 *  [Instructions for students](InstructionsColab-LLM-Labs.pdf) about creating Python notebooks in Colab and asking an LLM to produce Python code to run in them.
@@ -51,7 +73,7 @@ Labs in which students are instructed to prompt an LLM to produce Python code re
 *  [Lake Mead volume](LakeMeadVolume1.pdf) by integrating cross dection areas by altitude
     - [Follow-up lab](LakeMeadVolume2.pdf) about FTC part 2 and finding then total volume at each altitude.
     - Sample [LLM generated code](https://colab.research.google.com/drive/1cwhIjRmjjlCMvQP04uL4WMR-jq-Lb31-?usp=sharing) (opens un in Google Colab).
-
+ -->
 
 ##  Some interesting sample chatGPT conversations
 
