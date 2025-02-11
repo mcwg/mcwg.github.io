@@ -47,10 +47,10 @@ Labs in which students are instructed to prompt an LLM to produce Python code re
 #### Sample labs
 *  [1st Lab](LabAsst1.pdf) where students learn to ask chatGPT for some simple code.
 *  [Riemann sums to approximate a definite integral](RiemannSumsLeft.pdf)
-    - Sample [LLM-generated code](https://drive.google.com/file/d/1X6BBo_qZ7Cr-XCIsVlHoymoHsRWud6hz/view?usp=sharing)
+    - Sample [LLM-generated code](https://colab.research.google.com/drive/1X6BBo_qZ7Cr-XCIsVlHoymoHsRWud6hz) (opens un in Google Colab).
 *  [Lake Mead volume by integrating cross dection areas by altitude](LakeMeadVolume1.pdf)
-    - Follow-up lab about [FTC part 2 and total volume at each altitude](LakeMeadVolume2.pdf)
-    - Sample [LLM generated code](https://colab.research.google.com/drive/1cwhIjRmjjlCMvQP04uL4WMR-jq-Lb31-?usp=sharing)
+    - [Follow-up lab](LakeMeadVolume2.pdf) about FTC part 2 and finding then total volume at each altitude.
+    - Sample [LLM generated code](https://colab.research.google.com/drive/1cwhIjRmjjlCMvQP04uL4WMR-jq-Lb31-?usp=sharing) (opens un in Google Colab).
 
 
 ##  Some interesting sample chatGPT conversations
