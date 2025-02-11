@@ -38,16 +38,14 @@ All the labs and more info available at [https://github.com/mcwg/calc-python-lab
 
 
 
-## LLM + Colab labs
-
 ## LLM + Colab Labs  
 
 These labs guide students in using an LLM to generate Python code related to Calculus concepts, which they then execute and modify in Google Colab.
 
-### 📌 Instructions  
+####  Instructions  
 Before starting, students should read the [Instructions for students](InstructionsColab-LLM-Labs.pdf) on creating Python notebooks in Colab and using an LLM to generate and execute code.
 
-### 🧪 Sample Labs  
+#### Sample Labs  
 
 1. **[Intro to LLM + Colab](LabAsst1.pdf)**  
    Students prompt an LLM to generate simple Python code, run it in Colab, and tweak it.
@@ -57,7 +55,7 @@ Before starting, students should read the [Instructions for students](Instructio
    - Sample Colab notebook: [LLM-generated code](https://colab.research.google.com/drive/1X6BBo_qZ7Cr-XCIsVlHoymoHsRWud6hz).
 
 3. **[Lake Mead Volume Calculation](LakeMeadVolume1.pdf)**  
-   - Computes lake volume by integrating cross-sectional areas at different altitudes.  
+   - Students compute lake volume by integrating cross-sectional areas at different altitudes.  
    - **Follow-up lab**: [FTC Part 2 & Total Volume](LakeMeadVolume2.pdf).  
    - Sample Colab notebook: [LLM-generated code](https://colab.research.google.com/drive/1cwhIjRmjjlCMvQP04uL4WMR-jq-Lb31-?usp=sharing).
 
