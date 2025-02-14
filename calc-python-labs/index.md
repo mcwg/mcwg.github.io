@@ -57,7 +57,11 @@ Before starting, students should read the [Instructions for students](Instructio
 3. **[Lake Mead Volume Calculation](LakeMeadVolume1.pdf)**  
    - Students compute lake volume by integrating cross-sectional areas at different altitudes.  
    - Data file `LakeMeadAreas.csv` needed for the lab available [here](LakeMeadAreas.csv).
-   - **Follow-up lab**: [FTC Part 2 & Total Volume](LakeMeadVolume2.pdf), also uses the same [data file LakeMeadAreas.csv](LakeMeadAreas.csv) 
+   - Sample Colab notebook: [LLM-generated code](https://colab.research.google.com/drive/1cwhIjRmjjlCMvQP04uL4WMR-jq-Lb31-?usp=sharing).
+
+$. **[Follow-up lab: Lake Mead Volume and the FTC Part 2](LakeMeadVolume2.pdf)**  
+   - Students compute lake volume at different altitudes.
+   - Uses the same data file `LakeMeadAreas.csv` available [here](LakeMeadAreas.csv)
    - Sample Colab notebook: [LLM-generated code](https://colab.research.google.com/drive/1cwhIjRmjjlCMvQP04uL4WMR-jq-Lb31-?usp=sharing).
 
 <!-- 
