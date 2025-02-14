@@ -51,12 +51,13 @@ Before starting, students should read the [Instructions for students](Instructio
    Students prompt an LLM to generate simple Python code, run it in Colab, and tweak it.
 
 2. **[Riemann Sums: Approximating Definite Integrals](RiemannSumsLeft.pdf)**  
-   - Students use Riemann sums to approximate integrals.  
+   - Students use Riemann sums to approximate integrals.
    - Sample Colab notebook: [LLM-generated code](https://colab.research.google.com/drive/1X6BBo_qZ7Cr-XCIsVlHoymoHsRWud6hz).
 
 3. **[Lake Mead Volume Calculation](LakeMeadVolume1.pdf)**  
    - Students compute lake volume by integrating cross-sectional areas at different altitudes.  
-   - **Follow-up lab**: [FTC Part 2 & Total Volume](LakeMeadVolume2.pdf).  
+   - Data needed for the lab available [here](LakeMeadAreas.csv).
+   - **Follow-up lab**: [FTC Part 2 & Total Volume](LakeMeadVolume2.pdf), also uses the same [data](LakeMeadAreas.csv) 
    - Sample Colab notebook: [LLM-generated code](https://colab.research.google.com/drive/1cwhIjRmjjlCMvQP04uL4WMR-jq-Lb31-?usp=sharing).
 
 <!-- 
