@@ -82,6 +82,6 @@ Labs in which students are instructed to prompt an LLM to produce Python code re
 
 They illustrate how Calculus-related conversations can look like when the LLM can run Python code by itself (no Google Colab or Python notebooks involved).
 
-*  [Lake Mead water volume](https://chatgpt.com/share/67a39359-654c-800d-82dc-9a36fca26556) using contour areas by height. Data that was used available [here](2001-LakeMeadContourAreas.csv).
+*  [Lake Mead water volume](https://chatgpt.com/share/67a39359-654c-800d-82dc-9a36fca26556) using cross-sectional areas. Data that was used available [here](2001-LakeMeadContourAreas.csv).
 *  [Fitting functions to Glucose data](https://chatgpt.com/share/67a61eae-8a28-800d-8781-ae4515934743)
 *  [Integration of lake mead flow rates and the FTC](https://chatgpt.com/share/67a619d4-cdec-800d-933d-0f7b56a10533). Data that was used available [here](lake-mead-rate.csv).
