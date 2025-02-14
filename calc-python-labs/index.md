@@ -60,7 +60,7 @@ Before starting, students should read the [Instructions for students](Instructio
    - Sample Colab notebook: [LLM-generated code](https://colab.research.google.com/drive/1cwhIjRmjjlCMvQP04uL4WMR-jq-Lb31-?usp=sharing).
 
 4. **[Follow-up lab: Lake Mead Volume and the FTC Part 2](LakeMeadVolume2.pdf)**  
-   - Students compute lake volume at different water levels and plot the volume as a function of water level.
+   - Students compute lake volume at different water levels and plot the volume as a function of the water level.
    - Uses the same data file `LakeMeadAreas.csv` available [here](LakeMeadAreas.csv)
    - Sample Colab notebook: [LLM-generated code](https://colab.research.google.com/drive/1cwhIjRmjjlCMvQP04uL4WMR-jq-Lb31-?usp=sharing).
 
