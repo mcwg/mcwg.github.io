@@ -1,9 +1,9 @@
 var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
-  "id": "subsection-1",
+  "id": "MCWG-FAQ-2-4",
   "level": "1",
-  "url": "subsection-1.html",
+  "url": "MCWG-FAQ-2-4.html",
   "type": "Subsection",
   "number": "1",
   "title": "Consortium members’ contact info",
@@ -37,9 +37,9 @@ var ptx_lunr_docs = [
   "body": " Supertex is not working after I updated to MacOS Monterrey (October 2021)  This is due to changes in the python version that MacOS Monterrey ships with. One must tell MacOS to fall back to an older python version. Steps below:    Install pyenv and make it load the right version of Python for Supertex: brew install pyenv pyenv install 2.7.18 pyenv global 2.7.18 # bad idea if you use python3 but i don't     Then tell your terminal to know where to look for Python. In .zshenv if you use zsh, or in .profile if you use bash, add the following line at the end of the file (change eric to your user). export PATH=\"\/Users\/eric\/.pyenv\/shims:${PATH}\"     Check this worked by restarting your terminal and running python --version (you should get Python 2.7.18 )     Note: Elliot reports that he needed to install command line tools and xcode for all of this to work.  "
 },
 {
-  "id": "chapter-2",
+  "id": "MCWG-FAQ-4",
   "level": "1",
-  "url": "chapter-2.html",
+  "url": "MCWG-FAQ-4.html",
   "type": "Chapter",
   "number": "2",
   "title": "Using git",
@@ -55,9 +55,9 @@ var ptx_lunr_docs = [
   "body": " What are the abbreviations and conventions that we use for standard units like grams and miles per hour?  We do not use periods, and most units are lower case, even those that are derived from people's names, like hertz. However, Cartesian is an exception.      Replace this    With this     feet  ft    inches  in    centimeters  cm    pounds  lb    grams  gm    seconds  sec    gallons  gal    miles per hour  mph    feet per second  ft\/sec    kilometers per hour  km\/hr    decibel  dB    ante meridian  am    post meridian  pm    United State  US      We try to avoid abbreviating \"liters\". Also, we leave a space between the numeral and the unit, so we write 20 ft, not 20ft.  "
 },
 {
-  "id": "table-1",
+  "id": "abbreviationStandarUnits01-3",
   "level": "2",
-  "url": "abbreviationStandarUnits01.html#table-1",
+  "url": "abbreviationStandarUnits01.html#abbreviationStandarUnits01-3",
   "type": "Table",
   "number": "3.1.1",
   "title": "",
@@ -82,9 +82,9 @@ var ptx_lunr_docs = [
   "body": " Which TeX commands can I abbreviate?  We have created a number of macros that abbreviate commonly used TeX commands.      Replace this    With this     \\begin{enumerate}  \\bb    \\item  \\ii    \\end{enumerate}  \\ee    \\displaystyle  \\dsty    \\rightarrow  \\to    \\begin{eqnarray*}  \\beq    \\end{eqnarray*}  \\eeq     Figure~\\ref{blah}   \\fref{blah}     Table~\\ref{blah}   \\tref{blah}     Problem~\\ref{blah}   \\qref{blah}    Page~\\pageref{blah}  \\pref{blah}    \\Delta  \\D     "
 },
 {
-  "id": "table-2",
+  "id": "texCommandsAbbreviation01-3",
   "level": "2",
-  "url": "texCommandsAbbreviation01.html#table-2",
+  "url": "texCommandsAbbreviation01.html#texCommandsAbbreviation01-3",
   "type": "Table",
   "number": "3.3.1",
   "title": "",
@@ -100,9 +100,9 @@ var ptx_lunr_docs = [
   "body": " What are the latest editions of our books?      Book    Edition    Link     Algebra  2nd   Link at Wiley site     Precalc  6th   Link at Wiley site     Applied  6th   Link at Wiley site     Single  8th   Link at Wiley site     Multi  8th   Link at Wiley site      "
 },
 {
-  "id": "table-3",
+  "id": "latestEditions-2",
   "level": "2",
-  "url": "latestEditions.html#table-3",
+  "url": "latestEditions.html#latestEditions-2",
   "type": "Table",
   "number": "4.1.1",
   "title": "",
@@ -478,9 +478,9 @@ var ptx_lunr_docs = [
   "body": " What is the preferred convention for labelling figures and tables in Exercises?  All the names should be derived from the name of the exercise file. Then, when we rename the exercises in the final version, the labels on the figures and tables will all change with the name of the exercise file, and everything will remain unique and happy.  Let's assume the exercise file is named \"1-2dslgnp3.tex\".   Figures    If you have a single figure in the Question, it is labelled \"1-2dslgnp3 fig \".    If you have several figures in the Question, they are labelled \"1-2dslgnp3 figa \", \"1-2dslgnp3 figb \", etc. (The \"a\", \"b\" have nothing to do with parts (a) and (b) of the Question - if there are any.)    If you have a single figure in the Answer, it is labelled \"1-2dslgnp3 ans \".    If you have several figures in the Answer, they are labelled \"1-2dslgnp3 ansa \", \"1-2dslgnp3 ansb \", etc.    If you have several sets of several figures in the Answer, they are called \"1-2dslgnp3 ansa1 \", \"1-2dslgnp3 ansa2 \", \"1-2dslgnp3 ansb1 \", \"1-2dslgnp3 ansb2 \", etc.   Figures in the Short Answers inherit the labels used in the Answers.  Remember that the label used in a figure is the name of the TeX file that draws that figure.     Tables    If you have a single table in the Question, it is labelled \"1-2dslgnp3 tab \".    If you have several tables in the Question, they are labelled \"1-2dslgnp3 taba \", \"1-2dslgnp3 tabb \", etc.    If you have a single table in the Answer, it is labelled \"1-2dslgnp3 anstab \".    If you have several tables in the Answer, they are labelled \"1-2dslgnp3 anstaba \", \"1-2dslgnp3 anstabb \", etc.    If you have several sets of several tables in the Answer, they are called \"1-2dslgnp3 anstaba1 \", \"1-2dslgnp3 anstaba2 \", \"1-2dslgnp3ans tabb1 \", \"1-2dslgnp3ans tabb2 \", etc.    Tables in the Short Answers do not have labels.  Here is a simplified explanation for single figures and single tables, assuming the exercise file is named \"1-2dslgnp3.tex\".        Question    Answer    Short Answer      Figure   1-2dslgnp3 fig   1-2dslgnp3 ans   1-2dslgnp3 ans      Table   1-2dslgnp3 tab   1-2dslgnp3 anstab         "
 },
 {
-  "id": "table-4",
+  "id": "figuresAndTablesLabel01-5-6",
   "level": "2",
-  "url": "figuresAndTablesLabel01.html#table-4",
+  "url": "figuresAndTablesLabel01.html#figuresAndTablesLabel01-5-6",
   "type": "Table",
   "number": "15.4.1",
   "title": "",
@@ -496,9 +496,9 @@ var ptx_lunr_docs = [
   "body": " When do I put labels (numbers) and captions on tables?  That depends on whether the table is in the text or in an exercise\/problem, and, in the latter case, whether it is in the Question, Answer, or Short Answer. This table summarizes the various cases.        Text    Exercise\/Problem              Question    Answer    Short Answer      Label   Always  Sometimes  Usually  Never     Caption   Always  Never  Wisely  Never     As far as the Answers are concerned, a label (number) is usually useful. However, a caption should only be added if it helps give additional information. It is not worth writing in the caption things that are either obvious or better said in the text part of the Answer.  Here are typical table templates that can be cut, pasted, and modified. See also What is the preferred convention for labelling figures and tables in Exercises.      Table Template for Text    \\begin{stayfig} \\tinput[label] {\\begin{calctabular}{c|c|c|c|c} Time (hours) & 0 & 24 & 48 & 72\\\\ \\hline Temperature (F)& 75 & 75 & 75 & 75 \\end{calctabular}}{The caption lives here} \\end{stayfig}      Table Template for Question (with label)    \\begin{stayfig} \\tinput*[exercisenametab] {\\begin{calctabular}{c|c|c|c|c} Time (hours) & 0 & 24 & 48 & 72\\\\ \\hline Temperature (F)& 75 & 75 & 75 & 75 \\end{calctabular}} \\end{stayfig}      Table Template for Question (no label)    \\begin{stayfig} {\\begin{calctabular}{c|c|c|c|c} Time (hours) & 0 & 24 & 48 & 72\\\\ \\hline Temperature (F)& 75 & 75 & 75 & 75 \\end{calctabular}} \\end{stayfig}      Table Template for Answer    \\begin{stayfig} \\tinput*[exercisenametabans] {\\begin{calctabular}{c|c|c|c|c} Time (hours) & 0 & 24 & 48 & 72\\\\ \\hline Temperature (F)& 75 & 75 & 75 & 75 \\end{calctabular}} \\end{stayfig}      Table Template for Short Answer    \\begin{stayfig} {\\begin{calctabular}{c|c|c|c|c} Time (hours) & 0 & 24 & 48 & 72\\\\ \\hline Temperature (F)& 75 & 75 & 75 & 75 \\end{calctabular}} \\end{stayfig}     "
 },
 {
-  "id": "table-5",
+  "id": "tableLabels01-3",
   "level": "2",
-  "url": "tableLabels01.html#table-5",
+  "url": "tableLabels01.html#tableLabels01-3",
   "type": "Table",
   "number": "15.5.1",
   "title": "",
@@ -550,9 +550,9 @@ var ptx_lunr_docs = [
   "body": " In Exercises, when do we use $blah$ , $$blah$$ , and $\\dsty blah$ ?  It depends on whether we are writing a Question, Answer, or Short Answer.     In the Question.     If it is not part of a \\qset, we tend to avoid $\\dsty blah$ and to use $blah$ .    If it is part of a qset, then $\\dsty blah$ is useful where there are no words and we want the equation\/expression to be big as though centered, but we want it positioned next to the problem number. See for example Calculus page 126, Section 4.3 problems 27,28, and 30-34. They would all be too small if $blah$ was used and they would be centered (away from the problem number) if $$blah$$ was used.    We use $$blah$$ when we say something like  The number of sunflowers in a field is given by the cyclical sunflower equation: $$ S= 500\\sin t, $$ where $t$ is in years.  See for example Calculus p.161, Section 3-misc probs 73-76, 84.  Note: There is no blank line before the first $$ and after the second $$ .       In the Answer.     If the equation\/expression blah is complicated or important, we use $$blah$$ . (However, please see this .) If it is not, we use $blah$ . We seldom use $\\dsty blah$ .       In the Short Answer.     We only use $blah$ . We never, ever, under any circumstances use $$blah$$ and we never use $\\dsty blah$ , unless specifically requested.            Question    Answer    Short Answer      $blah$   Can use  Can use  Can use     $$blah$$   Can use  Can use  Never, ever use     $\\dsty blah$   Occasionally use in QSET  Seldom use  Never use     "
 },
 {
-  "id": "table-6",
+  "id": "dollarSign01-4",
   "level": "2",
-  "url": "dollarSign01.html#table-6",
+  "url": "dollarSign01.html#dollarSign01-4",
   "type": "Table",
   "number": "15.10.1",
   "title": "",
@@ -613,9 +613,9 @@ var ptx_lunr_docs = [
   "body": " If I have the choice between wording an exercise in a concise style or in a verbose style, which is preferable?  Concise, concise, concise! Here are some examples:      Replace this    With this     Without using a calculator  Without a calculator    Evaluate the following expressions  Evaluate    Suppose a population is growing  A population is growing    Assume f(x) is given by f(x) = x^2 .  Let f(x) = x^2 .    ..., and so ..., and so ...  ..., and .... So ...    Show your work.      Answer the following questions.      Do the following calculations       "
 },
 {
-  "id": "table-7",
+  "id": "conciseVsWording01-3",
   "level": "2",
-  "url": "conciseVsWording01.html#table-7",
+  "url": "conciseVsWording01.html#conciseVsWording01-3",
   "type": "Table",
   "number": "15.16.1",
   "title": "",
@@ -694,9 +694,9 @@ var ptx_lunr_docs = [
   "body": " The suggested way of naming exercise files is not unique if I am creating exercises for two different books. What do I do?  In What is the correct format and naming convention for exercise files? , a typical filename would be \"1-2dslnp001.tex\", which indicates that the exercise belongs in Chapter 1, Section 2, was written by David Lovelock (dsl), is a new problem (np), and is the first in this set. However, this does not identify the book or edition. The recommended way is to use \"1-2dsl X np001.tex\" where \" X \" is replaced by the appropriate letters, depending on the book.      For this book    Replace \"X\" by     Algebra, preliminary edition  g    Precalc, 3rd ed  pk    Applied, 3rd ed  ak    Single and Multi, 5th ed  q     Thus, exercises created for the algebra text are typically named something like \"1-2dsl g np001.tex\" instead of \"1-2dslnp001.tex\".   Note, we name the files after where they would have gone in the previous edition. For example, when writing exercises for Precalc 3rd, if the exercise would have been in Chapter 3, Section 5, of Precalc 2nd edition, the filename is 3-5dslpknp1.   "
 },
 {
-  "id": "table-8",
+  "id": "exerciseFilenameForDifferentBooks01-3",
   "level": "2",
-  "url": "exerciseFilenameForDifferentBooks01.html#table-8",
+  "url": "exerciseFilenameForDifferentBooks01.html#exerciseFilenameForDifferentBooks01-3",
   "type": "Table",
   "number": "15.24.1",
   "title": "",
@@ -712,18 +712,18 @@ var ptx_lunr_docs = [
   "body": " (**) Is there any pattern to the way we identify books and editions?   (2020) Outdated.   Yes. A two character code is used.  The first character is the book.      Book    First Character     Algebra  g    Precalc  p    Applied  a    Single and Multi  (blank)    Biomath  b     The second character is the edition.      Edition    Second Character     Preliminary  p    1st  f    2nd  k    3rd  t     4th    q      It is always assumed that we are creating new problems for the latest edition. Thus, to name a new-problem file for Single (of which the latest edition is the 4th), we use something like \"1-2dsl q np001.tex\", whereas to name a new-problem file for Precalc (of which the latest edition is the 2nd), we use something like \"1-2dsl pk np001.tex\". See What are the latest editions of our books? for the status of our books.   "
 },
 {
-  "id": "table-9",
+  "id": "codeForBooksAndEditions01-5",
   "level": "2",
-  "url": "codeForBooksAndEditions01.html#table-9",
+  "url": "codeForBooksAndEditions01.html#codeForBooksAndEditions01-5",
   "type": "Table",
   "number": "15.25.1",
   "title": "",
   "body": "    Book    First Character     Algebra  g    Precalc  p    Applied  a    Single and Multi  (blank)    Biomath  b    "
 },
 {
-  "id": "table-10",
+  "id": "codeForBooksAndEditions01-7",
   "level": "2",
-  "url": "codeForBooksAndEditions01.html#table-10",
+  "url": "codeForBooksAndEditions01.html#codeForBooksAndEditions01-7",
   "type": "Table",
   "number": "15.25.2",
   "title": "",
@@ -847,9 +847,9 @@ var ptx_lunr_docs = [
   "body": " What is the preferred convention for labeling figures and tables in Exercises?  All the names should be derived from the name of the exercise file. Then, when we rename the exercises in the final version, the labels on the figures and tables will all change with the name of the exercise file, and everything will remain unique and happy.  Let's assume the exercise file is named 1-2dslgnp3.tex .   Figures  Question statements:    If you have a single figure in the Question, it is labeled \"1-2dslgnp3 fig \".    If you have several figures in the Question, they are labeled \"1-2dslgnp3 figa \", \"1-2dslgnp3 figb \", etc. (The \"a\", \"b\" have nothing to do with parts (a) and (b) of the Question - if there are any.)    Answers:    If you have a single figure in the Answer, it is labeled \"1-2dslgnp3 ans \".    If you have several figures in the Answer, they are labeled \"1-2dslgnp3 ansa \", \"1-2dslgnp3 ansb \", etc.    If you have several sets of several figures in the Answer, they are called \"1-2dslgnp3 ansa1 \", \"1-2dslgnp3 ansa2 \", \"1-2dslgnp3 ansb1 \", \"1-2dslgnp3 ansb2 \", etc.    Short answers:    Figures in the Short Answers inherit the labels used in the Answers.    Remember that the label used in a figure is the name of the TeX file that draws that figure.    Tables  Question statements:    If you have a single table in the Question, it is labeled \"1-2dslgnp3 tab \".    If you have several tables in the Question, they are labeled \"1-2dslgnp3 taba \", \"1-2dslgnp3 tabb \", etc.    Answers:    If you have a single table in the Answer, it is labeled \"1-2dslgnp3 anstab \".    If you have several tables in the Answer, they are labeled \"1-2dslgnp3 anstaba \", \"1-2dslgnp3 anstabb \", etc.    If you have several sets of several tables in the Answer, they are called \"1-2dslgnp3 anstaba1 \", \"1-2dslgnp3 anstaba2 \", \"1-2dslgnp3 anstabb1 \", \"1-2dslgnp3 anstabb2 \", etc.    Short answers:    Tables in the Short Answers do not have labels.      Brief Summary  Here is a simplified explanation for single figures and single tables, assuming the exercise file is named \"1-2dslgnp3.tex\".        Question  Answer  Short Answer    Figure  1-2dslgnp3 fig   1-2dslgnp3 ans   1-2dslgnp3 ans     Table  1-2dslgnp3 tab   1-2dslgnp3 anstab          "
 },
 {
-  "id": "table-11",
+  "id": "LabelFigsExer-6-3-1",
   "level": "2",
-  "url": "LabelFigsExer.html#table-11",
+  "url": "LabelFigsExer.html#LabelFigsExer-6-3-1",
   "type": "Table",
   "number": "17.1.1",
   "title": "",
@@ -910,20 +910,29 @@ var ptx_lunr_docs = [
   "body": " What is the difference between stayfig and fakefig ?  Wherever you see stayfig , (for example, in ) it can be replaced with fakefig . The difference is whether the location of a figure is determined by you ( stayfig ) or by the TeX program ( fakefig ). The stayfig environment fixes the figure's location on the page. The fakefig environment allows figures to float about on the page.  The general rule is to use stayfig in the exercises and always use fakefig in the text. In fact, \"anyone who isn't Elliot should use fakefig in the text\".  "
 },
 {
+  "id": "bigfakefig",
+  "level": "1",
+  "url": "bigfakefig.html",
+  "type": "Section",
+  "number": "17.8",
+  "title": "I have a big figure or group of figures and it is overflowing to the right margin. How can I fix it? (bigfakefig)",
+  "body": " I have a big figure or group of figures and it is overflowing to the right margin. How can I fix it? (bigfakefig)   fakefig and stayfig automatically start at a more inward margin on the left. Use bigfakefig for full page wide figures.  For example:  \\begin{bigfakefig} \\finput*{19-1awectnp3fig2} \\end{bigfakefig}  "
+},
+{
   "id": "CollectionOfFigsTogether",
   "level": "1",
   "url": "CollectionOfFigsTogether.html",
   "type": "Section",
-  "number": "17.8",
+  "number": "17.9",
   "title": "I want to put a collection of figures together on a page. How do I do that?",
-  "body": " I want to put a collection of figures together on a page. How do I do that?  This depends on whether you want a separate caption for each figure, one caption for all the figures, or no captions. (For the general principles of creating figures Sometimes I want a figure with a number and a caption, sometimes with only a number, and sometimes with neither a number nor a caption. How do I do that? , and What is the difference between stayfig and fakefig ? first.)   Separate caption for each figure  Use  \\begin{fakefig} \\valign[b] { {\\finput{figa}{Caption1}}* {\\finput{figa}{Caption2}}\/ {\\finput{figc}{Caption3}} } \\end{fakefig}  Here   \\valign aligns the figures   [b] makes them bottom-aligned. You can use [c] (centered) and [t] (top-aligned) also.   * means put in some space. You can use ** (which means put in lots of space) also.   \/ means make a new line of figures.      One caption for all the figures  First create a file (say \"manyfig.tex\") containing  \\valign[b] { {\\input{figa}}* {\\input{figb}}\/ {\\input{figc}} }  Here    \\valign aligns the figures.   [b] makes them bottom-aligned. You can use [c] (centered) and [t] (top-aligned) also.   * means put in some space. You can use ** (which means put in lots of space) also.   \/ means make a new line of figures.   Then use  \\begin{fakefig} \\finput{manyfig}{Caption} \\end{fakefig}    No captions  First create a file (say \"manyfig.tex\") containing  \\valign[b] { {\\input{figa}}* {\\input{figb}}\/ {\\input{figc}} }  Here    \\valign aligns the figures.   [b] makes them bottom-aligned. You can use [c] (centered) and [t] (top-aligned) also.   * means put in some space. You can use ** (which means put in lots of space) also.   \/ means make a new line of figures.   Then use  \\begin{fakefig} \\finput*{manyfig} \\end{fakefig}   It is strictly forbidden for \\finput to input\/call another \\finput .  "
+  "body": " I want to put a collection of figures together on a page. How do I do that?  This depends on whether you want a separate caption for each figure, one caption for all the figures, or no captions. (For the general principles of creating figures Sometimes I want a figure with a number and a caption, sometimes with only a number, and sometimes with neither a number nor a caption. How do I do that? , and What is the difference between stayfig and fakefig ? first.)   Separate caption for each figure  Use  \\begin{fakefig} \\valign[b] { {\\finput{figa}{Caption1}}* {\\finput{figa}{Caption2}}\/ {\\finput{figc}{Caption3}} } \\end{fakefig}  Here   \\valign aligns the figures   [b] makes them bottom-aligned. You can use [c] (centered) and [t] (top-aligned) also.   * means put in some space. You can use ** (which means put in lots of space) also.   \/ means make a new line of figures.      One caption for all the figures  First create a file (say \"manyfig.tex\") containing  \\valign[b] { {\\input{figa}}* {\\input{figb}}\/ {\\input{figc}} }  Here    \\valign aligns the figures.   [b] makes them bottom-aligned. You can use [c] (centered) and [t] (top-aligned) also.   * means put in some space. You can use ** (which means put in lots of space) also.   \/ means make a new line of figures.   Then use  \\begin{fakefig} \\finput{manyfig}{Caption} \\end{fakefig}  It is strictly forbidden for \\finput to input\/call another \\finput .    No captions  First create a file (say \"manyfig.tex\") containing  \\valign[b] { {\\input{figa}}* {\\input{figb}}\/ {\\input{figc}} }  Here    \\valign aligns the figures.   [b] makes them bottom-aligned. You can use [c] (centered) and [t] (top-aligned) also.   * means put in some space. You can use ** (which means put in lots of space) also.   \/ means make a new line of figures.   Then use  \\begin{fakefig} \\finput*{manyfig} \\end{fakefig}    Full page wide figures  Use bigfakefig . See    "
 },
 {
   "id": "PlaceRomanNumeralOnFigCollection",
   "level": "1",
   "url": "PlaceRomanNumeralOnFigCollection.html",
   "type": "Section",
-  "number": "17.9",
+  "number": "17.10",
   "title": "How can I place a Roman numeral, like \"(IV)\", at the upper left-hand corner of a figure as is sometimes needed in a collection of figures?",
   "body": " How can I place a Roman numeral, like \"(IV)\", at the upper left-hand corner of a figure as is sometimes needed in a collection of figures?  To create a collection of figures, see I want to put a collection of figures together on a page. How do I do that? .  To place the Roman numeral \"(IV)\" at the upper left-hand corner of the figure generated by the file \"1-2dslnp003fig1.tex\", which currently contains  \\begin{aspic}|.75|(2.00,2.00) \\put(0,0){\\loadps{1-2dslnp003fig1.ps}} \\end{aspic}  change the first line to  \\begin{aspic}|.75|[(IV)](2.00,2.00)  "
 },
@@ -932,7 +941,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "UnitsInTextOrFigure.html",
   "type": "Section",
-  "number": "17.10",
+  "number": "17.11",
   "title": "Do I need to put the units (of the variables) in the text of an exercise and also in the figure of the exercise?",
   "body": " Do I need to put the units (of the variables) in the text of an exercise and also in the figure of the exercise?  No. Wherever possible, units should be on the figure, not in the text.  "
 },
@@ -941,7 +950,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "CrossReferencePageNumber02.html",
   "type": "Section",
-  "number": "17.11",
+  "number": "17.12",
   "title": "How do I cross reference an object using a page number?",
   "body": " How do I cross reference an object using a page number?   Follow this link   "
 },
@@ -950,7 +959,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "FigureAxisLabels.html",
   "type": "Section",
-  "number": "17.12",
+  "number": "17.13",
   "title": "What do I need to know when text is used to label the axes in a figure?",
   "body": " What do I need to know when text is used to label the axes in a figure?  Text should be in lower case (including the first letter) and in text mode. See Calculus, 3rd Edition, page 187, Figure 4.42, for an example.  "
 },
@@ -959,7 +968,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "UndefinedHollowPointInfFigure.html",
   "type": "Section",
-  "number": "17.13",
+  "number": "17.14",
   "title": "(**) How do I put a little circle on a graph indicating that a function is undefined at that point?",
   "body": " (**) How do I put a little circle on a graph indicating that a function is undefined at that point?  Look in the fig.tex file for the line  \\putlabel(0.01,.58)[c]{blah}  (the numbers will be depend on the selected point) and change {blah} to {\\whiteoutc{\\hollowcalcpoint}} , giving  \\putlabel(0.01,.58)[c]{\\whiteoutc{\\hollowcalcpoint}}  "
 },
@@ -968,7 +977,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "ManyFiguresInProblem.html",
   "type": "Section",
-  "number": "17.14",
+  "number": "17.15",
   "title": "How do I put many figures into a problem?",
   "body": " How do I put many figures into a problem?   Case 1: The problem asks about a single set of figures that are similar to each other in purpose  For example:   Which of Figures (I)--(IV) is a parabola?  Match Figures (I)--(IV) to statements (a)--(d).  For each Figures (a)--(d). what critical points can you see?   Note that, in general, if the figures make up parts of a problem, the figures should be (a)--(d), so that the solution can have parts (a)--(d).  In Case 1, we give the figures upper-left-hand corner labels, which happens in the filenamefig.tex file in the line  \\begin{aspic}|1|[(a)](2,2)  the [(a)] puts \"(a)\" in the upper-left-hand corner. The figures should be input, so that they don't have a label (i.e. no \"Figure 2.4.\"). For example  \\begin{stayfig} \\valign[b]{ {\\input{figa}} {\\input{figb}}\/ {\\input{figc}} {\\input{figd}} } \\end{stayfig}    Case 2: There are two sets of figures that are cross-related  For example   Match the functions in Figure 2.4 to their derivatives in Figure 2.5.  Figure 5.1 shows a graph of f(x). Write possible equations for the graphs (a)--(d) in Figure 5.2.  Figure 6.8 shows a population of gnus. Figure 6.9 shows a population of penguins.   In these cases, you want it to be very clear that the graphs serve different functions. In this case you use  \\begin{stayfig} \\finput*{fig1} \\end{stayfig} \\begin{stayfig} \\finput*{fig2} \\end{stayfig}  and fig1.tex and fig2.tex contain the figures or the arrays of figures necessary. In sets, you continue to label them (a)--(d) or (I)--(IV) as in Case 1.   "
 },
@@ -1027,9 +1036,9 @@ var ptx_lunr_docs = [
   "body": " How can I change the typeface to boldface?   link missing   Use {\\bf this is boldface} and this is not .  There are eight typeface commands that TeX understands:     \\rm  roman (normal) type    \\bf  boldface type    \\it  italics type    \\sc  small capitals type    \\sf  sans serif type    \\sl  slanted type    \\tt  typewriter style type    \\em  emphasized type      However, all these commands should be deleted before submitting CCHE files, unless the command is used for the same purpose as in the book. For example, \\em is used within references (see What style should we use when citing references to books, articles, or web sites? ); \\rm is used in superscripts and subscripts (see How do I TeX expressions like \"1^{st}\" and \"n^{th}\"? and When I use word subscripts (e.g. $r_{in}$ or $r_{\\hbox{in}}$) the word \"in\" is either in italics or too large. What should I be using? ); and \\bf is used when defining a new word in a defbox. In fact, \\em , \\rm , and \\bf are the only three typeface commands that we use. So text that looks italicized is actually emphasized.  "
 },
 {
-  "id": "table-12",
+  "id": "boldface01-5",
   "level": "2",
-  "url": "boldface01.html#table-12",
+  "url": "boldface01.html#boldface01-5",
   "type": "Table",
   "number": "19.4.1",
   "title": "",
@@ -1045,9 +1054,9 @@ var ptx_lunr_docs = [
   "body": " How can I change the type size?  Use {\\Large this text is larger than normal} and this is normal .  There are ten type size commands that TeX understands, going from smallest to largest:     \\tiny    \\scriptsize    \\footnotesize    \\small    \\normalsize    \\large    \\Large    \\LARGE    \\huge    \\Huge      However, all these commands should be deleted before submitting CCHE files , with two exceptions:    \\Huge should be used to get the attention of Elliot, Deb or any editor. See I know what I want to say, but I don't know enough TeX to express it. What do I do?.    \\scriptsize is sometimes used in the text in underbraces that contain explanatory comments.   "
 },
 {
-  "id": "table-13",
+  "id": "typeSize01-4",
   "level": "2",
-  "url": "typeSize01.html#table-13",
+  "url": "typeSize01.html#typeSize01-4",
   "type": "Table",
   "number": "19.5.1",
   "title": "",
@@ -1531,9 +1540,9 @@ var ptx_lunr_docs = [
   "body": " I want to create a sequence of equations, one below the other, with the equal signs lined up. How do I do that?  When you want to line up equations like this:     5  =  3 + 2    x  =  19 - 77z    q - x  =  y     you should use the following:  \\begin{eqnarray*} 5 & = & 3+2 \\\\ x & = & 19-77z \\\\ q-x & = & y \\end{eqnarray*}   Important: Notice that the last equation does not end with \"\\\\\". Also, don't have blank lines before \\begin{eqnarray*} , after \\end{eqnarray*} , or between them.   Also, this way of simplifying or evaluating the right-hand side an equation:  \\begin{eqnarray*} y & = & x^2+2x+x+2 \\\\ & = & x^2+3x+2 \\\\ & = & (x+1)(x+2). \\end{eqnarray*}  is preferred over this:  \\begin{eqnarray*} y & = & x^2+2x+x+2 \\\\ y & = & x^2+3x+2 \\\\ y & = & (x+1)(x+2). \\end{eqnarray*}  "
 },
 {
-  "id": "table-14",
+  "id": "sequenceOfEquations01-3",
   "level": "2",
-  "url": "sequenceOfEquations01.html#table-14",
+  "url": "sequenceOfEquations01.html#sequenceOfEquations01-3",
   "type": "Table",
   "number": "24.1.1",
   "title": "",
@@ -1828,9 +1837,9 @@ var ptx_lunr_docs = [
   "body": " (**) Rights and Wrongs   FIX URL  Fix table appearance       Where    Please don't do this    Please do this    Comment    Reference     Text  10ft.  10 ft  Space, but no period.   What are the abbreviations and conventions that we use for standard units like grams and miles per hour?     Text  $n^{th}$  $n^{\\rm th}$  Wrong sized superscript.   How do I TeX expressions like \"1^{st}\" and \"n^{th}\"?     Text  This is {\\it not} true.  This is {\\em not} true.  We do not use italics.   How can I change the typeface to boldface?     Text  We call this \"completing the square\".  We call this ``completing the square''.  Double quotation marks are produced by using the prime key (') twice when opening the quotation, and the backprime key (`) twice when closing the quotation.   What are some quick pointers on TeX?     Text  1,000  1000  Numbers between -10,000 and 10,000 do not have a comma.   Do we use 1000 or 1,000?     Text  $10,000$  $10,\\!000$  There is a spacing problem after the comma.   Do we use 1000 or 1,000?     Text  .5  0.5  Decimals should be preceded by an integer.   Do we use 0.5 or .5?     Text  1\/2  $1\/2$  The divide slash is too short.   What are some quick pointers on TeX?     Text  -2  $-2$  The minus sign is too short.   What are some quick pointers on TeX?     Text  $1\/6 \\approx 0.167$  $1\/6 = 0.167$  Use equal if the approximation is correct to the number of decimal places shown when rounded.   When do I use = and when do I use approximately equal ( \\approx )?     Text  \"parts (a) and (b)\"  \"parts~(a) and~(b)\"  The ~ prevents the \"(a)\" or \"(b)\" from being printed on a new line, which would look very odd.   I am creating an exercise that has parts (a), (b), (c), etc., and in part (c) I want to refer to part (a). How do I do that?     Text   \"left hand side\" \"co-ordinate\"    \"left-hand side\" \"coordinate\"   The standard usage consistent with previous books.      Text  \"Evaluate the following expressions\"  \"Evaluate\"  Be concise.   If I have the choice between wording an exercise in a concise style or in a verbose style, which is preferable?     Text  \"In this chapter we will show ...\"  \"In this chapter we show ...\"  Do not use future tense.   May I use the future tense?     Text  The sentence \"$y = x^2+x = x(x+1)$\"  \"We have $y = x^2+x = x(x+1)$.\"  Sentence started with a variable. Sentence did not end with a period.   May I start a sentence with a variable or a number? and Do I have to end a sentence with a period, even if an equation ends the sentence?     Text  \"When $x=3$, $y=1$.\"  \"When $x=3$, we find $y=1$.\"  The two variables should be separated with text.   The authorities get upset if I write something like: Since the leading term of the polynomial is $x^4$, $y$ goes to infinity. What should I have written?     Text  $x^\\frac{3}{4}$  $x^{3\/4}$  Fractions in exponents should be shilled.   When do I shill and when do I use $\\frac{}{}$ ?     Text  $\\times$  $\\cdot$  $\\times$ can be confused with the variable x.   When should I use \\times and when should I use \\cdot ?     Text   $$ a=b c=d $$    \\begin{eqnarray*} a&=&b \\\\ c&=&d \\end{eqnarray*}   The incorrect version generates the equation a=bc=d.   I want to create a sequence of equations, one below the other, with the equal signs lined up. How do I do that?                 Exercises   \\Question { blah }    \\Question{blah} or \\Question{ blah }   When moving between MACs, Unix, and Windows the incorrect version can generate an extra line between \"\\Question\" and \"{\", which causes havoc when TeXed. The same convention applies to \"\\Answer\" and \"\\ShortAnswer\".   What is the correct format and naming convention for exercise files?     Exercises  \\Answer{} or \\ShortAnswer{}  You are joking!  Exercises without Answers and ShortAnswers are not useful.   What is the correct format and naming convention for exercise files?                 Short Answer  $\\frac{3}{4}$  $3\/4$  Fractions in short answers should be shilled.   What do I need to know about short answers?     Short Answer  \\begin{across}...\\end{across}  \\begin{enumerate}...\\end{enumerate}  Short answers should not be formatted.   What do I need to know about short answers?     Short Answer  \\ShortAnswer {no.}  \\ShortAnswer{No}  Text that starts a short answer is capitalized. Short answers do not end with a period.   What do I need to know about short answers?     Short Answer  \\ShortAnswer {Not appropriate}  \\ShortAnswer{\\noshortanswer}  The correct format generates the standard output.   What do I need to know about short answers?      You can download a summary of these Do's and Don'ts as a 1-page link missing file (updated Sunday, January 11, 2004), which, when printed out, will look impressive beside your bed.  "
 },
 {
-  "id": "table-15",
+  "id": "RightsAndWrongs-3",
   "level": "2",
-  "url": "RightsAndWrongs.html#table-15",
+  "url": "RightsAndWrongs.html#RightsAndWrongs-3",
   "type": "Table",
   "number": "31.0.1",
   "title": "",
@@ -2098,9 +2107,9 @@ var ptx_lunr_docs = [
   "body": " What are the values that we use for common constants like g , the half-life of carbon-14, and the radius of the earth?     g  32 ft\/sec^2    g  9.8 m\/sec^2    half-life of carbon-14  5730 years    radius of earth  3960 miles    radius of earth  6400 km     "
 },
 {
-  "id": "table-16",
+  "id": "commonConstants01-2",
   "level": "2",
-  "url": "commonConstants01.html#table-16",
+  "url": "commonConstants01.html#commonConstants01-2",
   "type": "Table",
   "number": "34.16.1",
   "title": "",
@@ -2467,9 +2476,9 @@ var ptx_lunr_docs = [
   "body": " What commands do I use to get div , grad , and curl ?      To produce this    Enter this     div  \\div    grad  \\grad    curl  \\curl     "
 },
 {
-  "id": "table-17",
+  "id": "commandsToGetDivGradCurl01-2",
   "level": "2",
-  "url": "commandsToGetDivGradCurl01.html#table-17",
+  "url": "commandsToGetDivGradCurl01.html#commandsToGetDivGradCurl01-2",
   "type": "Table",
   "number": "35.3.1",
   "title": "",
@@ -2611,9 +2620,9 @@ var ptx_lunr_docs = [
   "body": " What argument should I use in \\asformat{} ?  The argument depends on the book you are contributing to.      Book    Argument     Algebra  ALGEBRA    Precalc  PRECALC    Applied  BUS    Single  CALC    Multi  MULTI    Combined  COMBO     For examples of its use, see I've installed and tested the algebra macros. Is there anything else I should do? . This list is not complete - there are others, for things like solutions' manuals, teacher's manuals, etc.  "
 },
 {
-  "id": "table-18",
+  "id": "asFormat01-3",
   "level": "2",
-  "url": "asFormat01.html#table-18",
+  "url": "asFormat01.html#asFormat01-3",
   "type": "Table",
   "number": "37.1.1",
   "title": "",
@@ -2701,9 +2710,9 @@ var ptx_lunr_docs = [
   "body": " What do a few simple math formulas look like in TeX?  Math formulas that are inline are surrounded by $ signs; math formulas that are centered on their own lines (display math) are surrounded by $$ signs.      To produce this    Enter this        $a+b$       $x^{2}\\geq 0$        $x_1 > \\pi$        $x \\ne 0$        $\\sqrt{x}+ \\sqrt[3]{x}$        $a\\times b + a\\cdot b \\to \\infty$       $\\frac{\\sin x}{x} \\pm 1$        $$ \\frac{\\sin x}{x} \\pm 1 $$        $x_1,\\ldots,x_n$                   $$ x_1+\\cdots+x_n=\\sum_{i=1}^{n}x_i $$      Search online for a more extensive list of TeX examples.  "
 },
 {
-  "id": "table-19",
+  "id": "TeXmathFormulas01-3",
   "level": "2",
-  "url": "TeXmathFormulas01.html#table-19",
+  "url": "TeXmathFormulas01.html#TeXmathFormulas01-3",
   "type": "Table",
   "number": "38.7.1",
   "title": "",

@@ -3,6 +3,7 @@
 <!-- To process this file you need Pretext installed in your system and run
 
 xsltproc <path to>/pretext/xsl/pretext-html.xsl <path to>/ConsortiumAuthorFAQ.xml
+(but you will need to copy the "_static" folder of regular pretext output into the <path to>/ConsortiumAuthorFAQ.xml for this page to load correctly.
 
 -->
 
@@ -2467,6 +2468,20 @@ xsltproc <path to>/pretext/xsl/pretext-html.xsl <path to>/ConsortiumAuthorFAQ.xm
                   The general rule is to use <c>stayfig</c> in the exercises and <b>always</b> use <c>fakefig</c> in the text.  In fact, "anyone who isn't Elliot should use <c>fakefig</c> in the text".
                 </p>
             </section>
+            <section xml:id="bigfakefig">
+                <title>I have a big figure or group of figures and it is overflowing to the right margin. How can I fix it? (bigfakefig) </title>
+                <p>
+                  <c>fakefig</c> and <c>stayfig</c> automatically start at a more inward margin on the left. Use <c>bigfakefig</c> for full page wide figures. 
+                </p>
+                <p>
+                  For example:
+                </p>
+                <pre>
+                    \begin{bigfakefig}
+                    \finput*{19-1awectnp3fig2}
+                    \end{bigfakefig}
+                </pre>
+            </section>
             <section xml:id="CollectionOfFigsTogether">
                 <title>I want to put a collection of figures together on a page. How do I do that?</title>
                 <p>
@@ -2547,6 +2562,9 @@ xsltproc <path to>/pretext/xsl/pretext-html.xsl <path to>/ConsortiumAuthorFAQ.xm
                         \finput{manyfig}{Caption}
                         \end{fakefig}
                     </pre>
+                    <p>
+                        It is strictly forbidden for <c>\finput</c> to input/call another <c>\finput</c>.
+                    </p>
                 </paragraphs>
                 <paragraphs>
                     <title>
@@ -2589,9 +2607,12 @@ xsltproc <path to>/pretext/xsl/pretext-html.xsl <path to>/ConsortiumAuthorFAQ.xm
                         \end{fakefig}
                     </pre>
                 </paragraphs>
-                <p>
-                    It is strictly forbidden for <c>\finput</c> to input/call another <c>\finput</c>.
-                </p>
+                <paragraphs>
+                  <title>Full page wide figures</title>
+                  <p>
+                    Use <c>bigfakefig</c>. See <xref ref="bigfakefig" text="type-global-title"/>
+                  </p>
+                </paragraphs>
             </section>
             <section xml:id="PlaceRomanNumeralOnFigCollection">
                 <title>How can I place a Roman numeral, like "(IV)", at the upper left-hand corner of a figure as is sometimes needed in a collection of figures?</title>
