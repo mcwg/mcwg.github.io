@@ -15,19 +15,6 @@ These resources are copyrighted ©*2020 John Wiley & Sons*.
 Contact us  at **mcwg.contact@gmail.com** to get access. 
 
 
-## Worksheets
-
-Curated selection of problems from the section together with the section summary.
-*  [Statements](bsec1-3act.pdf) for students.
-*  [Solutions](https://github.com/mcwg/DATA/blob/master/AppliedResources7e/test3/bsec1-3actsols.pdf) need github user access permissions (see above).
-*  [Desmos teacher interactive slides](https://teacher.desmos.com/activitybuilder/custom/6275400d6a2241368467fdf7)
-
-*  Embedded online versions of these exercises (run by WeBWorK).
-
-*  WileyPlus pre-made Homework with interactive online versions of these problems.
-
-   
-
 
 ## Ideas for In-Class Activities
 
@@ -46,6 +33,19 @@ From the Teacher Manual. See the teacher manual for comments about the activitie
 *  [Beamer source](https://github.com/mcwg/DATA/blob/master/AppliedResources7e/test3/beamerSlides.zip)
 *  [markdown source](https://github.com/mcwg/DATA/blob/master/AppliedResources7e/test3/test3.md) to generate all these files.
 
+
+## Worksheets
+
+Curated selection of problems from the section together with the section summary.
+*  [Statements](bsec1-3act.pdf) for students.
+*  [Solutions](https://github.com/mcwg/DATA/blob/master/AppliedResources7e/test3/bsec1-3actsols.pdf) need github user access permissions (see above).
+*  [Desmos teacher interactive slides](https://teacher.desmos.com/activitybuilder/custom/6275400d6a2241368467fdf7)
+
+*  Embedded online versions of these exercises (run by WeBWorK).
+
+*  WileyPlus pre-made Homework with interactive online versions of these problems.
+
+   
 
 ## PPTs to create your own pre-class videos
 
