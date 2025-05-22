@@ -6,14 +6,13 @@
 
 These resources are copyrighted ©*2020 John Wiley & Sons*.
 
-**Note:** The following links will only work if 
+**Note:** Some of the links have restricted access. They will work only if
 1. you are logged into github with your browser (login [here](https://github.com/login) and return to this site), and 
-2. we have given your github user access to the ConceptTest repository.  
+2. we have given your github user access to the files.  
 
 **If you do not have access, you will get a 404 "file not found" error.**  
 
 Contact us  at **mcwg.contact@gmail.com** to get access. 
-
 
 
 ## Ideas for In-Class Activities
