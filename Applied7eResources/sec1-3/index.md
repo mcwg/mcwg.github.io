@@ -19,7 +19,7 @@ Contact us  at **mcwg.contact@gmail.com** to get access.
 
 From the [Teacher Manual](https://mcwg.github.io/tmanApplied7e/). See the teacher manual for recommendations and more details about the activities.
 
-**Note:**All links here need github user access permissions (see above).
+**Note:** All links here need github user access permissions (see above).
 *  [Microsoft Word Handout](https://github.com/mcwg/DATA/blob/master/AppliedResources7e/test3/handoutWord.docx)
 *  [PowerPoint Slides With Activity Statements](https://github.com/mcwg/DATA/blob/master/AppliedResources7e/test3/slides.pptx)
 *  Desmos teacher interactive slides:
@@ -31,6 +31,17 @@ From the [Teacher Manual](https://mcwg.github.io/tmanApplied7e/). See the teache
 *  [LaTeX handout source](https://github.com/mcwg/DATA/blob/master/AppliedResources7e/test3/LaTeXHandout.zip)
 *  [Beamer source](https://github.com/mcwg/DATA/blob/master/AppliedResources7e/test3/beamerSlides.zip)
 *  [markdown source](https://github.com/mcwg/DATA/blob/master/AppliedResources7e/test3/test3.md) to generate all these files.
+
+## Concept tests
+
+Great way to quickly assess student understanding. Can be used with clickers.
+
+**Note:**All links here need github user access permissions (see above).
+*  [pdf with Concept Test Statements](https://github.com/mcwg/DATA/blob/master/AppliedConceptTests7e/1-3-ConceptTests-Applied7e-HughesHallet.pdf)
+*  [pdf with solutions](https://github.com/mcwg/DATA/blob/master/AppliedConceptTests7e/1-3-ConceptTests-Applied7e-HughesHallet-sols.pdf)
+*  PPT with Concept Test Statements
+*  Beamer Slides with Concept Test Statements   
+*  Sols solutions
 
 
 ## Worksheets
@@ -51,17 +62,6 @@ Curated selection of problems from the section together with the section summary
 *  PPT (worked out examples)
 *  markdown source? 
 
-
-## Concept tests
-
-Great way to quickly assess student understanding. Can be used with clickers.
-
-**Note:**All links here need github user access permissions (see above).
-*  [pdf with Concept Test Statements](https://github.com/mcwg/DATA/blob/master/AppliedConceptTests7e/1-3-ConceptTests-Applied7e-HughesHallet.pdf)
-*  [pdf with solutions](https://github.com/mcwg/DATA/blob/master/AppliedConceptTests7e/1-3-ConceptTests-Applied7e-HughesHallet-sols.pdf)
-*  PPT with Concept Test Statements
-*  Beamer Slides with Concept Test Statements   
-*  Sols solutions
 
 ## Section docs
 *  pdf of the section
