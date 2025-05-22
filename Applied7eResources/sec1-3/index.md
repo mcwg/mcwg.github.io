@@ -17,7 +17,7 @@ Contact us  at **mcwg.contact@gmail.com** to get access.
 
 ## Ideas for In-Class Activities
 
-From the Teacher Manual. See the teacher manual for comments about the activities.
+From the [Teacher Manual](https://mcwg.github.io/tmanApplied7e/). See the teacher manual for recommendations and more details about the activities.
 
 **Note:**All links here need github user access permissions (see above).
 *  [Microsoft Word Handout](https://github.com/mcwg/DATA/blob/master/AppliedResources7e/test3/handoutWord.docx)
