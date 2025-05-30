@@ -18,11 +18,12 @@ Contact us  at **mcwg.contact@gmail.com** to get access.
 <!-- **Note:** All links here need github user access permissions (see above). -->
 
 ### From the [Teacher Manual](https://mcwg.github.io/tmanCombo8e/)
-*  [pdf with ideas for the class (from the teacher manual)](https://github.com/mcwg/DATA/blob/master/tmanCombo8e/tmanSec2-1.pdf)
+*  [pdf with ideas for the class](https://github.com/mcwg/DATA/blob/master/tmanCombo8e/tmanSec2-1.pdf)
 
 
 ### Worksheets
-*  ???
+*  [How do we measure speed?](https://github.com/mcwg/DATA/blob/master/Single8eWorksheets/sec2-1-speed.pdf)
+*  [Angry Mike](https://github.com/mcwg/DATA/blob/master/Single8eWorksheets/sec-2-1-angryMike.pdf)
 
 
 ## Concept tests
