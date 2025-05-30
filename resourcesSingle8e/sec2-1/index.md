@@ -1,7 +1,7 @@
 # PROTOTYPE
-# Teaching Resources for Section 2-1. 
-## Key Concept: The Derivative
-## Calculus 8th Edition, Hughes-Hallett et al
+# Calculus 8th Edition, Hughes-Hallett et al
+## Teaching Resources for Section 2-1
+### Key Concept: The Derivative
 
 These resources are copyrighted ©*2020 John Wiley & Sons*.
 
@@ -70,7 +70,7 @@ With a short summary, a set of problems to work on (with or without solutions), 
 
 ## Coreq assesments
 
-Great way to figure out if your students needs some review.
+Great way to figure out if your students need some review before you get to this section.
 
 (USE CTs from precalc and algebra???)
 
