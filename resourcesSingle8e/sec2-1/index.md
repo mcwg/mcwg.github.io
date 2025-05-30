@@ -25,7 +25,7 @@ Contact us  at **mcwg.contact@gmail.com** to get access.
 *  [Angry Mike](https://github.com/mcwg/DATA/blob/master/Single8eWorksheets/sec-2-1-angryMike.pdf)
 
 
-## Concept tests
+## Concept Tests
 
 Great way to quickly assess student understanding. Can be used with clickers.
 
@@ -37,7 +37,7 @@ Great way to quickly assess student understanding. Can be used with clickers.
 *  Beamer Slides with Concept Test Statements
 
 
-## PPT for the section
+## PPT for the Section
 
 Very useful if you want to create your own pre-class videos. We recommend avoiding using these in class (better spend the class time doing some active-learning activities like suggested above, and working on concept tests).
 
@@ -55,9 +55,9 @@ Very useful if you want to create your own pre-class videos. We recommend avoidi
 
 *  WileyPlus pre-made Homework with interactive online versions of these problems. -->
 
-## Coreq materials for the section
+## Coreq Materials for the Section
 
-### Coreq assesments
+### Coreq Assesments
 
 Great way to figure out if your students need some review before you get to this section.
 
@@ -65,13 +65,13 @@ NOTE: TWO CTs for this section are good (slopes)
 
 (USE CTs from precalc and algebra???)
 
-### Coreq worksheets
+### Coreq Worksheets
 With a short summary, a set of problems to work on (with or without solutions), and assessment wrap-up questions to review student learning. Can be assigned for individual work, or be used in parallel coreq sessions.
 
 *  [Definition of functions and function notation](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec1-1coreq-sols.pdf), including different representations of  functions. Version without solutions also available [here](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec1-1coreq.pdf).
 *  [Input and output of functions](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec2-1coreq-sols.pdf) from expressions, graphs, tables. Version without solutions also available [here](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec2-1coreq.pdf).
 
-### Skill refresher exercises
+### Skill Refresher Exercises
 PDFs PENDING - skill refreshers of psec1-1 about expressions, and for psec1-2, 
 
 *  [Simplifying and evaluating expressions](temp1.md) 
