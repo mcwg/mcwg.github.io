@@ -29,7 +29,7 @@ Contact us  at **mcwg.contact@gmail.com** to get access.
     - [Single: Chapters 1 to 11](https://github.com/mcwg/DATA/blob/master/tmanCombo8e/tmanCombo8ePart5.pdf)
     - [Multi: Chapters 12 to 21](https://github.com/mcwg/DATA/blob/master/tmanCombo8e/tmanCombo8ePart5Multi.pdf)
     
-## Applied Teacher Manual
+## Applied Calculus Teacher Manual
 You may find other useful resources in the [Applied Teacher manual](https://mcwg.github.io/tmanApplied7e/).
 
 
