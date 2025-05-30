@@ -16,27 +16,35 @@ Contact us  at **mcwg.contact@gmail.com** to get access.
 ## Ideas for In-Class Activities
 <!-- **Note:** All links here need github user access permissions (see above). -->
 
-*  [pdf with ideas for class (from the teacher manual)](https://github.com/mcwg/DATA/blob/master/tmanCombo8e/tmanSec2-1.pdf)
+*  [pdf with ideas for the class (from the teacher manual)](https://github.com/mcwg/DATA/blob/master/tmanCombo8e/tmanSec2-1.pdf)
 
 See more details in the [Teacher Manual](https://mcwg.github.io/tmanCombo8e/).
-
-## PPT for the section
-
-*  [PPT slides (worked out examples)](https://github.com/mcwg/DATA/blob/master/PPTsSingle8e/Sec2-1.pptx)
 
 
 ## Concept tests
 
 Great way to quickly assess student understanding. Can be used with clickers.
 
-**Note:**All links here need github user access permissions (see above).
+<!-- **Note:** All links here need github user access permissions (see above). -->
 
 *  [pdf with Concept Test Statements](https://github.com/mcwg/DATA/blob/master/SingleConceptTests8e/2-1-ConceptTests-Single8e-HughesHallet.pdf)
 *  [pdf with solutions](https://github.com/mcwg/DATA/blob/master/SingleConceptTests8e/2-1-ConceptTests-Single8e-HughesHallet-sols.pdf)
 *  PPT with Concept Test Statements
 *  Beamer Slides with Concept Test Statements
 
+
+## PPT for the section
+
+Very useful if you want to create your own pre-class videos.
+
+*  [PPT slides (worked out examples)](https://github.com/mcwg/DATA/blob/master/PPTsSingle8e/Sec2-1.pptx)
+
+
+
+
 ## Worksheets
+
+?????
 
 <!-- Curated selection of problems from the section together with the section summary.
 *  [Statements](bsec1-3act.pdf) for students.
