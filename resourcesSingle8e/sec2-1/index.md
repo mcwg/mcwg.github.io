@@ -47,10 +47,19 @@ Great way to quickly assess student understanding. Can be used with clickers.
 
 *  WileyPlus pre-made Homework with interactive online versions of these problems. -->
 
-## Correq materials for the section
+## Coreq materials for the section
+
+### worksheets
+Self-contained worksheets with a short summary of what students need to review, a set of problems to work on (with or without worked out solutions), and assessment wrap up questions to review student learning.
+
+*  [Functions and Function Notation](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec1-1coreq-sols.pdf). Version without solutions also available [here](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec1-1coreq.pdf).
+*  [Input and output of functions](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec2-1coreq-sols.pdf) from expressions, graphs, tables. Version without solutions also available [here](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec2-1coreq.pdf)
+
+### Skill refresher exercises
+*  [simplifying and evaluating expressions]() PDF PENDING - skill refresher of psec1-1
 
 
-   
+
 <!-- 
 ## PPTs to create your own pre-class videos
 
