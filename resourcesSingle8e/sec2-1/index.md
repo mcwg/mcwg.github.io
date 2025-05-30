@@ -57,7 +57,7 @@ Very useful if you want to create your own pre-class videos. We recommend avoidi
 
 ## Coreq materials for the section
 
-## Coreq assesments
+### Coreq assesments
 
 Great way to figure out if your students need some review before you get to this section.
 
