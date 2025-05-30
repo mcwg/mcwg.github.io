@@ -35,7 +35,7 @@ Great way to quickly assess student understanding. Can be used with clickers.
 
 ## PPT for the section
 
-Very useful if you want to create your own pre-class videos.
+Very useful if you want to create your own pre-class videos. We recommend avoiding using these in class. Better spend the class time doing some active-learning activities like suggested above, and working on concept tests.
 
 *  [PPT slides (worked out examples)](https://github.com/mcwg/DATA/blob/master/PPTsSingle8e/Sec2-1.pptx)
 
