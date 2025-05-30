@@ -1,5 +1,4 @@
-# PROTOTYPE
-# Calculus 8th Edition, Hughes-Hallett et al
+# [[PROTOTYPE]] Calculus 8th Edition, Hughes-Hallett et al
 ## Teaching Resources for Section 2-1
 ## Key Concept: The Derivative
 
