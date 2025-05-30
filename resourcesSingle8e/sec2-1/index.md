@@ -1,5 +1,6 @@
 # PROTOTYPE
-# Teaching Resources for Section 2-1. Key Concept: The Derivative
+# Teaching Resources for Section 2-1. 
+## Key Concept: The Derivative
 ## Calculus 8th Edition, Hughes-Hallett et al
 
 These resources are copyrighted ©*2020 John Wiley & Sons*.
@@ -65,6 +66,13 @@ With a short summary, a set of problems to work on (with or without solutions), 
 
 ### Skill refresher exercises
 *  [Simplifying and evaluating expressions related to rates of change]() PDF PENDING - skill refreshers of psec1-1 about expressions, and for psec1-2, 
+
+
+## Coreq assesments
+
+Great way to figure out if your students needs some review.
+
+(USE CTs from precalc and algebra???)
 
 
 
