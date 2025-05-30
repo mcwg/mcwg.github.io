@@ -2,8 +2,6 @@
 # Teaching Resources for Section 2-1. Key Concept: The Derivative
 ## Calculus 8th Edition, Hughes-Hallett et al
 
---------------
-
 These resources are copyrighted ©*2020 John Wiley & Sons*.
 
 **Note:** Some of the links have restricted access. They will work only if
@@ -16,12 +14,11 @@ Contact us  at **mcwg.contact@gmail.com** to get access.
 
 
 ## Ideas for In-Class Activities
+<!-- **Note:** All links here need github user access permissions (see above). -->
 
-From the [Teacher Manual](https://mcwg.github.io/tmanCombo8e/).
+*  [pdf with ideas for class (from the teacher manual)](https://github.com/mcwg/DATA/blob/master/tmanCombo8e/tmanSec2-1.pdf)
 
-**Note:** All links here need github user access permissions (see above).
-
-*  [pdf with ideas for class](https://github.com/mcwg/DATA/blob/master/tmanCombo8e/tmanSec2-1.pdf)
+See more details in the [Teacher Manual](https://mcwg.github.io/tmanCombo8e/).
 
 ## PPT for the section
 
@@ -51,6 +48,8 @@ Great way to quickly assess student understanding. Can be used with clickers.
 *  WileyPlus pre-made Homework with interactive online versions of these problems. -->
 
 ## Correq materials for the section
+
+
    
 <!-- 
 ## PPTs to create your own pre-class videos
