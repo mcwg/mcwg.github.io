@@ -58,9 +58,7 @@ Very useful if you want to create your own pre-class videos. We recommend avoidi
 ## Coreq Materials for the Section
 
 ### Coreq Assesments
-[[IN PROGRESS]]
-
-Great way to figure out if your students need some review before you get to this section.
+[[IN PROGRESS]] Great way to figure out if your students need some review before you get to this section.
 
 NOTE: TWO CTs for this section are good (slopes)
 
@@ -71,6 +69,8 @@ With a short summary, a set of problems to work on (with or without solutions), 
 
 *  [Definition of functions and function notation](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec1-1coreq-sols.pdf), including different representations of  functions. Version without solutions also available [here](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec1-1coreq.pdf).
 *  [Input and output of functions](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec2-1coreq-sols.pdf) from expressions, graphs, tables. Version without solutions also available [here](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec2-1coreq.pdf).
+
+[[MORE HERE]]
 
 ### Skill Refresher Exercises
 [[IN PROGRESS]] PDFs PENDING - skill refreshers of psec1-1 about expressions, and for psec1-2, 
