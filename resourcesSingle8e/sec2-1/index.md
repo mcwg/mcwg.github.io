@@ -58,6 +58,7 @@ Very useful if you want to create your own pre-class videos. We recommend avoidi
 ## Coreq Materials for the Section
 
 ### Coreq Assesments
+[[IN PROGRESS]]
 
 Great way to figure out if your students need some review before you get to this section.
 
@@ -72,7 +73,7 @@ With a short summary, a set of problems to work on (with or without solutions), 
 *  [Input and output of functions](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec2-1coreq-sols.pdf) from expressions, graphs, tables. Version without solutions also available [here](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec2-1coreq.pdf).
 
 ### Skill Refresher Exercises
-PDFs PENDING - skill refreshers of psec1-1 about expressions, and for psec1-2, 
+[[IN PROGRESS]] PDFs PENDING - skill refreshers of psec1-1 about expressions, and for psec1-2, 
 
 *  [Simplifying and evaluating expressions](temp1.md) 
 
