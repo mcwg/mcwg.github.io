@@ -1,7 +1,7 @@
 # PROTOTYPE
 # Calculus 8th Edition, Hughes-Hallett et al
 ## Teaching Resources for Section 2-1
-### Key Concept: The Derivative
+## Key Concept: The Derivative
 
 These resources are copyrighted ©*2020 John Wiley & Sons*.
 
@@ -17,9 +17,12 @@ Contact us  at **mcwg.contact@gmail.com** to get access.
 ## Ideas for In-Class Activities
 <!-- **Note:** All links here need github user access permissions (see above). -->
 
+### From the [Teacher Manual](https://mcwg.github.io/tmanCombo8e/)
 *  [pdf with ideas for the class (from the teacher manual)](https://github.com/mcwg/DATA/blob/master/tmanCombo8e/tmanSec2-1.pdf)
 
-See more details in the [Teacher Manual](https://mcwg.github.io/tmanCombo8e/).
+
+### Worksheets
+*  ???
 
 
 ## Concept tests
@@ -43,10 +46,6 @@ Very useful if you want to create your own pre-class videos. We recommend avoidi
 
 
 
-## Worksheets
-
-?????
-
 <!-- Curated selection of problems from the section together with the section summary.
 *  [Statements](bsec1-3act.pdf) for students.
 *  [Solutions](https://github.com/mcwg/DATA/blob/master/AppliedResources7e/test3/bsec1-3actsols.pdf) need github user access permissions (see above).
@@ -58,8 +57,14 @@ Very useful if you want to create your own pre-class videos. We recommend avoidi
 
 ## Coreq materials for the section
 
+## Coreq assesments
+
+Great way to figure out if your students need some review before you get to this section.
+
+(USE CTs from precalc and algebra???)
+
 ### Coreq worksheets
-With a short summary, a set of problems to work on (with or without solutions), and assessment wrap-up questions to review student learning. Can be assigned for individual work, or be used in correq sessions.
+With a short summary, a set of problems to work on (with or without solutions), and assessment wrap-up questions to review student learning. Can be assigned for individual work, or be used in parallel coreq sessions.
 
 *  [Definition of functions and function notation](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec1-1coreq-sols.pdf), including different representations of  functions. Version without solutions also available [here](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec1-1coreq.pdf).
 *  [Input and output of functions](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec2-1coreq-sols.pdf) from expressions, graphs, tables. Version without solutions also available [here](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec2-1coreq.pdf).
@@ -67,12 +72,6 @@ With a short summary, a set of problems to work on (with or without solutions), 
 ### Skill refresher exercises
 *  [Simplifying and evaluating expressions related to rates of change]() PDF PENDING - skill refreshers of psec1-1 about expressions, and for psec1-2, 
 
-
-## Coreq assesments
-
-Great way to figure out if your students need some review before you get to this section.
-
-(USE CTs from precalc and algebra???)
 
 
 
