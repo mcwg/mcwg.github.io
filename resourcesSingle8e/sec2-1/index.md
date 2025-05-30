@@ -61,6 +61,8 @@ Very useful if you want to create your own pre-class videos. We recommend avoidi
 
 Great way to figure out if your students need some review before you get to this section.
 
+NOTE: TWO CTs for this section are good (slopes)
+
 (USE CTs from precalc and algebra???)
 
 ### Coreq worksheets
