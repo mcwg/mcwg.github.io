@@ -58,22 +58,52 @@ Very useful if you want to create your own pre-class videos. We recommend avoidi
 ## Coreq Materials for the Section
 
 ### Coreq Assesments
-[[IN PROGRESS]] Great way to figure out if your students need some review before you get to this section.
+Great way to figure out if your students need some review before you get to this section.
+
+If you find students need review, follow up with the corresponding coreq worksheet below.
+
+*  Definition of functions and function notation. 
+   -  from precalc CTs for 1-1:
+      +  1-1phct1
+      +  1-1phct3
+      +  1-1phct9
+      +  1-1phct10
+      +  
+*  Finding inputs and outputs of functions from expressions, graphs, tables. 
+   -  from precalc CTs for 2-1: (whittle down by looking at the list)
+      +  2-1cspkctp1
+      +  2-1cspkctp2
+      +  2-1cspkctp3
+      +  2-1cspkctp4
+      +  2-1cspkctp5
+      +  2-1cspkctp6
+      +  2-1cspkctp8
+      +  2-1cspkctp9
+      +  2-1cspkctp11
+      +  2-1cspkctp12
+      +  2-1cspkctp13
+
+*  Slopes
+   - from CT in single 1-1:
+      +  1-1ect4
+      +  1-1ect6
+   - from CT in single 2-1:
+      +  2-1ect4
+      +  2-1ect5
+   -  from precalc CTs
+      +  ins1-3phct4-7 (needs to be split up)
 
 NOTE: TWO CTs for this section are good (slopes)
-
-(USE CTs from precalc and algebra???)
 
 ### Coreq Worksheets
 With a short summary, a set of problems to work on (with or without solutions), and assessment wrap-up questions to review student learning. Can be assigned for individual work, or be used in parallel coreq sessions.
 
 *  [Definition of functions and function notation](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec1-1coreq-sols.pdf), including different representations of  functions. Version without solutions also available [here](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec1-1coreq.pdf).
-*  [Input and output of functions](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec2-1coreq-sols.pdf) from expressions, graphs, tables. Version without solutions also available [here](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec2-1coreq.pdf).
+*  [Finding inputs and outputs of functions](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec2-1coreq-sols.pdf) from expressions, graphs, tables. Version without solutions also available [here](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec2-1coreq.pdf).
 
-[[MORE HERE]]
+*  [[PENDING]] [Slope of a line and its units](error).
 
 ### Skill Refresher Exercises
-[[IN PROGRESS]] PDFs PENDING - skill refreshers of psec1-1 about expressions, and for psec1-2, 
 
 *  [Simplifying and evaluating expressions](temp1.md) 
 
