@@ -62,16 +62,19 @@ Great way to figure out if your students need some review before you get to this
 
 If you find students need review, follow up with the corresponding coreq worksheet below.
 
-
+*  [[PENDING]]From CT precalc:
+   +  display each of the "canonical exponentials" e^x, -e^x, e^(-x) and -e^(-x), and ask of they are concave up or concave down. Or use figs Figure 2.45---Figure 2.48 in pchap2.
+   +  2-6phct3
+   +  ins2-6phct12-17 (but needs to be split up).
 
 ### Coreq Worksheets
 With a short summary, a set of problems to work on (with or without solutions), and assessment wrap-up questions to review student learning. Can be assigned for individual work, or be used in parallel coreq sessions.
 
-
+*  [Identifying concavity](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec2-6coreq-sols.pdf) both graphically and numerically. Version without solutions also available [here](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec2-6coreq.pdf).
 
 ### Skill Refresher Exercises
 
-
+*  [Identifying increasing negative sequences of numbers](skillRefresh1.md)
 
 
 <!-- 
