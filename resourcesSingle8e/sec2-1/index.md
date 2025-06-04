@@ -110,8 +110,6 @@ With a short summary, a set of problems to work on (with or without solutions), 
 *  [Simplifying and evaluating expressions related to rates of change](temp2.md)
 
 
-
-
 <!-- 
 ## PPTs to create your own pre-class videos
 
