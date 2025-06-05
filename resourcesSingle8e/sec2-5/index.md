@@ -57,7 +57,7 @@ Very useful if you want to create your own pre-class videos. We recommend avoidi
 
 ## Coreq Materials for the Section
 
-### Quick Assessments
+### Quick quizzes
 Quickly figure out if your students need some review before you get to this section.
 
 If you find students need review, follow up with the corresponding coreq worksheet below.

@@ -1,3 +1,6 @@
+# Quick quiz
+## Identifying concavity
+
 <!-- +  display each of the "canonical exponentials" e^x, -e^x, e^(-x) and -e^(-x), and ask of they are concave up or concave down. Or use figs Figure 2.45---Figure 2.48 in pchap2. -->
 <!-- From CT precalc: -->
 <!-- +  2-6phct3 -->
