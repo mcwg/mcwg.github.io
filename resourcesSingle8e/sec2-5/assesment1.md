@@ -8,7 +8,7 @@
    (b) Concave down
    (c) Neither
 
-   <img width="577" src="assesment1-fig1.png" />
+   <img width="300" src="assesment1-fig1.png" />
 
 
 1. Concave up, concave down, or neither?
@@ -16,7 +16,7 @@
    (b) Concave down
    (c) Neither
 
-   <img width="577" src="assesment1-fig2.png" />
+   <img width="300" src="assesment1-fig2.png" />
 
 
 1. Concave up, concave down, or neither?
@@ -24,7 +24,7 @@
    (b) Concave down
    (c) Neither
 
-   <img width="577" src="assesment1-fig3.png" />
+   <img width="300" src="assesment1-fig3.png" />
 
 
 1. Concave up, concave down, or neither?
@@ -32,12 +32,15 @@
    (b) Concave down
    (c) Neither
 
-   <img width="577" src="assesment1-fig4.png" />
+   <img width="300" src="assesment1-fig4.png" />
 
 
 1. True or False? All functions have graphs that are either concave up or concave down.
    (a) True 
    (b) False 
+
+1. 
+   <img width="577" src="assesment1-fig6.png" />
 
 1. On the interval \(0\lt x\lt 1\), the graph is: 
    (a) Concave up
