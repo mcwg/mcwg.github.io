@@ -21,7 +21,7 @@ Contact us  at **mcwg.contact@gmail.com** to get access.
 
 
 ### Worksheets
-*  [The second derivatives](https://github.com/mcwg/DATA/blob/master/Single8eWorksheets/sec-2-5-theSecondDerivative.pdf)
+*  [The second derivative](https://github.com/mcwg/DATA/blob/master/Single8eWorksheets/sec-2-5-theSecondDerivative.pdf)
 *  [Plotting functions with different properties](https://github.com/mcwg/DATA/blob/master/Single8eWorksheets/sec-2-5-derivatives.pdf)
 
 
@@ -57,20 +57,18 @@ Very useful if you want to create your own pre-class videos. We recommend avoidi
 
 ## Coreq Materials for the Section
 
-### Coreq Assesments
-Great way to figure out if your students need some review before you get to this section.
+### Quick Assessments
+Quickly figure out if your students need some review before you get to this section.
 
 If you find students need review, follow up with the corresponding coreq worksheet below.
 
-*  [[PENDING]]From CT precalc:
-   +  display each of the "canonical exponentials" e^x, -e^x, e^(-x) and -e^(-x), and ask of they are concave up or concave down. Or use figs Figure 2.45---Figure 2.48 in pchap2.
-   +  2-6phct3
-   +  ins2-6phct12-17 (but needs to be split up).
+*  [Identifying concavity](assesment1.md)
+   
 
 ### Coreq Worksheets
 With a short summary, a set of problems to work on (with or without solutions), and assessment wrap-up questions to review student learning. Can be assigned for individual work, or be used in parallel coreq sessions.
 
-*  [Identifying concavity](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec2-6coreq-sols.pdf) both graphically and numerically. Version without solutions also available [here](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec2-6coreq.pdf).
+*  [Identifying concavity](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec2-6coreq-sols.pdf) verbally, graphically, and numerically. Version without solutions also available [here](https://github.com/mcwg/DATA/blob/master/coreqWorksheets/psec2-6coreq.pdf).
 
 ### Skill Refresher Exercises
 
