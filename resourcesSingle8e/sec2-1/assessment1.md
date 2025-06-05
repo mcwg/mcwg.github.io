@@ -9,4 +9,4 @@
 
 <!--  <img width="300" src="assesment1-fig1.png" /> -->
   
-Temporary: see [pdf](assesment1.pdf)
+Temporary: see [pdf](assessment1.pdf)
