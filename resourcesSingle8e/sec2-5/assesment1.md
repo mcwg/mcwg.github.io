@@ -45,7 +45,7 @@
 1. 
    <img width="577" src="assesment1-fig6.png" />
 
-1. On the interval \(0\lt x\lt 1\), the graph is: 
+1. On the interval $`0\lt x\lt 11`$, the graph is: 
    (a) Concave up
    (b) Concave down
    (c) Neither concave up nor concave down
@@ -56,7 +56,7 @@
 
 
 
-1. On the interval \(-3\lt x\lt 0\), the graph is: 
+1. On the interval $`-3\lt x\lt 01`$, the graph is: 
    (a) Concave up
    (b) Concave down
    (c) Neither concave up nor concave down
@@ -65,7 +65,7 @@
    <img width="577" src="assesment1-fig5.png" />
 
 
-1. On the interval \(-1\lt x\lt 1\), the graph is: 
+1. On the interval $`-1\lt x\lt 11`$, the graph is: 
    (a) Concave up
    (b) Concave down
    (c) Neither concave up nor concave down
@@ -74,7 +74,7 @@
    <img width="577" src="assesment1-fig5.png" />
 
 
-1. On the interval \(0\lt x\lt 2\), the graph is: 
+1. On the interval $`0\lt x\lt 21`$, the graph is: 
    (a) Concave up
    (b) Concave down
    (c) Neither concave up nor concave down
