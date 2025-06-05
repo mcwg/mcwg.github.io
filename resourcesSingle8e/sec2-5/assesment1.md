@@ -42,8 +42,8 @@
    (a) True  
    (b) False 
 
-1. 
-   <img width="700" src="assesment1-fig6.png" />
+1. <br/>
+   <img width="800" src="assesment1-fig6.png" />
 
 1. On the interval $0\lt x\lt 11$, the graph is:  
    (a) Concave up  
@@ -51,7 +51,7 @@
    (c) Neither concave up nor concave down  
    (d) Parts concave up, parts concave down  
    
-   <img width="577" src="assesment1-fig5.png" />
+   <img width="450" src="assesment1-fig5.png" />
    
 
 
@@ -62,7 +62,7 @@
    (c) Neither concave up nor concave down  
    (d) Parts concave up, parts concave down
    
-   <img width="577" src="assesment1-fig5.png" />
+   <img width="450" src="assesment1-fig5.png" />
 
 
 1. On the interval $-1\lt x\lt 11$, the graph is:  
@@ -71,7 +71,7 @@
    (c) Neither concave up nor concave down  
    (d) Parts concave up, parts concave down  
    
-   <img width="577" src="assesment1-fig5.png" />
+   <img width="450" src="assesment1-fig5.png" />
 
 
 1. On the interval $0\lt x\lt 21$, the graph is:  
@@ -80,4 +80,4 @@
    (c) Neither concave up nor concave down  
    (d) Parts concave up, parts concave down
    
-   <img width="577" src="assesment1-fig5.png" />
+   <img width="450" src="assesment1-fig5.png" />
