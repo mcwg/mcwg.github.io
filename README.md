@@ -7,7 +7,7 @@ Contact us at mcwg.contact@gmail.com, or [subscribe below](#subscribe-for-news) 
 
 ## Resources
 * [Calc Python Labs](https://mcwg.github.io/calc-python-labs/)
-* [Data Science Resources](https://mcwg.github.io/dataScienceResources)
+<!-- * [Data Science Resources](https://mcwg.github.io/dataScienceResources) -->
 * [Covid-19](https://mcwg.github.io/covid/) teaching resources created by MCWG members.
 * [Climate Change](https://mcwg.github.io/climate/) teaching resources created by MCWG members.
 <!-- * [Sample in-class Activity](https://mcwg.github.io/mathfest2021/mathFest2021In-class-activity.pdf) -->
