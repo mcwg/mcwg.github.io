@@ -14,12 +14,19 @@ This site provides a collection of hands-on labs that integrate Artificial Intel
 These labs guide students in using AI to generate Python code related to PreCalculus concepts, which they then execute and modify in Google Colab. The idea is to get students to use AI to learn Math, not just solve problems for them. Each lab focuses on a Precalculus concept in a context. 
 
 
-## Sample labs by context
+## Sample labs
 * (Linear functions) **Comparing Gas and EV car** ownership costs([pdf](lab-linear.pdf), or editable [Word format](lab-linear-export.docx)).
 * (Quadratic functions) **Modeling Football Kickoffs**  ([pdf](lab-quadratic.pdf), or editable [Word format](lab-quadratic-export.docx)).
 * (Exponential functions) **Analyzing movie releases per year** for various genres ([pdf](lab-exponential.pdf), or editable [Word format](lab-exponential-export.docx)).
 * (Periodic functions) **Thinking about Nascar and Formula 1** as a spectator to understand periodic functions ([pdf](lab-periodic.pdf), or editable [Word format](lab-periodic-export.docx)).
 * (Power functions) **Predicting city populations** with Zipf's law ([pdf](lab-power.pdf), or editable [Word format](lab-power-export.docx)).
+
+<!-- ## Sample labs by context
+* **Comparing Gas and EV car** ownership costs using *<u>linear functions</u>* ([pdf](lab-linear.pdf), or editable [Word format](lab-linear-export.docx)).
+* **Modeling Football Kickoffs** using *<u>quadratic functions</u>* ([pdf](lab-quadratic.pdf), or editable [Word format](lab-quadratic-export.docx)).
+* **Analyzing movie releases per year** for various genres using *<u>exponential functions</u>* ([pdf](lab-exponential.pdf), or editable [Word format](lab-exponential-export.docx)).
+* **Thinking about Nascar and Formula 1** as a spectator to understand *<u>periodic functions</u>* ([pdf](lab-periodic.pdf), or editable [Word format](lab-periodic-export.docx)).
+* **Predicting city populations** with Zipf's law using *<u>power functions</u>* ([pdf](lab-power.pdf), or editable [Word format](lab-power-export.docx)).
 
 
 ## Sample labs by function family
@@ -27,7 +34,7 @@ These labs guide students in using AI to generate Python code related to PreCalc
 *  **Quadratic functions** to model *<u>football kickoffs</u>* ([pdf](lab-quadratic.pdf), or editable [Word format](lab-quadratic-export.docx))
 *  **Exponential functions** to estimate *<u>movie releases per year</u>* for different genres ([pdf](lab-exponential.pdf), or editable [Word format](lab-exponential-export.docx)).
 *  **Power functions** to predict *<u>city populations using Zipf's Law</u>* ([pdf](lab-power.pdf), or editable [Word format](lab-power-export.docx)).
-*  **Periodic functions** to model the distance to a spectator of a *<u>Nascar or Formula 1</u>* car ([pdf](lab-periodic.pdf), or editable [Word format](lab-periodic-export.docx)).
+*  **Periodic functions** to model the distance to a spectator of a *<u>Nascar or Formula 1</u>* car ([pdf](lab-periodic.pdf), or editable [Word format](lab-periodic-export.docx)). -->
 
 
 ## Intro Lab (Lab-Zero)
