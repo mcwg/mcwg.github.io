@@ -6,14 +6,14 @@ We design materials that accommodate teaching in all environments, providing act
 Contact us at mcwg.contact@gmail.com, or [subscribe below](#subscribe-for-news) if you would like to hear of any updates to this page or resources we add. We appreciate any feedback and would love to hear about your experiences using them.
 
 ## Our books
-All our books are published by [John Wiley & Sons, Inc.](https://www.wiley.com). 
+Our books are published by [John Wiley & Sons, Inc.](https://www.wiley.com). 
 
-*  Calculus: Single and Multivariable, 8th Edition, 2020.
-*  Applied Calculus, 7th Edition, 2021.
-*  Functions Modeling Change: A Preparation for Calculus, 6th Edition, 2019.
-*  Algebra: Form and Function, 2nd Edition, 2014.
+*  Hughes-Hallett, McCallum, Gleason, et al, *Calculus: Single and Multivariable*, 8th Edition, 2020.
+*  Hughes-Hallett, Gleason, Lock, Flath, et al, *Applied Calculus*, 7th Edition,  2021.
+*  Connally, Hughes-Hallett, Gleason, et al, *Functions Modeling Change: A Preparation for Calculus*, 6th Edition, 2019.
+*  McCallum, Connally, Hughes-Hallett, et al, *Algebra: Form and Function*, 2nd Edition, 2014.
 
-The leader of the Consortium is Deborah Hughes-Hallett, recipient of the 2022 AMS Award for Impact on the Teaching and Learning of Mathematics.
+<!-- The leader of the Consortium is Deborah Hughes-Hallett, recipient of the 2022 AMS Award for Impact on the Teaching and Learning of Mathematics. -->
 
 
 
