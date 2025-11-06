@@ -26,12 +26,12 @@ These labs guide students in using AI to generate Python code related to Precalc
 * Power functions
    -  **Predicting city populations** with Zipf's law ([pdf](lab-power.pdf), or editable [Word format](lab-power-export.docx)).
 
-## Sample labs
+<!-- ## Sample labs
 * (Linear functions) **Comparing Gas and EV car** ownership costs ([pdf](lab-linear.pdf), or editable [Word format](lab-linear-export.docx)).
 * (Quadratic functions) **Modeling Football Kickoffs**  ([pdf](lab-quadratic.pdf), or editable [Word format](lab-quadratic-export.docx)).
 * (Exponential functions) **Analyzing movie releases per year** for various genres ([pdf](lab-exponential.pdf), or editable [Word format](lab-exponential-export.docx)).
 * (Periodic functions) **Thinking about Nascar and Formula 1** as a spectator ([pdf](lab-periodic.pdf), or editable [Word format](lab-periodic-export.docx)).
-* (Power functions) **Predicting city populations** with Zipf's law ([pdf](lab-power.pdf), or editable [Word format](lab-power-export.docx)).
+* (Power functions) **Predicting city populations** with Zipf's law ([pdf](lab-power.pdf), or editable [Word format](lab-power-export.docx)). -->
 
 <!-- ## Sample labs by context
 * **Comparing Gas and EV car** ownership costs using *<u>linear functions</u>* ([pdf](lab-linear.pdf), or editable [Word format](lab-linear-export.docx)).
