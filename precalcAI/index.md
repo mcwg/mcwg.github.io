@@ -1,9 +1,17 @@
+---
+title: "Precalculus AI Labs"
+description: "AI-assisted labs for teaching Precalculus through real-world data and Python modeling."
+---
+
 # Precalculus AI labs
 
 October 2025
 
 
-These labs guide students in using Artificial Intelligence (AI) to generate Python code related to PreCalculus concepts, which they then execute and modify in Google Colab. The idea is to get students to use AI to learn Math, not just solve problems for them. Each lab focuses on a Precalculus concept in a context. 
+This site provides a collection of hands-on labs that integrate Artificial Intelligence (AI) tools into learning and teaching Precalculus concepts.
+
+
+These labs guide students in using AI to generate Python code related to PreCalculus concepts, which they then execute and modify in Google Colab. The idea is to get students to use AI to learn Math, not just solve problems for them. Each lab focuses on a Precalculus concept in a context. 
 
 
 ## Sample labs by context
@@ -11,7 +19,7 @@ These labs guide students in using Artificial Intelligence (AI) to generate Pyth
 * **Modeling Football Kickoffs** using *quadratic functions* ([pdf](lab-quadratic.pdf), or editable [Word format](lab-quadratic-export.docx)).
 * **Analyzing movie releases per year** for various genres using *exponential functions* ([pdf](lab-exponential.pdf), or editable [Word format](lab-exponential-export.docx)).
 * **Thinking about Nascar and Formula 1** as a spectator to understand *periodic functions* ([pdf](lab-periodic.pdf), or editable [Word format](lab-periodic-export.docx)).
-* **Predicating city poplations** with Zipf's law using *power functions* ([pdf](lab-power.pdf), or editable [Word format](lab-power-export.docx)).
+* **Predicting city populations** with Zipf's law using *power functions* ([pdf](lab-power.pdf), or editable [Word format](lab-power-export.docx)).
 
 
 ## Sample labs by function family
@@ -23,7 +31,7 @@ These labs guide students in using Artificial Intelligence (AI) to generate Pyth
 
 
 ## Intro Lab (Lab-Zero)
-This lab shows students an how to use AI and Google Colab so they can use them in other labs as they learn the math.
+This lab shows students how to use AI and Google Colab so they can use them in other labs as they learn the math.
 *  Lab zero (coming soon)
 
 
@@ -34,7 +42,7 @@ The labs serve as a friendly introduction to working with AI, data, and programm
 
 
 ## Contact us
-If you use them and want to share your experience, are interested in collaborating to build more labs like these, or want to share with is similar ones you have built, we would love to hear from you. Contact us at mcwg.contact@gmail.com, 
+If you use them and want to share your experience, are interested in collaborating to build more labs like these, or want to share with us similar ones you have built, we would love to hear from you. Contact us at mcwg.contact@gmail.com, 
 
 
 ## Subscribe for news
@@ -46,3 +54,6 @@ We would love to hear your experience.
 ## Interested in Collaborating to build more labs like these or sharing similar ones you have built?
 We would love to hear from you.
 Contact us at  -->
+
+---
+© 2025 MCWG. 
