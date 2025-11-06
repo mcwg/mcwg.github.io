@@ -15,8 +15,8 @@ These labs guide students in using AI to generate Python code related to PreCalc
 
 
 ## Sample labs by context
-* **Comparing Gas and EV car** ownership costs using *<u>linear functions</u>* ([pdf](lab-linear.pdf), or editable [Word format](lab-linear-export.docx)).
-* **Modeling Football Kickoffs** using *<u>quadratic functions</u>* ([pdf](lab-quadratic.pdf), or editable [Word format](lab-quadratic-export.docx)).
+* **Comparing Gas and EV car** ownership costs using **linear functions** ([pdf](lab-linear.pdf), or editable [Word format](lab-linear-export.docx)).
+* **Modeling Football Kickoffs** using **quadratic functions** ([pdf](lab-quadratic.pdf), or editable [Word format](lab-quadratic-export.docx)).
 * **Analyzing movie releases per year** for various genres using *<u>exponential functions</u>* ([pdf](lab-exponential.pdf), or editable [Word format](lab-exponential-export.docx)).
 * **Thinking about Nascar and Formula 1** as a spectator to understand *<u>periodic functions</u>* ([pdf](lab-periodic.pdf), or editable [Word format](lab-periodic-export.docx)).
 * **Predicting city populations** with Zipf's law using *<u>power functions</u>* ([pdf](lab-power.pdf), or editable [Word format](lab-power-export.docx)).
