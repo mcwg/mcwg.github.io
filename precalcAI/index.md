@@ -36,13 +36,14 @@ This lab shows students how to use AI and Google Colab so they can use them in o
 
 
 ## More about the labs
-The labs guide students through using AI to generate models in engaging real-world contexts,  so that they can focus on the math using the rule of 4: understanding the model graphically, numerically, algebraically, and verbally. Meanwhile, the students learn to communicate effectively with an LLM to harness its power including by generating Python code. The real contexts also teach the students about finding, verifying the source of, and using data with the help of an LLM.
+The labs guide students through using AI to generate models in engaging real-world contexts,  so that they can focus on the math using the rule of 4: understanding the model graphically, numerically, algebraically, and verbally. Meanwhile, students learn to communicate effectively with an LLM to harness its power, including generating Python code. The real contexts also teach the students about finding, verifying the source of, and using data with the help of an LLM.
 
 The labs serve as a friendly introduction to working with AI, data, and programming as students learn Math. Easy to use for students and instructors: no prior experience needed. Instructors can integrate them into a standard Precalculus or Calculus course as in-class activities (perhaps replacing a lecture) or homework. Being self-contained, they are also appropriate as add-ons to an existing course.
 
+---
 
 ## Contact us
-If you use them and want to share your experience, are interested in collaborating to build more labs like these, or want to share with us similar ones you have built, we would love to hear from you. Contact us at mcwg.contact@gmail.com, 
+If you use them and want to share your experience, are interested in collaborating to build more labs like these, or want to share with us similar ones you have built, we would love to hear from you. Contact us at mcwg.contact@gmail.com.
 
 
 ## Subscribe for news
