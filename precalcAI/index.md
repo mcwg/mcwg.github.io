@@ -7,19 +7,19 @@ These labs guide students in using an LLM to generate Python code related to Pre
 
 
 ## Sample labs by context
-**Comparing Gas and EV car** usage costs using *linear functions* ([pdf](lab-linear.pdf), or editable [Word format](lab-linear-export.docx)).
-**Modeling Football Kickoffs** using *quadratic functions* ([pdf](lab-quadratic.pdf), or editable [Word format](lab-quadratic-export.docx)).
-**Analyzing movie releases per year** for various genres using *exponential functions* ([pdf](lab-exponential.pdf), or editable [Word format](lab-exponential-export.docx)).
-**Thinking about Nascar and Formula 1** as a spectator to understand *periodic functions* ([pdf](lab-periodic.pdf), or editable [Word format](lab-periodic-export.docx)).
-**Predicating city poplations** with Zipf's law using *power functions* ([pdf](lab-power.pdf), or editable [Word format](lab-power-export.docx)).
+* ***Comparing Gas and EV car** usage costs using *linear functions* ([pdf](lab-linear.pdf), or editable [Word format](lab-linear-export.docx)).
+* **Modeling Football Kickoffs** using *quadratic functions* ([pdf](lab-quadratic.pdf), or editable [Word format](lab-quadratic-export.docx)).
+* **Analyzing movie releases per year** for various genres using *exponential functions* ([pdf](lab-exponential.pdf), or editable [Word format](lab-exponential-export.docx)).
+* **Thinking about Nascar and Formula 1** as a spectator to understand *periodic functions* ([pdf](lab-periodic.pdf), or editable [Word format](lab-periodic-export.docx)).
+* **Predicating city poplations** with Zipf's law using *power functions* ([pdf](lab-power.pdf), or editable [Word format](lab-power-export.docx)).
 
 
 ## Sample labs by function family
-**Linear functions** to compare costs of *gas and electric cars* ([pdf](lab-linear.pdf), or editable [Word format](lab-linear-export.docx)).
-**Quadratic functions** to model *football kickoffs* ([pdf](lab-quadratic.pdf), or editable [Word format](lab-quadratic-export.docx))
-**Exponential functions** to estimate *movie releases per year* for different genres ([pdf](lab-exponential.pdf), or editable [Word format](lab-exponential-export.docx)).
-**Power functions** to predict *city populations using Zipf's Law* ([pdf](lab-power.pdf), or editable [Word format](lab-power-export.docx)).
-**Periodic functions** to model the distance to a spectator of a *Nascar or Formula 1* car ([pdf](lab-periodic.pdf), or editable [Word format](lab-periodic-export.docx)).
+*  **Linear functions** to compare costs of *gas and electric cars* ([pdf](lab-linear.pdf), or editable [Word format](lab-linear-export.docx)).
+*  **Quadratic functions** to model *football kickoffs* ([pdf](lab-quadratic.pdf), or editable [Word format](lab-quadratic-export.docx))
+*  **Exponential functions** to estimate *movie releases per year* for different genres ([pdf](lab-exponential.pdf), or editable [Word format](lab-exponential-export.docx)).
+*  **Power functions** to predict *city populations using Zipf's Law* ([pdf](lab-power.pdf), or editable [Word format](lab-power-export.docx)).
+*  **Periodic functions** to model the distance to a spectator of a *Nascar or Formula 1* car ([pdf](lab-periodic.pdf), or editable [Word format](lab-periodic-export.docx)).
 
 
 ## Intro Lab (Lab-Zero)
