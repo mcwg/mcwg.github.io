@@ -40,7 +40,6 @@ The labs guide students through using AI to generate models in engaging real-wor
 
 The labs serve as a friendly introduction to working with AI, data, and programming as students learn Math. Easy to use for students and instructors: no prior experience needed. Instructors can integrate them into a standard Precalculus or Calculus course as in-class activities (perhaps replacing a lecture) or homework. Being self-contained, they are also appropriate as add-ons to an existing course.
 
----
 
 ## Contact us
 If you use them and want to share your experience, are interested in collaborating to build more labs like these, or want to share with us similar ones you have built, we would love to hear from you. Contact us at mcwg.contact@gmail.com.
