@@ -11,11 +11,23 @@ October 2025
 A collection of hands-on labs that integrate Artificial Intelligence (AI) tools into learning and teaching Precalculus concepts.
 
 
-These labs guide students in using AI to generate Python code related to PreCalculus concepts, which they then execute and modify in Google Colab. The idea is to get students to use AI to learn Math, not just solve problems for them. Each lab focuses on a Precalculus concept in a context. 
+These labs guide students in using AI to generate Python code related to Precalculus concepts, which they then execute and modify in Google Colab. The idea is to get students to use AI to learn Math, not just solve problems for them. Each lab focuses on a Precalculus concept in a context. 
 
 
 ## Sample labs
-* (Linear functions) **Comparing Gas and EV car** ownership costs([pdf](lab-linear.pdf), or editable [Word format](lab-linear-export.docx)).
+* Linear functions
+   -  **Comparing Gas and EV car** ownership costs ([pdf](lab-linear.pdf), or editable [Word format](lab-linear-export.docx)).
+* Quadratic functions
+   -  **Modeling Football Kickoffs**  ([pdf](lab-quadratic.pdf), or editable [Word format](lab-quadratic-export.docx)).
+* Exponential functions
+   -  **Analyzing movie releases per year** for various genres ([pdf](lab-exponential.pdf), or editable [Word format](lab-exponential-export.docx)).
+* Periodic functions
+   -  **Thinking about Nascar and Formula 1** as a spectator ([pdf](lab-periodic.pdf), or editable [Word format](lab-periodic-export.docx)).
+* Power functions
+   -  **Predicting city populations** with Zipf's law ([pdf](lab-power.pdf), or editable [Word format](lab-power-export.docx)).
+
+## Sample labs
+* (Linear functions) **Comparing Gas and EV car** ownership costs ([pdf](lab-linear.pdf), or editable [Word format](lab-linear-export.docx)).
 * (Quadratic functions) **Modeling Football Kickoffs**  ([pdf](lab-quadratic.pdf), or editable [Word format](lab-quadratic-export.docx)).
 * (Exponential functions) **Analyzing movie releases per year** for various genres ([pdf](lab-exponential.pdf), or editable [Word format](lab-exponential-export.docx)).
 * (Periodic functions) **Thinking about Nascar and Formula 1** as a spectator ([pdf](lab-periodic.pdf), or editable [Word format](lab-periodic-export.docx)).
