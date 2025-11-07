@@ -8,16 +8,17 @@ Contact us at mcwg.contact@gmail.com, or [subscribe below](#subscribe-for-news) 
 ## Our books
 Our books are published by [John Wiley & Sons, Inc.](https://www.wiley.com). 
 
-*  Hughes-Hallett, McCallum, Gleason, et al, *Calculus: Single and Multivariable*, 8th Edition, 2020.
-*  Hughes-Hallett, Gleason, Lock, Flath, et al, *Applied Calculus*, 7th Edition,  2021.
+*  Hughes-Hallett, Gleason, McCallum, et al, *Calculus: Single and Multivariable*, 8th Edition, 2021.
+*  Hughes-Hallett, Gleason, Lock, Flath, et al, *Applied Calculus*, 7th Edition,  2022.
 *  Connally, Hughes-Hallett, Gleason, et al, *Functions Modeling Change: A Preparation for Calculus*, 6th Edition, 2019.
-*  McCallum, Connally, Hughes-Hallett, et al, *Algebra: Form and Function*, 2nd Edition, 2014.
+*  McCallum, Connally, Hughes-Hallett, et al, *Algebra: Form and Function*, 2nd Edition, 2015.
 
 <!-- The leader of the Consortium is Deborah Hughes-Hallett, recipient of the 2022 AMS Award for Impact on the Teaching and Learning of Mathematics. -->
 
 
 
 ## Resources
+* [Precalculus AI labs](https://mcwg.github.io/precalcAI/)
 * [Calc Python Labs](https://mcwg.github.io/calc-python-labs/)
 <!-- * [Data Science Resources](https://mcwg.github.io/dataScienceResources) -->
 * [Covid-19](https://mcwg.github.io/covid/) teaching resources created by MCWG members.
