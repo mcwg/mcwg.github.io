@@ -5,7 +5,7 @@ description: "AI-assisted labs for teaching Precalculus through real-world data 
 
 # Precalculus AI labs
 
-October 2025
+November 2025
 
 
 A collection of hands-on labs that integrate Artificial Intelligence (AI) tools into learning and teaching Precalculus concepts.
