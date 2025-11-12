@@ -51,7 +51,7 @@ These labs guide students in using AI to generate Python code related to Precalc
 
 ## Intro Lab (Lab-Zero)
 This lab shows students how to use AI and Google Colab so they can use them in other labs as they learn the math.
-*  Lab zero (coming soon)
+*  Lab zero [pdf](lab-zero.pdf), or editable [Word format](lab-zero-export.docx).
 
 
 ## More about the labs
