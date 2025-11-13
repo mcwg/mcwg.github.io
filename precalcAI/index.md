@@ -15,6 +15,8 @@ These labs guide students in using AI to generate Python code related to Precalc
 
 
 ## Sample labs
+* Introductory Lab
+   -  **How to use AI to create and run Python code in Google Colab** [pdf](lab-intro.pdf), or editable [Word format](lab-intro-export.docx).
 * Linear functions
    -  **Comparing Gas and EV car** ownership costs ([pdf](lab-linear.pdf), or editable [Word format](lab-linear-export.docx)).
 * Quadratic functions
@@ -48,10 +50,6 @@ These labs guide students in using AI to generate Python code related to Precalc
 *  **Power functions** to predict *<u>city populations using Zipf's Law</u>* ([pdf](lab-power.pdf), or editable [Word format](lab-power-export.docx)).
 *  **Periodic functions** to model the distance to a spectator of a *<u>Nascar or Formula 1</u>* car ([pdf](lab-periodic.pdf), or editable [Word format](lab-periodic-export.docx)). -->
 
-
-## Intro Lab (Lab-Zero)
-This lab shows students how to use AI and Google Colab so they can use them in other labs as they learn the math.
-*  Lab zero [pdf](lab-zero.pdf), or editable [Word format](lab-zero-export.docx).
 
 
 ## More about the labs
