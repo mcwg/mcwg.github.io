@@ -22,7 +22,11 @@ These labs guide students in using AI to generate Python code related to Precalc
 * Quadratic functions
    -  **Modeling Football Kickoffs**  ([pdf](lab-quadratic.pdf), or editable [Word format](lab-quadratic-export.docx)).
 * Exponential functions
-   -  **Analyzing movie releases per year** for various genres ([pdf](lab-exponential.pdf), or editable [Word format](lab-exponential-export.docx), and accompanying data [movies_by_genre_1950_2024.csv](data/movies_by_genre_1950_2024.csv), [movies_by_genre_1980_2014-moreGenres.csv](data/movies_by_genre_1980_2014-moreGenres.csv), [movies_by_genre_1980_2014.csv](data/movies_by_genre_1980_2014.csv)).
+   -  **Analyzing movie releases per year** for various genres ([pdf](lab-exponential.pdf), or editable [Word format](lab-exponential-export.docx))
+   -  Data files:
+      * [movies_by_genre_1980_2014.csv](data/movies_by_genre_1980_2014.csv), 
+      * [movies_by_genre_1950_2024.csv](data/movies_by_genre_1950_2024.csv), 
+      * [movies_by_genre_1980_2014-moreGenres.csv](data/movies_by_genre_1980_2014-moreGenres.csv)).
 * Periodic functions
    -  **Thinking about Nascar and Formula 1** as a spectator ([pdf](lab-periodic.pdf), or editable [Word format](lab-periodic-export.docx)).
 * Power functions
