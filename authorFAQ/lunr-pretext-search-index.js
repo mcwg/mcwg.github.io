@@ -1,13 +1,31 @@
-var ptx_lunr_search_style = "textbook";
+var ptx_lunr_search_style = "reference";
 var ptx_lunr_docs = [
 {
-  "id": "MCWG-FAQ-2-4",
+  "id": "MCWG-FAQ-2-5",
   "level": "1",
-  "url": "MCWG-FAQ-2-4.html",
+  "url": "MCWG-FAQ-2-5.html",
   "type": "Subsection",
   "number": "1",
   "title": "Consortium members’ contact info",
   "body": " Consortium members' contact info  The following link will only work if you are logged into github with your browser (login here and return to this site).   Consortium members' contact info   "
+},
+{
+  "id": "MCWG-FAQ-2-5-2",
+  "level": "2",
+  "url": "MCWG-FAQ-2-5.html#MCWG-FAQ-2-5-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The following link will only work if you are logged into github with your browser (login here and return to this site). "
+},
+{
+  "id": "MCWG-FAQ-2-5-3",
+  "level": "2",
+  "url": "MCWG-FAQ-2-5.html#MCWG-FAQ-2-5-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Consortium members' contact info  "
 },
 {
   "id": "BasicSetup",
@@ -16,7 +34,178 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Getting things running",
-  "body": " Getting things running  These instructions assume that you have a MacOS computer running MacOS Mojave (10.15 year 2019-2020) or later.    Create a calc folder under your user folder (e.g. if your user folder is elliot then create \/Users\/elliot\/calc . Then cd into calc in the terminal.    (in the terminal and at your calc folder.) Checkout SCRIPTS using git with the following command git clone https:\/\/github.com\/mcwg\/SCRIPTS.git      Tell ASTeX to use stix fonts by running in the terminal (hit enter between lines) cd calc\/SCRIPTS\/ASTeX cp fancierfontdef.tex localfontdef.tex     Make symbolic links work (this is what makes all terminal commands like supertex and mergelabels behave as expected): In the same directory ( calc\/SCRIPTS\/ASTeX ), make a file called localhomedirdef.tex and its contents should be the line: \\def\\homedir{\/Users\/elliot\/calc} (but replace \"elliot\" by your username - use the pwd command to see it in terminal)    Then cd ..\/SETUP so that you go back to the SCRIPTS\/setup folder and run (hit enter between lines) cp alias ~\/.alias cp bash_profile ~\/.bash_profile cp bashrc ~\/.bashrc     If on MacOS Catalina 10.15 or later, you will need to tell MacOS the default shell is bash and not zhs. To change it run chsh -s \/bin\/bash   (if the terminal complains that you don't have permission to do this, use sudo chsh -s \/bin\/bash instead, and provide your computer password when asked.)    Close the Terminal window and reopen it for all changes to have effect.    Install MacTeX 2020 by downloading the installer from this site (download the MacTeX.pkg installer package in the 2020 folder). Note: newer versions of MacTeX will not work!    Install Homebrew from the terminal using instructions at .  Then make sure you homebrew installation is reachable by adding the following files to your .bash_profile file: # Set PATH, MANPATH, etc., for Homebrew. eval \"$(\/opt\/homebrew\/bin\/brew shellenv)\"   Close the Terminal window and reopen it for all changes to have effect.    Install Python using homebrew with pyenv from the terminal run (hit enter between lines) brew install pyenv pyenv install 3.10 pyenv global 3.10   Then add the following lines to your .bash_profile file: # pyenv setup export PYENV_ROOT=\"$HOME\/.pyenv\" command -v pyenv >\/dev\/null || export PATH=\"$PYENV_ROOT\/bin:$PATH\" eval \"$(pyenv init -)\"   Close the Terminal window and reopen it for all changes to have effect.    Install ruby from the terminal using brew install ruby     Install imagemagick from the terminal using brew install imagemagick     "
+  "body": " Getting things running   Note (2025): There is a new way to set things up with Docker (a sort of virtual machine that comes with everything pre-installed). Instructions at the README file in the SCRIPTS repo (you need to be logged into github.com in your browser for the link to work).  The following instructions assume that you have a MacOS computer running MacOS Mojave (10.15 year 2019-2020) or later. They DO NOT work with M1 Macbooks, but have worked for M3 and M4 ones.    Create a calc folder under your user folder (e.g. if your user folder is elliot then create \/Users\/elliot\/calc . Then cd into calc in the terminal.    (in the terminal and at your calc folder.) Checkout SCRIPTS using git with the following command git clone https:\/\/github.com\/mcwg\/SCRIPTS.git      Tell ASTeX to use stix fonts by running in the terminal (hit enter between lines) cd calc\/SCRIPTS\/ASTeX cp fancierfontdef.tex localfontdef.tex     Make symbolic links work (this is what makes all terminal commands like supertex and mergelabels behave as expected): In the same directory ( calc\/SCRIPTS\/ASTeX ), make a file called localhomedirdef.tex and its contents should be the line: \\def\\homedir{\/Users\/elliot\/calc} (but replace \"elliot\" by your username - use the pwd command to see it in terminal)    Then cd ..\/SETUP so that you go back to the SCRIPTS\/setup folder and run (hit enter between lines) cp alias ~\/.alias cp bash_profile ~\/.bash_profile cp bashrc ~\/.bashrc     If on MacOS Catalina 10.15 or later, you will need to tell MacOS the default shell is bash and not zhs. To change it run chsh -s \/bin\/bash   (if the terminal complains that you don't have permission to do this, use sudo chsh -s \/bin\/bash instead, and provide your computer password when asked.)    Close the Terminal window and reopen it for all changes to have effect.    Install MacTeX 2020 by downloading the installer from this site (download the MacTeX.pkg installer package in the 2020 folder). Note: newer versions of MacTeX will not work!    Install Homebrew from the terminal using instructions at .  Then make sure you homebrew installation is reachable by adding the following files to your .bash_profile file: # Set PATH, MANPATH, etc., for Homebrew. eval \"$(\/opt\/homebrew\/bin\/brew shellenv)\"   Close the Terminal window and reopen it for all changes to have effect.    Install Python using homebrew with pyenv from the terminal run (hit enter between lines) brew install pyenv pyenv install 3.10 pyenv global 3.10   Then add the following lines to your .bash_profile file: # pyenv setup export PYENV_ROOT=\"$HOME\/.pyenv\" command -v pyenv >\/dev\/null || export PATH=\"$PYENV_ROOT\/bin:$PATH\" eval \"$(pyenv init -)\"   Close the Terminal window and reopen it for all changes to have effect.    Install ruby from the terminal using brew install ruby     Install imagemagick from the terminal using brew install imagemagick     "
+},
+{
+  "id": "BasicSetup-2",
+  "level": "2",
+  "url": "BasicSetup.html#BasicSetup-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Note (2025): There is a new way to set things up with Docker (a sort of virtual machine that comes with everything pre-installed). Instructions at the README file in the SCRIPTS repo (you need to be logged into github.com in your browser for the link to work). "
+},
+{
+  "id": "BasicSetup-3",
+  "level": "2",
+  "url": "BasicSetup.html#BasicSetup-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The following instructions assume that you have a MacOS computer running MacOS Mojave (10.15 year 2019-2020) or later. They DO NOT work with M1 Macbooks, but have worked for M3 and M4 ones. "
+},
+{
+  "id": "BasicSetup-4-1-1",
+  "level": "2",
+  "url": "BasicSetup.html#BasicSetup-4-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Create a calc folder under your user folder (e.g. if your user folder is elliot then create \/Users\/elliot\/calc . Then cd into calc in the terminal. "
+},
+{
+  "id": "BasicSetup-4-2-1",
+  "level": "2",
+  "url": "BasicSetup.html#BasicSetup-4-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "(in the terminal and at your calc folder.) Checkout SCRIPTS using git with the following command git clone https:\/\/github.com\/mcwg\/SCRIPTS.git  "
+},
+{
+  "id": "BasicSetup-4-3-1",
+  "level": "2",
+  "url": "BasicSetup.html#BasicSetup-4-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Tell ASTeX to use stix fonts by running in the terminal (hit enter between lines) cd calc\/SCRIPTS\/ASTeX cp fancierfontdef.tex localfontdef.tex  "
+},
+{
+  "id": "BasicSetup-4-4-1",
+  "level": "2",
+  "url": "BasicSetup.html#BasicSetup-4-4-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Make symbolic links work (this is what makes all terminal commands like supertex and mergelabels behave as expected): In the same directory ( calc\/SCRIPTS\/ASTeX ), make a file called localhomedirdef.tex and its contents should be the line: \\def\\homedir{\/Users\/elliot\/calc} (but replace \"elliot\" by your username - use the pwd command to see it in terminal) "
+},
+{
+  "id": "BasicSetup-4-5-1",
+  "level": "2",
+  "url": "BasicSetup.html#BasicSetup-4-5-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Then cd ..\/SETUP so that you go back to the SCRIPTS\/setup folder and run (hit enter between lines) cp alias ~\/.alias cp bash_profile ~\/.bash_profile cp bashrc ~\/.bashrc  "
+},
+{
+  "id": "BasicSetup-4-6-1",
+  "level": "2",
+  "url": "BasicSetup.html#BasicSetup-4-6-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If on MacOS Catalina 10.15 or later, you will need to tell MacOS the default shell is bash and not zhs. To change it run chsh -s \/bin\/bash  "
+},
+{
+  "id": "BasicSetup-4-6-2",
+  "level": "2",
+  "url": "BasicSetup.html#BasicSetup-4-6-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "(if the terminal complains that you don't have permission to do this, use sudo chsh -s \/bin\/bash instead, and provide your computer password when asked.) "
+},
+{
+  "id": "BasicSetup-4-7-1",
+  "level": "2",
+  "url": "BasicSetup.html#BasicSetup-4-7-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Close the Terminal window and reopen it for all changes to have effect. "
+},
+{
+  "id": "BasicSetup-4-8-1",
+  "level": "2",
+  "url": "BasicSetup.html#BasicSetup-4-8-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Install MacTeX 2020 by downloading the installer from this site (download the MacTeX.pkg installer package in the 2020 folder). Note: newer versions of MacTeX will not work! "
+},
+{
+  "id": "BasicSetup-4-9-1",
+  "level": "2",
+  "url": "BasicSetup.html#BasicSetup-4-9-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Install Homebrew from the terminal using instructions at . "
+},
+{
+  "id": "BasicSetup-4-9-2",
+  "level": "2",
+  "url": "BasicSetup.html#BasicSetup-4-9-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Then make sure you homebrew installation is reachable by adding the following files to your .bash_profile file: # Set PATH, MANPATH, etc., for Homebrew. eval \"$(\/opt\/homebrew\/bin\/brew shellenv)\"  "
+},
+{
+  "id": "BasicSetup-4-9-3",
+  "level": "2",
+  "url": "BasicSetup.html#BasicSetup-4-9-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Close the Terminal window and reopen it for all changes to have effect. "
+},
+{
+  "id": "BasicSetup-4-10-1",
+  "level": "2",
+  "url": "BasicSetup.html#BasicSetup-4-10-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Install Python using homebrew with pyenv from the terminal run (hit enter between lines) brew install pyenv pyenv install 3.10 pyenv global 3.10  "
+},
+{
+  "id": "BasicSetup-4-10-2",
+  "level": "2",
+  "url": "BasicSetup.html#BasicSetup-4-10-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Then add the following lines to your .bash_profile file: # pyenv setup export PYENV_ROOT=\"$HOME\/.pyenv\" command -v pyenv >\/dev\/null || export PATH=\"$PYENV_ROOT\/bin:$PATH\" eval \"$(pyenv init -)\"  "
+},
+{
+  "id": "BasicSetup-4-10-3",
+  "level": "2",
+  "url": "BasicSetup.html#BasicSetup-4-10-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Close the Terminal window and reopen it for all changes to have effect. "
+},
+{
+  "id": "BasicSetup-4-11-1",
+  "level": "2",
+  "url": "BasicSetup.html#BasicSetup-4-11-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Install ruby from the terminal using brew install ruby  "
+},
+{
+  "id": "BasicSetup-4-12-1",
+  "level": "2",
+  "url": "BasicSetup.html#BasicSetup-4-12-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Install imagemagick from the terminal using brew install imagemagick  "
 },
 {
   "id": "GhostcriptConflitingVersions",
@@ -28,6 +217,60 @@ var ptx_lunr_docs = [
   "body": " Supertex is giving me an error message regarding Ghostscript Can't find initialization file gs_init.ps  This error seems to come up when there are two different versions of Ghostscript installed in your system (one from MacTex and one from Homebrew). Make sure you have followed all the instructions in Getting things running . If issue remains, run the following in the terminal: brew link --overwrite ghostscript   If running the command gives an error like  Error: Could not symlink share\/doc\/ghostscript\/9.53.3 \/usr\/local\/share\/doc\/ghostscript is not writable.  then run the following command (make sure you adjust the directory which you are being told is not writable - in this example \/usr\/local\/share\/doc\/ghostscript )  sudo chown -R `whoami` \/usr\/local\/share\/doc\/ghostscript  (it will ask for your computer user password). Then try again with brew link --overwrite ghostscript . If command succeeds this time, then Supertex should stop complaining about Ghostscript.  "
 },
 {
+  "id": "GhostcriptConflitingVersions-2",
+  "level": "2",
+  "url": "GhostcriptConflitingVersions.html#GhostcriptConflitingVersions-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "This error seems to come up when there are two different versions of Ghostscript installed in your system (one from MacTex and one from Homebrew). Make sure you have followed all the instructions in Getting things running . If issue remains, run the following in the terminal: brew link --overwrite ghostscript  "
+},
+{
+  "id": "GhostcriptConflitingVersions-3",
+  "level": "2",
+  "url": "GhostcriptConflitingVersions.html#GhostcriptConflitingVersions-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If running the command gives an error like "
+},
+{
+  "id": "GhostcriptConflitingVersions-4",
+  "level": "2",
+  "url": "GhostcriptConflitingVersions.html#GhostcriptConflitingVersions-4",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "Error: Could not symlink share\/doc\/ghostscript\/9.53.3 \/usr\/local\/share\/doc\/ghostscript is not writable. "
+},
+{
+  "id": "GhostcriptConflitingVersions-5",
+  "level": "2",
+  "url": "GhostcriptConflitingVersions.html#GhostcriptConflitingVersions-5",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "then run the following command (make sure you adjust the directory which you are being told is not writable - in this example \/usr\/local\/share\/doc\/ghostscript ) "
+},
+{
+  "id": "GhostcriptConflitingVersions-6",
+  "level": "2",
+  "url": "GhostcriptConflitingVersions.html#GhostcriptConflitingVersions-6",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "sudo chown -R `whoami` \/usr\/local\/share\/doc\/ghostscript "
+},
+{
+  "id": "GhostcriptConflitingVersions-7",
+  "level": "2",
+  "url": "GhostcriptConflitingVersions.html#GhostcriptConflitingVersions-7",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "(it will ask for your computer user password). Then try again with brew link --overwrite ghostscript . If command succeeds this time, then Supertex should stop complaining about Ghostscript. "
+},
+{
   "id": "SupertexAndMacOSMonterrey",
   "level": "1",
   "url": "SupertexAndMacOSMonterrey.html",
@@ -35,6 +278,51 @@ var ptx_lunr_docs = [
   "number": "1.3",
   "title": "Supertex is not working after I updated to MacOS Monterrey (October 2021)",
   "body": " Supertex is not working after I updated to MacOS Monterrey (October 2021)  This is due to changes in the python version that MacOS Monterrey ships with. One must tell MacOS to fall back to an older python version. Steps below:    Install pyenv and make it load the right version of Python for Supertex: brew install pyenv pyenv install 2.7.18 pyenv global 2.7.18 # bad idea if you use python3 but i don't     Then tell your terminal to know where to look for Python. In .zshenv if you use zsh, or in .profile if you use bash, add the following line at the end of the file (change eric to your user). export PATH=\"\/Users\/eric\/.pyenv\/shims:${PATH}\"     Check this worked by restarting your terminal and running python --version (you should get Python 2.7.18 )     Note: Elliot reports that he needed to install command line tools and xcode for all of this to work.  "
+},
+{
+  "id": "SupertexAndMacOSMonterrey-2",
+  "level": "2",
+  "url": "SupertexAndMacOSMonterrey.html#SupertexAndMacOSMonterrey-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "This is due to changes in the python version that MacOS Monterrey ships with. One must tell MacOS to fall back to an older python version. Steps below: "
+},
+{
+  "id": "SupertexAndMacOSMonterrey-3-1-1",
+  "level": "2",
+  "url": "SupertexAndMacOSMonterrey.html#SupertexAndMacOSMonterrey-3-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Install pyenv and make it load the right version of Python for Supertex: brew install pyenv pyenv install 2.7.18 pyenv global 2.7.18 # bad idea if you use python3 but i don't  "
+},
+{
+  "id": "SupertexAndMacOSMonterrey-3-2-1",
+  "level": "2",
+  "url": "SupertexAndMacOSMonterrey.html#SupertexAndMacOSMonterrey-3-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Then tell your terminal to know where to look for Python. In .zshenv if you use zsh, or in .profile if you use bash, add the following line at the end of the file (change eric to your user). export PATH=\"\/Users\/eric\/.pyenv\/shims:${PATH}\"  "
+},
+{
+  "id": "SupertexAndMacOSMonterrey-3-3-1",
+  "level": "2",
+  "url": "SupertexAndMacOSMonterrey.html#SupertexAndMacOSMonterrey-3-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Check this worked by restarting your terminal and running python --version (you should get Python 2.7.18 ) "
+},
+{
+  "id": "SupertexAndMacOSMonterrey-4",
+  "level": "2",
+  "url": "SupertexAndMacOSMonterrey.html#SupertexAndMacOSMonterrey-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Note: Elliot reports that he needed to install command line tools and xcode for all of this to work. "
 },
 {
   "id": "MCWG-FAQ-4",
@@ -46,6 +334,24 @@ var ptx_lunr_docs = [
   "body": " Using git  Visit the following link while collectively build this section. Once a complete draft is created, it will be moved here.   DRAFT: Everything git related (for authors).   "
 },
 {
+  "id": "MCWG-FAQ-4-2",
+  "level": "2",
+  "url": "MCWG-FAQ-4.html#MCWG-FAQ-4-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Visit the following link while collectively build this section. Once a complete draft is created, it will be moved here. "
+},
+{
+  "id": "MCWG-FAQ-4-3",
+  "level": "2",
+  "url": "MCWG-FAQ-4.html#MCWG-FAQ-4-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " DRAFT: Everything git related (for authors).  "
+},
+{
   "id": "abbreviationStandarUnits01",
   "level": "1",
   "url": "abbreviationStandarUnits01.html",
@@ -53,6 +359,15 @@ var ptx_lunr_docs = [
   "number": "3.1",
   "title": "What are the abbreviations and conventions that we use for standard units like grams and miles per hour?",
   "body": " What are the abbreviations and conventions that we use for standard units like grams and miles per hour?  We do not use periods, and most units are lower case, even those that are derived from people's names, like hertz. However, Cartesian is an exception.      Replace this    With this     feet  ft    inches  in    centimeters  cm    pounds  lb    grams  gm    seconds  sec    gallons  gal    miles per hour  mph    feet per second  ft\/sec    kilometers per hour  km\/hr    decibel  dB    ante meridian  am    post meridian  pm    United State  US      We try to avoid abbreviating \"liters\". Also, we leave a space between the numeral and the unit, so we write 20 ft, not 20ft.  "
+},
+{
+  "id": "abbreviationStandarUnits01-2",
+  "level": "2",
+  "url": "abbreviationStandarUnits01.html#abbreviationStandarUnits01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "We do not use periods, and most units are lower case, even those that are derived from people's names, like hertz. However, Cartesian is an exception. "
 },
 {
   "id": "abbreviationStandarUnits01-3",
@@ -64,6 +379,15 @@ var ptx_lunr_docs = [
   "body": "    Replace this    With this     feet  ft    inches  in    centimeters  cm    pounds  lb    grams  gm    seconds  sec    gallons  gal    miles per hour  mph    feet per second  ft\/sec    kilometers per hour  km\/hr    decibel  dB    ante meridian  am    post meridian  pm    United State  US    "
 },
 {
+  "id": "abbreviationStandarUnits01-4",
+  "level": "2",
+  "url": "abbreviationStandarUnits01.html#abbreviationStandarUnits01-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " We try to avoid abbreviating \"liters\". Also, we leave a space between the numeral and the unit, so we write 20 ft, not 20ft. "
+},
+{
   "id": "latinAbbreviations01",
   "level": "1",
   "url": "latinAbbreviations01.html",
@@ -73,6 +397,15 @@ var ptx_lunr_docs = [
   "body": " Do we italicize Latin abbreviations such as e.g. and i.e.?  No, we leave them in plain text. Also, we do not include any spaces, so e.g. and i.e. are correct, while e. g. and i. e. are not. However, we use \"for example\"\" and \"that is\" rather than e.g. and i.e.  "
 },
 {
+  "id": "latinAbbreviations01-2",
+  "level": "2",
+  "url": "latinAbbreviations01.html#latinAbbreviations01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "No, we leave them in plain text. Also, we do not include any spaces, so e.g. and i.e. are correct, while e. g. and i. e. are not. However, we use \"for example\"\" and \"that is\" rather than e.g. and i.e. "
+},
+{
   "id": "texCommandsAbbreviation01",
   "level": "1",
   "url": "texCommandsAbbreviation01.html",
@@ -80,6 +413,15 @@ var ptx_lunr_docs = [
   "number": "3.3",
   "title": "Which TeX commands can I abbreviate?",
   "body": " Which TeX commands can I abbreviate?  We have created a number of macros that abbreviate commonly used TeX commands.      Replace this    With this     \\begin{enumerate}  \\bb    \\item  \\ii    \\end{enumerate}  \\ee    \\displaystyle  \\dsty    \\rightarrow  \\to    \\begin{eqnarray*}  \\beq    \\end{eqnarray*}  \\eeq     Figure~\\ref{blah}   \\fref{blah}     Table~\\ref{blah}   \\tref{blah}     Problem~\\ref{blah}   \\qref{blah}    Page~\\pageref{blah}  \\pref{blah}    \\Delta  \\D     "
+},
+{
+  "id": "texCommandsAbbreviation01-2",
+  "level": "2",
+  "url": "texCommandsAbbreviation01.html#texCommandsAbbreviation01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "We have created a number of macros that abbreviate commonly used TeX commands. "
 },
 {
   "id": "texCommandsAbbreviation01-3",
@@ -118,6 +460,132 @@ var ptx_lunr_docs = [
   "body": " Sometimes I'm asked to rewrite materials, and sometimes I'm asked to check them. What is the difference?  Rewriting means reorganizing or rewording the materials. Usually only one person is asked to rewrite something at a time.  Checking means checking that everything is factually correct. This includes checking that:    Each step is mathematically correct. (People do get the right answer and still make mistakes along the way.)    Each variable or quantity is defined unambiguously.    Each figure is correct and consistent with its location and description in the text, including labels and units. (This is particularly important if a figure from one section has been duplicated for use in another. Inappropriate remnants of its previous life may still remain.)    The solutions to exercises and problems    use the same notation and language as the text.    use a method that has been covered at that stage in the text.      All statements are correct, including not only statements about what is where in the rest of the book, but also whether it is in the book.    The situation described in a problem is accurate.    The CCHE Styles and Conventions are followed.    The words that a spell checker misses are used correctly. For example, \"Please bare with me\" and \"Please bear with me\" both pass a spell checker, but do not usually mean the same, even for us older folk!    In other words: Checking means check that whatever is said is correct. Checking means double check everything. However, checking does not involve reorganizing or rewording the manuscript.  Usually lots of people are asked to check the same materials simultaneously. It is almost impossible for one person to find all the mistakes, inconsistencies, and ambiguities.  "
 },
 {
+  "id": "rewriteVsCheckMaterials01-2",
+  "level": "2",
+  "url": "rewriteVsCheckMaterials01.html#rewriteVsCheckMaterials01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Rewriting means reorganizing or rewording the materials. Usually only one person is asked to rewrite something at a time. "
+},
+{
+  "id": "rewriteVsCheckMaterials01-3",
+  "level": "2",
+  "url": "rewriteVsCheckMaterials01.html#rewriteVsCheckMaterials01-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Checking means checking that everything is factually correct. This includes checking that: "
+},
+{
+  "id": "rewriteVsCheckMaterials01-4-1-1",
+  "level": "2",
+  "url": "rewriteVsCheckMaterials01.html#rewriteVsCheckMaterials01-4-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Each step is mathematically correct. (People do get the right answer and still make mistakes along the way.) "
+},
+{
+  "id": "rewriteVsCheckMaterials01-4-2-1",
+  "level": "2",
+  "url": "rewriteVsCheckMaterials01.html#rewriteVsCheckMaterials01-4-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Each variable or quantity is defined unambiguously. "
+},
+{
+  "id": "rewriteVsCheckMaterials01-4-3-1",
+  "level": "2",
+  "url": "rewriteVsCheckMaterials01.html#rewriteVsCheckMaterials01-4-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Each figure is correct and consistent with its location and description in the text, including labels and units. (This is particularly important if a figure from one section has been duplicated for use in another. Inappropriate remnants of its previous life may still remain.) "
+},
+{
+  "id": "rewriteVsCheckMaterials01-4-4-1",
+  "level": "2",
+  "url": "rewriteVsCheckMaterials01.html#rewriteVsCheckMaterials01-4-4-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The solutions to exercises and problems "
+},
+{
+  "id": "rewriteVsCheckMaterials01-4-4-2-1-1",
+  "level": "2",
+  "url": "rewriteVsCheckMaterials01.html#rewriteVsCheckMaterials01-4-4-2-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "use the same notation and language as the text. "
+},
+{
+  "id": "rewriteVsCheckMaterials01-4-4-2-2-1",
+  "level": "2",
+  "url": "rewriteVsCheckMaterials01.html#rewriteVsCheckMaterials01-4-4-2-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "use a method that has been covered at that stage in the text. "
+},
+{
+  "id": "rewriteVsCheckMaterials01-4-5-1",
+  "level": "2",
+  "url": "rewriteVsCheckMaterials01.html#rewriteVsCheckMaterials01-4-5-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "All statements are correct, including not only statements about what is where in the rest of the book, but also whether it is in the book. "
+},
+{
+  "id": "rewriteVsCheckMaterials01-4-6-1",
+  "level": "2",
+  "url": "rewriteVsCheckMaterials01.html#rewriteVsCheckMaterials01-4-6-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The situation described in a problem is accurate. "
+},
+{
+  "id": "rewriteVsCheckMaterials01-4-7-1",
+  "level": "2",
+  "url": "rewriteVsCheckMaterials01.html#rewriteVsCheckMaterials01-4-7-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The CCHE Styles and Conventions are followed. "
+},
+{
+  "id": "rewriteVsCheckMaterials01-4-8-1",
+  "level": "2",
+  "url": "rewriteVsCheckMaterials01.html#rewriteVsCheckMaterials01-4-8-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The words that a spell checker misses are used correctly. For example, \"Please bare with me\" and \"Please bear with me\" both pass a spell checker, but do not usually mean the same, even for us older folk! "
+},
+{
+  "id": "rewriteVsCheckMaterials01-5",
+  "level": "2",
+  "url": "rewriteVsCheckMaterials01.html#rewriteVsCheckMaterials01-5",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "In other words: Checking means check that whatever is said is correct. Checking means double check everything. However, checking does not involve reorganizing or rewording the manuscript. "
+},
+{
+  "id": "rewriteVsCheckMaterials01-6",
+  "level": "2",
+  "url": "rewriteVsCheckMaterials01.html#rewriteVsCheckMaterials01-6",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Usually lots of people are asked to check the same materials simultaneously. It is almost impossible for one person to find all the mistakes, inconsistencies, and ambiguities. "
+},
+{
   "id": "captionsOnATable02",
   "level": "1",
   "url": "captionsOnATable02.html",
@@ -125,6 +593,15 @@ var ptx_lunr_docs = [
   "number": "5.1",
   "title": "Should I put a caption on a table?",
   "body": " Should I put a caption on a table?   Follow this link   "
+},
+{
+  "id": "captionsOnATable02-2",
+  "level": "2",
+  "url": "captionsOnATable02.html#captionsOnATable02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "tableLabels04",
@@ -136,6 +613,15 @@ var ptx_lunr_docs = [
   "body": " When do I put labels (numbers) and captions on tables?   Follow this link   "
 },
 {
+  "id": "tableLabels04-2",
+  "level": "2",
+  "url": "tableLabels04.html#tableLabels04-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "CaptionOrNoCaption03",
   "level": "1",
   "url": "CaptionOrNoCaption03.html",
@@ -143,6 +629,15 @@ var ptx_lunr_docs = [
   "number": "5.3",
   "title": "Sometimes I want a figure with a number and a caption, sometimes with only a number, and sometimes with neither a number nor a caption. How do I do that?",
   "body": " Sometimes I want a figure with a number and a caption, sometimes with only a number, and sometimes with neither a number nor a caption. How do I do that?   Follow this link   "
+},
+{
+  "id": "CaptionOrNoCaption03-2",
+  "level": "2",
+  "url": "CaptionOrNoCaption03.html#CaptionOrNoCaption03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "creatingChapter03",
@@ -154,6 +649,15 @@ var ptx_lunr_docs = [
   "body": " How do I create a Chapter?   Follow this link   "
 },
 {
+  "id": "creatingChapter03-2",
+  "level": "2",
+  "url": "creatingChapter03.html#creatingChapter03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "exampleInChapter02",
   "level": "1",
   "url": "exampleInChapter02.html",
@@ -161,6 +665,15 @@ var ptx_lunr_docs = [
   "number": "6.2",
   "title": "How do I put an Example in a Chapter?",
   "body": " How do I put an Example in a Chapter?   Follow this link   "
+},
+{
+  "id": "exampleInChapter02-2",
+  "level": "2",
+  "url": "exampleInChapter02.html#exampleInChapter02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "capitalizingHeadings04",
@@ -172,13 +685,31 @@ var ptx_lunr_docs = [
   "body": " What is the convention for capitalizing headings of chapters, sections, and subsections?   Follow this link   "
 },
 {
+  "id": "capitalizingHeadings04-2",
+  "level": "2",
+  "url": "capitalizingHeadings04.html#capitalizingHeadings04-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "mathematicalSymbolsInHeadings03",
   "level": "1",
   "url": "mathematicalSymbolsInHeadings03.html",
   "type": "Section",
   "number": "7.1",
-  "title": "I am trying to create tables where the headings are mathematical symbols, e.g. <code class=\"code-inline tex2jax_ignore\">$\\times 2$ & $+4$ & $\\div 2$<\/code>.  The times and the plus are replaced by the correct symbols, but the div just prints the word \"div\" instead of the division symbol.  Any suggestions?",
+  "title": "I am trying to create tables where the headings are mathematical symbols, e.g. <code class=\"code-inline tex2jax_ignore\">$\\times 2$ &amp; $+4$ &amp; $\\div 2$<\/code>.  The times and the plus are replaced by the correct symbols, but the div just prints the word \"div\" instead of the division symbol.  Any suggestions?",
   "body": " I am trying to create tables where the headings are mathematical symbols, e.g. $\\times 2$ & $+4$ & $\\div 2$ . The times and the plus are replaced by the correct symbols, but the div just prints the word \"div\" instead of the division symbol. Any suggestions?   Follow this link   "
+},
+{
+  "id": "mathematicalSymbolsInHeadings03-2",
+  "level": "2",
+  "url": "mathematicalSymbolsInHeadings03.html#mathematicalSymbolsInHeadings03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "printSpecialCharacters03",
@@ -186,8 +717,17 @@ var ptx_lunr_docs = [
   "url": "printSpecialCharacters03.html",
   "type": "Section",
   "number": "7.2",
-  "title": "How do I print the TeX special characters: <code class=\"code-inline tex2jax_ignore\">$, &, %, #, _,{, and }<\/code>?",
+  "title": "How do I print the TeX special characters: <code class=\"code-inline tex2jax_ignore\">$, &amp;, %, #, _,{, and }<\/code>?",
   "body": " How do I print the TeX special characters: $, &, %, #, _,{, and } ?   Follow this link   "
+},
+{
+  "id": "printSpecialCharacters03-2",
+  "level": "2",
+  "url": "printSpecialCharacters03.html#printSpecialCharacters03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "commandsToGetDivGradCurl03",
@@ -199,6 +739,15 @@ var ptx_lunr_docs = [
   "body": " What commands do I use to get div , grad , and curl ?   Follow this link   "
 },
 {
+  "id": "commandsToGetDivGradCurl03-2",
+  "level": "2",
+  "url": "commandsToGetDivGradCurl03.html#commandsToGetDivGradCurl03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "poundSymbol03",
   "level": "1",
   "url": "poundSymbol03.html",
@@ -206,6 +755,15 @@ var ptx_lunr_docs = [
   "number": "7.4",
   "title": "How do I enter the UK counterpart of $, namely the UK pound symbol, £?",
   "body": " How do I enter the UK counterpart of $, namely the UK pound symbol, £?   Follow this link   "
+},
+{
+  "id": "poundSymbol03-2",
+  "level": "2",
+  "url": "poundSymbol03.html#poundSymbol03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "rewriteVsCheckMaterials02",
@@ -217,6 +775,15 @@ var ptx_lunr_docs = [
   "body": " Sometimes I'm asked to rewrite materials, and sometimes I'm asked to check them. What is the difference?   Follow this link   "
 },
 {
+  "id": "rewriteVsCheckMaterials02-2",
+  "level": "2",
+  "url": "rewriteVsCheckMaterials02.html#rewriteVsCheckMaterials02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "answersOrShortAnswersMissing03",
   "level": "1",
   "url": "answersOrShortAnswersMissing03.html",
@@ -224,6 +791,15 @@ var ptx_lunr_docs = [
   "number": "8.2",
   "title": "When checking exercises, what do I do if an Answer or ShortAnswer is missing?",
   "body": " When checking exercises, what do I do if an Answer or ShortAnswer is missing?   Follow this link   "
+},
+{
+  "id": "answersOrShortAnswersMissing03-2",
+  "level": "2",
+  "url": "answersOrShortAnswersMissing03.html#answersOrShortAnswersMissing03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "ConcepTestFiles",
@@ -235,6 +811,15 @@ var ptx_lunr_docs = [
   "body": " What is the correct naming convention for ConcepTest files?  It follows the same convention as naming exercise files, see The suggested way of naming exercise files is not unique if I am creating exercises for two different books. What do I do? , except \"np\" (new problem), is replaced with \"ctp\" (ConcepTest problem). For example, 1-2dsltctp3.tex would be the filename for Chapter 1, Section 2 (1-2), created by me (dsl), for the Single\/Multi 4th edition (t), containing ConcepTest problem number 3 (ctp3).  "
 },
 {
+  "id": "ConcepTestFiles-2",
+  "level": "2",
+  "url": "ConcepTestFiles.html#ConcepTestFiles-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "It follows the same convention as naming exercise files, see The suggested way of naming exercise files is not unique if I am creating exercises for two different books. What do I do? , except \"np\" (new problem), is replaced with \"ctp\" (ConcepTest problem). For example, 1-2dsltctp3.tex would be the filename for Chapter 1, Section 2 (1-2), created by me (dsl), for the Single\/Multi 4th edition (t), containing ConcepTest problem number 3 (ctp3). "
+},
+{
   "id": "commentAfterSolution",
   "level": "1",
   "url": "commentAfterSolution.html",
@@ -242,6 +827,15 @@ var ptx_lunr_docs = [
   "number": "9.2",
   "title": "How do I insert the Comment that often goes after the solution of a ConcepTest in place of the short answer?",
   "body": " How do I insert the Comment that often goes after the solution of a ConcepTest in place of the short answer?  You insert it as though it were the short answer.  "
+},
+{
+  "id": "commentAfterSolution-2",
+  "level": "2",
+  "url": "commentAfterSolution.html#commentAfterSolution-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "You insert it as though it were the short answer. "
 },
 {
   "id": "Conventions",
@@ -253,6 +847,15 @@ var ptx_lunr_docs = [
   "body": " Conventions  See Style and Conventions   "
 },
 {
+  "id": "Conventions-2",
+  "level": "2",
+  "url": "Conventions.html#Conventions-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "See Style and Conventions  "
+},
+{
   "id": "figuresAndTablesLabel04",
   "level": "1",
   "url": "figuresAndTablesLabel04.html",
@@ -260,6 +863,15 @@ var ptx_lunr_docs = [
   "number": "11.1",
   "title": "What is the preferred convention for labelling figures and tables in Exercises?",
   "body": " What is the preferred convention for labelling figures and tables in Exercises?   Follow this link   "
+},
+{
+  "id": "figuresAndTablesLabel04-2",
+  "level": "2",
+  "url": "figuresAndTablesLabel04.html#figuresAndTablesLabel04-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "tableLabels05",
@@ -271,6 +883,15 @@ var ptx_lunr_docs = [
   "body": " When do I put labels (numbers) and captions on tables?   Follow this link   "
 },
 {
+  "id": "tableLabels05-2",
+  "level": "2",
+  "url": "tableLabels05.html#tableLabels05-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "hardCodingReference03",
   "level": "1",
   "url": "hardCodingReference03.html",
@@ -278,6 +899,15 @@ var ptx_lunr_docs = [
   "number": "11.3",
   "title": "May I reference an example, figure, or table, by hard coding the reference (e.g., <code class=\"code-inline tex2jax_ignore\">Example 5<\/code> instead of <code class=\"code-inline tex2jax_ignore\">Example~\\ref{blahblah}<\/code>)?",
   "body": " May I reference an example, figure, or table, by hard coding the reference (e.g., Example 5 instead of Example~\\ref{blahblah} )?   Follow this link   "
+},
+{
+  "id": "hardCodingReference03-2",
+  "level": "2",
+  "url": "hardCodingReference03.html#hardCodingReference03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "ReferenceAllFigs02",
@@ -289,6 +919,15 @@ var ptx_lunr_docs = [
   "body": " Do all figures have to be referenced?   Follow this link   "
 },
 {
+  "id": "ReferenceAllFigs02-2",
+  "level": "2",
+  "url": "ReferenceAllFigs02.html#ReferenceAllFigs02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "CaptionOrNoCaption02",
   "level": "1",
   "url": "CaptionOrNoCaption02.html",
@@ -296,6 +935,15 @@ var ptx_lunr_docs = [
   "number": "11.5",
   "title": "Sometimes I want a figure with a number and a caption, sometimes with only a number, and sometimes with neither a number nor a caption. How do I do that?",
   "body": " Sometimes I want a figure with a number and a caption, sometimes with only a number, and sometimes with neither a number nor a caption. How do I do that?   Follow this link   "
+},
+{
+  "id": "CaptionOrNoCaption02-2",
+  "level": "2",
+  "url": "CaptionOrNoCaption02.html#CaptionOrNoCaption02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "referencesPrintedText02",
@@ -307,6 +955,15 @@ var ptx_lunr_docs = [
   "body": " How do I reference existing theorems, chapters, sections, examples, exercises, and problems, in the printed calculus text that we are editing?   Follow this link   "
 },
 {
+  "id": "referencesPrintedText02-2",
+  "level": "2",
+  "url": "referencesPrintedText02.html#referencesPrintedText02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "referPartFromAnother02",
   "level": "1",
   "url": "referPartFromAnother02.html",
@@ -314,6 +971,15 @@ var ptx_lunr_docs = [
   "number": "11.7",
   "title": "I am creating an exercise that has parts (a), (b), (c), etc., and in part (c) I want to refer to part (a). How do I do that?",
   "body": " I am creating an exercise that has parts (a), (b), (c), etc., and in part (c) I want to refer to part (a). How do I do that?   Follow this link   "
+},
+{
+  "id": "referPartFromAnother02-2",
+  "level": "2",
+  "url": "referPartFromAnother02.html#referPartFromAnother02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "CrossReferencePageNumber03",
@@ -325,6 +991,15 @@ var ptx_lunr_docs = [
   "body": " How do I cross reference an object using a page number?   Follow this link   "
 },
 {
+  "id": "CrossReferencePageNumber03-2",
+  "level": "2",
+  "url": "CrossReferencePageNumber03.html#CrossReferencePageNumber03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "referExerciseFromAnother02",
   "level": "1",
   "url": "referExerciseFromAnother02.html",
@@ -332,6 +1007,15 @@ var ptx_lunr_docs = [
   "number": "11.9",
   "title": "How do I cross reference one exercise from another?",
   "body": " How do I cross reference one exercise from another?   Follow this link   "
+},
+{
+  "id": "referExerciseFromAnother02-2",
+  "level": "2",
+  "url": "referExerciseFromAnother02.html#referExerciseFromAnother02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "DosAndDonts",
@@ -343,6 +1027,15 @@ var ptx_lunr_docs = [
   "body": " Do's and Don'ts   Follow this link   "
 },
 {
+  "id": "DosAndDonts-2",
+  "level": "2",
+  "url": "DosAndDonts.html#DosAndDonts-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "sequenceOfEquations03",
   "level": "1",
   "url": "sequenceOfEquations03.html",
@@ -350,6 +1043,15 @@ var ptx_lunr_docs = [
   "number": "13.1",
   "title": "I want to create a sequence of equations, one below the other, with the equal signs lined up. How do I do that?",
   "body": " I want to create a sequence of equations, one below the other, with the equal signs lined up. How do I do that?   Follow this link   "
+},
+{
+  "id": "sequenceOfEquations03-2",
+  "level": "2",
+  "url": "sequenceOfEquations03.html#sequenceOfEquations03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "piecewiseFunction03",
@@ -361,6 +1063,15 @@ var ptx_lunr_docs = [
   "body": " What command do I use in TeX to construct a piecewise defined function?   Follow this link   "
 },
 {
+  "id": "piecewiseFunction03-2",
+  "level": "2",
+  "url": "piecewiseFunction03.html#piecewiseFunction03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "displaystyle04",
   "level": "1",
   "url": "displaystyle04.html",
@@ -368,6 +1079,15 @@ var ptx_lunr_docs = [
   "number": "13.3",
   "title": "Can I use <code class=\"code-inline tex2jax_ignore\">\\displaystyle<\/code> in display math style or in <code class=\"code-inline tex2jax_ignore\">eqnarray*<\/code>?",
   "body": " Can I use \\displaystyle in display math style or in eqnarray* ?   Follow this link   "
+},
+{
+  "id": "displaystyle04-2",
+  "level": "2",
+  "url": "displaystyle04.html#displaystyle04-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "shouldKnowDisplayStyle04",
@@ -379,6 +1099,15 @@ var ptx_lunr_docs = [
   "body": " Is there anything I should know if I use display math style (that is, when an expression is on its own line)?   Follow this link   "
 },
 {
+  "id": "shouldKnowDisplayStyle04-2",
+  "level": "2",
+  "url": "shouldKnowDisplayStyle04.html#shouldKnowDisplayStyle04-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "equationsDisplayInLines",
   "level": "1",
   "url": "equationsDisplayInLines.html",
@@ -386,6 +1115,33 @@ var ptx_lunr_docs = [
   "number": "13.5",
   "title": "What is the difference between <code class=\"code-inline tex2jax_ignore\">\\hbox<\/code>, <code class=\"code-inline tex2jax_ignore\">\\mbox<\/code>, and <code class=\"code-inline tex2jax_ignore\">\\wordeq<\/code>?",
   "body": " What is the difference between \\hbox , \\mbox , and \\wordeq ?  We use \\hbox and \\mbox interchangeably for all text within displayed equations that is not in multiple lines. (See Is there anything I should know if I use display math style (that is, when an expression is on its own line)? .) We use \\wordeq to add multi-line text to displayed equations. For example,  $$ \\wordeq{Amount\\\\remaining}=x $$  produces a centered equation, with the words \"Amount\" and \"remaining\" below each other, with the \"= x\" correctly positioned.  "
+},
+{
+  "id": "equationsDisplayInLines-2",
+  "level": "2",
+  "url": "equationsDisplayInLines.html#equationsDisplayInLines-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "We use \\hbox and \\mbox interchangeably for all text within displayed equations that is not in multiple lines. (See Is there anything I should know if I use display math style (that is, when an expression is on its own line)? .) We use \\wordeq to add multi-line text to displayed equations. For example, "
+},
+{
+  "id": "equationsDisplayInLines-3",
+  "level": "2",
+  "url": "equationsDisplayInLines.html#equationsDisplayInLines-3",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "$$ \\wordeq{Amount\\\\remaining}=x $$ "
+},
+{
+  "id": "equationsDisplayInLines-4",
+  "level": "2",
+  "url": "equationsDisplayInLines.html#equationsDisplayInLines-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "produces a centered equation, with the words \"Amount\" and \"remaining\" below each other, with the \"= x\" correctly positioned. "
 },
 {
   "id": "differencesDollarSign02",
@@ -397,13 +1153,40 @@ var ptx_lunr_docs = [
   "body": " What is the difference between $blah$ , $$blah$$ , and $\\dsty blah$ ?   Follow this link   "
 },
 {
+  "id": "differencesDollarSign02-2",
+  "level": "2",
+  "url": "differencesDollarSign02.html#differencesDollarSign02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "equationsDisplayStyle02",
   "level": "1",
   "url": "equationsDisplayStyle02.html",
   "type": "Section",
   "number": "13.7",
-  "title": "In display style math (when an equation is on its own line) are both <code class=\"code-inline tex2jax_ignore\">$$equation$$<\/code> and<pre class=\"code-block tex2jax_ignore\">$$ \nequation \n$$\n<\/pre>correct?",
+  "title": "In display style math (when an equation is on its own line) are both <code class=\"code-inline tex2jax_ignore\">$$equation$$<\/code> and<pre class=\"code-block tex2jax_ignore clipboardable\">$$ \nequation \n$$\n<\/pre>correct?",
   "body": " In display style math (when an equation is on its own line) are both $$equation$$ and $$ equation $$ correct?   Follow this link   "
+},
+{
+  "id": "equationsDisplayStyle02-1-2",
+  "level": "2",
+  "url": "equationsDisplayStyle02.html#equationsDisplayStyle02-1-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "$$ equation $$ "
+},
+{
+  "id": "equationsDisplayStyle02-2",
+  "level": "2",
+  "url": "equationsDisplayStyle02.html#equationsDisplayStyle02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "doesntTex01",
@@ -415,6 +1198,15 @@ var ptx_lunr_docs = [
   "body": " The TeX file I created does not TeX. What do I do?  Read the error messages to figure out what is going on. They usually contain the filename where the problem occurred as well as a hint at what is wrong. The rest is detective work!  "
 },
 {
+  "id": "doesntTex01-2",
+  "level": "2",
+  "url": "doesntTex01.html#doesntTex01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Read the error messages to figure out what is going on. They usually contain the filename where the problem occurred as well as a hint at what is wrong. The rest is detective work! "
+},
+{
   "id": "dontEnoughTex01",
   "level": "1",
   "url": "dontEnoughTex01.html",
@@ -422,6 +1214,15 @@ var ptx_lunr_docs = [
   "number": "14.2",
   "title": "I know what I want to say, but I don’t know enough TeX to express it.  What do I do?",
   "body": " I know what I want to say, but I don't know enough TeX to express it. What do I do?     First, read all the FAQs to make sure the answer is not here. If that is successful, stop. If that fails, continue.    Second, talk to your local TeX guru. If that is successful, go to 5. If that fails, continue.    Third, email Elliot or Enrique with a clear explanation of what you want to do. If that is successful, stop. If that fails, continue.    Fourth, in your document put {\\Huge Elliot, Deb, editor please read.} (that should get someone's attention) followed by a clear explanation of what you want.     "
+},
+{
+  "id": "dontEnoughTex01-2",
+  "level": "2",
+  "url": "dontEnoughTex01.html#dontEnoughTex01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "   First, read all the FAQs to make sure the answer is not here. If that is successful, stop. If that fails, continue.    Second, talk to your local TeX guru. If that is successful, go to 5. If that fails, continue.    Third, email Elliot or Enrique with a clear explanation of what you want to do. If that is successful, stop. If that fails, continue.    Fourth, in your document put {\\Huge Elliot, Deb, editor please read.} (that should get someone's attention) followed by a clear explanation of what you want.    "
 },
 {
   "id": "commonTexMistakes01",
@@ -433,6 +1234,15 @@ var ptx_lunr_docs = [
   "body": " Is there a list of common TeX mistakes?  Yes, see the PDF file in What do a few simple math formulas look like in TeX? .  "
 },
 {
+  "id": "commonTexMistakes01-2",
+  "level": "2",
+  "url": "commonTexMistakes01.html#commonTexMistakes01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Yes, see the PDF file in What do a few simple math formulas look like in TeX? . "
+},
+{
   "id": "missingDollarSign01",
   "level": "1",
   "url": "missingDollarSign01.html",
@@ -440,6 +1250,15 @@ var ptx_lunr_docs = [
   "number": "14.4",
   "title": "Why do I get an error message concerning missing $ when I try to TeX \"\\footnote{http:\/\/dr.pierce1.net\/PDF\/half_life.pdf, accessed on May 10, 2003.}\"?",
   "body": " Why do I get an error message concerning missing $ when I try to TeX \"\\footnote{http:\/\/dr.pierce1.net\/PDF\/half_life.pdf, accessed on May 10, 2003.}\"?  Because it thinks the underscore in half_life is an attempt on your part to make a subscript, and therefore it really wants you to be in math mode. Replacing \"half_life\" with \"half\\_life\" solves the problem. See How do I print the TeX special characters: $, &, %, #, _,{, and }?   "
+},
+{
+  "id": "missingDollarSign01-2",
+  "level": "2",
+  "url": "missingDollarSign01.html#missingDollarSign01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Because it thinks the underscore in half_life is an attempt on your part to make a subscript, and therefore it really wants you to be in math mode. Replacing \"half_life\" with \"half\\_life\" solves the problem. See How do I print the TeX special characters: $, &, %, #, _,{, and }?  "
 },
 {
   "id": "formatExercisesFiles01",
@@ -451,6 +1270,78 @@ var ptx_lunr_docs = [
   "body": " What is the correct format and naming convention for exercise files?  Each exercise should be in its own file, with the following structure.  \\Question{ %Your name goes here. Question goes here. }  \\Answer Answer goes here. }  \\ShortAnswer{ Short Answer goes here. }  Note that \"{\" should be on the same line as \"\\Question\", \"\\Answer\", and \"\\ShortAnswer\". Always include an Answer and a ShortAnswer.  A typical filename would be \"1-2dslnp001.tex\", which indicates that the exercise belongs in Chapter 1, Section 2, was written by David Lovelock (dsl), is a new problem (np), and is the first in this set.   Important Update (2\/7\/2003): See The suggested way of naming exercise files is not unique if I am creating exercises for two different books. What do I do?.    Important: You cannot compile (TeX) this file until you have created a master file, see How do I put together a collection of exercises?.   "
 },
 {
+  "id": "formatExercisesFiles01-2",
+  "level": "2",
+  "url": "formatExercisesFiles01.html#formatExercisesFiles01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Each exercise should be in its own file, with the following structure. "
+},
+{
+  "id": "formatExercisesFiles01-3",
+  "level": "2",
+  "url": "formatExercisesFiles01.html#formatExercisesFiles01-3",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\Question{ %Your name goes here. Question goes here. } "
+},
+{
+  "id": "formatExercisesFiles01-4",
+  "level": "2",
+  "url": "formatExercisesFiles01.html#formatExercisesFiles01-4",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\Answer Answer goes here. } "
+},
+{
+  "id": "formatExercisesFiles01-5",
+  "level": "2",
+  "url": "formatExercisesFiles01.html#formatExercisesFiles01-5",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\ShortAnswer{ Short Answer goes here. } "
+},
+{
+  "id": "formatExercisesFiles01-6",
+  "level": "2",
+  "url": "formatExercisesFiles01.html#formatExercisesFiles01-6",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Note that \"{\" should be on the same line as \"\\Question\", \"\\Answer\", and \"\\ShortAnswer\". Always include an Answer and a ShortAnswer. "
+},
+{
+  "id": "formatExercisesFiles01-7",
+  "level": "2",
+  "url": "formatExercisesFiles01.html#formatExercisesFiles01-7",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "A typical filename would be \"1-2dslnp001.tex\", which indicates that the exercise belongs in Chapter 1, Section 2, was written by David Lovelock (dsl), is a new problem (np), and is the first in this set. "
+},
+{
+  "id": "formatExercisesFiles01-8",
+  "level": "2",
+  "url": "formatExercisesFiles01.html#formatExercisesFiles01-8",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Important Update (2\/7\/2003): See The suggested way of naming exercise files is not unique if I am creating exercises for two different books. What do I do?.  "
+},
+{
+  "id": "formatExercisesFiles01-9",
+  "level": "2",
+  "url": "formatExercisesFiles01.html#formatExercisesFiles01-9",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Important: You cannot compile (TeX) this file until you have created a master file, see How do I put together a collection of exercises?.  "
+},
+{
   "id": "reuseFilenames01",
   "level": "1",
   "url": "reuseFilenames01.html",
@@ -458,6 +1349,15 @@ var ptx_lunr_docs = [
   "number": "15.2",
   "title": "I wrote an exercise file \"1-2dslgnp001.tex\" which is now being used in Section 6.2. Can I reuse the filename \"1-2dslgnp001.tex\" to create a new problem for Section 1.2?",
   "body": " I wrote an exercise file \"1-2dslgnp001.tex\" which is now being used in Section 6.2. Can I reuse the filename \"1-2dslgnp001.tex\" to create a new problem for Section 1.2?  Not if you want to stay friends with the rest of us! Once you've used an exercise filename, never use it again.  "
+},
+{
+  "id": "reuseFilenames01-2",
+  "level": "2",
+  "url": "reuseFilenames01.html#reuseFilenames01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Not if you want to stay friends with the rest of us! Once you've used an exercise filename, never use it again. "
 },
 {
   "id": "exerciseOrProblem01",
@@ -469,6 +1369,15 @@ var ptx_lunr_docs = [
   "body": " How do I specify that a problem that I am submitting is intended to be a \"Problem\" rather than an \"Exercise\"?  For problems that are not part of a Qset, there is no way to signify this. For problems that are part of a Qset, which necessarily has an instruction file, use the command \\qsetref{} and it will automatically identify whether the qset is in the Exercises or the Problems.  "
 },
 {
+  "id": "exerciseOrProblem01-2",
+  "level": "2",
+  "url": "exerciseOrProblem01.html#exerciseOrProblem01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "For problems that are not part of a Qset, there is no way to signify this. For problems that are part of a Qset, which necessarily has an instruction file, use the command \\qsetref{} and it will automatically identify whether the qset is in the Exercises or the Problems. "
+},
+{
   "id": "figuresAndTablesLabel01",
   "level": "1",
   "url": "figuresAndTablesLabel01.html",
@@ -476,6 +1385,168 @@ var ptx_lunr_docs = [
   "number": "15.4",
   "title": "What is the preferred convention for labelling figures and tables in Exercises?",
   "body": " What is the preferred convention for labelling figures and tables in Exercises?  All the names should be derived from the name of the exercise file. Then, when we rename the exercises in the final version, the labels on the figures and tables will all change with the name of the exercise file, and everything will remain unique and happy.  Let's assume the exercise file is named \"1-2dslgnp3.tex\".   Figures    If you have a single figure in the Question, it is labelled \"1-2dslgnp3 fig \".    If you have several figures in the Question, they are labelled \"1-2dslgnp3 figa \", \"1-2dslgnp3 figb \", etc. (The \"a\", \"b\" have nothing to do with parts (a) and (b) of the Question - if there are any.)    If you have a single figure in the Answer, it is labelled \"1-2dslgnp3 ans \".    If you have several figures in the Answer, they are labelled \"1-2dslgnp3 ansa \", \"1-2dslgnp3 ansb \", etc.    If you have several sets of several figures in the Answer, they are called \"1-2dslgnp3 ansa1 \", \"1-2dslgnp3 ansa2 \", \"1-2dslgnp3 ansb1 \", \"1-2dslgnp3 ansb2 \", etc.   Figures in the Short Answers inherit the labels used in the Answers.  Remember that the label used in a figure is the name of the TeX file that draws that figure.     Tables    If you have a single table in the Question, it is labelled \"1-2dslgnp3 tab \".    If you have several tables in the Question, they are labelled \"1-2dslgnp3 taba \", \"1-2dslgnp3 tabb \", etc.    If you have a single table in the Answer, it is labelled \"1-2dslgnp3 anstab \".    If you have several tables in the Answer, they are labelled \"1-2dslgnp3 anstaba \", \"1-2dslgnp3 anstabb \", etc.    If you have several sets of several tables in the Answer, they are called \"1-2dslgnp3 anstaba1 \", \"1-2dslgnp3 anstaba2 \", \"1-2dslgnp3ans tabb1 \", \"1-2dslgnp3ans tabb2 \", etc.    Tables in the Short Answers do not have labels.  Here is a simplified explanation for single figures and single tables, assuming the exercise file is named \"1-2dslgnp3.tex\".        Question    Answer    Short Answer      Figure   1-2dslgnp3 fig   1-2dslgnp3 ans   1-2dslgnp3 ans      Table   1-2dslgnp3 tab   1-2dslgnp3 anstab         "
+},
+{
+  "id": "figuresAndTablesLabel01-2",
+  "level": "2",
+  "url": "figuresAndTablesLabel01.html#figuresAndTablesLabel01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "All the names should be derived from the name of the exercise file. Then, when we rename the exercises in the final version, the labels on the figures and tables will all change with the name of the exercise file, and everything will remain unique and happy. "
+},
+{
+  "id": "figuresAndTablesLabel01-3",
+  "level": "2",
+  "url": "figuresAndTablesLabel01.html#figuresAndTablesLabel01-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Let's assume the exercise file is named \"1-2dslgnp3.tex\". "
+},
+{
+  "id": "figuresAndTablesLabel01-4-2",
+  "level": "2",
+  "url": "figuresAndTablesLabel01.html#figuresAndTablesLabel01-4-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "figuresAndTablesLabel01-4-3-1-1",
+  "level": "2",
+  "url": "figuresAndTablesLabel01.html#figuresAndTablesLabel01-4-3-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you have a single figure in the Question, it is labelled \"1-2dslgnp3 fig \". "
+},
+{
+  "id": "figuresAndTablesLabel01-4-3-2-1",
+  "level": "2",
+  "url": "figuresAndTablesLabel01.html#figuresAndTablesLabel01-4-3-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you have several figures in the Question, they are labelled \"1-2dslgnp3 figa \", \"1-2dslgnp3 figb \", etc. (The \"a\", \"b\" have nothing to do with parts (a) and (b) of the Question - if there are any.) "
+},
+{
+  "id": "figuresAndTablesLabel01-4-3-3-1",
+  "level": "2",
+  "url": "figuresAndTablesLabel01.html#figuresAndTablesLabel01-4-3-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you have a single figure in the Answer, it is labelled \"1-2dslgnp3 ans \". "
+},
+{
+  "id": "figuresAndTablesLabel01-4-3-4-1",
+  "level": "2",
+  "url": "figuresAndTablesLabel01.html#figuresAndTablesLabel01-4-3-4-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you have several figures in the Answer, they are labelled \"1-2dslgnp3 ansa \", \"1-2dslgnp3 ansb \", etc. "
+},
+{
+  "id": "figuresAndTablesLabel01-4-3-5-1",
+  "level": "2",
+  "url": "figuresAndTablesLabel01.html#figuresAndTablesLabel01-4-3-5-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you have several sets of several figures in the Answer, they are called \"1-2dslgnp3 ansa1 \", \"1-2dslgnp3 ansa2 \", \"1-2dslgnp3 ansb1 \", \"1-2dslgnp3 ansb2 \", etc. "
+},
+{
+  "id": "figuresAndTablesLabel01-4-3-6",
+  "level": "2",
+  "url": "figuresAndTablesLabel01.html#figuresAndTablesLabel01-4-3-6",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Figures in the Short Answers inherit the labels used in the Answers. "
+},
+{
+  "id": "figuresAndTablesLabel01-4-3-7",
+  "level": "2",
+  "url": "figuresAndTablesLabel01.html#figuresAndTablesLabel01-4-3-7",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Remember that the label used in a figure is the name of the TeX file that draws that figure. "
+},
+{
+  "id": "figuresAndTablesLabel01-5-2",
+  "level": "2",
+  "url": "figuresAndTablesLabel01.html#figuresAndTablesLabel01-5-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "figuresAndTablesLabel01-5-3-1-1",
+  "level": "2",
+  "url": "figuresAndTablesLabel01.html#figuresAndTablesLabel01-5-3-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you have a single table in the Question, it is labelled \"1-2dslgnp3 tab \". "
+},
+{
+  "id": "figuresAndTablesLabel01-5-3-2-1",
+  "level": "2",
+  "url": "figuresAndTablesLabel01.html#figuresAndTablesLabel01-5-3-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you have several tables in the Question, they are labelled \"1-2dslgnp3 taba \", \"1-2dslgnp3 tabb \", etc. "
+},
+{
+  "id": "figuresAndTablesLabel01-5-3-3-1",
+  "level": "2",
+  "url": "figuresAndTablesLabel01.html#figuresAndTablesLabel01-5-3-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you have a single table in the Answer, it is labelled \"1-2dslgnp3 anstab \". "
+},
+{
+  "id": "figuresAndTablesLabel01-5-3-4-1",
+  "level": "2",
+  "url": "figuresAndTablesLabel01.html#figuresAndTablesLabel01-5-3-4-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you have several tables in the Answer, they are labelled \"1-2dslgnp3 anstaba \", \"1-2dslgnp3 anstabb \", etc. "
+},
+{
+  "id": "figuresAndTablesLabel01-5-3-5-1",
+  "level": "2",
+  "url": "figuresAndTablesLabel01.html#figuresAndTablesLabel01-5-3-5-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you have several sets of several tables in the Answer, they are called \"1-2dslgnp3 anstaba1 \", \"1-2dslgnp3 anstaba2 \", \"1-2dslgnp3ans tabb1 \", \"1-2dslgnp3ans tabb2 \", etc. "
+},
+{
+  "id": "figuresAndTablesLabel01-5-4",
+  "level": "2",
+  "url": "figuresAndTablesLabel01.html#figuresAndTablesLabel01-5-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Tables in the Short Answers do not have labels. "
+},
+{
+  "id": "figuresAndTablesLabel01-5-5",
+  "level": "2",
+  "url": "figuresAndTablesLabel01.html#figuresAndTablesLabel01-5-5",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Here is a simplified explanation for single figures and single tables, assuming the exercise file is named \"1-2dslgnp3.tex\". "
 },
 {
   "id": "figuresAndTablesLabel01-5-6",
@@ -496,6 +1567,15 @@ var ptx_lunr_docs = [
   "body": " When do I put labels (numbers) and captions on tables?  That depends on whether the table is in the text or in an exercise\/problem, and, in the latter case, whether it is in the Question, Answer, or Short Answer. This table summarizes the various cases.        Text    Exercise\/Problem              Question    Answer    Short Answer      Label   Always  Sometimes  Usually  Never     Caption   Always  Never  Wisely  Never     As far as the Answers are concerned, a label (number) is usually useful. However, a caption should only be added if it helps give additional information. It is not worth writing in the caption things that are either obvious or better said in the text part of the Answer.  Here are typical table templates that can be cut, pasted, and modified. See also What is the preferred convention for labelling figures and tables in Exercises.      Table Template for Text    \\begin{stayfig} \\tinput[label] {\\begin{calctabular}{c|c|c|c|c} Time (hours) & 0 & 24 & 48 & 72\\\\ \\hline Temperature (F)& 75 & 75 & 75 & 75 \\end{calctabular}}{The caption lives here} \\end{stayfig}      Table Template for Question (with label)    \\begin{stayfig} \\tinput*[exercisenametab] {\\begin{calctabular}{c|c|c|c|c} Time (hours) & 0 & 24 & 48 & 72\\\\ \\hline Temperature (F)& 75 & 75 & 75 & 75 \\end{calctabular}} \\end{stayfig}      Table Template for Question (no label)    \\begin{stayfig} {\\begin{calctabular}{c|c|c|c|c} Time (hours) & 0 & 24 & 48 & 72\\\\ \\hline Temperature (F)& 75 & 75 & 75 & 75 \\end{calctabular}} \\end{stayfig}      Table Template for Answer    \\begin{stayfig} \\tinput*[exercisenametabans] {\\begin{calctabular}{c|c|c|c|c} Time (hours) & 0 & 24 & 48 & 72\\\\ \\hline Temperature (F)& 75 & 75 & 75 & 75 \\end{calctabular}} \\end{stayfig}      Table Template for Short Answer    \\begin{stayfig} {\\begin{calctabular}{c|c|c|c|c} Time (hours) & 0 & 24 & 48 & 72\\\\ \\hline Temperature (F)& 75 & 75 & 75 & 75 \\end{calctabular}} \\end{stayfig}     "
 },
 {
+  "id": "tableLabels01-2",
+  "level": "2",
+  "url": "tableLabels01.html#tableLabels01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "That depends on whether the table is in the text or in an exercise\/problem, and, in the latter case, whether it is in the Question, Answer, or Short Answer. This table summarizes the various cases. "
+},
+{
   "id": "tableLabels01-3",
   "level": "2",
   "url": "tableLabels01.html#tableLabels01-3",
@@ -503,6 +1583,114 @@ var ptx_lunr_docs = [
   "number": "15.5.1",
   "title": "",
   "body": "      Text    Exercise\/Problem              Question    Answer    Short Answer      Label   Always  Sometimes  Usually  Never     Caption   Always  Never  Wisely  Never    "
+},
+{
+  "id": "tableLabels01-4",
+  "level": "2",
+  "url": "tableLabels01.html#tableLabels01-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "As far as the Answers are concerned, a label (number) is usually useful. However, a caption should only be added if it helps give additional information. It is not worth writing in the caption things that are either obvious or better said in the text part of the Answer. "
+},
+{
+  "id": "tableLabels01-5",
+  "level": "2",
+  "url": "tableLabels01.html#tableLabels01-5",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Here are typical table templates that can be cut, pasted, and modified. See also What is the preferred convention for labelling figures and tables in Exercises.  "
+},
+{
+  "id": "tableLabels01-6-1-1",
+  "level": "2",
+  "url": "tableLabels01.html#tableLabels01-6-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Table Template for Text  "
+},
+{
+  "id": "tableLabels01-6-1-2",
+  "level": "2",
+  "url": "tableLabels01.html#tableLabels01-6-1-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " \\begin{stayfig} \\tinput[label] {\\begin{calctabular}{c|c|c|c|c} Time (hours) & 0 & 24 & 48 & 72\\\\ \\hline Temperature (F)& 75 & 75 & 75 & 75 \\end{calctabular}}{The caption lives here} \\end{stayfig}  "
+},
+{
+  "id": "tableLabels01-6-2-1",
+  "level": "2",
+  "url": "tableLabels01.html#tableLabels01-6-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Table Template for Question (with label)  "
+},
+{
+  "id": "tableLabels01-6-2-2",
+  "level": "2",
+  "url": "tableLabels01.html#tableLabels01-6-2-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " \\begin{stayfig} \\tinput*[exercisenametab] {\\begin{calctabular}{c|c|c|c|c} Time (hours) & 0 & 24 & 48 & 72\\\\ \\hline Temperature (F)& 75 & 75 & 75 & 75 \\end{calctabular}} \\end{stayfig}  "
+},
+{
+  "id": "tableLabels01-6-3-1",
+  "level": "2",
+  "url": "tableLabels01.html#tableLabels01-6-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Table Template for Question (no label)  "
+},
+{
+  "id": "tableLabels01-6-3-2",
+  "level": "2",
+  "url": "tableLabels01.html#tableLabels01-6-3-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " \\begin{stayfig} {\\begin{calctabular}{c|c|c|c|c} Time (hours) & 0 & 24 & 48 & 72\\\\ \\hline Temperature (F)& 75 & 75 & 75 & 75 \\end{calctabular}} \\end{stayfig}  "
+},
+{
+  "id": "tableLabels01-6-4-1",
+  "level": "2",
+  "url": "tableLabels01.html#tableLabels01-6-4-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Table Template for Answer  "
+},
+{
+  "id": "tableLabels01-6-4-2",
+  "level": "2",
+  "url": "tableLabels01.html#tableLabels01-6-4-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " \\begin{stayfig} \\tinput*[exercisenametabans] {\\begin{calctabular}{c|c|c|c|c} Time (hours) & 0 & 24 & 48 & 72\\\\ \\hline Temperature (F)& 75 & 75 & 75 & 75 \\end{calctabular}} \\end{stayfig}  "
+},
+{
+  "id": "tableLabels01-6-5-1",
+  "level": "2",
+  "url": "tableLabels01.html#tableLabels01-6-5-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Table Template for Short Answer  "
+},
+{
+  "id": "tableLabels01-6-5-2",
+  "level": "2",
+  "url": "tableLabels01.html#tableLabels01-6-5-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " \\begin{stayfig} {\\begin{calctabular}{c|c|c|c|c} Time (hours) & 0 & 24 & 48 & 72\\\\ \\hline Temperature (F)& 75 & 75 & 75 & 75 \\end{calctabular}} \\end{stayfig}  "
 },
 {
   "id": "answersAndShortAnswers01",
@@ -514,6 +1702,15 @@ var ptx_lunr_docs = [
   "body": " Is it OK to submit exercises without Answers or ShortAnswers?  Absolutely not. Exercises without Answers or ShortAnswers are usually returned or set aside.  "
 },
 {
+  "id": "answersAndShortAnswers01-2",
+  "level": "2",
+  "url": "answersAndShortAnswers01.html#answersAndShortAnswers01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Absolutely not. Exercises without Answers or ShortAnswers are usually returned or set aside. "
+},
+{
   "id": "answersOrShortAnswersMissing01",
   "level": "1",
   "url": "answersOrShortAnswersMissing01.html",
@@ -521,6 +1718,15 @@ var ptx_lunr_docs = [
   "number": "15.7",
   "title": "When checking exercises, what do I do if an Answer or ShortAnswer is missing?",
   "body": " When checking exercises, what do I do if an Answer or ShortAnswer is missing?  Either supply the Answer or ShortAnswer, or enter \\Answer{\\answermissing} or \\ShortAnswer{\\shortanswermissing} .  "
+},
+{
+  "id": "answersOrShortAnswersMissing01-2",
+  "level": "2",
+  "url": "answersOrShortAnswersMissing01.html#answersOrShortAnswersMissing01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Either supply the Answer or ShortAnswer, or enter \\Answer{\\answermissing} or \\ShortAnswer{\\shortanswermissing} . "
 },
 {
   "id": "collectionOfExercises01",
@@ -532,6 +1738,78 @@ var ptx_lunr_docs = [
   "body": " How do I put together a collection of exercises?  Let's assume that \"1-2dslnp001.tex\", \"1-2dslnp002.tex\", \"1-2dslnp003.tex\", and \"1-2dslnp004.tex\", are the four files (all in the same directory), each containing one exercise, that you want collect together.  First construct a master TeX file, with the following structure.  \\documentclass{astex} \\asformat{MULTI} \\noautopage \\raggedbottom \\showfilename \\printeverything \\begin{document} \\exercises<filename> \\end{document}  where \"filename\" can be whatever you please, but it should contain your initials, e.g. \"dsl-algebra\".  Then you need to construct a file named \"ex-filename.tex\" (in this example it would be \"ex-dsl-algebra.tex\"), with the following structure.  \\begin{exgroup}<\\exhead> \\qinput{1-2dslnp001} \\qinput{1-2dslnp002} \\qinput{1-2dslnp003} \\qinput{1-2dslnp004} \\end{exgroup}  where \"1-2dslnp001.tex\", \"1-2dslnp002.tex\", \"1-2dslnp003.tex\", and \"1-2dslnp004.tex\" are the four exercise files.  All six files should be in the same directory.  "
 },
 {
+  "id": "collectionOfExercises01-2",
+  "level": "2",
+  "url": "collectionOfExercises01.html#collectionOfExercises01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Let's assume that \"1-2dslnp001.tex\", \"1-2dslnp002.tex\", \"1-2dslnp003.tex\", and \"1-2dslnp004.tex\", are the four files (all in the same directory), each containing one exercise, that you want collect together. "
+},
+{
+  "id": "collectionOfExercises01-3",
+  "level": "2",
+  "url": "collectionOfExercises01.html#collectionOfExercises01-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "First construct a master TeX file, with the following structure. "
+},
+{
+  "id": "collectionOfExercises01-4",
+  "level": "2",
+  "url": "collectionOfExercises01.html#collectionOfExercises01-4",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\documentclass{astex} \\asformat{MULTI} \\noautopage \\raggedbottom \\showfilename \\printeverything \\begin{document} \\exercises<filename> \\end{document} "
+},
+{
+  "id": "collectionOfExercises01-5",
+  "level": "2",
+  "url": "collectionOfExercises01.html#collectionOfExercises01-5",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "where \"filename\" can be whatever you please, but it should contain your initials, e.g. \"dsl-algebra\". "
+},
+{
+  "id": "collectionOfExercises01-6",
+  "level": "2",
+  "url": "collectionOfExercises01.html#collectionOfExercises01-6",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Then you need to construct a file named \"ex-filename.tex\" (in this example it would be \"ex-dsl-algebra.tex\"), with the following structure. "
+},
+{
+  "id": "collectionOfExercises01-7",
+  "level": "2",
+  "url": "collectionOfExercises01.html#collectionOfExercises01-7",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{exgroup}<\\exhead> \\qinput{1-2dslnp001} \\qinput{1-2dslnp002} \\qinput{1-2dslnp003} \\qinput{1-2dslnp004} \\end{exgroup} "
+},
+{
+  "id": "collectionOfExercises01-8",
+  "level": "2",
+  "url": "collectionOfExercises01.html#collectionOfExercises01-8",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "where \"1-2dslnp001.tex\", \"1-2dslnp002.tex\", \"1-2dslnp003.tex\", and \"1-2dslnp004.tex\" are the four exercise files. "
+},
+{
+  "id": "collectionOfExercises01-9",
+  "level": "2",
+  "url": "collectionOfExercises01.html#collectionOfExercises01-9",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "All six files should be in the same directory. "
+},
+{
   "id": "qset01",
   "level": "1",
   "url": "qset01.html",
@@ -541,6 +1819,96 @@ var ptx_lunr_docs = [
   "body": " In a collection of exercises, how do I give a subset of the exercises the same set of instructions, called a QSET?  Edit the file you created in the answer to How do I put together a collection of exercises? (there called \"ex-filename.tex\") to read  \\begin{exgroup}<\\exhead> \\qinput{1-2dslnp001} \\begin{qset}[ins1-2dslnp002-3] \\qinput{1-2dslnp002} \\qinput{1-2dslnp003} \\end{qset} \\qinput{1-2dslnp004} \\end{exgroup}  where ins1-2dslnp002-3 is a filename that starts with ins and is completed with the filenames of the first (1-2dslnp002) and part of the last (1-2dslnp003) exercises that require the same set of instructions.  This will give the second and third exercises the same set of instructions.  Then, in each of the files \"1-2dslnp002.tex\" and \"1-2dslnp003.tex\" add \\needinstr{ins1-2dslnp002-3} as the first line.  Finally create a file named \"ins1-2dslnp002-3.tex\", containing your instructions, along the following lines.  The statements in Problems~\\qsetrange{} are either true or false. Identify which is which.  The ~\\qsetrange{} is then automatically converted into \"2-3\" when the output file is created.   If you want to reuse the same instructions for a different QSET, make sure you create a second instruction file with the same contents, but a new name.   See When do I use a QSET? for suggestions on when to use a QSET.  "
 },
 {
+  "id": "qset01-2",
+  "level": "2",
+  "url": "qset01.html#qset01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Edit the file you created in the answer to How do I put together a collection of exercises? (there called \"ex-filename.tex\") to read "
+},
+{
+  "id": "qset01-3",
+  "level": "2",
+  "url": "qset01.html#qset01-3",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{exgroup}<\\exhead> \\qinput{1-2dslnp001} \\begin{qset}[ins1-2dslnp002-3] \\qinput{1-2dslnp002} \\qinput{1-2dslnp003} \\end{qset} \\qinput{1-2dslnp004} \\end{exgroup} "
+},
+{
+  "id": "qset01-4",
+  "level": "2",
+  "url": "qset01.html#qset01-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "where ins1-2dslnp002-3 is a filename that starts with ins and is completed with the filenames of the first (1-2dslnp002) and part of the last (1-2dslnp003) exercises that require the same set of instructions. "
+},
+{
+  "id": "qset01-5",
+  "level": "2",
+  "url": "qset01.html#qset01-5",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "This will give the second and third exercises the same set of instructions. "
+},
+{
+  "id": "qset01-6",
+  "level": "2",
+  "url": "qset01.html#qset01-6",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Then, in each of the files \"1-2dslnp002.tex\" and \"1-2dslnp003.tex\" add \\needinstr{ins1-2dslnp002-3} as the first line. "
+},
+{
+  "id": "qset01-7",
+  "level": "2",
+  "url": "qset01.html#qset01-7",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Finally create a file named \"ins1-2dslnp002-3.tex\", containing your instructions, along the following lines. "
+},
+{
+  "id": "qset01-8",
+  "level": "2",
+  "url": "qset01.html#qset01-8",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "The statements in Problems~\\qsetrange{} are either true or false. Identify which is which. "
+},
+{
+  "id": "qset01-9",
+  "level": "2",
+  "url": "qset01.html#qset01-9",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The ~\\qsetrange{} is then automatically converted into \"2-3\" when the output file is created. "
+},
+{
+  "id": "qset01-10",
+  "level": "2",
+  "url": "qset01.html#qset01-10",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " If you want to reuse the same instructions for a different QSET, make sure you create a second instruction file with the same contents, but a new name.  "
+},
+{
+  "id": "qset01-11",
+  "level": "2",
+  "url": "qset01.html#qset01-11",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "See When do I use a QSET? for suggestions on when to use a QSET. "
+},
+{
   "id": "dollarSign01",
   "level": "1",
   "url": "dollarSign01.html",
@@ -548,6 +1916,114 @@ var ptx_lunr_docs = [
   "number": "15.10",
   "title": "In Exercises, when do we use <code class=\"code-inline tex2jax_ignore\">$blah$<\/code>, <code class=\"code-inline tex2jax_ignore\">$$blah$$<\/code>, and <code class=\"code-inline tex2jax_ignore\">$\\dsty blah$<\/code>?",
   "body": " In Exercises, when do we use $blah$ , $$blah$$ , and $\\dsty blah$ ?  It depends on whether we are writing a Question, Answer, or Short Answer.     In the Question.     If it is not part of a \\qset, we tend to avoid $\\dsty blah$ and to use $blah$ .    If it is part of a qset, then $\\dsty blah$ is useful where there are no words and we want the equation\/expression to be big as though centered, but we want it positioned next to the problem number. See for example Calculus page 126, Section 4.3 problems 27,28, and 30-34. They would all be too small if $blah$ was used and they would be centered (away from the problem number) if $$blah$$ was used.    We use $$blah$$ when we say something like  The number of sunflowers in a field is given by the cyclical sunflower equation: $$ S= 500\\sin t, $$ where $t$ is in years.  See for example Calculus p.161, Section 3-misc probs 73-76, 84.  Note: There is no blank line before the first $$ and after the second $$ .       In the Answer.     If the equation\/expression blah is complicated or important, we use $$blah$$ . (However, please see this .) If it is not, we use $blah$ . We seldom use $\\dsty blah$ .       In the Short Answer.     We only use $blah$ . We never, ever, under any circumstances use $$blah$$ and we never use $\\dsty blah$ , unless specifically requested.            Question    Answer    Short Answer      $blah$   Can use  Can use  Can use     $$blah$$   Can use  Can use  Never, ever use     $\\dsty blah$   Occasionally use in QSET  Seldom use  Never use     "
+},
+{
+  "id": "dollarSign01-2",
+  "level": "2",
+  "url": "dollarSign01.html#dollarSign01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "It depends on whether we are writing a Question, Answer, or Short Answer. "
+},
+{
+  "id": "dollarSign01-3-1-1",
+  "level": "2",
+  "url": "dollarSign01.html#dollarSign01-3-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " In the Question.  "
+},
+{
+  "id": "dollarSign01-3-1-2-1-1",
+  "level": "2",
+  "url": "dollarSign01.html#dollarSign01-3-1-2-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If it is not part of a \\qset, we tend to avoid $\\dsty blah$ and to use $blah$ . "
+},
+{
+  "id": "dollarSign01-3-1-2-2-1",
+  "level": "2",
+  "url": "dollarSign01.html#dollarSign01-3-1-2-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If it is part of a qset, then $\\dsty blah$ is useful where there are no words and we want the equation\/expression to be big as though centered, but we want it positioned next to the problem number. See for example Calculus page 126, Section 4.3 problems 27,28, and 30-34. They would all be too small if $blah$ was used and they would be centered (away from the problem number) if $$blah$$ was used. "
+},
+{
+  "id": "dollarSign01-3-1-2-3-1",
+  "level": "2",
+  "url": "dollarSign01.html#dollarSign01-3-1-2-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "We use $$blah$$ when we say something like "
+},
+{
+  "id": "dollarSign01-3-1-2-3-2",
+  "level": "2",
+  "url": "dollarSign01.html#dollarSign01-3-1-2-3-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "The number of sunflowers in a field is given by the cyclical sunflower equation: $$ S= 500\\sin t, $$ where $t$ is in years. "
+},
+{
+  "id": "dollarSign01-3-1-2-3-3",
+  "level": "2",
+  "url": "dollarSign01.html#dollarSign01-3-1-2-3-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "See for example Calculus p.161, Section 3-misc probs 73-76, 84. "
+},
+{
+  "id": "dollarSign01-3-1-2-3-4",
+  "level": "2",
+  "url": "dollarSign01.html#dollarSign01-3-1-2-3-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Note: There is no blank line before the first $$ and after the second $$ . "
+},
+{
+  "id": "dollarSign01-3-2-1",
+  "level": "2",
+  "url": "dollarSign01.html#dollarSign01-3-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " In the Answer.  "
+},
+{
+  "id": "dollarSign01-3-2-2-1-1",
+  "level": "2",
+  "url": "dollarSign01.html#dollarSign01-3-2-2-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If the equation\/expression blah is complicated or important, we use $$blah$$ . (However, please see this .) If it is not, we use $blah$ . We seldom use $\\dsty blah$ . "
+},
+{
+  "id": "dollarSign01-3-3-1",
+  "level": "2",
+  "url": "dollarSign01.html#dollarSign01-3-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " In the Short Answer.  "
+},
+{
+  "id": "dollarSign01-3-3-2-1-1",
+  "level": "2",
+  "url": "dollarSign01.html#dollarSign01-3-3-2-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "We only use $blah$ . We never, ever, under any circumstances use $$blah$$ and we never use $\\dsty blah$ , unless specifically requested. "
 },
 {
   "id": "dollarSign01-4",
@@ -568,6 +2044,15 @@ var ptx_lunr_docs = [
   "body": " How do I turn off the little rectangular boxes that give the filenames of the exercise files alongside the exercises?  Comment out the \\showfilename flag at the beginning of the master file (with a percent sign). However, please leave them in for anything you give in.  "
 },
 {
+  "id": "filenamesBoxes01-2",
+  "level": "2",
+  "url": "filenamesBoxes01.html#filenamesBoxes01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Comment out the \\showfilename flag at the beginning of the master file (with a percent sign). However, please leave them in for anything you give in. "
+},
+{
   "id": "printEverything01",
   "level": "1",
   "url": "printEverything01.html",
@@ -575,6 +2060,24 @@ var ptx_lunr_docs = [
   "number": "15.12",
   "title": "How do I print the questions, the answers, and the short answers for the exercises?",
   "body": " How do I print the questions, the answers, and the short answers for the exercises?  Insert \\printeverything before \\begin{document} in your master file. Also comment out (with a percent sign) \\printboth  \\printshortanswers and \\printquestions if they are there.  For future reference   \\printeverything prints the questions, answers, and short answers.   \\printboth prints the questions and answers.   \\printshortanswers prints the short answers.   \\printquestions prints the questions.    "
+},
+{
+  "id": "printEverything01-2",
+  "level": "2",
+  "url": "printEverything01.html#printEverything01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Insert \\printeverything before \\begin{document} in your master file. Also comment out (with a percent sign) \\printboth  \\printshortanswers and \\printquestions if they are there. "
+},
+{
+  "id": "printEverything01-3",
+  "level": "2",
+  "url": "printEverything01.html#printEverything01-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "For future reference   \\printeverything prints the questions, answers, and short answers.   \\printboth prints the questions and answers.   \\printshortanswers prints the short answers.   \\printquestions prints the questions.   "
 },
 {
   "id": "printOnlyExerciseQuestion01",
@@ -586,6 +2089,15 @@ var ptx_lunr_docs = [
   "body": " How do I print only the questions (without the answers or short answers) for the exercises?  In the master file comment out (with a percent sign) all of the following (some of which are probably there and on): \\printeverything \\printanswers \\printshortanswers \\printboth   "
 },
 {
+  "id": "printOnlyExerciseQuestion01-2",
+  "level": "2",
+  "url": "printOnlyExerciseQuestion01.html#printOnlyExerciseQuestion01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "In the master file comment out (with a percent sign) all of the following (some of which are probably there and on): \\printeverything \\printanswers \\printshortanswers \\printboth  "
+},
+{
   "id": "oneColumnPrint01",
   "level": "1",
   "url": "oneColumnPrint01.html",
@@ -593,6 +2105,24 @@ var ptx_lunr_docs = [
   "number": "15.14",
   "title": "How do I print the exercises in one column instead of the default of two columns?",
   "body": " How do I print the exercises in one column instead of the default of two columns?  Replace \\begin{exgroup} with \\begin{exgroup}[1] in your \"ex-\" file.  Alternatively, place \\def\\excols{1} before \\begin{document} in your master file.  "
+},
+{
+  "id": "oneColumnPrint01-2",
+  "level": "2",
+  "url": "oneColumnPrint01.html#oneColumnPrint01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Replace \\begin{exgroup} with \\begin{exgroup}[1] in your \"ex-\" file. "
+},
+{
+  "id": "oneColumnPrint01-3",
+  "level": "2",
+  "url": "oneColumnPrint01.html#oneColumnPrint01-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Alternatively, place \\def\\excols{1} before \\begin{document} in your master file. "
 },
 {
   "id": "unitsOnFigures01",
@@ -604,6 +2134,15 @@ var ptx_lunr_docs = [
   "body": " Do I need to put the units (of the variables) in the text of an exercise and also in the figure of the exercise?  No. Wherever possible, units should be on the figure, not in the text.  "
 },
 {
+  "id": "unitsOnFigures01-2",
+  "level": "2",
+  "url": "unitsOnFigures01.html#unitsOnFigures01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "No. Wherever possible, units should be on the figure, not in the text. "
+},
+{
   "id": "conciseVsWording01",
   "level": "1",
   "url": "conciseVsWording01.html",
@@ -611,6 +2150,15 @@ var ptx_lunr_docs = [
   "number": "15.16",
   "title": "If I have the choice between wording an exercise in a concise style or in a verbose style, which is preferable?",
   "body": " If I have the choice between wording an exercise in a concise style or in a verbose style, which is preferable?  Concise, concise, concise! Here are some examples:      Replace this    With this     Without using a calculator  Without a calculator    Evaluate the following expressions  Evaluate    Suppose a population is growing  A population is growing    Assume f(x) is given by f(x) = x^2 .  Let f(x) = x^2 .    ..., and so ..., and so ...  ..., and .... So ...    Show your work.      Answer the following questions.      Do the following calculations       "
+},
+{
+  "id": "conciseVsWording01-2",
+  "level": "2",
+  "url": "conciseVsWording01.html#conciseVsWording01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Concise, concise, concise! Here are some examples: "
 },
 {
   "id": "conciseVsWording01-3",
@@ -631,6 +2179,87 @@ var ptx_lunr_docs = [
   "body": " What do I need to know about short answers?    Always include a short answer.    If the short answer is inappropriate, use \\ShortAnswer{\\noshortanswer}     If part of a short answer is inappropriate, (for example, part (b)) use \\begin{enumerate} \\item Answer to part (a) \\iinoshrtans \\item Answer to part (c) \\end{enumerate}     Do not use \\frac in the short answers. All fractions are shilled. See What is shilling?.     Do not use \\begin{across} in the short answers.    Text that starts a short answer is capitalized.    Short answers do not end with a period. Different parts of the same answer are separated with semi-colons. For examples of this, see the answers at the back of Calculus, 3rd edition.    (For TeXperts) If you use local TeX definitions\/macros (which are discouraged by the CCHE powers!), please ensure that the Short Answer makes no use of them. Before going to press the short answers are stripped from the exercises. Thus, the short answers lose the reference to local definitions\/macros.    See also    How do I put a figure into the short answer of an exercise or problem? ,    In Exercises, when do we use $blah$ , $$blah$$ , and $\\dsty blah$ ? f ,     If there are many possible answers to an exercise\/problem, what is the correct way to write a short answer?      "
 },
 {
+  "id": "shortAnswers01-2-1-1",
+  "level": "2",
+  "url": "shortAnswers01.html#shortAnswers01-2-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Always include a short answer. "
+},
+{
+  "id": "shortAnswers01-2-2-1",
+  "level": "2",
+  "url": "shortAnswers01.html#shortAnswers01-2-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If the short answer is inappropriate, use \\ShortAnswer{\\noshortanswer}  "
+},
+{
+  "id": "shortAnswers01-2-3-1",
+  "level": "2",
+  "url": "shortAnswers01.html#shortAnswers01-2-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If part of a short answer is inappropriate, (for example, part (b)) use \\begin{enumerate} \\item Answer to part (a) \\iinoshrtans \\item Answer to part (c) \\end{enumerate}  "
+},
+{
+  "id": "shortAnswers01-2-4-1",
+  "level": "2",
+  "url": "shortAnswers01.html#shortAnswers01-2-4-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Do not use \\frac in the short answers. All fractions are shilled. See What is shilling?.  "
+},
+{
+  "id": "shortAnswers01-2-5-1",
+  "level": "2",
+  "url": "shortAnswers01.html#shortAnswers01-2-5-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Do not use \\begin{across} in the short answers. "
+},
+{
+  "id": "shortAnswers01-2-6-1",
+  "level": "2",
+  "url": "shortAnswers01.html#shortAnswers01-2-6-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Text that starts a short answer is capitalized. "
+},
+{
+  "id": "shortAnswers01-2-7-1",
+  "level": "2",
+  "url": "shortAnswers01.html#shortAnswers01-2-7-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Short answers do not end with a period. Different parts of the same answer are separated with semi-colons. For examples of this, see the answers at the back of Calculus, 3rd edition. "
+},
+{
+  "id": "shortAnswers01-2-8-1",
+  "level": "2",
+  "url": "shortAnswers01.html#shortAnswers01-2-8-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "(For TeXperts) If you use local TeX definitions\/macros (which are discouraged by the CCHE powers!), please ensure that the Short Answer makes no use of them. Before going to press the short answers are stripped from the exercises. Thus, the short answers lose the reference to local definitions\/macros. "
+},
+{
+  "id": "shortAnswers01-3",
+  "level": "2",
+  "url": "shortAnswers01.html#shortAnswers01-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "See also    How do I put a figure into the short answer of an exercise or problem? ,    In Exercises, when do we use $blah$ , $$blah$$ , and $\\dsty blah$ ? f ,     If there are many possible answers to an exercise\/problem, what is the correct way to write a short answer?     "
+},
+{
   "id": "figureInShortAnswer02",
   "level": "1",
   "url": "figureInShortAnswer02.html",
@@ -638,6 +2267,15 @@ var ptx_lunr_docs = [
   "number": "15.18",
   "title": "How do I put a figure into the short answer of an exercise or problem?",
   "body": " How do I put a figure into the short answer of an exercise or problem?   Follow this link   "
+},
+{
+  "id": "figureInShortAnswer02-2",
+  "level": "2",
+  "url": "figureInShortAnswer02.html#figureInShortAnswer02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "unitsInShortAnswer01",
@@ -649,6 +2287,15 @@ var ptx_lunr_docs = [
   "body": " If in the short answers I have the choice between including or omitting units, what should I do? (For example, if a problem asks \"How many ships are left?\", should the short answer be \"32\" or \"32 ships\"?  32 ships. Always include units.  "
 },
 {
+  "id": "unitsInShortAnswer01-2",
+  "level": "2",
+  "url": "unitsInShortAnswer01.html#unitsInShortAnswer01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "32 ships. Always include units. "
+},
+{
   "id": "manyPossibleAnswersInShortAnswer",
   "level": "1",
   "url": "manyPossibleAnswersInShortAnswer.html",
@@ -656,6 +2303,51 @@ var ptx_lunr_docs = [
   "number": "15.20",
   "title": "If there are many possible answers to an exercise\/problem, what is the correct way to write a short answer?",
   "body": " If there are many possible answers to an exercise\/problem, what is the correct way to write a short answer?  Use either  Possible answer: y=x  or  y=x. Other answers possible  However, If the questions says \"Give an example of....\" so it is clear that there are lots of possible answers, then the words \"Possible answer:\" or \"Other answers possible\" are not needed.  "
+},
+{
+  "id": "manyPossibleAnswersInShortAnswer-2",
+  "level": "2",
+  "url": "manyPossibleAnswersInShortAnswer.html#manyPossibleAnswersInShortAnswer-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use either "
+},
+{
+  "id": "manyPossibleAnswersInShortAnswer-3",
+  "level": "2",
+  "url": "manyPossibleAnswersInShortAnswer.html#manyPossibleAnswersInShortAnswer-3",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "Possible answer: y=x "
+},
+{
+  "id": "manyPossibleAnswersInShortAnswer-4",
+  "level": "2",
+  "url": "manyPossibleAnswersInShortAnswer.html#manyPossibleAnswersInShortAnswer-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "or "
+},
+{
+  "id": "manyPossibleAnswersInShortAnswer-5",
+  "level": "2",
+  "url": "manyPossibleAnswersInShortAnswer.html#manyPossibleAnswersInShortAnswer-5",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "y=x. Other answers possible "
+},
+{
+  "id": "manyPossibleAnswersInShortAnswer-6",
+  "level": "2",
+  "url": "manyPossibleAnswersInShortAnswer.html#manyPossibleAnswersInShortAnswer-6",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "However, If the questions says \"Give an example of....\" so it is clear that there are lots of possible answers, then the words \"Possible answer:\" or \"Other answers possible\" are not needed. "
 },
 {
   "id": "whenDoIUseQSET01",
@@ -667,6 +2359,87 @@ var ptx_lunr_docs = [
   "body": " When do I use a QSET?  See In a collection of exercises, how do I give a subset of the exercises the same set of instructions, called a QSET? on how to construct a QSET.  Use a QSET so the instructor can assign complete exercises (\"Do Exercises 1, 3, and 5\"), rather than partial exercises (\"Do Exercises 1(a), 1(c), and 1(e)\").  Thus, the single problem    If f(x) = x^2, (a) Find f(0) (b) Solve f(x) = 0 (c) Find f(1) (d) Solve f(x) = 1 (e) Find f(4) (f) Solve f(x) = 4    would be better as the QSET  In Problems 1-3, f(x) = x^2.    (a) Find f(0) (b) Solve f(x) = 0.    (a) Find f(1) (b) Solve f(x) = 1.    (a) Find f(4 (b) Solve f(x) = 4.    "
 },
 {
+  "id": "whenDoIUseQSET01-2",
+  "level": "2",
+  "url": "whenDoIUseQSET01.html#whenDoIUseQSET01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "See In a collection of exercises, how do I give a subset of the exercises the same set of instructions, called a QSET? on how to construct a QSET. "
+},
+{
+  "id": "whenDoIUseQSET01-3",
+  "level": "2",
+  "url": "whenDoIUseQSET01.html#whenDoIUseQSET01-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use a QSET so the instructor can assign complete exercises (\"Do Exercises 1, 3, and 5\"), rather than partial exercises (\"Do Exercises 1(a), 1(c), and 1(e)\"). "
+},
+{
+  "id": "whenDoIUseQSET01-4",
+  "level": "2",
+  "url": "whenDoIUseQSET01.html#whenDoIUseQSET01-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Thus, the single problem "
+},
+{
+  "id": "whenDoIUseQSET01-5-1-1",
+  "level": "2",
+  "url": "whenDoIUseQSET01.html#whenDoIUseQSET01-5-1-1",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "If f(x) = x^2, (a) Find f(0) (b) Solve f(x) = 0 (c) Find f(1) (d) Solve f(x) = 1 (e) Find f(4) (f) Solve f(x) = 4 "
+},
+{
+  "id": "whenDoIUseQSET01-6",
+  "level": "2",
+  "url": "whenDoIUseQSET01.html#whenDoIUseQSET01-6",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "would be better as the QSET "
+},
+{
+  "id": "whenDoIUseQSET01-7",
+  "level": "2",
+  "url": "whenDoIUseQSET01.html#whenDoIUseQSET01-7",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "In Problems 1-3, f(x) = x^2. "
+},
+{
+  "id": "whenDoIUseQSET01-8-1-1",
+  "level": "2",
+  "url": "whenDoIUseQSET01.html#whenDoIUseQSET01-8-1-1",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "(a) Find f(0) (b) Solve f(x) = 0. "
+},
+{
+  "id": "whenDoIUseQSET01-8-2-1",
+  "level": "2",
+  "url": "whenDoIUseQSET01.html#whenDoIUseQSET01-8-2-1",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "(a) Find f(1) (b) Solve f(x) = 1. "
+},
+{
+  "id": "whenDoIUseQSET01-8-3-1",
+  "level": "2",
+  "url": "whenDoIUseQSET01.html#whenDoIUseQSET01-8-3-1",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "(a) Find f(4 (b) Solve f(x) = 4. "
+},
+{
   "id": "exactAnswer01",
   "level": "1",
   "url": "exactAnswer01.html",
@@ -674,6 +2447,15 @@ var ptx_lunr_docs = [
   "number": "15.22",
   "title": "The exact answer to one of my exercises is <code class=\"code-inline tex2jax_ignore\">$5\/\\pi$<\/code> inches. Should I also give the calculator value of 1.592?",
   "body": " The exact answer to one of my exercises is $5\/\\pi$ inches. Should I also give the calculator value of 1.592?  It is best to give both, but do not omit the exact answer.  "
+},
+{
+  "id": "exactAnswer01-2",
+  "level": "2",
+  "url": "exactAnswer01.html#exactAnswer01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "It is best to give both, but do not omit the exact answer. "
 },
 {
   "id": "decimalPlacesInAnswer01",
@@ -685,6 +2467,24 @@ var ptx_lunr_docs = [
   "body": " How many decimal places should I keep in a numerical answer?  Usually three, but common sense should prevail. Here are some sample answers, and their numerical counterparts:  pi = 3.142 1\/3 = 0.333 2\/3 = 0.667 1\/10 = 0.1 1\/10,000 = 0.0001 (Keeping only 3 decimal places here would make 1\/10,000 = 0.000.) 5 1\/10,000 = 5.000 5 = 5 9.123 people = 9 people $54.321 = $54.32  "
 },
 {
+  "id": "decimalPlacesInAnswer01-2",
+  "level": "2",
+  "url": "decimalPlacesInAnswer01.html#decimalPlacesInAnswer01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Usually three, but common sense should prevail. Here are some sample answers, and their numerical counterparts: "
+},
+{
+  "id": "decimalPlacesInAnswer01-3",
+  "level": "2",
+  "url": "decimalPlacesInAnswer01.html#decimalPlacesInAnswer01-3",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "pi = 3.142 1\/3 = 0.333 2\/3 = 0.667 1\/10 = 0.1 1\/10,000 = 0.0001 (Keeping only 3 decimal places here would make 1\/10,000 = 0.000.) 5 1\/10,000 = 5.000 5 = 5 9.123 people = 9 people $54.321 = $54.32 "
+},
+{
   "id": "exerciseFilenameForDifferentBooks01",
   "level": "1",
   "url": "exerciseFilenameForDifferentBooks01.html",
@@ -692,6 +2492,15 @@ var ptx_lunr_docs = [
   "number": "15.24",
   "title": "The suggested way of naming exercise files is not unique if I am creating exercises for two different books. What do I do?",
   "body": " The suggested way of naming exercise files is not unique if I am creating exercises for two different books. What do I do?  In What is the correct format and naming convention for exercise files? , a typical filename would be \"1-2dslnp001.tex\", which indicates that the exercise belongs in Chapter 1, Section 2, was written by David Lovelock (dsl), is a new problem (np), and is the first in this set. However, this does not identify the book or edition. The recommended way is to use \"1-2dsl X np001.tex\" where \" X \" is replaced by the appropriate letters, depending on the book.      For this book    Replace \"X\" by     Algebra, preliminary edition  g    Precalc, 3rd ed  pk    Applied, 3rd ed  ak    Single and Multi, 5th ed  q     Thus, exercises created for the algebra text are typically named something like \"1-2dsl g np001.tex\" instead of \"1-2dslnp001.tex\".   Note, we name the files after where they would have gone in the previous edition. For example, when writing exercises for Precalc 3rd, if the exercise would have been in Chapter 3, Section 5, of Precalc 2nd edition, the filename is 3-5dslpknp1.   "
+},
+{
+  "id": "exerciseFilenameForDifferentBooks01-2",
+  "level": "2",
+  "url": "exerciseFilenameForDifferentBooks01.html#exerciseFilenameForDifferentBooks01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "In What is the correct format and naming convention for exercise files? , a typical filename would be \"1-2dslnp001.tex\", which indicates that the exercise belongs in Chapter 1, Section 2, was written by David Lovelock (dsl), is a new problem (np), and is the first in this set. However, this does not identify the book or edition. The recommended way is to use \"1-2dsl X np001.tex\" where \" X \" is replaced by the appropriate letters, depending on the book. "
 },
 {
   "id": "exerciseFilenameForDifferentBooks01-3",
@@ -703,6 +2512,24 @@ var ptx_lunr_docs = [
   "body": "    For this book    Replace \"X\" by     Algebra, preliminary edition  g    Precalc, 3rd ed  pk    Applied, 3rd ed  ak    Single and Multi, 5th ed  q    "
 },
 {
+  "id": "exerciseFilenameForDifferentBooks01-4",
+  "level": "2",
+  "url": "exerciseFilenameForDifferentBooks01.html#exerciseFilenameForDifferentBooks01-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Thus, exercises created for the algebra text are typically named something like \"1-2dsl g np001.tex\" instead of \"1-2dslnp001.tex\". "
+},
+{
+  "id": "exerciseFilenameForDifferentBooks01-5",
+  "level": "2",
+  "url": "exerciseFilenameForDifferentBooks01.html#exerciseFilenameForDifferentBooks01-5",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Note, we name the files after where they would have gone in the previous edition. For example, when writing exercises for Precalc 3rd, if the exercise would have been in Chapter 3, Section 5, of Precalc 2nd edition, the filename is 3-5dslpknp1.  "
+},
+{
   "id": "codeForBooksAndEditions01",
   "level": "1",
   "url": "codeForBooksAndEditions01.html",
@@ -710,6 +2537,33 @@ var ptx_lunr_docs = [
   "number": "15.25",
   "title": "(**) Is there any pattern to the way we identify books and editions?",
   "body": " (**) Is there any pattern to the way we identify books and editions?   (2020) Outdated.   Yes. A two character code is used.  The first character is the book.      Book    First Character     Algebra  g    Precalc  p    Applied  a    Single and Multi  (blank)    Biomath  b     The second character is the edition.      Edition    Second Character     Preliminary  p    1st  f    2nd  k    3rd  t     4th    q      It is always assumed that we are creating new problems for the latest edition. Thus, to name a new-problem file for Single (of which the latest edition is the 4th), we use something like \"1-2dsl q np001.tex\", whereas to name a new-problem file for Precalc (of which the latest edition is the 2nd), we use something like \"1-2dsl pk np001.tex\". See What are the latest editions of our books? for the status of our books.   "
+},
+{
+  "id": "codeForBooksAndEditions01-2-1",
+  "level": "2",
+  "url": "codeForBooksAndEditions01.html#codeForBooksAndEditions01-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "(2020) Outdated. "
+},
+{
+  "id": "codeForBooksAndEditions01-3",
+  "level": "2",
+  "url": "codeForBooksAndEditions01.html#codeForBooksAndEditions01-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Yes. A two character code is used. "
+},
+{
+  "id": "codeForBooksAndEditions01-4",
+  "level": "2",
+  "url": "codeForBooksAndEditions01.html#codeForBooksAndEditions01-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The first character is the book. "
 },
 {
   "id": "codeForBooksAndEditions01-5",
@@ -721,6 +2575,15 @@ var ptx_lunr_docs = [
   "body": "    Book    First Character     Algebra  g    Precalc  p    Applied  a    Single and Multi  (blank)    Biomath  b    "
 },
 {
+  "id": "codeForBooksAndEditions01-6",
+  "level": "2",
+  "url": "codeForBooksAndEditions01.html#codeForBooksAndEditions01-6",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The second character is the edition. "
+},
+{
   "id": "codeForBooksAndEditions01-7",
   "level": "2",
   "url": "codeForBooksAndEditions01.html#codeForBooksAndEditions01-7",
@@ -728,6 +2591,15 @@ var ptx_lunr_docs = [
   "number": "15.25.2",
   "title": "",
   "body": "    Edition    Second Character     Preliminary  p    1st  f    2nd  k    3rd  t     4th    q     "
+},
+{
+  "id": "codeForBooksAndEditions01-8",
+  "level": "2",
+  "url": "codeForBooksAndEditions01.html#codeForBooksAndEditions01-8",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "It is always assumed that we are creating new problems for the latest edition. Thus, to name a new-problem file for Single (of which the latest edition is the 4th), we use something like \"1-2dsl q np001.tex\", whereas to name a new-problem file for Precalc (of which the latest edition is the 2nd), we use something like \"1-2dsl pk np001.tex\". See What are the latest editions of our books? for the status of our books.  "
 },
 {
   "id": "referPartFromAnother01",
@@ -739,6 +2611,15 @@ var ptx_lunr_docs = [
   "body": " I am creating an exercise that has parts (a), (b), (c), etc., and in part (c) I want to refer to part (a). How do I do that?  You type \"part~(a)\". The \"p\" is lower case. The \"~\" is there to make sure that, in the final product, a line break does not occur between \"part\" and \"(a)\", which would look very odd.  "
 },
 {
+  "id": "referPartFromAnother01-2",
+  "level": "2",
+  "url": "referPartFromAnother01.html#referPartFromAnother01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "You type \"part~(a)\". The \"p\" is lower case. The \"~\" is there to make sure that, in the final product, a line break does not occur between \"part\" and \"(a)\", which would look very odd. "
+},
+{
   "id": "referExerciseFromAnother01",
   "level": "1",
   "url": "referExerciseFromAnother01.html",
@@ -746,6 +2627,24 @@ var ptx_lunr_docs = [
   "number": "15.27",
   "title": "How do I cross reference one exercise from another?",
   "body": " How do I cross reference one exercise from another?  Use the filename (without the tex extension). For example, if you want to reference the exercise that is in the file 7-4dsltnp001.tex, you would do this by writing Exercise~\\ref{7-4dsltnp001} .  To reference the page number, add page~\\pageref{7-4dsltnp001} .  "
+},
+{
+  "id": "referExerciseFromAnother01-2",
+  "level": "2",
+  "url": "referExerciseFromAnother01.html#referExerciseFromAnother01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use the filename (without the tex extension). For example, if you want to reference the exercise that is in the file 7-4dsltnp001.tex, you would do this by writing Exercise~\\ref{7-4dsltnp001} . "
+},
+{
+  "id": "referExerciseFromAnother01-3",
+  "level": "2",
+  "url": "referExerciseFromAnother01.html#referExerciseFromAnother01-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "To reference the page number, add page~\\pageref{7-4dsltnp001} . "
 },
 {
   "id": "hint",
@@ -757,6 +2656,15 @@ var ptx_lunr_docs = [
   "body": " I want to put a hint in an exercise. How do I do that?  Use \\WPHint{ blah blah blah. }   "
 },
 {
+  "id": "hint-2",
+  "level": "2",
+  "url": "hint.html#hint-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use \\WPHint{ blah blah blah. }  "
+},
+{
   "id": "filenamesFormat01",
   "level": "1",
   "url": "filenamesFormat01.html",
@@ -764,6 +2672,105 @@ var ptx_lunr_docs = [
   "number": "15.29",
   "title": "I’m told that I can construct the filename of any of the exercises just by looking at one of published books. How do I do that?",
   "body": " I'm told that I can construct the filename of any of the exercises just by looking at one of published books. How do I do that?  The format for the filename is: C-SEP.tex where    C = chapter number    S = section number or name (\"misc\" for \"Review Exercises\", \"tf\" for \"Check Your Understanding\", and \"project\" for \"Projects\"    E = edition code determined by Is there any pattern to the way we identify books and editions?     P = problem number    Thus, on page 141 in the 3rd edition of Calculus, the file containing problem 27 (which is in section 3.7) is named \"3-7t27.tex\" constructed as follows    3 = chapter number    7 = section number\/name    t = code for 3rd edition determined by Is there any pattern to the way we identify books and editions?     27 = problem number    Similarly, on page 159 in the 3rd edition of Calculus, the file containing problem 53 (which is in the Review section of chapter 3) is named \"3-misct53.tex\".  "
+},
+{
+  "id": "filenamesFormat01-2",
+  "level": "2",
+  "url": "filenamesFormat01.html#filenamesFormat01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The format for the filename is: C-SEP.tex where "
+},
+{
+  "id": "filenamesFormat01-3-1-1",
+  "level": "2",
+  "url": "filenamesFormat01.html#filenamesFormat01-3-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "C = chapter number "
+},
+{
+  "id": "filenamesFormat01-3-2-1",
+  "level": "2",
+  "url": "filenamesFormat01.html#filenamesFormat01-3-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "S = section number or name (\"misc\" for \"Review Exercises\", \"tf\" for \"Check Your Understanding\", and \"project\" for \"Projects\" "
+},
+{
+  "id": "filenamesFormat01-3-3-1",
+  "level": "2",
+  "url": "filenamesFormat01.html#filenamesFormat01-3-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "E = edition code determined by Is there any pattern to the way we identify books and editions?  "
+},
+{
+  "id": "filenamesFormat01-3-4-1",
+  "level": "2",
+  "url": "filenamesFormat01.html#filenamesFormat01-3-4-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "P = problem number "
+},
+{
+  "id": "filenamesFormat01-4",
+  "level": "2",
+  "url": "filenamesFormat01.html#filenamesFormat01-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Thus, on page 141 in the 3rd edition of Calculus, the file containing problem 27 (which is in section 3.7) is named \"3-7t27.tex\" constructed as follows "
+},
+{
+  "id": "filenamesFormat01-5-1-1",
+  "level": "2",
+  "url": "filenamesFormat01.html#filenamesFormat01-5-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "3 = chapter number "
+},
+{
+  "id": "filenamesFormat01-5-2-1",
+  "level": "2",
+  "url": "filenamesFormat01.html#filenamesFormat01-5-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "7 = section number\/name "
+},
+{
+  "id": "filenamesFormat01-5-3-1",
+  "level": "2",
+  "url": "filenamesFormat01.html#filenamesFormat01-5-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "t = code for 3rd edition determined by Is there any pattern to the way we identify books and editions?  "
+},
+{
+  "id": "filenamesFormat01-5-4-1",
+  "level": "2",
+  "url": "filenamesFormat01.html#filenamesFormat01-5-4-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "27 = problem number "
+},
+{
+  "id": "filenamesFormat01-6",
+  "level": "2",
+  "url": "filenamesFormat01.html#filenamesFormat01-6",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Similarly, on page 159 in the 3rd edition of Calculus, the file containing problem 53 (which is in the Review section of chapter 3) is named \"3-misct53.tex\". "
 },
 {
   "id": "orVsAndInSolutions01",
@@ -775,6 +2782,42 @@ var ptx_lunr_docs = [
   "body": " Do we say \"The solutions are $x = 1$ and $x = 2$,\" or \"The solutions are $x = 1$ or $x =2$\"?  On the grounds that \"or\" might suggest it was just one or the other but not necessarily both, we use \"and\".  However, in the sentence  \"$(x-1)(x-2) = 0$ when $x = 1$ or $x=2$\"  we use \"or\" because \"and\" might suggest $x$ has to equal 1 and 2 at the same time.  "
 },
 {
+  "id": "orVsAndInSolutions01-2",
+  "level": "2",
+  "url": "orVsAndInSolutions01.html#orVsAndInSolutions01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "On the grounds that \"or\" might suggest it was just one or the other but not necessarily both, we use \"and\". "
+},
+{
+  "id": "orVsAndInSolutions01-3",
+  "level": "2",
+  "url": "orVsAndInSolutions01.html#orVsAndInSolutions01-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "However, in the sentence "
+},
+{
+  "id": "orVsAndInSolutions01-4",
+  "level": "2",
+  "url": "orVsAndInSolutions01.html#orVsAndInSolutions01-4",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\"$(x-1)(x-2) = 0$ when $x = 1$ or $x=2$\" "
+},
+{
+  "id": "orVsAndInSolutions01-5",
+  "level": "2",
+  "url": "orVsAndInSolutions01.html#orVsAndInSolutions01-5",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "we use \"or\" because \"and\" might suggest $x$ has to equal 1 and 2 at the same time. "
+},
+{
   "id": "ordinalNumbersExpressionsTeX01",
   "level": "1",
   "url": "ordinalNumbersExpressionsTeX01.html",
@@ -782,6 +2825,15 @@ var ptx_lunr_docs = [
   "number": "16.1",
   "title": "How do I TeX expressions like \"1^{st}\" and \"n^{th}\"?",
   "body": " How do I TeX expressions like \"1^{st}\" and \"n^{th}\"?  Use either 1$^{\\hbox{\\scriptsize{st}}}$ or $n^{\\rm th}$ .  "
+},
+{
+  "id": "ordinalNumbersExpressionsTeX01-2",
+  "level": "2",
+  "url": "ordinalNumbersExpressionsTeX01.html#ordinalNumbersExpressionsTeX01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use either 1$^{\\hbox{\\scriptsize{st}}}$ or $n^{\\rm th}$ . "
 },
 {
   "id": "subscripts01",
@@ -793,6 +2845,15 @@ var ptx_lunr_docs = [
   "body": " When I use word subscripts (e.g. $r_{in}$ or $r_{\\hbox{in}}$) the word \"in\" is either in italics or too large. What should I be using?  Use $r_{\\rm in}$ .  "
 },
 {
+  "id": "subscripts01-2",
+  "level": "2",
+  "url": "subscripts01.html#subscripts01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use $r_{\\rm in}$ . "
+},
+{
   "id": "vectorSubscript01",
   "level": "1",
   "url": "vectorSubscript01.html",
@@ -800,6 +2861,15 @@ var ptx_lunr_docs = [
   "number": "16.3",
   "title": "If I use <code class=\"code-inline tex2jax_ignore\">$\\vec F_{M}$<\/code> or <code class=\"code-inline tex2jax_ignore\">$\\overrightarrow{F}_M$<\/code> a huge gap is left between the bottom of the F and the M, which looks wrong. What should I do?",
   "body": " If I use $\\vec F_{M}$ or $\\overrightarrow{F}_M$ a huge gap is left between the bottom of the F and the M, which looks wrong. What should I do?  Use $\\vec F\\!_{M}$ or $\\overrightarrow{F}\\!_M$ .  "
+},
+{
+  "id": "vectorSubscript01-2",
+  "level": "2",
+  "url": "vectorSubscript01.html#vectorSubscript01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use $\\vec F\\!_{M}$ or $\\overrightarrow{F}\\!_M$ . "
 },
 {
   "id": "shilling01",
@@ -811,6 +2881,24 @@ var ptx_lunr_docs = [
   "body": " What is shilling?  Twelve pennies ;-)  A fraction is shilled if it is written in the form 1\/2, which should be TeXed $1\/2$ , so the \"\/\" is the correct length. When you use $\\frac{1}{2}$ , the fraction is not shilled but looks like     after TeXing.  "
 },
 {
+  "id": "shilling01-2",
+  "level": "2",
+  "url": "shilling01.html#shilling01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Twelve pennies ;-) "
+},
+{
+  "id": "shilling01-3",
+  "level": "2",
+  "url": "shilling01.html#shilling01-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "A fraction is shilled if it is written in the form 1\/2, which should be TeXed $1\/2$ , so the \"\/\" is the correct length. When you use $\\frac{1}{2}$ , the fraction is not shilled but looks like "
+},
+{
   "id": "half",
   "level": "2",
   "url": "shilling01.html#half",
@@ -818,6 +2906,15 @@ var ptx_lunr_docs = [
   "number": "16.4.1",
   "title": "",
   "body": "  "
+},
+{
+  "id": "shilling01-5",
+  "level": "2",
+  "url": "shilling01.html#shilling01-5",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "after TeXing. "
 },
 {
   "id": "shillVsFrac01",
@@ -829,6 +2926,33 @@ var ptx_lunr_docs = [
   "body": " When do I shill and when do I use $\\frac{}{}$ ?    Always shill in text, in exponents, and in the short answers. However, include ( and ) if necessary, for accuracy. For example, (x^2)\/3 or x^(2\/3) , and not x^2\/3 . Also, if you have a situation where you really need a stacked fraction in line, use \\dsty to make it bigger.    Always use $\\frac{}{}$ in display math style. When you do this, make sure you use \\left( and \\right) instead of ( and ) .    See What is shilling?.   "
 },
 {
+  "id": "shillVsFrac01-2-1-1",
+  "level": "2",
+  "url": "shillVsFrac01.html#shillVsFrac01-2-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Always shill in text, in exponents, and in the short answers. However, include ( and ) if necessary, for accuracy. For example, (x^2)\/3 or x^(2\/3) , and not x^2\/3 . Also, if you have a situation where you really need a stacked fraction in line, use \\dsty to make it bigger. "
+},
+{
+  "id": "shillVsFrac01-2-2-1",
+  "level": "2",
+  "url": "shillVsFrac01.html#shillVsFrac01-2-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Always use $\\frac{}{}$ in display math style. When you do this, make sure you use \\left( and \\right) instead of ( and ) . "
+},
+{
+  "id": "shillVsFrac01-3",
+  "level": "2",
+  "url": "shillVsFrac01.html#shillVsFrac01-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "See What is shilling?.  "
+},
+{
   "id": "degreeSymbol01",
   "level": "1",
   "url": "degreeSymbol01.html",
@@ -836,6 +2960,15 @@ var ptx_lunr_docs = [
   "number": "16.6",
   "title": "How do I enter the degree symbol, for example 76 degrees Fahrenheit?",
   "body": " How do I enter the degree symbol, for example 76 degrees Fahrenheit?   $76\\dg$F .  "
+},
+{
+  "id": "degreeSymbol01-2",
+  "level": "2",
+  "url": "degreeSymbol01.html#degreeSymbol01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " $76\\dg$F . "
 },
 {
   "id": "LabelFigsExer",
@@ -847,13 +2980,229 @@ var ptx_lunr_docs = [
   "body": " What is the preferred convention for labeling figures and tables in Exercises?  All the names should be derived from the name of the exercise file. Then, when we rename the exercises in the final version, the labels on the figures and tables will all change with the name of the exercise file, and everything will remain unique and happy.  Let's assume the exercise file is named 1-2dslgnp3.tex .   Figures  Question statements:    If you have a single figure in the Question, it is labeled \"1-2dslgnp3 fig \".    If you have several figures in the Question, they are labeled \"1-2dslgnp3 figa \", \"1-2dslgnp3 figb \", etc. (The \"a\", \"b\" have nothing to do with parts (a) and (b) of the Question - if there are any.)    Answers:    If you have a single figure in the Answer, it is labeled \"1-2dslgnp3 ans \".    If you have several figures in the Answer, they are labeled \"1-2dslgnp3 ansa \", \"1-2dslgnp3 ansb \", etc.    If you have several sets of several figures in the Answer, they are called \"1-2dslgnp3 ansa1 \", \"1-2dslgnp3 ansa2 \", \"1-2dslgnp3 ansb1 \", \"1-2dslgnp3 ansb2 \", etc.    Short answers:    Figures in the Short Answers inherit the labels used in the Answers.    Remember that the label used in a figure is the name of the TeX file that draws that figure.    Tables  Question statements:    If you have a single table in the Question, it is labeled \"1-2dslgnp3 tab \".    If you have several tables in the Question, they are labeled \"1-2dslgnp3 taba \", \"1-2dslgnp3 tabb \", etc.    Answers:    If you have a single table in the Answer, it is labeled \"1-2dslgnp3 anstab \".    If you have several tables in the Answer, they are labeled \"1-2dslgnp3 anstaba \", \"1-2dslgnp3 anstabb \", etc.    If you have several sets of several tables in the Answer, they are called \"1-2dslgnp3 anstaba1 \", \"1-2dslgnp3 anstaba2 \", \"1-2dslgnp3 anstabb1 \", \"1-2dslgnp3 anstabb2 \", etc.    Short answers:    Tables in the Short Answers do not have labels.      Brief Summary  Here is a simplified explanation for single figures and single tables, assuming the exercise file is named \"1-2dslgnp3.tex\".        Question  Answer  Short Answer    Figure  1-2dslgnp3 fig   1-2dslgnp3 ans   1-2dslgnp3 ans     Table  1-2dslgnp3 tab   1-2dslgnp3 anstab          "
 },
 {
-  "id": "LabelFigsExer-6-3-1",
+  "id": "LabelFigsExer-2",
   "level": "2",
-  "url": "LabelFigsExer.html#LabelFigsExer-6-3-1",
-  "type": "Table",
-  "number": "17.1.1",
+  "url": "LabelFigsExer.html#LabelFigsExer-2",
+  "type": "Paragraph",
+  "number": "",
   "title": "",
-  "body": "     Question  Answer  Short Answer    Figure  1-2dslgnp3 fig   1-2dslgnp3 ans   1-2dslgnp3 ans     Table  1-2dslgnp3 tab   1-2dslgnp3 anstab       "
+  "body": "All the names should be derived from the name of the exercise file. Then, when we rename the exercises in the final version, the labels on the figures and tables will all change with the name of the exercise file, and everything will remain unique and happy. "
+},
+{
+  "id": "LabelFigsExer-3",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Let's assume the exercise file is named 1-2dslgnp3.tex . "
+},
+{
+  "id": "LabelFigsExer-4-2",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-4-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "LabelFigsExer-4-3",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-4-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Question statements: "
+},
+{
+  "id": "LabelFigsExer-4-4-1-1",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-4-4-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you have a single figure in the Question, it is labeled \"1-2dslgnp3 fig \". "
+},
+{
+  "id": "LabelFigsExer-4-4-2-1",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-4-4-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you have several figures in the Question, they are labeled \"1-2dslgnp3 figa \", \"1-2dslgnp3 figb \", etc. (The \"a\", \"b\" have nothing to do with parts (a) and (b) of the Question - if there are any.) "
+},
+{
+  "id": "LabelFigsExer-4-5",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-4-5",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Answers: "
+},
+{
+  "id": "LabelFigsExer-4-6-1-1",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-4-6-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you have a single figure in the Answer, it is labeled \"1-2dslgnp3 ans \". "
+},
+{
+  "id": "LabelFigsExer-4-6-2-1",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-4-6-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you have several figures in the Answer, they are labeled \"1-2dslgnp3 ansa \", \"1-2dslgnp3 ansb \", etc. "
+},
+{
+  "id": "LabelFigsExer-4-6-3-1",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-4-6-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you have several sets of several figures in the Answer, they are called \"1-2dslgnp3 ansa1 \", \"1-2dslgnp3 ansa2 \", \"1-2dslgnp3 ansb1 \", \"1-2dslgnp3 ansb2 \", etc. "
+},
+{
+  "id": "LabelFigsExer-4-7",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-4-7",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Short answers: "
+},
+{
+  "id": "LabelFigsExer-4-8-1-1",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-4-8-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Figures in the Short Answers inherit the labels used in the Answers. "
+},
+{
+  "id": "LabelFigsExer-4-9",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-4-9",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Remember that the label used in a figure is the name of the TeX file that draws that figure. "
+},
+{
+  "id": "LabelFigsExer-5-2",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-5-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "LabelFigsExer-5-3",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-5-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Question statements: "
+},
+{
+  "id": "LabelFigsExer-5-4-1-1",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-5-4-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you have a single table in the Question, it is labeled \"1-2dslgnp3 tab \". "
+},
+{
+  "id": "LabelFigsExer-5-4-2-1",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-5-4-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you have several tables in the Question, they are labeled \"1-2dslgnp3 taba \", \"1-2dslgnp3 tabb \", etc. "
+},
+{
+  "id": "LabelFigsExer-5-5",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-5-5",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Answers: "
+},
+{
+  "id": "LabelFigsExer-5-6-1-1",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-5-6-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you have a single table in the Answer, it is labeled \"1-2dslgnp3 anstab \". "
+},
+{
+  "id": "LabelFigsExer-5-6-2-1",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-5-6-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you have several tables in the Answer, they are labeled \"1-2dslgnp3 anstaba \", \"1-2dslgnp3 anstabb \", etc. "
+},
+{
+  "id": "LabelFigsExer-5-6-3-1",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-5-6-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you have several sets of several tables in the Answer, they are called \"1-2dslgnp3 anstaba1 \", \"1-2dslgnp3 anstaba2 \", \"1-2dslgnp3 anstabb1 \", \"1-2dslgnp3 anstabb2 \", etc. "
+},
+{
+  "id": "LabelFigsExer-5-7",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-5-7",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Short answers: "
+},
+{
+  "id": "LabelFigsExer-5-8-1-1",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-5-8-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Tables in the Short Answers do not have labels. "
+},
+{
+  "id": "LabelFigsExer-6-2",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-6-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Here is a simplified explanation for single figures and single tables, assuming the exercise file is named \"1-2dslgnp3.tex\". "
+},
+{
+  "id": "LabelFigsExer-6-3",
+  "level": "2",
+  "url": "LabelFigsExer.html#LabelFigsExer-6-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "      Question  Answer  Short Answer    Figure  1-2dslgnp3 fig   1-2dslgnp3 ans   1-2dslgnp3 ans     Table  1-2dslgnp3 tab   1-2dslgnp3 anstab        "
 },
 {
   "id": "hardCodingReference01",
@@ -865,6 +3214,15 @@ var ptx_lunr_docs = [
   "body": " May I reference an example, figure, or table, by hard coding the reference (e.g., Example 5 instead of Example~\\ref{blahblah} )?  No! An editor might think the references are correct, when they aren't. If you are having trouble making a label work, just use \\ref{} (with empty braces) and someone will fix it later. (This will show up as ?? in the file, signaling to an editor that something needs to be fixed.)  "
 },
 {
+  "id": "hardCodingReference01-2",
+  "level": "2",
+  "url": "hardCodingReference01.html#hardCodingReference01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "No! An editor might think the references are correct, when they aren't. If you are having trouble making a label work, just use \\ref{} (with empty braces) and someone will fix it later. (This will show up as ?? in the file, signaling to an editor that something needs to be fixed.) "
+},
+{
   "id": "figureInShortAnswer01",
   "level": "1",
   "url": "figureInShortAnswer01.html",
@@ -872,6 +3230,15 @@ var ptx_lunr_docs = [
   "number": "17.3",
   "title": "How do I put a figure into the short answer of an exercise or problem?",
   "body": " How do I put a figure into the short answer of an exercise or problem?  Use \\shortansfinput{blahblahfig} . Do not use fakefig or stayfig .  "
+},
+{
+  "id": "figureInShortAnswer01-2",
+  "level": "2",
+  "url": "figureInShortAnswer01.html#figureInShortAnswer01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use \\shortansfinput{blahblahfig} . Do not use fakefig or stayfig . "
 },
 {
   "id": "figInDiffEquations",
@@ -883,6 +3250,15 @@ var ptx_lunr_docs = [
   "body": " I want to use the same figure in two different questions. Can I use exactly the same file?  The standard procedure would be to duplicate the file under different names. The reason for this is that at some point someone might change the figure, and you don't want them to inadvertently change the other one as well.  "
 },
 {
+  "id": "figInDiffEquations-2",
+  "level": "2",
+  "url": "figInDiffEquations.html#figInDiffEquations-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The standard procedure would be to duplicate the file under different names. The reason for this is that at some point someone might change the figure, and you don't want them to inadvertently change the other one as well. "
+},
+{
   "id": "ReferenceAllFigs01",
   "level": "1",
   "url": "ReferenceAllFigs01.html",
@@ -890,6 +3266,51 @@ var ptx_lunr_docs = [
   "number": "17.5",
   "title": "Do all figures have to be referenced?",
   "body": " Do all figures have to be referenced?  Yes, all figures must be referenced, with two exceptions.    When a QSET of exercises has common instructions such as \"Find equations for the graphs in Problems 1-3.\" , and then Problems 1 through 3 each consist solely of the graph of a function.    When a ConcepTest question has answers (A)-(D), each consisting solely of the graph of a function.    Then, to add a figure with neither number nor caption, use \\begin{stayfig} \\input{1-2dslgnp003fig} \\end{stayfig}   See What is the preferred convention for labeling figures and tables in Exercises? .  "
+},
+{
+  "id": "ReferenceAllFigs01-2",
+  "level": "2",
+  "url": "ReferenceAllFigs01.html#ReferenceAllFigs01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Yes, all figures must be referenced, with two exceptions. "
+},
+{
+  "id": "ReferenceAllFigs01-3-1-1",
+  "level": "2",
+  "url": "ReferenceAllFigs01.html#ReferenceAllFigs01-3-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "When a QSET of exercises has common instructions such as \"Find equations for the graphs in Problems 1-3.\" , and then Problems 1 through 3 each consist solely of the graph of a function. "
+},
+{
+  "id": "ReferenceAllFigs01-3-2-1",
+  "level": "2",
+  "url": "ReferenceAllFigs01.html#ReferenceAllFigs01-3-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "When a ConcepTest question has answers (A)-(D), each consisting solely of the graph of a function. "
+},
+{
+  "id": "ReferenceAllFigs01-4",
+  "level": "2",
+  "url": "ReferenceAllFigs01.html#ReferenceAllFigs01-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Then, to add a figure with neither number nor caption, use \\begin{stayfig} \\input{1-2dslgnp003fig} \\end{stayfig}  "
+},
+{
+  "id": "ReferenceAllFigs01-5",
+  "level": "2",
+  "url": "ReferenceAllFigs01.html#ReferenceAllFigs01-5",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "See What is the preferred convention for labeling figures and tables in Exercises? . "
 },
 {
   "id": "CaptionOrNoCaption01",
@@ -901,6 +3322,123 @@ var ptx_lunr_docs = [
   "body": " Sometimes I want a figure with a number and a caption, sometimes with only a number, and sometimes with neither a number nor a caption. How do I do that?  The general rule is that figures in the exercises have no captions, whereas figures in the text have captions.    When you want to input a figure with number and caption into a file named \"filename.tex\" insert  \\begin{stayfig} \\finput{filenamefig}{Dummy figure} \\end{stayfig}  where you want the figure to appear. Here Dummy figure will be the caption of the figure and \"filenamefig.tex\" is the file containing the information to input the figure. Notice the filename has \"fig\" appended to the corresponding filename (\"filename.tex\").  If you want to reference this figure, use \\fref{filenamefig}.     When you want to input a figure with number but no caption into a file named \"filename.tex\" insert  \\begin{stayfig} \\finput*{filenamefig} \\end{stayfig}  where you want the figure to appear. Here \"filenamefig.tex\" is the file containing the information to input the figure. Notice the filename has \"fig\" appended to the corresponding filename (\"filename.tex\").  If you want to reference this figure, use \\fref{filenamefig}.     When you want to input a figure with neither number nor caption into a file named \"filename.tex\" insert  \\begin{stayfig} \\input{filenamefig} \\end{stayfig}  where you want the figure to appear. Here \"filenamefig.tex\" is the file containing the information to input the figure. Notice the filename has \"fig\" appended to the corresponding filename (\"filename.tex\").  You might need this construction in an exercise when you want the figs labeled to be part of the question. See Do all figures have to be referenced? for an example of this.    "
 },
 {
+  "id": "CaptionOrNoCaption01-2",
+  "level": "2",
+  "url": "CaptionOrNoCaption01.html#CaptionOrNoCaption01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The general rule is that figures in the exercises have no captions, whereas figures in the text have captions. "
+},
+{
+  "id": "CaptionOrNoCaption01-3-1-1",
+  "level": "2",
+  "url": "CaptionOrNoCaption01.html#CaptionOrNoCaption01-3-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "When you want to input a figure with number and caption into a file named \"filename.tex\" insert "
+},
+{
+  "id": "CaptionOrNoCaption01-3-1-2",
+  "level": "2",
+  "url": "CaptionOrNoCaption01.html#CaptionOrNoCaption01-3-1-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{stayfig} \\finput{filenamefig}{Dummy figure} \\end{stayfig} "
+},
+{
+  "id": "CaptionOrNoCaption01-3-1-3",
+  "level": "2",
+  "url": "CaptionOrNoCaption01.html#CaptionOrNoCaption01-3-1-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "where you want the figure to appear. Here Dummy figure will be the caption of the figure and \"filenamefig.tex\" is the file containing the information to input the figure. Notice the filename has \"fig\" appended to the corresponding filename (\"filename.tex\"). "
+},
+{
+  "id": "CaptionOrNoCaption01-3-1-4",
+  "level": "2",
+  "url": "CaptionOrNoCaption01.html#CaptionOrNoCaption01-3-1-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you want to reference this figure, use \\fref{filenamefig}.  "
+},
+{
+  "id": "CaptionOrNoCaption01-3-2-1",
+  "level": "2",
+  "url": "CaptionOrNoCaption01.html#CaptionOrNoCaption01-3-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "When you want to input a figure with number but no caption into a file named \"filename.tex\" insert "
+},
+{
+  "id": "CaptionOrNoCaption01-3-2-2",
+  "level": "2",
+  "url": "CaptionOrNoCaption01.html#CaptionOrNoCaption01-3-2-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{stayfig} \\finput*{filenamefig} \\end{stayfig} "
+},
+{
+  "id": "CaptionOrNoCaption01-3-2-3",
+  "level": "2",
+  "url": "CaptionOrNoCaption01.html#CaptionOrNoCaption01-3-2-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "where you want the figure to appear. Here \"filenamefig.tex\" is the file containing the information to input the figure. Notice the filename has \"fig\" appended to the corresponding filename (\"filename.tex\"). "
+},
+{
+  "id": "CaptionOrNoCaption01-3-2-4",
+  "level": "2",
+  "url": "CaptionOrNoCaption01.html#CaptionOrNoCaption01-3-2-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you want to reference this figure, use \\fref{filenamefig}.  "
+},
+{
+  "id": "CaptionOrNoCaption01-3-3-1",
+  "level": "2",
+  "url": "CaptionOrNoCaption01.html#CaptionOrNoCaption01-3-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "When you want to input a figure with neither number nor caption into a file named \"filename.tex\" insert "
+},
+{
+  "id": "CaptionOrNoCaption01-3-3-2",
+  "level": "2",
+  "url": "CaptionOrNoCaption01.html#CaptionOrNoCaption01-3-3-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{stayfig} \\input{filenamefig} \\end{stayfig} "
+},
+{
+  "id": "CaptionOrNoCaption01-3-3-3",
+  "level": "2",
+  "url": "CaptionOrNoCaption01.html#CaptionOrNoCaption01-3-3-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "where you want the figure to appear. Here \"filenamefig.tex\" is the file containing the information to input the figure. Notice the filename has \"fig\" appended to the corresponding filename (\"filename.tex\"). "
+},
+{
+  "id": "CaptionOrNoCaption01-3-3-4",
+  "level": "2",
+  "url": "CaptionOrNoCaption01.html#CaptionOrNoCaption01-3-3-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "You might need this construction in an exercise when you want the figs labeled to be part of the question. See Do all figures have to be referenced? for an example of this. "
+},
+{
   "id": "StayfigOrFakefig01",
   "level": "1",
   "url": "StayfigOrFakefig01.html",
@@ -908,6 +3446,24 @@ var ptx_lunr_docs = [
   "number": "17.7",
   "title": "What is the difference between <code class=\"code-inline tex2jax_ignore\">stayfig<\/code> and <code class=\"code-inline tex2jax_ignore\">fakefig<\/code>?",
   "body": " What is the difference between stayfig and fakefig ?  Wherever you see stayfig , (for example, in ) it can be replaced with fakefig . The difference is whether the location of a figure is determined by you ( stayfig ) or by the TeX program ( fakefig ). The stayfig environment fixes the figure's location on the page. The fakefig environment allows figures to float about on the page.  The general rule is to use stayfig in the exercises and always use fakefig in the text. In fact, \"anyone who isn't Elliot should use fakefig in the text\".  "
+},
+{
+  "id": "StayfigOrFakefig01-2",
+  "level": "2",
+  "url": "StayfigOrFakefig01.html#StayfigOrFakefig01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Wherever you see stayfig , (for example, in ) it can be replaced with fakefig . The difference is whether the location of a figure is determined by you ( stayfig ) or by the TeX program ( fakefig ). The stayfig environment fixes the figure's location on the page. The fakefig environment allows figures to float about on the page. "
+},
+{
+  "id": "StayfigOrFakefig01-3",
+  "level": "2",
+  "url": "StayfigOrFakefig01.html#StayfigOrFakefig01-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The general rule is to use stayfig in the exercises and always use fakefig in the text. In fact, \"anyone who isn't Elliot should use fakefig in the text\". "
 },
 {
   "id": "bigfakefig",
@@ -919,6 +3475,33 @@ var ptx_lunr_docs = [
   "body": " I have a big figure or group of figures and it is overflowing to the right margin. How can I fix it? (bigfakefig)   fakefig and stayfig automatically start at a more inward margin on the left. Use bigfakefig for full page wide figures.  For example:  \\begin{bigfakefig} \\finput*{19-1awectnp3fig2} \\end{bigfakefig}  "
 },
 {
+  "id": "bigfakefig-2",
+  "level": "2",
+  "url": "bigfakefig.html#bigfakefig-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " fakefig and stayfig automatically start at a more inward margin on the left. Use bigfakefig for full page wide figures. "
+},
+{
+  "id": "bigfakefig-3",
+  "level": "2",
+  "url": "bigfakefig.html#bigfakefig-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "For example: "
+},
+{
+  "id": "bigfakefig-4",
+  "level": "2",
+  "url": "bigfakefig.html#bigfakefig-4",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{bigfakefig} \\finput*{19-1awectnp3fig2} \\end{bigfakefig} "
+},
+{
   "id": "CollectionOfFigsTogether",
   "level": "1",
   "url": "CollectionOfFigsTogether.html",
@@ -926,6 +3509,150 @@ var ptx_lunr_docs = [
   "number": "17.9",
   "title": "I want to put a collection of figures together on a page. How do I do that?",
   "body": " I want to put a collection of figures together on a page. How do I do that?  This depends on whether you want a separate caption for each figure, one caption for all the figures, or no captions. (For the general principles of creating figures Sometimes I want a figure with a number and a caption, sometimes with only a number, and sometimes with neither a number nor a caption. How do I do that? , and What is the difference between stayfig and fakefig ? first.)   Separate caption for each figure  Use  \\begin{fakefig} \\valign[b] { {\\finput{figa}{Caption1}}* {\\finput{figa}{Caption2}}\/ {\\finput{figc}{Caption3}} } \\end{fakefig}  Here   \\valign aligns the figures   [b] makes them bottom-aligned. You can use [c] (centered) and [t] (top-aligned) also.   * means put in some space. You can use ** (which means put in lots of space) also.   \/ means make a new line of figures.      One caption for all the figures  First create a file (say \"manyfig.tex\") containing  \\valign[b] { {\\input{figa}}* {\\input{figb}}\/ {\\input{figc}} }  Here    \\valign aligns the figures.   [b] makes them bottom-aligned. You can use [c] (centered) and [t] (top-aligned) also.   * means put in some space. You can use ** (which means put in lots of space) also.   \/ means make a new line of figures.   Then use  \\begin{fakefig} \\finput{manyfig}{Caption} \\end{fakefig}  It is strictly forbidden for \\finput to input\/call another \\finput .    No captions  First create a file (say \"manyfig.tex\") containing  \\valign[b] { {\\input{figa}}* {\\input{figb}}\/ {\\input{figc}} }  Here    \\valign aligns the figures.   [b] makes them bottom-aligned. You can use [c] (centered) and [t] (top-aligned) also.   * means put in some space. You can use ** (which means put in lots of space) also.   \/ means make a new line of figures.   Then use  \\begin{fakefig} \\finput*{manyfig} \\end{fakefig}    Full page wide figures  Use bigfakefig . See    "
+},
+{
+  "id": "CollectionOfFigsTogether-2",
+  "level": "2",
+  "url": "CollectionOfFigsTogether.html#CollectionOfFigsTogether-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "This depends on whether you want a separate caption for each figure, one caption for all the figures, or no captions. (For the general principles of creating figures Sometimes I want a figure with a number and a caption, sometimes with only a number, and sometimes with neither a number nor a caption. How do I do that? , and What is the difference between stayfig and fakefig ? first.) "
+},
+{
+  "id": "CollectionOfFigsTogether-3-2",
+  "level": "2",
+  "url": "CollectionOfFigsTogether.html#CollectionOfFigsTogether-3-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use "
+},
+{
+  "id": "CollectionOfFigsTogether-3-3",
+  "level": "2",
+  "url": "CollectionOfFigsTogether.html#CollectionOfFigsTogether-3-3",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{fakefig} \\valign[b] { {\\finput{figa}{Caption1}}* {\\finput{figa}{Caption2}}\/ {\\finput{figc}{Caption3}} } \\end{fakefig} "
+},
+{
+  "id": "CollectionOfFigsTogether-3-4",
+  "level": "2",
+  "url": "CollectionOfFigsTogether.html#CollectionOfFigsTogether-3-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Here   \\valign aligns the figures   [b] makes them bottom-aligned. You can use [c] (centered) and [t] (top-aligned) also.   * means put in some space. You can use ** (which means put in lots of space) also.   \/ means make a new line of figures.   "
+},
+{
+  "id": "CollectionOfFigsTogether-4-2",
+  "level": "2",
+  "url": "CollectionOfFigsTogether.html#CollectionOfFigsTogether-4-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "First create a file (say \"manyfig.tex\") containing "
+},
+{
+  "id": "CollectionOfFigsTogether-4-3",
+  "level": "2",
+  "url": "CollectionOfFigsTogether.html#CollectionOfFigsTogether-4-3",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\valign[b] { {\\input{figa}}* {\\input{figb}}\/ {\\input{figc}} } "
+},
+{
+  "id": "CollectionOfFigsTogether-4-4",
+  "level": "2",
+  "url": "CollectionOfFigsTogether.html#CollectionOfFigsTogether-4-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Here "
+},
+{
+  "id": "CollectionOfFigsTogether-4-6",
+  "level": "2",
+  "url": "CollectionOfFigsTogether.html#CollectionOfFigsTogether-4-6",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Then use "
+},
+{
+  "id": "CollectionOfFigsTogether-4-7",
+  "level": "2",
+  "url": "CollectionOfFigsTogether.html#CollectionOfFigsTogether-4-7",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{fakefig} \\finput{manyfig}{Caption} \\end{fakefig} "
+},
+{
+  "id": "CollectionOfFigsTogether-4-8",
+  "level": "2",
+  "url": "CollectionOfFigsTogether.html#CollectionOfFigsTogether-4-8",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "It is strictly forbidden for \\finput to input\/call another \\finput . "
+},
+{
+  "id": "CollectionOfFigsTogether-5-2",
+  "level": "2",
+  "url": "CollectionOfFigsTogether.html#CollectionOfFigsTogether-5-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "First create a file (say \"manyfig.tex\") containing "
+},
+{
+  "id": "CollectionOfFigsTogether-5-3",
+  "level": "2",
+  "url": "CollectionOfFigsTogether.html#CollectionOfFigsTogether-5-3",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\valign[b] { {\\input{figa}}* {\\input{figb}}\/ {\\input{figc}} } "
+},
+{
+  "id": "CollectionOfFigsTogether-5-4",
+  "level": "2",
+  "url": "CollectionOfFigsTogether.html#CollectionOfFigsTogether-5-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Here "
+},
+{
+  "id": "CollectionOfFigsTogether-5-6",
+  "level": "2",
+  "url": "CollectionOfFigsTogether.html#CollectionOfFigsTogether-5-6",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Then use "
+},
+{
+  "id": "CollectionOfFigsTogether-5-7",
+  "level": "2",
+  "url": "CollectionOfFigsTogether.html#CollectionOfFigsTogether-5-7",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{fakefig} \\finput*{manyfig} \\end{fakefig} "
+},
+{
+  "id": "CollectionOfFigsTogether-6-2",
+  "level": "2",
+  "url": "CollectionOfFigsTogether.html#CollectionOfFigsTogether-6-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use bigfakefig . See  "
 },
 {
   "id": "PlaceRomanNumeralOnFigCollection",
@@ -937,6 +3664,51 @@ var ptx_lunr_docs = [
   "body": " How can I place a Roman numeral, like \"(IV)\", at the upper left-hand corner of a figure as is sometimes needed in a collection of figures?  To create a collection of figures, see I want to put a collection of figures together on a page. How do I do that? .  To place the Roman numeral \"(IV)\" at the upper left-hand corner of the figure generated by the file \"1-2dslnp003fig1.tex\", which currently contains  \\begin{aspic}|.75|(2.00,2.00) \\put(0,0){\\loadps{1-2dslnp003fig1.ps}} \\end{aspic}  change the first line to  \\begin{aspic}|.75|[(IV)](2.00,2.00)  "
 },
 {
+  "id": "PlaceRomanNumeralOnFigCollection-2",
+  "level": "2",
+  "url": "PlaceRomanNumeralOnFigCollection.html#PlaceRomanNumeralOnFigCollection-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "To create a collection of figures, see I want to put a collection of figures together on a page. How do I do that? . "
+},
+{
+  "id": "PlaceRomanNumeralOnFigCollection-3",
+  "level": "2",
+  "url": "PlaceRomanNumeralOnFigCollection.html#PlaceRomanNumeralOnFigCollection-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "To place the Roman numeral \"(IV)\" at the upper left-hand corner of the figure generated by the file \"1-2dslnp003fig1.tex\", which currently contains "
+},
+{
+  "id": "PlaceRomanNumeralOnFigCollection-4",
+  "level": "2",
+  "url": "PlaceRomanNumeralOnFigCollection.html#PlaceRomanNumeralOnFigCollection-4",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{aspic}|.75|(2.00,2.00) \\put(0,0){\\loadps{1-2dslnp003fig1.ps}} \\end{aspic} "
+},
+{
+  "id": "PlaceRomanNumeralOnFigCollection-5",
+  "level": "2",
+  "url": "PlaceRomanNumeralOnFigCollection.html#PlaceRomanNumeralOnFigCollection-5",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "change the first line to "
+},
+{
+  "id": "PlaceRomanNumeralOnFigCollection-6",
+  "level": "2",
+  "url": "PlaceRomanNumeralOnFigCollection.html#PlaceRomanNumeralOnFigCollection-6",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{aspic}|.75|[(IV)](2.00,2.00) "
+},
+{
   "id": "UnitsInTextOrFigure",
   "level": "1",
   "url": "UnitsInTextOrFigure.html",
@@ -944,6 +3716,15 @@ var ptx_lunr_docs = [
   "number": "17.11",
   "title": "Do I need to put the units (of the variables) in the text of an exercise and also in the figure of the exercise?",
   "body": " Do I need to put the units (of the variables) in the text of an exercise and also in the figure of the exercise?  No. Wherever possible, units should be on the figure, not in the text.  "
+},
+{
+  "id": "UnitsInTextOrFigure-2",
+  "level": "2",
+  "url": "UnitsInTextOrFigure.html#UnitsInTextOrFigure-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "No. Wherever possible, units should be on the figure, not in the text. "
 },
 {
   "id": "CrossReferencePageNumber02",
@@ -955,6 +3736,15 @@ var ptx_lunr_docs = [
   "body": " How do I cross reference an object using a page number?   Follow this link   "
 },
 {
+  "id": "CrossReferencePageNumber02-2",
+  "level": "2",
+  "url": "CrossReferencePageNumber02.html#CrossReferencePageNumber02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "FigureAxisLabels",
   "level": "1",
   "url": "FigureAxisLabels.html",
@@ -962,6 +3752,15 @@ var ptx_lunr_docs = [
   "number": "17.13",
   "title": "What do I need to know when text is used to label the axes in a figure?",
   "body": " What do I need to know when text is used to label the axes in a figure?  Text should be in lower case (including the first letter) and in text mode. See Calculus, 3rd Edition, page 187, Figure 4.42, for an example.  "
+},
+{
+  "id": "FigureAxisLabels-2",
+  "level": "2",
+  "url": "FigureAxisLabels.html#FigureAxisLabels-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Text should be in lower case (including the first letter) and in text mode. See Calculus, 3rd Edition, page 187, Figure 4.42, for an example. "
 },
 {
   "id": "UndefinedHollowPointInfFigure",
@@ -973,6 +3772,42 @@ var ptx_lunr_docs = [
   "body": " (**) How do I put a little circle on a graph indicating that a function is undefined at that point?  Look in the fig.tex file for the line  \\putlabel(0.01,.58)[c]{blah}  (the numbers will be depend on the selected point) and change {blah} to {\\whiteoutc{\\hollowcalcpoint}} , giving  \\putlabel(0.01,.58)[c]{\\whiteoutc{\\hollowcalcpoint}}  "
 },
 {
+  "id": "UndefinedHollowPointInfFigure-2",
+  "level": "2",
+  "url": "UndefinedHollowPointInfFigure.html#UndefinedHollowPointInfFigure-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Look in the fig.tex file for the line "
+},
+{
+  "id": "UndefinedHollowPointInfFigure-3",
+  "level": "2",
+  "url": "UndefinedHollowPointInfFigure.html#UndefinedHollowPointInfFigure-3",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\putlabel(0.01,.58)[c]{blah} "
+},
+{
+  "id": "UndefinedHollowPointInfFigure-4",
+  "level": "2",
+  "url": "UndefinedHollowPointInfFigure.html#UndefinedHollowPointInfFigure-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "(the numbers will be depend on the selected point) and change {blah} to {\\whiteoutc{\\hollowcalcpoint}} , giving "
+},
+{
+  "id": "UndefinedHollowPointInfFigure-5",
+  "level": "2",
+  "url": "UndefinedHollowPointInfFigure.html#UndefinedHollowPointInfFigure-5",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\putlabel(0.01,.58)[c]{\\whiteoutc{\\hollowcalcpoint}} "
+},
+{
   "id": "ManyFiguresInProblem",
   "level": "1",
   "url": "ManyFiguresInProblem.html",
@@ -980,6 +3815,96 @@ var ptx_lunr_docs = [
   "number": "17.15",
   "title": "How do I put many figures into a problem?",
   "body": " How do I put many figures into a problem?   Case 1: The problem asks about a single set of figures that are similar to each other in purpose  For example:   Which of Figures (I)--(IV) is a parabola?  Match Figures (I)--(IV) to statements (a)--(d).  For each Figures (a)--(d). what critical points can you see?   Note that, in general, if the figures make up parts of a problem, the figures should be (a)--(d), so that the solution can have parts (a)--(d).  In Case 1, we give the figures upper-left-hand corner labels, which happens in the filenamefig.tex file in the line  \\begin{aspic}|1|[(a)](2,2)  the [(a)] puts \"(a)\" in the upper-left-hand corner. The figures should be input, so that they don't have a label (i.e. no \"Figure 2.4.\"). For example  \\begin{stayfig} \\valign[b]{ {\\input{figa}} {\\input{figb}}\/ {\\input{figc}} {\\input{figd}} } \\end{stayfig}    Case 2: There are two sets of figures that are cross-related  For example   Match the functions in Figure 2.4 to their derivatives in Figure 2.5.  Figure 5.1 shows a graph of f(x). Write possible equations for the graphs (a)--(d) in Figure 5.2.  Figure 6.8 shows a population of gnus. Figure 6.9 shows a population of penguins.   In these cases, you want it to be very clear that the graphs serve different functions. In this case you use  \\begin{stayfig} \\finput*{fig1} \\end{stayfig} \\begin{stayfig} \\finput*{fig2} \\end{stayfig}  and fig1.tex and fig2.tex contain the figures or the arrays of figures necessary. In sets, you continue to label them (a)--(d) or (I)--(IV) as in Case 1.   "
+},
+{
+  "id": "ManyFiguresInProblem-2-2",
+  "level": "2",
+  "url": "ManyFiguresInProblem.html#ManyFiguresInProblem-2-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "For example: "
+},
+{
+  "id": "ManyFiguresInProblem-2-4",
+  "level": "2",
+  "url": "ManyFiguresInProblem.html#ManyFiguresInProblem-2-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Note that, in general, if the figures make up parts of a problem, the figures should be (a)--(d), so that the solution can have parts (a)--(d). "
+},
+{
+  "id": "ManyFiguresInProblem-2-5",
+  "level": "2",
+  "url": "ManyFiguresInProblem.html#ManyFiguresInProblem-2-5",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "In Case 1, we give the figures upper-left-hand corner labels, which happens in the filenamefig.tex file in the line "
+},
+{
+  "id": "ManyFiguresInProblem-2-6",
+  "level": "2",
+  "url": "ManyFiguresInProblem.html#ManyFiguresInProblem-2-6",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{aspic}|1|[(a)](2,2) "
+},
+{
+  "id": "ManyFiguresInProblem-2-7",
+  "level": "2",
+  "url": "ManyFiguresInProblem.html#ManyFiguresInProblem-2-7",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "the [(a)] puts \"(a)\" in the upper-left-hand corner. The figures should be input, so that they don't have a label (i.e. no \"Figure 2.4.\"). For example "
+},
+{
+  "id": "ManyFiguresInProblem-2-8",
+  "level": "2",
+  "url": "ManyFiguresInProblem.html#ManyFiguresInProblem-2-8",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{stayfig} \\valign[b]{ {\\input{figa}} {\\input{figb}}\/ {\\input{figc}} {\\input{figd}} } \\end{stayfig} "
+},
+{
+  "id": "ManyFiguresInProblem-3-2",
+  "level": "2",
+  "url": "ManyFiguresInProblem.html#ManyFiguresInProblem-3-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "For example "
+},
+{
+  "id": "ManyFiguresInProblem-3-4",
+  "level": "2",
+  "url": "ManyFiguresInProblem.html#ManyFiguresInProblem-3-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "In these cases, you want it to be very clear that the graphs serve different functions. In this case you use "
+},
+{
+  "id": "ManyFiguresInProblem-3-5",
+  "level": "2",
+  "url": "ManyFiguresInProblem.html#ManyFiguresInProblem-3-5",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{stayfig} \\finput*{fig1} \\end{stayfig} \\begin{stayfig} \\finput*{fig2} \\end{stayfig} "
+},
+{
+  "id": "ManyFiguresInProblem-3-6",
+  "level": "2",
+  "url": "ManyFiguresInProblem.html#ManyFiguresInProblem-3-6",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "and fig1.tex and fig2.tex contain the figures or the arrays of figures necessary. In sets, you continue to label them (a)--(d) or (I)--(IV) as in Case 1. "
 },
 {
   "id": "exerciseFilenameForDifferentBooks02",
@@ -991,6 +3916,15 @@ var ptx_lunr_docs = [
   "body": " The suggested way of naming exercise files is not unique if I am creating exercises for two different books. What do I do?   Follow this link   "
 },
 {
+  "id": "exerciseFilenameForDifferentBooks02-2",
+  "level": "2",
+  "url": "exerciseFilenameForDifferentBooks02.html#exerciseFilenameForDifferentBooks02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "filenamesFormat02",
   "level": "1",
   "url": "filenamesFormat02.html",
@@ -998,6 +3932,15 @@ var ptx_lunr_docs = [
   "number": "18.2",
   "title": "I’m told that I can construct the filename of any of the exercises just by looking at one of published books. How do I do that?",
   "body": " I'm told that I can construct the filename of any of the exercises just by looking at one of published books. How do I do that?   Follow this link   "
+},
+{
+  "id": "filenamesFormat02-2",
+  "level": "2",
+  "url": "filenamesFormat02.html#filenamesFormat02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "specialReference01",
@@ -1009,6 +3952,15 @@ var ptx_lunr_docs = [
   "body": " I want to refer to something like City A and City B. Do I just type it that way, or are the A and B put into a special font, say $A$ and $B$?  Use $A$ and $B$ . Also, use City~$A$ . The \"~\" is there to make sure that, in the final product, a line break does not occur between \"City\" and \"A\".  "
 },
 {
+  "id": "specialReference01-2",
+  "level": "2",
+  "url": "specialReference01.html#specialReference01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use $A$ and $B$ . Also, use City~$A$ . The \"~\" is there to make sure that, in the final product, a line break does not occur between \"City\" and \"A\". "
+},
+{
   "id": "ordinalNumbersExpressionsTeX02",
   "level": "1",
   "url": "ordinalNumbersExpressionsTeX02.html",
@@ -1016,6 +3968,15 @@ var ptx_lunr_docs = [
   "number": "19.2",
   "title": "How do I TeX expressions like \"1^{st}\" and \"n^{th}\"?",
   "body": " How do I TeX expressions like \"1^{st}\" and \"n^{th}\"?   Follow this link   "
+},
+{
+  "id": "ordinalNumbersExpressionsTeX02-2",
+  "level": "2",
+  "url": "ordinalNumbersExpressionsTeX02.html#ordinalNumbersExpressionsTeX02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "subscripts02",
@@ -1027,6 +3988,15 @@ var ptx_lunr_docs = [
   "body": " When I use word subscripts (e.g. $r_{in}$ or $r_{\\hbox{in}}$) the word \"in\" is either in italics or too large. What should I be using?   Follow this link   "
 },
 {
+  "id": "subscripts02-2",
+  "level": "2",
+  "url": "subscripts02.html#subscripts02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "boldface01",
   "level": "1",
   "url": "boldface01.html",
@@ -1034,6 +4004,33 @@ var ptx_lunr_docs = [
   "number": "19.4",
   "title": "How can I change the typeface to boldface?",
   "body": " How can I change the typeface to boldface?   link missing   Use {\\bf this is boldface} and this is not .  There are eight typeface commands that TeX understands:     \\rm  roman (normal) type    \\bf  boldface type    \\it  italics type    \\sc  small capitals type    \\sf  sans serif type    \\sl  slanted type    \\tt  typewriter style type    \\em  emphasized type      However, all these commands should be deleted before submitting CCHE files, unless the command is used for the same purpose as in the book. For example, \\em is used within references (see What style should we use when citing references to books, articles, or web sites? ); \\rm is used in superscripts and subscripts (see How do I TeX expressions like \"1^{st}\" and \"n^{th}\"? and When I use word subscripts (e.g. $r_{in}$ or $r_{\\hbox{in}}$) the word \"in\" is either in italics or too large. What should I be using? ); and \\bf is used when defining a new word in a defbox. In fact, \\em , \\rm , and \\bf are the only three typeface commands that we use. So text that looks italicized is actually emphasized.  "
+},
+{
+  "id": "boldface01-2-1",
+  "level": "2",
+  "url": "boldface01.html#boldface01-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "link missing "
+},
+{
+  "id": "boldface01-3",
+  "level": "2",
+  "url": "boldface01.html#boldface01-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use {\\bf this is boldface} and this is not . "
+},
+{
+  "id": "boldface01-4",
+  "level": "2",
+  "url": "boldface01.html#boldface01-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "There are eight typeface commands that TeX understands: "
 },
 {
   "id": "boldface01-5",
@@ -1045,6 +4042,15 @@ var ptx_lunr_docs = [
   "body": "   \\rm  roman (normal) type    \\bf  boldface type    \\it  italics type    \\sc  small capitals type    \\sf  sans serif type    \\sl  slanted type    \\tt  typewriter style type    \\em  emphasized type    "
 },
 {
+  "id": "boldface01-6",
+  "level": "2",
+  "url": "boldface01.html#boldface01-6",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " However, all these commands should be deleted before submitting CCHE files, unless the command is used for the same purpose as in the book. For example, \\em is used within references (see What style should we use when citing references to books, articles, or web sites? ); \\rm is used in superscripts and subscripts (see How do I TeX expressions like \"1^{st}\" and \"n^{th}\"? and When I use word subscripts (e.g. $r_{in}$ or $r_{\\hbox{in}}$) the word \"in\" is either in italics or too large. What should I be using? ); and \\bf is used when defining a new word in a defbox. In fact, \\em , \\rm , and \\bf are the only three typeface commands that we use. So text that looks italicized is actually emphasized. "
+},
+{
   "id": "typeSize01",
   "level": "1",
   "url": "typeSize01.html",
@@ -1052,6 +4058,24 @@ var ptx_lunr_docs = [
   "number": "19.5",
   "title": "How can I change the type size?",
   "body": " How can I change the type size?  Use {\\Large this text is larger than normal} and this is normal .  There are ten type size commands that TeX understands, going from smallest to largest:     \\tiny    \\scriptsize    \\footnotesize    \\small    \\normalsize    \\large    \\Large    \\LARGE    \\huge    \\Huge      However, all these commands should be deleted before submitting CCHE files , with two exceptions:    \\Huge should be used to get the attention of Elliot, Deb or any editor. See I know what I want to say, but I don't know enough TeX to express it. What do I do?.    \\scriptsize is sometimes used in the text in underbraces that contain explanatory comments.   "
+},
+{
+  "id": "typeSize01-2",
+  "level": "2",
+  "url": "typeSize01.html#typeSize01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use {\\Large this text is larger than normal} and this is normal . "
+},
+{
+  "id": "typeSize01-3",
+  "level": "2",
+  "url": "typeSize01.html#typeSize01-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "There are ten type size commands that TeX understands, going from smallest to largest: "
 },
 {
   "id": "typeSize01-4",
@@ -1063,6 +4087,15 @@ var ptx_lunr_docs = [
   "body": "   \\tiny    \\scriptsize    \\footnotesize    \\small    \\normalsize    \\large    \\Large    \\LARGE    \\huge    \\Huge    "
 },
 {
+  "id": "typeSize01-5",
+  "level": "2",
+  "url": "typeSize01.html#typeSize01-5",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " However, all these commands should be deleted before submitting CCHE files , with two exceptions: "
+},
+{
   "id": "footnote01",
   "level": "1",
   "url": "footnote01.html",
@@ -1070,6 +4103,69 @@ var ptx_lunr_docs = [
   "number": "20.1",
   "title": "How do I insert a footnote?",
   "body": " How do I insert a footnote?  Immediately to the right of the text to be footnoted, place the command \\footnote{Contents of footnote goes here} where Contents of footnote goes here is the footnote. For example,  This word\\footnote{Contents of footnote goes here} is footnoted.  Notice there is no space between \"word\" and \"\\footnote\". The construction  This word \\footnote{Contents of footnote goes here} is footnoted.  leads to an extra space between \"word\" and \"\/footnote\", and should be rewritten as  This word% \\footnote{Contents of footnote goes here} is footnoted.  For footnote placement, see Do I put a footnote before or after a punctuation mark?.   "
+},
+{
+  "id": "footnote01-2",
+  "level": "2",
+  "url": "footnote01.html#footnote01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Immediately to the right of the text to be footnoted, place the command \\footnote{Contents of footnote goes here} where Contents of footnote goes here is the footnote. For example, "
+},
+{
+  "id": "footnote01-3",
+  "level": "2",
+  "url": "footnote01.html#footnote01-3",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "This word\\footnote{Contents of footnote goes here} is footnoted. "
+},
+{
+  "id": "footnote01-4",
+  "level": "2",
+  "url": "footnote01.html#footnote01-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Notice there is no space between \"word\" and \"\\footnote\". The construction "
+},
+{
+  "id": "footnote01-5",
+  "level": "2",
+  "url": "footnote01.html#footnote01-5",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "This word \\footnote{Contents of footnote goes here} is footnoted. "
+},
+{
+  "id": "footnote01-6",
+  "level": "2",
+  "url": "footnote01.html#footnote01-6",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "leads to an extra space between \"word\" and \"\/footnote\", and should be rewritten as "
+},
+{
+  "id": "footnote01-7",
+  "level": "2",
+  "url": "footnote01.html#footnote01-7",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "This word% \\footnote{Contents of footnote goes here} is footnoted. "
+},
+{
+  "id": "footnote01-8",
+  "level": "2",
+  "url": "footnote01.html#footnote01-8",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "For footnote placement, see Do I put a footnote before or after a punctuation mark?.  "
 },
 {
   "id": "footnotePosition01",
@@ -1081,6 +4177,15 @@ var ptx_lunr_docs = [
   "body": " Do I put a footnote before or after a punctuation mark?  After. Also, avoid footnoting an expression (or variable) because it will appear as though the final term in the expression is raised to the power of the footnote number.  "
 },
 {
+  "id": "footnotePosition01-2",
+  "level": "2",
+  "url": "footnotePosition01.html#footnotePosition01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "After. Also, avoid footnoting an expression (or variable) because it will appear as though the final term in the expression is raised to the power of the footnote number. "
+},
+{
   "id": "displayMathStyle01",
   "level": "1",
   "url": "displayMathStyle01.html",
@@ -1088,6 +4193,24 @@ var ptx_lunr_docs = [
   "number": "21.1",
   "title": "How can I use the display math style without putting the expression on a new line?",
   "body": " How can I use the display math style without putting the expression on a new line?  Use \\displaystyle , which can be abbreviated \\dsty . However, the proper use of \\displaystyle or \\dsty is $\\dsty blah blah blah $ .  Unless you are trying to keep something within your set of dollar signs out of displaystyle (a very rare occurrence), you should always, when there is a need for displaystyle, put the \\dsty immediately after the first dollar sign. \\dsty continues to remain active until it is delimited, usually by the next dollar sign. Although you can use {\\dsty blah} within a set of dollar signs to limit its effect, this is very rarely useful and mostly makes an annoyance later.  "
+},
+{
+  "id": "displayMathStyle01-2",
+  "level": "2",
+  "url": "displayMathStyle01.html#displayMathStyle01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use \\displaystyle , which can be abbreviated \\dsty . However, the proper use of \\displaystyle or \\dsty is $\\dsty blah blah blah $ . "
+},
+{
+  "id": "displayMathStyle01-3",
+  "level": "2",
+  "url": "displayMathStyle01.html#displayMathStyle01-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Unless you are trying to keep something within your set of dollar signs out of displaystyle (a very rare occurrence), you should always, when there is a need for displaystyle, put the \\dsty immediately after the first dollar sign. \\dsty continues to remain active until it is delimited, usually by the next dollar sign. Although you can use {\\dsty blah} within a set of dollar signs to limit its effect, this is very rarely useful and mostly makes an annoyance later. "
 },
 {
   "id": "differencesDollarSign01",
@@ -1099,6 +4222,33 @@ var ptx_lunr_docs = [
   "body": " What is the difference between $blah$ , $$blah$$ , and $\\dsty blah$ ?     $blah$ prints the equation\/expression blah as part of the text. If blah contains fractions, they should be shilled.     $$blah$$ prints the equation\/expression blah centered on its own line. (However, please see this .) If blah contains fractions, use \\frac{}{} . If blah contains fractions within parentheses, use \\left(\\frac{}{}\\right) .     $\\dsty blah$ is the same as $$blah$$ , except it prints the equation\/expression blah as part of the text, not centered, not on its own line.    "
 },
 {
+  "id": "differencesDollarSign01-2-1-1",
+  "level": "2",
+  "url": "differencesDollarSign01.html#differencesDollarSign01-2-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " $blah$ prints the equation\/expression blah as part of the text. If blah contains fractions, they should be shilled. "
+},
+{
+  "id": "differencesDollarSign01-2-2-1",
+  "level": "2",
+  "url": "differencesDollarSign01.html#differencesDollarSign01-2-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " $$blah$$ prints the equation\/expression blah centered on its own line. (However, please see this .) If blah contains fractions, use \\frac{}{} . If blah contains fractions within parentheses, use \\left(\\frac{}{}\\right) . "
+},
+{
+  "id": "differencesDollarSign01-2-3-1",
+  "level": "2",
+  "url": "differencesDollarSign01.html#differencesDollarSign01-2-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " $\\dsty blah$ is the same as $$blah$$ , except it prints the equation\/expression blah as part of the text, not centered, not on its own line. "
+},
+{
   "id": "displaystyle01",
   "level": "1",
   "url": "displaystyle01.html",
@@ -1106,6 +4256,15 @@ var ptx_lunr_docs = [
   "number": "21.3",
   "title": "Can I use <code class=\"code-inline tex2jax_ignore\">\\displaystyle<\/code> in display math style or in <code class=\"code-inline tex2jax_ignore\">eqnarray*<\/code>?",
   "body": " Can I use \\displaystyle in display math style or in eqnarray* ?  The only time that you should use \\displaystyle (or \\dsty ) within either $$ $$ or eqnarray* is if you're trying to force a fraction within a fraction to be big, or an integral within a fraction, etc. This is a very rare event. Excess \\dsty commands make a confusing mess.  "
+},
+{
+  "id": "displaystyle01-2",
+  "level": "2",
+  "url": "displaystyle01.html#displaystyle01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The only time that you should use \\displaystyle (or \\dsty ) within either $$ $$ or eqnarray* is if you're trying to force a fraction within a fraction to be big, or an integral within a fraction, etc. This is a very rare event. Excess \\dsty commands make a confusing mess. "
 },
 {
   "id": "shouldKnowDisplayStyle01",
@@ -1117,6 +4276,87 @@ var ptx_lunr_docs = [
   "body": " Is there anything I should know if I use display math style (that is, when an expression is on its own line)?  Yes. There are five things to be aware of.    Almost always, the expression should have a left-hand side, either some text, variable, expression, etc.    To use text when in display math style, use  $$ \\hbox{Diamonds } = \\hbox{ A girl's best friend.} $$  Note that you need the spaces inside the hbox so that the equal sign is not too close.    If text appears in display math style only the first letter of the first word should be capitalized.    Never put a blank line between the first $$ signs and the preceding text.    If there is no blank line after the second $$ , then the text following continues on the next line. If there is a blank line after the second $$ , then the text following starts a new paragraph.    See also and this .  "
 },
 {
+  "id": "shouldKnowDisplayStyle01-2",
+  "level": "2",
+  "url": "shouldKnowDisplayStyle01.html#shouldKnowDisplayStyle01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Yes. There are five things to be aware of. "
+},
+{
+  "id": "shouldKnowDisplayStyle01-3-1-1",
+  "level": "2",
+  "url": "shouldKnowDisplayStyle01.html#shouldKnowDisplayStyle01-3-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Almost always, the expression should have a left-hand side, either some text, variable, expression, etc. "
+},
+{
+  "id": "shouldKnowDisplayStyle01-3-2-1",
+  "level": "2",
+  "url": "shouldKnowDisplayStyle01.html#shouldKnowDisplayStyle01-3-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "To use text when in display math style, use "
+},
+{
+  "id": "shouldKnowDisplayStyle01-3-2-2",
+  "level": "2",
+  "url": "shouldKnowDisplayStyle01.html#shouldKnowDisplayStyle01-3-2-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "$$ \\hbox{Diamonds } = \\hbox{ A girl's best friend.} $$ "
+},
+{
+  "id": "shouldKnowDisplayStyle01-3-2-3",
+  "level": "2",
+  "url": "shouldKnowDisplayStyle01.html#shouldKnowDisplayStyle01-3-2-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Note that you need the spaces inside the hbox so that the equal sign is not too close. "
+},
+{
+  "id": "shouldKnowDisplayStyle01-3-3-1",
+  "level": "2",
+  "url": "shouldKnowDisplayStyle01.html#shouldKnowDisplayStyle01-3-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If text appears in display math style only the first letter of the first word should be capitalized. "
+},
+{
+  "id": "shouldKnowDisplayStyle01-3-4-1",
+  "level": "2",
+  "url": "shouldKnowDisplayStyle01.html#shouldKnowDisplayStyle01-3-4-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Never put a blank line between the first $$ signs and the preceding text. "
+},
+{
+  "id": "shouldKnowDisplayStyle01-3-5-1",
+  "level": "2",
+  "url": "shouldKnowDisplayStyle01.html#shouldKnowDisplayStyle01-3-5-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If there is no blank line after the second $$ , then the text following continues on the next line. If there is a blank line after the second $$ , then the text following starts a new paragraph. "
+},
+{
+  "id": "shouldKnowDisplayStyle01-4",
+  "level": "2",
+  "url": "shouldKnowDisplayStyle01.html#shouldKnowDisplayStyle01-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "See also and this . "
+},
+{
   "id": "integrals01",
   "level": "1",
   "url": "integrals01.html",
@@ -1124,6 +4364,15 @@ var ptx_lunr_docs = [
   "number": "21.5",
   "title": "If I use <code class=\"code-inline tex2jax_ignore\">$\\int f(x) dx$<\/code>, to construct the integral of f(x), the f(x) and dx are too close. What should I do?",
   "body": " If I use $\\int f(x) dx$ , to construct the integral of f(x), the f(x) and dx are too close. What should I do?  Use $\\int f(x)\\, dx$ . This also applies to multiple integrals, such as $f(x,y,z)\\, dV = f(x,x,y)\\, dx\\, dy\\, dz$ .  "
+},
+{
+  "id": "integrals01-2",
+  "level": "2",
+  "url": "integrals01.html#integrals01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use $\\int f(x)\\, dx$ . This also applies to multiple integrals, such as $f(x,y,z)\\, dV = f(x,x,y)\\, dx\\, dy\\, dz$ . "
 },
 {
   "id": "vectorsArrow01",
@@ -1135,6 +4384,15 @@ var ptx_lunr_docs = [
   "body": " Do I use $\\vec F$ or $\\overrightarrow{F}$ to put an arrow on top of the vector F?  We usually use $\\vec $ if the name of the vector has only one character, and $\\overrightarrow{ }$ if the name of the vector has more than one character. Thus, $\\vec F$ and $\\overrightarrow{AB}$ .  "
 },
 {
+  "id": "vectorsArrow01-2",
+  "level": "2",
+  "url": "vectorsArrow01.html#vectorsArrow01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "We usually use $\\vec $ if the name of the vector has only one character, and $\\overrightarrow{ }$ if the name of the vector has more than one character. Thus, $\\vec F$ and $\\overrightarrow{AB}$ . "
+},
+{
   "id": "vectorSubscript02",
   "level": "1",
   "url": "vectorSubscript02.html",
@@ -1142,6 +4400,15 @@ var ptx_lunr_docs = [
   "number": "21.7",
   "title": "If I use <code class=\"code-inline tex2jax_ignore\">$\\vec F_{M}$<\/code> or <code class=\"code-inline tex2jax_ignore\">$\\overrightarrow{F}_M$<\/code> a huge gap is left between the bottom of the F and the M, which looks wrong. What should I do?",
   "body": " If I use $\\vec F_{M}$ or $\\overrightarrow{F}_M$ a huge gap is left between the bottom of the F and the M, which looks wrong. What should I do?   Follow this link   "
+},
+{
+  "id": "vectorSubscript02-2",
+  "level": "2",
+  "url": "vectorSubscript02.html#vectorSubscript02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "shilling02",
@@ -1153,6 +4420,15 @@ var ptx_lunr_docs = [
   "body": " What is shilling?   Follow this link   "
 },
 {
+  "id": "shilling02-2",
+  "level": "2",
+  "url": "shilling02.html#shilling02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "shillVsFrac02",
   "level": "1",
   "url": "shillVsFrac02.html",
@@ -1162,13 +4438,31 @@ var ptx_lunr_docs = [
   "body": " When do I shill and when do I use $\\frac{}{}$ ?   Follow this link   "
 },
 {
+  "id": "shillVsFrac02-2",
+  "level": "2",
+  "url": "shillVsFrac02.html#shillVsFrac02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "range01",
   "level": "1",
   "url": "range01.html",
   "type": "Section",
   "number": "21.10",
-  "title": "The three expressions <code class=\"code-inline tex2jax_ignore\">$x > 1$<\/code>, <code class=\"code-inline tex2jax_ignore\">$1 < x < \\infty$<\/code>, and <code class=\"code-inline tex2jax_ignore\">$(1, \\infty)$<\/code> are mathematically equivalent.  Which one do we use?",
+  "title": "The three expressions <code class=\"code-inline tex2jax_ignore\">$x &gt; 1$<\/code>, <code class=\"code-inline tex2jax_ignore\">$1 &lt; x &lt; \\infty$<\/code>, and <code class=\"code-inline tex2jax_ignore\">$(1, \\infty)$<\/code> are mathematically equivalent.  Which one do we use?",
   "body": " The three expressions $x > 1$ , $1 < x < \\infty$ , and $(1, \\infty)$ are mathematically equivalent. Which one do we use?   $x > 1$ or $1 < x$ .  "
+},
+{
+  "id": "range01-2",
+  "level": "2",
+  "url": "range01.html#range01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " $x > 1$ or $1 < x$ . "
 },
 {
   "id": "rightArrow01",
@@ -1180,6 +4474,15 @@ var ptx_lunr_docs = [
   "body": " May I use the implies symbol ==> ( $\\Rightarrow$ )?  No.  "
 },
 {
+  "id": "rightArrow01-2",
+  "level": "2",
+  "url": "rightArrow01.html#rightArrow01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "No. "
+},
+{
   "id": "sinNotation01",
   "level": "1",
   "url": "sinNotation01.html",
@@ -1187,6 +4490,15 @@ var ptx_lunr_docs = [
   "number": "21.12",
   "title": "Do I use <code class=\"code-inline tex2jax_ignore\">$\\sin x$<\/code> or <code class=\"code-inline tex2jax_ignore\">$\\sin (x)$<\/code>?",
   "body": " Do I use $\\sin x$ or $\\sin (x)$ ?  Use $\\sin x$ if x is a single entity, and $\\sin (x)$ if it is not. Thus, $\\sin x$ and $\\sin (3x)$ are correct.  "
+},
+{
+  "id": "sinNotation01-2",
+  "level": "2",
+  "url": "sinNotation01.html#sinNotation01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use $\\sin x$ if x is a single entity, and $\\sin (x)$ if it is not. Thus, $\\sin x$ and $\\sin (3x)$ are correct. "
 },
 {
   "id": "rootVsZero01",
@@ -1198,6 +4510,15 @@ var ptx_lunr_docs = [
   "body": " When do I use root and when do I use zero?  Roots and zeros are not interchangeable. The zeros of the function f are the roots of the equation f(x)=0 .  "
 },
 {
+  "id": "rootVsZero01-2",
+  "level": "2",
+  "url": "rootVsZero01.html#rootVsZero01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Roots and zeros are not interchangeable. The zeros of the function f are the roots of the equation f(x)=0 . "
+},
+{
   "id": "equalVsApproEqual01",
   "level": "1",
   "url": "equalVsApproEqual01.html",
@@ -1205,6 +4526,33 @@ var ptx_lunr_docs = [
   "number": "21.14",
   "title": "When do I use = and when do I use approximately equal (<code class=\"code-inline tex2jax_ignore\">\\approx<\/code>)?",
   "body": " When do I use = and when do I use approximately equal ( \\approx )?  Use approximately equal only if the approximation is not correct to the number of decimal places shown when rounded, so pi = 3.14 but pi approx 3.15.  (We also use approximately if the point is to emphasize the approximation, for example, the fact that tangent line approximation approximates the function.)  However, the books are not yet (and may never be) consistent on the use of \\approx .  "
+},
+{
+  "id": "equalVsApproEqual01-2",
+  "level": "2",
+  "url": "equalVsApproEqual01.html#equalVsApproEqual01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use approximately equal only if the approximation is not correct to the number of decimal places shown when rounded, so pi = 3.14 but pi approx 3.15. "
+},
+{
+  "id": "equalVsApproEqual01-3",
+  "level": "2",
+  "url": "equalVsApproEqual01.html#equalVsApproEqual01-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "(We also use approximately if the point is to emphasize the approximation, for example, the fact that tangent line approximation approximates the function.) "
+},
+{
+  "id": "equalVsApproEqual01-4",
+  "level": "2",
+  "url": "equalVsApproEqual01.html#equalVsApproEqual01-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "However, the books are not yet (and may never be) consistent on the use of \\approx . "
 },
 {
   "id": "multipliedTogetherRepeatedly01",
@@ -1216,6 +4564,15 @@ var ptx_lunr_docs = [
   "body": " To display $a$ multiplied together repeatedly, do I use $a\\cdot a\\cdot a\\cdot\\cdots\\cdot a$ or $a\\cdot a\\cdot a\\cdots a$ ?   $a\\cdot a\\cdot a\\cdots a$ .  "
 },
 {
+  "id": "multipliedTogetherRepeatedly01-2",
+  "level": "2",
+  "url": "multipliedTogetherRepeatedly01.html#multipliedTogetherRepeatedly01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " $a\\cdot a\\cdot a\\cdots a$ . "
+},
+{
   "id": "subscripts03",
   "level": "1",
   "url": "subscripts03.html",
@@ -1223,6 +4580,15 @@ var ptx_lunr_docs = [
   "number": "21.16",
   "title": "When I use  word subscripts (e.g. <code class=\"code-inline tex2jax_ignore\">$r_{in}$<\/code> or <code class=\"code-inline tex2jax_ignore\">$r_{\\hbox{in}}$<\/code>) the word \"in\" is either in italics or too large.  What should I be using?",
   "body": " When I use word subscripts (e.g. $r_{in}$ or $r_{\\hbox{in}}$ ) the word \"in\" is either in italics or too large. What should I be using?   Follow this link   "
+},
+{
+  "id": "subscripts03-2",
+  "level": "2",
+  "url": "subscripts03.html#subscripts03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "verticalBar01",
@@ -1234,6 +4600,15 @@ var ptx_lunr_docs = [
   "body": " When I TeX \\dsty \\left.\\arctan(x)\\right|_0^b the vertical bar isn't long enough. How can I get it taller?  Use \\Bigg| in place of \\right| .  "
 },
 {
+  "id": "verticalBar01-2",
+  "level": "2",
+  "url": "verticalBar01.html#verticalBar01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use \\Bigg| in place of \\right| . "
+},
+{
   "id": "textIntoEquation01",
   "level": "1",
   "url": "textIntoEquation01.html",
@@ -1243,13 +4618,49 @@ var ptx_lunr_docs = [
   "body": " How do I put text into an equation?  See Is there anything I should know if I use display math style (that is, when an expression is on its own line)?   "
 },
 {
+  "id": "textIntoEquation01-2",
+  "level": "2",
+  "url": "textIntoEquation01.html#textIntoEquation01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "See Is there anything I should know if I use display math style (that is, when an expression is on its own line)?  "
+},
+{
   "id": "equationsDisplayStyle01",
   "level": "1",
   "url": "equationsDisplayStyle01.html",
   "type": "Section",
   "number": "21.19",
-  "title": "In display style math (when an equation is on its own line) are both <code class=\"code-inline tex2jax_ignore\">$$equation$$<\/code> and<pre class=\"code-block tex2jax_ignore\">$$\nequation\n$$\n<\/pre>correct?",
+  "title": "In display style math (when an equation is on its own line) are both <code class=\"code-inline tex2jax_ignore\">$$equation$$<\/code> and<pre class=\"code-block tex2jax_ignore clipboardable\">$$\nequation\n$$\n<\/pre>correct?",
   "body": " In display style math (when an equation is on its own line) are both $$equation$$ and $$ equation $$ correct?  Yes. However, it is hard to read the Tex files when $$equation$$ is used. It is preferable to have the equation displayed in the TeX file if it's going to be displayed in the output. So please use  $$ equation $$  "
+},
+{
+  "id": "equationsDisplayStyle01-1-2",
+  "level": "2",
+  "url": "equationsDisplayStyle01.html#equationsDisplayStyle01-1-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "$$ equation $$ "
+},
+{
+  "id": "equationsDisplayStyle01-2",
+  "level": "2",
+  "url": "equationsDisplayStyle01.html#equationsDisplayStyle01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Yes. However, it is hard to read the Tex files when $$equation$$ is used. It is preferable to have the equation displayed in the TeX file if it's going to be displayed in the output. So please use "
+},
+{
+  "id": "equationsDisplayStyle01-3",
+  "level": "2",
+  "url": "equationsDisplayStyle01.html#equationsDisplayStyle01-3",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "$$ equation $$ "
 },
 {
   "id": "formatExercisesFiles02",
@@ -1261,6 +4672,15 @@ var ptx_lunr_docs = [
   "body": " What is the correct format and naming convention for exercise files?   Follow this link   "
 },
 {
+  "id": "formatExercisesFiles02-2",
+  "level": "2",
+  "url": "formatExercisesFiles02.html#formatExercisesFiles02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "tableFormat01",
   "level": "1",
   "url": "tableFormat01.html",
@@ -1268,6 +4688,114 @@ var ptx_lunr_docs = [
   "number": "22.2",
   "title": "What is the preferred formatting for a table?",
   "body": " What is the preferred formatting for a table?  Note: a table should be placed at the end of the example, exercise, or paragraph that uses it, and then referenced from the example, exercise, or paragraph. Never refer to the table by using a phrase like  See the table below. \\begin{stayfig} \\tinput*[table2] {\\begin{calctabular}{c|c|c|c|c} Time (hours) & 0 & 24 & 48 & 72\\\\ \\hline Temperature (F)& 75 & 75 & 75 & 75 \\end{calctabular}} \\end{stayfig}  The table starts with \\begin{stayfig} and ends with \\end{stayfig} .  In all the mess that's in between these two commands you should be able to see where the table entries are: they are in lines like Time (hours) & 0 & 24 & 48 & 72\\\\ . The & 's separate entries and the \\\\ ends a row.  Another thing you will need to adjust is the row \\begin{calctabular}{c|c|c|c|c} . The first c is for the column containing the names of the variables or the function, and the remaining ones are for the entries in the table, so there should be as many of them as columns in the table (five in this case). Also, the c (center the column) could be replaced by l (left justify the column), or r (right justify the column).  This particular table has no caption, which is the general rule in exercises. However, tables in the text require captions. To create a table with a caption requires two changes:    Replace the line \\tinput*[table2] with \\tinput[table2] .    and replace the line \\end{calctabular}} with \\end{calctabular}}{The caption lives here} .    Here table2 can be whatever label you please, but it must be unique. (However, see What is the preferred convention for labelling figures and tables in Exercises? .) If you want to reference this table, you do so by something like Table~\\ref{table2} shows how to create a table in the book.   If you want to create a table with no table number (because it is not referenced, as happens in the short answers, and might happen in the exercises) delete the line \\tinput*[table2]   The first word in table headings should always start with a capital letter. Thus, \"Time\", \"Temperature\", and \"Percentage finished\" are correct.  For an example of a multi-row table, see How wide can I make a table?.   "
+},
+{
+  "id": "tableFormat01-2",
+  "level": "2",
+  "url": "tableFormat01.html#tableFormat01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Note: a table should be placed at the end of the example, exercise, or paragraph that uses it, and then referenced from the example, exercise, or paragraph. Never refer to the table by using a phrase like "
+},
+{
+  "id": "tableFormat01-3",
+  "level": "2",
+  "url": "tableFormat01.html#tableFormat01-3",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "See the table below. \\begin{stayfig} \\tinput*[table2] {\\begin{calctabular}{c|c|c|c|c} Time (hours) & 0 & 24 & 48 & 72\\\\ \\hline Temperature (F)& 75 & 75 & 75 & 75 \\end{calctabular}} \\end{stayfig} "
+},
+{
+  "id": "tableFormat01-4",
+  "level": "2",
+  "url": "tableFormat01.html#tableFormat01-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The table starts with \\begin{stayfig} and ends with \\end{stayfig} . "
+},
+{
+  "id": "tableFormat01-5",
+  "level": "2",
+  "url": "tableFormat01.html#tableFormat01-5",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "In all the mess that's in between these two commands you should be able to see where the table entries are: they are in lines like Time (hours) & 0 & 24 & 48 & 72\\\\ . The & 's separate entries and the \\\\ ends a row. "
+},
+{
+  "id": "tableFormat01-6",
+  "level": "2",
+  "url": "tableFormat01.html#tableFormat01-6",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Another thing you will need to adjust is the row \\begin{calctabular}{c|c|c|c|c} . The first c is for the column containing the names of the variables or the function, and the remaining ones are for the entries in the table, so there should be as many of them as columns in the table (five in this case). Also, the c (center the column) could be replaced by l (left justify the column), or r (right justify the column). "
+},
+{
+  "id": "tableFormat01-7",
+  "level": "2",
+  "url": "tableFormat01.html#tableFormat01-7",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "This particular table has no caption, which is the general rule in exercises. However, tables in the text require captions. To create a table with a caption requires two changes: "
+},
+{
+  "id": "tableFormat01-8-1-1",
+  "level": "2",
+  "url": "tableFormat01.html#tableFormat01-8-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Replace the line \\tinput*[table2] with \\tinput[table2] . "
+},
+{
+  "id": "tableFormat01-8-2-1",
+  "level": "2",
+  "url": "tableFormat01.html#tableFormat01-8-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "and replace the line \\end{calctabular}} with \\end{calctabular}}{The caption lives here} . "
+},
+{
+  "id": "tableFormat01-9",
+  "level": "2",
+  "url": "tableFormat01.html#tableFormat01-9",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Here table2 can be whatever label you please, but it must be unique. (However, see What is the preferred convention for labelling figures and tables in Exercises? .) If you want to reference this table, you do so by something like Table~\\ref{table2} shows how to create a table in the book.  "
+},
+{
+  "id": "tableFormat01-10",
+  "level": "2",
+  "url": "tableFormat01.html#tableFormat01-10",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you want to create a table with no table number (because it is not referenced, as happens in the short answers, and might happen in the exercises) delete the line \\tinput*[table2]  "
+},
+{
+  "id": "tableFormat01-11",
+  "level": "2",
+  "url": "tableFormat01.html#tableFormat01-11",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The first word in table headings should always start with a capital letter. Thus, \"Time\", \"Temperature\", and \"Percentage finished\" are correct. "
+},
+{
+  "id": "tableFormat01-12",
+  "level": "2",
+  "url": "tableFormat01.html#tableFormat01-12",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "For an example of a multi-row table, see How wide can I make a table?.  "
 },
 {
   "id": "figuresCollection",
@@ -1279,6 +4807,249 @@ var ptx_lunr_docs = [
   "body": " I want to put a collection of figures together on a page. How do I do that?  This depends on whether you want a separate caption for each figure, one caption for all the figures, or no captions. (For the general principles of creating figures Sometimes I want a figure with a number and a caption, sometimes with only a number, and sometimes with neither a number nor a caption. How do I do that? , and What is the difference between stayfig and fakefig ? first.)    Separate caption for each figure. Use  \\begin{fakefig} \\valign[b] { {\\finput{figa}{Caption1}}* {\\finput{figa}{Caption2}}\/ {\\finput{figc}{Caption3}} } \\end{fakefig}  Here     \\valign aligns the figures.    [b] makes them bottom-aligned. You can use [c] (centered) and [t] (top-aligned) also.    * means put in some space. You can use ** (which means put in lots of space) also.    \/ means make a new line of figures.      One caption for all the figures. First create a file (say \"manyfig.tex\") containing  \\valign[b] { {\\input{figa}}* {\\input{figb}}\/ {\\input{figc}} }  Here     \\valign aligns the figures.    [b] makes them bottom-aligned. You can use [c] (centered) and [t] (top-aligned) also.    * means put in some space. You can use ** (which means put in lots of space) also.    \/ means make a new line of figures.    Then use  \\begin{fakefig} \\finput{manyfig}{Caption} \\end{fakefig}    No captions. First create a file (say \"manyfig.tex\") containing  \\valign[b] { {\\input{figa}}* {\\input{figb}}\/ {\\input{figc}} }  Here     \\valign aligns the figures.    [b] makes them bottom-aligned. You can use [c] (centered) and [t] (top-aligned) also.    * means put in some space. You can use ** (which means put in lots of space) also.    \/ means make a new line of figures.    Then use  \\begin{fakefig} \\finput*{manyfig} \\end{fakefig}    It is strictly forbidden for \\finput to input\/call another \\finput .  "
 },
 {
+  "id": "figuresCollection-2",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "This depends on whether you want a separate caption for each figure, one caption for all the figures, or no captions. (For the general principles of creating figures Sometimes I want a figure with a number and a caption, sometimes with only a number, and sometimes with neither a number nor a caption. How do I do that? , and What is the difference between stayfig and fakefig ? first.) "
+},
+{
+  "id": "figuresCollection-3-1-1",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Separate caption for each figure. Use "
+},
+{
+  "id": "figuresCollection-3-1-2",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-1-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{fakefig} \\valign[b] { {\\finput{figa}{Caption1}}* {\\finput{figa}{Caption2}}\/ {\\finput{figc}{Caption3}} } \\end{fakefig} "
+},
+{
+  "id": "figuresCollection-3-1-3",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-1-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Here "
+},
+{
+  "id": "figuresCollection-3-1-4-1-1",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-1-4-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " \\valign aligns the figures. "
+},
+{
+  "id": "figuresCollection-3-1-4-2-1",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-1-4-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "[b] makes them bottom-aligned. You can use [c] (centered) and [t] (top-aligned) also. "
+},
+{
+  "id": "figuresCollection-3-1-4-3-1",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-1-4-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "* means put in some space. You can use ** (which means put in lots of space) also. "
+},
+{
+  "id": "figuresCollection-3-1-4-4-1",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-1-4-4-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "\/ means make a new line of figures. "
+},
+{
+  "id": "figuresCollection-3-2-1",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "One caption for all the figures. First create a file (say \"manyfig.tex\") containing "
+},
+{
+  "id": "figuresCollection-3-2-2",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-2-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\valign[b] { {\\input{figa}}* {\\input{figb}}\/ {\\input{figc}} } "
+},
+{
+  "id": "figuresCollection-3-2-3",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-2-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Here "
+},
+{
+  "id": "figuresCollection-3-2-4-1-1",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-2-4-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " \\valign aligns the figures. "
+},
+{
+  "id": "figuresCollection-3-2-4-2-1",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-2-4-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "[b] makes them bottom-aligned. You can use [c] (centered) and [t] (top-aligned) also. "
+},
+{
+  "id": "figuresCollection-3-2-4-3-1",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-2-4-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "* means put in some space. You can use ** (which means put in lots of space) also. "
+},
+{
+  "id": "figuresCollection-3-2-4-4-1",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-2-4-4-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "\/ means make a new line of figures. "
+},
+{
+  "id": "figuresCollection-3-2-5",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-2-5",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Then use "
+},
+{
+  "id": "figuresCollection-3-2-6",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-2-6",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{fakefig} \\finput{manyfig}{Caption} \\end{fakefig} "
+},
+{
+  "id": "figuresCollection-3-3-1",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "No captions. First create a file (say \"manyfig.tex\") containing "
+},
+{
+  "id": "figuresCollection-3-3-2",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-3-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\valign[b] { {\\input{figa}}* {\\input{figb}}\/ {\\input{figc}} } "
+},
+{
+  "id": "figuresCollection-3-3-3",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-3-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Here "
+},
+{
+  "id": "figuresCollection-3-3-4-1-1",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-3-4-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " \\valign aligns the figures. "
+},
+{
+  "id": "figuresCollection-3-3-4-2-1",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-3-4-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "[b] makes them bottom-aligned. You can use [c] (centered) and [t] (top-aligned) also. "
+},
+{
+  "id": "figuresCollection-3-3-4-3-1",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-3-4-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "* means put in some space. You can use ** (which means put in lots of space) also. "
+},
+{
+  "id": "figuresCollection-3-3-4-4-1",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-3-4-4-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "\/ means make a new line of figures. "
+},
+{
+  "id": "figuresCollection-3-3-5",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-3-5",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Then use "
+},
+{
+  "id": "figuresCollection-3-3-6",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-3-3-6",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{fakefig} \\finput*{manyfig} \\end{fakefig} "
+},
+{
+  "id": "figuresCollection-4",
+  "level": "2",
+  "url": "figuresCollection.html#figuresCollection-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "It is strictly forbidden for \\finput to input\/call another \\finput . "
+},
+{
   "id": "somethingInBox01",
   "level": "1",
   "url": "somethingInBox01.html",
@@ -1286,6 +5057,15 @@ var ptx_lunr_docs = [
   "number": "22.4",
   "title": "What command do I use in TeX to place something in a box, similar to page 2 in Calculus, 3rd Edition?",
   "body": " What command do I use in TeX to place something in a box, similar to page 2 in Calculus, 3rd Edition?  There are two boxes, \\defbox{stuff} and \\rulebox{stuff} . One is colored and one not, otherwise they are the same.  "
+},
+{
+  "id": "somethingInBox01-2",
+  "level": "2",
+  "url": "somethingInBox01.html#somethingInBox01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "There are two boxes, \\defbox{stuff} and \\rulebox{stuff} . One is colored and one not, otherwise they are the same. "
 },
 {
   "id": "boldface02",
@@ -1297,6 +5077,15 @@ var ptx_lunr_docs = [
   "body": " How can I change the typeface to boldface?   Follow this link   "
 },
 {
+  "id": "boldface02-2",
+  "level": "2",
+  "url": "boldface02.html#boldface02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "typeSize02",
   "level": "1",
   "url": "typeSize02.html",
@@ -1304,6 +5093,15 @@ var ptx_lunr_docs = [
   "number": "22.6",
   "title": "How can I change the type size?",
   "body": " How can I change the type size?   Follow this link   "
+},
+{
+  "id": "typeSize02-2",
+  "level": "2",
+  "url": "typeSize02.html#typeSize02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "spaceBetweenTwoLines01",
@@ -1315,6 +5113,24 @@ var ptx_lunr_docs = [
   "body": " How can I increase space between two lines?  Between paragraphs, use \\smallskip , \\medskip , or \\bigskip .   However, all these commands should be deleted before submitting CCHE files.   "
 },
 {
+  "id": "spaceBetweenTwoLines01-2",
+  "level": "2",
+  "url": "spaceBetweenTwoLines01.html#spaceBetweenTwoLines01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Between paragraphs, use \\smallskip , \\medskip , or \\bigskip . "
+},
+{
+  "id": "spaceBetweenTwoLines01-3",
+  "level": "2",
+  "url": "spaceBetweenTwoLines01.html#spaceBetweenTwoLines01-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " However, all these commands should be deleted before submitting CCHE files.  "
+},
+{
   "id": "spaceBeforeAfterDashes01",
   "level": "1",
   "url": "spaceBeforeAfterDashes01.html",
@@ -1322,6 +5138,87 @@ var ptx_lunr_docs = [
   "number": "22.8",
   "title": "Sometimes there is a space before or after my dashes (-), en-dashes (--), and em-dashes (---), and I don’t want that. What do I do?",
   "body": " Sometimes there is a space before or after my dashes (-), en-dashes (--), and em-dashes (---), and I don't want that. What do I do?  A construction like Some time ago---perhaps a month should give no spaces before or after the em-dash. A construction like  Some time ago--- perhaps a month  leads to a space between the em-dash and the word perhaps , which we do not want. A construction like  Some time ago ---perhaps a month  also leads to a space between the word ago and the em-dash, which we do not want. To solve the problem, either do not break a line at the beginning or end of any dash (the preferred method), or insert % at the end of the first line. For example  Some time ago---% perhaps a month  or  Some time ago% ---perhaps a month  accomplish the same thing.  "
+},
+{
+  "id": "spaceBeforeAfterDashes01-2",
+  "level": "2",
+  "url": "spaceBeforeAfterDashes01.html#spaceBeforeAfterDashes01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "A construction like Some time ago---perhaps a month should give no spaces before or after the em-dash. A construction like "
+},
+{
+  "id": "spaceBeforeAfterDashes01-3",
+  "level": "2",
+  "url": "spaceBeforeAfterDashes01.html#spaceBeforeAfterDashes01-3",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "Some time ago--- perhaps a month "
+},
+{
+  "id": "spaceBeforeAfterDashes01-4",
+  "level": "2",
+  "url": "spaceBeforeAfterDashes01.html#spaceBeforeAfterDashes01-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "leads to a space between the em-dash and the word perhaps , which we do not want. A construction like "
+},
+{
+  "id": "spaceBeforeAfterDashes01-5",
+  "level": "2",
+  "url": "spaceBeforeAfterDashes01.html#spaceBeforeAfterDashes01-5",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "Some time ago ---perhaps a month "
+},
+{
+  "id": "spaceBeforeAfterDashes01-6",
+  "level": "2",
+  "url": "spaceBeforeAfterDashes01.html#spaceBeforeAfterDashes01-6",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "also leads to a space between the word ago and the em-dash, which we do not want. To solve the problem, either do not break a line at the beginning or end of any dash (the preferred method), or insert % at the end of the first line. For example "
+},
+{
+  "id": "spaceBeforeAfterDashes01-7",
+  "level": "2",
+  "url": "spaceBeforeAfterDashes01.html#spaceBeforeAfterDashes01-7",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "Some time ago---% perhaps a month "
+},
+{
+  "id": "spaceBeforeAfterDashes01-8",
+  "level": "2",
+  "url": "spaceBeforeAfterDashes01.html#spaceBeforeAfterDashes01-8",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "or "
+},
+{
+  "id": "spaceBeforeAfterDashes01-9",
+  "level": "2",
+  "url": "spaceBeforeAfterDashes01.html#spaceBeforeAfterDashes01-9",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "Some time ago% ---perhaps a month "
+},
+{
+  "id": "spaceBeforeAfterDashes01-10",
+  "level": "2",
+  "url": "spaceBeforeAfterDashes01.html#spaceBeforeAfterDashes01-10",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "accomplish the same thing. "
 },
 {
   "id": "periodBetween01",
@@ -1333,6 +5230,15 @@ var ptx_lunr_docs = [
   "body": " When I TeX \"The difference is \\$0.01. \" there is a spacing problem involving the period between the two zeros. What do I do?  Replace \\$0.01. with $\\$0.01$.   "
 },
 {
+  "id": "periodBetween01-2",
+  "level": "2",
+  "url": "periodBetween01.html#periodBetween01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Replace \\$0.01. with $\\$0.01$.  "
+},
+{
   "id": "ordinalNumbersExpressionsTeX03",
   "level": "1",
   "url": "ordinalNumbersExpressionsTeX03.html",
@@ -1340,6 +5246,15 @@ var ptx_lunr_docs = [
   "number": "22.10",
   "title": "How do I TeX expressions like \"1^{st}\" and \"n^{th}\"?",
   "body": " How do I TeX expressions like \"1^{st}\" and \"n^{th}\"?   Follow this link   "
+},
+{
+  "id": "ordinalNumbersExpressionsTeX03-2",
+  "level": "2",
+  "url": "ordinalNumbersExpressionsTeX03.html#ordinalNumbersExpressionsTeX03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "thousandNotation01",
@@ -1351,6 +5266,15 @@ var ptx_lunr_docs = [
   "body": " Do we use 1000 or 1,000?  For numbers between -10,000 and 10,000, we omit the comma. Otherwise we include it. Thus, 9999 and 10,000 are correct. However, when in math mode, 10,000 is entered as $10,\\!000$ to suppress the space after the comma.  "
 },
 {
+  "id": "thousandNotation01-2",
+  "level": "2",
+  "url": "thousandNotation01.html#thousandNotation01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "For numbers between -10,000 and 10,000, we omit the comma. Otherwise we include it. Thus, 9999 and 10,000 are correct. However, when in math mode, 10,000 is entered as $10,\\!000$ to suppress the space after the comma. "
+},
+{
   "id": "decimalsNotation01",
   "level": "1",
   "url": "decimalsNotation01.html",
@@ -1358,6 +5282,15 @@ var ptx_lunr_docs = [
   "number": "22.12",
   "title": "Do we use 0.5 or .5?",
   "body": " Do we use 0.5 or .5?  All decimals should be preceded by an integer. Thus, 0.5 is correct.  "
+},
+{
+  "id": "decimalsNotation01-2",
+  "level": "2",
+  "url": "decimalsNotation01.html#decimalsNotation01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "All decimals should be preceded by an integer. Thus, 0.5 is correct. "
 },
 {
   "id": "shilling03",
@@ -1369,6 +5302,15 @@ var ptx_lunr_docs = [
   "body": " What is shilling?   Follow this link   "
 },
 {
+  "id": "shilling03-2",
+  "level": "2",
+  "url": "shilling03.html#shilling03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "shillVsFrac03",
   "level": "1",
   "url": "shillVsFrac03.html",
@@ -1376,6 +5318,15 @@ var ptx_lunr_docs = [
   "number": "22.14",
   "title": "When do I shill and when do I use <code class=\"code-inline tex2jax_ignore\">$\\frac{}{}$<\/code>?",
   "body": " When do I shill and when do I use $\\frac{}{}$ ?   Follow this link   "
+},
+{
+  "id": "shillVsFrac03-2",
+  "level": "2",
+  "url": "shillVsFrac03.html#shillVsFrac03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "sentenceStart01",
@@ -1387,6 +5338,15 @@ var ptx_lunr_docs = [
   "body": " May I start a sentence with a variable or a number?  Usually no. However, solutions to short exercises which require no text may contain mathematical sentences, although the preference is to do this sparingly, if at all. For example the solution to the question Differentiate $y=(x^2-1)(x+3)^2$ might be $y'=2x(x+3)^2+(x^2-1)2(x+3)=(x+3)(2x(x+3)+2(x^2-1))=$ etc. However, these equations must not be in display math style (don't use $$ ), but may contain \\dsty .  "
 },
 {
+  "id": "sentenceStart01-2",
+  "level": "2",
+  "url": "sentenceStart01.html#sentenceStart01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Usually no. However, solutions to short exercises which require no text may contain mathematical sentences, although the preference is to do this sparingly, if at all. For example the solution to the question Differentiate $y=(x^2-1)(x+3)^2$ might be $y'=2x(x+3)^2+(x^2-1)2(x+3)=(x+3)(2x(x+3)+2(x^2-1))=$ etc. However, these equations must not be in display math style (don't use $$ ), but may contain \\dsty . "
+},
+{
   "id": "variablesSeparetedByText01",
   "level": "1",
   "url": "variablesSeparetedByText01.html",
@@ -1394,6 +5354,15 @@ var ptx_lunr_docs = [
   "number": "22.16",
   "title": "The authorities get upset if I write something like: Since the leading term of the polynomial is $x^4$, $y$ goes to infinity. What should I have written?",
   "body": " The authorities get upset if I write something like: Since the leading term of the polynomial is $x^4$, $y$ goes to infinity. What should I have written?  The two variables $x^4$ and $y$ should be separated by text, so it is clear that these two variables are distinct. Thus, the text should be corrected to something like: Since the leading term of the polynomial is $x^4$, the value of $y$ goes to infinity .  "
+},
+{
+  "id": "variablesSeparetedByText01-2",
+  "level": "2",
+  "url": "variablesSeparetedByText01.html#variablesSeparetedByText01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The two variables $x^4$ and $y$ should be separated by text, so it is clear that these two variables are distinct. Thus, the text should be corrected to something like: Since the leading term of the polynomial is $x^4$, the value of $y$ goes to infinity . "
 },
 {
   "id": "specialReference02",
@@ -1405,6 +5374,15 @@ var ptx_lunr_docs = [
   "body": " I want to refer to something like City A and City B. Do I just type it that way, or are the A and B put into a special font, say $A$ and $B$?   Follow this link   "
 },
 {
+  "id": "specialReference02-2",
+  "level": "2",
+  "url": "specialReference02.html#specialReference02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "rightArrow02",
   "level": "1",
   "url": "rightArrow02.html",
@@ -1412,6 +5390,15 @@ var ptx_lunr_docs = [
   "number": "22.18",
   "title": "May I use the implies symbol ==&gt; (<code class=\"code-inline tex2jax_ignore\">$\\Rightarrow$<\/code>)?",
   "body": " May I use the implies symbol ==> ( $\\Rightarrow$ )?   Follow this link   "
+},
+{
+  "id": "rightArrow02-2",
+  "level": "2",
+  "url": "rightArrow02.html#rightArrow02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "rootVsZero02",
@@ -1423,6 +5410,15 @@ var ptx_lunr_docs = [
   "body": " When do I use root and when do I use zero?   Follow this link   "
 },
 {
+  "id": "rootVsZero02-2",
+  "level": "2",
+  "url": "rootVsZero02.html#rootVsZero02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "symmetricAcrossVsAbout01",
   "level": "1",
   "url": "symmetricAcrossVsAbout01.html",
@@ -1430,6 +5426,15 @@ var ptx_lunr_docs = [
   "number": "22.20",
   "title": "Do I use symmetric across the <em class=\"emphasis\">x<\/em>-axis, or symmetric about the <em class=\"emphasis\">x<\/em>-axis?",
   "body": " Do I use symmetric across the x -axis, or symmetric about the x -axis?  Symmetric about the x -axis or the origin, but reflect across the x -axis or the origin.  "
+},
+{
+  "id": "symmetricAcrossVsAbout01-2",
+  "level": "2",
+  "url": "symmetricAcrossVsAbout01.html#symmetricAcrossVsAbout01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Symmetric about the x -axis or the origin, but reflect across the x -axis or the origin. "
 },
 {
   "id": "latinAbbreviations02",
@@ -1441,6 +5446,15 @@ var ptx_lunr_docs = [
   "body": " Do we italicize Latin abbreviations such as e.g. and i.e.?   Follow this link   "
 },
 {
+  "id": "latinAbbreviations02-2",
+  "level": "2",
+  "url": "latinAbbreviations02.html#latinAbbreviations02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "capitalizingHeadings01",
   "level": "1",
   "url": "capitalizingHeadings01.html",
@@ -1448,6 +5462,15 @@ var ptx_lunr_docs = [
   "number": "22.22",
   "title": "What is the convention for capitalizing headings of chapters, sections, and subsections?",
   "body": " What is the convention for capitalizing headings of chapters, sections, and subsections?  All the letters in a chapter heading are capitalized. The first letter of every word of a section (or subsection) heading is capitalized, (following the usual conventions, with \"a\", \"and\", \"for\", \"on\", \"the\", \"to\" and so on, not being capitalized, unless they start the heading).  "
+},
+{
+  "id": "capitalizingHeadings01-2",
+  "level": "2",
+  "url": "capitalizingHeadings01.html#capitalizingHeadings01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "All the letters in a chapter heading are capitalized. The first letter of every word of a section (or subsection) heading is capitalized, (following the usual conventions, with \"a\", \"and\", \"for\", \"on\", \"the\", \"to\" and so on, not being capitalized, unless they start the heading). "
 },
 {
   "id": "formattingCommands01",
@@ -1459,6 +5482,15 @@ var ptx_lunr_docs = [
   "body": " May I use formatting commands (like \\vspace, \\hspace, \\smallskip, \\\\, etc.) in the text portion of my file?  Absolutely not. It is a nightmare for pagination, formatting, etc.  "
 },
 {
+  "id": "formattingCommands01-2",
+  "level": "2",
+  "url": "formattingCommands01.html#formattingCommands01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Absolutely not. It is a nightmare for pagination, formatting, etc. "
+},
+{
   "id": "unitsOnFigures02",
   "level": "1",
   "url": "unitsOnFigures02.html",
@@ -1466,6 +5498,15 @@ var ptx_lunr_docs = [
   "number": "22.24",
   "title": "Do I need to put the units (of the variables) in the text of an exercise and also in the figure of the exercise?",
   "body": " Do I need to put the units (of the variables) in the text of an exercise and also in the figure of the exercise?   Follow this link   "
+},
+{
+  "id": "unitsOnFigures02-2",
+  "level": "2",
+  "url": "unitsOnFigures02.html#unitsOnFigures02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "conciseVsWording02",
@@ -1477,6 +5518,15 @@ var ptx_lunr_docs = [
   "body": " If I have the choice between wording an exercise in a concise style or in a verbose style, which is preferable?   Follow this link   "
 },
 {
+  "id": "conciseVsWording02-2",
+  "level": "2",
+  "url": "conciseVsWording02.html#conciseVsWording02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "exactAnswer02",
   "level": "1",
   "url": "exactAnswer02.html",
@@ -1484,6 +5534,15 @@ var ptx_lunr_docs = [
   "number": "22.26",
   "title": "The exact answer to one of my exercises is <code class=\"code-inline tex2jax_ignore\">$5\/\\pi$<\/code> inches. Should I also give the calculator value of 1.592?",
   "body": " The exact answer to one of my exercises is $5\/\\pi$ inches. Should I also give the calculator value of 1.592?   Follow this link   "
+},
+{
+  "id": "exactAnswer02-2",
+  "level": "2",
+  "url": "exactAnswer02.html#exactAnswer02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "subscripts04",
@@ -1495,6 +5554,15 @@ var ptx_lunr_docs = [
   "body": " When I use word subscripts (e.g. $r_{in}$ or $r_{\\hbox{in}}$ ) the word \"in\" is either in italics or too large. What should I be using?   Follow this link   "
 },
 {
+  "id": "subscripts04-2",
+  "level": "2",
+  "url": "subscripts04.html#subscripts04-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "generateTildeBlah01",
   "level": "1",
   "url": "generateTildeBlah01.html",
@@ -1502,6 +5570,15 @@ var ptx_lunr_docs = [
   "number": "22.28",
   "title": "How do I get TeX to generate <code class=\"code-inline tex2jax_ignore\">~blah<\/code>?",
   "body": " How do I get TeX to generate ~blah ?  Use \\~{}blah . ( \\~blah puts a ~ over the b in blah , while ~blah puts a space before blah .)  "
+},
+{
+  "id": "generateTildeBlah01-2",
+  "level": "2",
+  "url": "generateTildeBlah01.html#generateTildeBlah01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use \\~{}blah . ( \\~blah puts a ~ over the b in blah , while ~blah puts a space before blah .) "
 },
 {
   "id": "textIntoEquation02",
@@ -1513,6 +5590,15 @@ var ptx_lunr_docs = [
   "body": " How do I put text into an equation?   Follow this link   "
 },
 {
+  "id": "textIntoEquation02-2",
+  "level": "2",
+  "url": "textIntoEquation02.html#textIntoEquation02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "shilling04",
   "level": "1",
   "url": "shilling04.html",
@@ -1520,6 +5606,15 @@ var ptx_lunr_docs = [
   "number": "23.1",
   "title": "What is shilling?",
   "body": " What is shilling?   Follow this link   "
+},
+{
+  "id": "shilling04-2",
+  "level": "2",
+  "url": "shilling04.html#shilling04-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "shillVsFrac04",
@@ -1531,6 +5626,15 @@ var ptx_lunr_docs = [
   "body": " When do I shill and when do I use $\\frac{}{}$ ?   Follow this link   "
 },
 {
+  "id": "shillVsFrac04-2",
+  "level": "2",
+  "url": "shillVsFrac04.html#shillVsFrac04-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "sequenceOfEquations01",
   "level": "1",
   "url": "sequenceOfEquations01.html",
@@ -1538,6 +5642,15 @@ var ptx_lunr_docs = [
   "number": "24.1",
   "title": "I want to create a sequence of equations, one below the other, with the equal signs lined up.  How do I do that?",
   "body": " I want to create a sequence of equations, one below the other, with the equal signs lined up. How do I do that?  When you want to line up equations like this:     5  =  3 + 2    x  =  19 - 77z    q - x  =  y     you should use the following:  \\begin{eqnarray*} 5 & = & 3+2 \\\\ x & = & 19-77z \\\\ q-x & = & y \\end{eqnarray*}   Important: Notice that the last equation does not end with \"\\\\\". Also, don't have blank lines before \\begin{eqnarray*} , after \\end{eqnarray*} , or between them.   Also, this way of simplifying or evaluating the right-hand side an equation:  \\begin{eqnarray*} y & = & x^2+2x+x+2 \\\\ & = & x^2+3x+2 \\\\ & = & (x+1)(x+2). \\end{eqnarray*}  is preferred over this:  \\begin{eqnarray*} y & = & x^2+2x+x+2 \\\\ y & = & x^2+3x+2 \\\\ y & = & (x+1)(x+2). \\end{eqnarray*}  "
+},
+{
+  "id": "sequenceOfEquations01-2",
+  "level": "2",
+  "url": "sequenceOfEquations01.html#sequenceOfEquations01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "When you want to line up equations like this: "
 },
 {
   "id": "sequenceOfEquations01-3",
@@ -1549,6 +5662,69 @@ var ptx_lunr_docs = [
   "body": "   5  =  3 + 2    x  =  19 - 77z    q - x  =  y    "
 },
 {
+  "id": "sequenceOfEquations01-4",
+  "level": "2",
+  "url": "sequenceOfEquations01.html#sequenceOfEquations01-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "you should use the following: "
+},
+{
+  "id": "sequenceOfEquations01-5",
+  "level": "2",
+  "url": "sequenceOfEquations01.html#sequenceOfEquations01-5",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{eqnarray*} 5 & = & 3+2 \\\\ x & = & 19-77z \\\\ q-x & = & y \\end{eqnarray*} "
+},
+{
+  "id": "sequenceOfEquations01-6",
+  "level": "2",
+  "url": "sequenceOfEquations01.html#sequenceOfEquations01-6",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Important: Notice that the last equation does not end with \"\\\\\". Also, don't have blank lines before \\begin{eqnarray*} , after \\end{eqnarray*} , or between them.  "
+},
+{
+  "id": "sequenceOfEquations01-7",
+  "level": "2",
+  "url": "sequenceOfEquations01.html#sequenceOfEquations01-7",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Also, this way of simplifying or evaluating the right-hand side an equation: "
+},
+{
+  "id": "sequenceOfEquations01-8",
+  "level": "2",
+  "url": "sequenceOfEquations01.html#sequenceOfEquations01-8",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{eqnarray*} y & = & x^2+2x+x+2 \\\\ & = & x^2+3x+2 \\\\ & = & (x+1)(x+2). \\end{eqnarray*} "
+},
+{
+  "id": "sequenceOfEquations01-9",
+  "level": "2",
+  "url": "sequenceOfEquations01.html#sequenceOfEquations01-9",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "is preferred over this: "
+},
+{
+  "id": "sequenceOfEquations01-10",
+  "level": "2",
+  "url": "sequenceOfEquations01.html#sequenceOfEquations01-10",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{eqnarray*} y & = & x^2+2x+x+2 \\\\ y & = & x^2+3x+2 \\\\ y & = & (x+1)(x+2). \\end{eqnarray*} "
+},
+{
   "id": "piecewiseFunction01",
   "level": "1",
   "url": "piecewiseFunction01.html",
@@ -1556,6 +5732,15 @@ var ptx_lunr_docs = [
   "number": "24.2",
   "title": "What command do I use in TeX to construct a piecewise defined function?",
   "body": " What command do I use in TeX to construct a piecewise defined function?  $$ V(t)=\\left\\{ \\begin{tabular}{lll} $5t+10$ & if & $0\\leq t\\leq 10$ \\\\ $3t+30$ & if & $10 & < t\\leq 20$ \\\\ $90$ & if & $20 & < t \\leq 30$ \\end{tabular} \\right. $$  "
+},
+{
+  "id": "piecewiseFunction01-2",
+  "level": "2",
+  "url": "piecewiseFunction01.html#piecewiseFunction01-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "$$ V(t)=\\left\\{ \\begin{tabular}{lll} $5t+10$ & if & $0\\leq t\\leq 10$ \\\\ $3t+30$ & if & $10 & < t\\leq 20$ \\\\ $90$ & if & $20 & < t \\leq 30$ \\end{tabular} \\right. $$ "
 },
 {
   "id": "displaystyle02",
@@ -1567,6 +5752,15 @@ var ptx_lunr_docs = [
   "body": " Can I use \\displaystyle in display math style or in eqnarray* ?   Follow this link   "
 },
 {
+  "id": "displaystyle02-2",
+  "level": "2",
+  "url": "displaystyle02.html#displaystyle02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "shouldKnowDisplayStyle02",
   "level": "1",
   "url": "shouldKnowDisplayStyle02.html",
@@ -1574,6 +5768,15 @@ var ptx_lunr_docs = [
   "number": "24.4",
   "title": "Is there anything I should know if I use display math style (that is, when an expression is on its own line)?",
   "body": " Is there anything I should know if I use display math style (that is, when an expression is on its own line)?   Follow this link   "
+},
+{
+  "id": "shouldKnowDisplayStyle02-2",
+  "level": "2",
+  "url": "shouldKnowDisplayStyle02.html#shouldKnowDisplayStyle02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "summaryGuidelines",
@@ -1585,6 +5788,15 @@ var ptx_lunr_docs = [
   "body": " =Is there a summary of CCHE Guidelines?  CCHE came before MCWG. A summary from way back then (if not broken) is at here .  "
 },
 {
+  "id": "summaryGuidelines-2",
+  "level": "2",
+  "url": "summaryGuidelines.html#summaryGuidelines-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "CCHE came before MCWG. A summary from way back then (if not broken) is at here . "
+},
+{
   "id": "listDownThePage",
   "level": "1",
   "url": "listDownThePage.html",
@@ -1592,6 +5804,33 @@ var ptx_lunr_docs = [
   "number": "26.1",
   "title": "How do I construct a list, (a), (b), etc., that goes down the page?",
   "body": " How do I construct a list, (a), (b), etc., that goes down the page?  \\begin{enumerate} \\item Text for (a) \\item Text for (b) \\end{enumerate}  You can use some of our macros (see Which TeX commands can I abbreviate? ) and replace this with  \\bb \\ii Text for (a) \\ii Text for (b) \\ee  "
+},
+{
+  "id": "listDownThePage-2",
+  "level": "2",
+  "url": "listDownThePage.html#listDownThePage-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{enumerate} \\item Text for (a) \\item Text for (b) \\end{enumerate} "
+},
+{
+  "id": "listDownThePage-3",
+  "level": "2",
+  "url": "listDownThePage.html#listDownThePage-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "You can use some of our macros (see Which TeX commands can I abbreviate? ) and replace this with "
+},
+{
+  "id": "listDownThePage-4",
+  "level": "2",
+  "url": "listDownThePage.html#listDownThePage-4",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\bb \\ii Text for (a) \\ii Text for (b) \\ee "
 },
 {
   "id": "listAcrossThePage",
@@ -1603,6 +5842,24 @@ var ptx_lunr_docs = [
   "body": " How do I construct a list, (a), (b), etc., that goes across the page?  \\begin{across}<2> \\item Text for (a) \\item Text for (b) \\end{across}  The angle bracket argument determines the number of columns. We do not use across in either Answers or Short Answers .  "
 },
 {
+  "id": "listAcrossThePage-2",
+  "level": "2",
+  "url": "listAcrossThePage.html#listAcrossThePage-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{across}<2> \\item Text for (a) \\item Text for (b) \\end{across} "
+},
+{
+  "id": "listAcrossThePage-3",
+  "level": "2",
+  "url": "listAcrossThePage.html#listAcrossThePage-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The angle bracket argument determines the number of columns. We do not use across in either Answers or Short Answers . "
+},
+{
   "id": "bulletedList",
   "level": "1",
   "url": "bulletedList.html",
@@ -1610,6 +5867,15 @@ var ptx_lunr_docs = [
   "number": "26.3",
   "title": "How do I construct a bulleted list?",
   "body": " How do I construct a bulleted list?  \\begin{itemize} \\item Text for first bullet \\item Text for second bullet \\end{itemize}  "
+},
+{
+  "id": "bulletedList-2",
+  "level": "2",
+  "url": "bulletedList.html#bulletedList-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{itemize} \\item Text for first bullet \\item Text for second bullet \\end{itemize} "
 },
 {
   "id": "filenamesBoxes02",
@@ -1621,6 +5887,15 @@ var ptx_lunr_docs = [
   "body": " How do I turn off the little rectangular boxes that give the filenames of the exercise files alongside the exercises?   Follow this link   "
 },
 {
+  "id": "filenamesBoxes02-2",
+  "level": "2",
+  "url": "filenamesBoxes02.html#filenamesBoxes02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "printingInColor",
   "level": "1",
   "url": "printingInColor.html",
@@ -1628,6 +5903,15 @@ var ptx_lunr_docs = [
   "number": "27.2",
   "title": "How do I stop printing in color?",
   "body": " How do I stop printing in color?  If you make the \\asformat line of your master file into \\asformat{CALCSOLS} instead of whatever it is now, it will print in black and white.  "
+},
+{
+  "id": "printingInColor-2",
+  "level": "2",
+  "url": "printingInColor.html#printingInColor-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you make the \\asformat line of your master file into \\asformat{CALCSOLS} instead of whatever it is now, it will print in black and white. "
 },
 {
   "id": "printingJobNumberDate",
@@ -1639,6 +5923,15 @@ var ptx_lunr_docs = [
   "body": " How do I stop printing the header with the job number and date in it?  Insert \\notimestamp before \\begin{document} in your master file.  "
 },
 {
+  "id": "printingJobNumberDate-2",
+  "level": "2",
+  "url": "printingJobNumberDate.html#printingJobNumberDate-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Insert \\notimestamp before \\begin{document} in your master file. "
+},
+{
   "id": "printEverything02",
   "level": "1",
   "url": "printEverything02.html",
@@ -1646,6 +5939,15 @@ var ptx_lunr_docs = [
   "number": "27.4",
   "title": "How do I print the questions, the answers, and the short answers for the exercises?",
   "body": " How do I print the questions, the answers, and the short answers for the exercises?   Follow this link   "
+},
+{
+  "id": "printEverything02-2",
+  "level": "2",
+  "url": "printEverything02.html#printEverything02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "printOnlyExerciseQuestion02",
@@ -1657,6 +5959,15 @@ var ptx_lunr_docs = [
   "body": " How do I print only the questions (without the answers or short answers) for the exercises?   Follow this link   "
 },
 {
+  "id": "printOnlyExerciseQuestion02-2",
+  "level": "2",
+  "url": "printOnlyExerciseQuestion02.html#printOnlyExerciseQuestion02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "oneColumnPrint02",
   "level": "1",
   "url": "oneColumnPrint02.html",
@@ -1664,6 +5975,15 @@ var ptx_lunr_docs = [
   "number": "27.6",
   "title": "How do I print the exercises in one column instead of the default of two columns?",
   "body": " How do I print the exercises in one column instead of the default of two columns?   Follow this link   "
+},
+{
+  "id": "oneColumnPrint02-2",
+  "level": "2",
+  "url": "oneColumnPrint02.html#oneColumnPrint02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "pageNumbering",
@@ -1675,6 +5995,15 @@ var ptx_lunr_docs = [
   "body": " How do I turn on page numbering?  In the master file, after \\begin{document} put \\pagestyle{plain} .  "
 },
 {
+  "id": "pageNumbering-2",
+  "level": "2",
+  "url": "pageNumbering.html#pageNumbering-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "In the master file, after \\begin{document} put \\pagestyle{plain} . "
+},
+{
   "id": "printFAQ",
   "level": "1",
   "url": "printFAQ.html",
@@ -1682,6 +6011,15 @@ var ptx_lunr_docs = [
   "number": "27.8",
   "title": "Should I print these FAQs?",
   "body": " Should I print these FAQs?  No, for two reasons. First, they will produce a document of about 80 pages. Second, the printed version will be out of date by the time you print it!  "
+},
+{
+  "id": "printFAQ-2",
+  "level": "2",
+  "url": "printFAQ.html#printFAQ-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "No, for two reasons. First, they will produce a document of about 80 pages. Second, the printed version will be out of date by the time you print it! "
 },
 {
   "id": "dontEnoughTex02",
@@ -1693,6 +6031,15 @@ var ptx_lunr_docs = [
   "body": " I know what I want to say, but I don't know enough TeX to express it. What do I do?   Follow this link   "
 },
 {
+  "id": "dontEnoughTex02-2",
+  "level": "2",
+  "url": "dontEnoughTex02.html#dontEnoughTex02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "submitTroubles01",
   "level": "1",
   "url": "submitTroubles01.html",
@@ -1700,6 +6047,213 @@ var ptx_lunr_docs = [
   "number": "28.2",
   "title": "What are the things people seem have trouble with when they submit?",
   "body": " What are the things people seem have trouble with when they submit?    Not reading the FAQs. In particular:     When do I shill and when do I use $\\frac{}{}$ ?      How do I TeX expressions like \"1^{st}\" and \"n^{th}\"?      What do I need to know about short answers?      When do I use = and when do I use approximately equal ( \\approx )?      May I use the future tense?      May I start a sentence with a variable or a number?      What are the abbreviations and conventions that we use for standard units like grams and miles per hour?       Spelling. Use the spelling conventions in existing books. For example, use coordinate, not co-ordinate; use left-hand side, not left hand side.    Terminology. Make sure your terminology is consistent with existing books. For example, we use cylinder, not right circular cylinder.    Wording. If you are struggling with the wording, look in one of the other books and find a problem that does a similar thing, and copy the wording, even if you don't like it. There are usually reasons for the way we word things.    QSETs. If the parts of a problem are repeated examples of the same sort of thing and are independent of each other ... for example, if you can imagine assigning just parts c and f ... then the problem should be broken up into a QSET. See In a collection of exercises, how do I give a subset of the exercises the same set of instructions, called a QSET? on how to construct a QSET, and When do I use a QSET? on when to use a QSET.    Figures. Please make a TeX file for your figure, with the \\figuremissing macro in it, and with instructions one how to make (commented out with percent signs). (Better still, use Eric's web site to draw the figure yourself.) Also use stayfig or fakefig (see Sometimes I want a figure with a number and a caption, sometimes with only a number, and sometimes with neither a number nor a caption. How do I do that? ) and don't comment that out (so we can clearly see where figures need to be made).    Tables. Please make them horizontal unless you have good reason to make them vertical. See How wide can I make a table? on how wide to make a table.    Hard spaces. Never use them outside mathematics. Don't use \\ or \\\\ or \\hspace or \\vspace or any other hard coded spaces. See May I use formatting commands (like \\vspace, \\hspace, \\smallskip, \\\\, etc.) in the text portion of my file? . Inside mathematics, if you find yourself using them a lot, there's usually a better way. For example, do  $$ z = \\mbox{ the sum of $x$ and $y$ } $$  instead of  $$ z = \\mbox{the sum of}\\ x\\ \\mbox{and}\\ y $$  Elliot recommends always putting spaces around the words in \\mbox and \\hbox , such as  $$ y= \\hbox{ Chocolate } = x. $$  Usually if you leave out the spaces around Chocolate, since math mode doesn't distinguish text from symbols, the C or e in chocolate might be far too close to the equal sign.    Labels. They go on examples, not their solutions. See How do I put an Example in a Chapter? on how to reference an Example.    References. Never put in hard references. Just do \\ref{} , with a note about where it should point. See May I reference an example, figure, or table, by hard coding the reference (e.g., \"Example 5\" instead of \"Example~\\ref{blahblah}\")? .    "
+},
+{
+  "id": "submitTroubles01-2-1-1",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Not reading the FAQs. In particular: "
+},
+{
+  "id": "submitTroubles01-2-1-2-1-1",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-1-2-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " When do I shill and when do I use $\\frac{}{}$ ?  "
+},
+{
+  "id": "submitTroubles01-2-1-2-2-1",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-1-2-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " How do I TeX expressions like \"1^{st}\" and \"n^{th}\"?  "
+},
+{
+  "id": "submitTroubles01-2-1-2-3-1",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-1-2-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " What do I need to know about short answers?  "
+},
+{
+  "id": "submitTroubles01-2-1-2-4-1",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-1-2-4-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " When do I use = and when do I use approximately equal ( \\approx )?  "
+},
+{
+  "id": "submitTroubles01-2-1-2-5-1",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-1-2-5-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " May I use the future tense?  "
+},
+{
+  "id": "submitTroubles01-2-1-2-6-1",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-1-2-6-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " May I start a sentence with a variable or a number?  "
+},
+{
+  "id": "submitTroubles01-2-1-2-7-1",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-1-2-7-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " What are the abbreviations and conventions that we use for standard units like grams and miles per hour?  "
+},
+{
+  "id": "submitTroubles01-2-2-1",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Spelling. Use the spelling conventions in existing books. For example, use coordinate, not co-ordinate; use left-hand side, not left hand side. "
+},
+{
+  "id": "submitTroubles01-2-3-1",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Terminology. Make sure your terminology is consistent with existing books. For example, we use cylinder, not right circular cylinder. "
+},
+{
+  "id": "submitTroubles01-2-4-1",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-4-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Wording. If you are struggling with the wording, look in one of the other books and find a problem that does a similar thing, and copy the wording, even if you don't like it. There are usually reasons for the way we word things. "
+},
+{
+  "id": "submitTroubles01-2-5-1",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-5-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "QSETs. If the parts of a problem are repeated examples of the same sort of thing and are independent of each other ... for example, if you can imagine assigning just parts c and f ... then the problem should be broken up into a QSET. See In a collection of exercises, how do I give a subset of the exercises the same set of instructions, called a QSET? on how to construct a QSET, and When do I use a QSET? on when to use a QSET. "
+},
+{
+  "id": "submitTroubles01-2-6-1",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-6-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Figures. Please make a TeX file for your figure, with the \\figuremissing macro in it, and with instructions one how to make (commented out with percent signs). (Better still, use Eric's web site to draw the figure yourself.) Also use stayfig or fakefig (see Sometimes I want a figure with a number and a caption, sometimes with only a number, and sometimes with neither a number nor a caption. How do I do that? ) and don't comment that out (so we can clearly see where figures need to be made). "
+},
+{
+  "id": "submitTroubles01-2-7-1",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-7-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Tables. Please make them horizontal unless you have good reason to make them vertical. See How wide can I make a table? on how wide to make a table. "
+},
+{
+  "id": "submitTroubles01-2-8-1",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-8-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Hard spaces. Never use them outside mathematics. Don't use \\ or \\\\ or \\hspace or \\vspace or any other hard coded spaces. See May I use formatting commands (like \\vspace, \\hspace, \\smallskip, \\\\, etc.) in the text portion of my file? . Inside mathematics, if you find yourself using them a lot, there's usually a better way. For example, do "
+},
+{
+  "id": "submitTroubles01-2-8-2",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-8-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "$$ z = \\mbox{ the sum of $x$ and $y$ } $$ "
+},
+{
+  "id": "submitTroubles01-2-8-3",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-8-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "instead of "
+},
+{
+  "id": "submitTroubles01-2-8-4",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-8-4",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "$$ z = \\mbox{the sum of}\\ x\\ \\mbox{and}\\ y $$ "
+},
+{
+  "id": "submitTroubles01-2-8-5",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-8-5",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Elliot recommends always putting spaces around the words in \\mbox and \\hbox , such as "
+},
+{
+  "id": "submitTroubles01-2-8-6",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-8-6",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "$$ y= \\hbox{ Chocolate } = x. $$ "
+},
+{
+  "id": "submitTroubles01-2-8-7",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-8-7",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Usually if you leave out the spaces around Chocolate, since math mode doesn't distinguish text from symbols, the C or e in chocolate might be far too close to the equal sign. "
+},
+{
+  "id": "submitTroubles01-2-9-1",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-9-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Labels. They go on examples, not their solutions. See How do I put an Example in a Chapter? on how to reference an Example. "
+},
+{
+  "id": "submitTroubles01-2-10-1",
+  "level": "2",
+  "url": "submitTroubles01.html#submitTroubles01-2-10-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "References. Never put in hard references. Just do \\ref{} , with a note about where it should point. See May I reference an example, figure, or table, by hard coding the reference (e.g., \"Example 5\" instead of \"Example~\\ref{blahblah}\")? . "
 },
 {
   "id": "spaceBeforeAfterDashes02",
@@ -1711,6 +6265,15 @@ var ptx_lunr_docs = [
   "body": " Sometimes there is a space before or after my dashes (-), en-dashes (--), and em-dashes (---), and I don't want that. What do I do?   Follow this link   "
 },
 {
+  "id": "spaceBeforeAfterDashes02-2",
+  "level": "2",
+  "url": "spaceBeforeAfterDashes02.html#spaceBeforeAfterDashes02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "integrals02",
   "level": "1",
   "url": "integrals02.html",
@@ -1718,6 +6281,15 @@ var ptx_lunr_docs = [
   "number": "28.4",
   "title": "If I use <code class=\"code-inline tex2jax_ignore\">$\\int f(x) dx$<\/code>, to construct the integral of f(x), the f(x) and dx are too close. What should I do?",
   "body": " If I use $\\int f(x) dx$ , to construct the integral of f(x), the f(x) and dx are too close. What should I do?   Follow this link   "
+},
+{
+  "id": "integrals02-2",
+  "level": "2",
+  "url": "integrals02.html#integrals02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "commonTexMistakes02",
@@ -1729,6 +6301,15 @@ var ptx_lunr_docs = [
   "body": " Is there a list of common TeX mistakes?   Follow this link   "
 },
 {
+  "id": "commonTexMistakes02-2",
+  "level": "2",
+  "url": "commonTexMistakes02.html#commonTexMistakes02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "periodBetween02",
   "level": "1",
   "url": "periodBetween02.html",
@@ -1736,6 +6317,15 @@ var ptx_lunr_docs = [
   "number": "28.6",
   "title": "When I TeX \"The difference is <code class=\"code-inline tex2jax_ignore\">\\$0.01.<\/code>\" there is a spacing problem involving the period between the two zeros. What do I do?",
   "body": " When I TeX \"The difference is \\$0.01. \" there is a spacing problem involving the period between the two zeros. What do I do?   Follow this link   "
+},
+{
+  "id": "periodBetween02-2",
+  "level": "2",
+  "url": "periodBetween02.html#periodBetween02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "commentChunkTex01",
@@ -1747,6 +6337,24 @@ var ptx_lunr_docs = [
   "body": " I want to comment out a large chunk of TeX, without deleting it. Do I have to put % at the beginning of every line?  No. You can use the command  \\ignore{ blah blah blah }  "
 },
 {
+  "id": "commentChunkTex01-2",
+  "level": "2",
+  "url": "commentChunkTex01.html#commentChunkTex01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "No. You can use the command "
+},
+{
+  "id": "commentChunkTex01-3",
+  "level": "2",
+  "url": "commentChunkTex01.html#commentChunkTex01-3",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\ignore{ blah blah blah } "
+},
+{
   "id": "missingDollarSign02",
   "level": "1",
   "url": "missingDollarSign02.html",
@@ -1754,6 +6362,15 @@ var ptx_lunr_docs = [
   "number": "28.8",
   "title": "Why do I get an error message concerning missing $ when I try to TeX \"\\footnote{http:\/\/dr.pierce1.net\/PDF\/half_life.pdf, accessed on May 10, 2003.}\"?",
   "body": " Why do I get an error message concerning missing $ when I try to TeX \"\\footnote{http:\/\/dr.pierce1.net\/PDF\/half_life.pdf, accessed on May 10, 2003.}\"?   Follow this link   "
+},
+{
+  "id": "missingDollarSign02-2",
+  "level": "2",
+  "url": "missingDollarSign02.html#missingDollarSign02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "qset02",
@@ -1765,6 +6382,15 @@ var ptx_lunr_docs = [
   "body": " In a collection of exercises, how do I give a subset of the exercises the same set of instructions, called a QSET?   Follow this link   "
 },
 {
+  "id": "qset02-2",
+  "level": "2",
+  "url": "qset02.html#qset02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "whenDoIUseQSET02",
   "level": "1",
   "url": "whenDoIUseQSET02.html",
@@ -1772,6 +6398,15 @@ var ptx_lunr_docs = [
   "number": "29.2",
   "title": "When do I use a QSET?",
   "body": " When do I use a QSET?   Follow this link   "
+},
+{
+  "id": "whenDoIUseQSET02-2",
+  "level": "2",
+  "url": "whenDoIUseQSET02.html#whenDoIUseQSET02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "ReferenceAllFigs03",
@@ -1783,6 +6418,15 @@ var ptx_lunr_docs = [
   "body": " Do all figures have to be referenced?   Follow this link   "
 },
 {
+  "id": "ReferenceAllFigs03-2",
+  "level": "2",
+  "url": "ReferenceAllFigs03.html#ReferenceAllFigs03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "dollarSign02",
   "level": "1",
   "url": "dollarSign02.html",
@@ -1790,6 +6434,15 @@ var ptx_lunr_docs = [
   "number": "29.4",
   "title": "In Exercises, when do we use <code class=\"code-inline tex2jax_ignore\">$blah$<\/code>, <code class=\"code-inline tex2jax_ignore\">$$blah$$<\/code>, and <code class=\"code-inline tex2jax_ignore\">$\\dsty blah$<\/code>?",
   "body": " In Exercises, when do we use $blah$ , $$blah$$ , and $\\dsty blah$ ?   Follow this link   "
+},
+{
+  "id": "dollarSign02-2",
+  "level": "2",
+  "url": "dollarSign02.html#dollarSign02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "exerciseOrProblem02",
@@ -1801,6 +6454,15 @@ var ptx_lunr_docs = [
   "body": " How do I specify that a problem that I am submitting is intended to be a \"Problem\" rather than an \"Exercise\"?   Follow this link   "
 },
 {
+  "id": "exerciseOrProblem02-2",
+  "level": "2",
+  "url": "exerciseOrProblem02.html#exerciseOrProblem02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "footnote02",
   "level": "1",
   "url": "footnote02.html",
@@ -1808,6 +6470,15 @@ var ptx_lunr_docs = [
   "number": "30.1",
   "title": "How do I insert a footnote?",
   "body": " How do I insert a footnote?   Follow this link   "
+},
+{
+  "id": "footnote02-2",
+  "level": "2",
+  "url": "footnote02.html#footnote02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "referenceStyle01",
@@ -1819,6 +6490,96 @@ var ptx_lunr_docs = [
   "body": " What style should we use when citing references to books, articles, or web sites?  Here are some (edited) examples taken from Calculus, 3rd Edition:   Article with no author:  Page 50 \"Investigating\", US News, p. 50-52, (March 11, 1996). which, in TeX, is ``Investigating'', {\\em US News}, p. 50-52, (March 11, 1996).    Article with author:  Page 51 From D. Black and W. White, \"Energy\", Scientific American, September 1990. which, in TeX, is From D. Black and W. White, ``Energy'', {\\em Scientific American}, September 1990.    Book with no author:  Page 9 Adapted from \"Average Weight\", The World Almanac (New Jersey: Funk and Wagnalls, 1992), p. 956. which, in TeX, is Adapted from ``Average Weight'', {\\em The World Almanac} (New Jersey: Funk and Wagnalls, 1992), p. 956.    Book with author:  Page 89 Adapted from John B. West, Respitory 4th Ed. (New York: Williams, 1990). which, in TeX, is Adapted from John B. West, {\\em Respitory} 4th Ed. (New York: Williams, 1990).  Page 187 Data from John B. West in Respitory 4th Ed. (New York: Williams, 1990). which, in TeX, is Data from John B. West, {\\em Respitory} 4th Ed. (New York: Williams, 1990).    Private communication:  Page 136 Based on an idea from Casper Curjel.  Page 215 From Sally Thomas.    Web page:  www.blah, accessed on January 30, 2003.  Sometimes web-page addresses have a tilde, ~, in them. If so, see How do I get TeX to generate ~blah?    "
 },
 {
+  "id": "referenceStyle01-2",
+  "level": "2",
+  "url": "referenceStyle01.html#referenceStyle01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Here are some (edited) examples taken from Calculus, 3rd Edition: "
+},
+{
+  "id": "referenceStyle01-3-2",
+  "level": "2",
+  "url": "referenceStyle01.html#referenceStyle01-3-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "Page 50 \"Investigating\", US News, p. 50-52, (March 11, 1996). which, in TeX, is ``Investigating'', {\\em US News}, p. 50-52, (March 11, 1996). "
+},
+{
+  "id": "referenceStyle01-4-2",
+  "level": "2",
+  "url": "referenceStyle01.html#referenceStyle01-4-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "Page 51 From D. Black and W. White, \"Energy\", Scientific American, September 1990. which, in TeX, is From D. Black and W. White, ``Energy'', {\\em Scientific American}, September 1990. "
+},
+{
+  "id": "referenceStyle01-5-2",
+  "level": "2",
+  "url": "referenceStyle01.html#referenceStyle01-5-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "Page 9 Adapted from \"Average Weight\", The World Almanac (New Jersey: Funk and Wagnalls, 1992), p. 956. which, in TeX, is Adapted from ``Average Weight'', {\\em The World Almanac} (New Jersey: Funk and Wagnalls, 1992), p. 956. "
+},
+{
+  "id": "referenceStyle01-6-2",
+  "level": "2",
+  "url": "referenceStyle01.html#referenceStyle01-6-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "Page 89 Adapted from John B. West, Respitory 4th Ed. (New York: Williams, 1990). which, in TeX, is Adapted from John B. West, {\\em Respitory} 4th Ed. (New York: Williams, 1990). "
+},
+{
+  "id": "referenceStyle01-6-3",
+  "level": "2",
+  "url": "referenceStyle01.html#referenceStyle01-6-3",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "Page 187 Data from John B. West in Respitory 4th Ed. (New York: Williams, 1990). which, in TeX, is Data from John B. West, {\\em Respitory} 4th Ed. (New York: Williams, 1990). "
+},
+{
+  "id": "referenceStyle01-7-2",
+  "level": "2",
+  "url": "referenceStyle01.html#referenceStyle01-7-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "Page 136 Based on an idea from Casper Curjel. "
+},
+{
+  "id": "referenceStyle01-7-3",
+  "level": "2",
+  "url": "referenceStyle01.html#referenceStyle01-7-3",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "Page 215 From Sally Thomas. "
+},
+{
+  "id": "referenceStyle01-8-2",
+  "level": "2",
+  "url": "referenceStyle01.html#referenceStyle01-8-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "www.blah, accessed on January 30, 2003. "
+},
+{
+  "id": "referenceStyle01-8-3",
+  "level": "2",
+  "url": "referenceStyle01.html#referenceStyle01-8-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Sometimes web-page addresses have a tilde, ~, in them. If so, see How do I get TeX to generate ~blah?  "
+},
+{
   "id": "generateTildeBlah02",
   "level": "1",
   "url": "generateTildeBlah02.html",
@@ -1826,6 +6587,15 @@ var ptx_lunr_docs = [
   "number": "30.3",
   "title": "How do I get TeX to generate <code class=\"code-inline tex2jax_ignore\">~blah<\/code>?",
   "body": " How do I get TeX to generate ~blah ?   Follow this link   "
+},
+{
+  "id": "generateTildeBlah02-2",
+  "level": "2",
+  "url": "generateTildeBlah02.html#generateTildeBlah02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "RightsAndWrongs",
@@ -1837,6 +6607,24 @@ var ptx_lunr_docs = [
   "body": " (**) Rights and Wrongs   FIX URL  Fix table appearance       Where    Please don't do this    Please do this    Comment    Reference     Text  10ft.  10 ft  Space, but no period.   What are the abbreviations and conventions that we use for standard units like grams and miles per hour?     Text  $n^{th}$  $n^{\\rm th}$  Wrong sized superscript.   How do I TeX expressions like \"1^{st}\" and \"n^{th}\"?     Text  This is {\\it not} true.  This is {\\em not} true.  We do not use italics.   How can I change the typeface to boldface?     Text  We call this \"completing the square\".  We call this ``completing the square''.  Double quotation marks are produced by using the prime key (') twice when opening the quotation, and the backprime key (`) twice when closing the quotation.   What are some quick pointers on TeX?     Text  1,000  1000  Numbers between -10,000 and 10,000 do not have a comma.   Do we use 1000 or 1,000?     Text  $10,000$  $10,\\!000$  There is a spacing problem after the comma.   Do we use 1000 or 1,000?     Text  .5  0.5  Decimals should be preceded by an integer.   Do we use 0.5 or .5?     Text  1\/2  $1\/2$  The divide slash is too short.   What are some quick pointers on TeX?     Text  -2  $-2$  The minus sign is too short.   What are some quick pointers on TeX?     Text  $1\/6 \\approx 0.167$  $1\/6 = 0.167$  Use equal if the approximation is correct to the number of decimal places shown when rounded.   When do I use = and when do I use approximately equal ( \\approx )?     Text  \"parts (a) and (b)\"  \"parts~(a) and~(b)\"  The ~ prevents the \"(a)\" or \"(b)\" from being printed on a new line, which would look very odd.   I am creating an exercise that has parts (a), (b), (c), etc., and in part (c) I want to refer to part (a). How do I do that?     Text   \"left hand side\" \"co-ordinate\"    \"left-hand side\" \"coordinate\"   The standard usage consistent with previous books.      Text  \"Evaluate the following expressions\"  \"Evaluate\"  Be concise.   If I have the choice between wording an exercise in a concise style or in a verbose style, which is preferable?     Text  \"In this chapter we will show ...\"  \"In this chapter we show ...\"  Do not use future tense.   May I use the future tense?     Text  The sentence \"$y = x^2+x = x(x+1)$\"  \"We have $y = x^2+x = x(x+1)$.\"  Sentence started with a variable. Sentence did not end with a period.   May I start a sentence with a variable or a number? and Do I have to end a sentence with a period, even if an equation ends the sentence?     Text  \"When $x=3$, $y=1$.\"  \"When $x=3$, we find $y=1$.\"  The two variables should be separated with text.   The authorities get upset if I write something like: Since the leading term of the polynomial is $x^4$, $y$ goes to infinity. What should I have written?     Text  $x^\\frac{3}{4}$  $x^{3\/4}$  Fractions in exponents should be shilled.   When do I shill and when do I use $\\frac{}{}$ ?     Text  $\\times$  $\\cdot$  $\\times$ can be confused with the variable x.   When should I use \\times and when should I use \\cdot ?     Text   $$ a=b c=d $$    \\begin{eqnarray*} a&=&b \\\\ c&=&d \\end{eqnarray*}   The incorrect version generates the equation a=bc=d.   I want to create a sequence of equations, one below the other, with the equal signs lined up. How do I do that?                 Exercises   \\Question { blah }    \\Question{blah} or \\Question{ blah }   When moving between MACs, Unix, and Windows the incorrect version can generate an extra line between \"\\Question\" and \"{\", which causes havoc when TeXed. The same convention applies to \"\\Answer\" and \"\\ShortAnswer\".   What is the correct format and naming convention for exercise files?     Exercises  \\Answer{} or \\ShortAnswer{}  You are joking!  Exercises without Answers and ShortAnswers are not useful.   What is the correct format and naming convention for exercise files?                 Short Answer  $\\frac{3}{4}$  $3\/4$  Fractions in short answers should be shilled.   What do I need to know about short answers?     Short Answer  \\begin{across}...\\end{across}  \\begin{enumerate}...\\end{enumerate}  Short answers should not be formatted.   What do I need to know about short answers?     Short Answer  \\ShortAnswer {no.}  \\ShortAnswer{No}  Text that starts a short answer is capitalized. Short answers do not end with a period.   What do I need to know about short answers?     Short Answer  \\ShortAnswer {Not appropriate}  \\ShortAnswer{\\noshortanswer}  The correct format generates the standard output.   What do I need to know about short answers?      You can download a summary of these Do's and Don'ts as a 1-page link missing file (updated Sunday, January 11, 2004), which, when printed out, will look impressive beside your bed.  "
 },
 {
+  "id": "RightsAndWrongs-2-1",
+  "level": "2",
+  "url": "RightsAndWrongs.html#RightsAndWrongs-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "FIX URL "
+},
+{
+  "id": "RightsAndWrongs-2-2",
+  "level": "2",
+  "url": "RightsAndWrongs.html#RightsAndWrongs-2-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Fix table appearance "
+},
+{
   "id": "RightsAndWrongs-3",
   "level": "2",
   "url": "RightsAndWrongs.html#RightsAndWrongs-3",
@@ -1844,6 +6632,15 @@ var ptx_lunr_docs = [
   "number": "31.0.1",
   "title": "",
   "body": "    Where    Please don't do this    Please do this    Comment    Reference     Text  10ft.  10 ft  Space, but no period.   What are the abbreviations and conventions that we use for standard units like grams and miles per hour?     Text  $n^{th}$  $n^{\\rm th}$  Wrong sized superscript.   How do I TeX expressions like \"1^{st}\" and \"n^{th}\"?     Text  This is {\\it not} true.  This is {\\em not} true.  We do not use italics.   How can I change the typeface to boldface?     Text  We call this \"completing the square\".  We call this ``completing the square''.  Double quotation marks are produced by using the prime key (') twice when opening the quotation, and the backprime key (`) twice when closing the quotation.   What are some quick pointers on TeX?     Text  1,000  1000  Numbers between -10,000 and 10,000 do not have a comma.   Do we use 1000 or 1,000?     Text  $10,000$  $10,\\!000$  There is a spacing problem after the comma.   Do we use 1000 or 1,000?     Text  .5  0.5  Decimals should be preceded by an integer.   Do we use 0.5 or .5?     Text  1\/2  $1\/2$  The divide slash is too short.   What are some quick pointers on TeX?     Text  -2  $-2$  The minus sign is too short.   What are some quick pointers on TeX?     Text  $1\/6 \\approx 0.167$  $1\/6 = 0.167$  Use equal if the approximation is correct to the number of decimal places shown when rounded.   When do I use = and when do I use approximately equal ( \\approx )?     Text  \"parts (a) and (b)\"  \"parts~(a) and~(b)\"  The ~ prevents the \"(a)\" or \"(b)\" from being printed on a new line, which would look very odd.   I am creating an exercise that has parts (a), (b), (c), etc., and in part (c) I want to refer to part (a). How do I do that?     Text   \"left hand side\" \"co-ordinate\"    \"left-hand side\" \"coordinate\"   The standard usage consistent with previous books.      Text  \"Evaluate the following expressions\"  \"Evaluate\"  Be concise.   If I have the choice between wording an exercise in a concise style or in a verbose style, which is preferable?     Text  \"In this chapter we will show ...\"  \"In this chapter we show ...\"  Do not use future tense.   May I use the future tense?     Text  The sentence \"$y = x^2+x = x(x+1)$\"  \"We have $y = x^2+x = x(x+1)$.\"  Sentence started with a variable. Sentence did not end with a period.   May I start a sentence with a variable or a number? and Do I have to end a sentence with a period, even if an equation ends the sentence?     Text  \"When $x=3$, $y=1$.\"  \"When $x=3$, we find $y=1$.\"  The two variables should be separated with text.   The authorities get upset if I write something like: Since the leading term of the polynomial is $x^4$, $y$ goes to infinity. What should I have written?     Text  $x^\\frac{3}{4}$  $x^{3\/4}$  Fractions in exponents should be shilled.   When do I shill and when do I use $\\frac{}{}$ ?     Text  $\\times$  $\\cdot$  $\\times$ can be confused with the variable x.   When should I use \\times and when should I use \\cdot ?     Text   $$ a=b c=d $$    \\begin{eqnarray*} a&=&b \\\\ c&=&d \\end{eqnarray*}   The incorrect version generates the equation a=bc=d.   I want to create a sequence of equations, one below the other, with the equal signs lined up. How do I do that?                 Exercises   \\Question { blah }    \\Question{blah} or \\Question{ blah }   When moving between MACs, Unix, and Windows the incorrect version can generate an extra line between \"\\Question\" and \"{\", which causes havoc when TeXed. The same convention applies to \"\\Answer\" and \"\\ShortAnswer\".   What is the correct format and naming convention for exercise files?     Exercises  \\Answer{} or \\ShortAnswer{}  You are joking!  Exercises without Answers and ShortAnswers are not useful.   What is the correct format and naming convention for exercise files?                 Short Answer  $\\frac{3}{4}$  $3\/4$  Fractions in short answers should be shilled.   What do I need to know about short answers?     Short Answer  \\begin{across}...\\end{across}  \\begin{enumerate}...\\end{enumerate}  Short answers should not be formatted.   What do I need to know about short answers?     Short Answer  \\ShortAnswer {no.}  \\ShortAnswer{No}  Text that starts a short answer is capitalized. Short answers do not end with a period.   What do I need to know about short answers?     Short Answer  \\ShortAnswer {Not appropriate}  \\ShortAnswer{\\noshortanswer}  The correct format generates the standard output.   What do I need to know about short answers?     "
+},
+{
+  "id": "RightsAndWrongs-4",
+  "level": "2",
+  "url": "RightsAndWrongs.html#RightsAndWrongs-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "You can download a summary of these Do's and Don'ts as a 1-page link missing file (updated Sunday, January 11, 2004), which, when printed out, will look impressive beside your bed. "
 },
 {
   "id": "creatingChapter01",
@@ -1855,6 +6652,42 @@ var ptx_lunr_docs = [
   "body": " How do I create a Chapter?  First construct a master TeX file, with the following structure.  \\documentclass{astex} \\asformat{MULTI} \\noautopage \\raggedbottom \\showfilename \\printeverything \\begin{document} \\setcounter{page}{1} \\chapter{1}{Sample Chapter One} \\glabel{sampleone} \\secinput{samplesec1}{Sample Section 1} \\exercises<filename> \\end{document}  where \"filename\" is described in How do I put together a collection of exercises? .  Then you need to construct a file named \"samplesec1.tex\", with the contents of Sample Section 1.  "
 },
 {
+  "id": "creatingChapter01-2",
+  "level": "2",
+  "url": "creatingChapter01.html#creatingChapter01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "First construct a master TeX file, with the following structure. "
+},
+{
+  "id": "creatingChapter01-3",
+  "level": "2",
+  "url": "creatingChapter01.html#creatingChapter01-3",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\documentclass{astex} \\asformat{MULTI} \\noautopage \\raggedbottom \\showfilename \\printeverything \\begin{document} \\setcounter{page}{1} \\chapter{1}{Sample Chapter One} \\glabel{sampleone} \\secinput{samplesec1}{Sample Section 1} \\exercises<filename> \\end{document} "
+},
+{
+  "id": "creatingChapter01-4",
+  "level": "2",
+  "url": "creatingChapter01.html#creatingChapter01-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "where \"filename\" is described in How do I put together a collection of exercises? . "
+},
+{
+  "id": "creatingChapter01-5",
+  "level": "2",
+  "url": "creatingChapter01.html#creatingChapter01-5",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Then you need to construct a file named \"samplesec1.tex\", with the contents of Sample Section 1. "
+},
+{
   "id": "capitalizingHeadings02",
   "level": "1",
   "url": "capitalizingHeadings02.html",
@@ -1862,6 +6695,15 @@ var ptx_lunr_docs = [
   "number": "32.2",
   "title": "What is the convention for capitalizing headings of chapters, sections, and subsections?",
   "body": " What is the convention for capitalizing headings of chapters, sections, and subsections?   Follow this link   "
+},
+{
+  "id": "capitalizingHeadings02-2",
+  "level": "2",
+  "url": "capitalizingHeadings02.html#capitalizingHeadings02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "shortAnswers02",
@@ -1873,6 +6715,15 @@ var ptx_lunr_docs = [
   "body": " What do I need to know about short answers?   Follow this link   "
 },
 {
+  "id": "shortAnswers02-2",
+  "level": "2",
+  "url": "shortAnswers02.html#shortAnswers02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "dollarSign03",
   "level": "1",
   "url": "dollarSign03.html",
@@ -1880,6 +6731,15 @@ var ptx_lunr_docs = [
   "number": "33.2",
   "title": "In Exercises, when do we use <code class=\"code-inline tex2jax_ignore\">$blah$<\/code>, <code class=\"code-inline tex2jax_ignore\">$$blah$$<\/code>, and <code class=\"code-inline tex2jax_ignore\">$\\dsty blah$<\/code>?",
   "body": " In Exercises, when do we use $blah$ , $$blah$$ , and $\\dsty blah$ ?   Follow this link   "
+},
+{
+  "id": "dollarSign03-2",
+  "level": "2",
+  "url": "dollarSign03.html#dollarSign03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "exactAnswer03",
@@ -1891,6 +6751,15 @@ var ptx_lunr_docs = [
   "body": " The exact answer to one of my exercises is $5\/\\pi$ inches. Should I also give the calculator value of 1.592?   Follow this link   "
 },
 {
+  "id": "exactAnswer03-2",
+  "level": "2",
+  "url": "exactAnswer03.html#exactAnswer03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "answersAndShortAnswers02",
   "level": "1",
   "url": "answersAndShortAnswers02.html",
@@ -1898,6 +6767,15 @@ var ptx_lunr_docs = [
   "number": "33.4",
   "title": "Is it OK to submit exercises without Answers or ShortAnswers?",
   "body": " Is it OK to submit exercises without Answers or ShortAnswers?   Follow this link   "
+},
+{
+  "id": "answersAndShortAnswers02-2",
+  "level": "2",
+  "url": "answersAndShortAnswers02.html#answersAndShortAnswers02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "answersOrShortAnswersMissing02",
@@ -1909,6 +6787,15 @@ var ptx_lunr_docs = [
   "body": " When checking exercises, what do I do if an Answer or ShortAnswer is missing?   Follow this link   "
 },
 {
+  "id": "answersOrShortAnswersMissing02-2",
+  "level": "2",
+  "url": "answersOrShortAnswersMissing02.html#answersOrShortAnswersMissing02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "figureInShortAnswer03",
   "level": "1",
   "url": "figureInShortAnswer03.html",
@@ -1916,6 +6803,15 @@ var ptx_lunr_docs = [
   "number": "33.6",
   "title": "How do I put a figure into the short answer of an exercise or problem?",
   "body": " How do I put a figure into the short answer of an exercise or problem?   Follow this link   "
+},
+{
+  "id": "figureInShortAnswer03-2",
+  "level": "2",
+  "url": "figureInShortAnswer03.html#figureInShortAnswer03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "unitsInShortAnswer02",
@@ -1927,6 +6823,15 @@ var ptx_lunr_docs = [
   "body": " If in the short answers I have the choice between including or omitting units, what should I do? (For example, if a problem ask \"How many ships are left?\", should the short answer be \"32\" or \"32 ships\"?)   Follow this link   "
 },
 {
+  "id": "unitsInShortAnswer02-2",
+  "level": "2",
+  "url": "unitsInShortAnswer02.html#unitsInShortAnswer02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "printEverything03",
   "level": "1",
   "url": "printEverything03.html",
@@ -1934,6 +6839,15 @@ var ptx_lunr_docs = [
   "number": "33.8",
   "title": "How do I print the questions, the answers, and the short answers for the exercises?",
   "body": " How do I print the questions, the answers, and the short answers for the exercises?   Follow this link   "
+},
+{
+  "id": "printEverything03-2",
+  "level": "2",
+  "url": "printEverything03.html#printEverything03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "printOnlyExerciseQuestion03",
@@ -1945,6 +6859,15 @@ var ptx_lunr_docs = [
   "body": " How do I print only the questions (without the answers or short answers) for the exercises?   Follow this link   "
 },
 {
+  "id": "printOnlyExerciseQuestion03-2",
+  "level": "2",
+  "url": "printOnlyExerciseQuestion03.html#printOnlyExerciseQuestion03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "figuresAndTablesLabel02",
   "level": "1",
   "url": "figuresAndTablesLabel02.html",
@@ -1952,6 +6875,15 @@ var ptx_lunr_docs = [
   "number": "33.10",
   "title": "What is the preferred convention for labelling figures and tables in Exercises?",
   "body": " What is the preferred convention for labelling figures and tables in Exercises?   Follow this link   "
+},
+{
+  "id": "figuresAndTablesLabel02-2",
+  "level": "2",
+  "url": "figuresAndTablesLabel02.html#figuresAndTablesLabel02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "tableLabels02",
@@ -1963,6 +6895,15 @@ var ptx_lunr_docs = [
   "body": " When do I put labels (numbers) and captions on tables?   Follow this link   "
 },
 {
+  "id": "tableLabels02-2",
+  "level": "2",
+  "url": "tableLabels02.html#tableLabels02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "useCalculatorOrSoftware",
   "level": "1",
   "url": "useCalculatorOrSoftware.html",
@@ -1970,6 +6911,15 @@ var ptx_lunr_docs = [
   "number": "34.1",
   "title": "What words should we use if we want students to use a calculator or software to do an exercise?",
   "body": " What words should we use if we want students to use a calculator or software to do an exercise?  Use \"use a calculator or computer\". However, in general we should not be telling people to use calculators\/computers; they should be deciding that themselves. Also different faculty choose different things.  "
+},
+{
+  "id": "useCalculatorOrSoftware-2",
+  "level": "2",
+  "url": "useCalculatorOrSoftware.html#useCalculatorOrSoftware-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use \"use a calculator or computer\". However, in general we should not be telling people to use calculators\/computers; they should be deciding that themselves. Also different faculty choose different things. "
 },
 {
   "id": "thousandNotation02",
@@ -1981,6 +6931,15 @@ var ptx_lunr_docs = [
   "body": " Do we use 1000 or 1,000?   Follow this link   "
 },
 {
+  "id": "thousandNotation02-2",
+  "level": "2",
+  "url": "thousandNotation02.html#thousandNotation02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "decimalsNotation02",
   "level": "1",
   "url": "decimalsNotation02.html",
@@ -1988,6 +6947,15 @@ var ptx_lunr_docs = [
   "number": "34.3",
   "title": "Do we use 0.5 or .5?",
   "body": " Do we use 0.5 or .5?   Follow this link   "
+},
+{
+  "id": "decimalsNotation02-2",
+  "level": "2",
+  "url": "decimalsNotation02.html#decimalsNotation02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "exactAnswer04",
@@ -1999,6 +6967,15 @@ var ptx_lunr_docs = [
   "body": " The exact answer to one of my exercises is $5\/\\pi$ inches. Should I also give the calculator value of 1.592?   Follow this link   "
 },
 {
+  "id": "exactAnswer04-2",
+  "level": "2",
+  "url": "exactAnswer04.html#exactAnswer04-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "decimalPlacesInAnswer02",
   "level": "1",
   "url": "decimalPlacesInAnswer02.html",
@@ -2006,6 +6983,15 @@ var ptx_lunr_docs = [
   "number": "34.5",
   "title": "How many decimal places should I keep in a numerical answer?",
   "body": " How many decimal places should I keep in a numerical answer?   Follow this link   "
+},
+{
+  "id": "decimalPlacesInAnswer02-2",
+  "level": "2",
+  "url": "decimalPlacesInAnswer02.html#decimalPlacesInAnswer02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "footnotePosition02",
@@ -2017,6 +7003,15 @@ var ptx_lunr_docs = [
   "body": " Do I put a footnote before or after a punctuation mark?   Follow this link   "
 },
 {
+  "id": "footnotePosition02-2",
+  "level": "2",
+  "url": "footnotePosition02.html#footnotePosition02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "referenceStyle02",
   "level": "1",
   "url": "referenceStyle02.html",
@@ -2024,6 +7019,15 @@ var ptx_lunr_docs = [
   "number": "34.7",
   "title": "What style should we use when citing references to books, articles, or web sites?",
   "body": " What style should we use when citing references to books, articles, or web sites?   Follow this link   "
+},
+{
+  "id": "referenceStyle02-2",
+  "level": "2",
+  "url": "referenceStyle02.html#referenceStyle02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "horizontalLineAfterExample",
@@ -2035,6 +7039,15 @@ var ptx_lunr_docs = [
   "body": " Sometimes there is a horizontal line after an example, and sometimes there is not. What is the convention?  The horizontal line on the right at the end of a solution is omitted if the solution is followed immediately by an example (since then the horizontal line ending the solution would look bad next to the horizontal line on the left starting an example ... this was a style decision of Wiley many years ago).  "
 },
 {
+  "id": "horizontalLineAfterExample-2",
+  "level": "2",
+  "url": "horizontalLineAfterExample.html#horizontalLineAfterExample-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The horizontal line on the right at the end of a solution is omitted if the solution is followed immediately by an example (since then the horizontal line ending the solution would look bad next to the horizontal line on the left starting an example ... this was a style decision of Wiley many years ago). "
+},
+{
   "id": "shilling05",
   "level": "1",
   "url": "shilling05.html",
@@ -2042,6 +7055,15 @@ var ptx_lunr_docs = [
   "number": "34.9",
   "title": "What is shilling?",
   "body": " What is shilling?   Follow this link   "
+},
+{
+  "id": "shilling05-2",
+  "level": "2",
+  "url": "shilling05.html#shilling05-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "shillVsFrac05",
@@ -2053,6 +7075,15 @@ var ptx_lunr_docs = [
   "body": " When do I shill and when do I use $\\frac{}{}$ ?   Follow this link   "
 },
 {
+  "id": "shillVsFrac05-2",
+  "level": "2",
+  "url": "shillVsFrac05.html#shillVsFrac05-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "sentenceStart02",
   "level": "1",
   "url": "sentenceStart02.html",
@@ -2060,6 +7091,15 @@ var ptx_lunr_docs = [
   "number": "34.11",
   "title": "May I start a sentence with a variable or a number?",
   "body": " May I start a sentence with a variable or a number?   Follow this link   "
+},
+{
+  "id": "sentenceStart02-2",
+  "level": "2",
+  "url": "sentenceStart02.html#sentenceStart02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "angleInRadians01",
@@ -2071,6 +7111,15 @@ var ptx_lunr_docs = [
   "body": " Do I need to specify that the units of an angle are in radians?  No, unless you are asking a question that involves changing units between radians and degrees.  "
 },
 {
+  "id": "angleInRadians01-2",
+  "level": "2",
+  "url": "angleInRadians01.html#angleInRadians01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "No, unless you are asking a question that involves changing units between radians and degrees. "
+},
+{
   "id": "variablesSeparetedByText02",
   "level": "1",
   "url": "variablesSeparetedByText02.html",
@@ -2078,6 +7127,15 @@ var ptx_lunr_docs = [
   "number": "34.13",
   "title": "The authorities get upset if I write something like: Since the leading term of the polynomial is $x^4$, $y$ goes to infinity. What should I have written?",
   "body": " The authorities get upset if I write something like: Since the leading term of the polynomial is $x^4$, $y$ goes to infinity. What should I have written?   Follow this link   "
+},
+{
+  "id": "variablesSeparetedByText02-2",
+  "level": "2",
+  "url": "variablesSeparetedByText02.html#variablesSeparetedByText02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "futureTense",
@@ -2089,6 +7147,24 @@ var ptx_lunr_docs = [
   "body": " May I use the future tense?  No! No! No!  In place of \"In this chapter we will show ...\" use \"In this chapter we show ...\" .  "
 },
 {
+  "id": "futureTense-2",
+  "level": "2",
+  "url": "futureTense.html#futureTense-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "No! No! No! "
+},
+{
+  "id": "futureTense-3",
+  "level": "2",
+  "url": "futureTense.html#futureTense-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "In place of \"In this chapter we will show ...\" use \"In this chapter we show ...\" . "
+},
+{
   "id": "abbreviationStandarUnits02",
   "level": "1",
   "url": "abbreviationStandarUnits02.html",
@@ -2096,6 +7172,15 @@ var ptx_lunr_docs = [
   "number": "34.15",
   "title": "What are the abbreviations and conventions that we use for standard units like grams and miles per hour?",
   "body": " What are the abbreviations and conventions that we use for standard units like grams and miles per hour?   Follow this link   "
+},
+{
+  "id": "abbreviationStandarUnits02-2",
+  "level": "2",
+  "url": "abbreviationStandarUnits02.html#abbreviationStandarUnits02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "commonConstants01",
@@ -2125,13 +7210,31 @@ var ptx_lunr_docs = [
   "body": " I want to refer to something like City A and City B. Do I just type it that way, or are the A and B put into a special font, say $A$ and $B$?   Follow this link   "
 },
 {
+  "id": "specialReference03-2",
+  "level": "2",
+  "url": "specialReference03.html#specialReference03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "range02",
   "level": "1",
   "url": "range02.html",
   "type": "Section",
   "number": "34.18",
-  "title": "The three expressions <code class=\"code-inline tex2jax_ignore\">$x > 1$<\/code>, <code class=\"code-inline tex2jax_ignore\">$1 < x < \\infty$<\/code>, and <code class=\"code-inline tex2jax_ignore\">$(1, \\infty)$<\/code> are mathematically equivalent.  Which one do we use?",
+  "title": "The three expressions <code class=\"code-inline tex2jax_ignore\">$x &gt; 1$<\/code>, <code class=\"code-inline tex2jax_ignore\">$1 &lt; x &lt; \\infty$<\/code>, and <code class=\"code-inline tex2jax_ignore\">$(1, \\infty)$<\/code> are mathematically equivalent.  Which one do we use?",
   "body": " The three expressions $x > 1$ , $1 < x < \\infty$ , and $(1, \\infty)$ are mathematically equivalent. Which one do we use?   Follow this link   "
+},
+{
+  "id": "range02-2",
+  "level": "2",
+  "url": "range02.html#range02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "degreeSymbol02",
@@ -2143,6 +7246,15 @@ var ptx_lunr_docs = [
   "body": " How do I enter the degree symbol, for example 76 degrees Fahrenheit?   Follow this link   "
 },
 {
+  "id": "degreeSymbol02-2",
+  "level": "2",
+  "url": "degreeSymbol02.html#degreeSymbol02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "rightArrow03",
   "level": "1",
   "url": "rightArrow03.html",
@@ -2150,6 +7262,15 @@ var ptx_lunr_docs = [
   "number": "34.20",
   "title": "May I use the implies symbol ==&gt; (<code class=\"code-inline tex2jax_ignore\">$\\Rightarrow$<\/code>)?",
   "body": " May I use the implies symbol ==> ( $\\Rightarrow$ )?   Follow this link   "
+},
+{
+  "id": "rightArrow03-2",
+  "level": "2",
+  "url": "rightArrow03.html#rightArrow03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "sinNotation02",
@@ -2161,6 +7282,15 @@ var ptx_lunr_docs = [
   "body": " Do I use $\\sin x$ or $\\sin (x)$ ?   Follow this link   "
 },
 {
+  "id": "sinNotation02-2",
+  "level": "2",
+  "url": "sinNotation02.html#sinNotation02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "rootVsZero03",
   "level": "1",
   "url": "rootVsZero03.html",
@@ -2168,6 +7298,15 @@ var ptx_lunr_docs = [
   "number": "34.22",
   "title": "When do I use root and when do I use zero?",
   "body": " When do I use root and when do I use zero?   Follow this link   "
+},
+{
+  "id": "rootVsZero03-2",
+  "level": "2",
+  "url": "rootVsZero03.html#rootVsZero03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "symmetricAcrossVsAbout02",
@@ -2179,6 +7318,15 @@ var ptx_lunr_docs = [
   "body": " Do I use symmetric across the x -axis, or symmetric about the x -axis?   Follow this link   "
 },
 {
+  "id": "symmetricAcrossVsAbout02-2",
+  "level": "2",
+  "url": "symmetricAcrossVsAbout02.html#symmetricAcrossVsAbout02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "equalVsApproEqual02",
   "level": "1",
   "url": "equalVsApproEqual02.html",
@@ -2186,6 +7334,15 @@ var ptx_lunr_docs = [
   "number": "34.24",
   "title": "When do I use = and when do I use approximately equal (<code class=\"code-inline tex2jax_ignore\">\\approx<\/code>)?",
   "body": " When do I use = and when do I use approximately equal ( \\approx )?   Follow this link   "
+},
+{
+  "id": "equalVsApproEqual02-2",
+  "level": "2",
+  "url": "equalVsApproEqual02.html#equalVsApproEqual02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "units01",
@@ -2197,6 +7354,15 @@ var ptx_lunr_docs = [
   "body": " I'm confused about units. Are the units of g acceleration or ft\/sec^2?  Units refer to how something is measured, so feet, seconds, and ft\/sec^2 are units, but distance, time, and acceleration are dimensions. Also avoid using \"units of\" if possible. For example, \"s is distance in feet, t is time in seconds\" is better than \"s is distance in units of feet, t is time in units of seconds\".  "
 },
 {
+  "id": "units01-2",
+  "level": "2",
+  "url": "units01.html#units01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Units refer to how something is measured, so feet, seconds, and ft\/sec^2 are units, but distance, time, and acceleration are dimensions. Also avoid using \"units of\" if possible. For example, \"s is distance in feet, t is time in seconds\" is better than \"s is distance in units of feet, t is time in units of seconds\". "
+},
+{
   "id": "multipliedTogetherRepeatedly02",
   "level": "1",
   "url": "multipliedTogetherRepeatedly02.html",
@@ -2204,6 +7370,15 @@ var ptx_lunr_docs = [
   "number": "34.26",
   "title": "To display <code class=\"code-inline tex2jax_ignore\">$a$<\/code> multiplied together repeatedly, do I use <code class=\"code-inline tex2jax_ignore\">$a\\cdot a\\cdot a\\cdot\\cdots\\cdot a$<\/code> or <code class=\"code-inline tex2jax_ignore\">$a\\cdot a\\cdot a\\cdots a$<\/code>?",
   "body": " To display $a$ multiplied together repeatedly, do I use $a\\cdot a\\cdot a\\cdot\\cdots\\cdot a$ or $a\\cdot a\\cdot a\\cdots a$ ?   Follow this link   "
+},
+{
+  "id": "multipliedTogetherRepeatedly02-2",
+  "level": "2",
+  "url": "multipliedTogetherRepeatedly02.html#multipliedTogetherRepeatedly02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "latinAbbreviations03",
@@ -2215,6 +7390,15 @@ var ptx_lunr_docs = [
   "body": " Do we italicize Latin abbreviations such as e.g. and i.e.?   Follow this link   "
 },
 {
+  "id": "latinAbbreviations03-2",
+  "level": "2",
+  "url": "latinAbbreviations03.html#latinAbbreviations03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "capitalizingHeadings03",
   "level": "1",
   "url": "capitalizingHeadings03.html",
@@ -2222,6 +7406,15 @@ var ptx_lunr_docs = [
   "number": "34.28",
   "title": "What is the convention for capitalizing headings of chapters, sections, and subsections?",
   "body": " What is the convention for capitalizing headings of chapters, sections, and subsections?   Follow this link   "
+},
+{
+  "id": "capitalizingHeadings03-2",
+  "level": "2",
+  "url": "capitalizingHeadings03.html#capitalizingHeadings03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "formattingCommands02",
@@ -2233,6 +7426,15 @@ var ptx_lunr_docs = [
   "body": " May I use formatting commands (like \\vspace, \\hspace, \\smallskip, \\\\, etc.) in the text portion of my file?   Follow this link   "
 },
 {
+  "id": "formattingCommands02-2",
+  "level": "2",
+  "url": "formattingCommands02.html#formattingCommands02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "submitTroubles02",
   "level": "1",
   "url": "submitTroubles02.html",
@@ -2240,6 +7442,15 @@ var ptx_lunr_docs = [
   "number": "34.30",
   "title": "What are the things people seem have trouble with when they submit?",
   "body": " What are the things people seem have trouble with when they submit?   Follow this link   "
+},
+{
+  "id": "submitTroubles02-2",
+  "level": "2",
+  "url": "submitTroubles02.html#submitTroubles02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "referencesPrintedText01",
@@ -2251,6 +7462,33 @@ var ptx_lunr_docs = [
   "body": " How do I reference existing theorems, chapters, sections, examples, exercises, and problems, in the printed calculus text that we are editing?  Use \\ref{blah} where blah is the hard-coded reference. For example, to refer to Example 3 on page 41 of Section 1.6 of single Calculus, 3rd edition, use  \\ref{Single 3e Chapter 1, page 41, Example 3, Section 1.6}  This will TeX as ?? in the printed text and alert Elliot to make the appropriate changes.  "
 },
 {
+  "id": "referencesPrintedText01-2",
+  "level": "2",
+  "url": "referencesPrintedText01.html#referencesPrintedText01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use \\ref{blah} where blah is the hard-coded reference. For example, to refer to Example 3 on page 41 of Section 1.6 of single Calculus, 3rd edition, use "
+},
+{
+  "id": "referencesPrintedText01-3",
+  "level": "2",
+  "url": "referencesPrintedText01.html#referencesPrintedText01-3",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\ref{Single 3e Chapter 1, page 41, Example 3, Section 1.6} "
+},
+{
+  "id": "referencesPrintedText01-4",
+  "level": "2",
+  "url": "referencesPrintedText01.html#referencesPrintedText01-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "This will TeX as ?? in the printed text and alert Elliot to make the appropriate changes. "
+},
+{
   "id": "conciseVsWording03",
   "level": "1",
   "url": "conciseVsWording03.html",
@@ -2258,6 +7496,15 @@ var ptx_lunr_docs = [
   "number": "34.32",
   "title": "If I have the choice between wording an exercise in a concise style or in a verbose style, which is preferable?",
   "body": " If I have the choice between wording an exercise in a concise style or in a verbose style, which is preferable?   Follow this link   "
+},
+{
+  "id": "conciseVsWording03-2",
+  "level": "2",
+  "url": "conciseVsWording03.html#conciseVsWording03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "theoremsName",
@@ -2269,6 +7516,15 @@ var ptx_lunr_docs = [
   "body": " Do I write Stokes' Theorem or Stokes's Theorem?  A proper noun that ends in s (such as Stokes or Pythagoras) has only a single apostrophe added to make it possessive. Thus, we use Stokes' Theorem and not Stokes's Theorem.  "
 },
 {
+  "id": "theoremsName-2",
+  "level": "2",
+  "url": "theoremsName.html#theoremsName-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "A proper noun that ends in s (such as Stokes or Pythagoras) has only a single apostrophe added to make it possessive. Thus, we use Stokes' Theorem and not Stokes's Theorem. "
+},
+{
   "id": "variableOrFunction",
   "level": "1",
   "url": "variableOrFunction.html",
@@ -2276,6 +7532,15 @@ var ptx_lunr_docs = [
   "number": "34.34",
   "title": "When should I write <code class=\"code-inline tex2jax_ignore\">V'(t)<\/code> and when should I write <code class=\"code-inline tex2jax_ignore\">dV\/dt<\/code>?",
   "body": " When should I write V'(t) and when should I write dV\/dt ?  If V is a variable, then you should write dV\/dt , but not V'(t) . If V is a function, meaning V(t) gives values of the dependent variable, then you should write V'(t) , but not dV\/dt .  "
+},
+{
+  "id": "variableOrFunction-2",
+  "level": "2",
+  "url": "variableOrFunction.html#variableOrFunction-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If V is a variable, then you should write dV\/dt , but not V'(t) . If V is a function, meaning V(t) gives values of the dependent variable, then you should write V'(t) , but not dV\/dt . "
 },
 {
   "id": "timesVsDot",
@@ -2287,6 +7552,15 @@ var ptx_lunr_docs = [
   "body": " When should I use \\times and when should I use \\cdot ?  Don't use \\times except in very rare cases; use \\cdot . \\times often gets mixed up with x , especially when students copy it in their own handwriting.  "
 },
 {
+  "id": "timesVsDot-2",
+  "level": "2",
+  "url": "timesVsDot.html#timesVsDot-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Don't use \\times except in very rare cases; use \\cdot . \\times often gets mixed up with x , especially when students copy it in their own handwriting. "
+},
+{
   "id": "periods",
   "level": "1",
   "url": "periods.html",
@@ -2294,6 +7568,15 @@ var ptx_lunr_docs = [
   "number": "34.36",
   "title": "Do I have to end a sentence with a period, even if an equation ends the sentence?",
   "body": " Do I have to end a sentence with a period, even if an equation ends the sentence?  Yes. Yes. Yes.  "
+},
+{
+  "id": "periods-2",
+  "level": "2",
+  "url": "periods.html#periods-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Yes. Yes. Yes. "
 },
 {
   "id": "xasis",
@@ -2305,6 +7588,15 @@ var ptx_lunr_docs = [
   "body": " Do we use $x-$axis or $x$-axis ?   $x$-axis , otherwise the hyphen becomes a minus sign when TeXed. The same is true of $x$-intercept , $x$-values , etc.  "
 },
 {
+  "id": "xasis-2",
+  "level": "2",
+  "url": "xasis.html#xasis-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " $x$-axis , otherwise the hyphen becomes a minus sign when TeXed. The same is true of $x$-intercept , $x$-values , etc. "
+},
+{
   "id": "orVsAndInSolutions02",
   "level": "1",
   "url": "orVsAndInSolutions02.html",
@@ -2312,6 +7604,15 @@ var ptx_lunr_docs = [
   "number": "34.38",
   "title": "Do we say \"The solutions are $x = 1$ and $x = 2$,\" or \"The solutions are $x = 1$ or $x =2$\"?",
   "body": " Do we say \"The solutions are $x = 1$ and $x = 2$,\" or \"The solutions are $x = 1$ or $x =2$\"?   Follow this link   "
+},
+{
+  "id": "orVsAndInSolutions02-2",
+  "level": "2",
+  "url": "orVsAndInSolutions02.html#orVsAndInSolutions02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "dollarsNotation",
@@ -2323,6 +7624,15 @@ var ptx_lunr_docs = [
   "body": " Do I use \"$P\" or \"P dollars\"?  \"P dollars\" is preferable. However, either \"$2\" or \"2 dollars\" is fine.  "
 },
 {
+  "id": "dollarsNotation-2",
+  "level": "2",
+  "url": "dollarsNotation.html#dollarsNotation-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "\"P dollars\" is preferable. However, either \"$2\" or \"2 dollars\" is fine. "
+},
+{
   "id": "commentForOtherAuthor",
   "level": "1",
   "url": "commentForOtherAuthor.html",
@@ -2330,6 +7640,24 @@ var ptx_lunr_docs = [
   "number": "34.40",
   "title": "How can I include a comment about a topic for other authors to read?",
   "body": " How can I include a comment about a topic for other authors to read?  First make sure the latest macros are installed.  The command \\editcomment{title}{comment} will put a boxed comment in the typeset document. The usage is something like this: \\editcomment{Eric 2004\/08\/11}{I just love the new edit comment command!} which generates     Comments are displayed by default. A warning will be printed to the log for every comment that is displayed, including the page number of its occurrence.  The command \\dontshoweditcomments has the effect of suppressing all comments. A warning will be printed to the log for every comment that is suppressed.  The command \\showeditcomments forces comments to be displayed, and can be used in conjunction with \\dontshoweditcomments to toggle the display of comments in a particular piece of text.  "
+},
+{
+  "id": "commentForOtherAuthor-2",
+  "level": "2",
+  "url": "commentForOtherAuthor.html#commentForOtherAuthor-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "First make sure the latest macros are installed. "
+},
+{
+  "id": "commentForOtherAuthor-3",
+  "level": "2",
+  "url": "commentForOtherAuthor.html#commentForOtherAuthor-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The command \\editcomment{title}{comment} will put a boxed comment in the typeset document. The usage is something like this: \\editcomment{Eric 2004\/08\/11}{I just love the new edit comment command!} which generates "
 },
 {
   "id": "comment",
@@ -2341,6 +7669,33 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
+  "id": "commentForOtherAuthor-5",
+  "level": "2",
+  "url": "commentForOtherAuthor.html#commentForOtherAuthor-5",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Comments are displayed by default. A warning will be printed to the log for every comment that is displayed, including the page number of its occurrence. "
+},
+{
+  "id": "commentForOtherAuthor-6",
+  "level": "2",
+  "url": "commentForOtherAuthor.html#commentForOtherAuthor-6",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The command \\dontshoweditcomments has the effect of suppressing all comments. A warning will be printed to the log for every comment that is suppressed. "
+},
+{
+  "id": "commentForOtherAuthor-7",
+  "level": "2",
+  "url": "commentForOtherAuthor.html#commentForOtherAuthor-7",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The command \\showeditcomments forces comments to be displayed, and can be used in conjunction with \\dontshoweditcomments to toggle the display of comments in a particular piece of text. "
+},
+{
   "id": "fontForNames",
   "level": "1",
   "url": "fontForNames.html",
@@ -2348,6 +7703,15 @@ var ptx_lunr_docs = [
   "number": "34.41",
   "title": "What font do I use for A when I write \"Matrix A\"?",
   "body": " What font do I use for A when I write \"Matrix A\"?  Use \"Matrix $\\mtx{A}$ is very interesting, but $2\\mtx{A}$ is twice as interesting\".  "
+},
+{
+  "id": "fontForNames-2",
+  "level": "2",
+  "url": "fontForNames.html#fontForNames-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use \"Matrix $\\mtx{A}$ is very interesting, but $2\\mtx{A}$ is twice as interesting\". "
 },
 {
   "id": "contractions",
@@ -2359,6 +7723,15 @@ var ptx_lunr_docs = [
   "body": " Should I use contractions, such as \"didn't\"?  Not if you want the authorities to be nice to you. We never use contractions. Always write in full, so \"didn't\" should be \"did not\".  "
 },
 {
+  "id": "contractions-2",
+  "level": "2",
+  "url": "contractions.html#contractions-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Not if you want the authorities to be nice to you. We never use contractions. Always write in full, so \"didn't\" should be \"did not\". "
+},
+{
   "id": "capitalLetters",
   "level": "1",
   "url": "capitalLetters.html",
@@ -2366,6 +7739,15 @@ var ptx_lunr_docs = [
   "number": "34.43",
   "title": "If we ask a question like: \"Is Rx linear in R? In x?\" should the second \"in\" start with a capital letter?",
   "body": " If we ask a question like: \"Is Rx linear in R? In x?\" should the second \"in\" start with a capital letter?  Yes.  "
+},
+{
+  "id": "capitalLetters-2",
+  "level": "2",
+  "url": "capitalLetters.html#capitalLetters-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Yes. "
 },
 {
   "id": "punctuationInlineMath",
@@ -2377,6 +7759,15 @@ var ptx_lunr_docs = [
   "body": " For inline mathematics, should punctuation go inside or outside the dollar signs, e.g. \"$a$.\" or \"$a.$\"?  Always outside, so \"$a$.\" not \"$a.$\".  "
 },
 {
+  "id": "punctuationInlineMath-2",
+  "level": "2",
+  "url": "punctuationInlineMath.html#punctuationInlineMath-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Always outside, so \"$a$.\" not \"$a.$\". "
+},
+{
   "id": "tilde",
   "level": "1",
   "url": "tilde.html",
@@ -2384,6 +7775,15 @@ var ptx_lunr_docs = [
   "number": "34.45",
   "title": "When I use a tilde, \"~\", for example in \"part~(a)\" or \"Example<code class=\"code-inline tex2jax_ignore\">~\\ref{ex:blah}<\/code>\", why don’t I need to precede it by a space?",
   "body": " When I use a tilde, \"~\", for example in \"part~(a)\" or \"Example ~\\ref{ex:blah} \", why don't I need to precede it by a space?  The tilde provides a space, but tells TeX not to break the line there.  "
+},
+{
+  "id": "tilde-2",
+  "level": "2",
+  "url": "tilde.html#tilde-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The tilde provides a space, but tells TeX not to break the line there. "
 },
 {
   "id": "functionFromAGraph",
@@ -2395,6 +7795,15 @@ var ptx_lunr_docs = [
   "body": " Some of the problems ask for a function to be estimated from a graph. I get the answer $y=4x+3$, but other answers close to this are equally correct. How do I write the short answer for this?  Use \"Estimating coefficients $y=4x+3$\".  "
 },
 {
+  "id": "functionFromAGraph-2",
+  "level": "2",
+  "url": "functionFromAGraph.html#functionFromAGraph-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use \"Estimating coefficients $y=4x+3$\". "
+},
+{
   "id": "quantitiesFromAGraph",
   "level": "1",
   "url": "quantitiesFromAGraph.html",
@@ -2402,6 +7811,15 @@ var ptx_lunr_docs = [
   "number": "34.47",
   "title": "Some of the problems ask for the value of quantities to be estimated from a graph.  I get the answer 4, but other answers close to 4 are equally correct.  How do I write the short answer for this?",
   "body": " Some of the problems ask for the value of quantities to be estimated from a graph. I get the answer 4, but other answers close to 4 are equally correct. How do I write the short answer for this?  Use \"About 0\".  "
+},
+{
+  "id": "quantitiesFromAGraph-2",
+  "level": "2",
+  "url": "quantitiesFromAGraph.html#quantitiesFromAGraph-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use \"About 0\". "
 },
 {
   "id": "hintWileyPlus",
@@ -2413,6 +7831,15 @@ var ptx_lunr_docs = [
   "body": " How do I add a hint to a problem for WileyPLUS?  TBA  "
 },
 {
+  "id": "hintWileyPlus-2",
+  "level": "2",
+  "url": "hintWileyPlus.html#hintWileyPlus-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "TBA "
+},
+{
   "id": "newProblemsInApplied",
   "level": "1",
   "url": "newProblemsInApplied.html",
@@ -2420,6 +7847,78 @@ var ptx_lunr_docs = [
   "number": "34.49",
   "title": "In Applied, there is a new method to save and commit New Problems. What is it?",
   "body": " In Applied, there is a new method to save and commit New Problems. What is it?  Let's assume you are creating NPs for Sections 3.1 and 3.3, and that your initials are dsl.    First do an SVN Update to make sure you have the latest files for Applied.    Navigate to Chapter 3 in Applied (BCHAP3). Create your NPs there, labelling them 3-1dslaqnp01.tex, 3-1dslaqnp02.tex, ..., 3-3dslaqnp01.tex, 3-3dslaqnp02.tex, ...    Create\/Edit the np-file in the BCHAP3 folder, that is tied to the section. In this case they would be ex-np3-1.tex and ex-np3-3.tex. For example, ex-np3-3.tex, may look something like this  \"\\begin{exgroup}[1] \\begin{qset}[ins3-3aq1-28] \\qinput{3-3dslaqnp01} \\qinput{3-3dslaqnp03} \\qinput{3-3dslaqnp04} \\qinput{3-3dslaqnp05} \\qinput{3-3dslaqnp06} \\qinput{3-3dslaqnp08} \\end{qset} \\begin{qset}[ins3-3dsl2] \\qinput{3-3dslaqnp02} \\qinput{3-3dslaqnp07} \\end{qset} \\qinput{3-4w70} \\qinput{3-4w71} \\qinput{3-miscw94} \\end{exgroup}\"  This contains the filenames of 8 nps created by dsl, and three from single.    Go to your folder in BUSNEWPROBS, BUSNEWPROBS\/Lovelock\/ and create another ex-np file for ALL the dsl NPs, called ex-npLovelock5.tex. This looks like ex-np3-3.tex, except it will also contain the filenames for Section 3.1, but will not contain the filenames from single. In other words it is an ex-file of only those NPs created by dsl.    Commit all these files via SVN.    "
+},
+{
+  "id": "newProblemsInApplied-2",
+  "level": "2",
+  "url": "newProblemsInApplied.html#newProblemsInApplied-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Let's assume you are creating NPs for Sections 3.1 and 3.3, and that your initials are dsl. "
+},
+{
+  "id": "newProblemsInApplied-3-1-1",
+  "level": "2",
+  "url": "newProblemsInApplied.html#newProblemsInApplied-3-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "First do an SVN Update to make sure you have the latest files for Applied. "
+},
+{
+  "id": "newProblemsInApplied-3-2-1",
+  "level": "2",
+  "url": "newProblemsInApplied.html#newProblemsInApplied-3-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Navigate to Chapter 3 in Applied (BCHAP3). Create your NPs there, labelling them 3-1dslaqnp01.tex, 3-1dslaqnp02.tex, ..., 3-3dslaqnp01.tex, 3-3dslaqnp02.tex, ... "
+},
+{
+  "id": "newProblemsInApplied-3-3-1",
+  "level": "2",
+  "url": "newProblemsInApplied.html#newProblemsInApplied-3-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Create\/Edit the np-file in the BCHAP3 folder, that is tied to the section. In this case they would be ex-np3-1.tex and ex-np3-3.tex. For example, ex-np3-3.tex, may look something like this "
+},
+{
+  "id": "newProblemsInApplied-3-3-2",
+  "level": "2",
+  "url": "newProblemsInApplied.html#newProblemsInApplied-3-3-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\"\\begin{exgroup}[1] \\begin{qset}[ins3-3aq1-28] \\qinput{3-3dslaqnp01} \\qinput{3-3dslaqnp03} \\qinput{3-3dslaqnp04} \\qinput{3-3dslaqnp05} \\qinput{3-3dslaqnp06} \\qinput{3-3dslaqnp08} \\end{qset} \\begin{qset}[ins3-3dsl2] \\qinput{3-3dslaqnp02} \\qinput{3-3dslaqnp07} \\end{qset} \\qinput{3-4w70} \\qinput{3-4w71} \\qinput{3-miscw94} \\end{exgroup}\" "
+},
+{
+  "id": "newProblemsInApplied-3-3-3",
+  "level": "2",
+  "url": "newProblemsInApplied.html#newProblemsInApplied-3-3-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "This contains the filenames of 8 nps created by dsl, and three from single. "
+},
+{
+  "id": "newProblemsInApplied-3-4-1",
+  "level": "2",
+  "url": "newProblemsInApplied.html#newProblemsInApplied-3-4-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Go to your folder in BUSNEWPROBS, BUSNEWPROBS\/Lovelock\/ and create another ex-np file for ALL the dsl NPs, called ex-npLovelock5.tex. This looks like ex-np3-3.tex, except it will also contain the filenames for Section 3.1, but will not contain the filenames from single. In other words it is an ex-file of only those NPs created by dsl. "
+},
+{
+  "id": "newProblemsInApplied-3-5-1",
+  "level": "2",
+  "url": "newProblemsInApplied.html#newProblemsInApplied-3-5-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Commit all these files via SVN. "
 },
 {
   "id": "partOfExerciseInAppliedFromSingle",
@@ -2431,6 +7930,78 @@ var ptx_lunr_docs = [
   "body": " In Applied, I want to use part of an Exercise\/Problem that is in Single. How do I do that?  Go to the Exercise\/Problem that is in Single and edit it by using the \\Bus command. For example, say the Exercise\/Problem in Single, looked like this:  \"Find the derivative each of the following: (a) Blah (b) BlahBlah (c) BlahBlahBlah\"  and you don't want to include Part (b). To do this, edit the tex file to read:  \"Find the derivative of each of the following: (a) Blah \\Bus{(b) BlahBlah}{} (c) BlahBlahBlah\"  Don't forget to do the same thing to the ANSWER and SHORT ANSWER.  On the other hand, if you want to replace Part (b) with \"NewBlah\" then edit the tex file to read:  \"Find the derivative of each of the following: (a) Blah (b) \\Bus{BlahBlah}{NewBlah} (c) BlahBlahBlah\"  Then email Elliot telling him what you have done.  "
 },
 {
+  "id": "partOfExerciseInAppliedFromSingle-2",
+  "level": "2",
+  "url": "partOfExerciseInAppliedFromSingle.html#partOfExerciseInAppliedFromSingle-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Go to the Exercise\/Problem that is in Single and edit it by using the \\Bus command. For example, say the Exercise\/Problem in Single, looked like this: "
+},
+{
+  "id": "partOfExerciseInAppliedFromSingle-3",
+  "level": "2",
+  "url": "partOfExerciseInAppliedFromSingle.html#partOfExerciseInAppliedFromSingle-3",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\"Find the derivative each of the following: (a) Blah (b) BlahBlah (c) BlahBlahBlah\" "
+},
+{
+  "id": "partOfExerciseInAppliedFromSingle-4",
+  "level": "2",
+  "url": "partOfExerciseInAppliedFromSingle.html#partOfExerciseInAppliedFromSingle-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "and you don't want to include Part (b). To do this, edit the tex file to read: "
+},
+{
+  "id": "partOfExerciseInAppliedFromSingle-5",
+  "level": "2",
+  "url": "partOfExerciseInAppliedFromSingle.html#partOfExerciseInAppliedFromSingle-5",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\"Find the derivative of each of the following: (a) Blah \\Bus{(b) BlahBlah}{} (c) BlahBlahBlah\" "
+},
+{
+  "id": "partOfExerciseInAppliedFromSingle-6",
+  "level": "2",
+  "url": "partOfExerciseInAppliedFromSingle.html#partOfExerciseInAppliedFromSingle-6",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Don't forget to do the same thing to the ANSWER and SHORT ANSWER. "
+},
+{
+  "id": "partOfExerciseInAppliedFromSingle-7",
+  "level": "2",
+  "url": "partOfExerciseInAppliedFromSingle.html#partOfExerciseInAppliedFromSingle-7",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "On the other hand, if you want to replace Part (b) with \"NewBlah\" then edit the tex file to read: "
+},
+{
+  "id": "partOfExerciseInAppliedFromSingle-8",
+  "level": "2",
+  "url": "partOfExerciseInAppliedFromSingle.html#partOfExerciseInAppliedFromSingle-8",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\"Find the derivative of each of the following: (a) Blah (b) \\Bus{BlahBlah}{NewBlah} (c) BlahBlahBlah\" "
+},
+{
+  "id": "partOfExerciseInAppliedFromSingle-9",
+  "level": "2",
+  "url": "partOfExerciseInAppliedFromSingle.html#partOfExerciseInAppliedFromSingle-9",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Then email Elliot telling him what you have done. "
+},
+{
   "id": "exerciseInAppliedFromSingle",
   "level": "1",
   "url": "exerciseInAppliedFromSingle.html",
@@ -2438,6 +8009,15 @@ var ptx_lunr_docs = [
   "number": "34.51",
   "title": "In Applied, I want to use an Exercise\/Problem that is in Single. Do I just copy it to Applied?",
   "body": " In Applied, I want to use an Exercise\/Problem that is in Single. Do I just copy it to Applied?  No. Just include the Exercise\/Problem's filename in the Applied ex-file.  "
+},
+{
+  "id": "exerciseInAppliedFromSingle-2",
+  "level": "2",
+  "url": "exerciseInAppliedFromSingle.html#exerciseInAppliedFromSingle-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "No. Just include the Exercise\/Problem's filename in the Applied ex-file. "
 },
 {
   "id": "exerciseOrProblem03",
@@ -2449,13 +8029,58 @@ var ptx_lunr_docs = [
   "body": " How do I specify that a problem that I am submitting is intended to be a \"Problem\" rather than an \"Exercise\"?   Follow this link   "
 },
 {
+  "id": "exerciseOrProblem03-2",
+  "level": "2",
+  "url": "exerciseOrProblem03.html#exerciseOrProblem03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "mathematicalSymbolsInHeadings01",
   "level": "1",
   "url": "mathematicalSymbolsInHeadings01.html",
   "type": "Section",
   "number": "35.1",
-  "title": "I am trying to create tables where the headings are mathematical symbols, e.g. <code class=\"code-inline tex2jax_ignore\">$\\times 2$ & $+4$ & $\\div 2$<\/code>.  The times and the plus are replaced by the correct symbols, but the div just prints the word \"div\" instead of the division symbol.  Any suggestions?",
+  "title": "I am trying to create tables where the headings are mathematical symbols, e.g. <code class=\"code-inline tex2jax_ignore\">$\\times 2$ &amp; $+4$ &amp; $\\div 2$<\/code>.  The times and the plus are replaced by the correct symbols, but the div just prints the word \"div\" instead of the division symbol.  Any suggestions?",
   "body": " I am trying to create tables where the headings are mathematical symbols, e.g. $\\times 2$ & $+4$ & $\\div 2$ . The times and the plus are replaced by the correct symbols, but the div just prints the word \"div\" instead of the division symbol. Any suggestions?  This is probably because the meaning of the \\div macro has been changed in our macros for the multivariable book, as in \\div, \\grad, and \\curl . So you have to define another macro that accesses this symbol. You can do this by putting  \\mathchardef\\mydiv=\"3204  in the preamble of your file. Then the macro \\mydiv will give the division symbol. Of course, you can use any abbreviation you want instead of mydiv, as long as it's not already defined.  However, if you are using the Algebra macros, via \\asformt{ALGEBRA} , \\div produces the division symbol.  "
+},
+{
+  "id": "mathematicalSymbolsInHeadings01-2",
+  "level": "2",
+  "url": "mathematicalSymbolsInHeadings01.html#mathematicalSymbolsInHeadings01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "This is probably because the meaning of the \\div macro has been changed in our macros for the multivariable book, as in \\div, \\grad, and \\curl . So you have to define another macro that accesses this symbol. You can do this by putting "
+},
+{
+  "id": "mathematicalSymbolsInHeadings01-3",
+  "level": "2",
+  "url": "mathematicalSymbolsInHeadings01.html#mathematicalSymbolsInHeadings01-3",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\mathchardef\\mydiv=\"3204 "
+},
+{
+  "id": "mathematicalSymbolsInHeadings01-4",
+  "level": "2",
+  "url": "mathematicalSymbolsInHeadings01.html#mathematicalSymbolsInHeadings01-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "in the preamble of your file. Then the macro \\mydiv will give the division symbol. Of course, you can use any abbreviation you want instead of mydiv, as long as it's not already defined. "
+},
+{
+  "id": "mathematicalSymbolsInHeadings01-5",
+  "level": "2",
+  "url": "mathematicalSymbolsInHeadings01.html#mathematicalSymbolsInHeadings01-5",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "However, if you are using the Algebra macros, via \\asformt{ALGEBRA} , \\div produces the division symbol. "
 },
 {
   "id": "printSpecialCharacters01",
@@ -2463,8 +8088,17 @@ var ptx_lunr_docs = [
   "url": "printSpecialCharacters01.html",
   "type": "Section",
   "number": "35.2",
-  "title": "How do I print the TeX special characters: <code class=\"code-inline tex2jax_ignore\">$, &, %, #, _,{, and }<\/code>?",
+  "title": "How do I print the TeX special characters: <code class=\"code-inline tex2jax_ignore\">$, &amp;, %, #, _,{, and }<\/code>?",
   "body": " How do I print the TeX special characters: $, &, %, #, _,{, and } ?  Precede each of them by the \\ symbol. Thus, \\$, \\&, \\%, \\#, \\_, \\{, and \\}.  "
+},
+{
+  "id": "printSpecialCharacters01-2",
+  "level": "2",
+  "url": "printSpecialCharacters01.html#printSpecialCharacters01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Precede each of them by the \\ symbol. Thus, \\$, \\&, \\%, \\#, \\_, \\{, and \\}. "
 },
 {
   "id": "commandsToGetDivGradCurl01",
@@ -2494,6 +8128,15 @@ var ptx_lunr_docs = [
   "body": " How do I enter the degree symbol, for example 76 degrees Fahrenheit?   Follow this link   "
 },
 {
+  "id": "degreeSymbol03-2",
+  "level": "2",
+  "url": "degreeSymbol03.html#degreeSymbol03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "Kelvin",
   "level": "1",
   "url": "Kelvin.html",
@@ -2501,6 +8144,15 @@ var ptx_lunr_docs = [
   "number": "35.5",
   "title": "Do I use degrees Kelvin, or just Kelvin?",
   "body": " Do I use degrees Kelvin, or just Kelvin?  The correct usage is to omit the word \"degrees\". Then Kelvin is abbreviated K, but if spelled out is written \"kelvins\". Thus 76 K and 76 kelvins are correct. See http:\/\/mathforum.org\/library\/drmath\/view\/60409.html .  "
+},
+{
+  "id": "Kelvin-2",
+  "level": "2",
+  "url": "Kelvin.html#Kelvin-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The correct usage is to omit the word \"degrees\". Then Kelvin is abbreviated K, but if spelled out is written \"kelvins\". Thus 76 K and 76 kelvins are correct. See http:\/\/mathforum.org\/library\/drmath\/view\/60409.html . "
 },
 {
   "id": "poundSymbol01",
@@ -2512,6 +8164,15 @@ var ptx_lunr_docs = [
   "body": " How do I enter the UK counterpart of $, namely the UK pound symbol, £?   \\pounds   "
 },
 {
+  "id": "poundSymbol01-2",
+  "level": "2",
+  "url": "poundSymbol01.html#poundSymbol01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " \\pounds  "
+},
+{
   "id": "equalsSymbol",
   "level": "1",
   "url": "equalsSymbol.html",
@@ -2519,6 +8180,15 @@ var ptx_lunr_docs = [
   "number": "35.7",
   "title": "How do I enter the equals symbol with a question mark over it?",
   "body": " How do I enter the equals symbol with a question mark over it?  Use $\\qeq$. However, you must have our latest macros for this to work.  "
+},
+{
+  "id": "equalsSymbol-2",
+  "level": "2",
+  "url": "equalsSymbol.html#equalsSymbol-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Use $\\qeq$. However, you must have our latest macros for this to work. "
 },
 {
   "id": "rightArrow04",
@@ -2530,6 +8200,15 @@ var ptx_lunr_docs = [
   "body": " May I use the implies symbol ==> ( $\\Rightarrow$ )?   Follow this link   "
 },
 {
+  "id": "rightArrow04-2",
+  "level": "2",
+  "url": "rightArrow04.html#rightArrow04-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "subscripts05",
   "level": "1",
   "url": "subscripts05.html",
@@ -2537,6 +8216,15 @@ var ptx_lunr_docs = [
   "number": "35.9",
   "title": "When I use  word subscripts (e.g. $r_{in}$ or $r_{\\hbox{in}}$) the word \"in\" is either in italics or too large.  What should I be using?",
   "body": " When I use word subscripts (e.g. $r_{in}$ or $r_{\\hbox{in}}$) the word \"in\" is either in italics or too large. What should I be using?   Follow this link   "
+},
+{
+  "id": "subscripts05-2",
+  "level": "2",
+  "url": "subscripts05.html#subscripts05-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "tableFormat02",
@@ -2548,6 +8236,15 @@ var ptx_lunr_docs = [
   "body": " What is the preferred formatting for a table?   Follow this link   "
 },
 {
+  "id": "tableFormat02-2",
+  "level": "2",
+  "url": "tableFormat02.html#tableFormat02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "figuresAndTablesLabel03",
   "level": "1",
   "url": "figuresAndTablesLabel03.html",
@@ -2555,6 +8252,15 @@ var ptx_lunr_docs = [
   "number": "36.2",
   "title": "What is the preferred convention for labelling figures and tables in Exercises?",
   "body": " What is the preferred convention for labelling figures and tables in Exercises?   Follow this link   "
+},
+{
+  "id": "figuresAndTablesLabel03-2",
+  "level": "2",
+  "url": "figuresAndTablesLabel03.html#figuresAndTablesLabel03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "tableLabels03",
@@ -2566,6 +8272,15 @@ var ptx_lunr_docs = [
   "body": " When do I put labels (numbers) and captions on tables?   Follow this link   "
 },
 {
+  "id": "tableLabels03-2",
+  "level": "2",
+  "url": "tableLabels03.html#tableLabels03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "insertEntriesIntoTable",
   "level": "1",
   "url": "insertEntriesIntoTable.html",
@@ -2573,6 +8288,24 @@ var ptx_lunr_docs = [
   "number": "36.4",
   "title": "Is there an easier way to insert entries into a table?",
   "body": " Is there an easier way to insert entries into a table?   Fix URL   If you are using WinEdt you can install a plugin that helps with this. However, this only creates the entries of the table, not the pieces that surround it. These you must add by hand. See What is the preferred formatting for a table? for the correct format.  "
+},
+{
+  "id": "insertEntriesIntoTable-2-1",
+  "level": "2",
+  "url": "insertEntriesIntoTable.html#insertEntriesIntoTable-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Fix URL "
+},
+{
+  "id": "insertEntriesIntoTable-3",
+  "level": "2",
+  "url": "insertEntriesIntoTable.html#insertEntriesIntoTable-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you are using WinEdt you can install a plugin that helps with this. However, this only creates the entries of the table, not the pieces that surround it. These you must add by hand. See What is the preferred formatting for a table? for the correct format. "
 },
 {
   "id": "captionsOnATable01",
@@ -2584,6 +8317,15 @@ var ptx_lunr_docs = [
   "body": " Should I put a caption on a table?  If the table is in the text then it must have a caption. If it is in the question part of an exercise\/problem then it must not. See When do I put labels (numbers) and captions on tables? and What is the preferred formatting for a table? .  "
 },
 {
+  "id": "captionsOnATable01-2",
+  "level": "2",
+  "url": "captionsOnATable01.html#captionsOnATable01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If the table is in the text then it must have a caption. If it is in the question part of an exercise\/problem then it must not. See When do I put labels (numbers) and captions on tables? and What is the preferred formatting for a table? . "
+},
+{
   "id": "tableWidth",
   "level": "1",
   "url": "tableWidth.html",
@@ -2591,6 +8333,33 @@ var ptx_lunr_docs = [
   "number": "36.6",
   "title": "How wide can I make a table?",
   "body": " How wide can I make a table?  Tables in the exercises should be no wider that 3 inches; in the text no wider that 6 inches. To reduce a table to fit, either make it less wide by deleting part of it, or divide it into multiple lines along the lines of the following multi-row table.  \\begin{calctabular}{l|c|c|c|c|c|c|c} Year & 1954 & 1954 & 1957 & 1958 & 1962 & 1964 & 1965 \\\\ \\hline Time (min:sec) & 3:59.4 & 3:58.0 & 3:57.2 & 3:54.5 & 3:54.4 & 3:54.1 & 3:53.6 \\\\ \\hline\\hline\\hline\\hline Year & 1966 & 1967 & 1975 & 1975 & 1979 & 1980 & \\\\ \\hline Time (min:sec) & 3:51.3 & 3:51.1 & 3:51.0 & 3:49.4 & 3:49.0 & 3:48.8 & \\\\ \\hline\\hline\\hline\\hline Year & 1981 & 1981 & 1981 & 1985 & 1993 & 1999 & \\\\ \\hline Time (min:sec) & 3:48.53 & 3:48.40 & 3:47.33 & 3:46.32 & 3:44.39 & 3:43.13 & \\end{calctabular}  Notice that when there an uneven number of entries, the blank entries are placed at the end of the rows, starting from the last row.  "
+},
+{
+  "id": "tableWidth-2",
+  "level": "2",
+  "url": "tableWidth.html#tableWidth-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Tables in the exercises should be no wider that 3 inches; in the text no wider that 6 inches. To reduce a table to fit, either make it less wide by deleting part of it, or divide it into multiple lines along the lines of the following multi-row table. "
+},
+{
+  "id": "tableWidth-3",
+  "level": "2",
+  "url": "tableWidth.html#tableWidth-3",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{calctabular}{l|c|c|c|c|c|c|c} Year & 1954 & 1954 & 1957 & 1958 & 1962 & 1964 & 1965 \\\\ \\hline Time (min:sec) & 3:59.4 & 3:58.0 & 3:57.2 & 3:54.5 & 3:54.4 & 3:54.1 & 3:53.6 \\\\ \\hline\\hline\\hline\\hline Year & 1966 & 1967 & 1975 & 1975 & 1979 & 1980 & \\\\ \\hline Time (min:sec) & 3:51.3 & 3:51.1 & 3:51.0 & 3:49.4 & 3:49.0 & 3:48.8 & \\\\ \\hline\\hline\\hline\\hline Year & 1981 & 1981 & 1981 & 1985 & 1993 & 1999 & \\\\ \\hline Time (min:sec) & 3:48.53 & 3:48.40 & 3:47.33 & 3:46.32 & 3:44.39 & 3:43.13 & \\end{calctabular} "
+},
+{
+  "id": "tableWidth-4",
+  "level": "2",
+  "url": "tableWidth.html#tableWidth-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Notice that when there an uneven number of entries, the blank entries are placed at the end of the rows, starting from the last row. "
 },
 {
   "id": "hardCodingReference04",
@@ -2602,6 +8371,15 @@ var ptx_lunr_docs = [
   "body": " May I reference an example, figure, or table, by hard coding the reference (e.g., Example 5 instead of Example~\\ref{blahblah} )?   Follow this link   "
 },
 {
+  "id": "hardCodingReference04-2",
+  "level": "2",
+  "url": "hardCodingReference04.html#hardCodingReference04-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "CrossReferencePageNumber01",
   "level": "1",
   "url": "CrossReferencePageNumber01.html",
@@ -2609,6 +8387,24 @@ var ptx_lunr_docs = [
   "number": "36.8",
   "title": "How do I cross reference an object using a page number?",
   "body": " How do I cross reference an object using a page number?  If the object already has a referencing label (e.g., a table, figure, example usually does) called table2 , say, use page~\\pageref{table2} . Note the p in page is lower case.  If you need to put a label on an object, say a definition, that does not usually have one, put \\label{page:linear} on that page, and, then put page~\\pageref{page:linear} on the page where you want the cross reference to occur.  "
+},
+{
+  "id": "CrossReferencePageNumber01-2",
+  "level": "2",
+  "url": "CrossReferencePageNumber01.html#CrossReferencePageNumber01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If the object already has a referencing label (e.g., a table, figure, example usually does) called table2 , say, use page~\\pageref{table2} . Note the p in page is lower case. "
+},
+{
+  "id": "CrossReferencePageNumber01-3",
+  "level": "2",
+  "url": "CrossReferencePageNumber01.html#CrossReferencePageNumber01-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you need to put a label on an object, say a definition, that does not usually have one, put \\label{page:linear} on that page, and, then put page~\\pageref{page:linear} on the page where you want the cross reference to occur. "
 },
 {
   "id": "asFormat01",
@@ -2620,6 +8416,15 @@ var ptx_lunr_docs = [
   "body": " What argument should I use in \\asformat{} ?  The argument depends on the book you are contributing to.      Book    Argument     Algebra  ALGEBRA    Precalc  PRECALC    Applied  BUS    Single  CALC    Multi  MULTI    Combined  COMBO     For examples of its use, see I've installed and tested the algebra macros. Is there anything else I should do? . This list is not complete - there are others, for things like solutions' manuals, teacher's manuals, etc.  "
 },
 {
+  "id": "asFormat01-2",
+  "level": "2",
+  "url": "asFormat01.html#asFormat01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The argument depends on the book you are contributing to. "
+},
+{
   "id": "asFormat01-3",
   "level": "2",
   "url": "asFormat01.html#asFormat01-3",
@@ -2627,6 +8432,15 @@ var ptx_lunr_docs = [
   "number": "37.1.1",
   "title": "",
   "body": "    Book    Argument     Algebra  ALGEBRA    Precalc  PRECALC    Applied  BUS    Single  CALC    Multi  MULTI    Combined  COMBO    "
+},
+{
+  "id": "asFormat01-4",
+  "level": "2",
+  "url": "asFormat01.html#asFormat01-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "For examples of its use, see I've installed and tested the algebra macros. Is there anything else I should do? . This list is not complete - there are others, for things like solutions' manuals, teacher's manuals, etc. "
 },
 {
   "id": "StayfigOrFakefig03",
@@ -2638,6 +8452,15 @@ var ptx_lunr_docs = [
   "body": " What is the difference between stayfig and fakefig ?   Follow this link   "
 },
 {
+  "id": "StayfigOrFakefig03-2",
+  "level": "2",
+  "url": "StayfigOrFakefig03.html#StayfigOrFakefig03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "texCommandsAbbreviation02",
   "level": "1",
   "url": "texCommandsAbbreviation02.html",
@@ -2645,6 +8468,15 @@ var ptx_lunr_docs = [
   "number": "37.3",
   "title": "Which TeX commands can I abbreviate?",
   "body": " Which TeX commands can I abbreviate?   Follow this link   "
+},
+{
+  "id": "texCommandsAbbreviation02-2",
+  "level": "2",
+  "url": "texCommandsAbbreviation02.html#texCommandsAbbreviation02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "formatExercisesFiles03",
@@ -2656,6 +8488,15 @@ var ptx_lunr_docs = [
   "body": " What is the correct format and naming convention for exercise files?   Follow this link   "
 },
 {
+  "id": "formatExercisesFiles03-2",
+  "level": "2",
+  "url": "formatExercisesFiles03.html#formatExercisesFiles03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "collectionOfExercises02",
   "level": "1",
   "url": "collectionOfExercises02.html",
@@ -2663,6 +8504,15 @@ var ptx_lunr_docs = [
   "number": "38.2",
   "title": "How do I put together a collection of exercises?",
   "body": " How do I put together a collection of exercises?   Follow this link   "
+},
+{
+  "id": "collectionOfExercises02-2",
+  "level": "2",
+  "url": "collectionOfExercises02.html#collectionOfExercises02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "qset03",
@@ -2674,6 +8524,15 @@ var ptx_lunr_docs = [
   "body": " In a collection of exercises, how do I give a subset of the exercises the same set of instructions, called a QSET?   Follow this link   "
 },
 {
+  "id": "qset03-2",
+  "level": "2",
+  "url": "qset03.html#qset03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "creatingChapter02",
   "level": "1",
   "url": "creatingChapter02.html",
@@ -2681,6 +8540,15 @@ var ptx_lunr_docs = [
   "number": "38.4",
   "title": "How do I create a Chapter?",
   "body": " How do I create a Chapter?   Follow this link   "
+},
+{
+  "id": "creatingChapter02-2",
+  "level": "2",
+  "url": "creatingChapter02.html#creatingChapter02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "exampleInChapter01",
@@ -2692,6 +8560,42 @@ var ptx_lunr_docs = [
   "body": " How do I put an Example in a Chapter?  \\begin{example}\\label{ex:sec5-5:example3:dsl:13FEB2005} Content of the example. \\end{example} \\begin{solution} Put solution here. \\end{solution}  where ex:sec5-5:example3:dsl:13FEB2005 can be whatever label you please, but it must start with ex: and it must be unique. Using the date along with its location for the label is recommended because this is likely to be unique.   If you want to reference this Example, you do so by something like  Example~\\ref{ex:sec5-5:example3:dsl:13FEB2005} shows how to create an example in the book.  "
 },
 {
+  "id": "exampleInChapter01-2",
+  "level": "2",
+  "url": "exampleInChapter01.html#exampleInChapter01-2",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "\\begin{example}\\label{ex:sec5-5:example3:dsl:13FEB2005} Content of the example. \\end{example} \\begin{solution} Put solution here. \\end{solution} "
+},
+{
+  "id": "exampleInChapter01-3",
+  "level": "2",
+  "url": "exampleInChapter01.html#exampleInChapter01-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "where ex:sec5-5:example3:dsl:13FEB2005 can be whatever label you please, but it must start with ex: and it must be unique. Using the date along with its location for the label is recommended because this is likely to be unique.  "
+},
+{
+  "id": "exampleInChapter01-4",
+  "level": "2",
+  "url": "exampleInChapter01.html#exampleInChapter01-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you want to reference this Example, you do so by something like "
+},
+{
+  "id": "exampleInChapter01-5",
+  "level": "2",
+  "url": "exampleInChapter01.html#exampleInChapter01-5",
+  "type": "Code Block",
+  "number": "",
+  "title": "",
+  "body": "Example~\\ref{ex:sec5-5:example3:dsl:13FEB2005} shows how to create an example in the book. "
+},
+{
   "id": "quickPointersOnTeX01",
   "level": "1",
   "url": "quickPointersOnTeX01.html",
@@ -2699,6 +8603,105 @@ var ptx_lunr_docs = [
   "number": "38.6",
   "title": "What are some quick pointers on TeX?",
   "body": " What are some quick pointers on TeX?    Producing a typeset document using TeX is a three-stage process. You first create the original TeX file, the input file. Then you compile it (or TeX it) to produce a DVI file. Finally you look at the DVI file, either previewing it on screen or as a printed document. What you see on the screen should be the same as the printed version. Thus, you do not see the document in its final form while you are creating the original file.    The original TeX document is a plaintext file, with the extension \"tex\". A text editor (like WinEdt or Emacs) is used to create and save TeX files rather than a WYSIWIG word-processor program (like MS Word).    In TeX you type both the text and the commands that do the formatting in plaintext. At this stage you cannot see the effect of these formatting commands, and so, to an untrained eye, the plaintext may appear quite confusing.    Any formatting of the text that you do by hand in your text editor is ignored by TeX. For example, multiple spaces, tabs, and line breaks are all converted to a single space before typesetting. However, a blank line generates a new paragraph, whereas spaces at the beginning of a line are ignored. Never try to format a TeX document by using hard spaces.    Math mode is used to enter formulas. If the formula is to be on the same line as the text (called inline) then $E=mc^{2}$ is a famous equation. If the same formula is to be on its own line (called display math) then this would be formatted as $$E=mc^{2}$$ . (However, please see this .) The spacing of these is controlled completely by TeX. Adding spaces to either inline or display math, for example, $E = m c^{2}$ , has no impact.    There are some characters that TeX uses in special ways. For example, $ , which is used to enter inline math, and \\ , which is used as the start of a command. Another character that is useful is % , which is used at the start of a comment, and then the remainder of the line is ignored in the typesetting process.    When in math mode, math functions such as sin, log, etc., are usually entered by \\sin , \\log , etc.    There are four different types of dashes: - produces a hyphen (as in $y$-intercept ), $-$ produces a minus sign (as in $x-y$ ), -- produces an en-dash (as in 1990--2000), and --- produces an em-dash (the dash used for punctuation). None of these have spaces on either side.    Single quotation marks are produced by using the prime key (') and the backprime key (`). Double quotation marks are produced by using these characters twice ('' and ``). Never use the double quotation key to enter double quotations.    The command \\ldots generates ellipses (three dots on a line), whereas \\cdots generates three dots in the center of the line, aligned with a + or - sign. Thus, $a, \\ldots, c$ and $a + \\cdots + c$ would be the usual way of entering these formulas.    For some simple math formulas, see What do a few simple math formulas look like in TeX? .    "
+},
+{
+  "id": "quickPointersOnTeX01-2-1-1",
+  "level": "2",
+  "url": "quickPointersOnTeX01.html#quickPointersOnTeX01-2-1-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Producing a typeset document using TeX is a three-stage process. You first create the original TeX file, the input file. Then you compile it (or TeX it) to produce a DVI file. Finally you look at the DVI file, either previewing it on screen or as a printed document. What you see on the screen should be the same as the printed version. Thus, you do not see the document in its final form while you are creating the original file. "
+},
+{
+  "id": "quickPointersOnTeX01-2-2-1",
+  "level": "2",
+  "url": "quickPointersOnTeX01.html#quickPointersOnTeX01-2-2-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The original TeX document is a plaintext file, with the extension \"tex\". A text editor (like WinEdt or Emacs) is used to create and save TeX files rather than a WYSIWIG word-processor program (like MS Word). "
+},
+{
+  "id": "quickPointersOnTeX01-2-3-1",
+  "level": "2",
+  "url": "quickPointersOnTeX01.html#quickPointersOnTeX01-2-3-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "In TeX you type both the text and the commands that do the formatting in plaintext. At this stage you cannot see the effect of these formatting commands, and so, to an untrained eye, the plaintext may appear quite confusing. "
+},
+{
+  "id": "quickPointersOnTeX01-2-4-1",
+  "level": "2",
+  "url": "quickPointersOnTeX01.html#quickPointersOnTeX01-2-4-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Any formatting of the text that you do by hand in your text editor is ignored by TeX. For example, multiple spaces, tabs, and line breaks are all converted to a single space before typesetting. However, a blank line generates a new paragraph, whereas spaces at the beginning of a line are ignored. Never try to format a TeX document by using hard spaces. "
+},
+{
+  "id": "quickPointersOnTeX01-2-5-1",
+  "level": "2",
+  "url": "quickPointersOnTeX01.html#quickPointersOnTeX01-2-5-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Math mode is used to enter formulas. If the formula is to be on the same line as the text (called inline) then $E=mc^{2}$ is a famous equation. If the same formula is to be on its own line (called display math) then this would be formatted as $$E=mc^{2}$$ . (However, please see this .) The spacing of these is controlled completely by TeX. Adding spaces to either inline or display math, for example, $E = m c^{2}$ , has no impact. "
+},
+{
+  "id": "quickPointersOnTeX01-2-6-1",
+  "level": "2",
+  "url": "quickPointersOnTeX01.html#quickPointersOnTeX01-2-6-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "There are some characters that TeX uses in special ways. For example, $ , which is used to enter inline math, and \\ , which is used as the start of a command. Another character that is useful is % , which is used at the start of a comment, and then the remainder of the line is ignored in the typesetting process. "
+},
+{
+  "id": "quickPointersOnTeX01-2-7-1",
+  "level": "2",
+  "url": "quickPointersOnTeX01.html#quickPointersOnTeX01-2-7-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "When in math mode, math functions such as sin, log, etc., are usually entered by \\sin , \\log , etc. "
+},
+{
+  "id": "quickPointersOnTeX01-2-8-1",
+  "level": "2",
+  "url": "quickPointersOnTeX01.html#quickPointersOnTeX01-2-8-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "There are four different types of dashes: - produces a hyphen (as in $y$-intercept ), $-$ produces a minus sign (as in $x-y$ ), -- produces an en-dash (as in 1990--2000), and --- produces an em-dash (the dash used for punctuation). None of these have spaces on either side. "
+},
+{
+  "id": "quickPointersOnTeX01-2-9-1",
+  "level": "2",
+  "url": "quickPointersOnTeX01.html#quickPointersOnTeX01-2-9-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Single quotation marks are produced by using the prime key (') and the backprime key (`). Double quotation marks are produced by using these characters twice ('' and ``). Never use the double quotation key to enter double quotations. "
+},
+{
+  "id": "quickPointersOnTeX01-2-10-1",
+  "level": "2",
+  "url": "quickPointersOnTeX01.html#quickPointersOnTeX01-2-10-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "The command \\ldots generates ellipses (three dots on a line), whereas \\cdots generates three dots in the center of the line, aligned with a + or - sign. Thus, $a, \\ldots, c$ and $a + \\cdots + c$ would be the usual way of entering these formulas. "
+},
+{
+  "id": "quickPointersOnTeX01-2-11-1",
+  "level": "2",
+  "url": "quickPointersOnTeX01.html#quickPointersOnTeX01-2-11-1",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "For some simple math formulas, see What do a few simple math formulas look like in TeX? . "
 },
 {
   "id": "TeXmathFormulas01",
@@ -2710,6 +8713,15 @@ var ptx_lunr_docs = [
   "body": " What do a few simple math formulas look like in TeX?  Math formulas that are inline are surrounded by $ signs; math formulas that are centered on their own lines (display math) are surrounded by $$ signs.      To produce this    Enter this        $a+b$       $x^{2}\\geq 0$        $x_1 > \\pi$        $x \\ne 0$        $\\sqrt{x}+ \\sqrt[3]{x}$        $a\\times b + a\\cdot b \\to \\infty$       $\\frac{\\sin x}{x} \\pm 1$        $$ \\frac{\\sin x}{x} \\pm 1 $$        $x_1,\\ldots,x_n$                   $$ x_1+\\cdots+x_n=\\sum_{i=1}^{n}x_i $$      Search online for a more extensive list of TeX examples.  "
 },
 {
+  "id": "TeXmathFormulas01-2",
+  "level": "2",
+  "url": "TeXmathFormulas01.html#TeXmathFormulas01-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Math formulas that are inline are surrounded by $ signs; math formulas that are centered on their own lines (display math) are surrounded by $$ signs. "
+},
+{
   "id": "TeXmathFormulas01-3",
   "level": "2",
   "url": "TeXmathFormulas01.html#TeXmathFormulas01-3",
@@ -2717,6 +8729,15 @@ var ptx_lunr_docs = [
   "number": "38.7.1",
   "title": "",
   "body": "    To produce this    Enter this        $a+b$       $x^{2}\\geq 0$        $x_1 > \\pi$        $x \\ne 0$        $\\sqrt{x}+ \\sqrt[3]{x}$        $a\\times b + a\\cdot b \\to \\infty$       $\\frac{\\sin x}{x} \\pm 1$        $$ \\frac{\\sin x}{x} \\pm 1 $$        $x_1,\\ldots,x_n$                   $$ x_1+\\cdots+x_n=\\sum_{i=1}^{n}x_i $$     "
+},
+{
+  "id": "TeXmathFormulas01-4",
+  "level": "2",
+  "url": "TeXmathFormulas01.html#TeXmathFormulas01-4",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Search online for a more extensive list of TeX examples. "
 },
 {
   "id": "dontEnoughTex03",
@@ -2728,6 +8749,15 @@ var ptx_lunr_docs = [
   "body": " I know what I want to say, but I don't know enough TeX to express it. What do I do?   Follow this link   "
 },
 {
+  "id": "dontEnoughTex03-2",
+  "level": "2",
+  "url": "dontEnoughTex03.html#dontEnoughTex03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "doesntTex02",
   "level": "1",
   "url": "doesntTex02.html",
@@ -2735,6 +8765,15 @@ var ptx_lunr_docs = [
   "number": "38.9",
   "title": "The TeX file I created does not TeX. What do I do?",
   "body": " The TeX file I created does not TeX. What do I do?   Follow this link   "
+},
+{
+  "id": "doesntTex02-2",
+  "level": "2",
+  "url": "doesntTex02.html#doesntTex02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "hardCodingReference02",
@@ -2746,6 +8785,15 @@ var ptx_lunr_docs = [
   "body": " May I reference an example, figure, or table, by hard coding the reference (e.g., Example 5 instead of Example~\\ref{blahblah} )?   Follow this link   "
 },
 {
+  "id": "hardCodingReference02-2",
+  "level": "2",
+  "url": "hardCodingReference02.html#hardCodingReference02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "algebraMacros",
   "level": "1",
   "url": "algebraMacros.html",
@@ -2753,6 +8801,15 @@ var ptx_lunr_docs = [
   "number": "38.11",
   "title": "I’ve installed and tested the algebra macros. Is there anything else I should do?",
   "body": " I've installed and tested the algebra macros. Is there anything else I should do?  Yes. In your master TeX files, replace all instances of \\asformat{MULTI} with \\asformat{ALGEBRA} .  "
+},
+{
+  "id": "algebraMacros-2",
+  "level": "2",
+  "url": "algebraMacros.html#algebraMacros-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "Yes. In your master TeX files, replace all instances of \\asformat{MULTI} with \\asformat{ALGEBRA} . "
 },
 {
   "id": "asFormat02",
@@ -2764,6 +8821,15 @@ var ptx_lunr_docs = [
   "body": " What argument should I use in \\asformat{} ?   Follow this link   "
 },
 {
+  "id": "asFormat02-2",
+  "level": "2",
+  "url": "asFormat02.html#asFormat02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "quickPointersOnTeX02",
   "level": "1",
   "url": "quickPointersOnTeX02.html",
@@ -2771,6 +8837,15 @@ var ptx_lunr_docs = [
   "number": "39.1",
   "title": "What are some quick pointers on TeX?",
   "body": " What are some quick pointers on TeX?   Follow this link   "
+},
+{
+  "id": "quickPointersOnTeX02-2",
+  "level": "2",
+  "url": "quickPointersOnTeX02.html#quickPointersOnTeX02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "TeXmathFormulas02",
@@ -2782,6 +8857,15 @@ var ptx_lunr_docs = [
   "body": " What do a few simple math formulas look like in TeX?   Follow this link   "
 },
 {
+  "id": "TeXmathFormulas02-2",
+  "level": "2",
+  "url": "TeXmathFormulas02.html#TeXmathFormulas02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "sequenceOfEquations02",
   "level": "1",
   "url": "sequenceOfEquations02.html",
@@ -2789,6 +8873,15 @@ var ptx_lunr_docs = [
   "number": "39.3",
   "title": "I want to create a sequence of equations, one below the other, with the equal signs lined up.  How do I do that?",
   "body": " I want to create a sequence of equations, one below the other, with the equal signs lined up. How do I do that?   Follow this link   "
+},
+{
+  "id": "sequenceOfEquations02-2",
+  "level": "2",
+  "url": "sequenceOfEquations02.html#sequenceOfEquations02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "piecewiseFunction02",
@@ -2800,6 +8893,15 @@ var ptx_lunr_docs = [
   "body": " What command do I use in TeX to construct a piecewise defined function?   Follow this link   "
 },
 {
+  "id": "piecewiseFunction02-2",
+  "level": "2",
+  "url": "piecewiseFunction02.html#piecewiseFunction02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "displayMathStyle02",
   "level": "1",
   "url": "displayMathStyle02.html",
@@ -2807,6 +8909,15 @@ var ptx_lunr_docs = [
   "number": "39.5",
   "title": "How can I use the display math style without putting the expression on a new line?",
   "body": " How can I use the display math style without putting the expression on a new line?   Follow this link   "
+},
+{
+  "id": "displayMathStyle02-2",
+  "level": "2",
+  "url": "displayMathStyle02.html#displayMathStyle02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "displaystyle03",
@@ -2818,6 +8929,15 @@ var ptx_lunr_docs = [
   "body": " Can I use \\displaystyle in display math style or in eqnarray* ?   Follow this link   "
 },
 {
+  "id": "displaystyle03-2",
+  "level": "2",
+  "url": "displaystyle03.html#displaystyle03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "shouldKnowDisplayStyle03",
   "level": "1",
   "url": "shouldKnowDisplayStyle03.html",
@@ -2825,6 +8945,15 @@ var ptx_lunr_docs = [
   "number": "39.7",
   "title": "Is there anything I should know if I use display math style (that is, when an expression is on its own line)?",
   "body": " Is there anything I should know if I use display math style (that is, when an expression is on its own line)?   Follow this link   "
+},
+{
+  "id": "shouldKnowDisplayStyle03-2",
+  "level": "2",
+  "url": "shouldKnowDisplayStyle03.html#shouldKnowDisplayStyle03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "integrals03",
@@ -2836,6 +8965,15 @@ var ptx_lunr_docs = [
   "body": " If I use $\\int f(x) dx$ , to construct the integral of f(x), the f(x) and dx are too close. What should I do?   Follow this link   "
 },
 {
+  "id": "integrals03-2",
+  "level": "2",
+  "url": "integrals03.html#integrals03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "vectorsArrow02",
   "level": "1",
   "url": "vectorsArrow02.html",
@@ -2843,6 +8981,15 @@ var ptx_lunr_docs = [
   "number": "39.9",
   "title": "Do I use <code class=\"code-inline tex2jax_ignore\">$\\vec F$<\/code> or <code class=\"code-inline tex2jax_ignore\">$\\overrightarrow{F}$<\/code> to put an arrow on top of the vector F?",
   "body": " Do I use $\\vec F$ or $\\overrightarrow{F}$ to put an arrow on top of the vector F?   Follow this link   "
+},
+{
+  "id": "vectorsArrow02-2",
+  "level": "2",
+  "url": "vectorsArrow02.html#vectorsArrow02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "vectorSubscript03",
@@ -2854,6 +9001,15 @@ var ptx_lunr_docs = [
   "body": " If I use $\\vec F_{M}$ or $\\overrightarrow{F}_M$ a huge gap is left between the bottom of the F and the M, which looks wrong. What should I do?   Follow this link   "
 },
 {
+  "id": "vectorSubscript03-2",
+  "level": "2",
+  "url": "vectorSubscript03.html#vectorSubscript03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "commonTexMistakes03",
   "level": "1",
   "url": "commonTexMistakes03.html",
@@ -2861,6 +9017,15 @@ var ptx_lunr_docs = [
   "number": "39.11",
   "title": "Is there a list of common TeX mistakes?",
   "body": " Is there a list of common TeX mistakes?   Follow this link   "
+},
+{
+  "id": "commonTexMistakes03-2",
+  "level": "2",
+  "url": "commonTexMistakes03.html#commonTexMistakes03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "verticalBar02",
@@ -2872,6 +9037,15 @@ var ptx_lunr_docs = [
   "body": " When I TeX \\dsty \\left.\\arctan(x)\\right|_0^b the vertical bar isn't long enough. How can I get it taller?   Follow this link   "
 },
 {
+  "id": "verticalBar02-2",
+  "level": "2",
+  "url": "verticalBar02.html#verticalBar02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "textIntoEquation03",
   "level": "1",
   "url": "textIntoEquation03.html",
@@ -2879,6 +9053,15 @@ var ptx_lunr_docs = [
   "number": "39.13",
   "title": "How do I put text into an equation?",
   "body": " How do I put text into an equation?   Follow this link   "
+},
+{
+  "id": "textIntoEquation03-2",
+  "level": "2",
+  "url": "textIntoEquation03.html#textIntoEquation03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "quickPointersOnTeX03",
@@ -2890,6 +9073,15 @@ var ptx_lunr_docs = [
   "body": " What are some quick pointers on TeX?   Follow this link   "
 },
 {
+  "id": "quickPointersOnTeX03-2",
+  "level": "2",
+  "url": "quickPointersOnTeX03.html#quickPointersOnTeX03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "StayfigOrFakefig02",
   "level": "1",
   "url": "StayfigOrFakefig02.html",
@@ -2897,6 +9089,15 @@ var ptx_lunr_docs = [
   "number": "40.2",
   "title": "What is the difference between <code class=\"code-inline tex2jax_ignore\">stayfig<\/code> and <code class=\"code-inline tex2jax_ignore\">fakefig<\/code>?",
   "body": " What is the difference between stayfig and fakefig ?   Follow this link   "
+},
+{
+  "id": "StayfigOrFakefig02-2",
+  "level": "2",
+  "url": "StayfigOrFakefig02.html#StayfigOrFakefig02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "commonTexMistakes04",
@@ -2908,13 +9109,31 @@ var ptx_lunr_docs = [
   "body": " Is there a list of common TeX mistakes?   Follow this link   "
 },
 {
+  "id": "commonTexMistakes04-2",
+  "level": "2",
+  "url": "commonTexMistakes04.html#commonTexMistakes04-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "mathematicalSymbolsInHeadings02",
   "level": "1",
   "url": "mathematicalSymbolsInHeadings02.html",
   "type": "Section",
   "number": "40.4",
-  "title": "I am trying to create tables where the headings are mathematical symbols, e.g. <code class=\"code-inline tex2jax_ignore\">$\\times 2$ & $+4$ & $\\div 2$<\/code>.  The times and the plus are replaced by the correct symbols, but the div just prints the word \"div\" instead of the division symbol.  Any suggestions?",
+  "title": "I am trying to create tables where the headings are mathematical symbols, e.g. <code class=\"code-inline tex2jax_ignore\">$\\times 2$ &amp; $+4$ &amp; $\\div 2$<\/code>.  The times and the plus are replaced by the correct symbols, but the div just prints the word \"div\" instead of the division symbol.  Any suggestions?",
   "body": " I am trying to create tables where the headings are mathematical symbols, e.g. $\\times 2$ & $+4$ & $\\div 2$ . The times and the plus are replaced by the correct symbols, but the div just prints the word \"div\" instead of the division symbol. Any suggestions?   Follow this link   "
+},
+{
+  "id": "mathematicalSymbolsInHeadings02-2",
+  "level": "2",
+  "url": "mathematicalSymbolsInHeadings02.html#mathematicalSymbolsInHeadings02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "somethingInBox02",
@@ -2926,13 +9145,31 @@ var ptx_lunr_docs = [
   "body": " What command do I use in TeX to place something in a box, similar to page 2 in Calculus, 3rd Edition?   Follow this link   "
 },
 {
+  "id": "somethingInBox02-2",
+  "level": "2",
+  "url": "somethingInBox02.html#somethingInBox02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "printSpecialCharacters02",
   "level": "1",
   "url": "printSpecialCharacters02.html",
   "type": "Section",
   "number": "40.6",
-  "title": "How do I print the TeX special characters: <code class=\"code-inline tex2jax_ignore\">$, &, %, #, _,{, and }<\/code>?",
+  "title": "How do I print the TeX special characters: <code class=\"code-inline tex2jax_ignore\">$, &amp;, %, #, _,{, and }<\/code>?",
   "body": " How do I print the TeX special characters: $, &, %, #, _,{, and } ?   Follow this link   "
+},
+{
+  "id": "printSpecialCharacters02-2",
+  "level": "2",
+  "url": "printSpecialCharacters02.html#printSpecialCharacters02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "texCommandsAbbreviation03",
@@ -2944,6 +9181,15 @@ var ptx_lunr_docs = [
   "body": " Which TeX commands can I abbreviate?   Follow this link   "
 },
 {
+  "id": "texCommandsAbbreviation03-2",
+  "level": "2",
+  "url": "texCommandsAbbreviation03.html#texCommandsAbbreviation03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "insertEntryForTheIndex",
   "level": "1",
   "url": "insertEntryForTheIndex.html",
@@ -2951,6 +9197,24 @@ var ptx_lunr_docs = [
   "number": "40.8",
   "title": "How do I insert an entry for the index?",
   "body": " How do I insert an entry for the index?  If you are adding to an existing index, check to see which entry to use.  To the right of the word\/position to be indexed, place the command \\index{entry} where entry (in lower case) is the word in the index you want to refer to the position in the text. If the entry is to be indented under a sub-heading of a heading in the index, use \\index{heading!entry} .  "
+},
+{
+  "id": "insertEntryForTheIndex-2",
+  "level": "2",
+  "url": "insertEntryForTheIndex.html#insertEntryForTheIndex-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "If you are adding to an existing index, check to see which entry to use. "
+},
+{
+  "id": "insertEntryForTheIndex-3",
+  "level": "2",
+  "url": "insertEntryForTheIndex.html#insertEntryForTheIndex-3",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": "To the right of the word\/position to be indexed, place the command \\index{entry} where entry (in lower case) is the word in the index you want to refer to the position in the text. If the entry is to be indented under a sub-heading of a heading in the index, use \\index{heading!entry} . "
 },
 {
   "id": "footnote03",
@@ -2962,6 +9226,15 @@ var ptx_lunr_docs = [
   "body": " How do I insert a footnote?   Follow this link   "
 },
 {
+  "id": "footnote03-2",
+  "level": "2",
+  "url": "footnote03.html#footnote03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "boldface03",
   "level": "1",
   "url": "boldface03.html",
@@ -2969,6 +9242,15 @@ var ptx_lunr_docs = [
   "number": "40.10",
   "title": "How can I change the typeface to boldface?",
   "body": " How can I change the typeface to boldface?   Follow this link   "
+},
+{
+  "id": "boldface03-2",
+  "level": "2",
+  "url": "boldface03.html#boldface03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "typeSize03",
@@ -2980,6 +9262,15 @@ var ptx_lunr_docs = [
   "body": " How can I change the type size?   Follow this link   "
 },
 {
+  "id": "typeSize03-2",
+  "level": "2",
+  "url": "typeSize03.html#typeSize03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "spaceBetweenTwoLines02",
   "level": "1",
   "url": "spaceBetweenTwoLines02.html",
@@ -2987,6 +9278,15 @@ var ptx_lunr_docs = [
   "number": "40.12",
   "title": "How can I increase space between two lines?",
   "body": " How can I increase space between two lines?   Follow this link   "
+},
+{
+  "id": "spaceBetweenTwoLines02-2",
+  "level": "2",
+  "url": "spaceBetweenTwoLines02.html#spaceBetweenTwoLines02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "spaceBeforeAfterDashes03",
@@ -2998,6 +9298,15 @@ var ptx_lunr_docs = [
   "body": " Sometimes there is a space before or after my dashes (-), en-dashes (--), and em-dashes (---), and I don't want that. What do I do?   Follow this link   "
 },
 {
+  "id": "spaceBeforeAfterDashes03-2",
+  "level": "2",
+  "url": "spaceBeforeAfterDashes03.html#spaceBeforeAfterDashes03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "commandsToGetDivGradCurl02",
   "level": "1",
   "url": "commandsToGetDivGradCurl02.html",
@@ -3005,6 +9314,15 @@ var ptx_lunr_docs = [
   "number": "40.14",
   "title": "What commands do I use to get <em class=\"emphasis\">div<\/em>, <em class=\"emphasis\">grad<\/em>, and <em class=\"emphasis\">curl<\/em>?",
   "body": " What commands do I use to get div , grad , and curl ?   Follow this link   "
+},
+{
+  "id": "commandsToGetDivGradCurl02-2",
+  "level": "2",
+  "url": "commandsToGetDivGradCurl02.html#commandsToGetDivGradCurl02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "periodBetween03",
@@ -3016,6 +9334,15 @@ var ptx_lunr_docs = [
   "body": " When I TeX \"The difference is \\$0.01. \" there is a spacing problem involving the period between the two zeros. What do I do?   Follow this link   "
 },
 {
+  "id": "periodBetween03-2",
+  "level": "2",
+  "url": "periodBetween03.html#periodBetween03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "commentChunkTex02",
   "level": "1",
   "url": "commentChunkTex02.html",
@@ -3023,6 +9350,15 @@ var ptx_lunr_docs = [
   "number": "40.16",
   "title": "I want to comment out a large chunk of TeX, without deleting it.  Do I have to put % at the beginning of every line?",
   "body": " I want to comment out a large chunk of TeX, without deleting it. Do I have to put % at the beginning of every line?   Follow this link   "
+},
+{
+  "id": "commentChunkTex02-2",
+  "level": "2",
+  "url": "commentChunkTex02.html#commentChunkTex02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "missingDollarSign03",
@@ -3034,6 +9370,15 @@ var ptx_lunr_docs = [
   "body": " Why do I get an error message concerning missing $ when I try to TeX \"\\footnote{http:\/\/dr.pierce1.net\/PDF\/half_life.pdf, accessed on May 10, 2003.}\"?   Follow this link   "
 },
 {
+  "id": "missingDollarSign03-2",
+  "level": "2",
+  "url": "missingDollarSign03.html#missingDollarSign03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "ordinalNumbersExpressionsTeX04",
   "level": "1",
   "url": "ordinalNumbersExpressionsTeX04.html",
@@ -3041,6 +9386,15 @@ var ptx_lunr_docs = [
   "number": "40.18",
   "title": "How do I TeX expressions like \"1^{st}\" and \"n^{th}\"?",
   "body": " How do I TeX expressions like \"1^{st}\" and \"n^{th}\"?   Follow this link   "
+},
+{
+  "id": "ordinalNumbersExpressionsTeX04-2",
+  "level": "2",
+  "url": "ordinalNumbersExpressionsTeX04.html#ordinalNumbersExpressionsTeX04-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "poundSymbol02",
@@ -3052,6 +9406,15 @@ var ptx_lunr_docs = [
   "body": " How do I enter the UK counterpart of $, namely the UK pound symbol, £?   Follow this link   "
 },
 {
+  "id": "poundSymbol02-2",
+  "level": "2",
+  "url": "poundSymbol02.html#poundSymbol02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "subscripts06",
   "level": "1",
   "url": "subscripts06.html",
@@ -3059,6 +9422,15 @@ var ptx_lunr_docs = [
   "number": "40.20",
   "title": "When I use  word subscripts (e.g. $r_{in}$ or $r_{\\hbox{in}}$) the word \"in\" is either in italics or too large.  What should I be using?",
   "body": " When I use word subscripts (e.g. $r_{in}$ or $r_{\\hbox{in}}$) the word \"in\" is either in italics or too large. What should I be using?   Follow this link   "
+},
+{
+  "id": "subscripts06-2",
+  "level": "2",
+  "url": "subscripts06.html#subscripts06-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "generateTildeBlah03",
@@ -3070,6 +9442,15 @@ var ptx_lunr_docs = [
   "body": " How do I get TeX to generate ~blah ?   Follow this link   "
 },
 {
+  "id": "generateTildeBlah03-2",
+  "level": "2",
+  "url": "generateTildeBlah03.html#generateTildeBlah03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "textIntoEquation04",
   "level": "1",
   "url": "textIntoEquation04.html",
@@ -3077,6 +9458,15 @@ var ptx_lunr_docs = [
   "number": "40.22",
   "title": "How do I put text into an equation?",
   "body": " How do I put text into an equation?   Follow this link   "
+},
+{
+  "id": "textIntoEquation04-2",
+  "level": "2",
+  "url": "textIntoEquation04.html#textIntoEquation04-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "angleInRadians02",
@@ -3088,6 +9478,15 @@ var ptx_lunr_docs = [
   "body": " Do I need to specify that the units of an angle are in radians?   Follow this link   "
 },
 {
+  "id": "angleInRadians02-2",
+  "level": "2",
+  "url": "angleInRadians02.html#angleInRadians02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "abbreviationStandarUnits03",
   "level": "1",
   "url": "abbreviationStandarUnits03.html",
@@ -3095,6 +9494,15 @@ var ptx_lunr_docs = [
   "number": "41.2",
   "title": "What are the abbreviations and conventions that we use for standard units like grams and miles per hour?",
   "body": " What are the abbreviations and conventions that we use for standard units like grams and miles per hour?   Follow this link   "
+},
+{
+  "id": "abbreviationStandarUnits03-2",
+  "level": "2",
+  "url": "abbreviationStandarUnits03.html#abbreviationStandarUnits03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 },
 {
   "id": "commonConstants02",
@@ -3106,6 +9514,15 @@ var ptx_lunr_docs = [
   "body": " What are the values that we use for common constants like g , the half-life of carbon-14, and the radius of the earth?   Follow this link   "
 },
 {
+  "id": "commonConstants02-2",
+  "level": "2",
+  "url": "commonConstants02.html#commonConstants02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "units02",
   "level": "1",
   "url": "units02.html",
@@ -3115,6 +9532,15 @@ var ptx_lunr_docs = [
   "body": " I'm confused about units. Are the units of g acceleration or ft\/sec^2?   Follow this link   "
 },
 {
+  "id": "units02-2",
+  "level": "2",
+  "url": "units02.html#units02-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
+},
+{
   "id": "unitsOnFigures03",
   "level": "1",
   "url": "unitsOnFigures03.html",
@@ -3122,6 +9548,15 @@ var ptx_lunr_docs = [
   "number": "41.5",
   "title": "Do I need to put the units (of the variables) in the text of an exercise and also in the figure of the exercise?",
   "body": " Do I need to put the units (of the variables) in the text of an exercise and also in the figure of the exercise?   Follow this link   "
+},
+{
+  "id": "unitsOnFigures03-2",
+  "level": "2",
+  "url": "unitsOnFigures03.html#unitsOnFigures03-2",
+  "type": "Paragraph",
+  "number": "",
+  "title": "",
+  "body": " Follow this link  "
 }
 ]
 
