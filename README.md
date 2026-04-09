@@ -8,7 +8,7 @@ Contact us at mcwg.contact@gmail.com, or [subscribe below](#subscribe-for-news) 
 ## Our books
 Our books are published by [John Wiley & Sons, Inc.](https://www.wiley.com). 
 
-*  Hughes-Hallett, Gleason, McCallum, et al, *Calculus: Single and Multivariable*, 8th Edition, 2021.
+*  Hughes-Hallett, Gleason, McCallum, et al, [*Calculus: Single and Multivariable*](books/combo8e.md), 8th Edition, 2021.
 *  Hughes-Hallett, Gleason, Lock, Flath, et al, *Applied Calculus*, 7th Edition,  2022.
 *  Connally, Hughes-Hallett, Gleason, et al, *Functions Modeling Change: A Preparation for Calculus*, 6th Edition, 2019.
 *  McCallum, Connally, Hughes-Hallett, et al, *Algebra: Form and Function*, 2nd Edition, 2015.
