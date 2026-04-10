@@ -18,23 +18,23 @@ Our books are published by [John Wiley & Sons, Inc.](https://www.wiley.com).
 
 
 ## Resources
-* [Precalculus AI labs](https://mcwg.github.io/precalcAI/)
-* [Calc Python Labs](https://mcwg.github.io/calc-python-labs/)
+* [Precalculus AI labs](precalcAI/index.md)
+* [Calc Python Labs](calc-python-labs/index.md)
 <!-- * [Data Science Resources](https://mcwg.github.io/dataScienceResources) -->
-* [Covid-19](https://mcwg.github.io/covid/) teaching resources created by MCWG members.
-* [Climate Change](https://mcwg.github.io/climate/) teaching resources created by MCWG members.
+* [Covid-19](covid/index.md) teaching resources created by MCWG members.
+* [Climate Change](climate/index.md) teaching resources created by MCWG members.
 <!-- * [Sample in-class Activity](https://mcwg.github.io/mathfest2021/mathFest2021In-class-activity.pdf) -->
-* [Sample problems from the 7th Edition of _Applied Calculus_, Hughes Hallett et al.](https://mcwg.github.io/mathfest2021/handoutMathfest2021.pdf) John Wiley & Sons, 2022.
+* [Sample problems from the 7th Edition of _Applied Calculus_, Hughes Hallett et al.](mathfest2021/handoutMathfest2021.pdf) John Wiley & Sons, 2022.
 
 
 ### ConceptTests
-* [ConceptTests for *Applied Calculus*, 7th Edition](https://mcwg.github.io/conceptTestsApplied7e/), Hughes Hallett et al.
-* [ConceptTests for *Calculus: Single Variable*, 8th Edition](https://mcwg.github.io/conceptTestsSingle8e/), Hughes Hallett et al.
-* [ConceptTests for *Calculus: Multivariable*, 8th Edition](https://mcwg.github.io/conceptTestsMulti8e/), Hughes Hallett et al.
+* [ConceptTests for *Applied Calculus*, 7th Edition](conceptTestsApplied7e/index.md), Hughes Hallett et al.
+* [ConceptTests for *Calculus: Single Variable*, 8th Edition](conceptTestsSingle8e/index.md), Hughes Hallett et al.
+* [ConceptTests for *Calculus: Multivariable*, 8th Edition](conceptTestsMulti8e/index.md), Hughes Hallett et al.
 
 ### Teacher Manuals
-* [Teacher Manual for *Applied Calculus*, 7th Edition](https://mcwg.github.io/tmanApplied7e/), Hughes Hallett et al.
-* [Teacher Manual for *Calculus: Single and Multivariable*, 8th Edition](https://mcwg.github.io/tmanCombo8e/), Hughes Hallett et al.
+* [Teacher Manual for *Applied Calculus*, 7th Edition](tmanApplied7e/index.md), Hughes Hallett et al.
+* [Teacher Manual for *Calculus: Single and Multivariable*, 8th Edition](tmanCombo8e/index.md), Hughes Hallett et al.
 
 
 <!-- * [MathFest2021](https://mcwg.github.io/mathfest2021/) -->

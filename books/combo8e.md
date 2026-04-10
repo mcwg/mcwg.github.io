@@ -15,10 +15,7 @@ From the [Wiley site](https://www.wiley.com/en-us/Calculus%3A+Single+and+Multiva
 *  Concept Tests
     - [Single variable](../conceptTestsSingle8e/index.md)
     - [Multi variable](../conceptTestsMulti8e/index.md)
-
-
-## Genral Precalculus to Multi-Variable resources
-* [Precalculus AI labs](https://mcwg.github.io/precalcAI/)
-* [Calc Python Labs](https://mcwg.github.io/calc-python-labs/)
-* [Covid-19](https://mcwg.github.io/covid/) teaching resources created by MCWG members.
-* [Climate Change](https://mcwg.github.io/climate/) teaching resources created by MCWG members.
+* [Calc Python Labs](../calc-python-labs/index.md)
+* [Climate Change](../climate/index.md) activities.
+* [Covid-19](../covid/index.md) activities and textboook-style problems and activities.
+* [Precalculus AI labs](../precalcAI/index.md) which can be used as a review for students while also learning about LLMs.
