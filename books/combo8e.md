@@ -15,6 +15,7 @@ From the [Wiley site](https://www.wiley.com/en-us/Calculus%3A+Single+and+Multiva
 *  Concept Tests
     - [Single variable](../conceptTestsSingle8e/index.md)
     - [Multi variable](../conceptTestsMulti8e/index.md)
+* [Calc LLM+Data Labs](../calc-LLM-labs/index.md)
 * [Calc Python Labs](../calc-python-labs/index.md)
 * [Climate Change](../climate/index.md) activities.
 * [Covid-19](../covid/index.md) activities and textboook-style problems and activities.

@@ -19,6 +19,7 @@ Our books are published by [John Wiley & Sons, Inc.](https://www.wiley.com).
 
 ## Resources
 * [Precalculus AI labs](precalcAI/index.md)
+* [Calc LLM+Data Labs](calc-LLM-labs/index.md)
 * [Calc Python Labs](calc-python-labs/index.md)
 <!-- * [Data Science Resources](https://mcwg.github.io/dataScienceResources) -->
 * [Covid-19](covid/index.md) teaching resources created by MCWG members.
